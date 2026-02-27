@@ -1,0 +1,152 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 11,
+                                    "endLine": 3504,
+                                    "startColumn": 9,
+                                    "startLine": 3495
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Operation may lead to a denial of essential contract function."
+                    },
+                    "ruleId": "ccc_Operation_may_lead_to_a_denial_of_essential_contract_function"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 11,
+                                    "endLine": 2804,
+                                    "startColumn": 9,
+                                    "startLine": 2800
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Operation may lead to a denial of essential contract function."
+                    },
+                    "ruleId": "ccc_Operation_may_lead_to_a_denial_of_essential_contract_function"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 11,
+                                    "endLine": 3236,
+                                    "startColumn": 9,
+                                    "startLine": 3233
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Operation may lead to a denial of essential contract function."
+                    },
+                    "ruleId": "ccc_Operation_may_lead_to_a_denial_of_essential_contract_function"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 11,
+                                    "endLine": 3612,
+                                    "startColumn": 9,
+                                    "startLine": 3595
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Operation may lead to a denial of essential contract function."
+                    },
+                    "ruleId": "ccc_Operation_may_lead_to_a_denial_of_essential_contract_function"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 11,
+                                    "endLine": 3348,
+                                    "startColumn": 9,
+                                    "startLine": 3343
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Operation may lead to a denial of essential contract function."
+                    },
+                    "ruleId": "ccc_Operation_may_lead_to_a_denial_of_essential_contract_function"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 16,
+                                    "endLine": 2679,
+                                    "startColumn": 13,
+                                    "startLine": 2659
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Operation may lead to a denial of essential contract function."
+                    },
+                    "ruleId": "ccc_Operation_may_lead_to_a_denial_of_essential_contract_function"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/Fraunhofer-AISEC/cpg-contract-checker",
+                    "name": "CCC",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-5."
+                            },
+                            "id": "ccc_Operation_may_lead_to_a_denial_of_essential_contract_function",
+                            "name": "Operation may lead to a denial of essential contract function."
+                        }
+                    ],
+                    "version": "#c531ae3 (imc-24)"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

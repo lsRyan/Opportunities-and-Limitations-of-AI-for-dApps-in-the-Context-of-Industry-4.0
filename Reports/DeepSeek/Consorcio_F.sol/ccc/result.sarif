@@ -1,0 +1,138 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 36,
+                                    "endLine": 360,
+                                    "startColumn": 21,
+                                    "startLine": 360
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 47,
+                                    "endLine": 301,
+                                    "startColumn": 32,
+                                    "startLine": 301
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 46,
+                                    "endLine": 201,
+                                    "startColumn": 31,
+                                    "startLine": 201
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 51,
+                                    "endLine": 204,
+                                    "startColumn": 36,
+                                    "startLine": 204
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 46,
+                                    "endLine": 201,
+                                    "startColumn": 31,
+                                    "startLine": 201
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A deterministic or predictable value may be used as bad random number."
+                    },
+                    "ruleId": "ccc_A_deterministic_or_predictable_value_may_be_used_as_bad_random_number"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/Fraunhofer-AISEC/cpg-contract-checker",
+                    "name": "CCC",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-8."
+                            },
+                            "id": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp",
+                            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-6."
+                            },
+                            "id": "ccc_A_deterministic_or_predictable_value_may_be_used_as_bad_random_number",
+                            "name": "A deterministic or predictable value may be used as bad random number."
+                        }
+                    ],
+                    "version": "#c531ae3 (imc-24)"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

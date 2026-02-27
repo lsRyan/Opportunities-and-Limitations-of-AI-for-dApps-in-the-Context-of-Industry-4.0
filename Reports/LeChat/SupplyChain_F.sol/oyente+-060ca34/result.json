@@ -1,0 +1,74 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 12,
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+            "line": 60,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 24,
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+            "line": 3587,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 5,
+            "contract": "Prescriptions",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+            "line": 3958,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 73,
+            "contract": "authorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+            "line": 46,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 37,
+            "contract": "authorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+            "line": 4032,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 3,
+            "contract": "hospitalManagement",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+            "line": 4118,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 3,
+            "contract": "hospitalManagement",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+            "line": 4097,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Arrays 98.4%",
+        "coverage Comparators 98.4%",
+        "coverage ERC1155Utils 98.4%",
+        "coverage Math 98.4%",
+        "coverage Panic 98.4%",
+        "coverage PharmaCompany 39.4%",
+        "coverage Prescriptions 38.4%",
+        "coverage SafeCast 98.4%",
+        "coverage SlotDerivation 98.4%",
+        "coverage StorageSlot 98.4%",
+        "coverage authorizationCertificates 94.2%",
+        "coverage hospitalManagement 33.1%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

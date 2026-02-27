@@ -1,0 +1,36 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Consorcio_F.sol
+14:03:38.190 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Consorcio_F.sol:8:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+14:03:39.126 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:143:9: Could not find the scope address needed to resolve the call address.push. Falling back to the default (current) scope
+14:03:39.129 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:162:17: Could not find the scope address needed to resolve the call address.pop. Falling back to the default (current) scope
+14:03:39.131 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:232:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+14:03:39.169 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:232:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+14:03:39.169 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Consorcio_F.sol:264:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+Running checks
+AccessControlSelfdestructCheck took 1562 ms
+CallReturnCheck took 801 ms
+AccessControlLogicCheck took 1036 ms
+ReentrancyCheck took 2068 ms
+DefaultProxyDelegateCheck took 613 ms
+TXOriginCheck took 320 ms
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 189:32-189:47
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 233:21-233:36
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 109:28-109:43
+TimeManipulationCheck took 598 ms
+LocalWriteToStorageCheck took 20560 ms
+BadRandomnessCheck took 447 ms

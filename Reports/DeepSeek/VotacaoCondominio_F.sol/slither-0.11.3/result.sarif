@@ -1,0 +1,1697 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) has bitwise-xor operator ^ instead of the exponentiation operator **: \n\t - inverse = (3 * denominator) ^ 2 (../sb/VotacaoCondominio_F.sol#1933)\n"
+                    },
+                    "ruleId": "slither_0_11_3_incorrect_exp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function invMod"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2037,
+                                    "startLine": 1991
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.invMod(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1991-2037) performs a multiplication on the result of a division:\n\t- quotient = gcd / remainder (../sb/VotacaoCondominio_F.sol#2013)\n\t- (gcd,remainder) = (remainder,gcd - remainder * quotient) (../sb/VotacaoCondominio_F.sol#2015-2022)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)\n\t- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1939)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)\n\t- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1938)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)\n\t- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1942)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- low = low / twos (../sb/VotacaoCondominio_F.sol#1921)\n\t- result = low * inverse (../sb/VotacaoCondominio_F.sol#1948)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)\n\t- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1937)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)\n\t- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1940)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)\n\t- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1941)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)\n\t- inverse = (3 * denominator) ^ 2 (../sb/VotacaoCondominio_F.sol#1933)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Votes, function _push"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4578,
+                                    "startLine": 4572
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Votes._push(Checkpoints.Trace208,function(uint208,uint208) returns(uint208),uint208) (../sb/VotacaoCondominio_F.sol#4572-4578) ignores return value by store.push(clock(),op(store.latest(),delta)) (../sb/VotacaoCondominio_F.sol#4577)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Time, function get"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4301,
+                                    "startLine": 4298
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Time.get(Time.Delay) (../sb/VotacaoCondominio_F.sol#4298-4301) ignores return value by (delay,None,None) = self.getFull() (../sb/VotacaoCondominio_F.sol#4299)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Ownable, function owner"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5535
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "CondoVotingSystem.nonces(address).owner (../sb/VotacaoCondominio_F.sol#5535) shadows:\n\t- Ownable.owner() (../sb/VotacaoCondominio_F.sol#92-94) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC20, function name"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5310
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC20Permit.constructor(string).name (../sb/VotacaoCondominio_F.sol#5310) shadows:\n\t- ERC20.name() (../sb/VotacaoCondominio_F.sol#4922-4924) (function)\n\t- IERC20Metadata.name() (../sb/VotacaoCondominio_F.sol#4857) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC20, function approve"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5621
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "CondoVotingSystem.voteOnProposal(uint256,bool).approve (../sb/VotacaoCondominio_F.sol#5621) shadows:\n\t- ERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4990-4994) (function)\n\t- IERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4828) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC20Permit, function permit"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5336,
+                                    "startLine": 5313
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC20Permit.permit(address,address,uint256,uint256,uint8,bytes32,bytes32) (../sb/VotacaoCondominio_F.sol#5313-5336) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- block.timestamp > deadline (../sb/VotacaoCondominio_F.sol#5322)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Time, function _getFullAt"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4285,
+                                    "startLine": 4279
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Time._getFullAt(Time.Delay,uint48) (../sb/VotacaoCondominio_F.sol#4279-4285) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- effect <= timepoint (../sb/VotacaoCondominio_F.sol#4284)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Votes, function delegateBySig"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4502,
+                                    "startLine": 4483
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Votes.delegateBySig(address,uint256,uint256,uint8,bytes32,bytes32) (../sb/VotacaoCondominio_F.sol#4483-4502) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- block.timestamp > expiry (../sb/VotacaoCondominio_F.sol#4491)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract CondoVotingSystem, function voteOnProposal"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5660,
+                                    "startLine": 5621
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "CondoVotingSystem.voteOnProposal(uint256,bool) (../sb/VotacaoCondominio_F.sol#5621-5660) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- clock() - proposal.voteStart > voteTimeout (../sb/VotacaoCondominio_F.sol#5632)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract CondoVotingSystem, function endVote"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5705,
+                                    "startLine": 5667
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "CondoVotingSystem.endVote(uint256) (../sb/VotacaoCondominio_F.sol#5667-5705) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- balanceOf(msg.sender) > 0 && (clock() - proposal.voteStart) > voteTimeout (../sb/VotacaoCondominio_F.sol#5677)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mul512"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1722,
+                                    "startLine": 1713
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mul512(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1713-1722) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1717-1721)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function log2"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2327,
+                                    "startLine": 2288
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.log2(uint256) (../sb/VotacaoCondominio_F.sol#2288-2327) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2324-2326)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBytes32Slot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3180,
+                                    "startLine": 3176
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBytes32Slot(bytes32) (../sb/VotacaoCondominio_F.sol#3176-3180) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3177-3179)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function _unsafeReadBytesOffset"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2986,
+                                    "startLine": 2981
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings._unsafeReadBytesOffset(bytes,uint256) (../sb/VotacaoCondominio_F.sol#2981-2986) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2983-2985)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBooleanSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3171,
+                                    "startLine": 3167
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBooleanSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3167-3171) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3168-3170)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract MessageHashUtils, function toDataWithIntendedValidatorHash"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3068,
+                                    "startLine": 3058
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "MessageHashUtils.toDataWithIntendedValidatorHash(address,bytes32) (../sb/VotacaoCondominio_F.sol#3058-3068) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3062-3067)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getStringSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3216,
+                                    "startLine": 3212
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getStringSlot(string) (../sb/VotacaoCondominio_F.sol#3212-3216) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3213-3215)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function toString"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2560,
+                                    "startLine": 2542
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings.toString(uint256) (../sb/VotacaoCondominio_F.sol#2542-2560) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2547-2549)\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2552-2554)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1773,
+                                    "startLine": 1765
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryDiv(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1765-1773) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1768-1771)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getUint256Slot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3189,
+                                    "startLine": 3185
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getUint256Slot(bytes32) (../sb/VotacaoCondominio_F.sol#3185-3189) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3186-3188)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBytesSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3234,
+                                    "startLine": 3230
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBytesSlot(bytes) (../sb/VotacaoCondominio_F.sol#3230-3234) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3231-3233)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getStringSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3207,
+                                    "startLine": 3203
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getStringSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3203-3207) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3204-3206)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function escapeJSON"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2973,
+                                    "startLine": 2943
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings.escapeJSON(string) (../sb/VotacaoCondominio_F.sol#2943-2973) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2967-2970)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBytesSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3225,
+                                    "startLine": 3221
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBytesSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3221-3225) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3222-3224)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getAddressSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3162,
+                                    "startLine": 3158
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getAddressSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3158-3162) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3159-3161)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Checkpoints, function _unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3999,
+                                    "startLine": 3991
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Checkpoints._unsafeAccess(Checkpoints.Checkpoint208[],uint256) (../sb/VotacaoCondominio_F.sol#3991-3999) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3995-3998)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract MessageHashUtils, function toTypedDataHash"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3087,
+                                    "startLine": 3079
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "MessageHashUtils.toTypedDataHash(bytes32,bytes32) (../sb/VotacaoCondominio_F.sol#3079-3087) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3080-3086)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SafeCast, function toUint"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1612,
+                                    "startLine": 1608
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SafeCast.toUint(bool) (../sb/VotacaoCondominio_F.sol#1608-1612) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1609-1611)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getInt256Slot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3198,
+                                    "startLine": 3194
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getInt256Slot(bytes32) (../sb/VotacaoCondominio_F.sol#3194-3198) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3195-3197)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryModExp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2147,
+                                    "startLine": 2125
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryModExp(bytes,bytes,bytes) (../sb/VotacaoCondominio_F.sol#2125-2147) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2137-2146)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryMod"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1786,
+                                    "startLine": 1778
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryMod(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1778-1786) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1781-1784)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ECDSA, function tryRecover"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 310,
+                                    "startLine": 291
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ECDSA.tryRecover(bytes32,bytes) (../sb/VotacaoCondominio_F.sol#291-310) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#301-305)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Panic, function panic"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1673,
+                                    "startLine": 1667
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Panic.panic(uint256) (../sb/VotacaoCondominio_F.sol#1667-1673) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1668-1672)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryModExp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2109,
+                                    "startLine": 2085
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryModExp(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#2085-2109) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2087-2108)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function add512"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1706,
+                                    "startLine": 1701
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.add512(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1701-1706) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1702-1705)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1951,
+                                    "startLine": 1880
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1903-1910)\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1916-1925)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ShortStrings, function toString"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3309,
+                                    "startLine": 3300
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ShortStrings.toString(ShortString) (../sb/VotacaoCondominio_F.sol#3300-3309) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3304-3307)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryMul"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1760,
+                                    "startLine": 1749
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryMul(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1749-1760) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#1752-1756)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract MessageHashUtils, function toEthSignedMessageHash"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3025,
+                                    "startLine": 3019
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "MessageHashUtils.toEthSignedMessageHash(bytes32) (../sb/VotacaoCondominio_F.sol#3019-3025) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3020-3024)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Checkpoints, function _unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3796,
+                                    "startLine": 3788
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Checkpoints._unsafeAccess(Checkpoints.Checkpoint224[],uint256) (../sb/VotacaoCondominio_F.sol#3788-3796) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#3792-3795)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function toChecksumHexString"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2626,
+                                    "startLine": 2608
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings.toChecksumHexString(address) (../sb/VotacaoCondominio_F.sol#2608-2626) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#2613-2615)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Checkpoints, function _unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4202,
+                                    "startLine": 4194
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Checkpoints._unsafeAccess(Checkpoints.Checkpoint160[],uint256) (../sb/VotacaoCondominio_F.sol#4194-4202) uses assembly\n\t- INLINE ASM (../sb/VotacaoCondominio_F.sol#4198-4201)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 10
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "4 different versions of Solidity are used:\n\t- Version constraint ^0.8.20 is used by:\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#10)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#42)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#239)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#456)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#1621)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#1682)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#2433)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#2503)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#2995)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#3097)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#3243)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#3367)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#3528)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#3580)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#4211)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#4345)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#4876)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#5277)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#5356)\n\t\t-^0.8.20 (../sb/VotacaoCondominio_F.sol#5439)\n\t- Version constraint >=0.8.4 is used by:\n\t\t->=0.8.4 (../sb/VotacaoCondominio_F.sol#143)\n\t\t->=0.8.4 (../sb/VotacaoCondominio_F.sol#228)\n\t\t->=0.8.4 (../sb/VotacaoCondominio_F.sol#4599)\n\t- Version constraint >=0.4.16 is used by:\n\t\t->=0.4.16 (../sb/VotacaoCondominio_F.sol#207)\n\t\t->=0.4.16 (../sb/VotacaoCondominio_F.sol#423)\n\t\t->=0.4.16 (../sb/VotacaoCondominio_F.sol#4765)\n\t\t->=0.4.16 (../sb/VotacaoCondominio_F.sol#5183)\n\t- Version constraint >=0.6.2 is used by:\n\t\t->=0.6.2 (../sb/VotacaoCondominio_F.sol#4848)\n"
+                    },
+                    "ruleId": "slither_0_11_3_pragma"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC20, function _update"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5074,
+                                    "startLine": 5046
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC20._update(address,address,uint256) (../sb/VotacaoCondominio_F.sol#5046-5074) has costly operations inside a loop:\n\t- _totalSupply -= value (../sb/VotacaoCondominio_F.sol#5064)\n\tCalls stack containing the loop:\n\t\tCondoVotingSystem.constructor(uint256,address[])\n\t\tERC20._transfer(address,address,uint256)\n\t\tCondoVotingSystem._update(address,address,uint256)\n\t\tERC20Votes._update(address,address,uint256)\n"
+                    },
+                    "ruleId": "slither_0_11_3_costly_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC20, function _update"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5074,
+                                    "startLine": 5046
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC20._update(address,address,uint256) (../sb/VotacaoCondominio_F.sol#5046-5074) has costly operations inside a loop:\n\t- _totalSupply += value (../sb/VotacaoCondominio_F.sol#5049)\n\tCalls stack containing the loop:\n\t\tCondoVotingSystem.constructor(uint256,address[])\n\t\tERC20._transfer(address,address,uint256)\n\t\tCondoVotingSystem._update(address,address,uint256)\n\t\tERC20Votes._update(address,address,uint256)\n"
+                    },
+                    "ruleId": "slither_0_11_3_costly_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Context, function _contextSuffixLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 33,
+                                    "startLine": 31
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Context._contextSuffixLength() (../sb/VotacaoCondominio_F.sol#31-33) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Votes, function _subtract"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4586,
+                                    "startLine": 4584
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Votes._subtract(uint208,uint208) (../sb/VotacaoCondominio_F.sol#4584-4586) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Votes, function _getTotalSupply"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4463,
+                                    "startLine": 4461
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Votes._getTotalSupply() (../sb/VotacaoCondominio_F.sol#4461-4463) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC20, function _burn"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5104,
+                                    "startLine": 5099
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC20._burn(address,uint256) (../sb/VotacaoCondominio_F.sol#5099-5104) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Context, function _msgData"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 29,
+                                    "startLine": 27
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Context._msgData() (../sb/VotacaoCondominio_F.sol#27-29) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Votes, function _add"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4582,
+                                    "startLine": 4580
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Votes._add(uint208,uint208) (../sb/VotacaoCondominio_F.sol#4580-4582) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 143
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables.\nIt is used by:\n\t- >=0.8.4 (../sb/VotacaoCondominio_F.sol#143)\n\t- >=0.8.4 (../sb/VotacaoCondominio_F.sol#228)\n\t- >=0.8.4 (../sb/VotacaoCondominio_F.sol#4599)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 207
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.4.16 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- DirtyBytesArrayToStorage\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching\n\t- EmptyByteArrayCopy\n\t- DynamicArrayCleanup\n\t- ImplicitConstructorCallvalueCheck\n\t- TupleAssignmentMultiStackSlotComponents\n\t- MemoryArrayCreationOverflow\n\t- privateCanBeOverridden\n\t- SignedArrayStorageCopy\n\t- ABIEncoderV2StorageArrayWithMultiSlotElement\n\t- DynamicConstructorArgumentsClippedABIV2\n\t- UninitializedFunctionPointerInConstructor_0.4.x\n\t- IncorrectEventSignatureInLibraries_0.4.x\n\t- ExpExponentCleanup\n\t- NestedArrayFunctionCallDecoder\n\t- ZeroFunctionSelector.\nIt is used by:\n\t- >=0.4.16 (../sb/VotacaoCondominio_F.sol#207)\n\t- >=0.4.16 (../sb/VotacaoCondominio_F.sol#423)\n\t- >=0.4.16 (../sb/VotacaoCondominio_F.sol#4765)\n\t- >=0.4.16 (../sb/VotacaoCondominio_F.sol#5183)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4848
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.6.2 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching\n\t- EmptyByteArrayCopy\n\t- DynamicArrayCleanup\n\t- MissingEscapingInFormatting\n\t- ArraySliceDynamicallyEncodedBaseType\n\t- ImplicitConstructorCallvalueCheck\n\t- TupleAssignmentMultiStackSlotComponents\n\t- MemoryArrayCreationOverflow.\nIt is used by:\n\t- >=0.6.2 (../sb/VotacaoCondominio_F.sol#4848)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 10
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#10)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#42)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#239)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#456)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#1621)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#1682)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#2433)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#2503)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#2995)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3097)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3243)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3367)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3528)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3580)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#4211)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#4345)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#4876)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#5277)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#5356)\n\t- ^0.8.20 (../sb/VotacaoCondominio_F.sol#5439)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IERC6372, function CLOCK_MODE"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 219
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IERC6372.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#219) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract EIP712, function _EIP712Version"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3520,
+                                    "startLine": 3518
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function EIP712._EIP712Version() (../sb/VotacaoCondominio_F.sol#3518-3520) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IERC20Permit, function DOMAIN_SEPARATOR"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IERC20Permit.DOMAIN_SEPARATOR() (../sb/VotacaoCondominio_F.sol#5268) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC20Permit, function DOMAIN_SEPARATOR"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5347,
+                                    "startLine": 5345
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC20Permit.DOMAIN_SEPARATOR() (../sb/VotacaoCondominio_F.sol#5345-5347) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract CondoVotingSystem, function CLOCK_MODE"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 5523,
+                                    "startLine": 5521
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function CondoVotingSystem.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#5521-5523) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Votes, function CLOCK_MODE"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4412,
+                                    "startLine": 4406
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Votes.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#4406-4412) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract EIP712, function _EIP712Name"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3509,
+                                    "startLine": 3507
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function EIP712._EIP712Name() (../sb/VotacaoCondominio_F.sol#3507-3509) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function log2"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2327,
+                                    "startLine": 2288
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.log2(uint256) (../sb/VotacaoCondominio_F.sol#2288-2327) uses literals with too many digits:\n\t- r = r | byte(uint256,uint256)(x >> r,0x0000010102020202030303030303030300000000000000000000000000000000) (../sb/VotacaoCondominio_F.sol#2325)\n"
+                    },
+                    "ruleId": "slither_0_11_3_too_many_digits"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ShortStrings, function slitherConstructorConstantVariables"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3359,
+                                    "startLine": 3277
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ShortStrings.slitherConstructorConstantVariables() (../sb/VotacaoCondominio_F.sol#3277-3359) uses literals with too many digits:\n\t- FALLBACK_SENTINEL = 0x00000000000000000000000000000000000000000000000000000000000000FF (../sb/VotacaoCondominio_F.sol#3279)\n"
+                    },
+                    "ruleId": "slither_0_11_3_too_many_digits"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "id": "slither_0_11_3_dead_code",
+                            "name": "dead-code"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-103."
+                            },
+                            "id": "slither_0_11_3_pragma",
+                            "name": "pragma"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-102."
+                            },
+                            "id": "slither_0_11_3_solc_version",
+                            "name": "solc-version"
+                        },
+                        {
+                            "id": "slither_0_11_3_assembly",
+                            "name": "assembly"
+                        },
+                        {
+                            "id": "slither_0_11_3_naming_convention",
+                            "name": "naming-convention"
+                        },
+                        {
+                            "id": "slither_0_11_3_timestamp",
+                            "name": "timestamp",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_divide_before_multiply",
+                            "name": "divide-before-multiply",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-119."
+                            },
+                            "id": "slither_0_11_3_shadowing_local",
+                            "name": "shadowing-local",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_incorrect_exp",
+                            "name": "incorrect-exp",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_unused_return",
+                            "name": "unused-return",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_too_many_digits",
+                            "name": "too-many-digits"
+                        },
+                        {
+                            "id": "slither_0_11_3_costly_loop",
+                            "name": "costly-loop"
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

@@ -1,0 +1,176 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/VotacaoCondominio_F.sol
+00:10:01.482 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:10:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:42:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:143:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:207:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:228:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:239:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:423:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:456:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:1621:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:1682:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:2433:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:2503:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:2995:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:3097:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:3243:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:3367:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:3528:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:3580:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:4211:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:4345:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:4599:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:4765:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:4848:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:4876:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:5183:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:5277:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:5356:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:01.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/VotacaoCondominio_F.sol:5439:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+00:10:04.160 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1731:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.162 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1742:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.163 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1758:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.165 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1824:35: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.167 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1860:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+00:10:04.168 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1869:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.170 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1894:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+00:10:04.171 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1957:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.173 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1967:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+00:10:04.175 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:1977:34: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.177 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2050:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp. Falling back to the default (current) scope
+00:10:04.178 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2070:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+00:10:04.180 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2117:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+00:10:04.181 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2135:18: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+00:10:04.184 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2270:25: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.185 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2280:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.186 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2290:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.187 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2292:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.188 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2294:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.189 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2296:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.189 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2298:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.190 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2300:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.191 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2336:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.193 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2385:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.194 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2397:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.195 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2399:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.195 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2401:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.196 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2403:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.197 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2405:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.198 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2415:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.198 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2451:42: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.261 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2544:30: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log10. Falling back to the default (current) scope
+00:10:04.263 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2566:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs. Falling back to the default (current) scope
+00:10:04.264 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2566:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+00:10:04.265 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2566:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs. Falling back to the default (current) scope
+00:10:04.266 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2566:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs. Falling back to the default (current) scope
+00:10:04.266 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2574:39: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log256. Falling back to the default (current) scope
+00:10:04.267 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2574:39: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log256. Falling back to the default (current) scope
+00:10:04.282 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2772:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+00:10:04.287 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2845:26: Could not find the scope bool needed to resolve the call bool.toUint. Falling back to the default (current) scope
+00:10:04.292 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:2904:39: Could not find the scope bool needed to resolve the call bool.toUint. Falling back to the default (current) scope
+00:10:04.296 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3039:76: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toString. Falling back to the default (current) scope
+00:10:04.297 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3039:23: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+00:10:04.297 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3039:76: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toString. Falling back to the default (current) scope
+00:10:04.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3039:23: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+00:10:04.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3039:76: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toString. Falling back to the default (current) scope
+00:10:04.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3052:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+00:10:04.299 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3052:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+00:10:04.361 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3294:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.wrap. Falling back to the default (current) scope
+00:10:04.361 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3315:34: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.unwrap. Falling back to the default (current) scope
+00:10:04.362 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3329:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getStringSlot. Falling back to the default (current) scope
+00:10:04.363 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3330:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.wrap. Falling back to the default (current) scope
+00:10:04.363 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3338:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.unwrap. Falling back to the default (current) scope
+00:10:04.364 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3353:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.unwrap. Falling back to the default (current) scope
+00:10:04.366 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3452:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.368 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3452:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.370 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3471:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toTypedDataHash. Falling back to the default (current) scope
+00:10:04.371 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3508:16: Could not find the scope ShortString needed to resolve the call ShortString.toStringWithFallback. Falling back to the default (current) scope
+00:10:04.372 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3519:16: Could not find the scope ShortString needed to resolve the call ShortString.toStringWithFallback. Falling back to the default (current) scope
+00:10:04.373 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3430:17: Could not find the scope string needed to resolve the call string.toShortStringWithFallback. Falling back to the default (current) scope
+00:10:04.374 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3431:20: Could not find the scope string needed to resolve the call string.toShortStringWithFallback. Falling back to the default (current) scope
+00:10:04.391 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3654:33: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.sqrt. Falling back to the default (current) scope
+00:10:04.402 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3728:17: Could not find the scope Checkpoint224 needed to resolve the call Checkpoint224.push. Falling back to the default (current) scope
+00:10:04.459 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3732:13: Could not find the scope Checkpoint224 needed to resolve the call Checkpoint224.push. Falling back to the default (current) scope
+00:10:04.459 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3751:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+00:10:04.462 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3775:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+00:10:04.476 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3857:33: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.sqrt. Falling back to the default (current) scope
+00:10:04.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3931:17: Could not find the scope Checkpoint208 needed to resolve the call Checkpoint208.push. Falling back to the default (current) scope
+00:10:04.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3935:13: Could not find the scope Checkpoint208 needed to resolve the call Checkpoint208.push. Falling back to the default (current) scope
+00:10:04.490 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3954:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+00:10:04.492 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:3978:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+00:10:04.567 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4060:33: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.sqrt. Falling back to the default (current) scope
+00:10:04.572 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4134:17: Could not find the scope Checkpoint160 needed to resolve the call Checkpoint160.push. Falling back to the default (current) scope
+00:10:04.573 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4138:13: Could not find the scope Checkpoint160 needed to resolve the call Checkpoint160.push. Falling back to the default (current) scope
+00:10:04.573 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4157:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+00:10:04.574 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4181:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+00:10:04.576 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4232:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint48. Falling back to the default (current) scope
+00:10:04.577 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4239:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint48. Falling back to the default (current) scope
+00:10:04.577 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4272:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.wrap. Falling back to the default (current) scope
+00:10:04.578 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4283:45: Could not find the scope Delay needed to resolve the call Delay.unpack. Falling back to the default (current) scope
+00:10:04.579 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4299:30: Could not find the scope Delay needed to resolve the call Delay.getFull. Falling back to the default (current) scope
+00:10:04.579 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4313:24: Could not find the scope Delay needed to resolve the call Delay.get. Falling back to the default (current) scope
+00:10:04.580 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4314:33: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.max. Falling back to the default (current) scope
+00:10:04.580 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4323:23: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.unwrap. Falling back to the default (current) scope
+00:10:04.581 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4336:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.wrap. Falling back to the default (current) scope
+00:10:04.582 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4399:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.blockNumber. Falling back to the default (current) scope
+00:10:04.583 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4408:24: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.blockNumber. Falling back to the default (current) scope
+00:10:04.584 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4420:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint48. Falling back to the default (current) scope
+00:10:04.585 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4427:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.latest. Falling back to the default (current) scope
+00:10:04.586 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4439:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.upperLookupRecent. Falling back to the default (current) scope
+00:10:04.588 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4495:40: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.589 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4494:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.recover. Falling back to the default (current) scope
+00:10:04.590 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4495:40: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.590 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4495:40: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.591 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4495:40: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.593 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4523:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.594 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4523:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.594 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4526:49: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.594 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4526:49: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.597 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4540:21: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.598 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4540:21: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.599 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4540:21: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.600 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4548:21: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.601 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4548:21: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.601 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4548:21: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208. Falling back to the default (current) scope
+00:10:04.658 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4559:34: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.length. Falling back to the default (current) scope
+00:10:04.659 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4559:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint32. Falling back to the default (current) scope
+00:10:04.660 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4559:34: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.length. Falling back to the default (current) scope
+00:10:04.661 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:4569:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.at. Falling back to the default (current) scope
+00:10:04.668 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:5326:40: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.670 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:5326:40: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode. Falling back to the default (current) scope
+00:10:04.671 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:5330:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.recover. Falling back to the default (current) scope
+00:10:04.672 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:5340:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.nonces. Falling back to the default (current) scope
+00:10:04.673 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:5399:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update. Falling back to the default (current) scope
+00:10:04.675 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:5526:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update. Falling back to the default (current) scope
+00:10:04.675 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/VotacaoCondominio_F.sol:5533:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.nonces. Falling back to the default (current) scope
+Running checks
+AccessControlSelfdestructCheck took 1271 ms
+CallReturnCheck took 685 ms
+AccessControlLogicCheck took 3128 ms
+ReentrancyCheck took 2273 ms
+DefaultProxyDelegateCheck took 701 ms
+TXOriginCheck took 387 ms
+File: /sb/VotacaoCondominio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, VotacaoCondominio_F.sol 5322:13-5322:28
+File: /sb/VotacaoCondominio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, VotacaoCondominio_F.sol 5512:23-5512:38
+File: /sb/VotacaoCondominio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, VotacaoCondominio_F.sol 4232:34-4232:49
+File: /sb/VotacaoCondominio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, VotacaoCondominio_F.sol 4491:13-4491:28
+TimeManipulationCheck took 524 ms
+LocalWriteToStorageCheck took 12267 ms
+BadRandomnessCheck took 536 ms

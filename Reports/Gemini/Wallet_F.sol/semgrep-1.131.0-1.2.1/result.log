@@ -1,0 +1,432 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 84 Code Findings │
+└──────────────────┘
+                    
+    /sb/Wallet_F.sol
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+           79┆ require(msg.sender == authorizedWallet, "Caller is not the authorized wallet");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+           79┆ require(msg.sender == authorizedWallet, "Caller is not the authorized wallet");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+           88┆ constructor(address _authorizedWallet) {
+           89┆     authorizedWallet = _authorizedWallet;
+           90┆     minimumQuorum = 70; // Default 70%
+           91┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          101┆ require(bytes(symbol).length == 3, "Symbol must be 3 characters");
+            ⋮┆----------------------------------------
+          102┆ require(currencies[symbol], "Currency not supported");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          104┆ currentId++;
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          115┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          115┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          115┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+          116┆ emit RateRequested(currentId, oracleList[i].url, symbol);
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          130┆ require(id > 0 && id <= currentId, "Invalid ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          130┆ require(id > 0 && id <= currentId, "Invalid ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          131┆ require(req.active, "Request not active");
+            ⋮┆----------------------------------------
+          132┆ require(!req.answers[msg.sender], "Oracle already answered");
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          137┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          137┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          137┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          143┆ require(isAuthorized, "Caller is not an authorized oracle");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          143┆ require(isAuthorized, "Caller is not an authorized oracle");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          155┆ req.answersCount++;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          160┆ if (totalOracles > 0 && (req.answersCount * 100) / totalOracles >= minimumQuorum) {
+          161┆     exchangeRates[req.currency] = req.quotation;
+          162┆     exchangeRateTime[req.currency] = block.timestamp;
+          163┆     req.active = false; // Fulfilled
+          164┆
+          165┆     emit RateUpdated(req.currency, req.quotation, block.timestamp);
+          166┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          176┆ require(bytes(symbol).length == 3, "Symbol must be 3 characters");
+            ⋮┆----------------------------------------
+          177┆ require(currencies[symbol], "Currency not supported");
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          215┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          215┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          215┆ for (uint256 i = 0; i < oracleList.length; i++) {
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          218┆ oracleList[i] = oracleList[oracleList.length - 1];
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          218┆ oracleList[i] = oracleList[oracleList.length - 1];
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          230┆ require(newQuorum <= 100, "Invalid quorum percentage");
+            ⋮┆----------------------------------------
+          262┆ require(msg.sender == authorizedWallet, "Caller is not the authorized wallet");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          262┆ require(msg.sender == authorizedWallet, "Caller is not the authorized wallet");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          268┆ constructor(address _authorizedWallet, address _oracleContract) {
+          269┆     authorizedWallet = _authorizedWallet;
+          270┆     oracleContract = _oracleContract;
+          271┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          284┆ require(bytes(targetCurrency).length == 3, "Symbol must be 3 characters");
+            ⋮┆----------------------------------------
+          285┆ require(currencies[targetCurrency], "Currency not supported by exchange");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          285┆ require(currencies[targetCurrency], "Currency not supported by exchange");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          286┆ require(targetAddress != address(0), "Invalid target address");
+            ⋮┆----------------------------------------
+          287┆ require(IOracle(oracleContract).isSupported(targetCurrency), "Currency not supported by
+               oracle");                                                                              
+            ⋮┆----------------------------------------
+          288┆ require(msg.value > 0, "Value must be greater than 0");
+            ⋮┆----------------------------------------
+          294┆ revert("Rate outdated. Request new rate.");
+            ⋮┆----------------------------------------
+          323┆ require(bytes(symbol).length == 3, "Symbol must be 3 characters");
+            ⋮┆----------------------------------------
+          328┆ require(bytes(symbol).length == 3, "Symbol must be 3 characters");
+            ⋮┆----------------------------------------
+          362┆ require(msg.sender == owner, "Caller is not the owner");
+            ⋮┆----------------------------------------
+          367┆ require(_status != _ENTERED, "ReentrancyGuard: reentrant call");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          375┆ constructor(uint256 _maximumRateDelay, uint256 _exchangeFee) {
+          376┆     owner = msg.sender;
+          377┆     maximumRateDelay = _maximumRateDelay;
+          378┆     exchangeFee = _exchangeFee;
+          379┆     _status = _NOT_ENTERED;
+          380┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          404┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+            ⋮┆----------------------------------------
+          405┆ require(to != address(0), "Invalid recipient");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          407┆ balances[msg.sender] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          415┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+            ⋮┆----------------------------------------
+          416┆ require(to != address(0), "Invalid recipient");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          418┆ balances[msg.sender] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          421┆ require(success, "External transfer failed");
+            ⋮┆----------------------------------------
+          428┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+            ⋮┆----------------------------------------
+          429┆ require(IExchange(exchangeContract).isSupported(targetCurrency), "Currency not supported");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          431┆ balances[msg.sender] -= amount;
+            ⋮┆----------------------------------------
+          434┆ uint256 amountAfterFee = amount - fee;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          451┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          453┆ balances[msg.sender] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          456┆ require(success, "Withdrawal failed");
+            ⋮┆----------------------------------------
+          466┆ require(
+          467┆     _compareStrings(tier, "onchain") || _compareStrings(tier, "all"),
+          468┆     "Unauthorized access"
+          469┆ );
+            ⋮┆----------------------------------------
+          470┆ require(balances[from] >= amount, "Insufficient balance");
+            ⋮┆----------------------------------------
+          471┆ require(to != address(0), "Invalid recipient");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          473┆ balances[from] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          482┆ require(
+          483┆     _compareStrings(tier, "onchain") || _compareStrings(tier, "all"),
+          484┆     "Unauthorized access"
+          485┆ );
+            ⋮┆----------------------------------------
+          486┆ require(balances[from] >= amount, "Insufficient balance");
+            ⋮┆----------------------------------------
+          487┆ require(to != address(0), "Invalid recipient");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          489┆ balances[from] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          492┆ require(success, "External transfer failed");
+            ⋮┆----------------------------------------
+          500┆ require(_compareStrings(tier, "all"), "Unauthorized access");
+            ⋮┆----------------------------------------
+          501┆ require(balances[from] >= amount, "Insufficient balance");
+            ⋮┆----------------------------------------
+          502┆ require(IExchange(exchangeContract).isSupported(targetCurrency), "Currency not supported");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          504┆ balances[from] -= amount;
+            ⋮┆----------------------------------------
+          507┆ uint256 amountAfterFee = amount - fee;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          524┆ require(
+          525┆     _compareStrings(tier, "basic") ||
+          526┆     _compareStrings(tier, "onchain") ||
+          527┆     _compareStrings(tier, "all"),
+          528┆     "Unauthorized access"
+          529┆ );
+            ⋮┆----------------------------------------
+          530┆ require(balances[from] >= amount, "Insufficient balance");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          532┆ balances[from] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          535┆ require(success, "Withdrawal failed");
+            ⋮┆----------------------------------------
+          542┆ require(
+          543┆     _compareStrings(tier, "basic") ||
+          544┆     _compareStrings(tier, "onchain") ||
+          545┆     _compareStrings(tier, "all"),
+          546┆     "Invalid tier"
+          547┆ );
+            ⋮┆----------------------------------------
+          589┆ require(newQuorum >= 0 && newQuorum <= 100, "Invalid quorum");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          589┆ require(newQuorum >= 0 && newQuorum <= 100, "Invalid quorum");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          606┆ require(newOracle != address(0), "Invalid address");
+            ⋮┆----------------------------------------
+          611┆ require(newExchange != address(0), "Invalid address");
+            ⋮┆----------------------------------------
+          620┆ require(newExchangeFee >= 0 && newExchangeFee <= 100, "Invalid fee");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          620┆ require(newExchangeFee >= 0 && newExchangeFee <= 100, "Invalid fee");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          625┆ require(newOwner != address(0), "Invalid address");
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 84 (84 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~100.0%
+ • No ignore information available
+Ran 57 rules on 1 file: 84 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+📢 Too many findings? Try Semgrep Pro for more powerful queries and less noise.
+   See https://sg.run/false-positives.

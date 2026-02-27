@@ -1,0 +1,57 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "maian",
+        "mode": "solidity",
+        "version": "2022/11/11"
+    }
+}

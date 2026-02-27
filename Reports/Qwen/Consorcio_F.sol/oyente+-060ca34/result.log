@@ -1,0 +1,77 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:CryticCompile:Compilation warnings/errors on /sb/Consorcio_F.sol:
+Warning: Function state mutability can be restricted to view
+   --> /sb/Consorcio_F.sol:277:5:
+    |
+277 |     function selectWinner(uint256 poolId) private returns (address) {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+INFO:root:contract /sb/Consorcio_F.sol:FinancialPoolManager:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 26.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Consorcio_F.sol:332:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:221:7: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 61514547407324228818772085785865451047049679353621549645961841504203850121216
+/sb/Consorcio_F.sol:72:20: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 43422033463993573283839119378257965444976244249615211514796594002967423614976
+/sb/Consorcio_F.sol:104:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:141:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:172:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:65:5: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:202:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+INFO:symExec:/sb/Consorcio_F.sol:335:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+/sb/Consorcio_F.sol:70:47: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+/sb/Consorcio_F.sol:71:90: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 72370055773322622139731865630429942408293740416025352524660990004945706024960
+/sb/Consorcio_F.sol:205:56: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 3618502788666131106986593281521497120414687020801267626233049500247285301248
+/sb/Consorcio_F.sol:205:46: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 3618502788666131106986593281521497120414687020801267626233049500247285301248
+/sb/Consorcio_F.sol:205:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 3618502788666131106986593281521497120414687020801267626233049500247285301248
+INFO:symExec:/sb/Consorcio_F.sol:253:36: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======

@@ -1,0 +1,39 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:root:contract /sb/Consorcio_F.sol:FinancialPoolManager:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 28.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Consorcio_F.sol:168:40: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:61:109: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:69:11: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:29:17: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _status = 0
+/sb/Consorcio_F.sol:29:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _status = 2
+INFO:symExec:/sb/Consorcio_F.sol:376:15: Warning: Integer Overflow.
+
+/sb/Consorcio_F.sol:60:89: Warning: Integer Overflow.
+
+/sb/Consorcio_F.sol:61:89: Warning: Integer Overflow.
+
+/sb/Consorcio_F.sol:257:36: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _status = 0
+INFO:symExec:/sb/Consorcio_F.sol:335:42: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======

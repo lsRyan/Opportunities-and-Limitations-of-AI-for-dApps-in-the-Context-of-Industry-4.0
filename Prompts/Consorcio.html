@@ -1,0 +1,314 @@
+<prompt>
+<h1 id="role">Role</h1>
+<p>You are a senior Ethereum smart contract developer responsible for implementing secure, efficient, well-documented Solidity contracts based on detailed specifications. Your work should follow industry-standard practices for structure, safety, and readability.</p>
+<h1 id="context">Context</h1>
+<p>A company has requested the development of a financing pool smart contract, which allows users to collaboratively acquire goods by pooling funds. You are the lead developer responsible for implementing this project with all of the required functionalities in a secure and extensible manner using Solidity and employing all of the best practices for decentralized applications.</p>
+<h1 id="objective">Objective</h1>
+<p>Your task is to develop a fully functional, well-commented, and secure Solidity contract that implements the FinancialPoolManager contract, as will be thoroughly described below. The code must:</p>
+<ul>
+<li>
+<p>Be secure, avoiding vulnerabilities such as reentrancy, integer overflows/underflows, access control issues, and all known vulnerabilities that could affect the contract’s functionalities.</p>
+</li>
+<li>
+<p>Be readable, using clear naming conventions, structured logic, and inline documentation (Solidity comments).</p>
+</li>
+<li>
+<p>Follow best practices for gas efficiency and modularity.</p>
+</li>
+<li>
+<p>Support multiple concurrent financing pools.</p>
+</li>
+<li>
+<p>Use the latest Solidity compiler version you are familiar with.</p>
+</li>
+</ul>
+<h1 id="application">Application</h1>
+<h2 id="overview">Overview</h2>
+<p>The smart contract must implement a system known as a financing pool, which allows users to collectively fund a purchase. Users contribute fixed installments over time, and once the total amount is reached, one user (randomly selected) receives the funded good’s value. The selected user need to continue paying installments for the full duration of the pool. The contract must allow any user to create its own pool and support multiple pools running simultaneously. It should provide all of the necessary functionalities for pool owners to manage their pools.</p>
+<h2 id="contracts">Contracts</h2>
+<h3 id="financialpoolmanager">FinancialPoolManager</h3>
+<h4 id="variables">Variables</h4>
+<ul>
+<li>
+<p><code>struct participantInfo</code>: The information regarding a participant in a pool. Includes:</p>
+</li>
+<li>
+<p><code>bool received</code>: Specifies if the participant has already been selected to receive the good’s value.</p>
+</li>
+<li>
+<p><code>bool canReceive</code>: Specifies if the participant is eligible for receiving the good’s value.</p>
+</li>
+<li>
+<p><code>uint256 payments</code>: The number of payments that the user already did.</p>
+</li>
+<li>
+<p><code>struct pool</code>: The information regarding a financial pool. Include:</p>
+</li>
+<li>
+<p><code>address owner</code>: Pool owner.</p>
+</li>
+<li>
+<p><code>string targetGood</code>: Name or description of the good being purchased.</p>
+</li>
+<li>
+<p><code>uint256 goodValue</code>: The total value required for the purchase in wei.</p>
+</li>
+<li>
+<p><code>uint256 balance</code>: The total value under the pool’s administration.</p>
+</li>
+<li>
+<p><code>uint256 minParticipants</code>: Minimum number of participants needed to activate the pool.</p>
+</li>
+<li>
+<p><code>uint256 totalParticipants</code>: The number of participants in the pool.</p>
+</li>
+<li>
+<p><code>address[] participants</code>: List of participants.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; participantInfo) participantsInfo</code>: Maps participants to their <code>participantInfo</code>.</p>
+</li>
+<li>
+<p><code>uint256 winnersCount</code>: Count the number of winners.</p>
+</li>
+<li>
+<p><code>uint256 installments</code>: Total number of installments (duration in months).</p>
+</li>
+<li>
+<p><code>uint256 activationDate</code>: The <code>block.timestamp</code> of the date when the pool was activated.</p>
+</li>
+<li>
+<p><code>uint256 installmentValue</code>: The value which should be payed for each installment.</p>
+</li>
+<li>
+<p><code>string memory status</code>: The current state of the pool, which can be “accepting_participants”, “active”, “canceled” and “finished”.</p>
+</li>
+<li>
+<p><code>mapping(uint256 =&gt; pool) internal pools</code>: Maps pool’s ID to a <code>pool</code>.</p>
+</li>
+<li>
+<p><code>uint256 public currentId</code>: The value of the latest id.</p>
+</li>
+</ul>
+<h4 id="functions">Functions</h4>
+<ul>
+<li>
+<p><code>createPool(string memory targetGood, uint256 goodValue, uint256 minParticipants, uint256 installments) external returns (uint256)</code></p>
+</li>
+<li>
+<p>Increment <code>currentId</code></p>
+</li>
+<li>
+<p>Initialize <code>pools[currentId]</code> with:</p>
+</li>
+<li>
+<p><code>pools[currentId].owner</code> as <code>msg.sender</code>.</p>
+</li>
+<li>
+<p><code>pools[currentId].targetGood</code> as <code>targetGood</code>.</p>
+</li>
+<li>
+<p><code>pools[currentId].goodValue</code> as <code>goodValue</code>.</p>
+</li>
+<li>
+<p><code>pools[currentId].minParticipants</code> as <code>minParticipants</code>.</p>
+</li>
+<li>
+<p><code>pools[currentId].installments</code> as <code>installments</code></p>
+</li>
+<li>
+<p><code>pools[currentId].installmentValue</code> as <code>goodValue</code>/<code>installments</code>.</p>
+</li>
+<li>
+<p><code>pools[currentId].status</code> as “accepting_participants”.</p>
+</li>
+<li>
+<p>Returns the assigned <code>currentId</code>.</p>
+</li>
+<li>
+<p><code>activatePool(uint256 poolId) external</code></p>
+</li>
+<li>
+<p>Checks if:</p>
+</li>
+<li>
+<p><code>poolId</code> is valid.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>pools[poolId].owner</code>.</p>
+</li>
+<li>
+<p><code>pools[poolId]totalParticipants</code> is greater or equal to <code>pools[poolId]minParticipants</code>.</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].activationDate</code> to <code>block.timestamp</code>.</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].status</code> to “active”.</p>
+</li>
+<li>
+<p><code>deletePool(uint256 poolId) external</code></p>
+</li>
+<li>
+<p>Checks if:</p>
+</li>
+<li>
+<p><code>poolId</code> is valid.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>pools[poolId].owner</code>.</p>
+</li>
+<li>
+<p><code>pools[poolId].status</code> is “accepting_participants”.</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].status</code> to “canceled”.</p>
+</li>
+<li>
+<p><code>participateInPool(uint256 poolId) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>poolId</code> is valid.</p>
+</li>
+<li>
+<p><code>pools[poolId].status</code> is “accepting_participants”.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is not in <code>pools[poolId].participants</code>.</p>
+</li>
+<li>
+<p>Increment <code>pools[poolId].totalParticipants</code></p>
+</li>
+<li>
+<p>Add <code>msg.sender</code> to <code>pools[poolId].participants</code>.</p>
+</li>
+<li>
+<p><code>leavePool(uint256 poolId) external</code></p>
+</li>
+<li>
+<p>Checks if:</p>
+</li>
+<li>
+<p><code>poolId</code> is valid.</p>
+</li>
+<li>
+<p><code>pools[poolId].status</code> is “accepting_participants”.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is in <code>pools[poolId].participants</code>.</p>
+</li>
+<li>
+<p>Set <code>index</code> as the <code>msg.sender</code> index in <code>pools[poolId].participants</code>.</p>
+</li>
+<li>
+<p>Decrement <code>pools[poolId].totalParticipants</code></p>
+</li>
+<li>
+<p>Execute <code>delete pools[poolId].participants[index]</code>.</p>
+</li>
+<li>
+<p>Copy the last entry in <code>pools[poolId].participants</code> to <code>pools[poolId].participants[index]</code>.</p>
+</li>
+<li>
+<p>Execute <code>pools[poolId].participants.pop()</code>.</p>
+</li>
+<li>
+<p><code>payInstallment(uint256 poolId) external payable</code></p>
+</li>
+<li>
+<p>Checks if:</p>
+</li>
+<li>
+<p><code>poolId</code> is valid.</p>
+</li>
+<li>
+<p><code>pools[poolId].status</code> is “active”.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is in <code>pools[poolId].participants</code>.</p>
+</li>
+<li>
+<p>The value sent is equal to <code>installmentValue</code>.</p>
+</li>
+<li>
+<p>Calculate <code>duePayments</code> as floor((<code>block.timestamp</code> - <code>activationDate</code>) / 30 <code>days</code>).</p>
+</li>
+<li>
+<p>Checks if:</p>
+</li>
+<li>
+<p><code>pools[poolId].participantsInfo[msg.sender].payments</code> is smaller than <code>duePayments</code>.</p>
+</li>
+<li>
+<p>Increment the caller’s <code>payments</code> by one.</p>
+</li>
+<li>
+<p>Increment <code>pool[poolId].balance</code> by <code>msg.value</code>.</p>
+</li>
+<li>
+<p>If <code>pools[poolId].participantsInfo[msg.sender].payments</code> is equal to <code>duePayments</code> and <code>pools[poolId].participantsInfo[msg.sender].received</code> is <code>false</code>:</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].participantsInfo[msg.sender].canReceive</code> to <code>true</code>.</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].participantsInfo[msg.sender].canReceive</code> to <code>false</code>.</p>
+</li>
+<li>
+<p>If <code>pool[poolId].balance</code> is greater or equal than <code>goodValue</code>:</p>
+</li>
+<li>
+<p>Select a <code>winner</code> as random address from <code>pools[poolId].participants</code>, filtering for those whose <code>pools[poolId].participantsInfo[winner].canReceive</code> is <code>true</code> and <code>pools[poolId].participantsInfo[winner].received</code> is <code>false</code>.</p>
+</li>
+<li>
+<p>If no one is eligible:</p>
+</li>
+<li>
+<p>No transfer occurs.</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>Subtract <code>pool[poolId].goodValue</code> from the pool’s <code>pool[poolId].balance</code>.</p>
+</li>
+<li>
+<p>Transfer the <code>pool[poolId].goodValue</code> to <code>winner</code>.</p>
+</li>
+<li>
+<p>Increment <code>pool[poolId].winnersCount</code>.</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].participantsInfo[winner].received</code> to <code>true</code>.</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].participantsInfo[winner].canReceive</code> to <code>false</code>.</p>
+</li>
+<li>
+<p>If the value of <code>pools[poolId].winnerCount</code> equal to <code>pools[poolId].totalParticipants</code>:</p>
+</li>
+<li>
+<p>Set <code>pools[poolId].status</code> to “finished”.</p>
+</li>
+<li>
+<p><code>getPool(uint256 poolId) external view returns (address, string memory, uint256, uint256, uint256, uint256, uint256, uint256, uint256, string memory)</code></p>
+</li>
+<li>
+<p>Checks if:</p>
+</li>
+<li>
+<p><code>poolId</code> is valid.</p>
+</li>
+<li>
+<p>Return <code>pools[poolId].owner</code>, <code>pools[poolId].targetGood</code>, <code>pools[poolId].goodValue</code>, <code>pools[poolId].minParticipants</code>, <code>pools[poolId].totalParticipants</code>, <code>pools[poolId].winnersCount</code>, <code>pools[poolId].installments</code>, <code>pools[poolId].activationDate</code>, <code>pools[poolId].installmentValue</code>, <code>pools[poolId].status</code>.</p>
+</li>
+</ul>
+<h1 id="response-format">Response Format</h1>
+<p>Your response should be a fully implemented Solidity contract that includes all the functionalities described above. Remember that your implementation must be complete, secure, well-documented, and structured with best practices in mind. No additional text or explanation is required — just the code.</p>
+</prompt>

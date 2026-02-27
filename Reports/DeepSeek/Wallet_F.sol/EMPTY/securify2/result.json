@@ -1,0 +1,15 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (pragma directive defines a prior version to 0.8.31. Changing pragma version to 0.8.31....)"
+    ],
+    "findings": [],
+    "infos": [],
+    "parser": {
+        "id": "securify2",
+        "mode": "solidity",
+        "version": "2025-09-12"
+    }
+}

@@ -1,0 +1,83 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:CryticCompile:Compilation warnings/errors on /sb/Consorcio_F.sol:
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> /sb/Consorcio_F.sol:196:17:
+    |
+196 |                 payable(winner).transfer(pool.goodValue);
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+INFO:root:contract /sb/Consorcio_F.sol:FinancialPoolManager:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 26.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Consorcio_F.sol:190:34: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:223:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:203:40: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+/sb/Consorcio_F.sol:76:4: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+/sb/Consorcio_F.sol:70:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:34:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Consorcio_F.sol:225:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 50659039041325835497812305941300959685805618291217746767262693003461994217472
+/sb/Consorcio_F.sol:73:10: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+/sb/Consorcio_F.sol:75:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+/sb/Consorcio_F.sol:94:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:95:71: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 11692013098647223345629478661730264157247460343808
+/sb/Consorcio_F.sol:117:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:118:71: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 205688069665150755269371147819668813122841983204197482918576128
+/sb/Consorcio_F.sol:146:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 0
+/sb/Consorcio_F.sol:147:71: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 215679573337205118357336120696157045389097155380324579848828881993728
+/sb/Consorcio_F.sol:83:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 0
+INFO:symExec:	====== Analysis Completed ======

@@ -1,0 +1,221 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,270,slither_0_11_3_weak_prng,weak-prng,"FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270) uses a weak PRNG: ""rand = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,p.balance))) % eligibleCount (../sb/Consorcio_F.sol#230-238)"" 
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,270,slither_0_11_3_reentrancy_eth,reentrancy-eth,"Reentrancy in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270):
+	External calls:
+	- (success,None) = winner.call{value: p.goodValue}() (../sb/Consorcio_F.sol#264)
+	State variables written after the call(s):
+	- p.status = finished (../sb/Consorcio_F.sol#268)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#46) can be used in cross function reentrancies:
+	- FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270)
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#93-111)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#68-90)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#114-127)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#277-307)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#149-169)
+	- FinancialPoolManager.onlyOwner(uint256) (../sb/Consorcio_F.sol#58-61)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#134-146)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#176-207)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,176,207,slither_0_11_3_incorrect_equality,incorrect-equality,"FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#176-207) uses a dangerous strict equality:
+	- info.payments == duePayments && ! info.received (../sb/Consorcio_F.sol#198)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,270,slither_0_11_3_incorrect_equality,incorrect-equality,"FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270) uses a dangerous strict equality:
+	- counter == rand (../sb/Consorcio_F.sol#247)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,241,241,slither_0_11_3_uninitialized_local,uninitialized-local,"FinancialPoolManager._selectWinner(uint256).counter (../sb/Consorcio_F.sol#241) is a local variable never initialized
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,240,240,slither_0_11_3_uninitialized_local,uninitialized-local,"FinancialPoolManager._selectWinner(uint256).index (../sb/Consorcio_F.sol#240) is a local variable never initialized
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,176,207,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#176-207) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(active)),Pool not active) (../sb/Consorcio_F.sol#182-185)
+	- require(bool,string)(p.isParticipant[msg.sender],Not a participant) (../sb/Consorcio_F.sol#186)
+	- require(bool,string)(msg.value == p.installmentValue,Incorrect installment value) (../sb/Consorcio_F.sol#187)
+	- require(bool,string)(info.payments < duePayments,No payment due) (../sb/Consorcio_F.sol#193)
+	- info.payments == duePayments && ! info.received (../sb/Consorcio_F.sol#198)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,149,169,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#149-169) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Cannot leave pool) (../sb/Consorcio_F.sol#151-155)
+	- require(bool,string)(p.isParticipant[msg.sender],Not a participant) (../sb/Consorcio_F.sol#156)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,134,146,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#134-146) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool not accepting participants) (../sb/Consorcio_F.sol#136-140)
+	- require(bool,string)(! p.isParticipant[msg.sender],Already participating) (../sb/Consorcio_F.sol#141)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,93,111,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#93-111) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Invalid pool status) (../sb/Consorcio_F.sol#99-103)
+	- require(bool,string)(p.totalParticipants >= p.minParticipants,Not enough participants) (../sb/Consorcio_F.sol#104-107)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,114,127,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#114-127) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool cannot be canceled) (../sb/Consorcio_F.sol#120-124)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,270,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270) uses timestamp for comparisons
+	Dangerous comparisons:
+	- counter == rand (../sb/Consorcio_F.sol#247)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,8,8,slither_0_11_3_solc_version,solc-version,"Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Consorcio_F.sol#8)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,270,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270):
+	- (success,None) = winner.call{value: p.goodValue}() (../sb/Consorcio_F.sol#264)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,264,264,oyente_060ca34_Callstack_Depth_Attack_Vulnerability,Callstack Depth Attack Vulnerability,Callstack Depth Attack Vulnerability
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,295,295,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,54,54,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,8,8,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,47,47,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currentId'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,54,54,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,54,54,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,59,59,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,68,68,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'createPool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,68,68,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'createPool'. Expected: [targetGood, goodValue, minParticipants, installments], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,68,68,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'createPool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,68,68,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'createPool'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,74,74,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,75,75,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,76,76,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,78,78,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,93,93,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'activatePool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,93,93,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'activatePool'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,99,99,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,104,104,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,105,105,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,114,114,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'deletePool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,114,114,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'deletePool'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,120,120,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,134,134,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'participateInPool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,134,134,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'participateInPool'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,136,136,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,141,141,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,145,145,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,149,149,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'leavePool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,149,149,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'leavePool'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,151,151,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,156,156,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,159,159,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,168,168,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,176,176,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'payInstallment'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,176,176,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'payInstallment'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,182,182,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,186,186,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,187,187,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,193,193,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,195,195,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ info ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,204,204,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,213,solhint_6_0_0_function_max_lines,function-max-lines,Function body contains 56 lines but allowed no more than 50 lines
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,213,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_selectWinner'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,213,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_selectWinner'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,213,213,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_selectWinner'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,217,217,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,222,222,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ eligibleCount ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,242,242,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,251,251,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ counter ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,258,258,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,265,265,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,277,277,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getPool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,277,277,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getPool'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,277,277,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getPool'
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,277,277,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getPool'. Expected: 10, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,189,189,ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp,Miners can manipulate program execution by selecting when to include the timestamp,Miners can manipulate program execution by selecting when to include the timestamp
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,233,233,ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp,Miners can manipulate program execution by selecting when to include the timestamp,Miners can manipulate program execution by selecting when to include the timestamp
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,109,109,ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp,Miners can manipulate program execution by selecting when to include the timestamp,Miners can manipulate program execution by selecting when to include the timestamp
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,217,217,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,242,242,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,159,159,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,217,217,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,242,242,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,14,14,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,8,8,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,281,281,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,54,54,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,54,54,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,59,59,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,74,74,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,75,75,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,76,76,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,78,78,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,99,99,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,100,100,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,101,101,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,102,102,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,103,103,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,104,104,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,105,105,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,106,106,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,107,107,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,120,120,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,121,121,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,122,122,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,123,123,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,124,124,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,136,136,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,137,137,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,138,138,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,139,139,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,140,140,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,141,141,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,145,145,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,151,151,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,152,152,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,153,153,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,154,154,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,155,155,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,156,156,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,159,159,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,159,159,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,161,161,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,168,168,semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix,use-prefix-decrement-not-postfix,Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,182,182,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,183,183,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,184,184,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,185,185,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,186,186,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,187,187,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,189,189,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,193,193,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,198,198,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,199,199,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,200,200,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,201,201,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,202,202,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,217,217,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,217,217,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,217,217,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,221,221,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,222,222,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,223,223,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,222,222,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,use-prefix-increment-not-postfix
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,242,242,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's ✅ Scan completed successfully. length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,242,242,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked • Parsed lines: ~100.0% block saves the overflow checks. • No ignore information available
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,242,242,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,246,246,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,247,247,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,248,248,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,249,249,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,250,250,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,251,251,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,252,252,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,247,247,semgrep_1_131_0_1_2_1_exact_balance_check,exact-balance-check,"Testing the balance of an account as a basis for some action has risks associated with unexpected receipt of ether or another token, including tokens deliberately transfered to cause such tests to fail, as an MEV attack."
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,251,251,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,258,258,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol,265,265,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.

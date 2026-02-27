@@ -1,0 +1,481 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 51,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 51,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 52,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 52,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 53,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 53,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 55,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 70,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 70,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 71,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 71,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 72,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 72,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 73,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 83,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 83,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 84,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 84,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 85,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 85,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 94,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 94,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 95,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 95,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 98,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 98,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 98,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 100,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 105,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 117,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 117,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 118,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 118,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 122,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 122,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 122,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 129,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 132,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 133,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 136,
+            "message": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.",
+            "name": "use-prefix-decrement-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 146,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 146,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 147,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 151,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 151,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 151,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 157,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 158,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 160,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 163,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 167,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 168,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 169,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 170,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 171,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 177,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 177,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 177,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 179,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 180,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 181,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 182,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 181,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 190,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 191,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 223,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 223,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "semgrep-1.131.0-1.2.1",
+        "mode": "solidity",
+        "version": "2025/08/06"
+    }
+}

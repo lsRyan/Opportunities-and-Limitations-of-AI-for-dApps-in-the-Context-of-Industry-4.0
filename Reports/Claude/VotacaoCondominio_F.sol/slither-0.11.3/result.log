@@ -1,0 +1,287 @@
+'solc --version' running
+'solc /sb/VotacaoCondominio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) has bitwise-xor operator ^ instead of the exponentiation operator **: 
+	 - inverse = (3 * denominator) ^ 2 (../sb/VotacaoCondominio_F.sol#1933)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-exponentiation
+
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)
+	- inverse = (3 * denominator) ^ 2 (../sb/VotacaoCondominio_F.sol#1933)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)
+	- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1937)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)
+	- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1938)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)
+	- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1939)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)
+	- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1940)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)
+	- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1941)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/VotacaoCondominio_F.sol#1918)
+	- inverse *= 2 - denominator * inverse (../sb/VotacaoCondominio_F.sol#1942)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) performs a multiplication on the result of a division:
+	- low = low / twos (../sb/VotacaoCondominio_F.sol#1921)
+	- result = low * inverse (../sb/VotacaoCondominio_F.sol#1948)
+Math.invMod(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1991-2037) performs a multiplication on the result of a division:
+	- quotient = gcd / remainder (../sb/VotacaoCondominio_F.sol#2013)
+	- (gcd,remainder) = (remainder,gcd - remainder * quotient) (../sb/VotacaoCondominio_F.sol#2015-2022)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#divide-before-multiply
+
+Time.get(Time.Delay) (../sb/VotacaoCondominio_F.sol#4298-4301) ignores return value by (delay,None,None) = self.getFull() (../sb/VotacaoCondominio_F.sol#4299)
+Votes._push(Checkpoints.Trace208,function(uint208,uint208) returns(uint208),uint208) (../sb/VotacaoCondominio_F.sol#4572-4578) ignores return value by store.push(clock(),op(store.latest(),delta)) (../sb/VotacaoCondominio_F.sol#4577)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return
+
+ERC20Permit.constructor(string).name (../sb/VotacaoCondominio_F.sol#5310) shadows:
+	- ERC20.name() (../sb/VotacaoCondominio_F.sol#4922-4924) (function)
+	- IERC20Metadata.name() (../sb/VotacaoCondominio_F.sol#4857) (function)
+CondoVotingSystem.voteOnProposal(uint256,bool).approve (../sb/VotacaoCondominio_F.sol#5583) shadows:
+	- ERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4990-4994) (function)
+	- IERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4828) (function)
+CondoVotingSystem.nonces(address).owner (../sb/VotacaoCondominio_F.sol#5751) shadows:
+	- Ownable.owner() (../sb/VotacaoCondominio_F.sol#92-94) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
+
+Time._getFullAt(Time.Delay,uint48) (../sb/VotacaoCondominio_F.sol#4279-4285) uses timestamp for comparisons
+	Dangerous comparisons:
+	- effect <= timepoint (../sb/VotacaoCondominio_F.sol#4284)
+Votes.delegateBySig(address,uint256,uint256,uint8,bytes32,bytes32) (../sb/VotacaoCondominio_F.sol#4483-4502) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp > expiry (../sb/VotacaoCondominio_F.sol#4491)
+ERC20Permit.permit(address,address,uint256,uint256,uint8,bytes32,bytes32) (../sb/VotacaoCondominio_F.sol#5313-5336) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp > deadline (../sb/VotacaoCondominio_F.sol#5322)
+CondoVotingSystem.voteOnProposal(uint256,bool) (../sb/VotacaoCondominio_F.sol#5583-5625) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(clock() - proposals[id].voteStart <= voteTimeout,Voting period has ended) (../sb/VotacaoCondominio_F.sol#5593-5596)
+CondoVotingSystem.endVote(uint256) (../sb/VotacaoCondominio_F.sol#5632-5668) uses timestamp for comparisons
+	Dangerous comparisons:
+	- balanceOf(msg.sender) > 0 && clock() - proposal.voteStart > voteTimeout (../sb/VotacaoCondominio_F.sol#5643)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+ECDSA.tryRecover(bytes32,bytes) (../sb/VotacaoCondominio_F.sol#291-310) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#301-305)
+SafeCast.toUint(bool) (../sb/VotacaoCondominio_F.sol#1608-1612) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1609-1611)
+Panic.panic(uint256) (../sb/VotacaoCondominio_F.sol#1667-1673) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1668-1672)
+Math.add512(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1701-1706) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1702-1705)
+Math.mul512(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1713-1722) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1717-1721)
+Math.tryMul(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1749-1760) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1752-1756)
+Math.tryDiv(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1765-1773) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1768-1771)
+Math.tryMod(uint256,uint256) (../sb/VotacaoCondominio_F.sol#1778-1786) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1781-1784)
+Math.mulDiv(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#1880-1951) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1903-1910)
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#1916-1925)
+Math.tryModExp(uint256,uint256,uint256) (../sb/VotacaoCondominio_F.sol#2085-2109) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2087-2108)
+Math.tryModExp(bytes,bytes,bytes) (../sb/VotacaoCondominio_F.sol#2125-2147) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2137-2146)
+Math.log2(uint256) (../sb/VotacaoCondominio_F.sol#2288-2327) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2324-2326)
+Strings.toString(uint256) (../sb/VotacaoCondominio_F.sol#2542-2560) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2547-2549)
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2552-2554)
+Strings.toChecksumHexString(address) (../sb/VotacaoCondominio_F.sol#2608-2626) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2613-2615)
+Strings.escapeJSON(string) (../sb/VotacaoCondominio_F.sol#2943-2973) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2967-2970)
+Strings._unsafeReadBytesOffset(bytes,uint256) (../sb/VotacaoCondominio_F.sol#2981-2986) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#2983-2985)
+MessageHashUtils.toEthSignedMessageHash(bytes32) (../sb/VotacaoCondominio_F.sol#3019-3025) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3020-3024)
+MessageHashUtils.toDataWithIntendedValidatorHash(address,bytes32) (../sb/VotacaoCondominio_F.sol#3058-3068) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3062-3067)
+MessageHashUtils.toTypedDataHash(bytes32,bytes32) (../sb/VotacaoCondominio_F.sol#3079-3087) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3080-3086)
+StorageSlot.getAddressSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3158-3162) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3159-3161)
+StorageSlot.getBooleanSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3167-3171) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3168-3170)
+StorageSlot.getBytes32Slot(bytes32) (../sb/VotacaoCondominio_F.sol#3176-3180) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3177-3179)
+StorageSlot.getUint256Slot(bytes32) (../sb/VotacaoCondominio_F.sol#3185-3189) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3186-3188)
+StorageSlot.getInt256Slot(bytes32) (../sb/VotacaoCondominio_F.sol#3194-3198) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3195-3197)
+StorageSlot.getStringSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3203-3207) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3204-3206)
+StorageSlot.getStringSlot(string) (../sb/VotacaoCondominio_F.sol#3212-3216) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3213-3215)
+StorageSlot.getBytesSlot(bytes32) (../sb/VotacaoCondominio_F.sol#3221-3225) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3222-3224)
+StorageSlot.getBytesSlot(bytes) (../sb/VotacaoCondominio_F.sol#3230-3234) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3231-3233)
+ShortStrings.toString(ShortString) (../sb/VotacaoCondominio_F.sol#3300-3309) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3304-3307)
+Checkpoints._unsafeAccess(Checkpoints.Checkpoint224[],uint256) (../sb/VotacaoCondominio_F.sol#3788-3796) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3792-3795)
+Checkpoints._unsafeAccess(Checkpoints.Checkpoint208[],uint256) (../sb/VotacaoCondominio_F.sol#3991-3999) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#3995-3998)
+Checkpoints._unsafeAccess(Checkpoints.Checkpoint160[],uint256) (../sb/VotacaoCondominio_F.sol#4194-4202) uses assembly
+	- INLINE ASM (../sb/VotacaoCondominio_F.sol#4198-4201)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+4 different versions of Solidity are used:
+	- Version constraint ^0.8.20 is used by:
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#10)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#42)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#239)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#456)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#1621)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#1682)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#2433)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#2503)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#2995)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#3097)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#3243)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#3367)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#3528)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#3580)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#4211)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#4345)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#4876)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#5277)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#5356)
+		-^0.8.20 (../sb/VotacaoCondominio_F.sol#5439)
+	- Version constraint >=0.8.4 is used by:
+		->=0.8.4 (../sb/VotacaoCondominio_F.sol#143)
+		->=0.8.4 (../sb/VotacaoCondominio_F.sol#228)
+		->=0.8.4 (../sb/VotacaoCondominio_F.sol#4599)
+	- Version constraint >=0.4.16 is used by:
+		->=0.4.16 (../sb/VotacaoCondominio_F.sol#207)
+		->=0.4.16 (../sb/VotacaoCondominio_F.sol#423)
+		->=0.4.16 (../sb/VotacaoCondominio_F.sol#4765)
+		->=0.4.16 (../sb/VotacaoCondominio_F.sol#5183)
+	- Version constraint >=0.6.2 is used by:
+		->=0.6.2 (../sb/VotacaoCondominio_F.sol#4848)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#different-pragma-directives-are-used
+
+ERC20._update(address,address,uint256) (../sb/VotacaoCondominio_F.sol#5046-5074) has costly operations inside a loop:
+	- _totalSupply += value (../sb/VotacaoCondominio_F.sol#5049)
+	Calls stack containing the loop:
+		CondoVotingSystem.constructor(uint256,address[])
+		ERC20._transfer(address,address,uint256)
+		CondoVotingSystem._update(address,address,uint256)
+		ERC20Votes._update(address,address,uint256)
+ERC20._update(address,address,uint256) (../sb/VotacaoCondominio_F.sol#5046-5074) has costly operations inside a loop:
+	- _totalSupply -= value (../sb/VotacaoCondominio_F.sol#5064)
+	Calls stack containing the loop:
+		CondoVotingSystem.constructor(uint256,address[])
+		ERC20._transfer(address,address,uint256)
+		CondoVotingSystem._update(address,address,uint256)
+		ERC20Votes._update(address,address,uint256)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#costly-operations-inside-a-loop
+
+Context._contextSuffixLength() (../sb/VotacaoCondominio_F.sol#31-33) is never used and should be removed
+Context._msgData() (../sb/VotacaoCondominio_F.sol#27-29) is never used and should be removed
+ERC20._burn(address,uint256) (../sb/VotacaoCondominio_F.sol#5099-5104) is never used and should be removed
+Votes._add(uint208,uint208) (../sb/VotacaoCondominio_F.sol#4580-4582) is never used and should be removed
+Votes._getTotalSupply() (../sb/VotacaoCondominio_F.sol#4461-4463) is never used and should be removed
+Votes._subtract(uint208,uint208) (../sb/VotacaoCondominio_F.sol#4584-4586) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#10)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#42)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#239)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#456)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#1621)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#1682)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#2433)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#2503)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#2995)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3097)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3243)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3367)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3528)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#3580)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#4211)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#4345)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#4876)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#5277)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#5356)
+	- ^0.8.20 (../sb/VotacaoCondominio_F.sol#5439)
+Version constraint >=0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables.
+It is used by:
+	- >=0.8.4 (../sb/VotacaoCondominio_F.sol#143)
+	- >=0.8.4 (../sb/VotacaoCondominio_F.sol#228)
+	- >=0.8.4 (../sb/VotacaoCondominio_F.sol#4599)
+Version constraint >=0.4.16 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector.
+It is used by:
+	- >=0.4.16 (../sb/VotacaoCondominio_F.sol#207)
+	- >=0.4.16 (../sb/VotacaoCondominio_F.sol#423)
+	- >=0.4.16 (../sb/VotacaoCondominio_F.sol#4765)
+	- >=0.4.16 (../sb/VotacaoCondominio_F.sol#5183)
+Version constraint >=0.6.2 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- MissingEscapingInFormatting
+	- ArraySliceDynamicallyEncodedBaseType
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow.
+It is used by:
+	- >=0.6.2 (../sb/VotacaoCondominio_F.sol#4848)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Function IERC6372.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#219) is not in mixedCase
+Function EIP712._EIP712Name() (../sb/VotacaoCondominio_F.sol#3507-3509) is not in mixedCase
+Function EIP712._EIP712Version() (../sb/VotacaoCondominio_F.sol#3518-3520) is not in mixedCase
+Function Votes.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#4406-4412) is not in mixedCase
+Function IERC20Permit.DOMAIN_SEPARATOR() (../sb/VotacaoCondominio_F.sol#5268) is not in mixedCase
+Function ERC20Permit.DOMAIN_SEPARATOR() (../sb/VotacaoCondominio_F.sol#5345-5347) is not in mixedCase
+Function CondoVotingSystem.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#5728-5730) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Math.log2(uint256) (../sb/VotacaoCondominio_F.sol#2288-2327) uses literals with too many digits:
+	- r = r | byte(uint256,uint256)(x >> r,0x0000010102020202030303030303030300000000000000000000000000000000) (../sb/VotacaoCondominio_F.sol#2325)
+ShortStrings.slitherConstructorConstantVariables() (../sb/VotacaoCondominio_F.sol#3277-3359) uses literals with too many digits:
+	- FALLBACK_SENTINEL = 0x00000000000000000000000000000000000000000000000000000000000000FF (../sb/VotacaoCondominio_F.sol#3279)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+/sb/VotacaoCondominio_F.sol analyzed (30 contracts with 100 detectors), 74 result(s) found

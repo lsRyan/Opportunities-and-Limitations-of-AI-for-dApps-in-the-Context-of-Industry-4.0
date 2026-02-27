@@ -1,0 +1,293 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,8,8,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,8,8,slither_0_11_3_solc_version,solc-version,"Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Consorcio_F.sol#8)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,8,8,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,16,16,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'FinancialPoolManager'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,16,16,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,46,46,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currentId'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,49,49,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'PoolCreated'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,49,49,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'PoolCreated'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,49,49,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [goodValue] on Event [PoolCreated] could be Indexed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,49,49,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'PoolCreated'. Expected: [poolId, owner, targetGood, goodValue], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,50,50,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'PoolActivated'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,50,50,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'PoolActivated'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,50,50,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [activationDate] on Event [PoolActivated] could be Indexed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,50,50,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'PoolActivated'. Expected: [poolId, activationDate], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,51,51,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'PoolCanceled'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,51,51,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'PoolCanceled'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,51,51,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'PoolCanceled'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,52,52,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ParticipantJoined'. Expected: [poolId, participant], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,52,52,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ParticipantJoined'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,52,52,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ParticipantJoined'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,53,53,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ParticipantLeft'. Expected: [poolId, participant], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,53,53,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ParticipantLeft'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,53,53,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ParticipantLeft'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,54,54,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'InstallmentPaid'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,54,54,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [InstallmentPaid] could be Indexed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,54,54,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'InstallmentPaid'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,54,54,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'InstallmentPaid'. Expected: [poolId, participant, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,55,55,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'WinnerSelected'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,55,55,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [WinnerSelected] could be Indexed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,55,55,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'WinnerSelected'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,55,55,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'WinnerSelected'. Expected: [poolId, winner, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,56,56,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'PoolFinished'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,56,56,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'PoolFinished'. Expected: [poolId], Found: []"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,56,56,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'PoolFinished'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,66,66,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'createPool'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,72,72,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,72,72,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,72,72,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,72,72,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,72,72,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 36 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,73,73,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,73,73,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,73,73,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 46 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,73,73,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,73,73,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,74,74,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,74,74,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,74,74,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 38 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,74,74,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,74,74,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,75,75,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,75,75,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,75,75,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,75,75,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,75,75,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 39 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,77,77,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,77,77,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,101,101,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'activatePool'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,101,119,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#101-119) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(msg.sender == pool.owner,Only pool owner can activate) (../sb/Consorcio_F.sol#105)
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#106-109)
+	- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Minimum participants requirement not met) (../sb/Consorcio_F.sol#110-113)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,102,102,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,102,102,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,102,102,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,102,102,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,105,105,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,105,105,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,106,106,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,106,106,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,106,106,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,106,106,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,106,106,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,107,107,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,107,107,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,108,108,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,108,108,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,109,109,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,109,109,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,110,110,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,110,110,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,110,110,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 40 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,110,110,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,110,110,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,111,111,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,111,111,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,111,111,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,112,112,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,112,112,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,113,113,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,113,113,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,125,125,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'deletePool'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,125,138,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#125-138) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(msg.sender == pool.owner,Only pool owner can delete) (../sb/Consorcio_F.sol#129)
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Can only delete pools accepting participants) (../sb/Consorcio_F.sol#130-133)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,126,126,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,126,126,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,126,126,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,126,126,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,129,129,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,129,129,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,130,130,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,130,130,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,130,130,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,130,130,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 44 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,130,130,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,131,131,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,131,131,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,132,132,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,132,132,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,133,133,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,133,133,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,144,144,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'participateInPool'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,144,167,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#144-167) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#148-151)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,145,145,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,145,145,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,145,145,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,145,145,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,148,148,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,148,148,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,148,148,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,148,148,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,148,148,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,149,149,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,149,149,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,150,150,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,150,150,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,151,151,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,151,151,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,155,155,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,155,155,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,155,155,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,155,155,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,155,155,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,155,155,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,161,161,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,161,161,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,163,163,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,163,163,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,173,173,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'leavePool'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,173,202,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#173-202) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Can only leave pools accepting participants) (../sb/Consorcio_F.sol#177-180)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,174,174,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,174,174,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,174,174,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,174,174,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,177,177,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 43 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,177,177,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,177,177,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,177,177,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,177,177,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,178,178,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,178,178,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,179,179,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,179,179,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,180,180,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,180,180,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,183,183,slither_0_11_3_uninitialized_local,uninitialized-local,"FinancialPoolManager.leavePool(uint256).index (../sb/Consorcio_F.sol#183) is a local variable never initialized
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,185,185,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,185,185,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,185,185,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,185,185,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,185,185,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,185,185,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,192,192,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,192,192,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,194,194,semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix,use-prefix-decrement-not-postfix,Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,194,194,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,198,198,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,208,251,slither_0_11_3_incorrect_equality,incorrect-equality,"FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#208-251) uses a dangerous strict equality:
+	- participantInfo.payments == duePayments && ! participantInfo.received (../sb/Consorcio_F.sol#241)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,208,251,slither_0_11_3_timestamp,timestamp,"FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#208-251) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(active)),Pool is not active) (../sb/Consorcio_F.sol#212-215)
+	- require(bool,string)(msg.value == pool.installmentValue,Incorrect installment value) (../sb/Consorcio_F.sol#226)
+	- require(bool,string)(participantInfo.payments < duePayments,No payment due yet) (../sb/Consorcio_F.sol#232)
+	- participantInfo.payments == duePayments && ! participantInfo.received (../sb/Consorcio_F.sol#241)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,208,208,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'payInstallment'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,209,209,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,209,209,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,209,209,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,209,209,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,212,212,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,212,212,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,213,213,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,214,214,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,215,215,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,219,219,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,219,219,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,219,219,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,219,219,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,219,219,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,219,219,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,225,225,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,225,225,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,226,226,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,226,226,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,229,229,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,232,232,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,232,232,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,235,235,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ participantInfo ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,235,235,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,241,241,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,242,242,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,243,243,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,244,244,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,245,245,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,248,248,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,257,303,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in FinancialPoolManager._selectAndPayWinner(uint256) (../sb/Consorcio_F.sol#257-303):
+	External calls:
+	- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#293)
+	Event emitted after the call(s):
+	- PoolFinished(poolId) (../sb/Consorcio_F.sol#301)
+	- WinnerSelected(poolId,winner,pool.goodValue) (../sb/Consorcio_F.sol#296)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,257,303,slither_0_11_3_reentrancy_eth,reentrancy-eth,"Reentrancy in FinancialPoolManager._selectAndPayWinner(uint256) (../sb/Consorcio_F.sol#257-303):
+	External calls:
+	- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#293)
+	State variables written after the call(s):
+	- pool.status = finished (../sb/Consorcio_F.sol#300)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#43) can be used in cross function reentrancies:
+	- FinancialPoolManager._generateRandom(uint256,uint256) (../sb/Consorcio_F.sol#311-323)
+	- FinancialPoolManager._selectAndPayWinner(uint256) (../sb/Consorcio_F.sol#257-303)
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#101-119)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#66-95)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#125-138)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#339-371)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#173-202)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#144-167)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#208-251)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,257,303,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in FinancialPoolManager._selectAndPayWinner(uint256) (../sb/Consorcio_F.sol#257-303):
+	- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#293)
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,257,257,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_selectAndPayWinner'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,264,264,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,264,264,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,264,264,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,264,264,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,264,264,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,264,264,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,268,268,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,269,269,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,270,270,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,270,270,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,270,270,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ eligibleCount ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,271,271,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,285,285,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,285,285,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,293,293,oyente_060ca34_Callstack_Depth_Attack_Vulnerability,Callstack Depth Attack Vulnerability,Callstack Depth Attack Vulnerability
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,294,294,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,294,294,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,311,323,slither_0_11_3_weak_prng,weak-prng,"FinancialPoolManager._generateRandom(uint256,uint256) (../sb/Consorcio_F.sol#311-323) uses a weak PRNG: ""uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,msg.sender,poolId,pools[poolId].winnersCount))) % max (../sb/Consorcio_F.sol#312-322)"" 
+"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,311,311,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_generateRandom'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,339,339,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getPool'
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,342,342,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,355,355,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,355,355,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,355,355,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,355,355,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,355,355,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol,359,359,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow

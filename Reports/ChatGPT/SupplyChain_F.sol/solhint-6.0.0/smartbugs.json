@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": null,
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": "'/sb/bin/do_solidity.sh' '/sb/SupplyChain_F.sol' '/sb/bin'",
+        "image": "smartbugs/solhint:6.0.0",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmpmi8ue5c_": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 6.529070138931274,
+        "exit_code": 1,
+        "logs": "result.log",
+        "output": null,
+        "start": 1770731999.901545
+    },
+    "runid": "20260210_1359",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": null,
+        "cpu_quota": null,
+        "entrypoint": "'$BIN/do_solidity.sh' '$FILENAME' '$BIN'",
+        "id": "solhint-6.0.0",
+        "image": "smartbugs/solhint:6.0.0",
+        "info": "Open source project for linting solidity code. This project provide both security and style guide validations.",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "Solhint",
+        "origin": "https://github.com/protofire/solhint",
+        "output": null,
+        "parser": "parser.py",
+        "solc": true,
+        "version": "6.0.0"
+    }
+}

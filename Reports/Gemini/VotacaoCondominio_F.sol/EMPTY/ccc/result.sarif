@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/Fraunhofer-AISEC/cpg-contract-checker",
+                    "name": "CCC",
+                    "rules": [],
+                    "version": "#c531ae3 (imc-24)"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

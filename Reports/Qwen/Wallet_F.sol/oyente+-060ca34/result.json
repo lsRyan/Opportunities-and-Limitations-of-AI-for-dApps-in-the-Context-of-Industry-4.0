@@ -1,0 +1,65 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 5,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "line": 239,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 10,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "line": 45,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 17,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "line": 104,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 9,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "line": 103,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 28,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "line": 723,
+            "name": "Callstack Depth Attack Vulnerability"
+        },
+        {
+            "column": 13,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "line": 628,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 43,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "line": 280,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Exchange 27.8%",
+        "coverage Oracle 27.8%",
+        "coverage Wallet 33.5%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

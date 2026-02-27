@@ -1,0 +1,45 @@
+Extract contract ERC721Utils from /sb/Cartorio_F.sol
+Extract contract Math from /sb/Cartorio_F.sol
+Extract contract Panic from /sb/Cartorio_F.sol
+Extract contract RealEstateNotary from /sb/Cartorio_F.sol
+Extract contract SafeCast from /sb/Cartorio_F.sol
+Extract contract SignedMath from /sb/Cartorio_F.sol
+Extract contract Strings from /sb/Cartorio_F.sol
+Extracted 7 contract(s) from /sb/Cartorio_F.sol
+[0;32m> Created "fuzzMe"[0m
+[0;32m> To fuzz contracts:[0m
+  chmod +x fuzzMe
+  ./fuzzMe
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/ReentrancyAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/NormalAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 11:    33 Aborted                 (core dumped) ./fuzzer --file contracts/Panic.sol.json --name Panic --assets assets/ --duration 512 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 12:    34 Aborted                 (core dumped) ./fuzzer --file contracts/Math.sol.json --name Math --assets assets/ --duration 512 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 13:    35 Aborted                 (core dumped) ./fuzzer --file contracts/ERC721Utils.sol.json --name ERC721Utils --assets assets/ --duration 512 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 14:    36 Aborted                 (core dumped) ./fuzzer --file contracts/Strings.sol.json --name Strings --assets assets/ --duration 512 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 15:    37 Aborted                 (core dumped) ./fuzzer --file contracts/RealEstateNotary.sol.json --name RealEstateNotary --assets assets/ --duration 512 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 16:    38 Aborted                 (core dumped) ./fuzzer --file contracts/SafeCast.sol.json --name SafeCast --assets assets/ --duration 512 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 17:    39 Aborted                 (core dumped) ./fuzzer --file contracts/SignedMath.sol.json --name SignedMath --assets assets/ --duration 512 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker

@@ -1,0 +1,1874 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 49,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 504,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2292,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2294,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 47,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2296,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 49,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2298,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 54,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2300,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2302,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 48,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2304,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2306,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 47,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2308,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 58,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2310,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2937,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2939,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2941,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2943,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2945,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2947,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3044,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3046,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3048,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3050,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 53,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3052,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 14,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3163,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 18,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3164,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 18,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3165,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 18,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3166,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 18,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3167,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 18,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3168,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 18,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3169,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 48,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3234,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3266,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 29,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3268,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3599,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3600,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3601,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3602,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3603,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3604,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3605,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 58,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4592,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 61,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3548,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 19,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3559,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 37,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3711,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3776,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 20,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3890,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 15,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4127,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4240,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 19,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2516,
+            "name": "SOLIDITY_DIV_MUL",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2800,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3595,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3590,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3878,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 238,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 515,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2255,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2348,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3628,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3680,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4193,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4380,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4603,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4701,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4864,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2800,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3595,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 19,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3197,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 10,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 252,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 289,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 318,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 351,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 453,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 686,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 852,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 989,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1018,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1050,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1103,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2268,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2329,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3080,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3150,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3642,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4103,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4137,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4168,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4359,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4494,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4539,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4547,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4555,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4577,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4657,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4766,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 83,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 513,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3160,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3161,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3162,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3387,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3678,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4191,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4378,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 11,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4592,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4601,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4690,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4691,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4699,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4801,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 238,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 515,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2255,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2314,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2348,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2396,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2527,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2935,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3189,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3255,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3590,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3628,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3680,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4193,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4380,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4603,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4701,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4864,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2732,
+            "name": "SOLIDITY_SHOULD_NOT_BE_VIEW",
+            "severity": 1
+        },
+        {
+            "column": 64,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2348,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 64,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2396,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 78,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2732,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 69,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3312,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3326,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3339,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 68,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3383,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3399,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3412,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 72,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3460,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3474,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3487,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 72,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3535,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3547,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 274,
+            "name": "SOLIDITY_UPGRADE_TO_050",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 240,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 516,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 20,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1087,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2256,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2315,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2349,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2364,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2399,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2415,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2428,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2550,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2563,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2734,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2784,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 2971,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3194,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3199,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3260,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3614,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3630,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3681,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4194,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4381,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4604,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4702,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4865,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4809,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 88,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 88,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 93,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 25,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 93,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 360,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 42,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 360,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 60,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 360,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 367,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 367,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 699,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 34,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 699,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 51,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 699,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 68,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 699,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 705,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 705,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 711,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 711,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 719,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 36,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 719,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 54,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 719,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 73,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 719,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 725,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 725,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 731,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 29,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 731,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 744,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 744,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 750,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 750,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 758,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 758,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 47,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 758,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 64,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 758,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 764,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 29,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 764,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 770,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 770,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 777,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 36,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 777,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 777,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 783,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 783,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 789,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 789,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 804,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 36,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 804,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 53,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 804,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 70,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 804,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 86,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 804,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 810,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 810,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 816,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 816,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 823,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 823,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 823,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 829,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 829,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 835,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 835,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 843,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 35,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 843,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 843,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1121,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1121,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 53,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1121,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1126,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 37,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1126,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1131,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1131,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1131,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1136,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 37,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 1136,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3174,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3174,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 54,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3174,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3179,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3179,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3184,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 37,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3184,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3903,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3905,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 21,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3905,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3905,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 15,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 3907,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4204,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4204,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 48,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4204,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4209,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 44,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4209,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4399,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4399,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4404,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4404,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4710,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol",
+            "line": 4710,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "smartcheck",
+        "mode": "solidity",
+        "version": "2022/11/14"
+    }
+}

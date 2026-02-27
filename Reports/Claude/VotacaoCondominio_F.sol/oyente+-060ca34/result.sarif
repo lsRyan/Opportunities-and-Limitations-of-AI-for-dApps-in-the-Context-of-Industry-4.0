@@ -1,0 +1,77 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract CondoVotingSystem"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Claude/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 4935
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Integer Overflow"
+                    },
+                    "ruleId": "oyente_060ca34_Integer_Overflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract CondoVotingSystem"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Claude/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 32
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Integer Underflow"
+                    },
+                    "ruleId": "oyente_060ca34_Integer_Underflow"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/smartbugs/oyente_plus",
+                    "name": "Oyente+",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-101, DASP-3."
+                            },
+                            "id": "oyente_060ca34_Integer_Underflow",
+                            "name": "Integer Underflow"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-101, DASP-3."
+                            },
+                            "id": "oyente_060ca34_Integer_Overflow",
+                            "name": "Integer Overflow"
+                        }
+                    ],
+                    "version": "060ca34"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

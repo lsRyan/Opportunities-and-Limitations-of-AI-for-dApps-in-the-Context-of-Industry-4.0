@@ -1,0 +1,155 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5439,5439,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5440,5440,semgrep_1_131_0_1_2_1_use_ownable2step,use-ownable2step,"By demanding that the receiver of the owner permissions actively accept via a contract call of its own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally being transferred  to an address that cannot handle it."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5455,5455,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5456,5456,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5457,5457,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5458,5458,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5458,5458,semgrep_1_131_0_1_2_1_init_variables_with_default_value,init-variables-with-default-value,Uninitialized variables are assigned with the types default value. Explicitly initializing a variable with its default value costs unnecessary gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5471,5471,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5471,5471,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5472,5472,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5472,5472,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5473,5473,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5473,5473,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5474,5474,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5474,5474,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5475,5475,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5475,5475,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5476,5476,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5476,5476,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5477,5477,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5477,5477,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5478,5478,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5478,5478,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5479,5479,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5479,5479,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5480,5480,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5480,5480,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5481,5481,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5481,5481,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5488,5488,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5488,5488,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5489,5489,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5490,5490,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5490,5490,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5491,5491,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5491,5491,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5491,5491,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5491,5491,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5491,5491,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5492,5492,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5492,5492,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5492,5492,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5492,5492,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5492,5492,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5493,5493,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5494,5494,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5495,5495,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5495,5495,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5495,5495,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5496,5496,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5497,5497,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5498,5498,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5498,5498,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5498,5498,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5498,5498,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5498,5498,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5498,5498,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5499,5499,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5499,5499,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5499,5499,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5499,5499,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5500,5500,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5500,5500,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5500,5500,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5515,5515,ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp,Miners can manipulate program execution by selecting when to include the timestamp,Miners can manipulate program execution by selecting when to include the timestamp
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5521,5523,slither_0_11_3_naming_convention,naming-convention,"Function CondoVotingSystem.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#5521-5523) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5535,5535,slither_0_11_3_shadowing_local,shadowing-local,"CondoVotingSystem.nonces(address).owner (../sb/VotacaoCondominio_F.sol#5535) shadows:
+	- Ownable.owner() (../sb/VotacaoCondominio_F.sol#92-94) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5548,5548,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5621,5621,slither_0_11_3_shadowing_local,shadowing-local,"CondoVotingSystem.voteOnProposal(uint256,bool).approve (../sb/VotacaoCondominio_F.sol#5621) shadows:
+	- ERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4990-4994) (function)
+	- IERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4828) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5621,5660,slither_0_11_3_timestamp,timestamp,"CondoVotingSystem.voteOnProposal(uint256,bool) (../sb/VotacaoCondominio_F.sol#5621-5660) uses timestamp for comparisons
+	Dangerous comparisons:
+	- clock() - proposal.voteStart > voteTimeout (../sb/VotacaoCondominio_F.sol#5632)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5632,5632,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5644,5644,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5645,5645,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5646,5646,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5646,5646,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5647,5647,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5648,5648,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5648,5648,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5649,5649,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5649,5649,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5650,5650,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5650,5650,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5650,5650,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5651,5651,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5651,5651,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5652,5652,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5652,5652,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5667,5705,slither_0_11_3_timestamp,timestamp,"CondoVotingSystem.endVote(uint256) (../sb/VotacaoCondominio_F.sol#5667-5705) uses timestamp for comparisons
+	Dangerous comparisons:
+	- balanceOf(msg.sender) > 0 && (clock() - proposal.voteStart) > voteTimeout (../sb/VotacaoCondominio_F.sol#5677)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5677,5677,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5677,5677,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5678,5678,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5679,5679,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/VotacaoCondominio_F.sol,5721,5721,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.

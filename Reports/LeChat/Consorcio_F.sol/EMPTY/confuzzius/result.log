@@ -1,0 +1,68 @@
+2026-02-10 20:39:39,305 - Main     - INFO - [1mInitializing seed to 1427655.0[0m
+2026-02-10 20:39:40,173 - Fuzzer   - INFO - [1mFuzzing contract [1mFinancialPoolManager[0m[0m
+2026-02-10 20:39:40,458 - Analysis - INFO - [1mGeneration number 0 	 Code coverage: 28.11% (1149/4087) 	 Branch coverage: 33.50% (69/206) 	 Transactions: 19 (18 unique)   	 Time: 0.20351099967956543[0m
+2026-02-10 20:39:40,797 - Analysis - INFO - [1mGeneration number 1 	 Code coverage: 28.11% (1149/4087) 	 Branch coverage: 34.95% (72/206) 	 Transactions: 44 (32 unique)   	 Time: 0.5424404144287109[0m
+2026-02-10 20:39:43,795 - Analysis - INFO - [1mGeneration number 2 	 Code coverage: 29.53% (1207/4087) 	 Branch coverage: 38.35% (79/206) 	 Transactions: 82 (45 unique)   	 Time: 3.5400850772857666[0m
+2026-02-10 20:39:45,390 - Analysis - INFO - [1mGeneration number 3 	 Code coverage: 29.53% (1207/4087) 	 Branch coverage: 38.83% (80/206) 	 Transactions: 145 (63 unique)   	 Time: 5.135574102401733[0m
+2026-02-10 20:39:47,998 - Analysis - INFO - [1mGeneration number 4 	 Code coverage: 34.48% (1409/4087) 	 Branch coverage: 42.23% (87/206) 	 Transactions: 222 (80 unique)   	 Time: 7.743673086166382[0m
+2026-02-10 20:39:50,011 - Analysis - INFO - [1mGeneration number 5 	 Code coverage: 37.24% (1522/4087) 	 Branch coverage: 43.69% (90/206) 	 Transactions: 299 (98 unique)   	 Time: 9.755990982055664[0m
+2026-02-10 20:39:52,292 - Analysis - INFO - [1mGeneration number 6 	 Code coverage: 38.05% (1555/4087) 	 Branch coverage: 44.17% (91/206) 	 Transactions: 380 (116 unique)   	 Time: 12.03722357749939[0m
+2026-02-10 20:39:54,629 - Analysis - INFO - [1mGeneration number 7 	 Code coverage: 43.80% (1790/4087) 	 Branch coverage: 45.63% (94/206) 	 Transactions: 466 (134 unique)   	 Time: 14.374156475067139[0m
+2026-02-10 20:39:57,076 - Analysis - INFO - [1mGeneration number 8 	 Code coverage: 44.92% (1836/4087) 	 Branch coverage: 46.60% (96/206) 	 Transactions: 553 (151 unique)   	 Time: 16.82136583328247[0m
+2026-02-10 20:39:59,534 - Analysis - INFO - [1mGeneration number 9 	 Code coverage: 44.92% (1836/4087) 	 Branch coverage: 46.60% (96/206) 	 Transactions: 637 (169 unique)   	 Time: 19.279059886932373[0m
+2026-02-10 20:40:02,326 - Analysis - INFO - [1mGeneration number 10 	 Code coverage: 47.66% (1948/4087) 	 Branch coverage: 47.57% (98/206) 	 Transactions: 722 (187 unique)   	 Time: 22.071043968200684[0m
+2026-02-10 20:40:04,718 - Analysis - INFO - [1mGeneration number 11 	 Code coverage: 47.66% (1948/4087) 	 Branch coverage: 47.57% (98/206) 	 Transactions: 807 (204 unique)   	 Time: 24.46375799179077[0m
+2026-02-10 20:40:07,349 - Analysis - INFO - [1mGeneration number 12 	 Code coverage: 47.66% (1948/4087) 	 Branch coverage: 47.57% (98/206) 	 Transactions: 889 (222 unique)   	 Time: 27.094425439834595[0m
+2026-02-10 20:40:09,765 - Analysis - INFO - [1mGeneration number 13 	 Code coverage: 47.66% (1948/4087) 	 Branch coverage: 47.57% (98/206) 	 Transactions: 970 (240 unique)   	 Time: 29.510756969451904[0m
+2026-02-10 20:40:12,389 - Analysis - INFO - [1mGeneration number 14 	 Code coverage: 47.66% (1948/4087) 	 Branch coverage: 47.57% (98/206) 	 Transactions: 1050 (257 unique)   	 Time: 32.1344153881073[0m
+2026-02-10 20:40:14,745 - Analysis - INFO - [1mGeneration number 15 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1130 (275 unique)   	 Time: 34.49065113067627[0m
+2026-02-10 20:40:16,893 - Analysis - INFO - [1mGeneration number 16 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1211 (292 unique)   	 Time: 36.638290882110596[0m
+2026-02-10 20:40:19,342 - Analysis - INFO - [1mGeneration number 17 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1290 (310 unique)   	 Time: 39.08713722229004[0m
+2026-02-10 20:40:21,636 - Analysis - INFO - [1mGeneration number 18 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1366 (326 unique)   	 Time: 41.38155245780945[0m
+2026-02-10 20:40:23,970 - Analysis - INFO - [1mGeneration number 19 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1446 (343 unique)   	 Time: 43.71539855003357[0m
+2026-02-10 20:40:26,265 - Analysis - INFO - [1mGeneration number 20 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1519 (356 unique)   	 Time: 46.010215520858765[0m
+2026-02-10 20:40:28,440 - Analysis - INFO - [1mGeneration number 21 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1596 (367 unique)   	 Time: 48.18562364578247[0m
+2026-02-10 20:40:30,476 - Analysis - INFO - [1mGeneration number 22 	 Code coverage: 48.47% (1981/4087) 	 Branch coverage: 48.06% (99/206) 	 Transactions: 1677 (381 unique)   	 Time: 50.221248388290405[0m
+2026-02-10 20:40:31,106 - engine.EvolutionaryFuzzingEngine - ERROR - AttributeError exception is catched
+Traceback (most recent call last):
+  File "/root/fuzzer/engine/engine.py", line 169, in run
+    a.register_step(g=g, population=self.population, engine=self)
+  File "/root/fuzzer/engine/analysis/execution_trace_analysis.py", line 100, in register_step
+    self.symbolic_execution(population.indv_generator)
+  File "/root/fuzzer/engine/analysis/execution_trace_analysis.py", line 615, in symbolic_execution
+    argument = model[variable].as_long()
+AttributeError: 'NoneType' object has no attribute 'as_long'
+2026-02-10 20:40:31,106 - Analysis - INFO - [1m-----------------------------------------------------[0m
+2026-02-10 20:40:31,106 - Analysis - INFO - Number of generations: 	 22
+2026-02-10 20:40:31,106 - Analysis - INFO - Number of transactions: 	 1677 (381 unique)
+2026-02-10 20:40:31,106 - Analysis - INFO - Transactions per second: 	 33
+2026-02-10 20:40:31,106 - Analysis - INFO - Total code coverage: 	 48.47% (1981/4087)
+2026-02-10 20:40:31,106 - Analysis - INFO - Total branch coverage: 	 48.06% (99/206)
+2026-02-10 20:40:31,107 - Analysis - INFO - Total execution time: 	 50.85 seconds
+2026-02-10 20:40:31,107 - Analysis - INFO - Total memory consumption: 	 111.18 MB
+
+     ______            ______                _           
+    / ____/___  ____  / ____/_  __________  (_)_  _______
+   / /   / __ \/ __ \/ /_  / / / /_  /_  / / / / / / ___/
+  / /___/ /_/ / / / / __/ / /_/ / / /_/ /_/ / /_/ (__  ) 
+  \____/\____/_/ /_/_/    \__,_/ /___/___/_/\__,_/____/  
+
+delteed file
+Traceback (most recent call last):
+  File "fuzzer/main.py", line 372, in <module>
+    main()
+  File "fuzzer/main.py", line 232, in main
+    Fuzzer(contract_name, contract["abi"], contract['evm']['bytecode']['object'], contract['evm']['deployedBytecode']['object'], instrumented_evm, blockchain_state, solver, args, seed, source_map).run()
+  File "fuzzer/main.py", line 165, in run
+    engine.run(ng=settings.GENERATIONS)
+  File "/root/fuzzer/engine/engine.py", line 47, in profiled_func
+    result = func(*args, **kwargs)
+  File "/root/fuzzer/engine/engine.py", line 176, in run
+    raise e
+  File "/root/fuzzer/engine/engine.py", line 169, in run
+    a.register_step(g=g, population=self.population, engine=self)
+  File "/root/fuzzer/engine/analysis/execution_trace_analysis.py", line 100, in register_step
+    self.symbolic_execution(population.indv_generator)
+  File "/root/fuzzer/engine/analysis/execution_trace_analysis.py", line 615, in symbolic_execution
+    argument = model[variable].as_long()
+AttributeError: 'NoneType' object has no attribute 'as_long'

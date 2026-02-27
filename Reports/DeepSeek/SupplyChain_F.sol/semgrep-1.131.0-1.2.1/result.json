@@ -1,0 +1,453 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 2357,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 2357,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3182,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3183,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3184,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3185,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3186,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3599,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3599,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3619,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3620,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3621,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3634,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3635,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3636,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3661,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3661,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3666,
+            "message": "Replace state variable reads and writes within loops with local variable reads and writes.",
+            "name": "state-variable-read-in-a-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3672,
+            "message": "Replace state variable reads and writes within loops with local variable reads and writes.",
+            "name": "state-variable-read-in-a-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3677,
+            "message": "Replace state variable reads and writes within loops with local variable reads and writes.",
+            "name": "state-variable-read-in-a-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3923,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3924,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3925,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3931,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3932,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3933,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3969,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3970,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3971,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3972,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4094,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4095,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4096,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4116,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4200,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4201,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4202,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4203,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4204,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4205,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4216,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4229,
+            "message": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.",
+            "name": "use-prefix-decrement-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4288,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4324,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4325,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4326,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4327,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4328,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4329,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4330,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4331,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "best-practice",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4354,
+            "message": "By demanding that the receiver of the owner permissions actively accept via a contract call of its own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally being transferred  to an address that cannot handle it.",
+            "name": "use-ownable2step"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4381,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4382,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4383,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4384,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4385,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4386,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4421,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4421,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4421,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4423,
+            "message": "Replace state variable reads and writes within loops with local variable reads and writes.",
+            "name": "state-variable-read-in-a-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4470,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "semgrep-1.131.0-1.2.1",
+        "mode": "solidity",
+        "version": "2025/08/06"
+    }
+}

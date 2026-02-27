@@ -1,0 +1,74 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 73,
+            "contract": "AuthorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol",
+            "line": 46,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 45,
+            "contract": "AuthorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol",
+            "line": 4117,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 12,
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol",
+            "line": 60,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 24,
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol",
+            "line": 3587,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 73,
+            "contract": "PharmaHospital",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol",
+            "line": 46,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 34,
+            "contract": "PharmaHospital",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol",
+            "line": 4248,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 29,
+            "contract": "Prescriptions",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol",
+            "line": 3957,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Arrays 98.4%",
+        "coverage AuthorizationCertificates 94.2%",
+        "coverage Comparators 98.4%",
+        "coverage ERC1155Utils 98.4%",
+        "coverage Math 98.4%",
+        "coverage Panic 98.4%",
+        "coverage PharmaCompany 39.2%",
+        "coverage PharmaHospital 29.1%",
+        "coverage Prescriptions 37.4%",
+        "coverage SafeCast 98.4%",
+        "coverage SlotDerivation 98.4%",
+        "coverage StorageSlot 98.4%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

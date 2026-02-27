@@ -1,0 +1,388 @@
+<prompt>
+<h1 id="role">Role</h1>
+<p>You are a senior Ethereum smart contract developer responsible for implementing secure, efficient, well-documented Solidity contracts based on detailed specifications. Your work should follow industry-standard practices for structure, safety, and readability.</p>
+<h1 id="context">Context</h1>
+<p>A condo has requested the development of a smart contract for owners’ to make proposals and vote on them. You are the lead developer responsible for employing OpenZeppelin’s ERC20 standard token to implement this project with all of the required functionalities in a secure and extensible manner using Solidity and employing all of the best practices for decentralized applications.</p>
+<h1 id="objective">Objective</h1>
+<p>Your task is to develop a fully functional, well-commented, and secure Solidity contract that implements the CondoVotingSystem smart contract, as will be thoroughly described below. The code must:</p>
+<ul>
+<li>
+<p>Be secure, avoiding vulnerabilities such as reentrancy, integer overflows/underflows, access control issues, and all known vulnerabilities that could affect the contract’s functionalities.</p>
+</li>
+<li>
+<p>Be readable, using clear naming conventions, structured logic, and inline documentation (Solidity comments).</p>
+</li>
+<li>
+<p>Follow best practices for gas efficiency, modularity, and full integration of OpenZeppelin libraries.</p>
+</li>
+<li>
+<p>Employ OpenZeppelin’s ERC20 standard to determine voting power in each proposal.</p>
+</li>
+<li>
+<p>Use the latest Solidity compiler version you are familiar with.</p>
+</li>
+</ul>
+<h1 id="application">Application</h1>
+<h2 id="overview">Overview</h2>
+<p>The contract must implement a voting mechanism for property owners in a condominium. Key requirements include:</p>
+<ul>
+<li>
+<p>The token is minted during contract deployment to property owners. A list of owner should be provided, with each address receiving one token. If more tokens than addresses are minted, those should be awarded to the contract owner.</p>
+</li>
+<li>
+<p>Only token holders may propose or vote on proposals.</p>
+</li>
+<li>
+<p>Proposals must be voted on within a configurable time window, with early finalization only possible after a specific quorum is reached.</p>
+</li>
+<li>
+<p>The contract owner may modify voting timeout and quorum settings.</p>
+</li>
+<li>
+<p>Voting results are logged for future reference.</p>
+</li>
+</ul>
+<p>Importantly, the implementation must leverage ERC20Votes built-in functions to track voting power and votes, ensuring compatibility with governance systems. Note that the contract owner cannot vote, e.g., token’s owned by the contract owner cannot be used to vote.</p>
+<h2 id="contracts">Contracts</h2>
+<h3 id="condovotingsystem">CondoVotingSystem</h3>
+<h4 id="variables">Variables</h4>
+<ul>
+<li>
+<p><code>struct proposal</code>: A struct containing:</p>
+</li>
+<li>
+<p><code>address proposer</code>: The address of the proposal creator.</p>
+</li>
+<li>
+<p><code>uint48 voteStart</code>: The time in which proposal’s voting started.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; bool) voted</code> Maps each token owner to whether he has voted.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; bool) votes</code>: Maps each token owner to its vote (<code>true</code> = approve, <code>false</code> = reject).</p>
+</li>
+<li>
+<p><code>uint256 approvePower</code>: The total vote power to approve the proposal.</p>
+</li>
+<li>
+<p><code>uint256 rejectPower</code>: The total vote power to reject the proposal.</p>
+</li>
+<li>
+<p><code>string status</code>: The current proposal status. Can be set as: “UnderDeliberation”, “Voting”, “Approved”, “Rejected”, or “Canceled”.</p>
+</li>
+<li>
+<p><code>string description</code>: A string describing the proposal.</p>
+</li>
+<li>
+<p><code>uint256 budget</code>: The expected value needed to implement the proposal in wei.</p>
+</li>
+<li>
+<p><code>mapping(uint256 =&gt; proposal) private proposals</code>: Maps the id to its corresponding <code>proposal</code>.</p>
+</li>
+<li>
+<p><code>uint256 private voteTimeout</code>: Maximum voting time (in days). Defaults to 1 day at contract creation.</p>
+</li>
+<li>
+<p><code>uint256 private voteQuorum</code>: Minimum percentage of token holders required for a vote to be closed early. Defaults to 70% at contract creation.</p>
+</li>
+<li>
+<p><code>uint256 private currentId</code>: A private variable storing the latest proposal ID, defaulting to 0.</p>
+</li>
+</ul>
+<h4 id="functions">Functions</h4>
+<h5 id="standard-functions">Standard Functions</h5>
+<p>The contract should follow OpenZeppelin’s ERC20. Hence, the following libraries should be used:</p>
+<ul>
+<li>
+<p><code>ERC20</code></p>
+</li>
+<li>
+<p><code>ERC20Permit</code></p>
+</li>
+<li>
+<p><code>ERC20Votes</code></p>
+</li>
+<li>
+<p><code>Ownable</code></p>
+</li>
+</ul>
+<p>As per OpenZeppelin’s token wizard, the following functions should be present:</p>
+<ul>
+<li>
+<p><code>clock() public view override returns (uint48)</code></p>
+</li>
+<li>
+<p>Return uint48(<code>block.timestamp</code>).</p>
+</li>
+<li>
+<p><code>CLOCK_MODE() public pure override returns (string memory)</code></p>
+</li>
+<li>
+<p>Return “mode=timestamp”.</p>
+</li>
+<li>
+<p><code>_update(address from, address to, uint256 value) internal override(ERC20, ERC20Votes)</code></p>
+</li>
+<li>
+<p>Call super._update(<code>from</code>, <code>to</code>, <code>value</code>).</p>
+</li>
+<li>
+<p><code>nonces(address owner) public view override(ERC20Permit, Nonces) returns (uint256)</code></p>
+</li>
+<li>
+<p>Returns super.nonces(<code>owner</code>).</p>
+</li>
+</ul>
+<h5 id="custom-functions">Custom Functions</h5>
+<ul>
+<li>
+<p><code>constructor(uint256 amount, address[] tokenOwners) ERC20("Assembleia", "ASS") ERC20Permit("Assembleia") Ownable(msg.sender)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>amount</code> is greater or equal than <code>tokenOwners.length</code></p>
+</li>
+<li>
+<p>Mint <code>amount</code> tokens.</p>
+</li>
+<li>
+<p>For each address in <code>tokenOwners</code>:</p>
+</li>
+<li>
+<p>Grant the address the ownership of one token.</p>
+</li>
+<li>
+<p>Delegate voting power to the address.</p>
+</li>
+<li>
+<p>Remaining tokens should be assigner to <code>msg.sender</code>.</p>
+</li>
+<li>
+<p><code>propose(string memory description, uint256 budget) external returns (uint256)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>balanceOf(<code>msg.sender</code>) is greater than 0.</p>
+</li>
+<li>
+<p>Increment <code>currentId</code>.</p>
+</li>
+<li>
+<p>Initialize <code>proposals[currentId]</code> with:</p>
+</li>
+<li>
+<p><code>proposals[currentId].proposer</code> as <code>msg.sender</code>.</p>
+</li>
+<li>
+<p><code>proposals[currentId].status</code> as “underDeliberation”.</p>
+</li>
+<li>
+<p><code>proposals[currentId].description</code> as <code>description</code>.</p>
+</li>
+<li>
+<p><code>proposals[currentId].budget</code> as <code>budget</code>.</p>
+</li>
+<li>
+<p>Return <code>currentId</code>.</p>
+</li>
+<li>
+<p><code>cancelProposal(uint256 id) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>balanceOf(<code>msg.sender</code>) is greater than 0.</p>
+</li>
+<li>
+<p>The provided proposal’s <code>id</code> is valid.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>proposals[id].proposer</code></p>
+</li>
+<li>
+<p><code>proposals[id].status</code> is “underDeliberation”.</p>
+</li>
+<li>
+<p>Set <code>proposals[id].status</code> to “Canceled”.</p>
+</li>
+<li>
+<p><code>modifyProposal(uint256 id, string memory newDescription, uint256 newBudget) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>balanceOf(<code>msg.sender</code>) is greater than 0.</p>
+</li>
+<li>
+<p>The provided proposal’s <code>id</code> is valid.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>proposals[id].proposer</code>.</p>
+</li>
+<li>
+<p><code>proposals[id].status</code> is “underDeliberation”.</p>
+</li>
+<li>
+<p>Set <code>proposals[id].description</code> to <code>newDescription</code> and <code>proposals[id].budget</code> to <code>newBudget</code>.</p>
+</li>
+<li>
+<p><code>openVoting(uint256 id) external onlyOwner</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The provided proposal’s <code>id</code> is valid.</p>
+</li>
+<li>
+<p><code>proposals[id].status</code> is “underDeliberation”.</p>
+</li>
+<li>
+<p>Set <code>proposals[id].status</code> to “Voting”.</p>
+</li>
+<li>
+<p>Set <code>proposals[id].voteStart</code> with the value returned by <code>clock()</code>.</p>
+</li>
+<li>
+<p><code>voteOnProposal(uint256 id, bool approve) external returns (bool)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is not <code>owner</code>.</p>
+</li>
+<li>
+<p>The provided proposal’s <code>id</code> is valid.</p>
+</li>
+<li>
+<p><code>proposals[id].status</code> is “Voting”.</p>
+</li>
+<li>
+<p>The value of ERC20Votes.getPastVotes(<code>msg.sender</code>, <code>proposals[id].voteStart</code>) is greater than 0.</p>
+</li>
+<li>
+<p>The value of (<code>clock()</code> - <code>proposals[id].voteStart</code>) is less or equal than <code>voteTimeout</code>.</p>
+</li>
+<li>
+<p>Set <code>votePower</code> as ERC20Votes.getPastVotes(<code>msg.sender</code>, <code>proposals[id].voteStart</code>)`.</p>
+</li>
+<li>
+<p>If <code>proposals[id].voted[msg.sender]</code> is <code>false</code>:</p>
+</li>
+<li>
+<p>If <code>approve</code> is <code>true</code>:</p>
+</li>
+<li>
+<p>Increment <code>approvePower</code> by <code>votePower</code>.</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>Increment <code>rejectPower</code> by <code>votePower</code>.</p>
+</li>
+<li>
+<p>Set <code>proposals[id].voted[msg.sender]</code> to <code>true</code>.</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>If <code>proposals[id].votes[msg.sender]</code> is <code>true</code> and <code>approve</code> is <code>false</code>:</p>
+</li>
+<li>
+<p>Decrement <code>proposals[id].approvePower</code> by <code>votePower</code>.</p>
+</li>
+<li>
+<p>Increment <code>proposals[id].rejectPower</code> by <code>votePower</code>.</p>
+</li>
+<li>
+<p>If <code>proposals[id].votes[msg.sender]</code> is <code>false</code> and <code>approve</code> is <code>true</code>:</p>
+</li>
+<li>
+<p>Decrement <code>proposals[id].rejectPower</code> by <code>votePower</code>.</p>
+</li>
+<li>
+<p>Increment <code>proposals[id].approvePower</code> by <code>votePower</code>.</p>
+</li>
+<li>
+<p>Set <code>proposals[id].votes[msg.sender]</code> to <code>approve</code>.</p>
+</li>
+<li>
+<p>Return <code>proposals[id].votes[msg.sender]</code>.</p>
+</li>
+<li>
+<p><code>endVote(uint256 id) external returns (string memory)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The provided proposal’s <code>id</code> is valid.</p>
+</li>
+<li>
+<p><code>proposals[id].status</code> is “Voting”.</p>
+</li>
+<li>
+<p>Check for any of the following:</p>
+</li>
+<li>
+<p>balanceOf(<code>msg.sender</code>) is greater than 0 and (<code>clock()</code> - <code>proposals[id].voteStart</code>) is greater than <code>voteTimeout</code></p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code> and ((<code>proposals[id].approvePower</code> + <code>proposals[id].rejectPower</code>) * 100) / (totalSupply - ERC20Votes.getPastVotes(<code>owner</code>, <code>proposals[id].voteStart</code>)) is greater or equal than <code>voteQuorum</code>.</p>
+</li>
+<li>
+<p>If <code>approvePower</code> is greater than <code>rejectPower</code>:</p>
+</li>
+<li>
+<p>Set proposal <code>status</code> to “Approved”.</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>Set proposal <code>status</code> to “Rejected”.</p>
+</li>
+<li>
+<p>Return <code>proposals[id].status</code></p>
+</li>
+<li>
+<p><code>changeVotingTimeout(uint256 newTimeout) external onlyOwner</code></p>
+</li>
+<li>
+<p>Update de <code>voteTimeout</code>.</p>
+</li>
+<li>
+<p><code>changeQuorum(uint256 newQuorum) external onlyOwner</code></p>
+</li>
+<li>
+<p>Update de <code>voteQuorum</code>.</p>
+</li>
+<li>
+<p><code>getProposal(uint256 id) external returns (address, uint48, string memory, string memory, uint256)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>balanceOf(<code>msg.sender</code>) is greater than 0.</p>
+</li>
+<li>
+<p>The provided proposal’s <code>id</code> is valid.</p>
+</li>
+<li>
+<p>Return <code>proposals[id].proposer</code>, <code>proposals[id].voteStart</code>, <code>proposals[id].status</code>, <code>proposals[id].description</code>, <code>proposals[id].budget</code>.</p>
+</li>
+</ul>
+<h1 id="response-format">Response Format</h1>
+<p>Your response should be a fully implemented Solidity contract that includes all the functionalities described above. Remember that your implementation must be complete, secure, well-documented, and structured with best practices in mind. No additional text or explanation is required — just the code.</p>
+</prompt>

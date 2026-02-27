@@ -1,0 +1,799 @@
+<prompt>
+<h1 id="role">Role</h1>
+<p>You are a senior Ethereum smart contract developer responsible for implementing secure, efficient, well-documented Solidity contracts based on detailed specifications. Your work should follow industry-standard practices for structure, safety, and readability.</p>
+<h1 id="context">Context</h1>
+<p>Your task is to develop a fully functional, well-commented, and secure Solidity-based decentralized application that implements a wallet and cryptocurrency exchange as described below. The code must:</p>
+<ul>
+<li>
+<p>Be secure, avoiding vulnerabilities such as reentrancy, integer overflow/underflow, access control issues, and all known vulnerabilities that could affect the contract’s functionalities.</p>
+</li>
+<li>
+<p>Be readable, using clear naming conventions, structured logic, and inline documentation (Solidity comments).</p>
+</li>
+<li>
+<p>Follow best practices for gas efficiency and modularity.</p>
+</li>
+<li>
+<p>Implement the proposed services in three different contracts, with every service only accessible through the wallet contract.</p>
+</li>
+<li>
+<p>Use the latest Solidity compiler version you are familiar with.</p>
+</li>
+</ul>
+<h1 id="objective">Objective</h1>
+<p>Your task is to develop a fully functional and thoroughly commented smart contract that adheres to standard best practices in software engineering. The code must be well-documented, readable, and secure. Use the latest Solidity compiler version you are familiar with to ensure the implementation meets the application’s requirements.</p>
+<h1 id="application">Application</h1>
+<h2 id="overview">Overview</h2>
+<p>The smart contract must implement a complete wallet and exchange decentralized application within the Ethereum blockchain. Upon this application, users should be able to add currency to their balance, transfer funds to other accounts, and exchange their Ethers for other cryptocurrencies. Such decentralized applications will encompass three contracts: one that implements the wallet itself, an oracle contract that reads exchange rates between Ether and other currencies, and an exchange contract that effectively implements the cryptocurrency exchange. Currencies will be represented by symbols, which are three letters, such as “BTC” for “bitcoin”. The oracle and exchange contracts will only be accessible by the wallet main contract. That is, users will not be able to access the functions in the other contracts directly, only through the main wallet contract.</p>
+<h2 id="contracts">Contracts</h2>
+<h3 id="oracle">Oracle</h3>
+<h4 id="variables">Variables</h4>
+<ul>
+<li>
+<p><code>struct oracle</code>: A struct containing:</p>
+</li>
+<li>
+<p><code>string maintainer</code>: The responsible company or institution.</p>
+</li>
+<li>
+<p><code>string url</code>: The URL associated with the oracle.</p>
+</li>
+<li>
+<p><code>address authorizedAddress</code>: The authorized address that can vote on exchange rates for this currency.</p>
+</li>
+<li>
+<p><code>struct request</code>: A struct containing:</p>
+</li>
+<li>
+<p><code>string currency</code>: The requested currency symbol (e.g., “BTC”).</p>
+</li>
+<li>
+<p><code>uint256 requestTime</code>: The timestamp when the request was created, stored as <code>block.timestamp</code>.</p>
+</li>
+<li>
+<p><code>uint256 quotation</code>: A running average of oracle answers for this request.</p>
+</li>
+<li>
+<p><code>mapping(address -&gt; bool) answers</code>: A mapping from oracle addresses to booleans indicating whether a given oracle has already answered this request.</p>
+</li>
+<li>
+<p><code>uint256 answersCount</code>: The number of oracles that have answered the current request.</p>
+</li>
+<li>
+<p><code>bool active</code>: A boolean indicating whether the request is still active and requires further responses.</p>
+</li>
+<li>
+<p><code>address public authorizedWallet</code>: The only authorized caller (contract address with administrative privileges).</p>
+</li>
+<li>
+<p><code>mapping(string =&gt; bool) public currencies</code>: Maps currency symbols to its support status, either supported (<code>true</code>) or not (<code>false</code>).</p>
+</li>
+<li>
+<p><code>mapping(string =&gt; oracle[]) public oracles</code>: Maps currency symbols to a list of oracles which support this currency.</p>
+</li>
+<li>
+<p><code>mapping(uint256 =&gt; request) public requests</code>: Maps ids to their respective <code>request</code>.</p>
+</li>
+<li>
+<p><code>mapping(string =&gt; uint256) public exchangeRates</code>: Maps currency symbols to their latest consolidated average exchange rate (ETH to currency).</p>
+</li>
+<li>
+<p><code>mapping(string =&gt; uint256) public exchangeRateTime</code>: Maps currency symbols to the timestamp of the last update for their respective <code>exchangeRates</code>.</p>
+</li>
+<li>
+<p><code>uint256 public minimumQuorum</code>: A percentage threshold that represents the minimum fraction of registered oracles required to finalize a reliable exchange rate. Default value is 70%.</p>
+</li>
+<li>
+<p><code>uint256 internal currentId</code>: A counter tracking the latest request ID.</p>
+</li>
+</ul>
+<h4 id="functions">Functions</h4>
+<ul>
+<li>
+<p><code>constructor(address _authorizedWallet)</code></p>
+</li>
+<li>
+<p>Set <code>authorizedWallet</code> as <code>_authorizedWallet</code>.</p>
+</li>
+<li>
+<p><code>requestRate(string memory symbol) external returns (uint256)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code>.</p>
+</li>
+<li>
+<p><code>symbol</code> is exactly three characters long.</p>
+</li>
+<li>
+<p><code>currencies[symbol]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p>Increment <code>currentId</code>.</p>
+</li>
+<li>
+<p>Initialize <code>requests[currentId]</code> with:</p>
+</li>
+<li>
+<p><code>requests[currentId].currency</code> as <code>symbol</code>.</p>
+</li>
+<li>
+<p><code>requests[currentId].requestTime</code> as <code>block.timestamp</code>.</p>
+</li>
+<li>
+<p>For each oracle in <code>oracles[symbol]</code>, emit an event containing:</p>
+</li>
+<li>
+<p><code>currentId</code>.</p>
+</li>
+<li>
+<p>Oracle <code>url</code>.</p>
+</li>
+<li>
+<p>Requested currency <code>symbol</code>.</p>
+</li>
+<li>
+<p><code>answerRequest(uint256 id, uint256 exchangeRate) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The provided <code>id</code> is valid.</p>
+</li>
+<li>
+<p><code>requests[id].active</code> is <code>true</code>.</p>
+</li>
+<li>
+<p><code>msg.sender</code> is in <code>oracles[requests[id].currency][index].authorizedAddress</code>, for <code>index</code> from 0 to <code>oracles[requests[id].currency].length</code>.</p>
+</li>
+<li>
+<p><code>requests[id].answers[msg.sender]</code> is <code>false</code>.</p>
+</li>
+<li>
+<p>If <code>requests[id].requestTime</code> is smaller than <code>exchangeRateTime[requests[id].currency]</code>:</p>
+</li>
+<li>
+<p>Set <code>requests[id].active</code> to <code>false</code> (the request is outdated).</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>Update the running average quotation using the formula: <code>requests[id].quotation</code> = (<code>requests[id].quotation</code> * <code>requests[id].answersCount</code> + <code>exchangeRate</code>) / (<code>requests[id].answersCount</code> + 1)</p>
+</li>
+<li>
+<p>Increment <code>answersCount</code>.</p>
+</li>
+<li>
+<p>Set <code>requests[id].answers[msg.sender]</code> to <code>true</code>.</p>
+</li>
+<li>
+<p>If (<code>requests[id].answersCount</code> * <code>100</code>) / <code>oracles[requests[id].currency].length</code> is greater or equal than <code>minimumQuorum</code>:</p>
+</li>
+<li>
+<p>Set <code>exchangeRates[requests[id].currency]</code> to <code>requests[id].quotation</code></p>
+</li>
+<li>
+<p>Set <code>exchangeRateTime[requests[id].currency]</code> to <code>block.timestamp</code></p>
+</li>
+<li>
+<p>Set <code>requests[id].active</code> to <code>false</code> (the request was fullfil).</p>
+</li>
+<li>
+<p><code>readRate(string memory symbol) external view returns (uint256, uint256)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>symbol</code> is exactly three characters long.</p>
+</li>
+<li>
+<p><code>currencies[symbol]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p>Return values of <code>exchangeRates[symbol]</code> and <code>exchangeRateTime[symbol]</code>.</p>
+</li>
+<li>
+<p><code>_addOracle(string memory symbol, string memory maintainer, string memory url, address accessAddress) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code>.</p>
+</li>
+<li>
+<p>Add a new oracle entry to <code>oracles[symbol]</code> with the provided details (<code>maintainer</code>, <code>url</code>, and <code>accessAddress</code>).</p>
+</li>
+<li>
+<p>If this is the first oracle for the symbol, that is, <code>currencies[symbol]</code> == <code>false</code>:</p>
+</li>
+<li>
+<p>Set <code>currencies[symbol]</code> = <code>true</code>.</p>
+</li>
+<li>
+<p><code>_removeOracle(string memory symbol, address accessAddress) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code>.</p>
+</li>
+<li>
+<p>Remove the oracle entry matching <code>accessAddress</code> from <code>oracles[symbol]</code>.</p>
+</li>
+<li>
+<p>If, after removal, no oracles for this <code>symbol</code> remain, that is, <code>oracles[symbol]</code>.length == 0:</p>
+</li>
+<li>
+<p>Set <code>currencies[symbol]</code> = <code>false</code>.</p>
+</li>
+<li>
+<p><code>_changeMinimumQuorum(uint256 newQuorum) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code>.</p>
+</li>
+<li>
+<p>Set <code>minimumQuorum</code> = <code>newQuorum</code>.</p>
+</li>
+<li>
+<p><code>isSupported(string memory symbol) external view returns (bool)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The input <code>symbol</code> is exactly three characters long.</p>
+</li>
+<li>
+<p>Return <code>currencies[symbol]</code>.</p>
+</li>
+</ul>
+<h3 id="exchange">Exchange</h3>
+<h4 id="variables-1">Variables</h4>
+<ul>
+<li>
+<p><code>address authorizedWallet</code>: The only authorized caller (contract address with administrative privileges).</p>
+</li>
+<li>
+<p><code>address oracleContract</code>: Address of the oracle address.</p>
+</li>
+<li>
+<p><code>mapping(string =&gt; bool) public currencies</code>: Maps currency symbols to whether they are supported (<code>true</code>) or not (<code>false</code>).</p>
+</li>
+<li>
+<p><code>string memory bridgeURL</code>: The url of the off-chain bridge.</p>
+</li>
+</ul>
+<h4 id="functions-1">Functions</h4>
+<ul>
+<li>
+<p><code>constructor(address _authorizedWallet, address _oracleContract)</code></p>
+</li>
+<li>
+<p>Set <code>authorizedWallet</code> as <code>_authorizedWallet</code>.</p>
+</li>
+<li>
+<p>Set <code>oracleContract</code> as <code>_oracleContract</code>.</p>
+</li>
+<li>
+<p><code>exchange(address transactor, string memory targetCurrency, address targetAddress, uint256 maximumRateDelay) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code>.</p>
+</li>
+<li>
+<p><code>targetCurrency</code> is exactly three characters long.</p>
+</li>
+<li>
+<p><code>currencies[targetCurrency]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p><code>targetAddress</code> is not address(0x0).</p>
+</li>
+<li>
+<p>The value returned from calling <code>isSupported(targetCurrency)</code> from <code>oracleContract</code> is <code>true</code>.</p>
+</li>
+<li>
+<p><code>msg.value</code> is greater than 0.</p>
+</li>
+<li>
+<p>Set <code>exchangeRate</code> and <code>exchangeRateTime</code> as the return values from the call to <code>readRate(targetCurrency)</code> from <code>oracleContract</code>.</p>
+</li>
+<li>
+<p>If <code>block.timestamp</code> minus <code>exchangeRateTime</code> is greater than the <code>maximumRateDelay</code>:</p>
+</li>
+<li>
+<p>Inform the user that he needs to request a new rate for his target currency and try again.</p>
+</li>
+<li>
+<p>Revert transaction.</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>Emit an event with:</p>
+</li>
+<li>
+<p>The transactor (<code>transactor</code>)</p>
+</li>
+<li>
+<p>The target currency (<code>targetCurrency</code>)</p>
+</li>
+<li>
+<p>The exchange value (<code>msg.value</code>)</p>
+</li>
+<li>
+<p>The exchange rate (<code>exchangeRate</code>)</p>
+</li>
+<li>
+<p>Current time (<code>block.timestamp</code>)</p>
+</li>
+<li>
+<p>Bridge call (<code>string.concat(bridgeURL, targetCurrency)</code>)</p>
+</li>
+<li>
+<p><code>_updateBridge(string memory newBridgeURL) external</code>:</p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code>.</p>
+</li>
+<li>
+<p>Set <code>bridgeURL</code> to <code>newBridgeURL</code>.</p>
+</li>
+<li>
+<p><code>_addCurrency(string memory symbol) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code></p>
+</li>
+<li>
+<p><code>symbol</code> is exactly three characters long.</p>
+</li>
+<li>
+<p>Set <code>currencies[symbol]</code> to <code>true</code>.</p>
+</li>
+<li>
+<p><code>_removeCurrency(string memory symbol) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>authorizedWallet</code></p>
+</li>
+<li>
+<p><code>symbol</code> is exactly three characters long.</p>
+</li>
+<li>
+<p>Set <code>currencies[symbol]</code> to <code>false</code>.</p>
+</li>
+<li>
+<p><code>isSupported(string memory symbol) external view returns (bool)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>symbol</code> is exactly three characters long.</p>
+</li>
+<li>
+<p>Return <code>currencies[symbol]</code>.</p>
+</li>
+</ul>
+<h3 id="wallet">Wallet</h3>
+<h4 id="variables-2">Variables</h4>
+<ul>
+<li>
+<p><code>address public owner</code>: Contract owner address.</p>
+</li>
+<li>
+<p><code>address public oracleContract</code>: Oracle contract address.</p>
+</li>
+<li>
+<p><code>address public exchangeContract</code>: Exchange contract address.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; uint256) private balances</code>: A mapping of users and their current balances.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; mapping(address =&gt; string)) private authorizedAccounts</code>: Maps users to other accounts’ their authorization levels, which can be:</p>
+</li>
+<li>
+<p>“”: No authorization (default).</p>
+</li>
+<li>
+<p>“basic”: Can only withdraw funds.</p>
+</li>
+<li>
+<p>“onchain”: “basic” privileges plus the ability to send funds to other accounts.</p>
+</li>
+<li>
+<p>“all”: “onchain” privileges plus the ability exchange currency.</p>
+</li>
+<li>
+<p><code>uint256 public maximumRateDelay</code>: The maximum acceptable delay for an oracle exchange rate to be considered up to date.</p>
+</li>
+<li>
+<p><code>uint256 public exchangeFee</code>: The fee to use the contract’s currency exchange service.</p>
+</li>
+</ul>
+<h4 id="functions-2">Functions</h4>
+<ul>
+<li>
+<p><code>constructor(uint256 _maximumRateDelay, uint256 _exchangeFee)</code></p>
+</li>
+<li>
+<p>Set <code>owner</code> as <code>msg.sender</code>.</p>
+</li>
+<li>
+<p>Set <code>maximumRateDelay</code> as <code>_maximumRateDelay</code>.</p>
+</li>
+<li>
+<p>Set <code>exchangeFee</code> as <code>_exchangeFee</code>.</p>
+</li>
+<li>
+<p><code>deposit() external payable</code></p>
+</li>
+<li>
+<p>Add <code>msg.value</code> to <code>balances[msg.sender]</code>.</p>
+</li>
+<li>
+<p><code>transfer(uint256 amount, address to) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>balances[msg.sender]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>Decrement <code>balances[msg.sender]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Increment <code>balances[to]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p><code>externalTransfer(uint256 amount, address to) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>balances[msg.sender]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>Decrement <code>balances[msg.sender]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Transfer <code>amount</code> to <code>to</code>.</p>
+</li>
+<li>
+<p><code>exchange(string memory targetCurrency, address targetAddress, uint256 amount) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>balances[msg.sender]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>The call to <code>isSupported(targetCurrency)</code> from <code>exchangeContract</code> returns <code>true</code>.</p>
+</li>
+<li>
+<p>Decrement <code>balances[msg.sender]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Calculate <code>fee</code> as <code>amount</code> * <code>exchangeFee</code> / 100.</p>
+</li>
+<li>
+<p>Increment <code>balances[owner]</code> by <code>fee</code>.</p>
+</li>
+<li>
+<p>Call <code>exchange(msg.sender, targetCurrency, targetAddress, maximumRateDelay)</code> with a value of (<code>amount</code> - <code>fee</code>) from <code>exchangeContract</code>.</p>
+</li>
+<li>
+<p><code>withdrawn(uint256 amount) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>balances[msg.sender]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>Decrement <code>balances[msg.sender]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Send <code>amount</code> to <code>msg.sender</code>.</p>
+</li>
+<li>
+<p><code>transferAUTH(uint256 amount, address from, address to) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>authorizedAccounts[from][msg.sender]</code> is <code>onchain</code> or <code>all</code>.</p>
+</li>
+<li>
+<p><code>balances[from]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>Send funds to the target address’ balance. That is:</p>
+</li>
+<li>
+<p>Decrement <code>balances[from]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Increment <code>balances[to]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p><code>externalTransferAUTH(uint256 amount, address from, address to) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>authorizedAccounts[from][msg.sender]</code> is <code>onchain</code> or <code>all</code>.</p>
+</li>
+<li>
+<p><code>balances[from]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>Send funds directly to the target address. That is:</p>
+</li>
+<li>
+<p>Decrement <code>balances[from]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Transfer <code>amount</code> to <code>to</code>.</p>
+</li>
+<li>
+<p><code>exchangeAUTH(string memory targetCurrency, address from, address targetAddress, uint256 amount) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>authorizedAccounts[from][msg.sender]</code> is <code>all</code>.</p>
+</li>
+<li>
+<p><code>balances[from]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>The selected currency is available for exchange. To verify that call <code>isSupported(targetCurrency)</code> in the exchange contract (<code>exchangeContract</code>).</p>
+</li>
+<li>
+<p>Decrement <code>balances[from]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Set <code>fee</code> as <code>amount</code> * <code>exchangeFee</code> / 100.</p>
+</li>
+<li>
+<p>Increment <code>balances[owner]</code> by <code>fee</code>.</p>
+</li>
+<li>
+<p>Call <code>exchange(from, targetCurrency, targetAddress, maximumRateDelay)</code> with a value of (<code>amount</code> - <code>fee</code>) from <code>exchangeContract</code>.</p>
+</li>
+<li>
+<p><code>withdrawnAUTH(address from, uint256 amount) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>authorizedAccounts[from][msg.sender]</code> is <code>basic</code>, <code>onchain</code> or <code>all</code>.</p>
+</li>
+<li>
+<p><code>balances[from]</code> is greater or equal than <code>amount</code>.</p>
+</li>
+<li>
+<p>Decrement <code>balances[from]</code> by <code>amount</code>.</p>
+</li>
+<li>
+<p>Send funds to the <code>msg.sender</code> address.</p>
+</li>
+<li>
+<p><code>authorize(address authorized, string memory tier) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The selected <code>tier</code> is valid.</p>
+</li>
+<li>
+<p>Set <code>authorizedAccounts[msg.sender][authorized]</code> to <code>tier</code>.</p>
+</li>
+<li>
+<p><code>revoke(address unauthorize) external</code></p>
+</li>
+<li>
+<p>Set<code>authorizedAccounts[msg.sender][unauthorize]</code> = <code>""</code>.</p>
+</li>
+<li>
+<p><code>getExchangeAvailability(string memory symbol) external view returns (bool)</code></p>
+</li>
+<li>
+<p>Return the call to <code>isSupported(symbol)</code> from <code>exchangeContract</code>.</p>
+</li>
+<li>
+<p><code>getOracleAvailability(string memory symbol) external view returns (bool)</code></p>
+</li>
+<li>
+<p>Return the call to <code>isSupported(symbol)</code> from <code>oracleContract</code>.</p>
+</li>
+<li>
+<p><code>getExchangeRate(string memory symbol) external view returns (uint256, uint256)</code></p>
+</li>
+<li>
+<p>Return the call to <code>readRate(symbol)</code> from <code>oracleContract</code>.</p>
+</li>
+<li>
+<p><code>requestExchangeRate(string memory symbol) external</code></p>
+</li>
+<li>
+<p>Call <code>requestRate(symbol)</code> from <code>oracleContract</code>.</p>
+</li>
+<li>
+<p><code>addOracle(string memory symbol, string memory maintainer, string memory url, address accessAddress) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Call <code>_addOracle(symbol, maintainer, url, accessAddress)</code> from <code>oracleContract</code>.</p>
+</li>
+<li>
+<p><code>removeOracle(string memory symbol, address accessAddress) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Call <code>_removeOracle(string memory symbol, address accessAddress)</code> =from <code>oracleContract</code>.</p>
+</li>
+<li>
+<p><code>changeMinimumQuorum(uint256 newQuorum) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>If <code>newQuorum</code> &gt;= 0 and <code>newQuorum</code> &lt;= 100 and (i.e., the percentage threshold is valid).</p>
+</li>
+<li>
+<p>Call <code>_changeMinimumQuorum(uint256 newQuorum)</code> from <code>oracleContract</code>.</p>
+</li>
+<li>
+<p><code>updateBridge(string memory newBridgeURL) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Call <code>_updateBridge(string memory newBridgeURL)</code> from <code>exchangeContract</code>.</p>
+</li>
+<li>
+<p><code>addCurrency(string memory symbol) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Call <code>_addCurrency(string memory symbol)</code> from <code>exchangeContract</code>.</p>
+</li>
+<li>
+<p><code>removeCurrency(string memory symbol) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Call <code>_removeCurrency(string memory symbol)</code> from <code>exchangeContract</code>.</p>
+</li>
+<li>
+<p><code>updateOracleAddress(address newOracle) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Set <code>oracleContract</code> to <code>newOracle</code>.</p>
+</li>
+<li>
+<p><code>updateExchangeAddress(address newExchange) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Set <code>exchangeContract</code> to <code>newExchange</code>.</p>
+</li>
+<li>
+<p><code>updateMaximumRateDelay(uint256 newMaximumRateDelay) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Set <code>maximumRateDelay</code> to <code>newMaximumRateDelay</code>.</p>
+</li>
+<li>
+<p><code>updateExchangeFee(uint256 newExchangeFee) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>If <code>newExchangeFee</code> &gt;= 0 and <code>newExchangeFee</code> &lt;= 100 and (i.e., the percentage threshold is valid).</p>
+</li>
+<li>
+<p>Set <code>exchangeFee</code> to <code>newExchangeFee</code>.</p>
+</li>
+<li>
+<p><code>changeOwnership(address newOwner) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>owner</code>.</p>
+</li>
+<li>
+<p>Set <code>owner</code> to <code>newOwner</code>.</p>
+</li>
+</ul>
+<h1 id="response-format">Response Format</h1>
+<p>Your response should be a fully implemented Solidity contract that includes all the functionalities described above. Remember that your implementation must be complete, secure, well-documented, and structured with best practices in mind. No additional text or explanation is required — just the code.</p>
+</prompt>

@@ -1,0 +1,2159 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2153
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2153
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2551
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2619
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2620
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2621
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2622
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2696
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2776
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2777
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2778
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2779
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2780
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2778
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2779
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2780
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2848
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2925
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2926
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2927
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2928
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2926
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2927
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2928
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2927
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2928
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2948
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2948
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3444
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3445
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3446
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3447
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3448
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4535
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4536
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4537
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4538
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4539
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4540
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4541
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4542
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4543
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4544
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5049
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "<x> += <y> costs more gas than <x> = <x> + <y> for state variables."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_inefficient_state_variable_increment"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5440
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "By demanding that the receiver of the owner permissions actively accept via a contract call of its own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally being transferred  to an address that cannot handle it."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_ownable2step"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5455
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Uninitialized variables are assigned with the types default value. Explicitly initializing a variable with its default value costs unnecessary gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_init_variables_with_default_value"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5458
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5459
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5460
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5461
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5462
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5463
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5464
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5465
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5466
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5467
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5463
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5466
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5466
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5466
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5505
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5506
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5516
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5516
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_short_revert_string"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5517
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5517
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5518
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5519
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5520
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5521
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5522
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5531
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5531
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_short_revert_string"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5532
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5532
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5533
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5534
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5535
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5536
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5537
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5543
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5543
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5544
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5545
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5546
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5547
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5553
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5554
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5554
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5555
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5556
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5557
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5558
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5559
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5562
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5573
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5574
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5575
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5576
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5577
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5578
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5579
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5574
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Possible arithmetic underflow"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5576
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5577
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5578
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5579
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5577
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Possible arithmetic underflow"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5587
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5587
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5588
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5596
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5619
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5619
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_short_revert_string"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5620
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 5620
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/semgrep/semgrep, https://github.com/Decurity/semgrep-smart-contracts",
+                    "name": "semgrep",
+                    "rules": [
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix",
+                            "name": "use-prefix-decrement-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_short_revert_string",
+                            "name": "use-short-revert-string"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_array_length_outside_loop",
+                            "name": "array-length-outside-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_inefficient_state_variable_increment",
+                            "name": "inefficient-state-variable-increment"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_non_payable_constructor",
+                            "name": "non-payable-constructor"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_ownable2step",
+                            "name": "use-ownable2step"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_multiple_require",
+                            "name": "use-multiple-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix",
+                            "name": "use-prefix-increment-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_init_variables_with_default_value",
+                            "name": "init-variables-with-default-value"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_custom_error_not_require",
+                            "name": "use-custom-error-not-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow",
+                            "name": "basic-arithmetic-underflow"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop",
+                            "name": "unnecessary-checked-arithmetic-in-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_nested_if",
+                            "name": "use-nested-if"
+                        }
+                    ],
+                    "version": "semgrep 1.131.0, Decurity SC rules 1.2.1"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

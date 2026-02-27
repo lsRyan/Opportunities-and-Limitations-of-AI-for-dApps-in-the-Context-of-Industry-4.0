@@ -1,0 +1,102 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "High",
+            "line": 252,
+            "line_end": 345,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses a weak PRNG: \"randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,msg.sender,p.balance))) % count (../sb/Consorcio_F.sol#313-322)\" \n",
+            "name": "weak-prng"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "High",
+            "line": 252,
+            "line_end": 345,
+            "message": "Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345):\n\tExternal calls:\n\t- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)\n\tState variables written after the call(s):\n\t- p.status = STATUS_FINISHED (../sb/Consorcio_F.sol#340)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#68) can be used in cross function reentrancies:\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#157-169)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#128-151)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#175-184)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#361-388)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#216-246)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#190-210)\n",
+            "name": "reentrancy-eth"
+        },
+        {
+            "confidence": "High",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Medium",
+            "line": 252,
+            "line_end": 345,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses a dangerous strict equality:\n\t- senderInfo.payments == duePayments && ! senderInfo.received (../sb/Consorcio_F.sol#287)\n",
+            "name": "incorrect-equality"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "impact": "Medium",
+            "line": 223,
+            "message": "FinancialPoolManager.leavePool(uint256).index (../sb/Consorcio_F.sol#223) is a local variable never initialized\n",
+            "name": "uninitialized-local"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "impact": "Low",
+            "line": 324,
+            "message": "FinancialPoolManager.payInstallment(uint256).winner (../sb/Consorcio_F.sol#324) lacks a zero-check on :\n\t\t- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Low",
+            "line": 252,
+            "line_end": 345,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- senderInfo.payments >= duePayments (../sb/Consorcio_F.sol#277)\n\t- senderInfo.payments == duePayments && ! senderInfo.received (../sb/Consorcio_F.sol#287)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "High",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Informational",
+            "line": 252,
+            "line_end": 345,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) has a high cyclomatic complexity (15).\n",
+            "name": "cyclomatic-complexity"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "impact": "Informational",
+            "line": 8,
+            "message": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/Consorcio_F.sol#8)\n",
+            "name": "solc-version"
+        },
+        {
+            "confidence": "High",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Informational",
+            "line": 252,
+            "line_end": 345,
+            "message": "Low level call in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345):\n\t- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)\n",
+            "name": "low-level-calls"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "slither-0.11.3",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 209,
+                                    "startLine": 144
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209) uses a weak PRNG: \"randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,poolId))) % eligibleCount (../sb/Consorcio_F.sol#187)\" \n"
+                    },
+                    "ruleId": "slither_0_11_3_weak_prng"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 120
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.leavePool(uint256).index (../sb/Consorcio_F.sol#120) is a local variable never initialized\n"
+                    },
+                    "ruleId": "slither_0_11_3_uninitialized_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function deletePool"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 90,
+                                    "startLine": 81
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#81-90) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(msg.sender == pool.owner,Only the owner can delete the pool) (../sb/Consorcio_F.sol#84)\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not in accepting_participants status) (../sb/Consorcio_F.sol#85)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 209,
+                                    "startLine": 144
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(active)),Pool is not active) (../sb/Consorcio_F.sol#147)\n\t- require(bool,string)(msg.value == pool.installmentValue,Incorrect payment amount) (../sb/Consorcio_F.sol#158)\n\t- pool.participantsInfo[msg.sender].payments >= duePayments && ! pool.participantsInfo[msg.sender].received (../sb/Consorcio_F.sol#167)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function leavePool"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 142,
+                                    "startLine": 115
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#115-142) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#118)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function participateInPool"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 113,
+                                    "startLine": 92
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#92-113) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#95)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function activatePool"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 79,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#68-79) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(msg.sender == pool.owner,Only the owner can activate the pool) (../sb/Consorcio_F.sol#71)\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not in accepting_participants status) (../sb/Consorcio_F.sol#72)\n\t- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Not enough participants) (../sb/Consorcio_F.sol#73)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- ^0.8.0 (../sb/Consorcio_F.sol#8)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 209,
+                                    "startLine": 144
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209):\n\tExternal calls:\n\t- address(winner).transfer(pool.goodValue) (../sb/Consorcio_F.sol#196)\n\tState variables written after the call(s):\n\t- pool.status = finished (../sb/Consorcio_F.sol#202)\n\tEvent emitted after the call(s):\n\t- InstallmentPaid(poolId,msg.sender,msg.value) (../sb/Consorcio_F.sol#208)\n\t- PoolFinished(poolId) (../sb/Consorcio_F.sol#203)\n\t- WinnerSelected(poolId,winner,pool.goodValue) (../sb/Consorcio_F.sol#198)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_unlimited_gas"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "id": "slither_0_11_3_uninitialized_local",
+                            "name": "uninitialized-local",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_weak_prng",
+                            "name": "weak-prng",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-102."
+                            },
+                            "id": "slither_0_11_3_solc_version",
+                            "name": "solc-version"
+                        },
+                        {
+                            "id": "slither_0_11_3_reentrancy_unlimited_gas",
+                            "name": "reentrancy-unlimited-gas"
+                        },
+                        {
+                            "id": "slither_0_11_3_timestamp",
+                            "name": "timestamp",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

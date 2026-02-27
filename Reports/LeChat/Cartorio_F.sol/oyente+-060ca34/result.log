@@ -1,0 +1,137 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Cartorio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:root:contract /sb/Cartorio_F.sol:ERC721Utils:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Cartorio_F.sol:Math:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Cartorio_F.sol:Panic:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Cartorio_F.sol:RealEstateNotary:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 38.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Cartorio_F.sol:4731:50: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:64:38: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:3728:54: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:485:52: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:4237:19: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:3779:83: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:3721:2: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:4677:14: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:4446:29: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:504:5: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:4761:135: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:4670:12: Warning: Integer Underflow.
+
+/sb/Cartorio_F.sol:4673:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Cartorio_F.sol:3733:23: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:62:26: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:42:31: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:43:48: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:47:20: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:53:5: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:574:16: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:190:6: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:4232:33: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:3738:15: Warning: Integer Overflow.
+
+/sb/Cartorio_F.sol:4761:200: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Cartorio_F.sol:SafeCast:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Cartorio_F.sol:SignedMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Cartorio_F.sol:Strings:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======

@@ -1,0 +1,2908 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 8,
+            "message": "Found more than One contract per file. 3 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.0 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Missing @title tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Missing @author tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Missing @notice tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 26,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 28,
+            "message": "Missing @notice tag in variable 'oracles'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 29,
+            "message": "Missing @notice tag in variable 'requests'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 30,
+            "message": "Missing @notice tag in variable 'exchangeRates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @notice tag in variable 'exchangeRateTime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 32,
+            "message": "Missing @notice tag in variable 'minimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 35,
+            "message": "Missing @notice tag in event 'RequestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 35,
+            "message": "Missing @param tag in event 'RequestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 35,
+            "message": "Mismatch in @param names for event 'RequestRate'. Expected: [id, url, symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 35,
+            "message": "GC: [id] on Event [RequestRate] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @notice tag in event 'AnswerRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @param tag in event 'AnswerRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Mismatch in @param names for event 'AnswerRate'. Expected: [id, oracle, exchangeRate], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "GC: [id] on Event [AnswerRate] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "GC: [oracle] on Event [AnswerRate] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "GC: [exchangeRate] on Event [AnswerRate] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "Missing @notice tag in event 'UpdateExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "Missing @param tag in event 'UpdateExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "Mismatch in @param names for event 'UpdateExchangeRate'. Expected: [symbol, rate, time], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "GC: [rate] on Event [UpdateExchangeRate] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "GC: [time] on Event [UpdateExchangeRate] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Missing @notice tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Missing @param tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Mismatch in @param names for function 'requestRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Missing @return tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Mismatch in @return count for function 'requestRate'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 44,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 46,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 48,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 60,
+            "message": "Missing @notice tag in function 'answerRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 60,
+            "message": "Missing @param tag in function 'answerRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 60,
+            "message": "Mismatch in @param names for function 'answerRequest'. Expected: [id, exchangeRate], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 61,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 61,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 63,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 64,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 73,
+            "message": "GC: For [ request ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 76,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Missing @notice tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Missing @param tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Mismatch in @param names for function 'readRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Missing @return tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Mismatch in @return count for function 'readRate'. Expected: 2, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 87,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @notice tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @param tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 93,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 102,
+            "message": "Missing @notice tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 102,
+            "message": "Missing @param tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 102,
+            "message": "Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 102,
+            "message": "GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 103,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 104,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 116,
+            "message": "Missing @notice tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 116,
+            "message": "Missing @param tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 116,
+            "message": "Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 117,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 121,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 121,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 121,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 121,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 121,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 121,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 125,
+            "message": "Missing @notice tag in function '_isAuthorizedOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 125,
+            "message": "Missing @param tag in function '_isAuthorizedOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 125,
+            "message": "Mismatch in @param names for function '_isAuthorizedOracle'. Expected: [symbol, oracleAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 125,
+            "message": "Missing @return tag in function '_isAuthorizedOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 125,
+            "message": "Mismatch in @return count for function '_isAuthorizedOracle'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 126,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 135,
+            "message": "Missing @title tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 135,
+            "message": "Missing @author tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 135,
+            "message": "Missing @notice tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 136,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 137,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 138,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 139,
+            "message": "Missing @notice tag in variable 'bridgeURL'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "Missing @notice tag in event 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "Missing @param tag in event 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "Mismatch in @param names for event 'Exchange'. Expected: [transactor, targetCurrency, amount, exchangeRate, timestamp, bridgeCall], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: [transactor] on Event [Exchange] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: [amount] on Event [Exchange] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: [exchangeRate] on Event [Exchange] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: [timestamp] on Event [Exchange] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet, _oracleContract], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 149,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 150,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 151,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 152,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 153,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 156,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 156,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 161,
+            "message": "Missing @notice tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 161,
+            "message": "Missing @param tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 161,
+            "message": "Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 161,
+            "message": "GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Missing @notice tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Missing @param tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 168,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 172,
+            "message": "Missing @notice tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 172,
+            "message": "Missing @param tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 172,
+            "message": "Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 172,
+            "message": "GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 174,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 178,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 178,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 178,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 178,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 178,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 178,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Missing @title tag in contract 'IOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Missing @author tag in contract 'IOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Missing @notice tag in contract 'IOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @notice tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @param tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Mismatch in @param names for function 'readRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @return tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Mismatch in @return count for function 'readRate'. Expected: 2, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 185,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 185,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 185,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 185,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 185,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 186,
+            "message": "Missing @notice tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 186,
+            "message": "Missing @param tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 186,
+            "message": "Mismatch in @param names for function 'requestRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 186,
+            "message": "Missing @return tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 186,
+            "message": "Mismatch in @return count for function 'requestRate'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 187,
+            "message": "Missing @notice tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 187,
+            "message": "Missing @param tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 187,
+            "message": "Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Missing @notice tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Missing @param tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 189,
+            "message": "Missing @notice tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 189,
+            "message": "Missing @param tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 189,
+            "message": "Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 192,
+            "message": "Missing @title tag in contract 'IExchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 192,
+            "message": "Missing @author tag in contract 'IExchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 192,
+            "message": "Missing @notice tag in contract 'IExchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 194,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 194,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 194,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 194,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 194,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 195,
+            "message": "Missing @notice tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 195,
+            "message": "Missing @param tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 195,
+            "message": "Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 196,
+            "message": "Missing @notice tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 196,
+            "message": "Missing @param tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 196,
+            "message": "Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 197,
+            "message": "Missing @notice tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 197,
+            "message": "Missing @param tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 197,
+            "message": "Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 200,
+            "message": "Missing @title tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 200,
+            "message": "Missing @author tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 200,
+            "message": "Missing @notice tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 201,
+            "message": "Missing @notice tag in variable 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 202,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 203,
+            "message": "Missing @notice tag in variable 'exchangeContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 206,
+            "message": "Missing @notice tag in variable 'maximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 207,
+            "message": "Missing @notice tag in variable 'exchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Missing @notice tag in event 'Deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Missing @param tag in event 'Deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Mismatch in @param names for event 'Deposit'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "GC: [amount] on Event [Deposit] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 210,
+            "message": "Missing @notice tag in event 'Transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 210,
+            "message": "Missing @param tag in event 'Transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 210,
+            "message": "Mismatch in @param names for event 'Transfer'. Expected: [from, to, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 210,
+            "message": "GC: [amount] on Event [Transfer] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Missing @notice tag in event 'ExternalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Missing @param tag in event 'ExternalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Mismatch in @param names for event 'ExternalTransfer'. Expected: [from, to, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "GC: [amount] on Event [ExternalTransfer] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "Missing @notice tag in event 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "Missing @param tag in event 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "Mismatch in @param names for event 'Exchange'. Expected: [user, targetCurrency, targetAddress, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "GC: [targetAddress] on Event [Exchange] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "GC: [amount] on Event [Exchange] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Missing @notice tag in event 'Withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Missing @param tag in event 'Withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Mismatch in @param names for event 'Withdrawn'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "GC: [amount] on Event [Withdrawn] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 214,
+            "message": "Missing @notice tag in event 'Authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 214,
+            "message": "Missing @param tag in event 'Authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 214,
+            "message": "Mismatch in @param names for event 'Authorize'. Expected: [owner, authorized, tier], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 215,
+            "message": "Missing @notice tag in event 'Revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 215,
+            "message": "Missing @param tag in event 'Revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 215,
+            "message": "Mismatch in @param names for event 'Revoke'. Expected: [owner, unauthorize], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 217,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 217,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 217,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_maximumRateDelay, _exchangeFee], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 217,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 223,
+            "message": "Missing @notice tag in function 'deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 228,
+            "message": "Missing @notice tag in function 'transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 228,
+            "message": "Missing @param tag in function 'transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 228,
+            "message": "Mismatch in @param names for function 'transfer'. Expected: [amount, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 229,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 229,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 235,
+            "message": "Missing @notice tag in function 'externalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 235,
+            "message": "Missing @param tag in function 'externalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 235,
+            "message": "Mismatch in @param names for function 'externalTransfer'. Expected: [amount, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 236,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 236,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 242,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 242,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 242,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [targetCurrency, targetAddress, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 242,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 243,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 243,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 254,
+            "message": "Missing @notice tag in function 'withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 254,
+            "message": "Missing @param tag in function 'withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 254,
+            "message": "Mismatch in @param names for function 'withdrawn'. Expected: [amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 255,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 255,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 261,
+            "message": "Missing @notice tag in function 'transferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 261,
+            "message": "Missing @param tag in function 'transferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 261,
+            "message": "Mismatch in @param names for function 'transferAUTH'. Expected: [amount, from, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 262,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 263,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 263,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 269,
+            "message": "Missing @notice tag in function 'externalTransferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 269,
+            "message": "Missing @param tag in function 'externalTransferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 269,
+            "message": "Mismatch in @param names for function 'externalTransferAUTH'. Expected: [amount, from, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 270,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 271,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 271,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Missing @notice tag in function 'exchangeAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Missing @param tag in function 'exchangeAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Mismatch in @param names for function 'exchangeAUTH'. Expected: [targetCurrency, from, targetAddress, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 279,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 279,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 280,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 290,
+            "message": "Missing @notice tag in function 'withdrawnAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 290,
+            "message": "Missing @param tag in function 'withdrawnAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 290,
+            "message": "Mismatch in @param names for function 'withdrawnAUTH'. Expected: [from, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 292,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 292,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "Missing @notice tag in function 'authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "Missing @param tag in function 'authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "Mismatch in @param names for function 'authorize'. Expected: [authorized, tier], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 299,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 304,
+            "message": "Missing @notice tag in function 'revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 304,
+            "message": "Missing @param tag in function 'revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 304,
+            "message": "Mismatch in @param names for function 'revoke'. Expected: [unauthorize], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @notice tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @param tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Mismatch in @param names for function 'getExchangeAvailability'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @return tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Mismatch in @return count for function 'getExchangeAvailability'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 313,
+            "message": "Missing @notice tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 313,
+            "message": "Missing @param tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 313,
+            "message": "Mismatch in @param names for function 'getOracleAvailability'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 313,
+            "message": "Missing @return tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 313,
+            "message": "Mismatch in @return count for function 'getOracleAvailability'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 313,
+            "message": "GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "Missing @notice tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "Missing @param tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "Mismatch in @param names for function 'getExchangeRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "Missing @return tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "Mismatch in @return count for function 'getExchangeRate'. Expected: 2, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 321,
+            "message": "Missing @notice tag in function 'requestExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 321,
+            "message": "Missing @param tag in function 'requestExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 321,
+            "message": "Mismatch in @param names for function 'requestExchangeRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 321,
+            "message": "GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "Missing @notice tag in function 'addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "Missing @param tag in function 'addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "Mismatch in @param names for function 'addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 330,
+            "message": "Missing @notice tag in function 'removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 330,
+            "message": "Missing @param tag in function 'removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 330,
+            "message": "Mismatch in @param names for function 'removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 330,
+            "message": "GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 331,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "Missing @notice tag in function 'changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "Missing @param tag in function 'changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "Mismatch in @param names for function 'changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 336,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 35,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 341,
+            "message": "Missing @notice tag in function 'updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 341,
+            "message": "Missing @param tag in function 'updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 341,
+            "message": "Mismatch in @param names for function 'updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 341,
+            "message": "GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 342,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 346,
+            "message": "Missing @notice tag in function 'addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 346,
+            "message": "Missing @param tag in function 'addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 346,
+            "message": "Mismatch in @param names for function 'addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 346,
+            "message": "GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 347,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 351,
+            "message": "Missing @notice tag in function 'removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 351,
+            "message": "Missing @param tag in function 'removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 351,
+            "message": "Mismatch in @param names for function 'removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 351,
+            "message": "GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 352,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Missing @notice tag in function 'updateOracleAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Missing @param tag in function 'updateOracleAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Mismatch in @param names for function 'updateOracleAddress'. Expected: [newOracle], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 357,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 361,
+            "message": "Missing @notice tag in function 'updateExchangeAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 361,
+            "message": "Missing @param tag in function 'updateExchangeAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 361,
+            "message": "Mismatch in @param names for function 'updateExchangeAddress'. Expected: [newExchange], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 366,
+            "message": "Missing @notice tag in function 'updateMaximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 366,
+            "message": "Missing @param tag in function 'updateMaximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 366,
+            "message": "Mismatch in @param names for function 'updateMaximumRateDelay'. Expected: [newMaximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 367,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 371,
+            "message": "Missing @notice tag in function 'updateExchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 371,
+            "message": "Missing @param tag in function 'updateExchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 371,
+            "message": "Mismatch in @param names for function 'updateExchangeFee'. Expected: [newExchangeFee], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 372,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 373,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 373,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 373,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 377,
+            "message": "Missing @notice tag in function 'changeOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 377,
+            "message": "Missing @param tag in function 'changeOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 377,
+            "message": "Mismatch in @param names for function 'changeOwnership'. Expected: [newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "level": "warning",
+            "line": 378,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

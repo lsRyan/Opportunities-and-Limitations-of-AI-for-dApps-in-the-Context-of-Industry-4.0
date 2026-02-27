@@ -1,0 +1,268 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 345,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses a weak PRNG: \"randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,msg.sender,p.balance))) % count (../sb/Consorcio_F.sol#313-322)\" \n"
+                    },
+                    "ruleId": "slither_0_11_3_weak_prng"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 345,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345):\n\tExternal calls:\n\t- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)\n\tState variables written after the call(s):\n\t- p.status = STATUS_FINISHED (../sb/Consorcio_F.sol#340)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#68) can be used in cross function reentrancies:\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#157-169)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#128-151)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#175-184)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#361-388)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#216-246)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#190-210)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_eth"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 345,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses a dangerous strict equality:\n\t- senderInfo.payments == duePayments && ! senderInfo.received (../sb/Consorcio_F.sol#287)\n"
+                    },
+                    "ruleId": "slither_0_11_3_incorrect_equality"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 223
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.leavePool(uint256).index (../sb/Consorcio_F.sol#223) is a local variable never initialized\n"
+                    },
+                    "ruleId": "slither_0_11_3_uninitialized_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 324
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256).winner (../sb/Consorcio_F.sol#324) lacks a zero-check on :\n\t\t- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 345,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- senderInfo.payments >= duePayments (../sb/Consorcio_F.sol#277)\n\t- senderInfo.payments == duePayments && ! senderInfo.received (../sb/Consorcio_F.sol#287)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 345,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) has a high cyclomatic complexity (15).\n"
+                    },
+                    "ruleId": "slither_0_11_3_cyclomatic_complexity"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/Consorcio_F.sol#8)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 345,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345):\n\t- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-107, DASP-1."
+                            },
+                            "id": "slither_0_11_3_reentrancy_eth",
+                            "name": "reentrancy-eth",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_uninitialized_local",
+                            "name": "uninitialized-local",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_low_level_calls",
+                            "name": "low-level-calls"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-102."
+                            },
+                            "id": "slither_0_11_3_solc_version",
+                            "name": "solc-version"
+                        },
+                        {
+                            "id": "slither_0_11_3_incorrect_equality",
+                            "name": "incorrect-equality",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_missing_zero_check",
+                            "name": "missing-zero-check",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_weak_prng",
+                            "name": "weak-prng",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_timestamp",
+                            "name": "timestamp",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_cyclomatic_complexity",
+                            "name": "cyclomatic-complexity"
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

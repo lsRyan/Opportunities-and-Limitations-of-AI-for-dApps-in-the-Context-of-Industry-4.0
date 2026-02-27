@@ -1,0 +1,38 @@
+name,count
+use-natspec,37
+SOLIDITY_VISIBILITY,21
+gas-increment-by-one,10
+use-prefix-increment-not-postfix,9
+use-nested-if,9
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,7
+gas-indexed-events,4
+Miners can manipulate program execution by selecting when to include the timestamp,4
+SOLIDITY_EXTRA_GAS_IN_LOOPS,4
+SOLIDITY_GAS_LIMIT_IN_LOOPS,4
+array-length-outside-loop,4
+unnecessary-checked-arithmetic-in-loop,4
+gas-custom-errors,3
+use-custom-error-not-require,3
+basic-arithmetic-underflow,3
+gas-strict-inequalities,2
+weak-prng,1
+reentrancy-eth,1
+incorrect-equality,1
+uninitialized-local,1
+missing-zero-check,1
+timestamp,1
+cyclomatic-complexity,1
+solc-version,1
+low-level-calls,1
+Callstack Depth Attack Vulnerability,1
+Integer Overflow,1
+Integer Underflow,1
+one-contract-per-file,1
+compiler-version,1
+func-visibility,1
+function-max-lines,1
+explicit-types,1
+SOLIDITY_LOCKED_MONEY,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_SHOULD_RETURN_STRUCT,1
+use-prefix-decrement-not-postfix,1

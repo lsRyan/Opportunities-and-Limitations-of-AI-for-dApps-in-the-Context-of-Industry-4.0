@@ -1,0 +1,565 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 105,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 105,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 110,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 111,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 112,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 113,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 118,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 119,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 120,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 121,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 118,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 119,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 120,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 121,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 126,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 127,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 128,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 129,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 134,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 135,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 136,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 137,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 155,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 155,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 156,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 156,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 157,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 157,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 158,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 158,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 160,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 196,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 197,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 198,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 199,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 196,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 197,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 198,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 199,
+            "message": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.",
+            "name": "use-short-revert-string"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 233,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 265,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 271,
+            "message": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.",
+            "name": "use-prefix-decrement-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 289,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 290,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 291,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 292,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 293,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 294,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 295,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 296,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 301,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 303,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 304,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 305,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 306,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 309,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 315,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 316,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 317,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 318,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 319,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 340,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 340,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 344,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 345,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 346,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 347,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 346,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 377,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 382,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 451,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 451,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 451,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 456,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 466,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 466,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 466,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 514,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": 518,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "semgrep-1.131.0-1.2.1",
+        "mode": "solidity",
+        "version": "2025/08/06"
+    }
+}

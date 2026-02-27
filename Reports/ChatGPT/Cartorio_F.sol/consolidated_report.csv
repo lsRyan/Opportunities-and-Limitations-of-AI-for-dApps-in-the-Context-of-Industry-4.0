@@ -1,0 +1,1581 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_incorrect_exp,incorrect-exp,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) has bitwise-xor operator ^ instead of the exponentiation operator **: 
+	 - inverse = (3 * denominator) ^ 2 (../sb/Cartorio_F.sol#2580)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2587)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2638,2684,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.invMod(uint256,uint256) (../sb/Cartorio_F.sol#2638-2684) performs a multiplication on the result of a division:
+	- quotient = gcd / remainder (../sb/Cartorio_F.sol#2660)
+	- (gcd,remainder) = (remainder,gcd - remainder * quotient) (../sb/Cartorio_F.sol#2662-2669)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2588)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2589)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2584)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse = (3 * denominator) ^ 2 (../sb/Cartorio_F.sol#2580)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- low = low / twos (../sb/Cartorio_F.sol#2568)
+	- result = low * inverse (../sb/Cartorio_F.sol#2595)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2585)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_divide_before_multiply,divide-before-multiply,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2586)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4924,4927,slither_0_11_3_tautology,tautology,"RealEstateNotary._exists(uint256) (../sb/Cartorio_F.sol#4924-4927) contains a tautology or contradiction:
+	- 0 <= tokenId && tokenId < $._nextTokenId (../sb/Cartorio_F.sol#4926)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4774,4790,slither_0_11_3_reentrancy_benign,reentrancy-benign,"Reentrancy in RealEstateNotary.safeMint(address,string) (../sb/Cartorio_F.sol#4774-4790):
+	External calls:
+	- _safeMint(to,tokenId) (../sb/Cartorio_F.sol#4786)
+		- ERC721Utils.checkOnERC721Received(_msgSender(),address(0),to,tokenId,data) (../sb/Cartorio_F.sol#3952)
+		- retval = IERC721Receiver(to).onERC721Received(operator,from,tokenId,data) (../sb/Cartorio_F.sol#1077-1091)
+	State variables written after the call(s):
+	- _setTokenURI(tokenId,uri) (../sb/Cartorio_F.sol#4787)
+		- $ = ERC721URIStorageStorageLocation (../sb/Cartorio_F.sol#4605)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4774,4790,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in RealEstateNotary.safeMint(address,string) (../sb/Cartorio_F.sol#4774-4790):
+	External calls:
+	- _safeMint(to,tokenId) (../sb/Cartorio_F.sol#4786)
+		- ERC721Utils.checkOnERC721Received(_msgSender(),address(0),to,tokenId,data) (../sb/Cartorio_F.sol#3952)
+		- retval = IERC721Receiver(to).onERC721Received(operator,from,tokenId,data) (../sb/Cartorio_F.sol#1077-1091)
+	Event emitted after the call(s):
+	- MetadataUpdate(tokenId) (../sb/Cartorio_F.sol#4647)
+		- _setTokenURI(tokenId,uri) (../sb/Cartorio_F.sol#4787)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2314,2320,slither_0_11_3_assembly,assembly,"Panic.panic(uint256) (../sb/Cartorio_F.sol#2314-2320) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2315-2319)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4603,4607,slither_0_11_3_assembly,assembly,"ERC721URIStorageUpgradeable._getERC721URIStorageStorage() (../sb/Cartorio_F.sol#4603-4607) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4604-4606)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2353,slither_0_11_3_assembly,assembly,"Math.add512(uint256,uint256) (../sb/Cartorio_F.sol#2348-2353) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2349-2352)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3628,3633,slither_0_11_3_assembly,assembly,"Strings._unsafeReadBytesOffset(bytes,uint256) (../sb/Cartorio_F.sol#3628-3633) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3630-3632)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2598,slither_0_11_3_assembly,assembly,"Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2550-2557)
+	- INLINE ASM (../sb/Cartorio_F.sol#2563-2572)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2259,slither_0_11_3_assembly,assembly,"SafeCast.toUint(bool) (../sb/Cartorio_F.sol#2255-2259) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2256-2258)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1069,1093,slither_0_11_3_assembly,assembly,"ERC721Utils.checkOnERC721Received(address,address,address,uint256,bytes) (../sb/Cartorio_F.sol#1069-1093) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#1087-1089)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3680,3684,slither_0_11_3_assembly,assembly,"ERC721Upgradeable._getERC721Storage() (../sb/Cartorio_F.sol#3680-3684) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3681-3683)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,238,243,slither_0_11_3_assembly,assembly,"Initializable._getInitializableStorage() (../sb/Cartorio_F.sol#238-243) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#240-242)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2360,2369,slither_0_11_3_assembly,assembly,"Math.mul512(uint256,uint256) (../sb/Cartorio_F.sol#2360-2369) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2364-2368)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2425,2433,slither_0_11_3_assembly,assembly,"Math.tryMod(uint256,uint256) (../sb/Cartorio_F.sol#2425-2433) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2428-2431)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4193,4197,slither_0_11_3_assembly,assembly,"ERC721EnumerableUpgradeable._getERC721EnumerableStorage() (../sb/Cartorio_F.sol#4193-4197) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4194-4196)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2412,2420,slither_0_11_3_assembly,assembly,"Math.tryDiv(uint256,uint256) (../sb/Cartorio_F.sol#2412-2420) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2415-2418)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2935,2974,slither_0_11_3_assembly,assembly,"Math.log2(uint256) (../sb/Cartorio_F.sol#2935-2974) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2971-2973)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2407,slither_0_11_3_assembly,assembly,"Math.tryMul(uint256,uint256) (../sb/Cartorio_F.sol#2396-2407) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2399-2403)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3255,3273,slither_0_11_3_assembly,assembly,"Strings.toChecksumHexString(address) (../sb/Cartorio_F.sol#3255-3273) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3260-3262)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3590,3620,slither_0_11_3_assembly,assembly,"Strings.escapeJSON(string) (../sb/Cartorio_F.sol#3590-3620) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3614-3617)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2772,2794,slither_0_11_3_assembly,assembly,"Math.tryModExp(bytes,bytes,bytes) (../sb/Cartorio_F.sol#2772-2794) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2784-2793)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2732,2756,slither_0_11_3_assembly,assembly,"Math.tryModExp(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2732-2756) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2734-2755)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4380,4384,slither_0_11_3_assembly,assembly,"PausableUpgradeable._getPausableStorage() (../sb/Cartorio_F.sol#4380-4384) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4381-4383)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4735,4743,slither_0_11_3_assembly,assembly,"RealEstateNotary._getCartorioStorage() (../sb/Cartorio_F.sol#4735-4743) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4740-4742)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3189,3207,slither_0_11_3_assembly,assembly,"Strings.toString(uint256) (../sb/Cartorio_F.sol#3189-3207) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3194-3196)
+	- INLINE ASM (../sb/Cartorio_F.sol#3199-3201)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,515,519,slither_0_11_3_assembly,assembly,"AccessControlUpgradeable._getAccessControlStorage() (../sb/Cartorio_F.sol#515-519) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#516-518)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,10,10,slither_0_11_3_pragma,pragma,"6 different versions of Solidity are used:
+	- Version constraint ^0.8.20 is used by:
+		-^0.8.20 (../sb/Cartorio_F.sol#10)
+		-^0.8.20 (../sb/Cartorio_F.sol#252)
+		-^0.8.20 (../sb/Cartorio_F.sol#318)
+		-^0.8.20 (../sb/Cartorio_F.sol#453)
+		-^0.8.20 (../sb/Cartorio_F.sol#1050)
+		-^0.8.20 (../sb/Cartorio_F.sol#1103)
+		-^0.8.20 (../sb/Cartorio_F.sol#2268)
+		-^0.8.20 (../sb/Cartorio_F.sol#2329)
+		-^0.8.20 (../sb/Cartorio_F.sol#3080)
+		-^0.8.20 (../sb/Cartorio_F.sol#3150)
+		-^0.8.20 (../sb/Cartorio_F.sol#3642)
+		-^0.8.20 (../sb/Cartorio_F.sol#4103)
+		-^0.8.20 (../sb/Cartorio_F.sol#4168)
+		-^0.8.20 (../sb/Cartorio_F.sol#4359)
+		-^0.8.20 (../sb/Cartorio_F.sol#4494)
+		-^0.8.20 (../sb/Cartorio_F.sol#4577)
+	- Version constraint >=0.4.16 is used by:
+		->=0.4.16 (../sb/Cartorio_F.sol#289)
+		->=0.4.16 (../sb/Cartorio_F.sol#4539)
+	- Version constraint >=0.8.4 is used by:
+		->=0.8.4 (../sb/Cartorio_F.sol#351)
+		->=0.8.4 (../sb/Cartorio_F.sol#686)
+	- Version constraint >=0.6.2 is used by:
+		->=0.6.2 (../sb/Cartorio_F.sol#852)
+		->=0.6.2 (../sb/Cartorio_F.sol#989)
+		->=0.6.2 (../sb/Cartorio_F.sol#4137)
+		->=0.6.2 (../sb/Cartorio_F.sol#4547)
+		->=0.6.2 (../sb/Cartorio_F.sol#4555)
+	- Version constraint >=0.5.0 is used by:
+		->=0.5.0 (../sb/Cartorio_F.sol#1018)
+	- Version constraint ^0.8.24 is used by:
+		-^0.8.24 (../sb/Cartorio_F.sol#4655)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,274,276,slither_0_11_3_dead_code,dead-code,"ContextUpgradeable._msgData() (../sb/Cartorio_F.sol#274-276) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3966,3971,slither_0_11_3_dead_code,dead-code,"ERC721Upgradeable._burn(uint256) (../sb/Cartorio_F.sol#3966-3971) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,278,280,slither_0_11_3_dead_code,dead-code,"ContextUpgradeable._contextSuffixLength() (../sb/Cartorio_F.sol#278-280) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4268,4273,slither_0_11_3_dead_code,dead-code,"ERC721EnumerableUpgradeable._addTokenToOwnerEnumeration(address,uint256) (../sb/Cartorio_F.sol#4268-4273) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4293,4314,slither_0_11_3_dead_code,dead-code,"ERC721EnumerableUpgradeable._removeTokenFromOwnerEnumeration(address,uint256) (../sb/Cartorio_F.sol#4293-4314) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,268,269,slither_0_11_3_dead_code,dead-code,"ContextUpgradeable.__Context_init_unchained() (../sb/Cartorio_F.sol#268-269) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4023,4026,slither_0_11_3_dead_code,dead-code,"ERC721Upgradeable._safeTransfer(address,address,uint256,bytes) (../sb/Cartorio_F.sol#4023-4026) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,337,338,slither_0_11_3_dead_code,dead-code,"ERC165Upgradeable.__ERC165_init_unchained() (../sb/Cartorio_F.sol#337-338) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4115,4116,slither_0_11_3_dead_code,dead-code,"ERC721BurnableUpgradeable.__ERC721Burnable_init_unchained() (../sb/Cartorio_F.sol#4115-4116) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4515,4516,slither_0_11_3_dead_code,dead-code,"ERC721PausableUpgradeable.__ERC721Pausable_init_unchained() (../sb/Cartorio_F.sol#4515-4516) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4214,4215,slither_0_11_3_dead_code,dead-code,"ERC721EnumerableUpgradeable.__ERC721Enumerable_init_unchained() (../sb/Cartorio_F.sol#4214-4215) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4430,4431,slither_0_11_3_dead_code,dead-code,"PausableUpgradeable.__Pausable_init() (../sb/Cartorio_F.sol#4430-4431) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4345,4350,slither_0_11_3_dead_code,dead-code,"ERC721EnumerableUpgradeable._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#4345-4350) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3746,3748,slither_0_11_3_dead_code,dead-code,"ERC721Upgradeable._baseURI() (../sb/Cartorio_F.sol#3746-3748) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3984,3994,slither_0_11_3_dead_code,dead-code,"ERC721Upgradeable._transfer(address,address,uint256) (../sb/Cartorio_F.sol#3984-3994) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,637,642,slither_0_11_3_dead_code,dead-code,"AccessControlUpgradeable._setRoleAdmin(bytes32,bytes32) (../sb/Cartorio_F.sol#637-642) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,334,335,slither_0_11_3_dead_code,dead-code,"ERC165Upgradeable.__ERC165_init() (../sb/Cartorio_F.sol#334-335) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4321,4340,slither_0_11_3_dead_code,dead-code,"ERC721EnumerableUpgradeable._removeTokenFromAllTokensEnumeration(uint256) (../sb/Cartorio_F.sol#4321-4340) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4279,4283,slither_0_11_3_dead_code,dead-code,"ERC721EnumerableUpgradeable._addTokenToAllTokensEnumeration(uint256) (../sb/Cartorio_F.sol#4279-4283) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4612,4613,slither_0_11_3_dead_code,dead-code,"ERC721URIStorageUpgradeable.__ERC721URIStorage_init_unchained() (../sb/Cartorio_F.sol#4612-4613) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4246,4261,slither_0_11_3_dead_code,dead-code,"ERC721EnumerableUpgradeable._update(address,uint256,address) (../sb/Cartorio_F.sol#4246-4261) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3860,3865,slither_0_11_3_dead_code,dead-code,"ERC721Upgradeable._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#3860-3865) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,533,534,slither_0_11_3_dead_code,dead-code,"AccessControlUpgradeable.__AccessControl_init_unchained() (../sb/Cartorio_F.sol#533-534) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,214,216,slither_0_11_3_dead_code,dead-code,"Initializable._getInitializedVersion() (../sb/Cartorio_F.sol#214-216) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4015,4017,slither_0_11_3_dead_code,dead-code,"ERC721Upgradeable._safeTransfer(address,address,uint256) (../sb/Cartorio_F.sol#4015-4017) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4880,4892,slither_0_11_3_dead_code,dead-code,"RealEstateNotary._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#4880-4892) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4433,4434,slither_0_11_3_dead_code,dead-code,"PausableUpgradeable.__Pausable_init_unchained() (../sb/Cartorio_F.sol#4433-4434) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,265,266,slither_0_11_3_dead_code,dead-code,"ContextUpgradeable.__Context_init() (../sb/Cartorio_F.sol#265-266) is never used and should be removed
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1018,1018,slither_0_11_3_solc_version,solc-version,"Version constraint >=0.5.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor
+	- IncorrectEventSignatureInLibraries
+	- ABIEncoderV2PackedStorage.
+It is used by:
+	- >=0.5.0 (../sb/Cartorio_F.sol#1018)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,289,289,slither_0_11_3_solc_version,solc-version,"Version constraint >=0.4.16 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector.
+It is used by:
+	- >=0.4.16 (../sb/Cartorio_F.sol#289)
+	- >=0.4.16 (../sb/Cartorio_F.sol#4539)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,351,351,slither_0_11_3_solc_version,solc-version,"Version constraint >=0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables.
+It is used by:
+	- >=0.8.4 (../sb/Cartorio_F.sol#351)
+	- >=0.8.4 (../sb/Cartorio_F.sol#686)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,852,852,slither_0_11_3_solc_version,solc-version,"Version constraint >=0.6.2 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- MissingEscapingInFormatting
+	- ArraySliceDynamicallyEncodedBaseType
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow.
+It is used by:
+	- >=0.6.2 (../sb/Cartorio_F.sol#852)
+	- >=0.6.2 (../sb/Cartorio_F.sol#989)
+	- >=0.6.2 (../sb/Cartorio_F.sol#4137)
+	- >=0.6.2 (../sb/Cartorio_F.sol#4547)
+	- >=0.6.2 (../sb/Cartorio_F.sol#4555)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,10,10,slither_0_11_3_solc_version,solc-version,"Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Cartorio_F.sol#10)
+	- ^0.8.20 (../sb/Cartorio_F.sol#252)
+	- ^0.8.20 (../sb/Cartorio_F.sol#318)
+	- ^0.8.20 (../sb/Cartorio_F.sol#453)
+	- ^0.8.20 (../sb/Cartorio_F.sol#1050)
+	- ^0.8.20 (../sb/Cartorio_F.sol#1103)
+	- ^0.8.20 (../sb/Cartorio_F.sol#2268)
+	- ^0.8.20 (../sb/Cartorio_F.sol#2329)
+	- ^0.8.20 (../sb/Cartorio_F.sol#3080)
+	- ^0.8.20 (../sb/Cartorio_F.sol#3150)
+	- ^0.8.20 (../sb/Cartorio_F.sol#3642)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4103)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4168)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4359)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4494)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4577)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4797,4797,slither_0_11_3_naming_convention,naming-convention,"Parameter RealEstateNotary.requestChange(uint256,string)._tokenId (../sb/Cartorio_F.sol#4797) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,513,513,slither_0_11_3_naming_convention,naming-convention,"Constant AccessControlUpgradeable.AccessControlStorageLocation (../sb/Cartorio_F.sol#513) is not in UPPER_CASE_WITH_UNDERSCORES
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4612,4613,slither_0_11_3_naming_convention,naming-convention,"Function ERC721URIStorageUpgradeable.__ERC721URIStorage_init_unchained() (../sb/Cartorio_F.sol#4612-4613) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,533,534,slither_0_11_3_naming_convention,naming-convention,"Function AccessControlUpgradeable.__AccessControl_init_unchained() (../sb/Cartorio_F.sol#533-534) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4695,4700,slither_0_11_3_naming_convention,naming-convention,"Struct RealEstateNotary.request (../sb/Cartorio_F.sol#4695-4700) is not in CapWords
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4191,4191,slither_0_11_3_naming_convention,naming-convention,"Constant ERC721EnumerableUpgradeable.ERC721EnumerableStorageLocation (../sb/Cartorio_F.sol#4191) is not in UPPER_CASE_WITH_UNDERSCORES
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4112,4113,slither_0_11_3_naming_convention,naming-convention,"Function ERC721BurnableUpgradeable.__ERC721Burnable_init() (../sb/Cartorio_F.sol#4112-4113) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4115,4116,slither_0_11_3_naming_convention,naming-convention,"Function ERC721BurnableUpgradeable.__ERC721Burnable_init_unchained() (../sb/Cartorio_F.sol#4115-4116) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3693,3697,slither_0_11_3_naming_convention,naming-convention,"Function ERC721Upgradeable.__ERC721_init_unchained(string,string) (../sb/Cartorio_F.sol#3693-3697) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4515,4516,slither_0_11_3_naming_convention,naming-convention,"Function ERC721PausableUpgradeable.__ERC721Pausable_init_unchained() (../sb/Cartorio_F.sol#4515-4516) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4512,4513,slither_0_11_3_naming_convention,naming-convention,"Function ERC721PausableUpgradeable.__ERC721Pausable_init() (../sb/Cartorio_F.sol#4512-4513) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,337,338,slither_0_11_3_naming_convention,naming-convention,"Function ERC165Upgradeable.__ERC165_init_unchained() (../sb/Cartorio_F.sol#337-338) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,268,269,slither_0_11_3_naming_convention,naming-convention,"Function ContextUpgradeable.__Context_init_unchained() (../sb/Cartorio_F.sol#268-269) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,530,531,slither_0_11_3_naming_convention,naming-convention,"Function AccessControlUpgradeable.__AccessControl_init() (../sb/Cartorio_F.sol#530-531) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4609,4610,slither_0_11_3_naming_convention,naming-convention,"Function ERC721URIStorageUpgradeable.__ERC721URIStorage_init() (../sb/Cartorio_F.sol#4609-4610) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3678,3678,slither_0_11_3_naming_convention,naming-convention,"Constant ERC721Upgradeable.ERC721StorageLocation (../sb/Cartorio_F.sol#3678) is not in UPPER_CASE_WITH_UNDERSCORES
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4601,4601,slither_0_11_3_naming_convention,naming-convention,"Constant ERC721URIStorageUpgradeable.ERC721URIStorageStorageLocation (../sb/Cartorio_F.sol#4601) is not in UPPER_CASE_WITH_UNDERSCORES
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4798,4798,slither_0_11_3_naming_convention,naming-convention,"Parameter RealEstateNotary.requestChange(uint256,string)._newUri (../sb/Cartorio_F.sol#4798) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4214,4215,slither_0_11_3_naming_convention,naming-convention,"Function ERC721EnumerableUpgradeable.__ERC721Enumerable_init_unchained() (../sb/Cartorio_F.sol#4214-4215) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4430,4431,slither_0_11_3_naming_convention,naming-convention,"Function PausableUpgradeable.__Pausable_init() (../sb/Cartorio_F.sol#4430-4431) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,265,266,slither_0_11_3_naming_convention,naming-convention,"Function ContextUpgradeable.__Context_init() (../sb/Cartorio_F.sol#265-266) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,334,335,slither_0_11_3_naming_convention,naming-convention,"Function ERC165Upgradeable.__ERC165_init() (../sb/Cartorio_F.sol#334-335) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4378,4378,slither_0_11_3_naming_convention,naming-convention,"Constant PausableUpgradeable.PausableStorageLocation (../sb/Cartorio_F.sol#4378) is not in UPPER_CASE_WITH_UNDERSCORES
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4433,4434,slither_0_11_3_naming_convention,naming-convention,"Function PausableUpgradeable.__Pausable_init_unchained() (../sb/Cartorio_F.sol#4433-4434) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3689,3691,slither_0_11_3_naming_convention,naming-convention,"Function ERC721Upgradeable.__ERC721_init(string,string) (../sb/Cartorio_F.sol#3689-3691) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4211,4212,slither_0_11_3_naming_convention,naming-convention,"Function ERC721EnumerableUpgradeable.__ERC721Enumerable_init() (../sb/Cartorio_F.sol#4211-4212) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2935,2974,slither_0_11_3_too_many_digits,too-many-digits,"Math.log2(uint256) (../sb/Cartorio_F.sol#2935-2974) uses literals with too many digits:
+	- r = r | byte(uint256,uint256)(x >> r,0x0000010102020202030303030303030300000000000000000000000000000000) (../sb/Cartorio_F.sol#2972)
+"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3733,3733,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4917,4917,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,10,10,solhint_6_0_0_one_contract_per_file,one-contract-per-file,Found more than One contract per file. 17 contracts found!
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,10,10,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,62,62,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'Initializable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,62,62,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Initializable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,62,62,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Initializable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,98,98,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Initialized'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,98,98,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Initialized'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,98,98,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Initialized'. Expected: [version], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,98,98,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [version] on Event [Initialized] could be Indexed
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,162,162,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_checkInitializing'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,198,198,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_disableInitializers'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,214,214,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_getInitializedVersion'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,214,214,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_getInitializedVersion'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,214,214,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_getInitializedVersion'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,221,221,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_isInitializing'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,221,221,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_isInitializing'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,221,221,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_isInitializing'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,230,230,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_initializableStorageSlot'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,230,230,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_initializableStorageSlot'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,230,230,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_initializableStorageSlot'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,238,238,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_getInitializableStorage'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,238,238,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_getInitializableStorage'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,238,238,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function '_getInitializableStorage'. Expected: [$], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,240,240,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,252,252,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,264,264,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'ContextUpgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,264,264,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'ContextUpgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,264,264,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'ContextUpgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,265,265,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '__Context_init'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,265,265,solhint_6_0_0_func_name_mixedcase,func-name-mixedcase,Function name must be in mixedCase
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,265,265,solhint_6_0_0_no_empty_blocks,no-empty-blocks,Code contains empty blocks
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,268,268,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '__Context_init_unchained'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,268,268,solhint_6_0_0_func_name_mixedcase,func-name-mixedcase,Function name must be in mixedCase
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,268,268,solhint_6_0_0_no_empty_blocks,no-empty-blocks,Code contains empty blocks
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,270,270,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_msgSender'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,270,270,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_msgSender'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,270,270,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_msgSender'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,274,274,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_msgData'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,274,274,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_msgData'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,274,274,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_msgData'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,278,278,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_contextSuffixLength'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,278,278,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_contextSuffixLength'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,278,278,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_contextSuffixLength'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,289,289,solhint_6_0_0_compiler_version,compiler-version,Compiler version >=0.4.16 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,300,300,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IERC165'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,300,300,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IERC165'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,300,300,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IERC165'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'supportsInterface'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'supportsInterface'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'supportsInterface'. Expected: [interfaceId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'supportsInterface'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'supportsInterface'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,318,318,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,333,333,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'ERC165Upgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,333,333,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'ERC165Upgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,333,333,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'ERC165Upgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,334,334,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '__ERC165_init'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,334,334,solhint_6_0_0_func_name_mixedcase,func-name-mixedcase,Function name must be in mixedCase
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,334,334,solhint_6_0_0_no_empty_blocks,no-empty-blocks,Code contains empty blocks
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,337,337,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '__ERC165_init_unchained'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,337,337,solhint_6_0_0_func_name_mixedcase,func-name-mixedcase,Function name must be in mixedCase
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,337,337,solhint_6_0_0_no_empty_blocks,no-empty-blocks,Code contains empty blocks
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,351,351,solhint_6_0_0_compiler_version,compiler-version,Compiler version >=0.8.4 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IAccessControl'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IAccessControl'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IAccessControl'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,375,375,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RoleAdminChanged'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,375,375,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RoleAdminChanged'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,375,375,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RoleAdminChanged'. Expected: [role, previousAdminRole, newAdminRole], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,383,383,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RoleGranted'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,383,383,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RoleGranted'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,383,383,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RoleGranted'. Expected: [role, account, sender], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,392,392,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RoleRevoked'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,392,392,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RoleRevoked'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,392,392,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RoleRevoked'. Expected: [role, account, sender], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'hasRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'hasRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'hasRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'hasRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'hasRole'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,405,405,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,405,405,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,405,405,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getRoleAdmin'. Expected: [role], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,405,405,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,405,405,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getRoleAdmin'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,417,417,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'grantRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,417,417,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'grantRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,417,417,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'grantRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,428,428,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'revokeRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,428,428,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'revokeRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,428,428,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'revokeRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,444,444,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'renounceRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,444,444,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'renounceRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,444,444,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'renounceRole'. Expected: [role, callerConfirmation], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,453,453,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,498,498,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'AccessControlUpgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,498,498,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'AccessControlUpgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,498,498,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'AccessControlUpgradeable'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,504,504,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'DEFAULT_ADMIN_ROLE'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,513,513,solhint_6_0_0_const_name_snakecase,const-name-snakecase,Constant name must be in capitalized SNAKE_CASE
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,515,515,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_getAccessControlStorage'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,515,515,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_getAccessControlStorage'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,515,515,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function '_getAccessControlStorage'. Expected: [$], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,516,516,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,530,530,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '__AccessControl_init'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,530,530,solhint_6_0_0_func_name_mixedcase,func-name-mixedcase,Function name must be in mixedCase
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,530,530,solhint_6_0_0_no_empty_blocks,no-empty-blocks,Code contains empty blocks
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,533,533,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '__AccessControl_init_unchained'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,533,533,solhint_6_0_0_func_name_mixedcase,func-name-mixedcase,Function name must be in mixedCase
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,533,533,solhint_6_0_0_no_empty_blocks,no-empty-blocks,Code contains empty blocks
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,543,543,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'hasRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,543,543,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'hasRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,543,543,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'hasRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,543,543,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'hasRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,543,543,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'hasRole'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,552,552,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_checkRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,552,552,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_checkRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,552,552,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_checkRole'. Expected: [role], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_checkRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_checkRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_checkRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,572,572,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,572,572,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,572,572,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getRoleAdmin'. Expected: [role], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,572,572,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,572,572,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getRoleAdmin'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,589,589,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'grantRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,589,589,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'grantRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,589,589,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'grantRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,604,604,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'revokeRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,604,604,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'revokeRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,604,604,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'revokeRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,624,624,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'renounceRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,624,624,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'renounceRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,624,624,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'renounceRole'. Expected: [role, callerConfirmation], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,637,637,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_setRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,637,637,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_setRoleAdmin'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,637,637,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_setRoleAdmin'. Expected: [role, adminRole], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,651,651,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_grantRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,651,651,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_grantRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,651,651,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_grantRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,651,651,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_grantRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,651,651,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_grantRole'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,669,669,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_revokeRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,669,669,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_revokeRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,669,669,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_revokeRole'. Expected: [role, account], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,669,669,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_revokeRole'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,669,669,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_revokeRole'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,686,686,solhint_6_0_0_compiler_version,compiler-version,Compiler version >=0.8.4 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,692,692,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IERC20Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,692,692,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IERC20Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,692,692,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IERC20Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,738,738,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IERC721Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,738,738,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IERC721Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,738,738,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IERC721Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,796,796,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IERC1155Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,796,796,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IERC1155Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,796,796,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IERC1155Errors'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,852,852,solhint_6_0_0_compiler_version,compiler-version,Compiler version >=0.6.2 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,857,857,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IERC721'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,857,857,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IERC721'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,857,857,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IERC721'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,861,861,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Transfer'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,861,861,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Transfer'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,861,861,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Transfer'. Expected: [from, to, tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,866,866,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Approval'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,866,866,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Approval'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,866,866,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Approval'. Expected: [owner, approved, tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,871,871,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ApprovalForAll'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,871,871,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ApprovalForAll'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,871,871,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ApprovalForAll'. Expected: [owner, operator, approved], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,871,871,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [approved] on Event [ApprovalForAll] could be Indexed
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,876,876,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'balanceOf'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,876,876,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'balanceOf'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,876,876,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'balanceOf'. Expected: [owner], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,876,876,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'balanceOf'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,876,876,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'balanceOf'. Expected: [balance], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,885,885,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'ownerOf'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,885,885,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'ownerOf'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,885,885,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'ownerOf'. Expected: [tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,885,885,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'ownerOf'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,885,885,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'ownerOf'. Expected: [owner], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,901,901,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'safeTransferFrom'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,901,901,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'safeTransferFrom'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,901,901,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'safeTransferFrom'. Expected: [from, to, tokenId, data], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,919,919,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'safeTransferFrom'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,919,919,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'safeTransferFrom'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,919,919,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'safeTransferFrom'. Expected: [from, to, tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,937,937,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'transferFrom'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,937,937,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'transferFrom'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,937,937,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'transferFrom'. Expected: [from, to, tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,952,952,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'approve'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,952,952,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'approve'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,952,952,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'approve'. Expected: [to, tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,964,964,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'setApprovalForAll'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,964,964,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'setApprovalForAll'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,964,964,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'setApprovalForAll'. Expected: [operator, approved], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,973,973,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getApproved'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,973,973,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getApproved'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,973,973,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getApproved'. Expected: [tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,973,973,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getApproved'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,973,973,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'getApproved'. Expected: [operator], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,980,980,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isApprovedForAll'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,980,980,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isApprovedForAll'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,980,980,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isApprovedForAll'. Expected: [owner, operator], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,980,980,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isApprovedForAll'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,980,980,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isApprovedForAll'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,989,989,solhint_6_0_0_compiler_version,compiler-version,Compiler version >=0.6.2 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,995,995,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IERC721Metadata'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,995,995,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IERC721Metadata'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,999,999,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'name'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,999,999,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'name'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,999,999,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'name'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1004,1004,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'symbol'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1004,1004,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'symbol'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1004,1004,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'symbol'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1009,1009,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'tokenURI'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1009,1009,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'tokenURI'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1009,1009,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'tokenURI'. Expected: [tokenId], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1009,1009,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'tokenURI'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1009,1009,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'tokenURI'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1018,1018,solhint_6_0_0_compiler_version,compiler-version,Compiler version >=0.5.0 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1025,1025,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IERC721Receiver'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1025,1025,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IERC721Receiver'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1036,1036,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'onERC721Received'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1036,1036,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'onERC721Received'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1036,1036,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'onERC721Received'. Expected: [operator, from, tokenId, data], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1036,1036,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'onERC721Received'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1036,1036,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'onERC721Received'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1050,1050,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1060,1060,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'ERC721Utils'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1060,1060,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'ERC721Utils'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1060,1060,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'ERC721Utils'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1069,1069,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'checkOnERC721Received'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1069,1069,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'checkOnERC721Received'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1069,1069,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'checkOnERC721Received'. Expected: [operator, from, to, tokenId, data], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1087,1087,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1103,1103,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1117,1117,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'SafeCast'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1117,1117,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'SafeCast'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1117,1117,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'SafeCast'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1148,1148,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint248'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1148,1148,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint248'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1148,1148,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint248'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1148,1148,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint248'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1148,1148,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint248'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1165,1165,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint240'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1165,1165,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint240'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1165,1165,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint240'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1165,1165,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint240'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1165,1165,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint240'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1182,1182,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint232'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1182,1182,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint232'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1182,1182,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint232'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1182,1182,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint232'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1182,1182,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint232'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1199,1199,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint224'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1199,1199,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint224'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1199,1199,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint224'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1199,1199,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint224'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1199,1199,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint224'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1216,1216,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint216'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1216,1216,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint216'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1216,1216,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint216'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1216,1216,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint216'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1216,1216,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint216'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1233,1233,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint208'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1233,1233,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint208'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1233,1233,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint208'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1233,1233,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint208'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1233,1233,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint208'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1250,1250,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint200'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1250,1250,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint200'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1250,1250,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint200'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1250,1250,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint200'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1250,1250,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint200'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1267,1267,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint192'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1267,1267,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint192'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1267,1267,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint192'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1267,1267,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint192'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1267,1267,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint192'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1284,1284,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint184'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1284,1284,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint184'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1284,1284,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint184'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1284,1284,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint184'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1284,1284,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint184'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1301,1301,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint176'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1301,1301,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint176'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1301,1301,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint176'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1301,1301,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint176'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1301,1301,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint176'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1318,1318,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint168'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1318,1318,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint168'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1318,1318,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint168'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1318,1318,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint168'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1318,1318,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint168'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1335,1335,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint160'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1335,1335,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint160'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1335,1335,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint160'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1335,1335,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint160'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1335,1335,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint160'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1352,1352,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint152'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1352,1352,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint152'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1352,1352,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint152'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1352,1352,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint152'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1352,1352,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint152'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1369,1369,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint144'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1369,1369,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint144'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1369,1369,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint144'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1369,1369,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint144'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1369,1369,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint144'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1386,1386,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint136'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1386,1386,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint136'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1386,1386,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint136'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1386,1386,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint136'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1386,1386,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint136'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1403,1403,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint128'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1403,1403,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint128'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1403,1403,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint128'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1403,1403,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint128'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1403,1403,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint128'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1420,1420,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint120'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1420,1420,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint120'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1420,1420,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint120'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1420,1420,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint120'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1420,1420,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint120'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1437,1437,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint112'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1437,1437,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint112'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1437,1437,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint112'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1437,1437,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint112'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1437,1437,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint112'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1454,1454,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint104'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1454,1454,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint104'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1454,1454,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint104'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1454,1454,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint104'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1454,1454,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint104'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1471,1471,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint96'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1471,1471,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint96'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1471,1471,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint96'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1471,1471,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint96'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1471,1471,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint96'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1488,1488,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint88'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1488,1488,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint88'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1488,1488,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint88'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1488,1488,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint88'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1488,1488,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint88'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1505,1505,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint80'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1505,1505,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint80'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1505,1505,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint80'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1505,1505,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint80'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1505,1505,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint80'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1522,1522,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint72'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1522,1522,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint72'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1522,1522,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint72'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1522,1522,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint72'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1522,1522,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint72'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1539,1539,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint64'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1539,1539,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint64'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1539,1539,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint64'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1539,1539,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint64'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1539,1539,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint64'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1556,1556,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint56'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1556,1556,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint56'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1556,1556,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint56'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1556,1556,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint56'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1556,1556,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint56'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1573,1573,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint48'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1573,1573,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint48'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1573,1573,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint48'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1573,1573,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint48'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1573,1573,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint48'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1590,1590,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint40'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1590,1590,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint40'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1590,1590,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint40'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1590,1590,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint40'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1590,1590,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint40'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1607,1607,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint32'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1607,1607,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint32'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1607,1607,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint32'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1607,1607,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint32'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1607,1607,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint32'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1624,1624,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint24'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1624,1624,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint24'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1624,1624,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint24'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1624,1624,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint24'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1624,1624,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint24'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1641,1641,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint16'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1641,1641,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint16'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1641,1641,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint16'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1641,1641,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint16'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1641,1641,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint16'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1658,1658,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint8'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1658,1658,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint8'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1658,1658,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint8'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1658,1658,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint8'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1658,1658,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint8'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1672,1672,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint256'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1672,1672,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint256'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1672,1672,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint256'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1672,1672,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint256'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1672,1672,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toUint256'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1690,1690,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt248'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1690,1690,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt248'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1690,1690,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt248'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1690,1690,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt248'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1690,1690,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt248'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1708,1708,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt240'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1708,1708,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt240'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1708,1708,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt240'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1708,1708,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt240'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1708,1708,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt240'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1726,1726,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt232'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1726,1726,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt232'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1726,1726,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt232'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1726,1726,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt232'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1726,1726,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt232'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1744,1744,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt224'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1744,1744,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt224'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1744,1744,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt224'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1744,1744,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt224'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1744,1744,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt224'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1762,1762,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt216'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1762,1762,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt216'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1762,1762,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt216'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1762,1762,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt216'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1762,1762,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt216'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1780,1780,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt208'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1780,1780,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt208'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1780,1780,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt208'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1780,1780,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt208'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1780,1780,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt208'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1798,1798,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt200'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1798,1798,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt200'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1798,1798,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt200'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1798,1798,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt200'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1798,1798,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt200'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1816,1816,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt192'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1816,1816,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt192'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1816,1816,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt192'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1816,1816,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt192'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1816,1816,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt192'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1834,1834,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt184'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1834,1834,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt184'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1834,1834,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt184'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1834,1834,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt184'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1834,1834,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt184'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1852,1852,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt176'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1852,1852,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt176'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1852,1852,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt176'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1852,1852,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt176'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1852,1852,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt176'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1870,1870,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt168'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1870,1870,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt168'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1870,1870,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt168'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1870,1870,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt168'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1870,1870,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt168'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1888,1888,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt160'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1888,1888,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt160'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1888,1888,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt160'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1888,1888,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt160'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1888,1888,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt160'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1906,1906,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt152'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1906,1906,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt152'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1906,1906,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt152'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1906,1906,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt152'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1906,1906,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt152'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1924,1924,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt144'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1924,1924,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt144'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1924,1924,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt144'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1924,1924,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt144'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1924,1924,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt144'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1942,1942,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt136'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1942,1942,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt136'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1942,1942,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt136'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1942,1942,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt136'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1942,1942,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt136'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1960,1960,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt128'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1960,1960,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt128'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1960,1960,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt128'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1960,1960,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt128'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1960,1960,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt128'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1978,1978,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt120'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1978,1978,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt120'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1978,1978,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt120'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1978,1978,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt120'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1978,1978,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt120'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1996,1996,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt112'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1996,1996,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt112'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1996,1996,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt112'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1996,1996,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt112'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1996,1996,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt112'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2014,2014,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt104'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2014,2014,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt104'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2014,2014,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt104'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2014,2014,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt104'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2014,2014,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt104'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2032,2032,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt96'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2032,2032,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt96'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2032,2032,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt96'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2032,2032,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt96'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2032,2032,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt96'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2050,2050,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt88'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2050,2050,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt88'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2050,2050,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt88'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2050,2050,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt88'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2050,2050,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt88'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2068,2068,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt80'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2068,2068,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt80'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2068,2068,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt80'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2068,2068,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt80'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2068,2068,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt80'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2086,2086,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt72'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2086,2086,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt72'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2086,2086,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt72'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2086,2086,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt72'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2086,2086,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt72'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2104,2104,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt64'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2104,2104,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt64'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2104,2104,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt64'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2104,2104,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt64'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2104,2104,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt64'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2122,2122,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt56'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2122,2122,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt56'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2122,2122,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt56'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2122,2122,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt56'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2122,2122,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt56'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2140,2140,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt48'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2140,2140,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt48'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2140,2140,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt48'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2140,2140,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt48'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2140,2140,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt48'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2158,2158,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt40'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2158,2158,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt40'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2158,2158,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt40'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2158,2158,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt40'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2158,2158,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt40'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2176,2176,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt32'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2176,2176,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt32'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2176,2176,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt32'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2176,2176,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt32'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2176,2176,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt32'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2194,2194,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt24'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2194,2194,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt24'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2194,2194,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt24'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2194,2194,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt24'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2194,2194,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt24'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2212,2212,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt16'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2212,2212,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt16'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2212,2212,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt16'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2212,2212,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt16'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2212,2212,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt16'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2230,2230,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt8'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2230,2230,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt8'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2230,2230,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt8'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2230,2230,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt8'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2230,2230,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toInt8'. Expected: [downcasted], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2244,2244,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toInt256'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2244,2244,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toInt256'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2244,2244,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toInt256'. Expected: [value], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2244,2244,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toInt256'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2244,2244,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'toInt256'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2255,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'toUint'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2255,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'toUint'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2255,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'toUint'. Expected: [b], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2255,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'toUint'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2255,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'toUint'. Expected: [u], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2256,2256,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2268,2268,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2290,2290,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'Panic'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2290,2290,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Panic'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2290,2290,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Panic'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2314,2314,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'panic'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2314,2314,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'panic'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2314,2314,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'panic'. Expected: [code], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2315,2315,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2329,2329,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2335,2335,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'Math'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2335,2335,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Math'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2335,2335,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Math'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'add512'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'add512'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'add512'. Expected: [a, b], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'add512'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'add512'. Expected: [high, low], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2349,2349,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2360,2360,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'mul512'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2360,2360,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'mul512'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2360,2360,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'mul512'. Expected: [a, b], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2360,2360,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'mul512'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2360,2360,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'mul512'. Expected: [high, low], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2364,2364,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2374,2374,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'tryAdd'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2374,2374,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'tryAdd'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2374,2374,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'tryAdd'. Expected: [a, b], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2374,2374,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'tryAdd'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2374,2374,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'tryAdd'. Expected: [success, result], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2377,2377,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2385,2385,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'trySub'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2385,2385,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'trySub'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2385,2385,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'trySub'. Expected: [a, b], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2385,2385,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'trySub'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2385,2385,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'trySub'. Expected: [success, result], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2388,2388,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2396,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'tryMul'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2396,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'tryMul'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2396,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'tryMul'. Expected: [a, b], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2396,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'tryMul'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2396,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'tryMul'. Expected: [success, result], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2399,2399,solhint_6_0_0_no_inline_assembly,no-inline-assembly,Avoid to use inline assembly. It is acceptable only in rare cases
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2412,2412,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'tryDiv'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2412,2412,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'tryDiv'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2412,2412,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'tryDiv'. Expected: [a, b], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2412,2412,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'tryDiv'
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2412,2412,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return names for function 'tryDiv'. Expected: [success, result], Found: []"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3495,3504,ccc_Operation_may_lead_to_a_denial_of_essential_contract_function,Operation may lead to a denial of essential contract function.,Operation may lead to a denial of essential contract function.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2800,2804,ccc_Operation_may_lead_to_a_denial_of_essential_contract_function,Operation may lead to a denial of essential contract function.,Operation may lead to a denial of essential contract function.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3233,3236,ccc_Operation_may_lead_to_a_denial_of_essential_contract_function,Operation may lead to a denial of essential contract function.,Operation may lead to a denial of essential contract function.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3595,3612,ccc_Operation_may_lead_to_a_denial_of_essential_contract_function,Operation may lead to a denial of essential contract function.,Operation may lead to a denial of essential contract function.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3343,3348,ccc_Operation_may_lead_to_a_denial_of_essential_contract_function,Operation may lead to a denial of essential contract function.,Operation may lead to a denial of essential contract function.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2659,2679,ccc_Operation_may_lead_to_a_denial_of_essential_contract_function,Operation may lead to a denial of essential contract function.,Operation may lead to a denial of essential contract function.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,504,504,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2292,2292,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2294,2294,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2296,2296,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2298,2298,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2300,2300,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2302,2302,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2304,2304,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2306,2306,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2308,2308,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2310,2310,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2937,2937,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2939,2939,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2941,2941,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2943,2943,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2945,2945,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2947,2947,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3044,3044,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3046,3046,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3048,3048,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3050,3050,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3052,3052,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3163,3163,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3164,3164,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3165,3165,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3166,3166,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3167,3167,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3168,3168,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3169,3169,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3234,3234,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3266,3266,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3268,3268,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3599,3599,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3600,3600,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3601,3601,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3602,3602,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3603,3603,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3604,3604,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3605,3605,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4592,4592,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3548,3548,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3559,3559,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3711,3711,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3776,3776,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3890,3890,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4127,4127,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4240,4240,smartcheck_SOLIDITY_ADDRESS_HARDCODED,SOLIDITY_ADDRESS_HARDCODED,"SOLIDITY_ADDRESS_HARDCODED
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2516,2516,smartcheck_SOLIDITY_DIV_MUL,SOLIDITY_DIV_MUL,"SOLIDITY_DIV_MUL
+Severity: 2"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2800,2800,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3595,3595,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3590,3590,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3878,3878,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,238,238,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,515,515,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2255,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3628,3628,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3680,3680,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4193,4193,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4380,4380,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4603,4603,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4735,4735,smartcheck_SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,"SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2800,2800,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3595,3595,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3197,3197,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,10,10,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,252,252,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,289,289,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,318,318,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,351,351,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,453,453,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,686,686,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,852,852,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,989,989,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1018,1018,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1050,1050,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1103,1103,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2268,2268,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2329,2329,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3080,3080,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3150,3150,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3642,3642,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4103,4103,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4137,4137,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4168,4168,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4359,4359,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4494,4494,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4539,4539,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4547,4547,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4555,4555,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4577,4577,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4655,4655,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,83,83,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,513,513,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3160,3160,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3161,3161,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3162,3162,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3387,3387,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3678,3678,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4191,4191,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4378,4378,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4592,4592,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4601,4601,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4709,4709,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,238,238,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,515,515,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2255,2255,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2314,2314,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2396,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2527,2527,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2935,2935,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3189,3189,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3255,3255,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3590,3590,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3628,3628,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3680,3680,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4193,4193,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4380,4380,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4603,4603,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4735,4735,smartcheck_SOLIDITY_SHOULD_NOT_BE_PURE,SOLIDITY_SHOULD_NOT_BE_PURE,"SOLIDITY_SHOULD_NOT_BE_PURE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2732,2732,smartcheck_SOLIDITY_SHOULD_NOT_BE_VIEW,SOLIDITY_SHOULD_NOT_BE_VIEW,"SOLIDITY_SHOULD_NOT_BE_VIEW
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2348,2348,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2396,2396,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2732,2732,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3312,3312,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3326,3326,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3339,3339,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3383,3383,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3399,3399,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3412,3412,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3460,3460,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3474,3474,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3487,3487,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3535,3535,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3547,3547,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,274,274,smartcheck_SOLIDITY_UPGRADE_TO_050,SOLIDITY_UPGRADE_TO_050,"SOLIDITY_UPGRADE_TO_050
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,240,240,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,516,516,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1087,1087,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2256,2256,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2315,2315,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2349,2349,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2364,2364,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2399,2399,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2415,2415,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2428,2428,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2550,2550,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2563,2563,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2734,2734,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2784,2784,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2971,2971,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3194,3194,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3199,3199,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3260,3260,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3614,3614,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3630,3630,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3681,3681,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4194,4194,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4381,4381,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4604,4604,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4740,4740,smartcheck_SOLIDITY_USING_INLINE_ASSEMBLY,SOLIDITY_USING_INLINE_ASSEMBLY,"SOLIDITY_USING_INLINE_ASSEMBLY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4716,4716,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,88,88,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,88,88,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,93,93,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,93,93,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,360,360,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,360,360,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,360,360,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,367,367,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,367,367,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,699,699,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,699,699,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,699,699,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,699,699,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,705,705,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,705,705,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,711,711,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,711,711,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,719,719,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,719,719,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,719,719,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,719,719,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,725,725,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,725,725,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,731,731,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,731,731,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,744,744,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,744,744,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,750,750,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,750,750,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,758,758,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,758,758,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,758,758,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,758,758,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,764,764,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,764,764,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,770,770,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,770,770,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,777,777,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,777,777,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,777,777,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,783,783,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,783,783,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,789,789,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,789,789,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,804,804,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,804,804,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,804,804,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,804,804,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,804,804,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,810,810,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,810,810,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,816,816,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,816,816,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,823,823,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,823,823,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,823,823,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,829,829,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,829,829,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,835,835,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,835,835,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,843,843,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,843,843,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,843,843,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1121,1121,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1121,1121,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1121,1121,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1126,1126,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1126,1126,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1131,1131,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1131,1131,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1131,1131,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1136,1136,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,1136,1136,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3174,3174,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3174,3174,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3174,3174,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3179,3179,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3179,3179,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3184,3184,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3184,3184,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3903,3903,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3905,3905,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3905,3905,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3905,3905,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3907,3907,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4204,4204,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4204,4204,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4204,4204,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4209,4209,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4209,4209,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4399,4399,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4399,4399,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4404,4404,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4404,4404,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,126,126,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,127,127,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,128,128,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2800,2800,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,2800,2800,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3198,3198,semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix,use-prefix-decrement-not-postfix,Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3266,3266,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3267,3267,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3268,3268,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3269,3269,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3343,3343,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3423,3423,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3424,3424,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3425,3425,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3426,3426,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3427,3427,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3425,3425,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3426,3426,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3427,3427,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3495,3495,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3572,3572,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3573,3573,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3574,3574,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3575,3575,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3573,3573,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3574,3574,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3575,3575,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3574,3574,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3575,3575,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3595,3595,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,3595,3595,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4053,4053,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4054,4054,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4055,4055,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4716,4716,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4717,4717,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4718,4718,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4803,4803,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4804,4804,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4808,4808,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4829,4829,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4829,4829,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4830,4830,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4831,4831,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4832,4832,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4833,4833,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4834,4834,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4855,4855,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol,4855,4855,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."

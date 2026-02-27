@@ -1,0 +1,52 @@
+'solc --version' running
+'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses a weak PRNG: "randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,msg.sender,p.balance))) % count (../sb/Consorcio_F.sol#313-322)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345):
+	External calls:
+	- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)
+	State variables written after the call(s):
+	- p.status = STATUS_FINISHED (../sb/Consorcio_F.sol#340)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#68) can be used in cross function reentrancies:
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#157-169)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#128-151)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#175-184)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#361-388)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#216-246)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#190-210)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses a dangerous strict equality:
+	- senderInfo.payments == duePayments && ! senderInfo.received (../sb/Consorcio_F.sol#287)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+FinancialPoolManager.leavePool(uint256).index (../sb/Consorcio_F.sol#223) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+
+FinancialPoolManager.payInstallment(uint256).winner (../sb/Consorcio_F.sol#324) lacks a zero-check on :
+		- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) uses timestamp for comparisons
+	Dangerous comparisons:
+	- senderInfo.payments >= duePayments (../sb/Consorcio_F.sol#277)
+	- senderInfo.payments == duePayments && ! senderInfo.received (../sb/Consorcio_F.sol#287)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345) has a high cyclomatic complexity (15).
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#cyclomatic-complexity
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Consorcio_F.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#252-345):
+	- (success,None) = address(winner).call{value: p.goodValue}() (../sb/Consorcio_F.sol#335)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/sb/Consorcio_F.sol analyzed (2 contracts with 100 detectors), 9 result(s) found

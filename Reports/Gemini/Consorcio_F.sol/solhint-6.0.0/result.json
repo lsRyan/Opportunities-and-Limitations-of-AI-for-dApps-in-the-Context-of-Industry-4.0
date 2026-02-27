@@ -1,0 +1,500 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 8,
+            "message": "Found more than One contract per file. 2 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 18,
+            "message": "Missing @title tag in contract 'ReentrancyGuard'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 18,
+            "message": "Missing @author tag in contract 'ReentrancyGuard'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 18,
+            "message": "Missing @notice tag in contract 'ReentrancyGuard'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 24,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 24,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 29,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @title tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @author tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @notice tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Missing @notice tag in variable 'currentId'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "Missing @notice tag in event 'PoolCreated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "Missing @param tag in event 'PoolCreated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "Mismatch in @param names for event 'PoolCreated'. Expected: [poolId, owner, goodValue], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "GC: [goodValue] on Event [PoolCreated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "Missing @notice tag in event 'PoolActivated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "Missing @param tag in event 'PoolActivated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "Mismatch in @param names for event 'PoolActivated'. Expected: [poolId, activationDate], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "GC: [activationDate] on Event [PoolActivated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "Missing @notice tag in event 'PoolCanceled'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "Missing @param tag in event 'PoolCanceled'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "Mismatch in @param names for event 'PoolCanceled'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 84,
+            "message": "Missing @notice tag in event 'UserJoined'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 84,
+            "message": "Missing @param tag in event 'UserJoined'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 84,
+            "message": "Mismatch in @param names for event 'UserJoined'. Expected: [poolId, user], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 85,
+            "message": "Missing @notice tag in event 'UserLeft'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 85,
+            "message": "Missing @param tag in event 'UserLeft'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 85,
+            "message": "Mismatch in @param names for event 'UserLeft'. Expected: [poolId, user], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Missing @notice tag in event 'InstallmentPaid'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Missing @param tag in event 'InstallmentPaid'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "Mismatch in @param names for event 'InstallmentPaid'. Expected: [poolId, user, paymentCount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 86,
+            "message": "GC: [paymentCount] on Event [InstallmentPaid] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 87,
+            "message": "Missing @notice tag in event 'WinnerSelected'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 87,
+            "message": "Missing @param tag in event 'WinnerSelected'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 87,
+            "message": "Mismatch in @param names for event 'WinnerSelected'. Expected: [poolId, winner, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 87,
+            "message": "GC: [amount] on Event [WinnerSelected] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "Missing @notice tag in event 'PoolFinished'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "Missing @param tag in event 'PoolFinished'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "Mismatch in @param names for event 'PoolFinished'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 112,
+            "message": "Missing @notice tag in function '_compareStrings'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 112,
+            "message": "Missing @param tag in function '_compareStrings'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 112,
+            "message": "Mismatch in @param names for function '_compareStrings'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 112,
+            "message": "Missing @return tag in function '_compareStrings'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 112,
+            "message": "Mismatch in @return count for function '_compareStrings'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 134,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 135,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 137,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 56,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 199,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 203,
+            "message": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 56,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 225,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 236,
+            "message": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 252,
+            "message": "Function body contains 92 lines but allowed no more than 50 lines",
+            "name": "function-max-lines"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 260,
+            "message": "Rule is set with explicit type [var/s: uint]",
+            "name": "explicit-types"
+        },
+        {
+            "column": 48,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 260,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 280,
+            "message": "GC: For [ senderInfo ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 294,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 60,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 301,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 21,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 306,
+            "message": "GC: For [ count ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol",
+            "level": "warning",
+            "line": 330,
+            "message": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

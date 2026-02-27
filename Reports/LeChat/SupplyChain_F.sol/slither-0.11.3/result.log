@@ -1,0 +1,333 @@
+'solc --version' running
+'solc /sb/SupplyChain_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) has bitwise-xor operator ^ instead of the exponentiation operator **: 
+	 - inverse = (3 * denominator) ^ 2 (../sb/SupplyChain_F.sol#2137)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-exponentiation
+
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)
+	- inverse = (3 * denominator) ^ 2 (../sb/SupplyChain_F.sol#2137)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)
+	- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2141)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)
+	- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2142)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)
+	- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2143)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)
+	- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2144)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)
+	- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2145)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)
+	- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2146)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:
+	- low = low / twos (../sb/SupplyChain_F.sol#2125)
+	- result = low * inverse (../sb/SupplyChain_F.sol#2152)
+Math.invMod(uint256,uint256) (../sb/SupplyChain_F.sol#2195-2241) performs a multiplication on the result of a division:
+	- quotient = gcd / remainder (../sb/SupplyChain_F.sol#2217)
+	- (gcd,remainder) = (remainder,gcd - remainder * quotient) (../sb/SupplyChain_F.sol#2219-2226)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#divide-before-multiply
+
+Contract locking ether found:
+	Contract PharmaCompany (../sb/SupplyChain_F.sol#4036-4072) has payable functions:
+	 - PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4060-4066)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4060-4066):
+	External calls:
+	- require(bool,string)(IHospitalManagement(hospital).authorizeSale(prescriptionId,to,medicineName,amount),Sale not authorized) (../sb/SupplyChain_F.sol#4064)
+	- _safeTransferFrom(owner(),to,medicines[medicineName],amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4065)
+		- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)
+		- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)
+		- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)
+		- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)
+	State variables written after the call(s):
+	- _safeTransferFrom(owner(),to,medicines[medicineName],amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4065)
+		- _balances[id][from] = fromBalance - value (../sb/SupplyChain_F.sol#3672)
+		- _balances[id][to] += value (../sb/SupplyChain_F.sol#3677)
+	ERC1155._balances (../sb/SupplyChain_F.sol#3541) can be used in cross function reentrancies:
+	- ERC1155._update(address,address,uint256[],uint256[]) (../sb/SupplyChain_F.sol#3654-3688)
+	- ERC1155.balanceOf(address,uint256) (../sb/SupplyChain_F.sol#3578-3580)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1
+
+Prescriptions.constructor(address).managerAddress (../sb/SupplyChain_F.sol#3963) lacks a zero-check on :
+		- managerContract = managerAddress (../sb/SupplyChain_F.sol#3964)
+authorizationCertificates.changeAdmin(address).newAdmin (../sb/SupplyChain_F.sol#4031) lacks a zero-check on :
+		- admin = newAdmin (../sb/SupplyChain_F.sol#4033)
+PharmaCompany.constructor(address)._govAuthorizationContract (../sb/SupplyChain_F.sol#4041) lacks a zero-check on :
+		- govAuthorizationContract = _govAuthorizationContract (../sb/SupplyChain_F.sol#4042)
+hospitalManagement.constructor(address)._govAuthorizationContract (../sb/SupplyChain_F.sol#4097) lacks a zero-check on :
+		- govAuthorizationContract = _govAuthorizationContract (../sb/SupplyChain_F.sol#4100)
+hospitalManagement.setPrescriptionContract(address).newPrescriptionContract (../sb/SupplyChain_F.sol#4153) lacks a zero-check on :
+		- prescriptionsContract = newPrescriptionContract (../sb/SupplyChain_F.sol#4155)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4060-4066):
+	External calls:
+	- require(bool,string)(IHospitalManagement(hospital).authorizeSale(prescriptionId,to,medicineName,amount),Sale not authorized) (../sb/SupplyChain_F.sol#4064)
+	- _safeTransferFrom(owner(),to,medicines[medicineName],amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4065)
+		- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)
+		- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)
+		- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)
+		- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)
+	Event emitted after the call(s):
+	- TransferBatch(operator,from,to,ids,values) (../sb/SupplyChain_F.sol#3686)
+		- _safeTransferFrom(owner(),to,medicines[medicineName],amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4065)
+	- TransferSingle(operator,from,to,id_scope_0,value_scope_1) (../sb/SupplyChain_F.sol#3684)
+		- _safeTransferFrom(owner(),to,medicines[medicineName],amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4065)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+ERC1155Utils.checkOnERC1155Received(address,address,address,uint256,uint256,bytes) (../sb/SupplyChain_F.sol#565-590) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#584-586)
+ERC1155Utils.checkOnERC1155BatchReceived(address,address,address,uint256[],uint256[],bytes) (../sb/SupplyChain_F.sol#600-627) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#621-623)
+SafeCast.toUint(bool) (../sb/SupplyChain_F.sol#1812-1816) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#1813-1815)
+Panic.panic(uint256) (../sb/SupplyChain_F.sol#1871-1877) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#1872-1876)
+Math.add512(uint256,uint256) (../sb/SupplyChain_F.sol#1905-1910) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#1906-1909)
+Math.mul512(uint256,uint256) (../sb/SupplyChain_F.sol#1917-1926) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#1921-1925)
+Math.tryMul(uint256,uint256) (../sb/SupplyChain_F.sol#1953-1964) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#1956-1960)
+Math.tryDiv(uint256,uint256) (../sb/SupplyChain_F.sol#1969-1977) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#1972-1975)
+Math.tryMod(uint256,uint256) (../sb/SupplyChain_F.sol#1982-1990) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#1985-1988)
+Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2107-2114)
+	- INLINE ASM (../sb/SupplyChain_F.sol#2120-2129)
+Math.tryModExp(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2289-2313) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2291-2312)
+Math.tryModExp(bytes,bytes,bytes) (../sb/SupplyChain_F.sol#2329-2351) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2341-2350)
+Math.log2(uint256) (../sb/SupplyChain_F.sol#2492-2531) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2528-2530)
+SlotDerivation.erc7201Slot(string) (../sb/SupplyChain_F.sol#2678-2683) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2679-2682)
+SlotDerivation.deriveArray(bytes32) (../sb/SupplyChain_F.sol#2697-2702) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2698-2701)
+SlotDerivation.deriveMapping(bytes32,address) (../sb/SupplyChain_F.sol#2707-2713) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2708-2712)
+SlotDerivation.deriveMapping(bytes32,bool) (../sb/SupplyChain_F.sol#2718-2724) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2719-2723)
+SlotDerivation.deriveMapping(bytes32,bytes32) (../sb/SupplyChain_F.sol#2729-2735) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2730-2734)
+SlotDerivation.deriveMapping(bytes32,uint256) (../sb/SupplyChain_F.sol#2740-2746) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2741-2745)
+SlotDerivation.deriveMapping(bytes32,int256) (../sb/SupplyChain_F.sol#2751-2757) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2752-2756)
+SlotDerivation.deriveMapping(bytes32,string) (../sb/SupplyChain_F.sol#2762-2772) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2763-2771)
+SlotDerivation.deriveMapping(bytes32,bytes) (../sb/SupplyChain_F.sol#2777-2787) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2778-2786)
+StorageSlot.getAddressSlot(bytes32) (../sb/SupplyChain_F.sol#2858-2862) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2859-2861)
+StorageSlot.getBooleanSlot(bytes32) (../sb/SupplyChain_F.sol#2867-2871) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2868-2870)
+StorageSlot.getBytes32Slot(bytes32) (../sb/SupplyChain_F.sol#2876-2880) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2877-2879)
+StorageSlot.getUint256Slot(bytes32) (../sb/SupplyChain_F.sol#2885-2889) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2886-2888)
+StorageSlot.getInt256Slot(bytes32) (../sb/SupplyChain_F.sol#2894-2898) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2895-2897)
+StorageSlot.getStringSlot(bytes32) (../sb/SupplyChain_F.sol#2903-2907) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2904-2906)
+StorageSlot.getStringSlot(string) (../sb/SupplyChain_F.sol#2912-2916) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2913-2915)
+StorageSlot.getBytesSlot(bytes32) (../sb/SupplyChain_F.sol#2921-2925) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2922-2924)
+StorageSlot.getBytesSlot(bytes) (../sb/SupplyChain_F.sol#2930-2934) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#2931-2933)
+Arrays._begin(uint256[]) (../sb/SupplyChain_F.sol#3079-3083) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3080-3082)
+Arrays._mload(uint256) (../sb/SupplyChain_F.sol#3098-3102) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3099-3101)
+Arrays._swap(uint256,uint256) (../sb/SupplyChain_F.sol#3107-3114) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3108-3113)
+Arrays._castToUint256Array(address[]) (../sb/SupplyChain_F.sol#3117-3121) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3118-3120)
+Arrays._castToUint256Array(bytes32[]) (../sb/SupplyChain_F.sol#3124-3128) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3125-3127)
+Arrays._castToUint256Comp(function(address,address) returns(bool)) (../sb/SupplyChain_F.sol#3131-3137) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3134-3136)
+Arrays._castToUint256Comp(function(bytes32,bytes32) returns(bool)) (../sb/SupplyChain_F.sol#3140-3146) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3143-3145)
+Arrays.unsafeAccess(address[],uint256) (../sb/SupplyChain_F.sol#3320-3326) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3322-3324)
+Arrays.unsafeAccess(bytes32[],uint256) (../sb/SupplyChain_F.sol#3333-3339) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3335-3337)
+Arrays.unsafeAccess(uint256[],uint256) (../sb/SupplyChain_F.sol#3346-3352) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3348-3350)
+Arrays.unsafeAccess(bytes[],uint256) (../sb/SupplyChain_F.sol#3359-3365) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3361-3363)
+Arrays.unsafeAccess(string[],uint256) (../sb/SupplyChain_F.sol#3372-3378) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3374-3376)
+Arrays.unsafeMemoryAccess(address[],uint256) (../sb/SupplyChain_F.sol#3385-3389) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3386-3388)
+Arrays.unsafeMemoryAccess(bytes32[],uint256) (../sb/SupplyChain_F.sol#3396-3400) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3397-3399)
+Arrays.unsafeMemoryAccess(uint256[],uint256) (../sb/SupplyChain_F.sol#3407-3411) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3408-3410)
+Arrays.unsafeMemoryAccess(bytes[],uint256) (../sb/SupplyChain_F.sol#3418-3422) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3419-3421)
+Arrays.unsafeMemoryAccess(string[],uint256) (../sb/SupplyChain_F.sol#3429-3433) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3430-3432)
+Arrays.unsafeSetLength(address[],uint256) (../sb/SupplyChain_F.sol#3440-3444) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3441-3443)
+Arrays.unsafeSetLength(bytes32[],uint256) (../sb/SupplyChain_F.sol#3451-3455) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3452-3454)
+Arrays.unsafeSetLength(uint256[],uint256) (../sb/SupplyChain_F.sol#3462-3466) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3463-3465)
+Arrays.unsafeSetLength(bytes[],uint256) (../sb/SupplyChain_F.sol#3473-3477) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3474-3476)
+Arrays.unsafeSetLength(string[],uint256) (../sb/SupplyChain_F.sol#3484-3488) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3485-3487)
+ERC1155._asSingletonArrays(uint256,uint256) (../sb/SupplyChain_F.sol#3886-3906) uses assembly
+	- INLINE ASM (../sb/SupplyChain_F.sol#3890-3905)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+5 different versions of Solidity are used:
+	- Version constraint ^0.8.20 is used by:
+		-^0.8.20 (../sb/SupplyChain_F.sol#10)
+		-^0.8.20 (../sb/SupplyChain_F.sol#42)
+		-^0.8.20 (../sb/SupplyChain_F.sol#546)
+		-^0.8.20 (../sb/SupplyChain_F.sol#636)
+		-^0.8.20 (../sb/SupplyChain_F.sol#660)
+		-^0.8.20 (../sb/SupplyChain_F.sol#1825)
+		-^0.8.20 (../sb/SupplyChain_F.sol#1886)
+		-^0.8.20 (../sb/SupplyChain_F.sol#2638)
+		-^0.8.20 (../sb/SupplyChain_F.sol#2797)
+		-^0.8.20 (../sb/SupplyChain_F.sol#2944)
+		-^0.8.20 (../sb/SupplyChain_F.sol#3497)
+		-^0.8.20 (../sb/SupplyChain_F.sol#3524)
+		-^0.8.20 (../sb/SupplyChain_F.sol#3915)
+	- Version constraint >=0.8.4 is used by:
+		->=0.8.4 (../sb/SupplyChain_F.sol#143)
+	- Version constraint >=0.4.16 is used by:
+		->=0.4.16 (../sb/SupplyChain_F.sol#309)
+	- Version constraint >=0.6.2 is used by:
+		->=0.6.2 (../sb/SupplyChain_F.sol#338)
+		->=0.6.2 (../sb/SupplyChain_F.sol#463)
+		->=0.6.2 (../sb/SupplyChain_F.sol#485)
+	- Version constraint ^0.8.0 is used by:
+		-^0.8.0 (../sb/SupplyChain_F.sol#3943)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#different-pragma-directives-are-used
+
+Context._contextSuffixLength() (../sb/SupplyChain_F.sol#31-33) is never used and should be removed
+Context._msgData() (../sb/SupplyChain_F.sol#27-29) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/SupplyChain_F.sol#10)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#42)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#546)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#636)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#660)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#1825)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#1886)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#2638)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#2797)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#2944)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#3497)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#3524)
+	- ^0.8.20 (../sb/SupplyChain_F.sol#3915)
+Version constraint >=0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables.
+It is used by:
+	- >=0.8.4 (../sb/SupplyChain_F.sol#143)
+Version constraint >=0.4.16 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector.
+It is used by:
+	- >=0.4.16 (../sb/SupplyChain_F.sol#309)
+Version constraint >=0.6.2 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- MissingEscapingInFormatting
+	- ArraySliceDynamicallyEncodedBaseType
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow.
+It is used by:
+	- >=0.6.2 (../sb/SupplyChain_F.sol#338)
+	- >=0.6.2 (../sb/SupplyChain_F.sol#463)
+	- >=0.6.2 (../sb/SupplyChain_F.sol#485)
+Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching.
+It is used by:
+	- ^0.8.0 (../sb/SupplyChain_F.sol#3943)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Prescriptions (../sb/SupplyChain_F.sol#3945-3992) should inherit from IPrescriptions (../sb/SupplyChain_F.sol#4159-4171)
+authorizationCertificates (../sb/SupplyChain_F.sol#3994-4035) should inherit from IAuthorizationCertificatesHospitals (../sb/SupplyChain_F.sol#4074-4076)
+authorizationCertificates (../sb/SupplyChain_F.sol#3994-4035) should inherit from IAuthorizationCertificatesManufacturers (../sb/SupplyChain_F.sol#4173-4175)
+hospitalManagement (../sb/SupplyChain_F.sol#4082-4157) should inherit from IHospitalManagement (../sb/SupplyChain_F.sol#4078-4080)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-inheritance
+
+Function Prescriptions._prescribe(address,address,string,uint256) (../sb/SupplyChain_F.sol#3967-3979) is not in mixedCase
+Parameter Prescriptions._prescribe(address,address,string,uint256)._medicine (../sb/SupplyChain_F.sol#3967) is not in mixedCase
+Parameter Prescriptions._prescribe(address,address,string,uint256)._dose (../sb/SupplyChain_F.sol#3967) is not in mixedCase
+Function Prescriptions._getPrescription(address,uint256) (../sb/SupplyChain_F.sol#3981-3985) is not in mixedCase
+Contract authorizationCertificates (../sb/SupplyChain_F.sol#3994-4035) is not in CapWords
+Contract hospitalManagement (../sb/SupplyChain_F.sol#4082-4157) is not in CapWords
+Function IPrescriptions._prescribe(address,address,string,uint256) (../sb/SupplyChain_F.sol#4168) is not in mixedCase
+Function IPrescriptions._getPrescription(address,uint256) (../sb/SupplyChain_F.sol#4169) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Math.log2(uint256) (../sb/SupplyChain_F.sol#2492-2531) uses literals with too many digits:
+	- r = r | byte(uint256,uint256)(x >> r,0x0000010102020202030303030303030300000000000000000000000000000000) (../sb/SupplyChain_F.sol#2529)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+
+PharmaCompany.govAuthorizationContract (../sb/SupplyChain_F.sol#4039) should be immutable 
+Prescriptions.managerContract (../sb/SupplyChain_F.sol#3946) should be immutable 
+hospitalManagement.govAuthorizationContract (../sb/SupplyChain_F.sol#4087) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/sb/SupplyChain_F.sol analyzed (28 contracts with 100 detectors), 96 result(s) found

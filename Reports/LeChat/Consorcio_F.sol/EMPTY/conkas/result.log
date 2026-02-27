@@ -1,0 +1,15 @@
+ANTLR runtime and generated code versions disagree: 4.9.2!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.2!=4.7.2
+line 196:16 extraneous input 'payable' expecting {'~', 'from', '{', '}', '(', 'for', 'function', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+Traceback (most recent call last):
+  File "conkas.py", line 143, in <module>
+    main()
+  File "conkas.py", line 89, in main
+    contracts = compile_files([filename])
+  File "/usr/local/lib/python3.8/dist-packages/solcx/main.py", line 120, in compile_files
+    contracts = _parse_compiler_output(stdoutdata)
+  File "/usr/local/lib/python3.8/dist-packages/solcx/main.py", line 62, in _parse_compiler_output
+    data["abi"] = json.loads(data["abi"])
+  File "/usr/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list

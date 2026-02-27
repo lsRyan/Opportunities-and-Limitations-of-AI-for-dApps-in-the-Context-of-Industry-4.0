@@ -1,0 +1,593 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 44,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 48,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 49,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 50,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 51,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 49,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 58,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 59,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 61,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 68,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 68,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 68,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 69,
+            "message": "Replace state variable reads and writes within loops with local variable reads and writes.",
+            "name": "state-variable-read-in-a-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 77,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 78,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 82,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 82,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 82,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 88,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 89,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 101,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 118,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 119,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 129,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 130,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 148,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 148,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 148,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 150,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 150,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 162,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 167,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 194,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 198,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 199,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 200,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 201,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 202,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 203,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 199,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 200,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 215,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 216,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 217,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 218,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 220,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 221,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 222,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 223,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 228,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 229,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 230,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 231,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 248,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 253,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 258,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 280,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 284,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 285,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 286,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 287,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 288,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 299,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 300,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 305,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 306,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 315,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 316,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 317,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 318,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 319,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 321,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 326,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 335,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 336,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 341,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 342,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 343,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 344,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 345,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 346,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 404,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 436,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "semgrep-1.131.0-1.2.1",
+        "mode": "solidity",
+        "version": "2025/08/06"
+    }
+}

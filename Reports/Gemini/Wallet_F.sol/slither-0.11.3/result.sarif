@@ -1,0 +1,830 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 331,
+                                    "startLine": 240
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Contract locking ether found:\n\tContract Exchange (../sb/Wallet_F.sol#240-331) has payable functions:\n\t - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#278-307)\n\tBut does not have a function to withdraw the ether\n"
+                    },
+                    "ruleId": "slither_0_11_3_locked_ether"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function changeMinimumQuorum"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 591,
+                                    "startLine": 588
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#588-591) contains a tautology or contradiction:\n\t- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Invalid quorum) (../sb/Wallet_F.sol#589)\n"
+                    },
+                    "ruleId": "slither_0_11_3_tautology"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function updateExchangeFee"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 622,
+                                    "startLine": 619
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#619-622) contains a tautology or contradiction:\n\t- require(bool,string)(newExchangeFee >= 0 && newExchangeFee <= 100,Invalid fee) (../sb/Wallet_F.sol#620)\n"
+                    },
+                    "ruleId": "slither_0_11_3_tautology"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function getExchangeRate"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 570,
+                                    "startLine": 568
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#568-570) ignores return value by IOracle(oracleContract).readRate(symbol) (../sb/Wallet_F.sol#569)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function requestExchangeRate"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 576,
+                                    "startLine": 574
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#574-576) ignores return value by IOracle(oracleContract).requestRate(symbol) (../sb/Wallet_F.sol#575)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function changeOwnership"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 627,
+                                    "startLine": 624
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.changeOwnership(address) (../sb/Wallet_F.sol#624-627) should emit an event for: \n\t- owner = newOwner (../sb/Wallet_F.sol#626) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_access"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function updateMaximumRateDelay"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 617,
+                                    "startLine": 615
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#615-617) should emit an event for: \n\t- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#616) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_maths"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function updateExchangeFee"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 622,
+                                    "startLine": 619
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#619-622) should emit an event for: \n\t- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#621) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_maths"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 88
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#88) lacks a zero-check on :\n\t\t- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#89)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#268) lacks a zero-check on :\n\t\t- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#269)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#268) lacks a zero-check on :\n\t\t- oracleContract = _oracleContract (../sb/Wallet_F.sol#270)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function answerRequest"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 167,
+                                    "startLine": 127
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Oracle.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#127-167) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(req.active,Request not active) (../sb/Wallet_F.sol#131)\n\t- require(bool,string)(! req.answers[msg.sender],Oracle already answered) (../sb/Wallet_F.sol#132)\n\t- req.requestTime < exchangeRateTime[req.currency] (../sb/Wallet_F.sol#146)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 307,
+                                    "startLine": 278
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#278-307) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- (block.timestamp - rateTime) > maximumRateDelay (../sb/Wallet_F.sol#292)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/Wallet_F.sol#8)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function externalTransfer"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 422,
+                                    "startLine": 414
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#414-422):\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#420)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function withdrawn"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 457,
+                                    "startLine": 450
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#450-457):\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#455)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function withdrawnAUTH"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 536,
+                                    "startLine": 522
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#522-536):\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#534)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function externalTransferAUTH"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 493,
+                                    "startLine": 480
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#480-493):\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#491)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 331,
+                                    "startLine": 240
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange (../sb/Wallet_F.sol#240-331) should inherit from IExchange (../sb/Wallet_F.sol#27-33)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_inheritance"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 233,
+                                    "startLine": 40
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Oracle (../sb/Wallet_F.sol#40-233) should inherit from IOracle (../sb/Wallet_F.sol#14-21)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_inheritance"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IExchange, function _updateBridge"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IExchange._updateBridge(string) (../sb/Wallet_F.sol#30) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IOracle, function _changeMinimumQuorum"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 20
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IOracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#20) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IExchange, function _removeCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 32
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IExchange._removeCurrency(string) (../sb/Wallet_F.sol#32) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function _addCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 325,
+                                    "startLine": 322
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#322-325) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IOracle, function _removeOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 19
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IOracle._removeOracle(string,address) (../sb/Wallet_F.sol#19) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function _removeCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 330,
+                                    "startLine": 327
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#327-330) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function _updateBridge"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 320,
+                                    "startLine": 318
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#318-320) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function _removeOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 227,
+                                    "startLine": 212
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#212-227) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function _changeMinimumQuorum"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 232,
+                                    "startLine": 229
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#229-232) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function _addOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 210,
+                                    "startLine": 193
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#193-210) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IOracle, function _addOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 18
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IOracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#18) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract IExchange, function _addCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 31
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function IExchange._addCurrency(string) (../sb/Wallet_F.sol#31) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 243
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.authorizedWallet (../sb/Wallet_F.sol#243) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 244
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.oracleContract (../sb/Wallet_F.sol#244) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 60
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Oracle.authorizedWallet (../sb/Wallet_F.sol#60) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "id": "slither_0_11_3_tautology",
+                            "name": "tautology",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_immutable_states",
+                            "name": "immutable-states"
+                        },
+                        {
+                            "id": "slither_0_11_3_timestamp",
+                            "name": "timestamp",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_missing_zero_check",
+                            "name": "missing-zero-check",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_naming_convention",
+                            "name": "naming-convention"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_low_level_calls",
+                            "name": "low-level-calls"
+                        },
+                        {
+                            "id": "slither_0_11_3_missing_inheritance",
+                            "name": "missing-inheritance"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-102."
+                            },
+                            "id": "slither_0_11_3_solc_version",
+                            "name": "solc-version"
+                        },
+                        {
+                            "id": "slither_0_11_3_events_access",
+                            "name": "events-access",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_unused_return",
+                            "name": "unused-return",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_events_maths",
+                            "name": "events-maths",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-5."
+                            },
+                            "id": "slither_0_11_3_locked_ether",
+                            "name": "locked-ether",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

@@ -1,0 +1,27 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Wallet_F.sol
+17:11:07.034 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Wallet_F.sol:8:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+17:11:08.406 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:196:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push. Falling back to the default (current) scope
+17:11:08.409 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:219:17: Could not find the scope OracleInfo needed to resolve the call OracleInfo.pop. Falling back to the default (current) scope
+17:11:08.411 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:335:36: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+17:11:08.415 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:477:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+17:11:08.416 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:510:9: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+17:11:08.417 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:528:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+17:11:08.419 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:573:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+17:11:08.420 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:610:9: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+17:11:08.421 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:636:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+Running checks
+AccessControlSelfdestructCheck took 1235 ms
+CallReturnCheck took 709 ms

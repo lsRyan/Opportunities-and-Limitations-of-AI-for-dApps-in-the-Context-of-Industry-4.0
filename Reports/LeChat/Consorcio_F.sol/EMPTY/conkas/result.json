@@ -1,0 +1,15 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (TypeError: the JSON object must be str, bytes or bytearray, not list)"
+    ],
+    "findings": [],
+    "infos": [],
+    "parser": {
+        "id": "conkas",
+        "mode": "solidity",
+        "version": "2025/08/07"
+    }
+}

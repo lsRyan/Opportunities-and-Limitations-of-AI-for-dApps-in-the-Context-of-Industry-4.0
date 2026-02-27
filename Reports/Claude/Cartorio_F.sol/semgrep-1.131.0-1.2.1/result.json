@@ -1,0 +1,348 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 126,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 127,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 128,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 2800,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 2800,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3198,
+            "message": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.",
+            "name": "use-prefix-decrement-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3266,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3267,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3268,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3269,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3343,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3423,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3424,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3425,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3426,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3427,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3425,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3426,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3427,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3495,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3572,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3573,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3574,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3575,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3573,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3574,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3575,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3574,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3575,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3595,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 3595,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4053,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4054,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4055,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4713,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4714,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4715,
+            "message": "Consider making costructor payable to save gas.",
+            "name": "non-payable-constructor"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4803,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4804,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4806,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4828,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4828,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4829,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4830,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4831,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4832,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4852,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "line": 4852,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "semgrep-1.131.0-1.2.1",
+        "mode": "solidity",
+        "version": "2025/08/06"
+    }
+}

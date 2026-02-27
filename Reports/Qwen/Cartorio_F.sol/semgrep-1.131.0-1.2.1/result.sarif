@@ -1,0 +1,883 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 126
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 127
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 128
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2800
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2800
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3198
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3266
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3267
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3269
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3343
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3423
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3424
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3425
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3426
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3427
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3425
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3426
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3427
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3495
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3572
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3573
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3574
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3575
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3573
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3574
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3575
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3574
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3575
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3595
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3595
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4053
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4054
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4055
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4809
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4810
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4811
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4918
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4919
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4919
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_short_revert_string"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4923
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4942
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4942
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4943
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4961
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4961
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/semgrep/semgrep, https://github.com/Decurity/semgrep-smart-contracts",
+                    "name": "semgrep",
+                    "rules": [
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_custom_error_not_require",
+                            "name": "use-custom-error-not-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_array_length_outside_loop",
+                            "name": "array-length-outside-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix",
+                            "name": "use-prefix-increment-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_multiple_require",
+                            "name": "use-multiple-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_short_revert_string",
+                            "name": "use-short-revert-string"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop",
+                            "name": "unnecessary-checked-arithmetic-in-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix",
+                            "name": "use-prefix-decrement-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_nested_if",
+                            "name": "use-nested-if"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_non_payable_constructor",
+                            "name": "non-payable-constructor"
+                        }
+                    ],
+                    "version": "semgrep 1.131.0, Decurity SC rules 1.2.1"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

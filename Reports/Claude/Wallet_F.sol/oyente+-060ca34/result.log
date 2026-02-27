@@ -1,0 +1,156 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Wallet_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:root:contract /sb/Wallet_F.sol:Exchange:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 30.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Wallet_F.sol:30:50: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:280:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:196:60: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:271:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:274:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Wallet_F.sol:280:5: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:29:69: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:12:37: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:17:8: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:19:32: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:27:34: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:313:9: Warning: Integer Overflow.
+
+INFO:symExec:/sb/Wallet_F.sol:335:45: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:341:27: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Wallet_F.sol:Oracle:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 26.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Wallet_F.sol:126:9: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:53:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:459:23: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:35:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Wallet_F.sol:129:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+/sb/Wallet_F.sol:44:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Wallet_F.sol:Wallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 32.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Wallet_F.sol:950:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 2392319693042675941842111384401942157660026551583498758012027223895889271641
+/sb/Wallet_F.sol:440:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:428:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:639:19: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:721:17: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    balances[msg.sender] = 0
+/sb/Wallet_F.sol:437:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:422:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:483:9: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Wallet_F.sol:24:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 2885426898985047304966542853149950801533362164345973422531552496052409134233
+/sb/Wallet_F.sol:674:9: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:510:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639933
+/sb/Wallet_F.sol:509:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+/sb/Wallet_F.sol:565:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:/sb/Wallet_F.sol:857:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:803:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:643:45: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:656:23: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:685:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:514:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:782:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:883:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:870:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:615:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:535:45: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:548:23: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:844:28: Warning: Callstack Depth Attack Vulnerability.
+
+/sb/Wallet_F.sol:826:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======

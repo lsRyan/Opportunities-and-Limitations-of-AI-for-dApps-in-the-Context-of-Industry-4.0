@@ -1,0 +1,18 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (AttributeError: 'VariableDeclaration__AllAttrsMixin' object has no attribute 'value')",
+        "exception (securify.grammar.attributes.AttributeGrammarError: Error during evaluation of rule 'default_value'. )"
+    ],
+    "findings": [],
+    "infos": [
+        "pragma directive defines a prior version to 0.8.31. Changing pragma version to 0.8.31...."
+    ],
+    "parser": {
+        "id": "securify2",
+        "mode": "solidity",
+        "version": "2025-09-12"
+    }
+}

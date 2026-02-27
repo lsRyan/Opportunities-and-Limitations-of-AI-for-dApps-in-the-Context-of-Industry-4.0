@@ -1,0 +1,298 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 42 Code Findings │
+└──────────────────┘
+                       
+    /sb/Consorcio_F.sol
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          105┆ require(poolId > 0 && poolId <= currentId, "Pool does not exist");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          105┆ require(poolId > 0 && poolId <= currentId, "Pool does not exist");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          110┆ require(
+          111┆     pools[poolId].owner == msg.sender,
+          112┆     "Caller is not the pool owner"
+          113┆ );
+            ⋮┆----------------------------------------
+          118┆ require(
+          119┆     pools[poolId].status == expectedStatus,
+          120┆     "Pool status does not allow this operation"
+          121┆ );
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          118┆ require(
+          119┆     pools[poolId].status == expectedStatus,
+          120┆     "Pool status does not allow this operation"
+          121┆ );
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          126┆ require(
+          127┆     isAddressInArray(pools[poolId].participants, msg.sender),
+          128┆     "Caller is not a participant"
+          129┆ );
+            ⋮┆----------------------------------------
+          134┆ require(
+          135┆     !isAddressInArray(pools[poolId].participants, msg.sender),
+          136┆     "Caller is already a participant"
+          137┆ );
+            ⋮┆----------------------------------------
+          155┆ require(goodValue > 0, "Good value must be greater than zero");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          155┆ require(goodValue > 0, "Good value must be greater than zero");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          156┆ require(minParticipants > 0, "Minimum participants must be greater than zero");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          156┆ require(minParticipants > 0, "Minimum participants must be greater than zero");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          157┆ require(installments > 0, "Installments must be greater than zero");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          157┆ require(installments > 0, "Installments must be greater than zero");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          158┆ require(goodValue % installments == 0, "Good value must be divisible by installments");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          158┆ require(goodValue % installments == 0, "Good value must be divisible by installments");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          160┆ currentId++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          196┆ require(
+          197┆     pool.totalParticipants >= pool.minParticipants,
+          198┆     "Not enough participants to activate"
+          199┆ );
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          196┆ require(
+          197┆     pool.totalParticipants >= pool.minParticipants,
+          198┆     "Not enough participants to activate"
+          199┆ );
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          233┆ pool.totalParticipants++;
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          265┆ uint256 lastIndex = pool.participants.length - 1;
+   
+     ❱ solidity.performance.use-prefix-decrement-not-postfix
+          Consider using the prefix decrement expression whenever the return value is not needed. The prefix
+          decrement expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          271┆ pool.totalParticipants--;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          289┆ require(
+          290┆     msg.value == pool.installmentValue,
+          291┆     "Incorrect payment amount"
+          292┆ );
+            ⋮┆----------------------------------------
+          293┆ require(
+          294┆     pool.activationDate > 0,
+          295┆     "Pool activation date not set"
+          296┆ );
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          301┆ uint256 duePayments = (block.timestamp - pool.activationDate) / SECONDS_IN_MONTH;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          303┆ require(
+          304┆     participant.payments < duePayments,
+          305┆     "No payment due at this time"
+          306┆ );
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          309┆ participant.payments++;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          315┆ if (participant.payments == duePayments && !participant.received) {
+          316┆     participant.canReceive = true;
+          317┆ } else {
+          318┆     participant.canReceive = false;
+          319┆ }
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          340┆ for (uint256 i = 0; i < pool.totalParticipants; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          340┆ for (uint256 i = 0; i < pool.totalParticipants; i++) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          344┆ if (info.canReceive && !info.received) {
+          345┆     eligibleParticipants[eligibleCount] = participant;
+          346┆     eligibleCount++;
+          347┆ }
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          346┆ eligibleCount++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          377┆ require(success, "Transfer failed");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          382┆ pool.winnersCount++;
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          451┆ for (uint256 i = 0; i < arr.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          451┆ for (uint256 i = 0; i < arr.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          451┆ for (uint256 i = 0; i < arr.length; i++) {
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          456┆ revert("Address not found in array");
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          466┆ for (uint256 i = 0; i < arr.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          466┆ for (uint256 i = 0; i < arr.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          466┆ for (uint256 i = 0; i < arr.length; i++) {
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          514┆ revert("Direct ETH transfers not allowed");
+            ⋮┆----------------------------------------
+          518┆ revert("Direct ETH transfers not allowed");
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 42 (42 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~100.0%
+ • No ignore information available
+Ran 57 rules on 1 file: 42 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+📢 Too many findings? Try Semgrep Pro for more powerful queries and less noise.
+   See https://sg.run/false-positives.

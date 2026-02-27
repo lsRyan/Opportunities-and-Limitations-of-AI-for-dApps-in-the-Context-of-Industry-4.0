@@ -1,0 +1,24 @@
+name,count
+use-natspec,9
+naming-convention,6
+use-custom-error-not-require,5
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,4
+SOLIDITY_VISIBILITY,3
+non-payable-constructor,3
+assembly,2
+dead-code,2
+func-name-mixedcase,2
+SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,2
+SOLIDITY_PRAGMAS_VERSION,2
+SOLIDITY_SHOULD_NOT_BE_PURE,2
+SOLIDITY_USING_INLINE_ASSEMBLY,2
+use-multiple-require,2
+tautology,1
+reentrancy-benign,1
+reentrancy-events,1
+Integer Underflow,1
+compiler-version,1
+const-name-snakecase,1
+no-inline-assembly,1
+use-short-revert-string,1
+use-prefix-increment-not-postfix,1

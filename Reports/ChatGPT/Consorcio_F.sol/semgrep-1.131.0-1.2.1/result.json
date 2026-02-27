@@ -1,0 +1,516 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 54,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 54,
+            "message": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-multiple-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 59,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 74,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 75,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 76,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 78,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 99,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 100,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 101,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 102,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 103,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 104,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 105,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 106,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 107,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 120,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 121,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 122,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 123,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 124,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 136,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 137,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 138,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 139,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 140,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 141,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 145,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 151,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 152,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 153,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 154,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 155,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 156,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 159,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 159,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 161,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 168,
+            "message": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.",
+            "name": "use-prefix-decrement-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 182,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 183,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 184,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 185,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 186,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 187,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 189,
+            "message": "Possible arithmetic underflow",
+            "name": "basic-arithmetic-underflow"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 193,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 198,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 199,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 200,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 201,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 202,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 217,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 217,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 217,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 221,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 222,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 223,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 222,
+            "message": "",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 242,
+            "message": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's \u2705 Scan completed successfully. length is not changed during the loop.",
+            "name": "array-length-outside-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 242,
+            "message": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked \u2022 Parsed lines: ~100.0% block saves the overflow checks. \u2022 No ignore information available",
+            "name": "unnecessary-checked-arithmetic-in-loop"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 242,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 246,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 247,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 248,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 249,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 250,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 251,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 252,
+            "message": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports.",
+            "name": "use-nested-if"
+        },
+        {
+            "category": "security",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 247,
+            "message": "Testing the balance of an account as a basis for some action has risks associated with unexpected receipt of ether or another token, including tokens deliberately transfered to cause such tests to fail, as an MEV attack.",
+            "name": "exact-balance-check"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 251,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 258,
+            "message": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.",
+            "name": "use-prefix-increment-not-postfix"
+        },
+        {
+            "category": "performance",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 265,
+            "message": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.",
+            "name": "use-custom-error-not-require"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "semgrep-1.131.0-1.2.1",
+        "mode": "solidity",
+        "version": "2025/08/06"
+    }
+}

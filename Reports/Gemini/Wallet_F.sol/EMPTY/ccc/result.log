@@ -1,0 +1,156 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Wallet_F.sol
+18:48:27.082 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Wallet_F.sol:8:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+18:48:28.496 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:205:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push. Falling back to the default (current) scope
+18:48:28.498 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:219:17: Could not find the scope OracleInfo needed to resolve the call OracleInfo.pop. Falling back to the default (current) scope
+18:48:28.500 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:290:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+18:48:28.502 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:290:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+18:48:28.505 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:287:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+18:48:28.505 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:296:38: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+18:48:28.507 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:388:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+18:48:28.507 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:388:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+18:48:28.508 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:388:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+18:48:28.508 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:388:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+18:48:28.509 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:420:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+18:48:28.510 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:429:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+18:48:28.511 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:439:9: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+18:48:28.570 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:455:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+18:48:28.572 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:491:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+18:48:28.574 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:502:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+18:48:28.575 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:511:9: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+18:48:28.576 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:534:28: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+18:48:28.579 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:561:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+18:48:28.579 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:565:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+18:48:28.580 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:569:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+18:48:28.581 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:575:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.requestRate. Falling back to the default (current) scope
+18:48:28.582 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:581:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addOracle. Falling back to the default (current) scope
+18:48:28.582 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:585:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeOracle. Falling back to the default (current) scope
+18:48:28.583 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:590:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._changeMinimumQuorum. Falling back to the default (current) scope
+18:48:28.584 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:594:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._updateBridge. Falling back to the default (current) scope
+18:48:28.584 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:598:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addCurrency. Falling back to the default (current) scope
+18:48:28.585 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:602:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeCurrency. Falling back to the default (current) scope
+Running checks
+AccessControlSelfdestructCheck took 1186 ms
+CallReturnCheck took 788 ms
+AccessControlSelfdestructCheck took 11930 ms
+CallReturnCheck took 110 ms
+org.neo4j.driver.exceptions.ServiceUnavailableException: Connection to the database terminated. Please ensure that your database is listening on the correct host and port and that you have compatible encryption settings both on Neo4j server and driver. Note that the default encryption setting has changed in Neo4j 4.0.
+	at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:111)
+	at org.neo4j.driver.internal.InternalResult.blockingGet(InternalResult.java:112)
+	at org.neo4j.driver.internal.InternalResult.hasNext(InternalResult.java:53)
+	at de.fraunhofer.aisec.cpg.checks.AccessControlLogicCheck.check(AccessControlLogicCheck.kt:18)
+	at de.fraunhofer.aisec.cpg.App.runVulnerabilityChecks$lambda$19$lambda$18$lambda$17(App.kt:312)
+	at org.neo4j.driver.internal.InternalSession.lambda$transaction$5(InternalSession.java:152)
+	at org.neo4j.driver.internal.retry.ExponentialBackoffRetryLogic.retry(ExponentialBackoffRetryLogic.java:102)
+	at org.neo4j.driver.internal.InternalSession.transaction(InternalSession.java:149)
+	at org.neo4j.driver.internal.InternalSession.readTransaction(InternalSession.java:107)
+	at org.neo4j.driver.internal.InternalSession.readTransaction(InternalSession.java:101)
+	at de.fraunhofer.aisec.cpg.App.runVulnerabilityChecks(App.kt:308)
+	at de.fraunhofer.aisec.cpg.App.call(App.kt:124)
+	at de.fraunhofer.aisec.cpg.App.call(App.kt:54)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at de.fraunhofer.aisec.cpg.AppKt.main(App.kt:369)
+	Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+		at org.neo4j.driver.internal.util.ErrorUtil.newConnectionTerminatedError(ErrorUtil.java:48)
+		at org.neo4j.driver.internal.util.ErrorUtil.newConnectionTerminatedError(ErrorUtil.java:42)
+		at org.neo4j.driver.internal.async.inbound.ChannelErrorHandler.channelInactive(ChannelErrorHandler.java:67)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:391)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:356)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:391)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:356)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+		at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+		at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:278)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1417)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:913)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:819)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:510)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:518)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Unknown Source)
+	Suppressed: org.neo4j.driver.exceptions.ConnectionReadTimeoutException: Connection read timed out due to it taking longer than the server-supplied timeout value via configuration hint.
+		... 22 more
+		Suppressed: org.neo4j.driver.exceptions.ServiceUnavailableException: Connection to the database terminated. Please ensure that your database is listening on the correct host and port and that you have compatible encryption settings both on Neo4j server and driver. Note that the default encryption setting has changed in Neo4j 4.0.
+			at org.neo4j.driver.internal.util.ErrorUtil.newConnectionTerminatedError(ErrorUtil.java:48)
+			at org.neo4j.driver.internal.util.ErrorUtil.newConnectionTerminatedError(ErrorUtil.java:42)
+			at org.neo4j.driver.internal.async.inbound.ChannelErrorHandler.channelInactive(ChannelErrorHandler.java:67)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:391)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:356)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:391)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:356)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+			at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+			at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:278)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+			at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1417)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+			at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:913)
+			at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:819)
+			at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+			at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:510)
+			at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:518)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Unknown Source)
+		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+			at org.neo4j.driver.exceptions.ConnectionReadTimeoutException.<clinit>(ConnectionReadTimeoutException.java:32)
+			at org.neo4j.driver.internal.async.inbound.ConnectionReadTimeoutHandler.readTimedOut(ConnectionReadTimeoutHandler.java:36)
+			at io.netty.handler.timeout.ReadTimeoutHandler.channelIdle(ReadTimeoutHandler.java:90)
+			at io.netty.handler.timeout.IdleStateHandler$ReaderIdleTimeoutTask.run(IdleStateHandler.java:505)
+			at io.netty.handler.timeout.IdleStateHandler$AbstractIdleTask.run(IdleStateHandler.java:477)
+			at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+			at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:150)
+			at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+			at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:510)
+			at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:518)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Unknown Source)

@@ -1,0 +1,32 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 40,
+            "line_end": 379,
+            "name": "access_control"
+        },
+        {
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 32,
+            "line_end": 367,
+            "name": "denial_of_service"
+        },
+        {
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 32,
+            "line_end": 379,
+            "name": "reentrancy"
+        }
+    ],
+    "infos": [
+        "OK"
+    ],
+    "parser": {
+        "id": "mando",
+        "mode": "solidity",
+        "version": "2023/08/01"
+    }
+}

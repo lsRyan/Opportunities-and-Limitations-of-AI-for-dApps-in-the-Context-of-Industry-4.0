@@ -1,0 +1,42 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Consorcio_F.sol
+19:39:27.064 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Consorcio_F.sol:8:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+19:39:27.954 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:113:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+19:39:27.958 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:113:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+19:39:27.961 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:113:63: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+19:39:27.961 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:113:63: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+19:39:27.966 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:204:9: Could not find the scope address needed to resolve the call address.push. Falling back to the default (current) scope
+19:39:27.968 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:243:9: Could not find the scope address needed to resolve the call address.pop. Falling back to the default (current) scope
+19:39:27.974 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:315:25: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+19:39:27.975 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:315:25: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+19:39:27.975 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Consorcio_F.sol:335:36: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+Running checks
+AccessControlSelfdestructCheck took 1207 ms
+CallReturnCheck took 559 ms
+AccessControlLogicCheck took 1108 ms
+ReentrancyCheck took 1777 ms
+DefaultProxyDelegateCheck took 600 ms
+TXOriginCheck took 219 ms
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 316:29-316:44
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 272:32-272:47
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 165:28-165:43
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 168:36-168:51
+TimeManipulationCheck took 5514 ms
+LocalWriteToStorageCheck took 106744 ms
+BadRandomnessCheck took 353 ms

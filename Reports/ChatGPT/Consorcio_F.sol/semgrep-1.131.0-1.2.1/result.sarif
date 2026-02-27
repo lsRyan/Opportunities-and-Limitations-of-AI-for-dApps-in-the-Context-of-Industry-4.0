@@ -1,0 +1,1351 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 54
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 54
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 59
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 74
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 75
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 76
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 78
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 99
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 100
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 101
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 102
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 103
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 104
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 105
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 106
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 107
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 120
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 121
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 122
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 123
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 124
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 136
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 137
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 138
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 139
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 140
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 141
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 145
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 151
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 152
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 153
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 154
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 155
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 156
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 159
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 159
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 161
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Possible arithmetic underflow"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 168
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 182
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 183
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 184
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 185
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 186
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 187
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 189
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Possible arithmetic underflow"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 193
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 198
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 200
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 201
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 202
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 217
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 217
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 217
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 221
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 222
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 223
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 222
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "use-prefix-increment-not-postfix"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 242
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's \u2705 Scan completed successfully. length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 242
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked \u2022 Parsed lines: ~100.0% block saves the overflow checks. \u2022 No ignore information available"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 242
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 246
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 247
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 248
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 249
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 250
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 251
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 247
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Testing the balance of an account as a basis for some action has risks associated with unexpected receipt of ether or another token, including tokens deliberately transfered to cause such tests to fail, as an MEV attack."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_exact_balance_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 251
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 258
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/semgrep/semgrep, https://github.com/Decurity/semgrep-smart-contracts",
+                    "name": "semgrep",
+                    "rules": [
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_custom_error_not_require",
+                            "name": "use-custom-error-not-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_exact_balance_check",
+                            "name": "exact-balance-check"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_array_length_outside_loop",
+                            "name": "array-length-outside-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_nested_if",
+                            "name": "use-nested-if"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_multiple_require",
+                            "name": "use-multiple-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow",
+                            "name": "basic-arithmetic-underflow"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix",
+                            "name": "use-prefix-increment-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop",
+                            "name": "unnecessary-checked-arithmetic-in-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix",
+                            "name": "use-prefix-decrement-not-postfix"
+                        }
+                    ],
+                    "version": "semgrep 1.131.0, Decurity SC rules 1.2.1"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

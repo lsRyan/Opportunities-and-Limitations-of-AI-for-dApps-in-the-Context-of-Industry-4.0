@@ -1,0 +1,330 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 54 Code Findings │
+└──────────────────┘
+                         
+    /sb/SupplyChain_F.sol
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          2357┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2357┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3182┆ if (low > 0 && unsafeAccess(array, low - 1).value == element) {
+          3183┆     return low - 1;
+          3184┆ } else {
+          3185┆     return low;
+          3186┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          3599┆ for (uint256 i = 0; i < accounts.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3599┆ for (uint256 i = 0; i < accounts.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3619┆ if (from != sender && !isApprovedForAll(from, sender)) {
+          3620┆     revert ERC1155MissingApprovalForAll(sender, from);
+          3621┆ }
+            ⋮┆----------------------------------------
+          3634┆ if (from != sender && !isApprovedForAll(from, sender)) {
+          3635┆     revert ERC1155MissingApprovalForAll(sender, from);
+          3636┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          3661┆ for (uint256 i = 0; i < ids.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3661┆ for (uint256 i = 0; i < ids.length; ++i) {
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+          3666┆ uint256 fromBalance = _balances[id][from];
+            ⋮┆----------------------------------------
+          3672┆ _balances[id][from] = fromBalance - value;
+            ⋮┆----------------------------------------
+          3677┆ _balances[id][to] += value;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3923┆ if (account != _msgSender() && !isApprovedForAll(account, _msgSender())) {
+          3924┆     revert ERC1155MissingApprovalForAll(_msgSender(), account);
+          3925┆ }
+            ⋮┆----------------------------------------
+          3931┆ if (account != _msgSender() && !isApprovedForAll(account, _msgSender())) {
+          3932┆     revert ERC1155MissingApprovalForAll(_msgSender(), account);
+          3933┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          3967┆ require(msg.sender == managerContract, "Not manager");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          3971┆ constructor(address managerAddress) {
+          3972┆     require(managerAddress != address(0), "Invalid manager");
+          3973┆     managerContract = managerAddress;
+          3974┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          3972┆ require(managerAddress != address(0), "Invalid manager");
+            ⋮┆----------------------------------------
+          3982┆ require(patient != address(0), "Invalid patient");
+            ⋮┆----------------------------------------
+          3983┆ require(_dose > 0, "Invalid dose");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          3986┆ p.currentId++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4003┆ require(id > 0 && id <= patients[patient].currentId, "Invalid id");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          4003┆ require(id > 0 && id <= patients[patient].currentId, "Invalid id");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4008┆ require(id > 0 && id <= patients[patient].currentId, "Invalid id");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          4008┆ require(id > 0 && id <= patients[patient].currentId, "Invalid id");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4009┆ require(patients[patient].prescriptions[id].valid, "Already used");
+            ⋮┆----------------------------------------
+          4025┆ require(msg.sender == admin, "Not admin");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4029┆ constructor() {
+          4030┆     admin = msg.sender;
+          4031┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4058┆ require(newAdmin != address(0), "Invalid admin");
+   
+     ❱ solidity.best-practice.use-ownable2step
+          By demanding that the receiver of the owner permissions actively accept via a contract call of its 
+          own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally
+          being transferred  to an address that cannot handle it.                                            
+                                                                                                             
+          4079┆ contract PharmaCompany is ERC1155, ERC1155Burnable, Ownable {
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4085┆ constructor(address _govAuthorizationContract)
+          4086┆     ERC1155("https://pharma.com/medicine/")
+          4087┆     Ownable(msg.sender)
+          4088┆ {
+          4089┆     govAuthorizationContract = _govAuthorizationContract;
+          4090┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4098┆ require(id != 0, "Invalid id");
+            ⋮┆----------------------------------------
+          4109┆ require(ids.length == medicineNames.length, "Length mismatch");
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          4111┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          4111┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4111┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4112┆ require(ids[i] != 0, "Invalid id");
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+          4113┆ medicines[medicineNames[i]] = ids[i];
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4126┆ require(
+          4127┆     IAuthorizationCertificates(govAuthorizationContract)
+          4128┆         .isAuthorizedHospital(hospital),
+          4129┆     "Hospital not authorized"
+          4130┆ );
+            ⋮┆----------------------------------------
+          4133┆ require(id != 0, "Medicine not found");
+            ⋮┆----------------------------------------
+          4134┆ require(balanceOf(owner(), id) >= amount, "Insufficient stock");
+            ⋮┆----------------------------------------
+          4135┆ require(msg.value == amount * prices[id], "Incorrect payment");
+            ⋮┆----------------------------------------
+          4144┆ require(authorized, "Sale not authorized");
+            ⋮┆----------------------------------------
+          4150┆ require(newPrice > 0, "Invalid price");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4187┆ constructor(address _govAuthorizationContract) {
+          4188┆     admins[msg.sender] = true;
+          4189┆     adminsCount = 1;
+          4190┆     govAuthorizationContract = _govAuthorizationContract;
+          4191┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4194┆ require(admins[msg.sender], "Not admin");
+            ⋮┆----------------------------------------
+          4199┆ require(!admins[newAdmin], "Already admin");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4201┆ adminsCount++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4205┆ require(admins[admin], "Not admin");
+            ⋮┆----------------------------------------
+          4206┆ require(adminsCount > 1, "At least one admin required");
+   
+     ❱ solidity.performance.use-prefix-decrement-not-postfix
+          Consider using the prefix decrement expression whenever the return value is not needed. The prefix
+          decrement expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4208┆ adminsCount--;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4224┆ require(doctors[msg.sender], "Not doctor");
+            ⋮┆----------------------------------------
+          4237┆ require(
+          4238┆     doctors[msg.sender] || msg.sender == patient,
+          4239┆     "Not authorized"
+          4240┆ );
+            ⋮┆----------------------------------------
+          4255┆ require(
+          4256┆     IAuthorization(govAuthorizationContract)
+          4257┆         .isAuthorizedManufacturer(msg.sender),
+          4258┆     "Manufacturer not authorized"
+          4259┆ );
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          4267┆ if (
+          4268┆     p.valid &&
+          4269┆     keccak256(bytes(p.medicine)) == keccak256(bytes(medicine)) &&
+          4270┆     amount == p.dose
+          4271┆ ) {
+          4272┆     IPrescriptions(prescriptionsContract).usePrescription(
+          4273┆         patient,
+          4274┆         prescriptionId
+          4275┆     );
+          4276┆     return true;
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 54 (54 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~95.7%
+ • No ignore information available
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 57 rules on 1 file: 54 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+📢 Too many findings? Try Semgrep Pro for more powerful queries and less noise.
+   See https://sg.run/false-positives.

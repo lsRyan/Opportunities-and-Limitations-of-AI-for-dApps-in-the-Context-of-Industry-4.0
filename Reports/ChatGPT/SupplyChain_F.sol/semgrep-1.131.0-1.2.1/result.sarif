@@ -1,0 +1,1859 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2357
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 2357
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3182
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3183
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3184
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3185
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3186
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3599
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3599
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3619
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3620
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3621
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3634
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3635
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3636
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3661
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3661
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3666
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Replace state variable reads and writes within loops with local variable reads and writes."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3672
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Replace state variable reads and writes within loops with local variable reads and writes."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3677
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Replace state variable reads and writes within loops with local variable reads and writes."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3923
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3924
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3925
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3931
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3932
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3933
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3967
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3971
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3972
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3973
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3974
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3972
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3982
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3983
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3986
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4003
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4003
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4008
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4008
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_multiple_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4009
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4025
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4029
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4030
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4031
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4058
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4079
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "By demanding that the receiver of the owner permissions actively accept via a contract call of its own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally being transferred  to an address that cannot handle it."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_ownable2step"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4085
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4086
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4087
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4088
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4089
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4090
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4098
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4109
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4111
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4111
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4111
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4112
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4113
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Replace state variable reads and writes within loops with local variable reads and writes."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4126
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4127
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4128
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4129
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4130
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4133
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4134
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4135
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4144
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4150
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4187
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4188
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4189
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4190
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4191
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider making costructor payable to save gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_non_payable_constructor"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4194
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4201
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4205
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4206
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4208
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4224
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4237
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4238
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4239
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4240
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4255
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4256
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4257
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4258
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4259
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4267
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4269
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4270
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4271
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4272
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4273
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4274
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4275
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4276
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/semgrep/semgrep, https://github.com/Decurity/semgrep-smart-contracts",
+                    "name": "semgrep",
+                    "rules": [
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix",
+                            "name": "use-prefix-increment-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix",
+                            "name": "use-prefix-decrement-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_ownable2step",
+                            "name": "use-ownable2step"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_multiple_require",
+                            "name": "use-multiple-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_array_length_outside_loop",
+                            "name": "array-length-outside-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_custom_error_not_require",
+                            "name": "use-custom-error-not-require"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop",
+                            "name": "unnecessary-checked-arithmetic-in-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_nested_if",
+                            "name": "use-nested-if"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_non_payable_constructor",
+                            "name": "non-payable-constructor"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop",
+                            "name": "state-variable-read-in-a-loop"
+                        }
+                    ],
+                    "version": "semgrep 1.131.0, Decurity SC rules 1.2.1"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

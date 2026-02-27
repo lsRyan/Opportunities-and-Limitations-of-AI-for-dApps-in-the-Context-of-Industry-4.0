@@ -1,0 +1,509 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ExchangeContract, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 261,
+                                    "startLine": 177
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Contract locking ether found:\n\tContract ExchangeContract (../sb/Wallet_F.sol#177-261) has payable functions:\n\t - ExchangeContract.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#209-241)\n\tBut does not have a function to withdraw the ether\n"
+                    },
+                    "ruleId": "slither_0_11_3_locked_ether"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function getExchangeRate"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 376,
+                                    "startLine": 370
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#370-376) ignores return value by OracleContract(oracleContract).readRate(symbol) (../sb/Wallet_F.sol#375)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function requestExchangeRate"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 380,
+                                    "startLine": 378
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#378-380) ignores return value by OracleContract(oracleContract).requestRate(symbol) (../sb/Wallet_F.sol#379)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function changeOwnership"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 442,
+                                    "startLine": 440
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.changeOwnership(address) (../sb/Wallet_F.sol#440-442) should emit an event for: \n\t- owner = newOwner (../sb/Wallet_F.sol#441) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_access"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function updateExchangeFee"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 438,
+                                    "startLine": 435
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#435-438) should emit an event for: \n\t- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#437) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_maths"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function updateMaximumRateDelay"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 433,
+                                    "startLine": 428
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#428-433) should emit an event for: \n\t- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#432) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_maths"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 424
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#424) lacks a zero-check on :\n\t\t- exchangeContract = newExchange (../sb/Wallet_F.sol#425)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 420
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#420) lacks a zero-check on :\n\t\t- oracleContract = newOracle (../sb/Wallet_F.sol#421)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 440
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.changeOwnership(address).newOwner (../sb/Wallet_F.sol#440) lacks a zero-check on :\n\t\t- owner = newOwner (../sb/Wallet_F.sol#441)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 304
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#304) lacks a zero-check on :\n\t\t- address(to).transfer(amount) (../sb/Wallet_F.sol#307)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract OracleContract, function answerRequest"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 111,
+                                    "startLine": 75
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "OracleContract.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#75-111) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(r.active,Request inactive) (../sb/Wallet_F.sol#77)\n\t- require(bool,string)(bytes(r.currency).length != 0,Invalid request) (../sb/Wallet_F.sol#78)\n\t- require(bool,string)(! r.answers[msg.sender],Already answered) (../sb/Wallet_F.sol#89)\n\t- r.requestTime < exchangeRateTime[r.currency] (../sb/Wallet_F.sol#91)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ExchangeContract, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 241,
+                                    "startLine": 209
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ExchangeContract.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#209-241) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(block.timestamp - rateTime <= maximumRateDelay,Outdated rate) (../sb/Wallet_F.sol#228-231)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ExchangeContract, function _updateBridge"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 245,
+                                    "startLine": 243
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ExchangeContract._updateBridge(string) (../sb/Wallet_F.sol#243-245) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract OracleContract, function _removeOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 159,
+                                    "startLine": 143
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function OracleContract._removeOracle(string,address) (../sb/Wallet_F.sol#143-159) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract OracleContract, function _changeMinimumQuorum"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 164,
+                                    "startLine": 161
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function OracleContract._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#161-164) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ExchangeContract, function _removeCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 255,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ExchangeContract._removeCurrency(string) (../sb/Wallet_F.sol#252-255) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract OracleContract, function _addOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 141,
+                                    "startLine": 123
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function OracleContract._addOracle(string,string,string,address) (../sb/Wallet_F.sol#123-141) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ExchangeContract, function _addCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 250,
+                                    "startLine": 247
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ExchangeContract._addCurrency(string) (../sb/Wallet_F.sol#247-250) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 178
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ExchangeContract.authorizedWallet (../sb/Wallet_F.sol#178) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 31
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "OracleContract.authorizedWallet (../sb/Wallet_F.sol#31) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 179
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ExchangeContract.oracleContract (../sb/Wallet_F.sol#179) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "id": "slither_0_11_3_missing_zero_check",
+                            "name": "missing-zero-check",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_naming_convention",
+                            "name": "naming-convention"
+                        },
+                        {
+                            "id": "slither_0_11_3_events_maths",
+                            "name": "events-maths",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_timestamp",
+                            "name": "timestamp",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-5."
+                            },
+                            "id": "slither_0_11_3_locked_ether",
+                            "name": "locked-ether",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_unused_return",
+                            "name": "unused-return",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_events_access",
+                            "name": "events-access",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_immutable_states",
+                            "name": "immutable-states"
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

@@ -1,0 +1,44 @@
+{
+    "errors": [],
+    "fails": [
+        "DOCKER_TIMEOUT"
+    ],
+    "findings": [
+        {
+            "column": "32",
+            "column_end": "47",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": "189",
+            "line_end": "189",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "21",
+            "column_end": "36",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": "233",
+            "line_end": "233",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "28",
+            "column_end": "43",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": "109",
+            "line_end": "109",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        }
+    ],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope address needed to resolve the call address.pop",
+        "Could not find the scope address needed to resolve the call address.push",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

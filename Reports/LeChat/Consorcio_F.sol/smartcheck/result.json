@@ -1,0 +1,89 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 98,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 122,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 151,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 177,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 98,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 122,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 151,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 177,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 8,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 99,
+            "name": "SOLIDITY_REVERT_REQUIRE",
+            "severity": 1
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 211,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "smartcheck",
+        "mode": "solidity",
+        "version": "2022/11/14"
+    }
+}

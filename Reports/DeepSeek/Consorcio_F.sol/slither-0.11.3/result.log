@@ -1,0 +1,83 @@
+'solc --version' running
+'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+
+FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391) uses a weak PRNG: "randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,poolId,pool.winnersCount,eligibleCount))) % eligibleCount (../sb/Consorcio_F.sol#357-367)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Reentrancy in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391):
+	External calls:
+	- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#376)
+	State variables written after the call(s):
+	- pool.winnersCount ++ (../sb/Consorcio_F.sol#382)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#72) can be used in cross function reentrancies:
+	- FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391)
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#188-205)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#149-182)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#211-219)
+	- FinancialPoolManager.getAllParticipants(uint256) (../sb/Consorcio_F.sol#503-510)
+	- FinancialPoolManager.getParticipantCount(uint256) (../sb/Consorcio_F.sol#479-481)
+	- FinancialPoolManager.getParticipantInfo(uint256,address) (../sb/Consorcio_F.sol#489-496)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#398-429)
+	- FinancialPoolManager.isParticipant(uint256) (../sb/Consorcio_F.sol#125-131)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#250-274)
+	- FinancialPoolManager.notParticipant(uint256) (../sb/Consorcio_F.sol#133-139)
+	- FinancialPoolManager.onlyPoolOwner(uint256) (../sb/Consorcio_F.sol#109-115)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#225-244)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327)
+	- FinancialPoolManager.poolStatus(uint256,FinancialPoolManager.PoolStatus) (../sb/Consorcio_F.sol#117-123)
+	- pool.status = PoolStatus.Finished (../sb/Consorcio_F.sol#388)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#72) can be used in cross function reentrancies:
+	- FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391)
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#188-205)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#149-182)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#211-219)
+	- FinancialPoolManager.getAllParticipants(uint256) (../sb/Consorcio_F.sol#503-510)
+	- FinancialPoolManager.getParticipantCount(uint256) (../sb/Consorcio_F.sol#479-481)
+	- FinancialPoolManager.getParticipantInfo(uint256,address) (../sb/Consorcio_F.sol#489-496)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#398-429)
+	- FinancialPoolManager.isParticipant(uint256) (../sb/Consorcio_F.sol#125-131)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#250-274)
+	- FinancialPoolManager.notParticipant(uint256) (../sb/Consorcio_F.sol#133-139)
+	- FinancialPoolManager.onlyPoolOwner(uint256) (../sb/Consorcio_F.sol#109-115)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#225-244)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327)
+	- FinancialPoolManager.poolStatus(uint256,FinancialPoolManager.PoolStatus) (../sb/Consorcio_F.sol#117-123)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327) uses a dangerous strict equality:
+	- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#315)
+FinancialPoolManager.poolStatus(uint256,FinancialPoolManager.PoolStatus) (../sb/Consorcio_F.sol#117-123) uses a dangerous strict equality:
+	- require(bool,string)(pools[poolId].status == expectedStatus,Pool status does not allow this operation) (../sb/Consorcio_F.sol#118-121)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+Reentrancy in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391):
+	External calls:
+	- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#376)
+	Event emitted after the call(s):
+	- PoolFinished(poolId) (../sb/Consorcio_F.sol#389)
+	- WinnerSelected(poolId,winner,pool.goodValue) (../sb/Consorcio_F.sol#384)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#188-205) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Not enough participants to activate) (../sb/Consorcio_F.sol#196-199)
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(msg.value == pool.installmentValue,Incorrect payment amount) (../sb/Consorcio_F.sol#289-292)
+	- require(bool,string)(pool.activationDate > 0,Pool activation date not set) (../sb/Consorcio_F.sol#293-296)
+	- require(bool,string)(participant.payments < duePayments,No payment due at this time) (../sb/Consorcio_F.sol#303-306)
+	- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#315)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.8.19 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.19 (../sb/Consorcio_F.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391):
+	- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#376)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/sb/Consorcio_F.sol analyzed (1 contracts with 100 detectors), 9 result(s) found

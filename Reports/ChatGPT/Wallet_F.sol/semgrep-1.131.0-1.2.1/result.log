@@ -1,0 +1,294 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 57 Code Findings │
+└──────────────────┘
+                    
+    /sb/Wallet_F.sol
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+           44┆ require(msg.sender == authorizedWallet, "Not authorized wallet");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+           48┆ constructor(address _authorizedWallet) {
+           49┆     require(_authorizedWallet != address(0), "Invalid wallet");
+           50┆     authorizedWallet = _authorizedWallet;
+           51┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+           49┆ require(_authorizedWallet != address(0), "Invalid wallet");
+            ⋮┆----------------------------------------
+           58┆ require(_validSymbol(symbol), "Invalid symbol");
+            ⋮┆----------------------------------------
+           59┆ require(currencies[symbol], "Currency not supported");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+           61┆ currentId++;
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+           68┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+           68┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+           68┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+           69┆ emit RateRequested(currentId, list[i].url, symbol);
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+           77┆ require(r.active, "Request inactive");
+            ⋮┆----------------------------------------
+           78┆ require(bytes(r.currency).length != 0, "Invalid request");
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+           82┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+           82┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+           82┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+           88┆ require(authorized, "Not an oracle");
+            ⋮┆----------------------------------------
+           89┆ require(!r.answers[msg.sender], "Already answered");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          101┆ r.answersCount++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          118┆ require(_validSymbol(symbol), "Invalid symbol");
+            ⋮┆----------------------------------------
+          119┆ require(currencies[symbol], "Currency not supported");
+            ⋮┆----------------------------------------
+          129┆ require(_validSymbol(symbol), "Invalid symbol");
+            ⋮┆----------------------------------------
+          130┆ require(accessAddress != address(0), "Invalid address");
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          148┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          148┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          148┆ for (uint256 i = 0; i < list.length; i++) {
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          150┆ list[i] = list[list.length - 1];
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          150┆ list[i] = list[list.length - 1];
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          162┆ require(newQuorum <= 100, "Invalid quorum");
+            ⋮┆----------------------------------------
+          167┆ require(_validSymbol(symbol), "Invalid symbol");
+            ⋮┆----------------------------------------
+          194┆ require(msg.sender == authorizedWallet, "Not authorized wallet");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          198┆ constructor(address _authorizedWallet, address _oracleContract) {
+          199┆     require(_authorizedWallet != address(0), "Invalid wallet");
+          200┆     require(_oracleContract != address(0), "Invalid oracle");
+          201┆     authorizedWallet = _authorizedWallet;
+          202┆     oracleContract = _oracleContract;
+          203┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          199┆ require(_authorizedWallet != address(0), "Invalid wallet");
+            ⋮┆----------------------------------------
+          200┆ require(_oracleContract != address(0), "Invalid oracle");
+            ⋮┆----------------------------------------
+          215┆ require(_validSymbol(targetCurrency), "Invalid symbol");
+            ⋮┆----------------------------------------
+          216┆ require(currencies[targetCurrency], "Currency not supported");
+            ⋮┆----------------------------------------
+          217┆ require(targetAddress != address(0), "Invalid address");
+            ⋮┆----------------------------------------
+          218┆ require(msg.value > 0, "No value");
+            ⋮┆----------------------------------------
+          220┆ require(
+          221┆     OracleContract(oracleContract).isSupported(targetCurrency),
+          222┆     "Oracle unsupported"
+          223┆ );
+            ⋮┆----------------------------------------
+          228┆ require(
+          229┆     block.timestamp - rateTime <= maximumRateDelay,
+          230┆     "Outdated rate"
+          231┆ );
+            ⋮┆----------------------------------------
+          248┆ require(_validSymbol(symbol), "Invalid symbol");
+            ⋮┆----------------------------------------
+          253┆ require(_validSymbol(symbol), "Invalid symbol");
+            ⋮┆----------------------------------------
+          258┆ require(_validSymbol(symbol), "Invalid symbol");
+            ⋮┆----------------------------------------
+          280┆ require(msg.sender == owner, "Not owner");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          284┆ constructor(uint256 _maximumRateDelay, uint256 _exchangeFee) {
+          285┆     owner = msg.sender;
+          286┆     maximumRateDelay = _maximumRateDelay;
+          287┆     exchangeFee = _exchangeFee;
+          288┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          299┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          300┆ balances[msg.sender] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          305┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          306┆ balances[msg.sender] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          315┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+            ⋮┆----------------------------------------
+          316┆ require(
+          317┆     ExchangeContract(exchangeContract).isSupported(targetCurrency),
+          318┆     "Currency unsupported"
+          319┆ );
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          321┆ balances[msg.sender] -= amount;
+            ⋮┆----------------------------------------
+          326┆ ExchangeContract(exchangeContract).exchange{value: amount - fee}(
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          335┆ require(balances[msg.sender] >= amount, "Insufficient balance");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          336┆ balances[msg.sender] -= amount;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          341┆ require(
+          342┆     keccak256(bytes(tier)) == keccak256("basic") ||
+          343┆         keccak256(bytes(tier)) == keccak256("onchain") ||
+          344┆         keccak256(bytes(tier)) == keccak256("all"),
+          345┆     "Invalid tier"
+          346┆ );
+            ⋮┆----------------------------------------
+          404┆ require(newQuorum <= 100, "Invalid quorum");
+            ⋮┆----------------------------------------
+          436┆ require(newExchangeFee <= 100, "Invalid fee");
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 57 (57 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~100.0%
+ • No ignore information available
+Ran 57 rules on 1 file: 57 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+📢 Too many findings? Try Semgrep Pro for more powerful queries and less noise.
+   See https://sg.run/false-positives.

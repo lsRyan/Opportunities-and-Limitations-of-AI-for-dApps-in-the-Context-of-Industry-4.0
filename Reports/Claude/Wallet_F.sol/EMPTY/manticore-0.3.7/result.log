@@ -1,0 +1,15 @@
+2026-02-11 04:51:40,297: [11] m.main:INFO: Registered plugins: IntrospectionAPIPlugin, <class 'manticore.ethereum.plugins.SkipRevertBasicBlocks'>, <class 'manticore.ethereum.plugins.FilterFunctions'>
+2026-02-11 04:51:40,298: [11] m.main:INFO: Beginning analysis
+2026-02-11 04:51:40,300: [11] m.e.manticore:INFO: Starting symbolic create contract
+2026-02-11 04:59:59,649: [11] m.e.manticore:INFO: Failed to create contract: exception in constructor
+2026-02-11 05:00:01,390: [11] m.c.manticore:INFO: Results in /mcore_xwykyb6f
+2026-02-11 05:00:01,391: [11] m.c.manticore:INFO: Total time: 382.5851058959961
+2026-02-11 05:00:02,620: [60] m.main:INFO: Registered plugins: IntrospectionAPIPlugin, <class 'manticore.ethereum.plugins.SkipRevertBasicBlocks'>, <class 'manticore.ethereum.plugins.FilterFunctions'>
+2026-02-11 05:00:02,621: [60] m.main:INFO: Beginning analysis
+2026-02-11 05:00:02,624: [60] m.e.manticore:INFO: Starting symbolic create contract
+2026-02-11 05:15:08,373: [60] m.e.manticore:INFO: Failed to create contract: exception in constructor
+2026-02-11 05:15:10,955: [60] m.c.manticore:INFO: Results in /mcore_rocf2nw_
+2026-02-11 05:15:10,957: [60] m.c.manticore:INFO: Total time: 667.7526948451996
+2026-02-11 05:15:12,167: [109] m.main:INFO: Registered plugins: IntrospectionAPIPlugin, <class 'manticore.ethereum.plugins.SkipRevertBasicBlocks'>, <class 'manticore.ethereum.plugins.FilterFunctions'>
+2026-02-11 05:15:12,167: [109] m.main:INFO: Beginning analysis
+2026-02-11 05:15:12,169: [109] m.e.manticore:INFO: Starting symbolic create contract

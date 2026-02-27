@@ -1,0 +1,106 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 379,
+                                    "startLine": 40
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "access_control"
+                    },
+                    "ruleId": "mando_access_control"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 367,
+                                    "startLine": 32
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "denial_of_service"
+                    },
+                    "ruleId": "mando_denial_of_service"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 379,
+                                    "startLine": 32
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "reentrancy"
+                    },
+                    "ruleId": "mando_reentrancy"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/stephan-klein/ge-sc-machine, forked from https://github.com/MANDO-Project/ge-sc-machine.git",
+                    "name": "Mando",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-113, SWC-128, DASP-5."
+                            },
+                            "id": "mando_denial_of_service",
+                            "name": "denial_of_service",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-107, DASP-1."
+                            },
+                            "id": "mando_reentrancy",
+                            "name": "reentrancy",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-2."
+                            },
+                            "id": "mando_access_control",
+                            "name": "access_control",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        }
+                    ],
+                    "version": "0.1"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

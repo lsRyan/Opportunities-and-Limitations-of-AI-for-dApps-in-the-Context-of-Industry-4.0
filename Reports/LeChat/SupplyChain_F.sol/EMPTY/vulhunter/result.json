@@ -1,0 +1,21 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (0.8.31)",
+        "exception (TypeError: cannot unpack non-iterable NoneType object)",
+        "exception (solcx.exceptions.SolcError: An error occurred during execution)",
+        "exception (solcx.exceptions.SolcNotInstalled: solc v0.8.31 has not been installed. Use solcx.install_solc('v0.8.31') to install.)",
+        "exception (urllib.error.HTTPError: HTTP Error 403: Forbidden)"
+    ],
+    "findings": [],
+    "infos": [
+        "compiled faild!"
+    ],
+    "parser": {
+        "id": "vulhunter",
+        "mode": "solidity",
+        "version": "2025/04/29"
+    }
+}

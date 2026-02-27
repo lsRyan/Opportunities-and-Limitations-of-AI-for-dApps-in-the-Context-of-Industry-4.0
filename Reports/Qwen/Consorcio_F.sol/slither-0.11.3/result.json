@@ -1,0 +1,119 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "selectWinner",
+            "impact": "High",
+            "line": 277,
+            "line_end": 310,
+            "message": "FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310) uses a weak PRNG: \"randomIndex = (uint256(keccak256(bytes)(abi.encodePacked(blockhash(uint256)(block.number - 1),block.timestamp,msg.sender))) % count) (../sb/Consorcio_F.sol#299-307)\" \n",
+            "name": "weak-prng"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "High",
+            "line": 201,
+            "line_end": 270,
+            "message": "Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270):\n\tExternal calls:\n\t- (success,None) = winner.call{value: pool.goodValue}() (../sb/Consorcio_F.sol#253)\n\tState variables written after the call(s):\n\t- pool.balance -= pool.goodValue (../sb/Consorcio_F.sol#257)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)\n\t- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)\n\t- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)\n\t- pool.winnersCount ++ (../sb/Consorcio_F.sol#260)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)\n\t- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)\n\t- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)\n\t- pool.participantsInfo[winner].received = true (../sb/Consorcio_F.sol#261)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)\n\t- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)\n\t- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)\n\t- pool.participantsInfo[winner].canReceive = false (../sb/Consorcio_F.sol#262)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)\n\t- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)\n\t- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)\n\t- pool.status = finished (../sb/Consorcio_F.sol#266)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)\n\t- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)\n\t- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)\n",
+            "name": "reentrancy-eth"
+        },
+        {
+            "confidence": "High",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Medium",
+            "line": 201,
+            "line_end": 270,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270) uses a dangerous strict equality:\n\t- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#241)\n",
+            "name": "incorrect-equality"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "participateInPool",
+            "impact": "Low",
+            "line": 140,
+            "line_end": 165,
+            "message": "FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#143-146)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Low",
+            "line": 201,
+            "line_end": 270,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(active)),Pool is not active) (../sb/Consorcio_F.sol#204-207)\n\t- require(bool,string)(msg.value == pool.installmentValue,Incorrect installment value) (../sb/Consorcio_F.sol#219)\n\t- block.timestamp > pool.activationDate (../sb/Consorcio_F.sol#223)\n\t- duePayments > pool.installments (../sb/Consorcio_F.sol#226)\n\t- require(bool,string)(participant.payments < duePayments + 1,Too many payments made) (../sb/Consorcio_F.sol#232)\n\t- require(bool,string)(participant.payments < pool.installments,All installments already paid) (../sb/Consorcio_F.sol#233)\n\t- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#241)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "deletePool",
+            "impact": "Low",
+            "line": 124,
+            "line_end": 134,
+            "message": "FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(msg.sender == pool.owner,Only pool owner can delete) (../sb/Consorcio_F.sol#127)\n\t- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not in accepting participants status) (../sb/Consorcio_F.sol#128-131)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "activatePool",
+            "impact": "Low",
+            "line": 103,
+            "line_end": 118,
+            "message": "FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(msg.sender == pool.owner,Only pool owner can activate) (../sb/Consorcio_F.sol#106)\n\t- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Not enough participants to activate) (../sb/Consorcio_F.sol#107-110)\n\t- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#111-114)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "leavePool",
+            "impact": "Low",
+            "line": 171,
+            "line_end": 195,
+            "message": "FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#174-177)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "impact": "Informational",
+            "line": 8,
+            "message": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/Consorcio_F.sol#8)\n",
+            "name": "solc-version"
+        },
+        {
+            "confidence": "High",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Informational",
+            "line": 201,
+            "line_end": 270,
+            "message": "Low level call in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270):\n\t- (success,None) = winner.call{value: pool.goodValue}() (../sb/Consorcio_F.sol#253)\n",
+            "name": "low-level-calls"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "slither-0.11.3",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

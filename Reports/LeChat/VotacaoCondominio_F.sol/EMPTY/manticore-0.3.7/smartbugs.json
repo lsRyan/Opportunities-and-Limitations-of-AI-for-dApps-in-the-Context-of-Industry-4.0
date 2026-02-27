@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": null,
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": "'/sb/bin/do_solidity.sh' '/sb/VotacaoCondominio_F.sol' '/sb/bin'",
+        "image": "smartbugs/manticore:0.3.7",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmpbxbrul3j": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 3612.3337903022766,
+        "exit_code": null,
+        "logs": "result.log",
+        "output": "result.tar",
+        "start": 1770758985.593036
+    },
+    "runid": "20260210_2039",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": null,
+        "cpu_quota": null,
+        "entrypoint": "'$BIN/do_solidity.sh' '$FILENAME' '$BIN'",
+        "id": "manticore-0.3.7",
+        "image": "smartbugs/manticore:0.3.7",
+        "info": "Manticore is a symbolic execution tool for analysis of smart contracts and binaries.",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "Manticore",
+        "origin": "https://github.com/trailofbits/manticore",
+        "output": "/results",
+        "parser": "parser.py",
+        "solc": true,
+        "version": "0.3.7"
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 28,
+                                    "endLine": 5322,
+                                    "startColumn": 13,
+                                    "startLine": 5322
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 49,
+                                    "endLine": 4232,
+                                    "startColumn": 34,
+                                    "startLine": 4232
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 38,
+                                    "endLine": 5478,
+                                    "startColumn": 23,
+                                    "startLine": 5478
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol"
+                                },
+                                "region": {
+                                    "endColumn": 28,
+                                    "endLine": 4491,
+                                    "startColumn": 13,
+                                    "startLine": 4491
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Miners can manipulate program execution by selecting when to include the timestamp"
+                    },
+                    "ruleId": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/Fraunhofer-AISEC/cpg-contract-checker",
+                    "name": "CCC",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-8."
+                            },
+                            "id": "ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp",
+                            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+                        }
+                    ],
+                    "version": "#c531ae3 (imc-24)"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

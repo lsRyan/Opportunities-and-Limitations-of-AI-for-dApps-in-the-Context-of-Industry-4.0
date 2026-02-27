@@ -1,0 +1,45 @@
+name,count
+use-natspec,205
+use-custom-error-not-require,65
+gas-custom-errors,49
+gas-calldata-parameters,25
+gas-strict-inequalities,15
+non-payable-constructor,14
+naming-convention,12
+basic-arithmetic-underflow,11
+use-nested-if,7
+SOLIDITY_VISIBILITY,6
+gas-indexed-events,5
+gas-increment-by-one,5
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,5
+use-prefix-increment-not-postfix,5
+low-level-calls,4
+reason-string,4
+gas-small-strings,4
+use-short-revert-string,4
+array-length-outside-loop,4
+missing-zero-check,3
+immutable-states,3
+Integer Overflow,3
+Integer Underflow,3
+func-visibility,3
+SOLIDITY_EXTRA_GAS_IN_LOOPS,3
+SOLIDITY_GAS_LIMIT_IN_LOOPS,3
+SOLIDITY_SHOULD_RETURN_STRUCT,3
+unnecessary-checked-arithmetic-in-loop,3
+use-multiple-require,3
+tautology,2
+unused-return,2
+events-maths,2
+timestamp,2
+missing-inheritance,2
+SOLIDITY_LOCKED_MONEY,2
+locked-ether,1
+events-access,1
+solc-version,1
+Callstack Depth Attack Vulnerability,1
+one-contract-per-file,1
+compiler-version,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_REVERT_REQUIRE,1
+state-variable-read-in-a-loop,1

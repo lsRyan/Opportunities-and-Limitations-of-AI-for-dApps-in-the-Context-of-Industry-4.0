@@ -1,0 +1,87 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Wallet_F.sol
+15:01:29.525 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Wallet_F.sol:8:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+15:01:30.640 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:132:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push. Falling back to the default (current) scope
+15:01:30.641 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:151:17: Could not find the scope Oracle needed to resolve the call Oracle.pop. Falling back to the default (current) scope
+15:01:30.646 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:226:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+15:01:30.647 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:226:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+15:01:30.650 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:221:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+15:01:30.650 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:239:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+15:01:30.651 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:239:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+15:01:30.653 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:307:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer. Falling back to the default (current) scope
+15:01:30.654 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:317:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+15:01:30.655 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:326:9: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+15:01:30.656 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:337:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer. Falling back to the default (current) scope
+15:01:30.664 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:359:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+15:01:30.664 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:367:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+15:01:30.719 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:375:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+15:01:30.720 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:379:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.requestRate. Falling back to the default (current) scope
+15:01:30.720 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:388:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addOracle. Falling back to the default (current) scope
+15:01:30.721 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:400:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeOracle. Falling back to the default (current) scope
+15:01:30.722 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:405:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._changeMinimumQuorum. Falling back to the default (current) scope
+15:01:30.723 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:409:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._updateBridge. Falling back to the default (current) scope
+15:01:30.723 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:413:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addCurrency. Falling back to the default (current) scope
+15:01:30.724 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:417:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeCurrency. Falling back to the default (current) scope
+Running checks
+AccessControlSelfdestructCheck took 1262 ms
+CallReturnCheck took 789 ms
+AccessControlLogicCheck took 409211 ms
+File: /sb/Wallet_F.sol
+- Reentrancy Vulnerability, Wallet_F.sol 317:13-317:75
+ReentrancyCheck took 2905 ms
+DefaultProxyDelegateCheck took 588 ms
+TXOriginCheck took 393 ms
+File: /sb/Wallet_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Wallet_F.sol 108:44-108:59
+File: /sb/Wallet_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Wallet_F.sol 64:25-64:40
+File: /sb/Wallet_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Wallet_F.sol 229:13-229:28
+File: /sb/Wallet_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Wallet_F.sol 238:13-238:28
+TimeManipulationCheck took 415 ms
+LocalWriteToStorageCheck took 27851 ms
+BadRandomnessCheck took 533 ms
+File: /sb/Wallet_F.sol
+- Result of expression can be over- or under-flown by external entity, Wallet_F.sol 229:13-229:39
+File: /sb/Wallet_F.sol
+- Result of expression can be over- or under-flown by external entity, Wallet_F.sol 295:9-295:42
+File: /sb/Wallet_F.sol
+- Result of expression can be over- or under-flown by external entity, Wallet_F.sol 291:9-291:42
+File: /sb/Wallet_F.sol
+- Result of expression can be over- or under-flown by external entity, Wallet_F.sol 324:9-324:31
+OverUnderflowCheck took 909832 ms
+File: /sb/Wallet_F.sol
+- Operation may lead to a denial of essential contract function., Wallet_F.sol 82:9-87:12
+File: /sb/Wallet_F.sol
+- Operation may lead to a denial of essential contract function., Wallet_F.sol 68:9-70:14
+File: /sb/Wallet_F.sol
+- Operation may lead to a denial of essential contract function., Wallet_F.sol 148:9-154:14
+DOSCheck took 1385 ms
+File: /sb/Wallet_F.sol
+- Message padding vulnerability found at ether transfer., Wallet_F.sol 340:24-340:42
+File: /sb/Wallet_F.sol
+- Message padding vulnerability found at ether transfer., Wallet_F.sol 312:9-312:30
+File: /sb/Wallet_F.sol
+- Message padding vulnerability found at ether transfer., Wallet_F.sol 198:17-198:42
+AddressPaddingCheck took 10679 ms
+File: /sb/Wallet_F.sol
+- A miner can use others input to gain a benefit himself., Wallet_F.sol 347:9-347:58
+File: /sb/Wallet_F.sol
+- A miner can use others input to gain a benefit himself., Wallet_F.sol 351:9-351:57
+FrontRunningCheck took 13572 ms
+Nr. Files: 1
+File: /sb/Wallet_F.sol
+Graph translation: 2847 ms, Persisting graph: 19013 ms, AccessControlSelfdestructCheck: 1262 ms, CallReturnCheck: 789 ms, AccessControlLogicCheck: 409211 ms, ReentrancyCheck: 2905 ms, DefaultProxyDelegateCheck: 588 ms, TXOriginCheck: 393 ms, TimeManipulationCheck: 415 ms, LocalWriteToStorageCheck: 27851 ms, BadRandomnessCheck: 533 ms, OverUnderflowCheck: 909832 ms, DOSCheck: 1385 ms, AddressPaddingCheck: 10679 ms, FrontRunningCheck: 13572 ms, All checks: 1379904 ms

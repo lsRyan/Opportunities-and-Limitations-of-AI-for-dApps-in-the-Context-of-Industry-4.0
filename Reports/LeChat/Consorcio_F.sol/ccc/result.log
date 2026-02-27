@@ -1,0 +1,58 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Consorcio_F.sol
+22:14:37.179 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Consorcio_F.sol:8:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+22:14:37.985 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:72:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.986 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:72:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:72:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:72:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.989 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:85:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.989 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:85:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.990 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:85:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.990 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:85:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.991 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:95:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.992 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:95:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.992 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:95:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.992 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:95:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:37.993 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:104:9: Could not find the scope address needed to resolve the call address.push. Falling back to the default (current) scope
+22:14:38.057 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:118:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.058 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:118:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.059 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:118:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.059 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:118:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.060 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:135:9: Could not find the scope address needed to resolve the call address.pop. Falling back to the default (current) scope
+22:14:38.062 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:147:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.063 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:147:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.063 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:147:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.064 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:147:71: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.066 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:187:57: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.067 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:187:57: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+22:14:38.067 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Consorcio_F.sol:196:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer. Falling back to the default (current) scope
+Running checks
+AccessControlSelfdestructCheck took 1385 ms
+CallReturnCheck took 698 ms
+AccessControlLogicCheck took 1120 ms
+ReentrancyCheck took 1971 ms
+DefaultProxyDelegateCheck took 607 ms
+TXOriginCheck took 308 ms
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 75:31-75:46
+File: /sb/Consorcio_F.sol
+- Miners can manipulate program execution by selecting when to include the timestamp, Consorcio_F.sol 187:74-187:89
+TimeManipulationCheck took 3000 ms
+LocalWriteToStorageCheck took 394719 ms
+File: /sb/Consorcio_F.sol
+- A deterministic or predictable value may be used as bad random number., Consorcio_F.sol 75:31-75:46
+File: /sb/Consorcio_F.sol
+- A deterministic or predictable value may be used as bad random number., Consorcio_F.sol 187:74-187:89
+BadRandomnessCheck took 3520 ms

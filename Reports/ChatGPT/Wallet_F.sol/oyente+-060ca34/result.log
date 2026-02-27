@@ -1,0 +1,130 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Wallet_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:CryticCompile:Compilation warnings/errors on /sb/Wallet_F.sol:
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> /sb/Wallet_F.sol:307:9:
+    |
+307 |         payable(to).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^
+
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> /sb/Wallet_F.sol:337:9:
+    |
+337 |         payable(msg.sender).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+INFO:root:contract /sb/Wallet_F.sol:ExchangeContract:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 35.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Wallet_F.sol:39:17: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:182:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:235:27: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:178:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:179:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Wallet_F.sol:182:5: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:38:3: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:12:28: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:13:82: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:19:2: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:33:28: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:258:9: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Wallet_F.sol:OracleContract:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 25.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Wallet_F.sol:38:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:444:2113: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:31:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Wallet_F.sol:77:17: Warning: Integer Overflow.
+
+/sb/Wallet_F.sol:34:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/Wallet_F.sol:Wallet:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=68 + mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 55.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Wallet_F.sol:373:19: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:389:20: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:277:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:271:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:444:7316: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    balances[msg.sender] = 98079714615416886934934209737619787751599303819750539264
+/sb/Wallet_F.sol:444:1778: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:276:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:269:5: Warning: Integer Underflow.
+
+/sb/Wallet_F.sol:270:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Wallet_F.sol:305:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+/sb/Wallet_F.sol:299:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+/sb/Wallet_F.sol:335:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:	====== Analysis Completed ======

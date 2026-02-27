@@ -1,0 +1,799 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 225
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 260
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 301
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 225
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 260
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 301
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 0,
+                                    "startLine": 36
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_LOCKED_MONEY\nSeverity: 3"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_LOCKED_MONEY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 16,
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRAGMAS_VERSION\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRAGMAS_VERSION"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 19
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 20
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 22
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 11,
+                                    "startLine": 72
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 11,
+                                    "startLine": 73
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 11,
+                                    "startLine": 74
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 11,
+                                    "startLine": 75
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 59,
+                                    "startLine": 361
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_SHOULD_RETURN_STRUCT\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 4,
+                                    "startLine": 24
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 4,
+                                    "startLine": 95
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 23,
+                                    "startLine": 95
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 10,
+                                    "startLine": 96
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 22,
+                                    "startLine": 96
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 10,
+                                    "startLine": 97
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 23,
+                                    "startLine": 97
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 40,
+                                    "startLine": 97
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 4,
+                                    "startLine": 98
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 34,
+                                    "startLine": 98
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 10,
+                                    "startLine": 99
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 28,
+                                    "startLine": 99
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 10,
+                                    "startLine": 100
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 24,
+                                    "startLine": 100
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 10,
+                                    "startLine": 101
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 31,
+                                    "startLine": 101
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 50,
+                                    "startLine": 101
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 4,
+                                    "startLine": 102
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 23,
+                                    "startLine": 102
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 10,
+                                    "startLine": 103
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 24,
+                                    "startLine": 103
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/smartdec/smartcheck",
+                    "name": "Smartcheck",
+                    "rules": [
+                        {
+                            "id": "smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT",
+                            "name": "SOLIDITY_SHOULD_RETURN_STRUCT"
+                        },
+                        {
+                            "id": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS",
+                            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-100."
+                            },
+                            "id": "smartcheck_SOLIDITY_VISIBILITY",
+                            "name": "SOLIDITY_VISIBILITY"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-103."
+                            },
+                            "id": "smartcheck_SOLIDITY_PRAGMAS_VERSION",
+                            "name": "SOLIDITY_PRAGMAS_VERSION"
+                        },
+                        {
+                            "id": "smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+                            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-5."
+                            },
+                            "id": "smartcheck_SOLIDITY_LOCKED_MONEY",
+                            "name": "SOLIDITY_LOCKED_MONEY"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-132."
+                            },
+                            "id": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS",
+                            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

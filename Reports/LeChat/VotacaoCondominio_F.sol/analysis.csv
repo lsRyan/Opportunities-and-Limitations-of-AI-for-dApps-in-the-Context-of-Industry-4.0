@@ -1,0 +1,23 @@
+name,count
+use-custom-error-not-require,34
+use-nested-if,11
+non-payable-constructor,10
+use-multiple-require,6
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,4
+use-short-revert-string,3
+shadowing-local,2
+timestamp,2
+use-prefix-increment-not-postfix,2
+basic-arithmetic-underflow,2
+solc-version,1
+naming-convention,1
+Miners can manipulate program execution by selecting when to include the timestamp,1
+SOLIDITY_EXTRA_GAS_IN_LOOPS,1
+SOLIDITY_GAS_LIMIT_IN_LOOPS,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_SHOULD_RETURN_STRUCT,1
+SOLIDITY_VISIBILITY,1
+use-ownable2step,1
+init-variables-with-default-value,1
+array-length-outside-loop,1
+unnecessary-checked-arithmetic-in-loop,1

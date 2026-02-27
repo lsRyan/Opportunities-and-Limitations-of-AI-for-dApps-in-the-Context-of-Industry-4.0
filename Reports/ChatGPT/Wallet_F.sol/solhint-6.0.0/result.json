@@ -1,0 +1,1924 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 8,
+            "message": "Found more than One contract per file. 3 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Missing @author tag in contract 'OracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 32,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 33,
+            "message": "Missing @notice tag in variable 'oracles'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 34,
+            "message": "Missing @notice tag in variable 'requests'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 35,
+            "message": "Missing @notice tag in variable 'exchangeRates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @notice tag in variable 'exchangeRateTime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 38,
+            "message": "Missing @notice tag in variable 'minimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "Missing @notice tag in event 'RateRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "Missing @param tag in event 'RateRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "Mismatch in @param names for event 'RateRequested'. Expected: [id, oracleURL, currency], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 44,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 48,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 48,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 48,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 48,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 49,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "Missing @notice tag in function '_validSymbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "Missing @param tag in function '_validSymbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "Mismatch in @param names for function '_validSymbol'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "Missing @return tag in function '_validSymbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "Mismatch in @return count for function '_validSymbol'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Missing @notice tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Missing @param tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Mismatch in @param names for function 'requestRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Missing @return tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Mismatch in @return count for function 'requestRate'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 58,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 59,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 61,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 46,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 75,
+            "message": "Missing @notice tag in function 'answerRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 75,
+            "message": "Missing @param tag in function 'answerRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 75,
+            "message": "Mismatch in @param names for function 'answerRequest'. Expected: [id, exchangeRate], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 77,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 78,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 46,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 89,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 101,
+            "message": "GC: For [ r ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 106,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 113,
+            "message": "Missing @notice tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 113,
+            "message": "Missing @param tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 113,
+            "message": "Mismatch in @param names for function 'readRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 113,
+            "message": "Missing @return tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 113,
+            "message": "Mismatch in @return count for function 'readRate'. Expected: 2, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 113,
+            "message": "GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 118,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 119,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 123,
+            "message": "Missing @notice tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 123,
+            "message": "Missing @param tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 123,
+            "message": "Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 123,
+            "message": "GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 123,
+            "message": "GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 123,
+            "message": "GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 129,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 130,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Missing @notice tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Missing @param tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 46,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 161,
+            "message": "Missing @notice tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 161,
+            "message": "Missing @param tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 161,
+            "message": "Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 177,
+            "message": "Missing @author tag in contract 'ExchangeContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 178,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 179,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 181,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 182,
+            "message": "Missing @notice tag in variable 'bridgeURL'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @notice tag in event 'Exchanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @param tag in event 'Exchanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Mismatch in @param names for event 'Exchanged'. Expected: [transactor, currency, value, rate, timestamp, bridgeCall], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "GC: [value] on Event [Exchanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "GC: [rate] on Event [Exchanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "GC: [timestamp] on Event [Exchanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 194,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet, _oracleContract], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 199,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 200,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 205,
+            "message": "Missing @notice tag in function '_validSymbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 205,
+            "message": "Missing @param tag in function '_validSymbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 205,
+            "message": "Mismatch in @param names for function '_validSymbol'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 205,
+            "message": "Missing @return tag in function '_validSymbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 205,
+            "message": "Mismatch in @return count for function '_validSymbol'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 215,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 216,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 217,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 218,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 220,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 228,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 229,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 243,
+            "message": "Missing @notice tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 243,
+            "message": "Missing @param tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 243,
+            "message": "Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 243,
+            "message": "GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 247,
+            "message": "Missing @notice tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 247,
+            "message": "Missing @param tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 247,
+            "message": "Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 247,
+            "message": "GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 248,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 252,
+            "message": "Missing @notice tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 252,
+            "message": "Missing @param tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 252,
+            "message": "Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 252,
+            "message": "GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 253,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 258,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Missing @author tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 269,
+            "message": "Missing @notice tag in variable 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 270,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 271,
+            "message": "Missing @notice tag in variable 'exchangeContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 276,
+            "message": "Missing @notice tag in variable 'maximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Missing @notice tag in variable 'exchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 280,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 284,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 284,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 284,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_maximumRateDelay, _exchangeFee], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 284,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 290,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 294,
+            "message": "Missing @notice tag in function 'deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "Missing @notice tag in function 'transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "Missing @param tag in function 'transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "Mismatch in @param names for function 'transfer'. Expected: [amount, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 299,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 299,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 304,
+            "message": "Missing @notice tag in function 'externalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 304,
+            "message": "Missing @param tag in function 'externalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 304,
+            "message": "Mismatch in @param names for function 'externalTransfer'. Expected: [amount, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 305,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 305,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 310,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 310,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 310,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [targetCurrency, targetAddress, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 310,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 315,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 315,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 316,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 334,
+            "message": "Missing @notice tag in function 'withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 334,
+            "message": "Missing @param tag in function 'withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 334,
+            "message": "Mismatch in @param names for function 'withdrawn'. Expected: [amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 340,
+            "message": "Missing @notice tag in function 'authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 340,
+            "message": "Missing @param tag in function 'authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 340,
+            "message": "Mismatch in @param names for function 'authorize'. Expected: [authorized, tier], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 340,
+            "message": "GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 341,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 350,
+            "message": "Missing @notice tag in function 'revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 350,
+            "message": "Missing @param tag in function 'revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 350,
+            "message": "Mismatch in @param names for function 'revoke'. Expected: [unauthorize], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Missing @notice tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Missing @param tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Mismatch in @param names for function 'getExchangeAvailability'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Missing @return tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Mismatch in @return count for function 'getExchangeAvailability'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "Missing @notice tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "Missing @param tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "Mismatch in @param names for function 'getOracleAvailability'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "Missing @return tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "Mismatch in @return count for function 'getOracleAvailability'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 370,
+            "message": "Missing @notice tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 370,
+            "message": "Missing @param tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 370,
+            "message": "Mismatch in @param names for function 'getExchangeRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 370,
+            "message": "Missing @return tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 370,
+            "message": "Mismatch in @return count for function 'getExchangeRate'. Expected: 2, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 370,
+            "message": "GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 378,
+            "message": "Missing @notice tag in function 'requestExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 378,
+            "message": "Missing @param tag in function 'requestExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 378,
+            "message": "Mismatch in @param names for function 'requestExchangeRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 378,
+            "message": "GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 382,
+            "message": "Missing @notice tag in function 'addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 382,
+            "message": "Missing @param tag in function 'addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 382,
+            "message": "Mismatch in @param names for function 'addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 382,
+            "message": "GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 382,
+            "message": "GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 382,
+            "message": "GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "Missing @notice tag in function 'removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "Missing @param tag in function 'removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "Mismatch in @param names for function 'removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Missing @notice tag in function 'changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Missing @param tag in function 'changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Mismatch in @param names for function 'changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 408,
+            "message": "Missing @notice tag in function 'updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 408,
+            "message": "Missing @param tag in function 'updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 408,
+            "message": "Mismatch in @param names for function 'updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 408,
+            "message": "GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 412,
+            "message": "Missing @notice tag in function 'addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 412,
+            "message": "Missing @param tag in function 'addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 412,
+            "message": "Mismatch in @param names for function 'addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 412,
+            "message": "GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 416,
+            "message": "Missing @notice tag in function 'removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 416,
+            "message": "Missing @param tag in function 'removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 416,
+            "message": "Mismatch in @param names for function 'removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 416,
+            "message": "GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 420,
+            "message": "Missing @notice tag in function 'updateOracleAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 420,
+            "message": "Missing @param tag in function 'updateOracleAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 420,
+            "message": "Mismatch in @param names for function 'updateOracleAddress'. Expected: [newOracle], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 424,
+            "message": "Missing @notice tag in function 'updateExchangeAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 424,
+            "message": "Missing @param tag in function 'updateExchangeAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 424,
+            "message": "Mismatch in @param names for function 'updateExchangeAddress'. Expected: [newExchange], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "Missing @notice tag in function 'updateMaximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "Missing @param tag in function 'updateMaximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "Mismatch in @param names for function 'updateMaximumRateDelay'. Expected: [newMaximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 435,
+            "message": "Missing @notice tag in function 'updateExchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 435,
+            "message": "Missing @param tag in function 'updateExchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 435,
+            "message": "Mismatch in @param names for function 'updateExchangeFee'. Expected: [newExchangeFee], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 436,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 436,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 440,
+            "message": "Missing @notice tag in function 'changeOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 440,
+            "message": "Missing @param tag in function 'changeOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "level": "warning",
+            "line": 440,
+            "message": "Mismatch in @param names for function 'changeOwnership'. Expected: [newOwner], Found: []",
+            "name": "use-natspec"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

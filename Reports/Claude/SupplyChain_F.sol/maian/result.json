@@ -1,0 +1,192 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "contract": "Arrays",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Arrays",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Arrays",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "AuthorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "AuthorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "AuthorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Comparators",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Comparators",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Comparators",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "ERC1155Utils",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "ERC1155Utils",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "ERC1155Utils",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "HospitalManagement",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "HospitalManagement",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "HospitalManagement",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Prescriptions",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Prescriptions",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Prescriptions",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "SlotDerivation",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "SlotDerivation",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "SlotDerivation",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "StorageSlot",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "StorageSlot",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "StorageSlot",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "maian",
+        "mode": "solidity",
+        "version": "2022/11/11"
+    }
+}

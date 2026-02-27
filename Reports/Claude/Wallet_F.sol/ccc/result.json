@@ -1,0 +1,74 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (The allocation of an extra 2.0 MiB would use more than the limit 2.1 GiB. Currently using 2.1 GiB. dbms.memory.transaction.total.max threshold reached)"
+    ],
+    "findings": [
+        {
+            "column": "27",
+            "column_end": "10",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": "341",
+            "line_end": "343",
+            "name": "Missing Check of Return Value from external Call"
+        },
+        {
+            "column": "27",
+            "column_end": "10",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": "341",
+            "line_end": "343",
+            "name": "Missing Check of Return Value from external Call"
+        },
+        {
+            "column": "27",
+            "column_end": "10",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": "341",
+            "line_end": "343",
+            "name": "Missing Check of Return Value from external Call"
+        },
+        {
+            "column": "27",
+            "column_end": "10",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": "341",
+            "line_end": "343",
+            "name": "Missing Check of Return Value from external Call"
+        },
+        {
+            "column": "27",
+            "column_end": "10",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": "341",
+            "line_end": "343",
+            "name": "Missing Check of Return Value from external Call"
+        },
+        {
+            "column": "27",
+            "column_end": "10",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": "341",
+            "line_end": "343",
+            "name": "Missing Check of Return Value from external Call"
+        }
+    ],
+    "infos": [
+        "Could not find the scope OracleData needed to resolve the call OracleData.pop",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.decode",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push",
+        "Could not find the scope address needed to resolve the call address.call",
+        "Could not find the scope address needed to resolve the call address.staticcall",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

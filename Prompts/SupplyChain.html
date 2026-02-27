@@ -1,0 +1,520 @@
+<prompt>
+<h1 id="role">Role</h1>
+<p>You are a senior Ethereum smart contract developer responsible for implementing secure, efficient, well-documented Solidity contracts based on detailed specifications. Your work should follow industry-standard practices for structure, safety, and readability.</p>
+<h1 id="context">Context</h1>
+<p>A company has requested the development of a supply chain framework for unifying medicine prescriptions and usage for buying the prescribed medicine. Such application will automatically enforce the no dual-use limitation for the medical prescriptions. You are the lead developer responsible for implementing this project with all of the required functionalities in a secure and extensible manner using Solidity and employing all of the best practices for decentralized applications.</p>
+<h1 id="objective">Objective</h1>
+<p>Your task is to develop a fully functional, well-commented, and secure Solidity contract that implements all of the smart contracts required for this application, as will be thoroughly described below. The code must:</p>
+<ul>
+<li>
+<p>Be secure, avoiding vulnerabilities such as reentrancy, integer overflows/underflows, access control issues, and all known vulnerabilities that could affect the contract’s functionalities.</p>
+</li>
+<li>
+<p>Be readable, using clear naming conventions, structured logic, and inline documentation (Solidity comments).</p>
+</li>
+<li>
+<p>Follow best practices for gas efficiency and modularity.</p>
+</li>
+<li>
+<p>Enables reliable and transparent management of medicine prescriptions and purchases.</p>
+</li>
+<li>
+<p>Use the latest Solidity compiler version you are familiar with.</p>
+</li>
+</ul>
+<h1 id="application">Application</h1>
+<h2 id="overview">Overview</h2>
+<p>The application should implement a modular supply chain management framework. Its main goal is to ensure that doctors can prescribe medicines for patients, which can be used in on-chain medicine market places, where medicines are represented as tokens. Crucially, sellers should be able to verify through the hospital contract if the purchase has a valid prescription and the the medicine name and dose are correct.</p>
+<h2 id="contracts">Contracts</h2>
+<h3 id="prescriptions">Prescriptions</h3>
+<h4 id="variables">Variables</h4>
+<ul>
+<li>
+<p><code>address public managerContract</code>: The address of the manager contract.</p>
+</li>
+<li>
+<p><code>struct prescription</code>: A struct containing:</p>
+</li>
+<li>
+<p><code>uint256 time</code>: Timestamp in which the prescription was created.</p>
+</li>
+<li>
+<p><code>address doctor</code>: The address of the doctor that prescribed.</p>
+</li>
+<li>
+<p><code>string medicine</code>: The name of the medicine prescribed.</p>
+</li>
+<li>
+<p><code>uint256 dose</code>: Number of units prescribed.</p>
+</li>
+<li>
+<p><code>bool valid</code>: A bool showcasing if the prescription can be used to buy medicine.</p>
+</li>
+<li>
+<p><code>struct patient</code>: A struct containing:</p>
+</li>
+<li>
+<p><code>uint256 currentId</code>: Last description id for this patient.</p>
+</li>
+<li>
+<p><code>mapping(uint256 =&gt; prescription) prescriptions</code>: Maps prescription ids to a <code>prescription</code>.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; patient) private patients</code>: Maps a patient to <code>patient</code>.</p>
+</li>
+</ul>
+<h4 id="functions">Functions</h4>
+<ul>
+<li>
+<p><code>constructor(address managerAddress)</code>:</p>
+</li>
+<li>
+<p>Set <code>managerContract</code> as <code>managerAddress</code>.</p>
+</li>
+<li>
+<p><code>_prescribe(address doctor, address patient, string memory _medicine, uint256 _dose) external returns (uint256)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>managerContract</code>.</p>
+</li>
+<li>
+<p>Creates a <code>prescription</code> struct with:</p>
+</li>
+<li>
+<p><code>time</code> = <code>block.timestamp</code>.</p>
+</li>
+<li>
+<p><code>doctor</code> = <code>doctor</code>.</p>
+</li>
+<li>
+<p><code>medicine</code> = <code>_medicine</code>.</p>
+</li>
+<li>
+<p><code>dose</code> = <code>_dose</code>.</p>
+</li>
+<li>
+<p><code>valid</code> = <code>true</code>.</p>
+</li>
+<li>
+<p>Increment <code>patients[patient].currentId</code>.</p>
+</li>
+<li>
+<p>Set <code>patients[patient].prescriptions[patients[patient].currentId]</code> as the newly created <code>prescription</code> struct.</p>
+</li>
+<li>
+<p>Return <code>patients[patient].currentId</code>.</p>
+</li>
+<li>
+<p><code>_getPrescription(address patient, uint256 id) external view returns (prescription memory)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>managerContract</code>.</p>
+</li>
+<li>
+<p><code>id</code> is a valid prescription for this patient.</p>
+</li>
+<li>
+<p>Return <code>patients[patient].prescriptions[id]</code>.</p>
+</li>
+<li>
+<p><code>usePrescription(address patient, uint256 id) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>managerContract</code>.</p>
+</li>
+<li>
+<p><code>id</code> is a valid prescription for this patient.</p>
+</li>
+<li>
+<p>Set <code>patients[patient].prescriptions[id].valid</code> to <code>false</code>.</p>
+</li>
+</ul>
+<h3 id="authorizationcertificates">authorizationCertificates</h3>
+<h4 id="variables-1">Variables</h4>
+<ul>
+<li>
+<p><code>address public admin</code>: Admin account.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; bool) internal authorizedHospitals</code>: Maps addresses to a bool showcasing if it is authorized.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; bool) internal authorizedManufacturers</code>: Maps addresses to a bool showcasing if it is authorized.</p>
+</li>
+</ul>
+<h4 id="functions-1">Functions</h4>
+<ul>
+<li>
+<p><code>constructor()</code></p>
+</li>
+<li>
+<p>Set <code>msg.sender</code> as <code>admin</code></p>
+</li>
+<li>
+<p><code>authorizeHospital(address hospital) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>admin</code>.</p>
+</li>
+<li>
+<p>Set <code>authorizedHospitals[hospital]</code> to <code>true</code>.</p>
+</li>
+<li>
+<p><code>unauthorizeHospital(address hospital) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>admin</code>.</p>
+</li>
+<li>
+<p>Set <code>authorizedHospitals[hospital]</code> to <code>false</code>.</p>
+</li>
+<li>
+<p><code>authorizeManufacturer(address manufacturer) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>admin</code>.</p>
+</li>
+<li>
+<p>Set <code>authorizedManufacturers[manufacturer]</code> to <code>true</code>.</p>
+</li>
+<li>
+<p><code>unauthorizeManufacturer(address manufacturer) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>admin</code>.</p>
+</li>
+<li>
+<p>Set <code>authorizedManufacturers[manufacturer]</code> to <code>false</code>.</p>
+</li>
+<li>
+<p><code>isAuthorizedHospital(address hospital) external returns (bool)</code></p>
+</li>
+<li>
+<p>Return <code>authorizedHospitals[hospital]</code>.</p>
+</li>
+<li>
+<p><code>isAuthorizedManufacturer(address manufacturer) external returns (bool)</code></p>
+</li>
+<li>
+<p>Return <code>authorizedManufacturers[manufacturer]</code>.</p>
+</li>
+<li>
+<p><code>changeAdmin(address newAdmin) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>msg.sender</code> is <code>admin</code>.</p>
+</li>
+<li>
+<p>Change <code>admin</code> to <code>newAdmin</code>.</p>
+</li>
+</ul>
+<h3 id="pharmacompany">PharmaCompany</h3>
+<h4 id="variables-2">Variables</h4>
+<p><code>mapping(string =&gt; uint256) public medicines</code>: Maps medicine names to their ids.</p>
+<p><code>mapping(uint256 =&gt; uint256) public prices</code>: Maps medicine ids to their prices in wei.</p>
+<p><code>address public govAuthorizationContract</code>: Address to the governmental contract which stores authorized hospital addresses.</p>
+<h4 id="functions-2">Functions</h4>
+<p>The contract should follow OpenZeppelin’s ERC1155. Hence, the following libraries should be used:</p>
+<ul>
+<li>
+<p><code>ERC1155</code></p>
+</li>
+<li>
+<p><code>ERC1155Burnable</code></p>
+</li>
+<li>
+<p><code>Ownable</code></p>
+</li>
+</ul>
+<p>As per OpenZeppelin’s token wizard, the following functions should be present:</p>
+<ul>
+<li>
+<p><code>mint(uint256 id, uint256 amount, bytes memory data, string memory medicineName) public onlyOwner</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>id</code> is not 0.</p>
+</li>
+<li>
+<p>Set <code>medicines[medicineName]</code> to <code>id</code>.</p>
+</li>
+<li>
+<p>Call _mint(<code>msg.sender</code>, <code>id</code>, <code>amount</code>, <code>data</code>).</p>
+</li>
+<li>
+<p><code>mintBatch(uint256[] memory ids, uint256[] memory amounts, bytes memory data, string[] memory medicineNames) public onlyOwner</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>No <code>id</code> in <code>ids</code> is 0.</p>
+</li>
+<li>
+<p>For each entry in <code>medicineNames</code>:</p>
+</li>
+<li>
+<p>Set <code>medicines[medicineNames[index]]</code> to <code>ids[index]</code>.</p>
+</li>
+<li>
+<p>Call _mintBatch(<code>msg.sender</code>, <code>ids</code>, <code>amounts</code>, <code>data</code>)</p>
+</li>
+</ul>
+<h5 id="custom-functions">Custom Functions</h5>
+<ul>
+<li>
+<p><code>constructor(address _govAuthorizationContract) ERC1155("https://pharma.com/medicine/") Ownable(msg.sender)</code></p>
+</li>
+<li>
+<p>Set <code>govAuthorizationContract</code> as <code>_govAuthorizationContract</code>.</p>
+</li>
+<li>
+<p><code>buyMedicine(string memory medicineName, address hospital, uint256 prescriptionId, uint256 to, uint256 amount) external payable</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The return of calling isAuthorizedHospital(<code>hospital</code>), from <code>govAuthorizationContract</code>, is <code>true</code>.</p>
+</li>
+<li>
+<p>Medicine is available. That is, balanceOf(<code>owner</code>, <code>medicines[medicineName]</code>) is greater than zero.</p>
+</li>
+<li>
+<p><code>msg.value</code> is equal to <code>amount</code> * <code>prices[medicines[medicineName]]</code>.</p>
+</li>
+<li>
+<p>Call authorizeSale(<code>prescriptionId</code>, <code>to</code>, <code>medicineName</code>, <code>amount</code>) from <code>hospital</code>. If it returns <code>true</code>:</p>
+</li>
+<li>
+<p>Call _safeTransferFrom(<code>owner</code>, <code>to</code>, <code>medicines[medicineName]</code>, <code>amount</code>, bytes(<code>medicineName</code>))</p>
+</li>
+<li>
+<p><code>updatePrice(uint256 id, uint256 newPrice) external onlyOwner</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>newPrice</code> is greater than 0.</p>
+</li>
+<li>
+<p>Set <code>prices[id]</code> to <code>newPrice</code>.</p>
+</li>
+</ul>
+<h3 id="hospitalmanagement">hospitalManagement</h3>
+<h4 id="variables-3">Variables</h4>
+<ul>
+<li>
+<p><code>mapping(address =&gt; bool) public admins</code>: Maps addresses to bools, showcasing which addresses are hospital administrators.</p>
+</li>
+<li>
+<p><code>uint256 internal adminsCount</code>: Number of active admins.</p>
+</li>
+<li>
+<p><code>mapping(address =&gt; bool) public doctors</code>: Maps addresses to bools, showcasing which addresses are doctors.</p>
+</li>
+<li>
+<p><code>address public prescriptionsContract</code>: The address of the prescriptions contract.</p>
+</li>
+<li>
+<p><code>address public govAuthorizationContract</code>: Address to the governmental contract which stores authorized hospital addresses.</p>
+</li>
+<li>
+<p><code>struct prescription</code>: A struct containing:</p>
+</li>
+<li>
+<p><code>uint256 time</code>: Timestamp in which the prescription was created.</p>
+</li>
+<li>
+<p><code>address doctor</code>: The address of the doctor that prescribed.</p>
+</li>
+<li>
+<p><code>string medicine</code>: The name of the medicine prescribed.</p>
+</li>
+<li>
+<p><code>uint256 dose</code>: Number of units prescribed.</p>
+</li>
+<li>
+<p><code>bool valid</code>: A bool showcasing if the prescription can be used to buy medicine.</p>
+</li>
+</ul>
+<h3 id="functions-3">Functions</h3>
+<ul>
+<li>
+<p><code>constructor(address _govAuthorizationContract)</code></p>
+</li>
+<li>
+<p>Set <code>admins[msg.sender]</code> as <code>true</code>.</p>
+</li>
+<li>
+<p>Increment <code>adminsCount</code> by 1.</p>
+</li>
+<li>
+<p>Set <code>govAuthorizationContract</code> as <code>_govAuthorizationContract</code>.</p>
+</li>
+<li>
+<p><code>addAdmin(address newAdmin) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>admins[msg.sender]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p>Increment <code>adminsCount</code> by 1.</p>
+</li>
+<li>
+<p>Set <code>admins[newAdmin]</code> to <code>true</code>.</p>
+</li>
+<li>
+<p><code>removeAdmin(address admin) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>admins[msg.sender]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p><code>adminsCount</code> is greater than 1.</p>
+</li>
+<li>
+<p>Decrement <code>adminsCount</code> by 1.</p>
+</li>
+<li>
+<p>Set <code>admins[admin]</code> to <code>false</code>.</p>
+</li>
+<li>
+<p><code>addDoctor(address newDoctor) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>admins[msg.sender]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p>Set <code>doctors[newDoctor]</code> to <code>true</code>.</p>
+</li>
+<li>
+<p><code>removeDoctor(address doctor) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>admins[msg.sender]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p>Set <code>doctors[doctor]</code> to <code>false</code>.</p>
+</li>
+<li>
+<p><code>prescribe(address patient, string memory medicine, uint256 dose) external returns (uint256)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>doctors[msg.sender]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p>Call _prescribe(<code>msg.sender</code>, <code>patient</code>, <code>medicine</code>, <code>dose</code>) from the <code>prescriptionsContract</code> contract and store the returned value in <code>prescriptionId</code>.</p>
+</li>
+<li>
+<p>Return <code>prescriptionId</code>.</p>
+</li>
+<li>
+<p><code>getPrescription(address patient, uint256 prescriptionId) external view returns (prescription memory)</code></p>
+</li>
+<li>
+<p>Check for one of the following:</p>
+</li>
+<li>
+<p><code>doctors[msg.sender]</code> is <code>true</code></p>
+</li>
+<li>
+<p><code>msg.sender</code> is equal to <code>patient</code>.</p>
+</li>
+<li>
+<p>Call _getPrescription(<code>patient</code>, <code>prescriptionId</code>) from the <code>prescriptionsContract</code> contract and store returned struct in <code>prescription</code>.</p>
+</li>
+<li>
+<p>Return <code>prescription</code>.</p>
+</li>
+<li>
+<p><code>authorizeSale(uint256 prescriptionId, address patient, string memory medicine, uint256 amount) external returns (bool)</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The returned bool of calling isAuthorizedManufacturer(<code>msg.sender</code>), from <code>govAuthorizationContract</code>, is <code>true</code>.</p>
+</li>
+<li>
+<p>Call _getPrescription(<code>patient</code>, <code>prescriptionId</code>) from the <code>prescriptionsContract</code> contract and store returned struct in <code>prescription</code>.</p>
+</li>
+<li>
+<p>If:</p>
+</li>
+<li>
+<p><code>prescription.valid</code> is <code>true</code>.</p>
+</li>
+<li>
+<p><code>medicine</code> is equal to <code>prescription.medicine</code>.</p>
+</li>
+<li>
+<p><code>amount</code> is equal to <code>prescription.dose</code></p>
+</li>
+<li>
+<p>Call usePrescription(<code>patient</code>, <code>prescriptionId</code>) from <code>prescriptionsContract</code>.</p>
+</li>
+<li>
+<p>Return <code>true</code>.</p>
+</li>
+<li>
+<p>Else return <code>false</code>.</p>
+</li>
+<li>
+<p><code>setPrescriptionContract(address newPrescriptionContract) external</code></p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p><code>admins[msg.sender]</code> is <code>true</code>.</p>
+</li>
+<li>
+<p>Set <code>prescriptionsContract</code> as <code>newPrescriptionContract</code>.</p>
+</li>
+</ul>
+<h1 id="response-format">Response Format</h1>
+<p>Your response should be the fully implemented Solidity contract that includes all the functionalities and functions described above. No additional content is required.</p>
+</prompt>

@@ -1,0 +1,588 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 16,
+            "message": "Missing @author tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 16,
+            "message": "Missing @notice tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "Missing @notice tag in variable 'currentId'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 75,
+            "message": "Missing @notice tag in function 'createPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "Error message for require is too long: 33 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "Error message for require is too long: 43 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 82,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "Error message for require is too long: 35 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 85,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 103,
+            "message": "Missing @notice tag in function 'activatePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 104,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 104,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 106,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 107,
+            "message": "Error message for require is too long: 35 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 107,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 107,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 108,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 111,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 111,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 111,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 124,
+            "message": "Missing @notice tag in function 'deletePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 125,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 125,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 127,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 128,
+            "message": "Error message for require is too long: 44 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 128,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 128,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 140,
+            "message": "Missing @notice tag in function 'participateInPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 150,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 156,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 158,
+            "message": "GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 171,
+            "message": "Missing @notice tag in function 'leavePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 172,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 172,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 174,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 174,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 174,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 180,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 186,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 201,
+            "message": "Function body contains 68 lines but allowed no more than 50 lines",
+            "name": "function-max-lines"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 201,
+            "message": "Missing @notice tag in function 'payInstallment'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 202,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 202,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 204,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 217,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 219,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 232,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 233,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 235,
+            "message": "GC: For [ participant ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 248,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 254,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 260,
+            "message": "GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Missing @notice tag in function 'selectWinner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 284,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 290,
+            "message": "GC: For [ count ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 318,
+            "message": "Missing @notice tag in function 'getPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 318,
+            "message": "Mismatch in @return count for function 'getPool'. Expected: 10, Found: 1",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 332,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Consorcio_F.sol",
+            "level": "warning",
+            "line": 332,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

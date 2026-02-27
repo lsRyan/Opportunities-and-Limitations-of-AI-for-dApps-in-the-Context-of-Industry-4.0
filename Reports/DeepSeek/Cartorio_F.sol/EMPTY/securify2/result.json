@@ -1,0 +1,15 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (securify.grammar.GrammarError: Symbol 'ErrorDefinition' not found in grammar.)"
+    ],
+    "findings": [],
+    "infos": [],
+    "parser": {
+        "id": "securify2",
+        "mode": "solidity",
+        "version": "2025-09-12"
+    }
+}

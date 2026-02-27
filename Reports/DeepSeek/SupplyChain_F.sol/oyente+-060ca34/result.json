@@ -1,0 +1,81 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 73,
+            "contract": "AuthorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 46,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 24,
+            "contract": "AuthorizationCertificates",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4042,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 73,
+            "contract": "HospitalManagement",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 46,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 21,
+            "contract": "HospitalManagement",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4178,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 13,
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4477,
+            "name": "Callstack Depth Attack Vulnerability"
+        },
+        {
+            "column": 12,
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 60,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 24,
+            "contract": "PharmaCompany",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 3587,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 21,
+            "contract": "Prescriptions",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": 4071,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Arrays 98.4%",
+        "coverage AuthorizationCertificates 90.3%",
+        "coverage Comparators 98.4%",
+        "coverage ERC1155Utils 98.4%",
+        "coverage HospitalManagement 41.5%",
+        "coverage Math 98.4%",
+        "coverage Panic 98.4%",
+        "coverage PharmaCompany 37.8%",
+        "coverage Prescriptions 36.1%",
+        "coverage SafeCast 98.4%",
+        "coverage SlotDerivation 98.4%",
+        "coverage StorageSlot 98.4%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

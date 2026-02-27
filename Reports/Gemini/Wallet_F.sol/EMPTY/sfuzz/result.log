@@ -1,0 +1,29 @@
+Extract contract Exchange from /sb/Wallet_F.sol
+Extract contract Oracle from /sb/Wallet_F.sol
+Extract contract Wallet from /sb/Wallet_F.sol
+Extracted 3 contract(s) from /sb/Wallet_F.sol
+[0;32m> Created "fuzzMe"[0m
+[0;32m> To fuzz contracts:[0m
+  chmod +x fuzzMe
+  ./fuzzMe
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/ReentrancyAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/NormalAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 7:    25 Aborted                 (core dumped) ./fuzzer --file contracts/Oracle.sol.json --name Oracle --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 8:    26 Aborted                 (core dumped) ./fuzzer --file contracts/Exchange.sol.json --name Exchange --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 9:    27 Aborted                 (core dumped) ./fuzzer --file contracts/Wallet.sol.json --name Wallet --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker

@@ -1,0 +1,17 @@
+name,count
+SOLIDITY_VISIBILITY,44
+use-nested-if,17
+non-payable-constructor,10
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,4
+basic-arithmetic-underflow,4
+shadowing-local,2
+timestamp,2
+use-prefix-increment-not-postfix,2
+naming-convention,1
+Miners can manipulate program execution by selecting when to include the timestamp,1
+SOLIDITY_PRAGMAS_VERSION,1
+use-ownable2step,1
+init-variables-with-default-value,1
+array-length-outside-loop,1
+unnecessary-checked-arithmetic-in-loop,1
+use-custom-error-not-require,1

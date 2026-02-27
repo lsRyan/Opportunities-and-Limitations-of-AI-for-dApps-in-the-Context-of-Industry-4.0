@@ -1,0 +1,15 @@
+{
+    "errors": [],
+    "fails": [
+        "exception (ValueError: Failed to generate CFG for /sb/SupplyChain_F.sol)"
+    ],
+    "findings": [],
+    "infos": [
+        "Failed to generate CFG for /sb/SupplyChain_F.sol"
+    ],
+    "parser": {
+        "id": "mando-hgt",
+        "mode": "solidity",
+        "version": "2023/08/01"
+    }
+}

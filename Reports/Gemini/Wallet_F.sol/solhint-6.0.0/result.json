@@ -1,0 +1,2548 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 8,
+            "message": "Found more than One contract per file. 3 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 14,
+            "message": "Missing @author tag in contract 'IOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 14,
+            "message": "Missing @notice tag in contract 'IOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Missing @notice tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Missing @param tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Mismatch in @param names for function 'requestRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Missing @return tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Mismatch in @return count for function 'requestRate'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 16,
+            "message": "Missing @notice tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 16,
+            "message": "Missing @param tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 16,
+            "message": "Mismatch in @param names for function 'readRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 16,
+            "message": "Missing @return tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 16,
+            "message": "Mismatch in @return count for function 'readRate'. Expected: 2, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 17,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 17,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 17,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 17,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 17,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 18,
+            "message": "Missing @notice tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 18,
+            "message": "Missing @param tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 18,
+            "message": "Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 19,
+            "message": "Missing @notice tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 19,
+            "message": "Missing @param tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 19,
+            "message": "Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 20,
+            "message": "Missing @notice tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 20,
+            "message": "Missing @param tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 20,
+            "message": "Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Missing @author tag in contract 'IExchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Missing @notice tag in contract 'IExchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 28,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 28,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 28,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 29,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 29,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 29,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 29,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 29,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 30,
+            "message": "Missing @notice tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 30,
+            "message": "Missing @param tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 30,
+            "message": "Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @notice tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @param tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 32,
+            "message": "Missing @notice tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 32,
+            "message": "Missing @param tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 32,
+            "message": "Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "Missing @author tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "Missing @notice tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 60,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 61,
+            "message": "Missing @notice tag in variable 'minimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 66,
+            "message": "Missing @notice tag in variable 'oracles'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 67,
+            "message": "Missing @notice tag in variable 'requests'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Missing @notice tag in variable 'exchangeRates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Missing @notice tag in variable 'exchangeRateTime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 73,
+            "message": "Missing @notice tag in event 'RateRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 73,
+            "message": "Missing @param tag in event 'RateRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 73,
+            "message": "Mismatch in @param names for event 'RateRequested'. Expected: [id, url, symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Missing @notice tag in event 'RateUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Missing @param tag in event 'RateUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Mismatch in @param names for event 'RateUpdated'. Expected: [symbol, rate, timestamp], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "GC: [rate] on Event [RateUpdated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "GC: [timestamp] on Event [RateUpdated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 79,
+            "message": "Error message for require is too long: 35 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 79,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 79,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 100,
+            "message": "Missing @notice tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 101,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 102,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 104,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 127,
+            "message": "Missing @notice tag in function 'answerRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 130,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 130,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 131,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 132,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 137,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 155,
+            "message": "GC: For [ req ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 160,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 175,
+            "message": "Missing @notice tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 175,
+            "message": "GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 176,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 177,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Missing @notice tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Missing @param tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "Missing @notice tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "Missing @param tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 212,
+            "message": "GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 215,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 229,
+            "message": "Missing @notice tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 229,
+            "message": "Missing @param tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 229,
+            "message": "Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 230,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 230,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 240,
+            "message": "Missing @author tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 240,
+            "message": "Missing @notice tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 243,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 245,
+            "message": "Missing @notice tag in variable 'bridgeURL'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 246,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 250,
+            "message": "Missing @notice tag in event 'ExchangeTriggered'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 250,
+            "message": "Missing @param tag in event 'ExchangeTriggered'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 250,
+            "message": "Mismatch in @param names for event 'ExchangeTriggered'. Expected: [transactor, targetCurrency, exchangeValue, exchangeRate, timestamp, bridgeCall], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 250,
+            "message": "GC: [exchangeValue] on Event [ExchangeTriggered] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 250,
+            "message": "GC: [exchangeRate] on Event [ExchangeTriggered] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 250,
+            "message": "GC: [timestamp] on Event [ExchangeTriggered] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 262,
+            "message": "Error message for require is too long: 35 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 262,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 262,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet, _oracleContract], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 284,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 285,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 285,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 285,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 286,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 287,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 288,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 294,
+            "message": "GC: Use Custom Errors instead of revert statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @param tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @return tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 318,
+            "message": "Missing @notice tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 318,
+            "message": "Missing @param tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 318,
+            "message": "Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 318,
+            "message": "GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 322,
+            "message": "Missing @notice tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 322,
+            "message": "Missing @param tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 322,
+            "message": "Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 322,
+            "message": "GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 323,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 327,
+            "message": "Missing @notice tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 327,
+            "message": "Missing @param tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 327,
+            "message": "Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 327,
+            "message": "GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 328,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 338,
+            "message": "Missing @author tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 338,
+            "message": "Missing @notice tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 341,
+            "message": "Missing @notice tag in variable 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 342,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 343,
+            "message": "Missing @notice tag in variable 'exchangeContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 351,
+            "message": "Missing @notice tag in variable 'maximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 352,
+            "message": "Missing @notice tag in variable 'exchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 367,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [_maximumRateDelay, _exchangeFee], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 387,
+            "message": "Missing @notice tag in function '_compareStrings'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 387,
+            "message": "Missing @param tag in function '_compareStrings'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 387,
+            "message": "Mismatch in @param names for function '_compareStrings'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 387,
+            "message": "Missing @return tag in function '_compareStrings'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 387,
+            "message": "Mismatch in @return count for function '_compareStrings'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "Missing @notice tag in function 'deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Missing @notice tag in function 'transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Missing @param tag in function 'transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Mismatch in @param names for function 'transfer'. Expected: [amount, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 405,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 414,
+            "message": "Missing @notice tag in function 'externalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 414,
+            "message": "Missing @param tag in function 'externalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 414,
+            "message": "Mismatch in @param names for function 'externalTransfer'. Expected: [amount, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 415,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 415,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 416,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 421,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 427,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 427,
+            "message": "Missing @param tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 427,
+            "message": "Mismatch in @param names for function 'exchange'. Expected: [targetCurrency, targetAddress, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 427,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 429,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 450,
+            "message": "Missing @notice tag in function 'withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 450,
+            "message": "Missing @param tag in function 'withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 450,
+            "message": "Mismatch in @param names for function 'withdrawn'. Expected: [amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 451,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 451,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 456,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 464,
+            "message": "Missing @notice tag in function 'transferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 464,
+            "message": "Missing @param tag in function 'transferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 464,
+            "message": "Mismatch in @param names for function 'transferAUTH'. Expected: [amount, from, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 466,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 470,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 470,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 471,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 480,
+            "message": "Missing @notice tag in function 'externalTransferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 480,
+            "message": "Missing @param tag in function 'externalTransferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 480,
+            "message": "Mismatch in @param names for function 'externalTransferAUTH'. Expected: [amount, from, to], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 482,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 486,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 486,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 487,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 492,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 498,
+            "message": "Missing @notice tag in function 'exchangeAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 498,
+            "message": "Missing @param tag in function 'exchangeAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 498,
+            "message": "Mismatch in @param names for function 'exchangeAUTH'. Expected: [targetCurrency, from, targetAddress, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 498,
+            "message": "GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 500,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 501,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 501,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 502,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 522,
+            "message": "Missing @notice tag in function 'withdrawnAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 522,
+            "message": "Missing @param tag in function 'withdrawnAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 522,
+            "message": "Mismatch in @param names for function 'withdrawnAUTH'. Expected: [from, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 524,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 530,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 530,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 535,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 541,
+            "message": "Missing @notice tag in function 'authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 541,
+            "message": "Missing @param tag in function 'authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 541,
+            "message": "Mismatch in @param names for function 'authorize'. Expected: [authorized, tier], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 541,
+            "message": "GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 542,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 554,
+            "message": "Missing @notice tag in function 'revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 554,
+            "message": "Missing @param tag in function 'revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 554,
+            "message": "Mismatch in @param names for function 'revoke'. Expected: [unauthorize], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Missing @notice tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Missing @param tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Mismatch in @param names for function 'getExchangeAvailability'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Missing @return tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Mismatch in @return count for function 'getExchangeAvailability'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 564,
+            "message": "Missing @notice tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 564,
+            "message": "Missing @param tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 564,
+            "message": "Mismatch in @param names for function 'getOracleAvailability'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 564,
+            "message": "Missing @return tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 564,
+            "message": "Mismatch in @return count for function 'getOracleAvailability'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 564,
+            "message": "GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 568,
+            "message": "Missing @notice tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 568,
+            "message": "Missing @param tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 568,
+            "message": "Mismatch in @param names for function 'getExchangeRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 568,
+            "message": "Missing @return tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 568,
+            "message": "Mismatch in @return count for function 'getExchangeRate'. Expected: 2, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 568,
+            "message": "GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 574,
+            "message": "Missing @notice tag in function 'requestExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 574,
+            "message": "Missing @param tag in function 'requestExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 574,
+            "message": "Mismatch in @param names for function 'requestExchangeRate'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 574,
+            "message": "GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 580,
+            "message": "Missing @notice tag in function 'addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 580,
+            "message": "Missing @param tag in function 'addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 580,
+            "message": "Mismatch in @param names for function 'addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 580,
+            "message": "GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 580,
+            "message": "GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 580,
+            "message": "GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 584,
+            "message": "Missing @notice tag in function 'removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 584,
+            "message": "Missing @param tag in function 'removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 584,
+            "message": "Mismatch in @param names for function 'removeOracle'. Expected: [symbol, accessAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 584,
+            "message": "GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 588,
+            "message": "Missing @notice tag in function 'changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 588,
+            "message": "Missing @param tag in function 'changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 588,
+            "message": "Mismatch in @param names for function 'changeMinimumQuorum'. Expected: [newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 35,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 593,
+            "message": "Missing @notice tag in function 'updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 593,
+            "message": "Missing @param tag in function 'updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 593,
+            "message": "Mismatch in @param names for function 'updateBridge'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 593,
+            "message": "GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 597,
+            "message": "Missing @notice tag in function 'addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 597,
+            "message": "Missing @param tag in function 'addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 597,
+            "message": "Mismatch in @param names for function 'addCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 597,
+            "message": "GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 601,
+            "message": "Missing @notice tag in function 'removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 601,
+            "message": "Missing @param tag in function 'removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 601,
+            "message": "Mismatch in @param names for function 'removeCurrency'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 601,
+            "message": "GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 605,
+            "message": "Missing @notice tag in function 'updateOracleAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 605,
+            "message": "Missing @param tag in function 'updateOracleAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 605,
+            "message": "Mismatch in @param names for function 'updateOracleAddress'. Expected: [newOracle], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 606,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 610,
+            "message": "Missing @notice tag in function 'updateExchangeAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 610,
+            "message": "Missing @param tag in function 'updateExchangeAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 610,
+            "message": "Mismatch in @param names for function 'updateExchangeAddress'. Expected: [newExchange], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 611,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 615,
+            "message": "Missing @notice tag in function 'updateMaximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 615,
+            "message": "Missing @param tag in function 'updateMaximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 615,
+            "message": "Mismatch in @param names for function 'updateMaximumRateDelay'. Expected: [newMaximumRateDelay], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 619,
+            "message": "Missing @notice tag in function 'updateExchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 619,
+            "message": "Missing @param tag in function 'updateExchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 619,
+            "message": "Mismatch in @param names for function 'updateExchangeFee'. Expected: [newExchangeFee], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 624,
+            "message": "Missing @notice tag in function 'changeOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 624,
+            "message": "Missing @param tag in function 'changeOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 624,
+            "message": "Mismatch in @param names for function 'changeOwnership'. Expected: [newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 625,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "level": "warning",
+            "line": 630,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

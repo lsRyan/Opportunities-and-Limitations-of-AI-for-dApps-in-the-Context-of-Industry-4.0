@@ -1,0 +1,164 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": "13",
+            "column_end": "75",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "317",
+            "line_end": "317",
+            "name": "Reentrancy Vulnerability"
+        },
+        {
+            "column": "44",
+            "column_end": "59",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "108",
+            "line_end": "108",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "25",
+            "column_end": "40",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "64",
+            "line_end": "64",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "13",
+            "column_end": "28",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "229",
+            "line_end": "229",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "13",
+            "column_end": "28",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "238",
+            "line_end": "238",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "13",
+            "column_end": "39",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "229",
+            "line_end": "229",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "9",
+            "column_end": "42",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "295",
+            "line_end": "295",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "9",
+            "column_end": "42",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "291",
+            "line_end": "291",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "9",
+            "column_end": "31",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "324",
+            "line_end": "324",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "82",
+            "line_end": "87",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "14",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "68",
+            "line_end": "70",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "14",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "148",
+            "line_end": "154",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "24",
+            "column_end": "42",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "340",
+            "line_end": "340",
+            "name": "Message padding vulnerability found at ether transfer."
+        },
+        {
+            "column": "9",
+            "column_end": "30",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "312",
+            "line_end": "312",
+            "name": "Message padding vulnerability found at ether transfer."
+        },
+        {
+            "column": "17",
+            "column_end": "42",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "198",
+            "line_end": "198",
+            "name": "Message padding vulnerability found at ether transfer."
+        },
+        {
+            "column": "9",
+            "column_end": "58",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "347",
+            "line_end": "347",
+            "name": "A miner can use others input to gain a benefit himself."
+        },
+        {
+            "column": "9",
+            "column_end": "57",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": "351",
+            "line_end": "351",
+            "name": "A miner can use others input to gain a benefit himself."
+        }
+    ],
+    "infos": [
+        "Could not find the scope Oracle needed to resolve the call Oracle.pop",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addCurrency",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addOracle",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._changeMinimumQuorum",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeCurrency",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeOracle",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._updateBridge",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.requestRate",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

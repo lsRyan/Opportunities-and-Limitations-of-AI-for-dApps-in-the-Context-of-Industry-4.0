@@ -1,0 +1,85 @@
+{
+    "errors": [],
+    "fails": [
+        "DOCKER_TIMEOUT"
+    ],
+    "findings": [
+        {
+            "column": "13",
+            "column_end": "28",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "line": "5322",
+            "line_end": "5322",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "23",
+            "column_end": "38",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "line": "5512",
+            "line_end": "5512",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "34",
+            "column_end": "49",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "line": "4232",
+            "line_end": "4232",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "13",
+            "column_end": "28",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "line": "4491",
+            "line_end": "4491",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        }
+    ],
+    "infos": [
+        "Could not find the scope Checkpoint160 needed to resolve the call Checkpoint160.push",
+        "Could not find the scope Checkpoint208 needed to resolve the call Checkpoint208.push",
+        "Could not find the scope Checkpoint224 needed to resolve the call Checkpoint224.push",
+        "Could not find the scope Delay needed to resolve the call Delay.get",
+        "Could not find the scope Delay needed to resolve the call Delay.getFull",
+        "Could not find the scope Delay needed to resolve the call Delay.unpack",
+        "Could not find the scope ShortString needed to resolve the call ShortString.toStringWithFallback",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.at",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.blockNumber",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encode",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getStringSlot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.latest",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.length",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log10",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log256",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.max",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.nonces",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.recover",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.sqrt",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toString",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toTypedDataHash",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint208",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint32",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint48",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.unwrap",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.upperLookupRecent",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.wrap",
+        "Could not find the scope bool needed to resolve the call bool.toUint",
+        "Could not find the scope string needed to resolve the call string.toShortStringWithFallback",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

@@ -1,0 +1,192 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "contract": "Checkpoints",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Checkpoints",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Checkpoints",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "CondoVotingSystem",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "CondoVotingSystem",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "CondoVotingSystem",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "ECDSA",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "ECDSA",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "ECDSA",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "MessageHashUtils",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "MessageHashUtils",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "MessageHashUtils",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "ShortStrings",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "ShortStrings",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "ShortStrings",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "SignedMath",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "SignedMath",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "SignedMath",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "StorageSlot",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "StorageSlot",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "StorageSlot",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Strings",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Strings",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Strings",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Time",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Time",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Time",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/VotacaoCondominio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "maian",
+        "mode": "solidity",
+        "version": "2022/11/11"
+    }
+}

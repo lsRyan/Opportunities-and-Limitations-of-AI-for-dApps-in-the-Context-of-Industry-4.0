@@ -1,0 +1,35 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 28,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 264,
+            "name": "Callstack Depth Attack Vulnerability"
+        },
+        {
+            "column": 9,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 295,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 9,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "line": 54,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage FinancialPoolManager 28.3%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

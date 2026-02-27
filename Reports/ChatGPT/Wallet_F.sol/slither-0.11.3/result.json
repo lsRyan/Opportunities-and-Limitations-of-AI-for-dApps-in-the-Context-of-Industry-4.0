@@ -1,0 +1,222 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "confidence": "High",
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "exchange",
+            "impact": "Medium",
+            "line": 177,
+            "line_end": 261,
+            "message": "Contract locking ether found:\n\tContract ExchangeContract (../sb/Wallet_F.sol#177-261) has payable functions:\n\t - ExchangeContract.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#209-241)\n\tBut does not have a function to withdraw the ether\n",
+            "name": "locked-ether"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "getExchangeRate",
+            "impact": "Medium",
+            "line": 370,
+            "line_end": 376,
+            "message": "Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#370-376) ignores return value by OracleContract(oracleContract).readRate(symbol) (../sb/Wallet_F.sol#375)\n",
+            "name": "unused-return"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "requestExchangeRate",
+            "impact": "Medium",
+            "line": 378,
+            "line_end": 380,
+            "message": "Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#378-380) ignores return value by OracleContract(oracleContract).requestRate(symbol) (../sb/Wallet_F.sol#379)\n",
+            "name": "unused-return"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "changeOwnership",
+            "impact": "Low",
+            "line": 440,
+            "line_end": 442,
+            "message": "Wallet.changeOwnership(address) (../sb/Wallet_F.sol#440-442) should emit an event for: \n\t- owner = newOwner (../sb/Wallet_F.sol#441) \n",
+            "name": "events-access"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "updateExchangeFee",
+            "impact": "Low",
+            "line": 435,
+            "line_end": 438,
+            "message": "Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#435-438) should emit an event for: \n\t- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#437) \n",
+            "name": "events-maths"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "updateMaximumRateDelay",
+            "impact": "Low",
+            "line": 428,
+            "line_end": 433,
+            "message": "Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#428-433) should emit an event for: \n\t- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#432) \n",
+            "name": "events-maths"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "impact": "Low",
+            "line": 424,
+            "message": "Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#424) lacks a zero-check on :\n\t\t- exchangeContract = newExchange (../sb/Wallet_F.sol#425)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "impact": "Low",
+            "line": 420,
+            "message": "Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#420) lacks a zero-check on :\n\t\t- oracleContract = newOracle (../sb/Wallet_F.sol#421)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "impact": "Low",
+            "line": 440,
+            "message": "Wallet.changeOwnership(address).newOwner (../sb/Wallet_F.sol#440) lacks a zero-check on :\n\t\t- owner = newOwner (../sb/Wallet_F.sol#441)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "impact": "Low",
+            "line": 304,
+            "message": "Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#304) lacks a zero-check on :\n\t\t- address(to).transfer(amount) (../sb/Wallet_F.sol#307)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "answerRequest",
+            "impact": "Low",
+            "line": 75,
+            "line_end": 111,
+            "message": "OracleContract.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#75-111) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(r.active,Request inactive) (../sb/Wallet_F.sol#77)\n\t- require(bool,string)(bytes(r.currency).length != 0,Invalid request) (../sb/Wallet_F.sol#78)\n\t- require(bool,string)(! r.answers[msg.sender],Already answered) (../sb/Wallet_F.sol#89)\n\t- r.requestTime < exchangeRateTime[r.currency] (../sb/Wallet_F.sol#91)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "exchange",
+            "impact": "Low",
+            "line": 209,
+            "line_end": 241,
+            "message": "ExchangeContract.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#209-241) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(block.timestamp - rateTime <= maximumRateDelay,Outdated rate) (../sb/Wallet_F.sol#228-231)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "High",
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "_updateBridge",
+            "impact": "Informational",
+            "line": 243,
+            "line_end": 245,
+            "message": "Function ExchangeContract._updateBridge(string) (../sb/Wallet_F.sol#243-245) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "_removeOracle",
+            "impact": "Informational",
+            "line": 143,
+            "line_end": 159,
+            "message": "Function OracleContract._removeOracle(string,address) (../sb/Wallet_F.sol#143-159) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "_changeMinimumQuorum",
+            "impact": "Informational",
+            "line": 161,
+            "line_end": 164,
+            "message": "Function OracleContract._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#161-164) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "_removeCurrency",
+            "impact": "Informational",
+            "line": 252,
+            "line_end": 255,
+            "message": "Function ExchangeContract._removeCurrency(string) (../sb/Wallet_F.sol#252-255) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "_addOracle",
+            "impact": "Informational",
+            "line": 123,
+            "line_end": 141,
+            "message": "Function OracleContract._addOracle(string,string,string,address) (../sb/Wallet_F.sol#123-141) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "function": "_addCurrency",
+            "impact": "Informational",
+            "line": 247,
+            "line_end": 250,
+            "message": "Function ExchangeContract._addCurrency(string) (../sb/Wallet_F.sol#247-250) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "impact": "Optimization",
+            "line": 178,
+            "message": "ExchangeContract.authorizedWallet (../sb/Wallet_F.sol#178) should be immutable \n",
+            "name": "immutable-states"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "impact": "Optimization",
+            "line": 31,
+            "message": "OracleContract.authorizedWallet (../sb/Wallet_F.sol#31) should be immutable \n",
+            "name": "immutable-states"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "impact": "Optimization",
+            "line": 179,
+            "message": "ExchangeContract.oracleContract (../sb/Wallet_F.sol#179) should be immutable \n",
+            "name": "immutable-states"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "slither-0.11.3",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (Connection to the database terminated. Please ensure that your database is listening on the correct host and port and that you have compatible encryption settings both on Neo4j server and driver. Note that the default encryption setting has changed in Neo4j 4.0.)"
+    ],
+    "findings": [],
+    "infos": [
+        "Could not find the scope OracleInfo needed to resolve the call OracleInfo.pop",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addCurrency",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addOracle",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._changeMinimumQuorum",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeCurrency",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeOracle",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._updateBridge",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.requestRate",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

@@ -1,0 +1,2156 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 8,
+            "message": "Found more than One contract per file. 3 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 14,
+            "message": "Missing @author tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 14,
+            "message": "Missing @notice tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Missing @notice tag in variable 'oracles'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 46,
+            "message": "Missing @notice tag in variable 'requests'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 49,
+            "message": "Missing @notice tag in variable 'exchangeRates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 52,
+            "message": "Missing @notice tag in variable 'exchangeRateTime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 55,
+            "message": "Missing @notice tag in variable 'minimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 63,
+            "message": "Missing @notice tag in event 'RateRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 63,
+            "message": "Missing @param tag in event 'RateRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 63,
+            "message": "Mismatch in @param names for event 'RateRequest'. Expected: [requestId, url, currency], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 78,
+            "message": "Missing @notice tag in function 'requestRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 79,
+            "message": "Error message for require is too long: 40 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 79,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 79,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 80,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 90,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 102,
+            "message": "Missing @notice tag in function 'answerRequest'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 103,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 103,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 104,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 109,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "Error message for require is too long: 37 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 117,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 136,
+            "message": "GC: For [ requests ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 33,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 153,
+            "message": "Missing @notice tag in function 'readRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 153,
+            "message": "Mismatch in @return count for function 'readRate'. Expected: 2, Found: 1",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 153,
+            "message": "GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 154,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 155,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "Missing @notice tag in function '_addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 166,
+            "message": "GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "Error message for require is too long: 38 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 182,
+            "message": "Missing @notice tag in function '_removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 182,
+            "message": "GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Error message for require is too long: 41 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 207,
+            "message": "Missing @notice tag in function '_changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 208,
+            "message": "Error message for require is too long: 40 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 208,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 208,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 35,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 218,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 218,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 219,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 228,
+            "message": "Missing @author tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 228,
+            "message": "Missing @notice tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 230,
+            "message": "Explicitly mark visibility of state",
+            "name": "state-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 233,
+            "message": "Explicitly mark visibility of state",
+            "name": "state-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 236,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 239,
+            "message": "Missing @notice tag in variable 'bridgeURL'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "Missing @notice tag in event 'ExchangeInitiated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "Missing @param tag in event 'ExchangeInitiated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "Mismatch in @param names for event 'ExchangeInitiated'. Expected: [transactor, targetCurrency, exchangeValue, exchangeRate, timestamp], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "GC: [exchangeValue] on Event [ExchangeInitiated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "GC: [exchangeRate] on Event [ExchangeInitiated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "GC: [timestamp] on Event [ExchangeInitiated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 257,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 269,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 269,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 275,
+            "message": "Error message for require is too long: 45 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 275,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 275,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 276,
+            "message": "Error message for require is too long: 36 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 276,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 276,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 284,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 286,
+            "message": "Error message for require is too long: 37 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 286,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 286,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 288,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 294,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 299,
+            "message": "Error message for revert is too long: 43 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 299,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 299,
+            "message": "GC: Use Custom Errors instead of revert statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 316,
+            "message": "Missing @notice tag in function '_updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 316,
+            "message": "GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "Error message for require is too long: 40 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 317,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "Missing @notice tag in function '_addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 325,
+            "message": "GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "Error message for require is too long: 41 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 327,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "Missing @notice tag in function '_removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 336,
+            "message": "Error message for require is too long: 44 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 336,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 336,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 346,
+            "message": "Missing @notice tag in function 'isSupported'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 346,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 347,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Missing @author tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Missing @notice tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 358,
+            "message": "Missing @notice tag in variable 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 361,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 362,
+            "message": "Missing @notice tag in variable 'exchangeContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 371,
+            "message": "Missing @notice tag in variable 'maximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 374,
+            "message": "Missing @notice tag in variable 'exchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 379,
+            "message": "Missing @notice tag in event 'Deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 379,
+            "message": "Missing @param tag in event 'Deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 379,
+            "message": "Mismatch in @param names for event 'Deposit'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 379,
+            "message": "GC: [amount] on Event [Deposit] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 384,
+            "message": "Missing @notice tag in event 'Transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 384,
+            "message": "Missing @param tag in event 'Transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 384,
+            "message": "Mismatch in @param names for event 'Transfer'. Expected: [from, to, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 384,
+            "message": "GC: [amount] on Event [Transfer] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Missing @notice tag in event 'ExternalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Missing @param tag in event 'ExternalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Mismatch in @param names for event 'ExternalTransfer'. Expected: [from, to, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "GC: [amount] on Event [ExternalTransfer] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 394,
+            "message": "Missing @notice tag in event 'Withdrawal'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 394,
+            "message": "Missing @param tag in event 'Withdrawal'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 394,
+            "message": "Mismatch in @param names for event 'Withdrawal'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 394,
+            "message": "GC: [amount] on Event [Withdrawal] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 401,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 401,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 410,
+            "message": "Missing @notice tag in function 'deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 420,
+            "message": "Missing @notice tag in function 'transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 421,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 421,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 432,
+            "message": "Missing @notice tag in function 'externalTransfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 433,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 433,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 436,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 446,
+            "message": "Missing @notice tag in function 'exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 446,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 447,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 447,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 454,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 456,
+            "message": "Error message for require is too long: 39 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 456,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 456,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 466,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 474,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 481,
+            "message": "Missing @notice tag in function 'withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 482,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 482,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 485,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 495,
+            "message": "Missing @notice tag in function 'transferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 497,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 502,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 502,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 515,
+            "message": "Missing @notice tag in function 'externalTransferAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 517,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 522,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 522,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 526,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 537,
+            "message": "Missing @notice tag in function 'exchangeAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 537,
+            "message": "GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 538,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 542,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 542,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 548,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 550,
+            "message": "Error message for require is too long: 39 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 550,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 550,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 568,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 576,
+            "message": "Missing @notice tag in function 'withdrawnAUTH'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 578,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 585,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 593,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 602,
+            "message": "Missing @notice tag in function 'authorize'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 602,
+            "message": "GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 603,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 617,
+            "message": "Missing @notice tag in function 'revoke'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 626,
+            "message": "Missing @notice tag in function 'getExchangeAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 626,
+            "message": "GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 630,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 640,
+            "message": "Missing @notice tag in function 'getOracleAvailability'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 640,
+            "message": "GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 644,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "Missing @notice tag in function 'getExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "Mismatch in @return count for function 'getExchangeRate'. Expected: 2, Found: 1",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 658,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 668,
+            "message": "Missing @notice tag in function 'requestExchangeRate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 668,
+            "message": "GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "Error message for require is too long: 37 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 670,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 673,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 683,
+            "message": "Missing @notice tag in function 'addOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 683,
+            "message": "GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 683,
+            "message": "GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 683,
+            "message": "GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 684,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 685,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 686,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 688,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 696,
+            "message": "Missing @notice tag in function 'removeOracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 696,
+            "message": "GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 697,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 698,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 701,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 708,
+            "message": "Missing @notice tag in function 'changeMinimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 709,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 710,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 710,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 35,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 710,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 711,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 714,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 721,
+            "message": "Missing @notice tag in function 'updateBridge'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 721,
+            "message": "GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 723,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 726,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 733,
+            "message": "Missing @notice tag in function 'addCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 733,
+            "message": "GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 734,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 735,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 736,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 746,
+            "message": "Missing @notice tag in function 'removeCurrency'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 746,
+            "message": "GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 747,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 748,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 749,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 752,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 759,
+            "message": "Missing @notice tag in function 'updateOracleAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 760,
+            "message": "Error message for require is too long: 36 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 760,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 760,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 768,
+            "message": "Missing @notice tag in function 'updateExchangeAddress'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 769,
+            "message": "Error message for require is too long: 38 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 769,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 769,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 777,
+            "message": "Missing @notice tag in function 'updateMaximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 778,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 786,
+            "message": "Missing @notice tag in function 'updateExchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 787,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 787,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 787,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 788,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 788,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 788,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 796,
+            "message": "Missing @notice tag in function 'changeOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 797,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 806,
+            "message": "Missing @notice tag in function 'getBalance'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "level": "warning",
+            "line": 816,
+            "message": "Missing @notice tag in function 'getAuthorizationLevel'",
+            "name": "use-natspec"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

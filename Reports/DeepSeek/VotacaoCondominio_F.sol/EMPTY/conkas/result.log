@@ -1,0 +1,480 @@
+line 22:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 56:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 62:36 mismatched input '(' expecting {';', '='}
+line 62:52 extraneous input ')' expecting {';', '='}
+line 67:29 mismatched input '(' expecting {';', '='}
+line 67:43 extraneous input ')' expecting {';', '='}
+line 76:38 mismatched input '(' expecting {';', '='}
+line 101:45 mismatched input '(' expecting {';', '='}
+line 122:38 mismatched input '(' expecting {';', '='}
+line 152:31 mismatched input '(' expecting {';', '='}
+line 152:46 extraneous input ')' expecting {';', '='}
+line 258:31 mismatched input '(' expecting {';', '='}
+line 263:37 mismatched input '(' expecting {';', '='}
+line 263:52 extraneous input ')' expecting {';', '='}
+line 268:32 mismatched input '(' expecting {';', '='}
+line 268:42 extraneous input ')' expecting {';', '='}
+line 301:21 extraneous input '(' expecting {'{', StringLiteral}
+line 301:35 extraneous input ')' expecting '{'
+line 342:18 no viable alternative at input 'unchecked{'
+line 408:40 mismatched input '(' expecting {';', '='}
+line 410:46 mismatched input '(' expecting {';', '='}
+line 412:41 mismatched input '(' expecting {';', '='}
+line 474:40 mismatched input '(' expecting {';', '='}
+line 474:51 mismatched input ',' expecting {';', '='}
+line 474:66 extraneous input ')' expecting {';', '='}
+line 479:37 mismatched input '(' expecting {';', '='}
+line 479:50 extraneous input ')' expecting {';', '='}
+line 484:39 mismatched input '(' expecting {';', '='}
+line 484:50 mismatched input ',' expecting {';', '='}
+line 484:64 extraneous input ')' expecting {';', '='}
+line 489:37 mismatched input '(' expecting {';', '='}
+line 489:51 extraneous input ')' expecting {';', '='}
+line 502:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 503:49 mismatched input '(' expecting {';', '='}
+line 519:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 520:49 mismatched input '(' expecting {';', '='}
+line 536:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 537:49 mismatched input '(' expecting {';', '='}
+line 553:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 554:49 mismatched input '(' expecting {';', '='}
+line 570:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 571:49 mismatched input '(' expecting {';', '='}
+line 587:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 588:49 mismatched input '(' expecting {';', '='}
+line 604:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 605:49 mismatched input '(' expecting {';', '='}
+line 621:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 622:49 mismatched input '(' expecting {';', '='}
+line 638:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 639:49 mismatched input '(' expecting {';', '='}
+line 655:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 656:49 mismatched input '(' expecting {';', '='}
+line 672:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 673:49 mismatched input '(' expecting {';', '='}
+line 689:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 690:49 mismatched input '(' expecting {';', '='}
+line 706:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 707:49 mismatched input '(' expecting {';', '='}
+line 723:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 724:49 mismatched input '(' expecting {';', '='}
+line 740:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 741:49 mismatched input '(' expecting {';', '='}
+line 757:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 758:49 mismatched input '(' expecting {';', '='}
+line 774:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 775:49 mismatched input '(' expecting {';', '='}
+line 791:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 792:49 mismatched input '(' expecting {';', '='}
+line 808:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 809:49 mismatched input '(' expecting {';', '='}
+line 825:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 826:49 mismatched input '(' expecting {';', '='}
+line 842:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 843:49 mismatched input '(' expecting {';', '='}
+line 859:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 860:49 mismatched input '(' expecting {';', '='}
+line 876:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 877:49 mismatched input '(' expecting {';', '='}
+line 893:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 894:49 mismatched input '(' expecting {';', '='}
+line 910:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 911:49 mismatched input '(' expecting {';', '='}
+line 927:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 928:49 mismatched input '(' expecting {';', '='}
+line 944:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 945:49 mismatched input '(' expecting {';', '='}
+line 961:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 962:49 mismatched input '(' expecting {';', '='}
+line 978:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 979:49 mismatched input '(' expecting {';', '='}
+line 995:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 996:49 mismatched input '(' expecting {';', '='}
+line 1012:20 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 1013:49 mismatched input '(' expecting {';', '='}
+line 1027:46 mismatched input '(' expecting {';', '='}
+line 1046:48 mismatched input '(' expecting {';', '='}
+line 1064:48 mismatched input '(' expecting {';', '='}
+line 1082:48 mismatched input '(' expecting {';', '='}
+line 1100:48 mismatched input '(' expecting {';', '='}
+line 1118:48 mismatched input '(' expecting {';', '='}
+line 1136:48 mismatched input '(' expecting {';', '='}
+line 1154:48 mismatched input '(' expecting {';', '='}
+line 1172:48 mismatched input '(' expecting {';', '='}
+line 1190:48 mismatched input '(' expecting {';', '='}
+line 1208:48 mismatched input '(' expecting {';', '='}
+line 1226:48 mismatched input '(' expecting {';', '='}
+line 1244:48 mismatched input '(' expecting {';', '='}
+line 1262:48 mismatched input '(' expecting {';', '='}
+line 1280:48 mismatched input '(' expecting {';', '='}
+line 1298:48 mismatched input '(' expecting {';', '='}
+line 1316:48 mismatched input '(' expecting {';', '='}
+line 1334:48 mismatched input '(' expecting {';', '='}
+line 1352:48 mismatched input '(' expecting {';', '='}
+line 1370:48 mismatched input '(' expecting {';', '='}
+line 1388:48 mismatched input '(' expecting {';', '='}
+line 1406:48 mismatched input '(' expecting {';', '='}
+line 1424:48 mismatched input '(' expecting {';', '='}
+line 1442:48 mismatched input '(' expecting {';', '='}
+line 1460:48 mismatched input '(' expecting {';', '='}
+line 1478:48 mismatched input '(' expecting {';', '='}
+line 1496:48 mismatched input '(' expecting {';', '='}
+line 1514:48 mismatched input '(' expecting {';', '='}
+line 1532:48 mismatched input '(' expecting {';', '='}
+line 1550:48 mismatched input '(' expecting {';', '='}
+line 1568:48 mismatched input '(' expecting {';', '='}
+line 1586:48 mismatched input '(' expecting {';', '='}
+line 1599:27 missing ')' at '('
+line 1599:44 mismatched input ')' expecting ';'
+line 1600:46 mismatched input '(' expecting {';', '='}
+line 1609:17 extraneous input '(' expecting {'{', StringLiteral}
+line 1609:31 extraneous input ')' expecting '{'
+line 1668:17 extraneous input '(' expecting {'{', StringLiteral}
+line 1668:31 extraneous input ')' expecting '{'
+line 1702:17 extraneous input '(' expecting {'{', StringLiteral}
+line 1702:31 extraneous input ')' expecting '{'
+line 1717:17 extraneous input '(' expecting {'{', StringLiteral}
+line 1717:31 extraneous input ')' expecting '{'
+line 1728:18 no viable alternative at input 'unchecked{'
+line 1739:18 no viable alternative at input 'unchecked{'
+line 1750:18 no viable alternative at input 'unchecked{'
+line 1752:21 extraneous input '(' expecting {'{', StringLiteral}
+line 1752:35 extraneous input ')' expecting '{'
+line 1766:18 no viable alternative at input 'unchecked{'
+line 1768:21 extraneous input '(' expecting {'{', StringLiteral}
+line 1768:35 extraneous input ')' expecting '{'
+line 1779:18 no viable alternative at input 'unchecked{'
+line 1781:21 extraneous input '(' expecting {'{', StringLiteral}
+line 1781:35 extraneous input ')' expecting '{'
+line 1793:22 missing ';' at '('
+line 1793:40 extraneous input 'type' expecting {'~', 'from', ',', '(', ')', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 1809:22 missing ';' at '('
+line 1809:40 extraneous input 'type' expecting {'~', 'from', ',', '(', ')', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 1820:18 no viable alternative at input 'unchecked{'
+line 1868:18 no viable alternative at input 'unchecked{'
+line 1881:18 no viable alternative at input 'unchecked{'
+line 1903:21 extraneous input '(' expecting {'{', StringLiteral}
+line 1903:35 extraneous input ')' expecting '{'
+line 1916:21 extraneous input '(' expecting {'{', StringLiteral}
+line 1916:35 extraneous input ')' expecting '{'
+line 1964:18 no viable alternative at input 'unchecked{'
+line 1992:18 no viable alternative at input 'unchecked{'
+line 2049:18 no viable alternative at input 'unchecked{'
+line 2087:17 extraneous input '(' expecting {'{', StringLiteral}
+line 2087:31 extraneous input ')' expecting '{'
+line 2137:17 extraneous input '(' expecting {'{', StringLiteral}
+line 2137:31 extraneous input ')' expecting '{'
+line 2169:18 no viable alternative at input 'unchecked{'
+line 2278:18 no viable alternative at input 'unchecked{'
+line 2324:17 extraneous input '(' expecting {'{', StringLiteral}
+line 2324:31 extraneous input ')' expecting '{'
+line 2334:18 no viable alternative at input 'unchecked{'
+line 2346:18 no viable alternative at input 'unchecked{'
+line 2383:18 no viable alternative at input 'unchecked{'
+line 2413:18 no viable alternative at input 'unchecked{'
+line 2447:18 no viable alternative at input 'unchecked{'
+line 2483:18 no viable alternative at input 'unchecked{'
+line 2527:38 mismatched input '(' expecting {';', '='}
+line 2527:52 mismatched input ',' expecting {';', '='}
+line 2527:68 extraneous input ')' expecting {';', '='}
+line 2532:28 mismatched input '(' expecting {';', '='}
+line 2537:37 mismatched input '(' expecting {';', '='}
+line 2543:18 no viable alternative at input 'unchecked{'
+line 2547:21 extraneous input '(' expecting {'{', StringLiteral}
+line 2547:35 extraneous input ')' expecting '{'
+line 2552:25 extraneous input '(' expecting {'{', StringLiteral}
+line 2552:39 extraneous input ')' expecting '{'
+line 2573:18 no viable alternative at input 'unchecked{'
+line 2591:47 mismatched input '(' expecting {';', '='}
+line 2613:17 extraneous input '(' expecting {'{', StringLiteral}
+line 2613:31 extraneous input ')' expecting '{'
+line 2656:47 mismatched input '(' expecting {';', '='}
+line 2726:47 mismatched input '(' expecting {';', '='}
+line 2779:26 extraneous input 'type' expecting {'~', 'from', ',', '(', ')', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 2804:47 mismatched input '(' expecting {';', '='}
+line 2852:22 no viable alternative at input 'unchecked{'
+line 2880:56 mismatched input '(' expecting {';', '='}
+line 2924:18 no viable alternative at input 'unchecked{'
+line 2928:24 extraneous input 'type' expecting {';', '~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 2967:17 extraneous input '(' expecting {'{', StringLiteral}
+line 2967:31 extraneous input ')' expecting '{'
+line 2983:17 extraneous input '(' expecting {'{', StringLiteral}
+line 2983:31 extraneous input ')' expecting '{'
+line 3020:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3020:31 extraneous input ')' expecting '{'
+line 3052:24 missing ';' at '('
+line 3052:41 missing ';' at '('
+line 3052:52 mismatched input ',' expecting ';'
+line 3062:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3062:31 extraneous input ')' expecting '{'
+line 3063:28 extraneous input '"19_00"' expecting {',', ')'}
+line 3080:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3080:31 extraneous input ')' expecting '{'
+line 3082:27 extraneous input '"19_01"' expecting ')'
+line 3083:12 missing ':=' at 'mstore'
+line 3159:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3159:31 extraneous input ')' expecting '{'
+line 3160:13 extraneous input '.' expecting {'from', '{', '}', '(', 'for', 'function', 'address', 'calldata', 'if', 'assembly', 'return', 'byte', 'let', '=:', 'switch', DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3168:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3168:31 extraneous input ')' expecting '{'
+line 3169:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3177:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3177:31 extraneous input ')' expecting '{'
+line 3178:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3186:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3186:31 extraneous input ')' expecting '{'
+line 3187:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3195:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3195:31 extraneous input ')' expecting '{'
+line 3196:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3204:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3204:31 extraneous input ')' expecting '{'
+line 3205:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3213:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3213:31 extraneous input ')' expecting '{'
+line 3214:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3214:27 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3222:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3222:31 extraneous input ')' expecting '{'
+line 3223:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3231:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3231:31 extraneous input ')' expecting '{'
+line 3232:13 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3232:27 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3247:0 extraneous input 'type' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 3281:23 mismatched input '(' expecting {';', '='}
+line 3281:34 extraneous input ')' expecting {';', '='}
+line 3282:28 mismatched input '(' expecting {';', '='}
+line 3292:32 mismatched input '(' expecting {';', '='}
+line 3304:17 extraneous input '(' expecting {'{', StringLiteral}
+line 3304:31 extraneous input ')' expecting '{'
+line 3317:37 mismatched input '(' expecting {';', '='}
+line 3395:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 3403:30 extraneous input '_cachedDomainSeparator' expecting {';', '='}
+line 3404:30 extraneous input '_cachedChainId' expecting {';', '='}
+line 3405:30 extraneous input '_cachedThis' expecting {';', '='}
+line 3407:30 extraneous input '_hashedName' expecting {';', '='}
+line 3408:30 extraneous input '_hashedVersion' expecting {';', '='}
+line 3410:34 extraneous input '_name' expecting {';', '='}
+line 3411:34 extraneous input '_version' expecting {';', '='}
+line 3533:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 3537:29 mismatched input '(' expecting {';', '='}
+line 3537:45 mismatched input ',' expecting {';', '='}
+line 3537:67 extraneous input ')' expecting {';', '='}
+line 3539:20 extraneous input 'account' expecting '=>'
+line 3556:18 no viable alternative at input 'unchecked{'
+line 3568:38 mismatched input '(' expecting {';', '='}
+line 3593:38 mismatched input '(' expecting {';', '='}
+line 3721:51 mismatched input '(' expecting {';', '='}
+line 3793:26 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', ',', '}', 'contract', 'interface', 'library', '(', ')', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3794:18 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3924:51 mismatched input '(' expecting {';', '='}
+line 3996:26 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', ',', '}', 'contract', 'interface', 'library', '(', ')', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 3997:18 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 4127:51 mismatched input '(' expecting {';', '='}
+line 4199:26 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', ',', '}', 'contract', 'interface', 'library', '(', ')', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 4200:18 extraneous input '.' expecting {<EOF>, 'pragma', '~', 'import', 'from', '{', '}', 'contract', 'interface', 'library', '(', 'using', 'for', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', '[', 'address', 'mapping', 'calldata', 'if', 'while', 'assembly', 'do', 'return', 'throw', 'emit', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', 'let', '=:', 'switch', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, 'break', 'continue', Identifier, StringLiteral}
+line 4266:4 extraneous input 'type' expecting {'from', '}', 'using', 'struct', 'constructor', 'modifier', 'function', 'event', 'enum', 'address', 'mapping', 'calldata', 'var', 'bool', 'string', 'byte', Int, Uint, Byte, Fixed, Ufixed, Identifier}
+line 4266:15 mismatched input 'is' expecting {'from', 'calldata', 'constant', 'internal', 'private', 'public', Identifier}
+line 4266:25 mismatched input ';' expecting {'from', 'calldata', 'constant', 'internal', 'private', 'public', Identifier}
+line 4372:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 4378:20 extraneous input 'account' expecting '=>'
+line 4380:20 extraneous input 'delegatee' expecting '=>'
+line 4387:34 mismatched input '(' expecting {';', '='}
+line 4392:29 mismatched input '(' expecting {';', '='}
+line 4392:47 mismatched input ',' expecting {';', '='}
+line 4392:61 extraneous input ')' expecting {';', '='}
+line 4409:43 mismatched input '(' expecting {';', '='}
+line 4419:69 mismatched input '(' expecting {';', '='}
+line 4492:40 mismatched input '(' expecting {';', '='}
+ANTLR runtime and generated code versions disagree: 4.9.2!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.2!=4.7.2
+line 4612:34 mismatched input '(' expecting {';', '='}
+line 4612:49 mismatched input ',' expecting {';', '='}
+line 4612:66 mismatched input ',' expecting {';', '='}
+line 4612:82 extraneous input ')' expecting {';', '='}
+line 4618:28 mismatched input '(' expecting {';', '='}
+line 4618:43 extraneous input ')' expecting {';', '='}
+line 4624:30 mismatched input '(' expecting {';', '='}
+line 4624:47 extraneous input ')' expecting {';', '='}
+line 4632:36 mismatched input '(' expecting {';', '='}
+line 4632:52 mismatched input ',' expecting {';', '='}
+line 4632:71 mismatched input ',' expecting {';', '='}
+line 4632:87 extraneous input ')' expecting {';', '='}
+line 4638:30 mismatched input '(' expecting {';', '='}
+line 4638:47 extraneous input ')' expecting {';', '='}
+line 4644:29 mismatched input '(' expecting {';', '='}
+line 4644:45 extraneous input ')' expecting {';', '='}
+line 4657:28 mismatched input '(' expecting {';', '='}
+line 4657:42 extraneous input ')' expecting {';', '='}
+line 4663:32 mismatched input '(' expecting {';', '='}
+line 4663:48 extraneous input ')' expecting {';', '='}
+line 4671:30 mismatched input '(' expecting {';', '='}
+line 4671:45 mismatched input ',' expecting {';', '='}
+line 4671:62 mismatched input ',' expecting {';', '='}
+line 4671:77 extraneous input ')' expecting {';', '='}
+line 4677:29 mismatched input '(' expecting {';', '='}
+line 4677:44 extraneous input ')' expecting {';', '='}
+line 4683:31 mismatched input '(' expecting {';', '='}
+line 4683:48 extraneous input ')' expecting {';', '='}
+line 4690:36 mismatched input '(' expecting {';', '='}
+line 4690:53 mismatched input ',' expecting {';', '='}
+line 4690:70 extraneous input ')' expecting {';', '='}
+line 4696:31 mismatched input '(' expecting {';', '='}
+line 4696:48 extraneous input ')' expecting {';', '='}
+line 4702:31 mismatched input '(' expecting {';', '='}
+line 4702:48 extraneous input ')' expecting {';', '='}
+line 4717:36 mismatched input '(' expecting {';', '='}
+line 4717:51 mismatched input ',' expecting {';', '='}
+line 4717:68 mismatched input ',' expecting {';', '='}
+line 4717:84 mismatched input ',' expecting {';', '='}
+line 4717:101 extraneous input ')' expecting {';', '='}
+line 4723:30 mismatched input '(' expecting {';', '='}
+line 4723:45 extraneous input ')' expecting {';', '='}
+line 4729:32 mismatched input '(' expecting {';', '='}
+line 4729:49 extraneous input ')' expecting {';', '='}
+line 4736:38 mismatched input '(' expecting {';', '='}
+line 4736:55 mismatched input ',' expecting {';', '='}
+line 4736:70 extraneous input ')' expecting {';', '='}
+line 4742:32 mismatched input '(' expecting {';', '='}
+line 4742:49 extraneous input ')' expecting {';', '='}
+line 4748:32 mismatched input '(' expecting {';', '='}
+line 4748:49 extraneous input ')' expecting {';', '='}
+line 4756:35 mismatched input '(' expecting {';', '='}
+line 4756:53 mismatched input ',' expecting {';', '='}
+line 4756:75 extraneous input ')' expecting {';', '='}
+line 4899:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 4900:20 extraneous input 'account' expecting '=>'
+line 4902:20 extraneous input 'account' expecting '=>'
+line 4902:47 extraneous input 'spender' expecting '=>'
+line 5031:37 mismatched input '(' expecting {';', '='}
+line 5034:39 mismatched input '(' expecting {';', '='}
+line 5053:47 mismatched input '(' expecting {';', '='}
+line 5055:22 no viable alternative at input 'unchecked{'
+line 5062:22 no viable alternative at input 'unchecked{'
+line 5067:22 no viable alternative at input 'unchecked{'
+line 5086:39 mismatched input '(' expecting {';', '='}
+line 5101:37 mismatched input '(' expecting {';', '='}
+line 5145:39 mismatched input '(' expecting {';', '='}
+line 5148:38 mismatched input '(' expecting {';', '='}
+line 5166:31 extraneous input 'type' expecting {'~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 5168:49 mismatched input '(' expecting {';', '='}
+line 5170:22 no viable alternative at input 'unchecked{'
+line 5291:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 5298:33 mismatched input '(' expecting {';', '='}
+line 5298:50 extraneous input ')' expecting {';', '='}
+line 5303:30 mismatched input '(' expecting {';', '='}
+line 5303:45 mismatched input ',' expecting {';', '='}
+line 5303:60 extraneous input ')' expecting {';', '='}
+line 5323:42 mismatched input '(' expecting {';', '='}
+line 5332:39 mismatched input '(' expecting {';', '='}
+line 5373:0 extraneous input 'abstract' expecting {<EOF>, 'pragma', 'import', 'contract', 'interface', 'library'}
+line 5377:33 mismatched input '(' expecting {';', '='}
+line 5377:57 mismatched input ',' expecting {';', '='}
+line 5377:70 extraneous input ')' expecting {';', '='}
+line 5390:15 extraneous input 'type' expecting {';', '~', 'from', '(', '[', 'address', 'calldata', 'var', 'bool', 'string', 'byte', '++', '--', 'new', '+', '-', 'after', 'delete', '!', Int, Uint, Byte, Fixed, Ufixed, BooleanLiteral, DecimalNumber, HexNumber, HexLiteral, Identifier, StringLiteral}
+line 5404:46 mismatched input '(' expecting {';', '='}
+line 5471:27 mismatched input '(' expecting {';', '='}
+line 5472:24 mismatched input '(' expecting {';', '='}
+line 5473:21 mismatched input '(' expecting {';', '='}
+line 5474:31 mismatched input '(' expecting {';', '='}
+line 5475:28 mismatched input '(' expecting {';', '='}
+line 5476:27 mismatched input '(' expecting {';', '='}
+line 5477:25 mismatched input '(' expecting {';', '='}
+line 5478:33 mismatched input '(' expecting {';', '='}
+line 5479:22 mismatched input '(' expecting {';', '='}
+line 5480:23 mismatched input '(' expecting {';', '='}
+line 5481:31 mismatched input '(' expecting {';', '='}
+line 5492:61 mismatched input '(' expecting {';', '='}
+line 5546:61 mismatched input '(' expecting {';', '='}
+line 5565:61 mismatched input '(' expecting {';', '='}
+line 5566:63 mismatched input '(' expecting {';', '='}
+line 5570:63 mismatched input '(' expecting {';', '='}
+line 5571:96 mismatched input '(' expecting {';', '='}
+line 5584:61 mismatched input '(' expecting {';', '='}
+line 5585:63 mismatched input '(' expecting {';', '='}
+line 5589:63 mismatched input '(' expecting {';', '='}
+line 5590:96 mismatched input '(' expecting {';', '='}
+line 5603:63 mismatched input '(' expecting {';', '='}
+line 5607:96 mismatched input '(' expecting {';', '='}
+line 5622:57 mismatched input '(' expecting {';', '='}
+line 5623:63 mismatched input '(' expecting {';', '='}
+line 5627:85 mismatched input '(' expecting {';', '='}
+line 5630:58 mismatched input '(' expecting {';', '='}
+line 5632:80 mismatched input '(' expecting {';', '='}
+line 5668:63 mismatched input '(' expecting {';', '='}
+line 5672:85 mismatched input '(' expecting {';', '='}
+line 5690:35 mismatched input '(' expecting {';', '='}
+line 5694:49 mismatched input '(' expecting {';', '='}
+line 5738:61 mismatched input '(' expecting {';', '='}
+line 5739:63 mismatched input '(' expecting {';', '='}
+line 5758:63 mismatched input '(' expecting {';', '='}
+line 5771:63 mismatched input '(' expecting {';', '='}
+Traceback (most recent call last):
+  File "conkas.py", line 143, in <module>
+    main()
+  File "conkas.py", line 80, in main
+    solc_version = get_solc_version_string(file)
+  File "conkas.py", line 21, in get_solc_version_string
+    parsed = parse(file.read().decode('utf-8'))
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 1023, in parse
+    return ast.visit(getattr(parser, start)())
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 92, in visit
+    return super().visit(tree)
+  File "/usr/local/lib/python3.8/dist-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/solidity_antlr4/SolidityParser.py", line 842, in accept
+    return visitor.visitSourceUnit(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 114, in visitSourceUnit
+    children=self.visit(ctx.children[:-1]))  # skip EOF
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 90, in visit
+    return self._visit_nodes(tree)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 104, in _visit_nodes
+    childResult = c.accept(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/solidity_antlr4/SolidityParser.py", line 1475, in accept
+    return visitor.visitContractDefinition(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 995, in visitContractDefinition
+    subNodes=self.visit(ctx.contractPart()),
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 90, in visit
+    return self._visit_nodes(tree)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 104, in _visit_nodes
+    childResult = c.accept(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/solidity_antlr4/SolidityParser.py", line 1673, in accept
+    return visitor.visitContractPart(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 144, in visitContractPart
+    return self.visit(ctx.children[0])
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 92, in visit
+    return super().visit(tree)
+  File "/usr/local/lib/python3.8/dist-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/solidity_antlr4/SolidityParser.py", line 2247, in accept
+    return visitor.visitFunctionDefinition(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 183, in visitFunctionDefinition
+    block = self.visit(ctx.block()) if ctx.block() else []
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 92, in visit
+    return super().visit(tree)
+  File "/usr/local/lib/python3.8/dist-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/solidity_antlr4/SolidityParser.py", line 3659, in accept
+    return visitor.visitBlock(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 409, in visitBlock
+    statements=self.visit(ctx.statement()))
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 90, in visit
+    return self._visit_nodes(tree)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 104, in _visit_nodes
+    childResult = c.accept(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/solidity_antlr4/SolidityParser.py", line 3763, in accept
+    return visitor.visitStatement(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 447, in visitStatement
+    return self.visit(ctx.getChild(0))
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 92, in visit
+    return super().visit(tree)
+  File "/usr/local/lib/python3.8/dist-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/solidity_antlr4/SolidityParser.py", line 4057, in accept
+    return visitor.visitSimpleStatement(self)
+  File "/usr/local/lib/python3.8/dist-packages/solidity_parser/parser.py", line 450, in visitSimpleStatement
+    return self.visit(ctx.getChild(0))
+  File "/usr/local/lib/python3.8/dist-packages/antlr4/ParserRuleContext.py", line 116, in getChild
+    return self.children[i] if len(self.children)>i else None
+TypeError: object of type 'NoneType' has no len()

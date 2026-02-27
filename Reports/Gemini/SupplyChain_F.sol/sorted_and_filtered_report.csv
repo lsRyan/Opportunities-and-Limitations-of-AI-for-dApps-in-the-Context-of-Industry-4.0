@@ -1,0 +1,176 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,3943,3943,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,3965,3965,slither_0_11_3_naming_convention,naming-convention,"Function IPrescriptions._prescribe(address,address,string,uint256) (../sb/SupplyChain_F.sol#3965) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,3966,3966,slither_0_11_3_naming_convention,naming-convention,"Function IPrescriptions._getPrescription(address,uint256) (../sb/SupplyChain_F.sol#3966) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,3982,4037,slither_0_11_3_missing_inheritance,missing-inheritance,"AuthorizationCertificates (../sb/SupplyChain_F.sol#3982-4037) should inherit from IAuthorizationCertificates (../sb/SupplyChain_F.sol#3948-3951)
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,3995,3995,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4000,4000,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4000,4000,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4001,4001,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4002,4002,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4033,4033,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4033,4033,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4047,4116,slither_0_11_3_missing_inheritance,missing-inheritance,"Prescriptions (../sb/SupplyChain_F.sol#4047-4116) should inherit from IPrescriptions (../sb/SupplyChain_F.sol#3964-3968)
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4049,4049,slither_0_11_3_immutable_states,immutable-states,"Prescriptions.managerContract (../sb/SupplyChain_F.sol#4049) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4053,4059,slither_0_11_3_naming_convention,naming-convention,"Struct Prescriptions.prescription (../sb/SupplyChain_F.sol#4053-4059) is not in CapWords
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4054,4054,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4061,4064,slither_0_11_3_naming_convention,naming-convention,"Struct Prescriptions.patient (../sb/SupplyChain_F.sol#4061-4064) is not in CapWords
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4066,4066,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4070,4070,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4075,4075,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4075,4075,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4076,4076,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4076,4076,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4077,4077,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4078,4078,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4080,4103,slither_0_11_3_naming_convention,naming-convention,"Function Prescriptions._prescribe(address,address,string,uint256) (../sb/SupplyChain_F.sol#4080-4103) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4083,4083,slither_0_11_3_naming_convention,naming-convention,"Parameter Prescriptions._prescribe(address,address,string,uint256)._medicine (../sb/SupplyChain_F.sol#4083) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4084,4084,slither_0_11_3_naming_convention,naming-convention,"Parameter Prescriptions._prescribe(address,address,string,uint256)._dose (../sb/SupplyChain_F.sol#4084) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4099,4099,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4105,4108,slither_0_11_3_naming_convention,naming-convention,"Function Prescriptions._getPrescription(address,uint256) (../sb/SupplyChain_F.sol#4105-4108) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4106,4106,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4106,4106,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4111,4111,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4111,4111,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4112,4112,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4112,4112,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4126,4251,slither_0_11_3_missing_inheritance,missing-inheritance,"HospitalManagement (../sb/SupplyChain_F.sol#4126-4251) should inherit from IHospitalManagement (../sb/SupplyChain_F.sol#3970-3972)
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4133,4133,slither_0_11_3_immutable_states,immutable-states,"HospitalManagement.govAuthorizationContract (../sb/SupplyChain_F.sol#4133) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4135,4135,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4136,4142,slither_0_11_3_naming_convention,naming-convention,"Struct HospitalManagement.prescription (../sb/SupplyChain_F.sol#4136-4142) is not in CapWords
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4152,4152,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4157,4157,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4162,4162,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4162,4162,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4163,4163,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4163,4163,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4164,4164,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4165,4165,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4166,4166,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4167,4167,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4170,4170,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4172,4172,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4177,4177,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4178,4178,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4181,4181,semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix,use-prefix-decrement-not-postfix,Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4196,4196,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4209,4209,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4209,4209,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4210,4210,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4225,4245,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in HospitalManagement.authorizeSale(uint256,address,string,uint256) (../sb/SupplyChain_F.sol#4225-4245):
+	External calls:
+	- IPrescriptions(prescriptionsContract).usePrescription(patient,prescriptionId) (../sb/SupplyChain_F.sol#4238)
+	Event emitted after the call(s):
+	- SaleAuthorized(prescriptionId,patient,true) (../sb/SupplyChain_F.sol#4239)
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4228,4228,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4228,4228,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4236,4236,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4237,4237,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4238,4238,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4239,4239,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4240,4240,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4241,4241,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4242,4242,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4243,4243,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4244,4244,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4248,4248,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4261,4261,semgrep_1_131_0_1_2_1_use_ownable2step,use-ownable2step,"By demanding that the receiver of the owner permissions actively accept via a contract call of its own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally being transferred  to an address that cannot handle it."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4261,4261,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4261,4350,slither_0_11_3_locked_ether,locked-ether,"Contract locking ether found:
+	Contract PharmaCompany (../sb/SupplyChain_F.sol#4261-4350) has payable functions:
+	 - PharmaCompany.buyMedicine(string,address,uint256,uint256,uint256) (../sb/SupplyChain_F.sol#4305-4343)
+	But does not have a function to withdraw the ether
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4265,4265,slither_0_11_3_immutable_states,immutable-states,"PharmaCompany.govAuthorizationContract (../sb/SupplyChain_F.sol#4265) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4273,4273,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4273,4273,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4274,4274,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4275,4275,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4276,4276,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4277,4277,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4277,4277,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4278,4278,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4279,4279,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4282,4287,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in PharmaCompany.mint(uint256,uint256,bytes,string) (../sb/SupplyChain_F.sol#4282-4287):
+	External calls:
+	- _mint(msg.sender,id,amount,data) (../sb/SupplyChain_F.sol#4285)
+		- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)
+		- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)
+		- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)
+		- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)
+	Event emitted after the call(s):
+	- MedicineMinted(id,medicineName,amount) (../sb/SupplyChain_F.sol#4286)
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4283,4283,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4295,4295,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4297,4297,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4297,4297,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4297,4297,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4297,4297,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4297,4297,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4298,4298,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4299,4299,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4305,4343,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,uint256,uint256) (../sb/SupplyChain_F.sol#4305-4343):
+	External calls:
+	- saleAuthorized = IHospitalManagement(hospital).authorizeSale(prescriptionId,address(uint160(to)),medicineName,amount) (../sb/SupplyChain_F.sol#4328-4333)
+	- _safeTransferFrom(owner(),address(uint160(to)),medId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4337)
+		- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)
+		- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)
+		- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)
+		- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)
+	Event emitted after the call(s):
+	- MedicineSold(medId,address(uint160(to)),amount) (../sb/SupplyChain_F.sol#4338)
+	- TransferBatch(operator,from,to,ids,values) (../sb/SupplyChain_F.sol#3686)
+		- _safeTransferFrom(owner(),address(uint160(to)),medId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4337)
+	- TransferSingle(operator,from,to,id_scope_0,value_scope_1) (../sb/SupplyChain_F.sol#3684)
+		- _safeTransferFrom(owner(),address(uint160(to)),medId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4337)
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4305,4343,slither_0_11_3_reentrancy_no_eth,reentrancy-no-eth,"Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,uint256,uint256) (../sb/SupplyChain_F.sol#4305-4343):
+	External calls:
+	- saleAuthorized = IHospitalManagement(hospital).authorizeSale(prescriptionId,address(uint160(to)),medicineName,amount) (../sb/SupplyChain_F.sol#4328-4333)
+	- _safeTransferFrom(owner(),address(uint160(to)),medId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4337)
+		- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)
+		- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)
+		- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)
+		- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)
+	State variables written after the call(s):
+	- _safeTransferFrom(owner(),address(uint160(to)),medId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4337)
+		- _balances[id][from] = fromBalance - value (../sb/SupplyChain_F.sol#3672)
+		- _balances[id][to] += value (../sb/SupplyChain_F.sol#3677)
+	ERC1155._balances (../sb/SupplyChain_F.sol#3541) can be used in cross function reentrancies:
+	- ERC1155._update(address,address,uint256[],uint256[]) (../sb/SupplyChain_F.sol#3654-3688)
+	- ERC1155.balanceOf(address,uint256) (../sb/SupplyChain_F.sol#3578-3580)
+"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4314,4314,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4317,4317,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4321,4321,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4324,4324,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4336,4336,smartcheck_SOLIDITY_REVERT_REQUIRE,SOLIDITY_REVERT_REQUIRE,"SOLIDITY_REVERT_REQUIRE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4341,4341,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/SupplyChain_F.sol,4346,4346,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.

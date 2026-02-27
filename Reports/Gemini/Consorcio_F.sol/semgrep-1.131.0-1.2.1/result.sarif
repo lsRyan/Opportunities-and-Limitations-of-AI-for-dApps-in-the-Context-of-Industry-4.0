@@ -1,0 +1,641 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 29
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 134
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 135
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_custom_error_not_require"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 137
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 203
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 225
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 225
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 225
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 236
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 242
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Possible arithmetic underflow"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 260
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 260
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 260
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 272
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Possible arithmetic underflow"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 280
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 287
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 288
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 289
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 290
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 291
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 301
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_array_length_outside_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 301
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 301
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 304
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 305
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 306
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 307
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_nested_if"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 306
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 327
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Possible arithmetic underflow"
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 330
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas."
+                    },
+                    "ruleId": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/semgrep/semgrep, https://github.com/Decurity/semgrep-smart-contracts",
+                    "name": "semgrep",
+                    "rules": [
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop",
+                            "name": "unnecessary-checked-arithmetic-in-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix",
+                            "name": "use-prefix-decrement-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_array_length_outside_loop",
+                            "name": "array-length-outside-loop"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix",
+                            "name": "use-prefix-increment-not-postfix"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_basic_arithmetic_underflow",
+                            "name": "basic-arithmetic-underflow"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_nested_if",
+                            "name": "use-nested-if"
+                        },
+                        {
+                            "id": "semgrep_1_131_0_1_2_1_use_custom_error_not_require",
+                            "name": "use-custom-error-not-require"
+                        }
+                    ],
+                    "version": "semgrep 1.131.0, Decurity SC rules 1.2.1"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

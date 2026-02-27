@@ -1,0 +1,212 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 29 Code Findings │
+└──────────────────┘
+                         
+    /sb/SupplyChain_F.sol
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          2357┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2357┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3182┆ if (low > 0 && unsafeAccess(array, low - 1).value == element) {
+          3183┆     return low - 1;
+          3184┆ } else {
+          3185┆     return low;
+          3186┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          3599┆ for (uint256 i = 0; i < accounts.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3599┆ for (uint256 i = 0; i < accounts.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3619┆ if (from != sender && !isApprovedForAll(from, sender)) {
+          3620┆     revert ERC1155MissingApprovalForAll(sender, from);
+          3621┆ }
+            ⋮┆----------------------------------------
+          3634┆ if (from != sender && !isApprovedForAll(from, sender)) {
+          3635┆     revert ERC1155MissingApprovalForAll(sender, from);
+          3636┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          3661┆ for (uint256 i = 0; i < ids.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3661┆ for (uint256 i = 0; i < ids.length; ++i) {
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+          3666┆ uint256 fromBalance = _balances[id][from];
+            ⋮┆----------------------------------------
+          3672┆ _balances[id][from] = fromBalance - value;
+            ⋮┆----------------------------------------
+          3677┆ _balances[id][to] += value;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3923┆ if (account != _msgSender() && !isApprovedForAll(account, _msgSender())) {
+          3924┆     revert ERC1155MissingApprovalForAll(_msgSender(), account);
+          3925┆ }
+            ⋮┆----------------------------------------
+          3931┆ if (account != _msgSender() && !isApprovedForAll(account, _msgSender())) {
+          3932┆     revert ERC1155MissingApprovalForAll(_msgSender(), account);
+          3933┆ }
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          3969┆ constructor() {
+          3970┆     admin = msg.sender;
+          3971┆     emit AdminChanged(address(0), msg.sender);
+          3972┆ }
+            ⋮┆----------------------------------------
+          4094┆ constructor(address managerAddress) {
+          4095┆     managerContract = managerAddress;
+          4096┆ }
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4116┆ patientData.currentId++;
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4200┆ constructor(address _govAuthorizationContract) {
+          4201┆     admins[msg.sender] = true;
+          4202┆     adminsCount = 1;
+          4203┆     govAuthorizationContract = _govAuthorizationContract;
+          4204┆     emit AdminAdded(msg.sender);
+          4205┆ }
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4216┆ adminsCount++;
+   
+     ❱ solidity.performance.use-prefix-decrement-not-postfix
+          Consider using the prefix decrement expression whenever the return value is not needed. The prefix
+          decrement expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4229┆ adminsCount--;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          4288┆ if (!doctors[msg.sender] && msg.sender != patient) revert Unauthorized();
+            ⋮┆----------------------------------------
+          4324┆ if (
+          4325┆     data.valid &&
+          4326┆     keccak256(bytes(data.medicine)) == keccak256(bytes(medicine)) &&
+          4327┆     data.dose == amount
+          4328┆ ) {
+          4329┆     Prescriptions(prescriptionsContract).usePrescription(patient, prescriptionId);
+          4330┆     return true;
+          4331┆ }
+   
+     ❱ solidity.best-practice.use-ownable2step
+          By demanding that the receiver of the owner permissions actively accept via a contract call of its 
+          own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally
+          being transferred  to an address that cannot handle it.                                            
+                                                                                                             
+          4354┆ contract PharmaCompany is ERC1155, ERC1155Burnable, Ownable {
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4381┆ constructor(address _govAuthorizationContract)
+          4382┆     ERC1155("https://pharma.com/medicine/")
+          4383┆     Ownable(msg.sender)
+          4384┆ {
+          4385┆     govAuthorizationContract = _govAuthorizationContract;
+          4386┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          4421┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          4421┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4421┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+          4423┆ medicines[medicineNames[i]] = ids[i];
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4470┆ require(success, "Transfer failed");
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 29 (29 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~95.9%
+ • No ignore information available
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 57 rules on 1 file: 29 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+📢 Too many findings? Try Semgrep Pro for more powerful queries and less noise.
+   See https://sg.run/false-positives.

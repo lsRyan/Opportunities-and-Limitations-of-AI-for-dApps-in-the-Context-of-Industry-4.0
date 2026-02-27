@@ -1,0 +1,232 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Wallet_F.sol
+21:50:55.165 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Wallet_F.sol:8:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+21:50:56.279 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:94:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push. Falling back to the default (current) scope
+21:50:56.281 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:107:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.pop. Falling back to the default (current) scope
+21:50:56.282 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:155:60: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+21:50:56.282 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:155:60: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+21:50:56.283 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:158:100: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.284 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:158:100: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.285 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:238:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer. Falling back to the default (current) scope
+21:50:56.287 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:244:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+21:50:56.288 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:250:9: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+21:50:56.290 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:257:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer. Falling back to the default (current) scope
+21:50:56.291 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:262:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.293 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:262:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.293 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:262:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.293 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:262:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.294 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:262:138: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:262:138: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.299 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.300 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.300 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.301 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.301 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:138: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.302 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:138: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.302 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:207: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.302 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:270:207: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.361 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:273:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer. Falling back to the default (current) scope
+21:50:56.361 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:278:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.362 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:278:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.362 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:278:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.362 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:278:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.363 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:280:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+21:50:56.363 [Thread-0] ERROR de.fraunhofer.aisec.cpg.passes.Pass - /sb/Wallet_F.sol:286:9: Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression
+21:50:56.364 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.364 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.364 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.365 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:96: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.365 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:136: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.365 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:136: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.365 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:205: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.366 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:205: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.366 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:247: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.366 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:247: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.368 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:316: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.368 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:291:316: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.368 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:294:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer. Falling back to the default (current) scope
+21:50:56.369 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.370 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.370 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:64: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.370 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:64: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.371 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:104: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.371 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:104: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.371 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:141: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.372 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:141: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.372 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:183: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.372 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:183: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.373 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:220: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.373 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:299:220: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+21:50:56.374 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:310:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+21:50:56.374 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:314:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isSupported. Falling back to the default (current) scope
+21:50:56.375 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:318:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.readRate. Falling back to the default (current) scope
+21:50:56.375 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:322:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.requestRate. Falling back to the default (current) scope
+21:50:56.376 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:327:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addOracle. Falling back to the default (current) scope
+21:50:56.376 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:332:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeOracle. Falling back to the default (current) scope
+21:50:56.377 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:338:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._changeMinimumQuorum. Falling back to the default (current) scope
+21:50:56.377 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:343:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._updateBridge. Falling back to the default (current) scope
+21:50:56.377 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:348:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._addCurrency. Falling back to the default (current) scope
+21:50:56.378 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Wallet_F.sol:353:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._removeCurrency. Falling back to the default (current) scope
+Running checks
+AccessControlSelfdestructCheck took 1183 ms
+CallReturnCheck took 697 ms
+AccessControlSelfdestructCheck took 12 ms
+CallReturnCheck took 4 ms
+AccessControlSelfdestructCheck took 3 ms
+CallReturnCheck took 6 ms
+org.neo4j.driver.exceptions.TransientException: The allocation of an extra 2.0 MiB would use more than the limit 2.1 GiB. Currently using 2.1 GiB. dbms.memory.transaction.total.max threshold reached
+	at org.neo4j.driver.internal.util.Futures.blockingGet(Futures.java:111)
+	at org.neo4j.driver.internal.InternalResult.blockingGet(InternalResult.java:112)
+	at org.neo4j.driver.internal.InternalResult.hasNext(InternalResult.java:53)
+	at de.fraunhofer.aisec.cpg.checks.AccessControlLogicCheck.check(AccessControlLogicCheck.kt:18)
+	at de.fraunhofer.aisec.cpg.App.runVulnerabilityChecks$lambda$19$lambda$18$lambda$17(App.kt:312)
+	at org.neo4j.driver.internal.InternalSession.lambda$transaction$5(InternalSession.java:152)
+	at org.neo4j.driver.internal.retry.ExponentialBackoffRetryLogic.retry(ExponentialBackoffRetryLogic.java:102)
+	at org.neo4j.driver.internal.InternalSession.transaction(InternalSession.java:149)
+	at org.neo4j.driver.internal.InternalSession.readTransaction(InternalSession.java:107)
+	at org.neo4j.driver.internal.InternalSession.readTransaction(InternalSession.java:101)
+	at de.fraunhofer.aisec.cpg.App.runVulnerabilityChecks(App.kt:308)
+	at de.fraunhofer.aisec.cpg.App.call(App.kt:124)
+	at de.fraunhofer.aisec.cpg.App.call(App.kt:54)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at de.fraunhofer.aisec.cpg.AppKt.main(App.kt:369)
+	Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+		at org.neo4j.driver.internal.util.ErrorUtil.newNeo4jError(ErrorUtil.java:87)
+		at org.neo4j.driver.internal.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:107)
+		at org.neo4j.driver.internal.messaging.common.CommonMessageReader.unpackFailureMessage(CommonMessageReader.java:75)
+		at org.neo4j.driver.internal.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+		at org.neo4j.driver.internal.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+		at org.neo4j.driver.internal.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:37)
+		at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:300)
+		at org.neo4j.driver.internal.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:42)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:300)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Unknown Source)
+	Suppressed: org.neo4j.driver.exceptions.TransientException: The allocation of an extra 2.0 MiB would use more than the limit 2.1 GiB. Currently using 2.1 GiB. dbms.memory.transaction.total.max threshold reached
+		... 22 more
+		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+			at org.neo4j.driver.internal.util.ErrorUtil.newNeo4jError(ErrorUtil.java:87)
+			at org.neo4j.driver.internal.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:107)
+			at org.neo4j.driver.internal.messaging.common.CommonMessageReader.unpackFailureMessage(CommonMessageReader.java:75)
+			at org.neo4j.driver.internal.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+			at org.neo4j.driver.internal.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+			at org.neo4j.driver.internal.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:37)
+			at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:300)
+			at org.neo4j.driver.internal.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:42)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:300)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+			at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+			at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Unknown Source)
+	Suppressed: org.neo4j.driver.exceptions.TransientException: The allocation of an extra 2.0 MiB would use more than the limit 2.1 GiB. Currently using 2.1 GiB. dbms.memory.transaction.total.max threshold reached
+		... 22 more
+		Suppressed: org.neo4j.driver.internal.util.ErrorUtil$InternalExceptionCause
+			at org.neo4j.driver.internal.util.ErrorUtil.newNeo4jError(ErrorUtil.java:87)
+			at org.neo4j.driver.internal.async.inbound.InboundMessageDispatcher.handleFailureMessage(InboundMessageDispatcher.java:107)
+			at org.neo4j.driver.internal.messaging.common.CommonMessageReader.unpackFailureMessage(CommonMessageReader.java:75)
+			at org.neo4j.driver.internal.messaging.common.CommonMessageReader.read(CommonMessageReader.java:53)
+			at org.neo4j.driver.internal.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:81)
+			at org.neo4j.driver.internal.async.inbound.InboundMessageHandler.channelRead0(InboundMessageHandler.java:37)
+			at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:300)
+			at org.neo4j.driver.internal.async.inbound.MessageDecoder.channelRead(MessageDecoder.java:42)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+			at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:300)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+			at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+			at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+			at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+			at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+			at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+			at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+			at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+			at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+			at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+			at java.base/java.lang.Thread.run(Unknown Source)

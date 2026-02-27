@@ -1,0 +1,72 @@
+'solc --version' running
+'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+
+FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270) uses a weak PRNG: "rand = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,p.balance))) % eligibleCount (../sb/Consorcio_F.sol#230-238)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Reentrancy in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270):
+	External calls:
+	- (success,None) = winner.call{value: p.goodValue}() (../sb/Consorcio_F.sol#264)
+	State variables written after the call(s):
+	- p.status = finished (../sb/Consorcio_F.sol#268)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#46) can be used in cross function reentrancies:
+	- FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270)
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#93-111)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#68-90)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#114-127)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#277-307)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#149-169)
+	- FinancialPoolManager.onlyOwner(uint256) (../sb/Consorcio_F.sol#58-61)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#134-146)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#176-207)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270) uses a dangerous strict equality:
+	- counter == rand (../sb/Consorcio_F.sol#247)
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#176-207) uses a dangerous strict equality:
+	- info.payments == duePayments && ! info.received (../sb/Consorcio_F.sol#198)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+FinancialPoolManager._selectWinner(uint256).index (../sb/Consorcio_F.sol#240) is a local variable never initialized
+FinancialPoolManager._selectWinner(uint256).counter (../sb/Consorcio_F.sol#241) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+
+FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#93-111) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Invalid pool status) (../sb/Consorcio_F.sol#99-103)
+	- require(bool,string)(p.totalParticipants >= p.minParticipants,Not enough participants) (../sb/Consorcio_F.sol#104-107)
+FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#114-127) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool cannot be canceled) (../sb/Consorcio_F.sol#120-124)
+FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#134-146) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool not accepting participants) (../sb/Consorcio_F.sol#136-140)
+	- require(bool,string)(! p.isParticipant[msg.sender],Already participating) (../sb/Consorcio_F.sol#141)
+FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#149-169) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(accepting_participants)),Cannot leave pool) (../sb/Consorcio_F.sol#151-155)
+	- require(bool,string)(p.isParticipant[msg.sender],Not a participant) (../sb/Consorcio_F.sol#156)
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#176-207) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(p.status)) == keccak256(bytes)(bytes(active)),Pool not active) (../sb/Consorcio_F.sol#182-185)
+	- require(bool,string)(p.isParticipant[msg.sender],Not a participant) (../sb/Consorcio_F.sol#186)
+	- require(bool,string)(msg.value == p.installmentValue,Incorrect installment value) (../sb/Consorcio_F.sol#187)
+	- require(bool,string)(info.payments < duePayments,No payment due) (../sb/Consorcio_F.sol#193)
+	- info.payments == duePayments && ! info.received (../sb/Consorcio_F.sol#198)
+FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270) uses timestamp for comparisons
+	Dangerous comparisons:
+	- counter == rand (../sb/Consorcio_F.sol#247)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Consorcio_F.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#213-270):
+	- (success,None) = winner.call{value: p.goodValue}() (../sb/Consorcio_F.sol#264)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/sb/Consorcio_F.sol analyzed (1 contracts with 100 detectors), 14 result(s) found

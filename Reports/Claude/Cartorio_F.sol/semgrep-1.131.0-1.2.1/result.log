@@ -1,0 +1,177 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 24 Code Findings │
+└──────────────────┘
+                      
+    /sb/Cartorio_F.sol
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          126┆ if (!initialSetup && !construction) {
+          127┆     revert InvalidInitialization();
+          128┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          2800┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2800┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.use-prefix-decrement-not-postfix
+          Consider using the prefix decrement expression whenever the return value is not needed. The prefix
+          decrement expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          3198┆ ptr--;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3266┆ if (hashValue & 0xf > 7 && uint8(buffer[i]) > 96) {
+          3267┆     // case shift by xoring with 0x20
+          3268┆     buffer[i] ^= 0x20;
+          3269┆ }
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3343┆ for (uint256 i = begin; i < end; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3423┆ if (absSuccess && absValue < ABS_MIN_INT256) {
+          3424┆     return (true, negativeSign ? -int256(absValue) : int256(absValue));
+          3425┆ } else if (absSuccess && negativeSign && absValue == ABS_MIN_INT256) {
+          3426┆     return (true, type(int256).min);
+          3427┆ } else return (false, 0);
+            ⋮┆----------------------------------------
+          3425┆ } else if (absSuccess && negativeSign && absValue == ABS_MIN_INT256) {
+          3426┆     return (true, type(int256).min);
+          3427┆ } else return (false, 0);
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3495┆ for (uint256 i = begin + offset; i < end; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3572┆ if (value > 47 && value < 58) value -= 48;
+          3573┆ else if (value > 96 && value < 103) value -= 87;
+          3574┆ else if (value > 64 && value < 71) value -= 55;
+          3575┆ else return type(uint8).max;
+            ⋮┆----------------------------------------
+          3573┆ else if (value > 96 && value < 103) value -= 87;
+          3574┆ else if (value > 64 && value < 71) value -= 55;
+          3575┆ else return type(uint8).max;
+            ⋮┆----------------------------------------
+          3574┆ else if (value > 64 && value < 71) value -= 55;
+          3575┆ else return type(uint8).max;
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          3595┆ for (uint256 i; i < buffer.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3595┆ for (uint256 i; i < buffer.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          4053┆ if (auth != address(0) && owner != auth && !isApprovedForAll(owner, auth)) {
+          4054┆     revert ERC721InvalidApprover(auth);
+          4055┆ }
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4713┆ constructor() {
+          4714┆     _disableInitializers();
+          4715┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4803┆ require(_ownerOf(_tokenId) != address(0), "Token does not exist");
+            ⋮┆----------------------------------------
+          4804┆ require(ownerOf(_tokenId) == msg.sender, "Caller is not the token owner");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4806┆ $.currentId++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4828┆ require(requestId > 0 && requestId <= $.currentId, "Invalid request ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          4828┆ require(requestId > 0 && requestId <= $.currentId, "Invalid request ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4829┆ require(
+          4830┆     keccak256(bytes($.requests[requestId].status)) ==
+               keccak256(bytes("under_evaluation")),                 
+          4831┆     "Request is not under evaluation"
+          4832┆ );
+            ⋮┆----------------------------------------
+          4852┆ require(requestId > 0 && requestId <= $.currentId, "Invalid request ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          4852┆ require(requestId > 0 && requestId <= $.currentId, "Invalid request ID");
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 24 (24 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~98.4%
+ • No ignore information available
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 57 rules on 1 file: 24 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading

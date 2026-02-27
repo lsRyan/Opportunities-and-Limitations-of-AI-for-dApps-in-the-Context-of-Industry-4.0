@@ -1,0 +1,682 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,8,8,solhint_6_0_0_one_contract_per_file,one-contract-per-file,Found more than One contract per file. 3 contracts found!
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,8,8,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,8,8,slither_0_11_3_solc_version,solc-version,"Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Wallet_F.sol#8)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,8,8,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,14,14,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,14,14,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,37,37,slither_0_11_3_immutable_states,immutable-states,"Oracle.authorizedWallet (../sb/Wallet_F.sol#37) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,37,37,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'authorizedWallet'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,40,40,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,43,43,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracles'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,45,45,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,46,46,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'requests'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,49,49,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRates'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,52,52,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRateTime'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,55,55,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'minimumQuorum'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,63,63,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RateRequest'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,63,63,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RateRequest'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,63,63,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RateRequest'. Expected: [requestId, url, currency], Found: []"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,69,69,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,69,69,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,69,69,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,69,69,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,69,69,slither_0_11_3_missing_zero_check,missing-zero-check,"Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#69) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#70)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,70,70,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,71,71,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,78,78,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,79,79,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,79,79,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,79,79,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 40 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,79,79,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,79,79,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,80,80,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,80,80,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,81,81,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,81,81,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,83,83,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,83,83,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,90,90,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,90,90,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,90,90,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,90,90,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,90,90,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,90,90,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,91,91,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,102,146,slither_0_11_3_timestamp,timestamp,"Oracle.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#102-146) uses timestamp for comparisons
+	Dangerous comparisons:
+	- requests[id].requestTime < exchangeRateTime[requests[id].currency] (../sb/Wallet_F.sol#120)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,102,102,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'answerRequest'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,103,103,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,103,103,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,103,103,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,103,103,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,103,103,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,104,104,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,104,104,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,104,104,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,109,109,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,109,109,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,109,109,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,109,109,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,109,109,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,109,109,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,115,115,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 37 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,115,115,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,115,115,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,117,117,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,117,117,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,136,136,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ requests ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,136,136,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,141,141,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,141,141,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,142,142,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,143,143,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,144,144,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,145,145,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,153,153,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,153,153,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,153,153,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'readRate'. Expected: 2, Found: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,153,153,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,154,154,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,154,154,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,155,155,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,155,155,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,166,166,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,166,175,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#166-175) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,166,166,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,166,166,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,166,166,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,167,167,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,167,167,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,167,167,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 38 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,167,167,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,167,167,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,182,182,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,182,182,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,182,201,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#182-201) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,182,201,slither_0_11_3_costly_loop,costly-loop,"Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#182-201) has costly operations inside a loop:
+	- delete currencies[symbol] (../sb/Wallet_F.sol#196)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,183,183,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,183,183,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,183,183,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,183,183,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 41 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,183,183,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,188,188,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,188,188,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,188,188,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,188,188,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,191,191,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,195,195,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,196,196,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,207,211,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#207-211) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,207,211,slither_0_11_3_tautology,tautology,"Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#207-211) contains a tautology or contradiction:
+	- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Quorum must be between 0 and 100) (../sb/Wallet_F.sol#209)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,207,207,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,208,208,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,208,208,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,208,208,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 40 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,208,208,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,208,208,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,209,209,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,209,209,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,209,209,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,209,209,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,209,209,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,218,218,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,218,218,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,219,219,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,219,219,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,228,228,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,228,228,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,228,350,slither_0_11_3_locked_ether,locked-ether,"Contract locking ether found:
+	Contract Exchange (../sb/Wallet_F.sol#228-350) has payable functions:
+	 - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310)
+	But does not have a function to withdraw the ether
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,228,228,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,230,230,slither_0_11_3_immutable_states,immutable-states,"Exchange.authorizedWallet (../sb/Wallet_F.sol#230) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,230,230,solhint_6_0_0_state_visibility,state-visibility,Explicitly mark visibility of state
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,230,230,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,233,233,slither_0_11_3_immutable_states,immutable-states,"Exchange.oracleContract (../sb/Wallet_F.sol#233) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,233,233,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,233,233,solhint_6_0_0_state_visibility,state-visibility,Explicitly mark visibility of state
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,236,236,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,239,239,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'bridgeURL'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,239,239,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,244,244,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ExchangeInitiated'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,244,244,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ExchangeInitiated'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,244,244,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [exchangeValue] on Event [ExchangeInitiated] could be Indexed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,244,244,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ExchangeInitiated'. Expected: [transactor, targetCurrency, exchangeValue, exchangeRate, timestamp], Found: []"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,244,244,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [timestamp] on Event [ExchangeInitiated] could be Indexed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,244,244,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [exchangeRate] on Event [ExchangeInitiated] could be Indexed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,257,257,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,257,257,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,257,257,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#257) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#258)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,257,257,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,257,257,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,257,257,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#257) lacks a zero-check on :
+		- oracleContract = _oracleContract (../sb/Wallet_F.sol#259)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,258,258,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,259,259,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,260,260,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,269,310,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310):
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#281-283)
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),targetCurrency)) (../sb/Wallet_F.sol#291-293)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,269,310,slither_0_11_3_timestamp,timestamp,"Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp - exchangeRateTime > maximumRateDelay (../sb/Wallet_F.sol#298)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,269,269,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,269,269,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,275,275,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,275,275,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,275,275,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,275,275,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,275,275,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 45 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,276,276,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,276,276,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 36 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,276,276,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,276,276,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,276,276,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,277,277,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,277,277,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,278,278,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,278,278,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,280,280,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,281,281,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,281,281,slither_0_11_3_write_after_write,write-after-write,"Exchange.exchange(address,string,address,uint256).data (../sb/Wallet_F.sol#281) is written in both
+	(success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#281-283)
+	(success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),targetCurrency)) (../sb/Wallet_F.sol#291-293)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,284,284,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,284,284,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,286,286,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,286,286,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,286,286,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,286,286,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,286,286,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 37 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,288,288,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,288,288,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,291,291,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,294,294,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,294,294,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,298,298,smartcheck_SOLIDITY_REVERT_REQUIRE,SOLIDITY_REVERT_REQUIRE,"SOLIDITY_REVERT_REQUIRE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,299,299,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,299,299,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,299,299,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of revert statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,299,299,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,299,299,solhint_6_0_0_reason_string,reason-string,Error message for revert is too long: 43 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,316,319,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#316-319) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,316,316,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,316,316,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,317,317,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,317,317,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,317,317,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,317,317,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,317,317,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 40 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,325,325,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,325,329,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#325-329) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,325,325,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,326,326,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,326,326,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,326,326,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,326,326,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 41 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,326,326,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,327,327,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,327,327,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,335,335,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,335,335,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,335,339,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#335-339) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,336,336,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,336,336,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 44 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,336,336,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,336,336,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,336,336,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,337,337,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,337,337,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,346,346,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,346,346,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,347,347,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,347,347,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,356,356,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,358,358,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'owner'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,361,361,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracleContract'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,362,362,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeContract'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,365,365,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,368,368,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,371,371,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'maximumRateDelay'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,374,374,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeFee'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,379,379,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Deposit] could be Indexed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,379,379,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Deposit'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,379,379,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Deposit'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,379,379,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Deposit'. Expected: [user, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,384,384,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Transfer'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,384,384,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Transfer'. Expected: [from, to, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,384,384,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Transfer] could be Indexed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,384,384,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Transfer'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,389,389,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [ExternalTransfer] could be Indexed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,389,389,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ExternalTransfer'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,389,389,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ExternalTransfer'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,389,389,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ExternalTransfer'. Expected: [from, to, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,394,394,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Withdrawal] could be Indexed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,394,394,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Withdrawal'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,394,394,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Withdrawal'. Expected: [user, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,394,394,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Withdrawal'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,401,401,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,401,401,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,401,401,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,401,401,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,402,402,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,403,403,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,404,404,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,405,405,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,410,410,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'deposit'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,420,420,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'transfer'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,421,421,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,421,421,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,421,421,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,422,422,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,432,432,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'externalTransfer'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,432,438,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#432-438):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,432,432,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#432) lacks a zero-check on :
+		- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,432,438,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#432-438):
+	External calls:
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)
+	Event emitted after the call(s):
+	- ExternalTransfer(msg.sender,to,amount) (../sb/Wallet_F.sol#437)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,433,433,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,433,433,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,433,433,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,434,434,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,436,436,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,436,436,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,446,446,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,446,446,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,446,475,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#446-475):
+	- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#451-453)
+	- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),msg.sender,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#465-473)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,446,446,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.exchange(string,address,uint256).targetAddress (../sb/Wallet_F.sol#446) lacks a zero-check on :
+		- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),msg.sender,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#465-473)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,447,447,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,447,447,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,447,447,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,451,451,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,454,454,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,454,454,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,456,456,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,456,456,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,456,456,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,456,456,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 39 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,456,456,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,458,458,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,465,465,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,466,466,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,474,474,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,474,474,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,481,487,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#481-487):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#484)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,481,481,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'withdrawn'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,481,487,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#481-487):
+	External calls:
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#484)
+	Event emitted after the call(s):
+	- Withdrawal(msg.sender,amount) (../sb/Wallet_F.sol#486)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,482,482,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,482,482,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,482,482,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,483,483,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,485,485,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,485,485,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,495,495,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'transferAUTH'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,497,497,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,497,497,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,498,498,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,499,499,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,500,500,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,501,501,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,502,502,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,502,502,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,502,502,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,504,504,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,515,528,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#515-528):
+	External calls:
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)
+	Event emitted after the call(s):
+	- ExternalTransfer(from,to,amount) (../sb/Wallet_F.sol#527)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,515,515,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'externalTransferAUTH'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,515,515,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.externalTransferAUTH(uint256,address,address).to (../sb/Wallet_F.sol#515) lacks a zero-check on :
+		- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,515,528,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#515-528):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,517,517,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,517,517,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,518,518,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,519,519,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,520,520,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,521,521,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,522,522,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,522,522,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,522,522,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,524,524,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,526,526,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,526,526,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,537,569,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.exchangeAUTH(string,address,address,uint256) (../sb/Wallet_F.sol#537-569):
+	- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#545-547)
+	- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),from,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#559-567)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,537,537,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.exchangeAUTH(string,address,address,uint256).targetAddress (../sb/Wallet_F.sol#537) lacks a zero-check on :
+		- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),from,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#559-567)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,537,537,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchangeAUTH'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,537,537,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,538,538,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,538,538,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,539,539,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,540,540,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,541,541,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,542,542,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,542,542,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,542,542,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,545,545,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,548,548,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,548,548,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,550,550,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,550,550,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,550,550,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,550,550,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,550,550,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 39 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,552,552,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,559,559,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,560,560,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,568,568,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,568,568,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,576,595,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#576-595):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#592)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,576,595,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#576-595):
+	External calls:
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#592)
+	Event emitted after the call(s):
+	- Withdrawal(from,amount) (../sb/Wallet_F.sol#594)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,576,576,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'withdrawnAUTH'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,578,578,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,578,578,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,579,579,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,580,580,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,581,581,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,582,582,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,583,583,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,584,584,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,585,585,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,585,585,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,586,586,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,587,587,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,588,588,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,589,589,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,589,589,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,589,589,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,591,591,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,593,593,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,593,593,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,602,602,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,602,602,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'authorize'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,603,603,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,603,603,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,604,604,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,605,605,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,606,606,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,607,607,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,608,608,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,609,609,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,617,617,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'revoke'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,626,626,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,626,633,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.getExchangeAvailability(string) (../sb/Wallet_F.sol#626-633):
+	- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),symbol)) (../sb/Wallet_F.sol#627-629)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,626,626,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getExchangeAvailability'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,627,627,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,628,628,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,630,630,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,630,630,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,640,647,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.getOracleAvailability(string) (../sb/Wallet_F.sol#640-647):
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),symbol)) (../sb/Wallet_F.sol#641-643)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,640,640,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getOracleAvailability'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,640,640,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,641,641,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,644,644,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,644,644,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,654,654,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getExchangeRate'. Expected: 2, Found: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,654,654,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getExchangeRate'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,654,654,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,654,662,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#654-662):
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),symbol)) (../sb/Wallet_F.sol#655-657)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,654,654,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,655,655,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,658,658,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,658,658,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,668,668,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,668,668,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestExchangeRate'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,668,674,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#668-674):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(requestRate(string),symbol)) (../sb/Wallet_F.sol#670-672)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,669,669,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,669,669,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 37 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,669,669,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,669,669,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,669,669,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,670,670,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,670,670,solhint_6_0_0_avoid_low_level_calls,avoid-low-level-calls,Avoid to use low level calls.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,673,673,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,673,673,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,683,683,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addOracle'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,683,683,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.addOracle(string,string,string,address).accessAddress (../sb/Wallet_F.sol#683) lacks a zero-check on :
+		- (success,None) = oracleContract.call(abi.encodeWithSignature(_addOracle(string,string,string,address),symbol,maintainer,url,accessAddress)) (../sb/Wallet_F.sol#685-687)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,683,683,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,683,683,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,683,683,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,683,689,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.addOracle(string,string,string,address) (../sb/Wallet_F.sol#683-689):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(_addOracle(string,string,string,address),symbol,maintainer,url,accessAddress)) (../sb/Wallet_F.sol#685-687)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,684,684,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,684,684,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,685,685,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,685,685,solhint_6_0_0_avoid_low_level_calls,avoid-low-level-calls,Avoid to use low level calls.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,686,686,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,688,688,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,688,688,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,696,696,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,696,696,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.removeOracle(string,address).accessAddress (../sb/Wallet_F.sol#696) lacks a zero-check on :
+		- (success,None) = oracleContract.call(abi.encodeWithSignature(_removeOracle(string,address),symbol,accessAddress)) (../sb/Wallet_F.sol#698-700)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,696,702,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.removeOracle(string,address) (../sb/Wallet_F.sol#696-702):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(_removeOracle(string,address),symbol,accessAddress)) (../sb/Wallet_F.sol#698-700)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,696,696,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeOracle'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,697,697,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,697,697,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,698,698,solhint_6_0_0_avoid_low_level_calls,avoid-low-level-calls,Avoid to use low level calls.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,698,698,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,701,701,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,701,701,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,708,715,slither_0_11_3_tautology,tautology,"Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#708-715) contains a tautology or contradiction:
+	- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Quorum must be between 0 and 100) (../sb/Wallet_F.sol#710)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,708,715,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#708-715):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(_changeMinimumQuorum(uint256),newQuorum)) (../sb/Wallet_F.sol#711-713)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,708,708,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,709,709,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,709,709,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,710,710,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,710,710,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,710,710,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,710,710,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,710,710,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,711,711,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,711,711,solhint_6_0_0_avoid_low_level_calls,avoid-low-level-calls,Avoid to use low level calls.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,714,714,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,714,714,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,721,727,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.updateBridge(string) (../sb/Wallet_F.sol#721-727):
+	- (success,None) = exchangeContract.call(abi.encodeWithSignature(_updateBridge(string),newBridgeURL)) (../sb/Wallet_F.sol#723-725)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,721,721,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,721,721,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateBridge'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,722,722,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,722,722,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,723,723,oyente_060ca34_Callstack_Depth_Attack_Vulnerability,Callstack Depth Attack Vulnerability,Callstack Depth Attack Vulnerability
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,723,723,solhint_6_0_0_avoid_low_level_calls,avoid-low-level-calls,Avoid to use low level calls.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,723,723,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,726,726,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,726,726,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,733,733,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,733,740,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.addCurrency(string) (../sb/Wallet_F.sol#733-740):
+	- (success,None) = exchangeContract.call(abi.encodeWithSignature(_addCurrency(string),symbol)) (../sb/Wallet_F.sol#736-738)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,733,733,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addCurrency'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,734,734,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,734,734,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,735,735,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,735,735,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,736,736,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,736,736,solhint_6_0_0_avoid_low_level_calls,avoid-low-level-calls,Avoid to use low level calls.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,739,739,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,739,739,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,746,746,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeCurrency'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,746,746,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,746,753,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.removeCurrency(string) (../sb/Wallet_F.sol#746-753):
+	- (success,None) = exchangeContract.call(abi.encodeWithSignature(_removeCurrency(string),symbol)) (../sb/Wallet_F.sol#749-751)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,747,747,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,747,747,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,748,748,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,748,748,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,749,749,solhint_6_0_0_avoid_low_level_calls,avoid-low-level-calls,Avoid to use low level calls.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,749,749,smartcheck_SOLIDITY_UNCHECKED_CALL,SOLIDITY_UNCHECKED_CALL,"SOLIDITY_UNCHECKED_CALL
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,752,752,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,752,752,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,759,759,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateOracleAddress'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,759,759,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#759) lacks a zero-check on :
+		- oracleContract = newOracle (../sb/Wallet_F.sol#761)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,760,760,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,760,760,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,760,760,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,760,760,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 36 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,760,760,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,768,768,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateExchangeAddress'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,768,768,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#768) lacks a zero-check on :
+		- exchangeContract = newExchange (../sb/Wallet_F.sol#770)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,769,769,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 38 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,769,769,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,769,769,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,769,769,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,769,769,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,777,777,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateMaximumRateDelay'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,777,780,slither_0_11_3_events_maths,events-maths,"Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#777-780) should emit an event for: 
+	- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#779) 
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,778,778,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,778,778,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,786,786,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateExchangeFee'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,786,790,slither_0_11_3_tautology,tautology,"Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#786-790) contains a tautology or contradiction:
+	- require(bool,string)(newExchangeFee >= 0 && newExchangeFee <= 100,Fee must be between 0 and 100) (../sb/Wallet_F.sol#788)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,786,790,slither_0_11_3_events_maths,events-maths,"Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#786-790) should emit an event for: 
+	- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#789) 
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,787,787,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,787,787,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,787,787,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,787,787,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,787,787,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,788,788,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,788,788,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,788,788,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,788,788,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,788,788,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,796,796,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.changeOwnership(address).newOwner (../sb/Wallet_F.sol#796) lacks a zero-check on :
+		- owner = newOwner (../sb/Wallet_F.sol#798)
+"
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,796,796,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'changeOwnership'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,797,797,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,797,797,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,806,806,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getBalance'
+/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol,816,816,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getAuthorizationLevel'

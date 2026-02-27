@@ -1,0 +1,123 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5439,5439,slither_0_11_3_solc_version,solc-version,"Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching.
+It is used by:
+	- ^0.8.0 (../sb/VotacaoCondominio_F.sol#5439)
+"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5439,5439,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5440,5440,semgrep_1_131_0_1_2_1_use_ownable2step,use-ownable2step,"By demanding that the receiver of the owner permissions actively accept via a contract call of its own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally being transferred  to an address that cannot handle it."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5453,5453,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5454,5454,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5455,5455,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5455,5455,semgrep_1_131_0_1_2_1_init_variables_with_default_value,init-variables-with-default-value,Uninitialized variables are assigned with the types default value. Explicitly initializing a variable with its default value costs unnecessary gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5456,5456,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5458,5458,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5458,5458,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5459,5459,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5460,5460,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5461,5461,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5462,5462,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5463,5463,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5463,5463,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5464,5464,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5465,5465,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5466,5466,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5466,5466,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5466,5466,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5466,5466,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5466,5466,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5466,5466,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5467,5467,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5478,5478,ccc_Miners_can_manipulate_program_execution_by_selecting_when_to_include_the_timestamp,Miners can manipulate program execution by selecting when to include the timestamp,Miners can manipulate program execution by selecting when to include the timestamp
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5481,5483,slither_0_11_3_naming_convention,naming-convention,"Function CondoVotingSystem.CLOCK_MODE() (../sb/VotacaoCondominio_F.sol#5481-5483) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5492,5492,slither_0_11_3_shadowing_local,shadowing-local,"CondoVotingSystem.nonces(address).owner (../sb/VotacaoCondominio_F.sol#5492) shadows:
+	- Ownable.owner() (../sb/VotacaoCondominio_F.sol#92-94) (function)
+"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5505,5505,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5506,5506,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5516,5516,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5516,5516,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5517,5517,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5517,5517,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5518,5518,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5519,5519,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5520,5520,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5521,5521,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5522,5522,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5531,5531,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5531,5531,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5532,5532,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5532,5532,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5533,5533,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5534,5534,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5535,5535,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5536,5536,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5537,5537,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5543,5543,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5543,5543,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5544,5544,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5545,5545,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5546,5546,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5547,5547,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5552,5552,slither_0_11_3_shadowing_local,shadowing-local,"CondoVotingSystem.voteOnProposal(uint256,bool).approve (../sb/VotacaoCondominio_F.sol#5552) shadows:
+	- ERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4990-4994) (function)
+	- IERC20.approve(address,uint256) (../sb/VotacaoCondominio_F.sol#4828) (function)
+"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5552,5584,slither_0_11_3_timestamp,timestamp,"CondoVotingSystem.voteOnProposal(uint256,bool) (../sb/VotacaoCondominio_F.sol#5552-5584) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(clock() - proposals[id].voteStart <= voteTimeout,Voting period has ended) (../sb/VotacaoCondominio_F.sol#5556-5559)
+"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5553,5553,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5554,5554,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5554,5554,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5555,5555,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5556,5556,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5557,5557,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5558,5558,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5559,5559,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5562,5562,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5573,5573,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5574,5574,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5574,5574,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5575,5575,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5576,5576,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5576,5576,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5577,5577,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5577,5577,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5577,5577,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5578,5578,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5578,5578,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5579,5579,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5579,5579,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5586,5605,slither_0_11_3_timestamp,timestamp,"CondoVotingSystem.endVote(uint256) (../sb/VotacaoCondominio_F.sol#5586-5605) uses timestamp for comparisons
+	Dangerous comparisons:
+	- canEndEarly = (balanceOf(msg.sender) > 0) && (clock() - proposals[id].voteStart > voteTimeout) || (msg.sender == owner() && ((proposals[id].approvePower + proposals[id].rejectPower) * 100) / (totalSupply() - getPastVotes(owner(),proposals[id].voteStart)) >= voteQuorum) (../sb/VotacaoCondominio_F.sol#5590-5594)
+	- require(bool,string)(canEndEarly,Cannot end vote yet) (../sb/VotacaoCondominio_F.sol#5596)
+"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5587,5587,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5587,5587,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5588,5588,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5596,5596,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5617,5617,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5619,5619,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5619,5619,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5620,5620,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol,5620,5620,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."

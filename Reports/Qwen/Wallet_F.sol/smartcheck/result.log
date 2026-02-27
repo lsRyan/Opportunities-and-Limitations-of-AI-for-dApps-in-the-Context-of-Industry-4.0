@@ -1,0 +1,277 @@
+/sb/Wallet_F.sol
+line 285:54 no viable alternative at input 'booloracleSupported=abi.decode(data,(bool))'
+line 285:54 no viable alternative at input '.decode(data,(bool))'
+line 285:54 no viable alternative at input '(bool))'
+line 285:53 no viable alternative at input 'bool)'
+line 285:54 extraneous input ')' expecting ';'
+line 295:84 no viable alternative at input '.decode(data,(uint256,'
+line 295:84 no viable alternative at input '(uint256,'
+line 295:84 no viable alternative at input 'uint256,'
+line 435:34 no viable alternative at input '.call{'
+line 435:34 missing ';' at '{'
+line 455:56 no viable alternative at input 'boolexchangeSupported=abi.decode(data,(bool))'
+line 455:56 no viable alternative at input '.decode(data,(bool))'
+line 455:56 no viable alternative at input '(bool))'
+line 455:55 no viable alternative at input 'bool)'
+line 455:56 extraneous input ')' expecting ';'
+line 465:43 no viable alternative at input '.call{'
+line 465:43 missing ';' at '{'
+line 484:42 no viable alternative at input '.call{'
+line 484:42 missing ';' at '{'
+line 525:34 no viable alternative at input '.call{'
+line 525:34 missing ';' at '{'
+line 549:56 no viable alternative at input 'boolexchangeSupported=abi.decode(data,(bool))'
+line 549:56 no viable alternative at input '.decode(data,(bool))'
+line 549:56 no viable alternative at input '(bool))'
+line 549:55 no viable alternative at input 'bool)'
+line 549:56 extraneous input ')' expecting ';'
+line 559:43 no viable alternative at input '.call{'
+line 559:43 missing ';' at '{'
+line 592:42 no viable alternative at input '.call{'
+line 592:42 missing ';' at '{'
+line 631:48 no viable alternative at input 'boolsupported=abi.decode(data,(bool))'
+line 631:48 no viable alternative at input '.decode(data,(bool))'
+line 631:48 no viable alternative at input '(bool))'
+line 631:47 no viable alternative at input 'bool)'
+line 631:48 extraneous input ')' expecting ';'
+line 645:48 no viable alternative at input 'boolsupported=abi.decode(data,(bool))'
+line 645:48 no viable alternative at input '.decode(data,(bool))'
+line 645:48 no viable alternative at input '(bool))'
+line 645:47 no viable alternative at input 'bool)'
+line 645:48 extraneous input ')' expecting ';'
+line 659:84 no viable alternative at input '.decode(data,(uint256,'
+line 659:84 no viable alternative at input '(uint256,'
+line 659:84 no viable alternative at input 'uint256,'
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 90
+column: 8
+content: for(uint256i=0;i<oracleList.length;i++){emitRateRequest(currentId,oracleList[i].url,symbol);}
+
+ruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 109
+column: 8
+content: for(uint256i=0;i<oracleList.length;i++){if(oracleList[i].authorizedAddress==msg.sender){isAuthorized=true;break;}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 90
+column: 8
+content: for(uint256i=0;i<oracleList.length;i++){emitRateRequest(currentId,oracleList[i].url,symbol);}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 109
+column: 8
+content: for(uint256i=0;i<oracleList.length;i++){if(oracleList[i].authorizedAddress==msg.sender){isAuthorized=true;break;}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 188
+column: 8
+content: for(uint256i=0;i<length;i++){if(oracleList[i].authorizedAddress==accessAddress){oracleList[i]=oracleList[length-1];oracleList.pop();if(oracleList.length==0){deletecurrencies[symbol];}break;}}
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 228
+column: 0
+content: contractExchange{addressauthorizedWallet;addressoracleContract;mapping(string=>bool)publiccurrencies;stringpublicbridgeURL;eventExchangeInitiated(addressindexedtransactor,stringtargetCurrency,uint256exchangeValue,uint256exchangeRate,uint256timestamp);constructor(address_authorizedWallet,address_oracleContract){authorizedWallet=_authorizedWallet;oracleContract=_oracleContract;}functionexchange(addresstransactor,stringmemorytargetCurrency,addresstargetAddress,uint256maximumRateDelay)externalpayable{require(msg.sender==authorizedWallet,"Only authorized wallet can initiate exchanges");require(bytes(targetCurrency).length==3,"Target currency must be 3 characters");require(currencies[targetCurrency],"Target currency not supported");require(targetAddress!=address(0),"Target address cannot be zero");(boolsuccess,bytesmemorydata)=address(oracleContract).staticcall(abi.encodeWithSignature("isSupported(string)",targetCurrency));require(success,"Failed to call oracle contract");<missing ';'>bool<missing ';'>oracleSupported=abi.decode(data,<missing ')'>(bool));require(oracleSupported,"Oracle does not support this currency");require(msg.value>0,"Value must be greater than 0");(success,data)=address(oracleContract).staticcall(abi.encodeWithSignature("readRate(string)",targetCurrency));require(success,"Failed to call oracle contract");(uint256exchangeRate,uint256exchangeRateTime)=abi.decode(data,<missing ')'>(<missing ';'><missing ';'>uint256,<missing ';'><missing ';'>uint256));if(block.timestamp-exchangeRateTime>maximumRateDelay){revert("Rate is outdated, please request a new rate");}emitExchangeInitiated(transactor,targetCurrency,msg.value,exchangeRate,block.timestamp);}function_updateBridge(stringmemorynewBridgeURL)external{require(msg.sender==authorizedWallet,"Only authorized wallet can update bridge");bridgeURL=newBridgeURL;}function_addCurrency(stringmemorysymbol)external{require(msg.sender==authorizedWallet,"Only authorized wallet can add currencies");require(bytes(symbol).length==3,"Symbol must be 3 characters");currencies[symbol]=true;}function_removeCurrency(stringmemorysymbol)external{require(msg.sender==authorizedWallet,"Only authorized wallet can remove currencies");require(bytes(symbol).length==3,"Symbol must be 3 characters");deletecurrencies[symbol];}functionisSupported(stringmemorysymbol)externalviewreturns(bool){require(bytes(symbol).length==3,"Symbol must be 3 characters");returncurrencies[symbol];}}
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 356
+column: 0
+content: contractWallet{addresspublicowner;addresspublicoracleContract;addresspublicexchangeContract;mapping(address=>uint256)privatebalances;mapping(address=>mapping(address=>string))privateauthorizedAccounts;uint256publicmaximumRateDelay;uint256publicexchangeFee;eventDeposit(addressindexeduser,uint256amount);eventTransfer(addressindexedfrom,addressindexedto,uint256amount);eventExternalTransfer(addressindexedfrom,addressindexedto,uint256amount);eventWithdrawal(addressindexeduser,uint256amount);constructor(uint256_maximumRateDelay,uint256_exchangeFee){owner=msg.sender;maximumRateDelay=_maximumRateDelay;exchangeFee=_exchangeFee;}functiondeposit()externalpayable{balances[msg.sender]+=msg.value;emitDeposit(msg.sender,msg.value);}functiontransfer(uint256amount,addressto)external{require(balances[msg.sender]>=amount,"Insufficient balance");balances[msg.sender]-=amount;balances[to]+=amount;emitTransfer(msg.sender,to,amount);}functionexternalTransfer(uint256amount,addressto)externalpayable{require(balances[msg.sender]>=amount,"Insufficient balance");balances[msg.sender]-=amount;(boolsuccess,)=to.call<missing ';'>{value:amount}("");require(success,"Transfer failed");emitExternalTransfer(msg.sender,to,amount);}functionexchange(stringmemorytargetCurrency,addresstargetAddress,uint256amount)externalpayable{require(balances[msg.sender]>=amount,"Insufficient balance");(boolsuccess,bytesmemorydata)=address(exchangeContract).staticcall(abi.encodeWithSignature("isSupported(string)",targetCurrency));require(success,"Failed to call exchange contract");<missing ';'>bool<missing ';'>exchangeSupported=abi.decode(data,<missing ')'>(bool));require(exchangeSupported,"Exchange does not support this currency");balances[msg.sender]-=amount;uint256fee=(amount*exchangeFee)/100;balances[owner]+=fee;(success,)=exchangeContract.call<missing ';'>{value:amount-fee}(abi.encodeWithSignature("exchange(address,string,address,uint256)",msg.sender,targetCurrency,targetAddress,maximumRateDelay));require(success,"Exchange call failed");}functionwithdrawn(uint256amount)externalpayable{require(balances[msg.sender]>=amount,"Insufficient balance");balances[msg.sender]-=amount;(boolsuccess,)=msg.sender.call<missing ';'>{value:amount}("");require(success,"Withdrawal failed");emitWithdrawal(msg.sender,amount);}functiontransferAUTH(uint256amount,addressfrom,addressto)external{stringmemoryauthLevel=authorizedAccounts[from][msg.sender];require(keccak256(bytes(authLevel))==keccak256(bytes("onchain"))||keccak256(bytes(authLevel))==keccak256(bytes("all")),"Insufficient authorization level");require(balances[from]>=amount,"Insufficient balance");balances[from]-=amount;balances[to]+=amount;emitTransfer(from,to,amount);}functionexternalTransferAUTH(uint256amount,addressfrom,addressto)externalpayable{stringmemoryauthLevel=authorizedAccounts[from][msg.sender];require(keccak256(bytes(authLevel))==keccak256(bytes("onchain"))||keccak256(bytes(authLevel))==keccak256(bytes("all")),"Insufficient authorization level");require(balances[from]>=amount,"Insufficient balance");balances[from]-=amount;(boolsuccess,)=to.call<missing ';'>{value:amount}("");require(success,"External transfer failed");emitExternalTransfer(from,to,amount);}functionexchangeAUTH(stringmemorytargetCurrency,addressfrom,addresstargetAddress,uint256amount)externalpayable{require(keccak256(bytes(authorizedAccounts[from][msg.sender]))==keccak256(bytes("all")),"Insufficient authorization level");require(balances[from]>=amount,"Insufficient balance");(boolsuccess,bytesmemorydata)=address(exchangeContract).staticcall(abi.encodeWithSignature("isSupported(string)",targetCurrency));require(success,"Failed to call exchange contract");<missing ';'>bool<missing ';'>exchangeSupported=abi.decode(data,<missing ')'>(bool));require(exchangeSupported,"Exchange does not support this currency");balances[from]-=amount;uint256fee=(amount*exchangeFee)/100;balances[owner]+=fee;(success,)=exchangeContract.call<missing ';'>{value:amount-fee}(abi.encodeWithSignature("exchange(address,string,address,uint256)",from,targetCurrency,targetAddress,maximumRateDelay));require(success,"Exchange call failed");}functionwithdrawnAUTH(addressfrom,uint256amount)externalpayable{stringmemoryauthLevel=authorizedAccounts[from][msg.sender];require(keccak256(bytes(authLevel))==keccak256(bytes(""))||keccak256(bytes(authLevel))==keccak256(bytes("basic"))||keccak256(bytes(authLevel))==keccak256(bytes("onchain"))||keccak256(bytes(authLevel))==keccak256(bytes("all")),"No authorization");require(keccak256(bytes(authLevel))!=keccak256(bytes("")),"Insufficient authorization level");require(balances[from]>=amount,"Insufficient balance");balances[from]-=amount;(boolsuccess,)=msg.sender.call<missing ';'>{value:amount}("");require(success,"Withdrawal failed");emitWithdrawal(from,amount);}functionauthorize(addressauthorized,stringmemorytier)external{require(keccak256(bytes(tier))==keccak256(bytes(""))||keccak256(bytes(tier))==keccak256(bytes("basic"))||keccak256(bytes(tier))==keccak256(bytes("onchain"))||keccak256(bytes(tier))==keccak256(bytes("all")),"Invalid tier");authorizedAccounts[msg.sender][authorized]=tier;}functionrevoke(addressunauthorize)external{deleteauthorizedAccounts[msg.sender][unauthorize];}functiongetExchangeAvailability(stringmemorysymbol)externalviewreturns(bool){(boolsuccess,bytesmemorydata)=address(exchangeContract).staticcall(abi.encodeWithSignature("isSupported(string)",symbol));require(success,"Failed to call exchange contract");<missing ';'>bool<missing ';'>supported=abi.decode(data,<missing ')'>(bool));returnsupported;}functiongetOracleAvailability(stringmemorysymbol)externalviewreturns(bool){(boolsuccess,bytesmemorydata)=address(oracleContract).staticcall(abi.encodeWithSignature("isSupported(string)",symbol));require(success,"Failed to call exchange contract");<missing ';'>bool<missing ';'>supported=abi.decode(data,<missing ')'>(bool));returnsupported;}functiongetExchangeRate(stringmemorysymbol)externalviewreturns(uint256,uint256){(boolsuccess,bytesmemorydata)=address(oracleContract).staticcall(abi.encodeWithSignature("readRate(string)",symbol));require(success,"Failed to call oracle contract");(uint256exchangeRate,uint256exchangeRateTime)=abi.decode(data,<missing ')'>(<missing ';'><missing ';'>uint256,<missing ';'><missing ';'>uint256));return(exchangeRate,exchangeRateTime);}functionrequestExchangeRate(stringmemorysymbol)external{require(msg.sender==owner,"Only owner can request exchange rates");(boolsuccess,)=oracleContract.call(abi.encodeWithSignature("requestRate(string)",symbol));require(success,"Request rate call failed");}functionaddOracle(stringmemorysymbol,stringmemorymaintainer,stringmemoryurl,addressaccessAddress)external{require(msg.sender==owner,"Only owner can add oracles");(boolsuccess,)=oracleContract.call(abi.encodeWithSignature("_addOracle(string,string,string,address)",symbol,maintainer,url,accessAddress));require(success,"Add oracle call failed");}functionremoveOracle(stringmemorysymbol,addressaccessAddress)external{require(msg.sender==owner,"Only owner can remove oracles");(boolsuccess,)=oracleContract.call(abi.encodeWithSignature("_removeOracle(string,address)",symbol,accessAddress));require(success,"Remove oracle call failed");}functionchangeMinimumQuorum(uint256newQuorum)external{require(msg.sender==owner,"Only owner can change quorum");require(newQuorum>=0&&newQuorum<=100,"Quorum must be between 0 and 100");(boolsuccess,)=oracleContract.call(abi.encodeWithSignature("_changeMinimumQuorum(uint256)",newQuorum));require(success,"Change quorum call failed");}functionupdateBridge(stringmemorynewBridgeURL)external{require(msg.sender==owner,"Only owner can update bridge");(boolsuccess,)=exchangeContract.call(abi.encodeWithSignature("_updateBridge(string)",newBridgeURL));require(success,"Update bridge call failed");}functionaddCurrency(stringmemorysymbol)external{require(msg.sender==owner,"Only owner can add currencies");require(bytes(symbol).length==3,"Symbol must be 3 characters");(boolsuccess,)=exchangeContract.call(abi.encodeWithSignature("_addCurrency(string)",symbol));require(success,"Add currency call failed");}functionremoveCurrency(stringmemorysymbol)external{require(msg.sender==owner,"Only owner can remove currencies");require(bytes(symbol).length==3,"Symbol must be 3 characters");(boolsuccess,)=exchangeContract.call(abi.encodeWithSignature("_removeCurrency(string)",symbol));require(success,"Remove currency call failed");}functionupdateOracleAddress(addressnewOracle)external{require(msg.sender==owner,"Only owner can update oracle address");oracleContract=newOracle;}functionupdateExchangeAddress(addressnewExchange)external{require(msg.sender==owner,"Only owner can update exchange address");exchangeContract=newExchange;}functionupdateMaximumRateDelay(uint256newMaximumRateDelay)external{require(msg.sender==owner,"Only owner can update rate delay");maximumRateDelay=newMaximumRateDelay;}functionupdateExchangeFee(uint256newExchangeFee)external{require(msg.sender==owner,"Only owner can update exchange fee");require(newExchangeFee>=0&&newExchangeFee<=100,"Fee must be between 0 and 100");exchangeFee=newExchangeFee;}functionchangeOwnership(addressnewOwner)external{require(msg.sender==owner,"Only owner can change ownership");owner=newOwner;}functiongetBalance(addressaccount)externalviewreturns(uint256){returnbalances[account];}functiongetAuthorizationLevel(addressuser,addressauthorized)externalviewreturns(stringmemory){returnauthorizedAccounts[user][authorized];}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 8
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 365
+column: 32
+content: private
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 368
+column: 51
+content: private
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 298
+column: 8
+content: if(block.timestamp-exchangeRateTime>maximumRateDelay){revert("Rate is outdated, please request a new rate");}
+
+ruleId: SOLIDITY_SHOULD_RETURN_STRUCT
+patternId: 83hf3l
+severity: 1
+line: 153
+column: 66
+content: (uint256,uint256)
+
+ruleId: SOLIDITY_SHOULD_RETURN_STRUCT
+patternId: 83hf3l
+severity: 1
+line: 654
+column: 73
+content: (uint256,uint256)
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 281
+column: 68
+content: staticcall(abi.encodeWithSignature("isSupported(string)",targetCurrency))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 291
+column: 50
+content: staticcall(abi.encodeWithSignature("readRate(string)",targetCurrency))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 451
+column: 70
+content: staticcall(abi.encodeWithSignature("isSupported(string)",targetCurrency))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 545
+column: 70
+content: staticcall(abi.encodeWithSignature("isSupported(string)",targetCurrency))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 627
+column: 70
+content: staticcall(abi.encodeWithSignature("isSupported(string)",symbol))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 641
+column: 68
+content: staticcall(abi.encodeWithSignature("isSupported(string)",symbol))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 655
+column: 68
+content: staticcall(abi.encodeWithSignature("readRate(string)",symbol))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 670
+column: 42
+content: call(abi.encodeWithSignature("requestRate(string)",symbol))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 685
+column: 42
+content: call(abi.encodeWithSignature("_addOracle(string,string,string,address)",symbol,maintainer,url,accessAddress))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 698
+column: 42
+content: call(abi.encodeWithSignature("_removeOracle(string,address)",symbol,accessAddress))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 711
+column: 42
+content: call(abi.encodeWithSignature("_changeMinimumQuorum(uint256)",newQuorum))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 723
+column: 44
+content: call(abi.encodeWithSignature("_updateBridge(string)",newBridgeURL))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 736
+column: 44
+content: call(abi.encodeWithSignature("_addCurrency(string)",symbol))
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 749
+column: 44
+content: call(abi.encodeWithSignature("_removeCurrency(string)",symbol))
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 69
+column: 4
+content: constructor(address_authorizedWallet){authorizedWallet=_authorizedWallet;}
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 257
+column: 4
+content: constructor(address_authorizedWallet,address_oracleContract){authorizedWallet=_authorizedWallet;oracleContract=_oracleContract;}
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 401
+column: 4
+content: constructor(uint256_maximumRateDelay,uint256_exchangeFee){owner=msg.sender;maximumRateDelay=_maximumRateDelay;exchangeFee=_exchangeFee;}
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 230
+column: 4
+content: addressauthorizedWallet;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 233
+column: 4
+content: addressoracleContract;
+
+SOLIDITY_VISIBILITY :5
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_REVERT_REQUIRE :1
+SOLIDITY_LOCKED_MONEY :2
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :2
+SOLIDITY_EXTRA_GAS_IN_LOOPS :2
+SOLIDITY_GAS_LIMIT_IN_LOOPS :3
+SOLIDITY_UNCHECKED_CALL :14
+SOLIDITY_SHOULD_RETURN_STRUCT :2

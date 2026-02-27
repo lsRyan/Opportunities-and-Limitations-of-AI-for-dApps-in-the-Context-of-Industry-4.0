@@ -1,0 +1,4932 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Found more than One contract per file. 17 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 10,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 62,
+            "message": "Missing @title tag in contract 'Initializable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 62,
+            "message": "Missing @author tag in contract 'Initializable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 62,
+            "message": "Missing @notice tag in contract 'Initializable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 98,
+            "message": "Missing @notice tag in event 'Initialized'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 98,
+            "message": "Missing @param tag in event 'Initialized'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 98,
+            "message": "Mismatch in @param names for event 'Initialized'. Expected: [version], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 98,
+            "message": "GC: [version] on Event [Initialized] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 184,
+            "message": "Missing @notice tag in function '_checkInitializing'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Missing @notice tag in function '_disableInitializers'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 214,
+            "message": "Missing @notice tag in function '_getInitializedVersion'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 214,
+            "message": "Missing @return tag in function '_getInitializedVersion'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 214,
+            "message": "Mismatch in @return count for function '_getInitializedVersion'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 221,
+            "message": "Missing @notice tag in function '_isInitializing'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 221,
+            "message": "Missing @return tag in function '_isInitializing'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 221,
+            "message": "Mismatch in @return count for function '_isInitializing'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 230,
+            "message": "Missing @notice tag in function '_initializableStorageSlot'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 230,
+            "message": "Missing @return tag in function '_initializableStorageSlot'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 230,
+            "message": "Mismatch in @return count for function '_initializableStorageSlot'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 238,
+            "message": "Missing @notice tag in function '_getInitializableStorage'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 238,
+            "message": "Missing @return tag in function '_getInitializableStorage'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 238,
+            "message": "Mismatch in @return names for function '_getInitializableStorage'. Expected: [$], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 240,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 252,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 264,
+            "message": "Missing @title tag in contract 'ContextUpgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 264,
+            "message": "Missing @author tag in contract 'ContextUpgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 264,
+            "message": "Missing @notice tag in contract 'ContextUpgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "Missing @notice tag in function '__Context_init'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "Function name must be in mixedCase",
+            "name": "func-name-mixedcase"
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "Code contains empty blocks",
+            "name": "no-empty-blocks"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Missing @notice tag in function '__Context_init_unchained'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Function name must be in mixedCase",
+            "name": "func-name-mixedcase"
+        },
+        {
+            "column": 67,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Code contains empty blocks",
+            "name": "no-empty-blocks"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 270,
+            "message": "Missing @notice tag in function '_msgSender'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 270,
+            "message": "Missing @return tag in function '_msgSender'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 270,
+            "message": "Mismatch in @return count for function '_msgSender'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 274,
+            "message": "Missing @notice tag in function '_msgData'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 274,
+            "message": "Missing @return tag in function '_msgData'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 274,
+            "message": "Mismatch in @return count for function '_msgData'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "Missing @notice tag in function '_contextSuffixLength'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "Missing @return tag in function '_contextSuffixLength'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 278,
+            "message": "Mismatch in @return count for function '_contextSuffixLength'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 289,
+            "message": "Compiler version >=0.4.16 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 300,
+            "message": "Missing @title tag in contract 'IERC165'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 300,
+            "message": "Missing @author tag in contract 'IERC165'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 300,
+            "message": "Missing @notice tag in contract 'IERC165'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @notice tag in function 'supportsInterface'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @param tag in function 'supportsInterface'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Mismatch in @param names for function 'supportsInterface'. Expected: [interfaceId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Missing @return tag in function 'supportsInterface'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 309,
+            "message": "Mismatch in @return count for function 'supportsInterface'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 318,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 333,
+            "message": "Missing @title tag in contract 'ERC165Upgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 333,
+            "message": "Missing @author tag in contract 'ERC165Upgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 333,
+            "message": "Missing @notice tag in contract 'ERC165Upgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 334,
+            "message": "Missing @notice tag in function '__ERC165_init'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 334,
+            "message": "Function name must be in mixedCase",
+            "name": "func-name-mixedcase"
+        },
+        {
+            "column": 56,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 334,
+            "message": "Code contains empty blocks",
+            "name": "no-empty-blocks"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Missing @notice tag in function '__ERC165_init_unchained'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Function name must be in mixedCase",
+            "name": "func-name-mixedcase"
+        },
+        {
+            "column": 66,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Code contains empty blocks",
+            "name": "no-empty-blocks"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 351,
+            "message": "Compiler version >=0.8.4 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Missing @title tag in contract 'IAccessControl'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Missing @author tag in contract 'IAccessControl'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 356,
+            "message": "Missing @notice tag in contract 'IAccessControl'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Missing @notice tag in event 'RoleAdminChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Missing @param tag in event 'RoleAdminChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Mismatch in @param names for event 'RoleAdminChanged'. Expected: [role, previousAdminRole, newAdminRole], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 383,
+            "message": "Missing @notice tag in event 'RoleGranted'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 383,
+            "message": "Missing @param tag in event 'RoleGranted'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 383,
+            "message": "Mismatch in @param names for event 'RoleGranted'. Expected: [role, account, sender], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 392,
+            "message": "Missing @notice tag in event 'RoleRevoked'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 392,
+            "message": "Missing @param tag in event 'RoleRevoked'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 392,
+            "message": "Mismatch in @param names for event 'RoleRevoked'. Expected: [role, account, sender], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Missing @notice tag in function 'hasRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Missing @param tag in function 'hasRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Mismatch in @param names for function 'hasRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Missing @return tag in function 'hasRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Mismatch in @return count for function 'hasRole'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 405,
+            "message": "Missing @notice tag in function 'getRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 405,
+            "message": "Missing @param tag in function 'getRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 405,
+            "message": "Mismatch in @param names for function 'getRoleAdmin'. Expected: [role], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 405,
+            "message": "Missing @return tag in function 'getRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 405,
+            "message": "Mismatch in @return count for function 'getRoleAdmin'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 417,
+            "message": "Missing @notice tag in function 'grantRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 417,
+            "message": "Missing @param tag in function 'grantRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 417,
+            "message": "Mismatch in @param names for function 'grantRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "Missing @notice tag in function 'revokeRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "Missing @param tag in function 'revokeRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "Mismatch in @param names for function 'revokeRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 444,
+            "message": "Missing @notice tag in function 'renounceRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 444,
+            "message": "Missing @param tag in function 'renounceRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 444,
+            "message": "Mismatch in @param names for function 'renounceRole'. Expected: [role, callerConfirmation], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 453,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 498,
+            "message": "Missing @title tag in contract 'AccessControlUpgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 498,
+            "message": "Missing @author tag in contract 'AccessControlUpgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 498,
+            "message": "Missing @notice tag in contract 'AccessControlUpgradeable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 504,
+            "message": "Missing @notice tag in variable 'DEFAULT_ADMIN_ROLE'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 513,
+            "message": "Constant name must be in capitalized SNAKE_CASE",
+            "name": "const-name-snakecase"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 515,
+            "message": "Missing @notice tag in function '_getAccessControlStorage'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 515,
+            "message": "Missing @return tag in function '_getAccessControlStorage'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 515,
+            "message": "Mismatch in @return names for function '_getAccessControlStorage'. Expected: [$], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 516,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 530,
+            "message": "Missing @notice tag in function '__AccessControl_init'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 530,
+            "message": "Function name must be in mixedCase",
+            "name": "func-name-mixedcase"
+        },
+        {
+            "column": 63,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 530,
+            "message": "Code contains empty blocks",
+            "name": "no-empty-blocks"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 533,
+            "message": "Missing @notice tag in function '__AccessControl_init_unchained'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 533,
+            "message": "Function name must be in mixedCase",
+            "name": "func-name-mixedcase"
+        },
+        {
+            "column": 73,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 533,
+            "message": "Code contains empty blocks",
+            "name": "no-empty-blocks"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 543,
+            "message": "Missing @notice tag in function 'hasRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 543,
+            "message": "Missing @param tag in function 'hasRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 543,
+            "message": "Mismatch in @param names for function 'hasRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 543,
+            "message": "Missing @return tag in function 'hasRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 543,
+            "message": "Mismatch in @return count for function 'hasRole'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Missing @notice tag in function '_checkRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Missing @param tag in function '_checkRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Mismatch in @param names for function '_checkRole'. Expected: [role], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Missing @notice tag in function '_checkRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Missing @param tag in function '_checkRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 560,
+            "message": "Mismatch in @param names for function '_checkRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 572,
+            "message": "Missing @notice tag in function 'getRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 572,
+            "message": "Missing @param tag in function 'getRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 572,
+            "message": "Mismatch in @param names for function 'getRoleAdmin'. Expected: [role], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 572,
+            "message": "Missing @return tag in function 'getRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 572,
+            "message": "Mismatch in @return count for function 'getRoleAdmin'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "Missing @notice tag in function 'grantRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "Missing @param tag in function 'grantRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "Mismatch in @param names for function 'grantRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 604,
+            "message": "Missing @notice tag in function 'revokeRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 604,
+            "message": "Missing @param tag in function 'revokeRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 604,
+            "message": "Mismatch in @param names for function 'revokeRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 624,
+            "message": "Missing @notice tag in function 'renounceRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 624,
+            "message": "Missing @param tag in function 'renounceRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 624,
+            "message": "Mismatch in @param names for function 'renounceRole'. Expected: [role, callerConfirmation], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Missing @notice tag in function '_setRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Missing @param tag in function '_setRoleAdmin'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Mismatch in @param names for function '_setRoleAdmin'. Expected: [role, adminRole], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 651,
+            "message": "Missing @notice tag in function '_grantRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 651,
+            "message": "Missing @param tag in function '_grantRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 651,
+            "message": "Mismatch in @param names for function '_grantRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 651,
+            "message": "Missing @return tag in function '_grantRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 651,
+            "message": "Mismatch in @return count for function '_grantRole'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "Missing @notice tag in function '_revokeRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "Missing @param tag in function '_revokeRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "Mismatch in @param names for function '_revokeRole'. Expected: [role, account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "Missing @return tag in function '_revokeRole'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 669,
+            "message": "Mismatch in @return count for function '_revokeRole'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 686,
+            "message": "Compiler version >=0.8.4 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 692,
+            "message": "Missing @title tag in contract 'IERC20Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 692,
+            "message": "Missing @author tag in contract 'IERC20Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 692,
+            "message": "Missing @notice tag in contract 'IERC20Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 738,
+            "message": "Missing @title tag in contract 'IERC721Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 738,
+            "message": "Missing @author tag in contract 'IERC721Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 738,
+            "message": "Missing @notice tag in contract 'IERC721Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 796,
+            "message": "Missing @title tag in contract 'IERC1155Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 796,
+            "message": "Missing @author tag in contract 'IERC1155Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 796,
+            "message": "Missing @notice tag in contract 'IERC1155Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 852,
+            "message": "Compiler version >=0.6.2 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 857,
+            "message": "Missing @title tag in contract 'IERC721'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 857,
+            "message": "Missing @author tag in contract 'IERC721'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 857,
+            "message": "Missing @notice tag in contract 'IERC721'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 861,
+            "message": "Missing @notice tag in event 'Transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 861,
+            "message": "Missing @param tag in event 'Transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 861,
+            "message": "Mismatch in @param names for event 'Transfer'. Expected: [from, to, tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 866,
+            "message": "Missing @notice tag in event 'Approval'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 866,
+            "message": "Missing @param tag in event 'Approval'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 866,
+            "message": "Mismatch in @param names for event 'Approval'. Expected: [owner, approved, tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 871,
+            "message": "Missing @notice tag in event 'ApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 871,
+            "message": "Missing @param tag in event 'ApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 871,
+            "message": "Mismatch in @param names for event 'ApprovalForAll'. Expected: [owner, operator, approved], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 871,
+            "message": "GC: [approved] on Event [ApprovalForAll] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 876,
+            "message": "Missing @notice tag in function 'balanceOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 876,
+            "message": "Missing @param tag in function 'balanceOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 876,
+            "message": "Mismatch in @param names for function 'balanceOf'. Expected: [owner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 876,
+            "message": "Missing @return tag in function 'balanceOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 876,
+            "message": "Mismatch in @return names for function 'balanceOf'. Expected: [balance], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 885,
+            "message": "Missing @notice tag in function 'ownerOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 885,
+            "message": "Missing @param tag in function 'ownerOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 885,
+            "message": "Mismatch in @param names for function 'ownerOf'. Expected: [tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 885,
+            "message": "Missing @return tag in function 'ownerOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 885,
+            "message": "Mismatch in @return names for function 'ownerOf'. Expected: [owner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 901,
+            "message": "Missing @notice tag in function 'safeTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 901,
+            "message": "Missing @param tag in function 'safeTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 901,
+            "message": "Mismatch in @param names for function 'safeTransferFrom'. Expected: [from, to, tokenId, data], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 919,
+            "message": "Missing @notice tag in function 'safeTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 919,
+            "message": "Missing @param tag in function 'safeTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 919,
+            "message": "Mismatch in @param names for function 'safeTransferFrom'. Expected: [from, to, tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 937,
+            "message": "Missing @notice tag in function 'transferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 937,
+            "message": "Missing @param tag in function 'transferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 937,
+            "message": "Mismatch in @param names for function 'transferFrom'. Expected: [from, to, tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 952,
+            "message": "Missing @notice tag in function 'approve'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 952,
+            "message": "Missing @param tag in function 'approve'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 952,
+            "message": "Mismatch in @param names for function 'approve'. Expected: [to, tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 964,
+            "message": "Missing @notice tag in function 'setApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 964,
+            "message": "Missing @param tag in function 'setApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 964,
+            "message": "Mismatch in @param names for function 'setApprovalForAll'. Expected: [operator, approved], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 973,
+            "message": "Missing @notice tag in function 'getApproved'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 973,
+            "message": "Missing @param tag in function 'getApproved'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 973,
+            "message": "Mismatch in @param names for function 'getApproved'. Expected: [tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 973,
+            "message": "Missing @return tag in function 'getApproved'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 973,
+            "message": "Mismatch in @return names for function 'getApproved'. Expected: [operator], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 980,
+            "message": "Missing @notice tag in function 'isApprovedForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 980,
+            "message": "Missing @param tag in function 'isApprovedForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 980,
+            "message": "Mismatch in @param names for function 'isApprovedForAll'. Expected: [owner, operator], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 980,
+            "message": "Missing @return tag in function 'isApprovedForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 980,
+            "message": "Mismatch in @return count for function 'isApprovedForAll'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 989,
+            "message": "Compiler version >=0.6.2 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 995,
+            "message": "Missing @author tag in contract 'IERC721Metadata'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 995,
+            "message": "Missing @notice tag in contract 'IERC721Metadata'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 999,
+            "message": "Missing @notice tag in function 'name'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 999,
+            "message": "Missing @return tag in function 'name'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 999,
+            "message": "Mismatch in @return count for function 'name'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1004,
+            "message": "Missing @notice tag in function 'symbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1004,
+            "message": "Missing @return tag in function 'symbol'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1004,
+            "message": "Mismatch in @return count for function 'symbol'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1009,
+            "message": "Missing @notice tag in function 'tokenURI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1009,
+            "message": "Missing @param tag in function 'tokenURI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1009,
+            "message": "Mismatch in @param names for function 'tokenURI'. Expected: [tokenId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1009,
+            "message": "Missing @return tag in function 'tokenURI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1009,
+            "message": "Mismatch in @return count for function 'tokenURI'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 1018,
+            "message": "Compiler version >=0.5.0 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1025,
+            "message": "Missing @author tag in contract 'IERC721Receiver'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1025,
+            "message": "Missing @notice tag in contract 'IERC721Receiver'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1036,
+            "message": "Missing @notice tag in function 'onERC721Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1036,
+            "message": "Missing @param tag in function 'onERC721Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1036,
+            "message": "Mismatch in @param names for function 'onERC721Received'. Expected: [operator, from, tokenId, data], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1036,
+            "message": "Missing @return tag in function 'onERC721Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1036,
+            "message": "Mismatch in @return count for function 'onERC721Received'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 1050,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1060,
+            "message": "Missing @title tag in contract 'ERC721Utils'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1060,
+            "message": "Missing @author tag in contract 'ERC721Utils'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1060,
+            "message": "Missing @notice tag in contract 'ERC721Utils'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1069,
+            "message": "Missing @notice tag in function 'checkOnERC721Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1069,
+            "message": "Missing @param tag in function 'checkOnERC721Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1069,
+            "message": "Mismatch in @param names for function 'checkOnERC721Received'. Expected: [operator, from, to, tokenId, data], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 21,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1087,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 1103,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1117,
+            "message": "Missing @title tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1117,
+            "message": "Missing @author tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1117,
+            "message": "Missing @notice tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1148,
+            "message": "Missing @notice tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1148,
+            "message": "Missing @param tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1148,
+            "message": "Mismatch in @param names for function 'toUint248'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1148,
+            "message": "Missing @return tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1148,
+            "message": "Mismatch in @return count for function 'toUint248'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1165,
+            "message": "Missing @notice tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1165,
+            "message": "Missing @param tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1165,
+            "message": "Mismatch in @param names for function 'toUint240'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1165,
+            "message": "Missing @return tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1165,
+            "message": "Mismatch in @return count for function 'toUint240'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1182,
+            "message": "Missing @notice tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1182,
+            "message": "Missing @param tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1182,
+            "message": "Mismatch in @param names for function 'toUint232'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1182,
+            "message": "Missing @return tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1182,
+            "message": "Mismatch in @return count for function 'toUint232'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1199,
+            "message": "Missing @notice tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1199,
+            "message": "Missing @param tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1199,
+            "message": "Mismatch in @param names for function 'toUint224'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1199,
+            "message": "Missing @return tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1199,
+            "message": "Mismatch in @return count for function 'toUint224'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1216,
+            "message": "Missing @notice tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1216,
+            "message": "Missing @param tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1216,
+            "message": "Mismatch in @param names for function 'toUint216'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1216,
+            "message": "Missing @return tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1216,
+            "message": "Mismatch in @return count for function 'toUint216'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1233,
+            "message": "Missing @notice tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1233,
+            "message": "Missing @param tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1233,
+            "message": "Mismatch in @param names for function 'toUint208'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1233,
+            "message": "Missing @return tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1233,
+            "message": "Mismatch in @return count for function 'toUint208'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1250,
+            "message": "Missing @notice tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1250,
+            "message": "Missing @param tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1250,
+            "message": "Mismatch in @param names for function 'toUint200'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1250,
+            "message": "Missing @return tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1250,
+            "message": "Mismatch in @return count for function 'toUint200'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1267,
+            "message": "Missing @notice tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1267,
+            "message": "Missing @param tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1267,
+            "message": "Mismatch in @param names for function 'toUint192'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1267,
+            "message": "Missing @return tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1267,
+            "message": "Mismatch in @return count for function 'toUint192'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1284,
+            "message": "Missing @notice tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1284,
+            "message": "Missing @param tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1284,
+            "message": "Mismatch in @param names for function 'toUint184'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1284,
+            "message": "Missing @return tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1284,
+            "message": "Mismatch in @return count for function 'toUint184'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Missing @notice tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Missing @param tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Mismatch in @param names for function 'toUint176'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Missing @return tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Mismatch in @return count for function 'toUint176'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1318,
+            "message": "Missing @notice tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1318,
+            "message": "Missing @param tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1318,
+            "message": "Mismatch in @param names for function 'toUint168'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1318,
+            "message": "Missing @return tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1318,
+            "message": "Mismatch in @return count for function 'toUint168'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1335,
+            "message": "Missing @notice tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1335,
+            "message": "Missing @param tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1335,
+            "message": "Mismatch in @param names for function 'toUint160'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1335,
+            "message": "Missing @return tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1335,
+            "message": "Mismatch in @return count for function 'toUint160'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1352,
+            "message": "Missing @notice tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1352,
+            "message": "Missing @param tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1352,
+            "message": "Mismatch in @param names for function 'toUint152'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1352,
+            "message": "Missing @return tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1352,
+            "message": "Mismatch in @return count for function 'toUint152'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1369,
+            "message": "Missing @notice tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1369,
+            "message": "Missing @param tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1369,
+            "message": "Mismatch in @param names for function 'toUint144'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1369,
+            "message": "Missing @return tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1369,
+            "message": "Mismatch in @return count for function 'toUint144'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1386,
+            "message": "Missing @notice tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1386,
+            "message": "Missing @param tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1386,
+            "message": "Mismatch in @param names for function 'toUint136'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1386,
+            "message": "Missing @return tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1386,
+            "message": "Mismatch in @return count for function 'toUint136'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Missing @notice tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Missing @param tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Mismatch in @param names for function 'toUint128'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Missing @return tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Mismatch in @return count for function 'toUint128'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1420,
+            "message": "Missing @notice tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1420,
+            "message": "Missing @param tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1420,
+            "message": "Mismatch in @param names for function 'toUint120'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1420,
+            "message": "Missing @return tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1420,
+            "message": "Mismatch in @return count for function 'toUint120'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1437,
+            "message": "Missing @notice tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1437,
+            "message": "Missing @param tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1437,
+            "message": "Mismatch in @param names for function 'toUint112'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1437,
+            "message": "Missing @return tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1437,
+            "message": "Mismatch in @return count for function 'toUint112'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1454,
+            "message": "Missing @notice tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1454,
+            "message": "Missing @param tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1454,
+            "message": "Mismatch in @param names for function 'toUint104'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1454,
+            "message": "Missing @return tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1454,
+            "message": "Mismatch in @return count for function 'toUint104'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1471,
+            "message": "Missing @notice tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1471,
+            "message": "Missing @param tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1471,
+            "message": "Mismatch in @param names for function 'toUint96'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1471,
+            "message": "Missing @return tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1471,
+            "message": "Mismatch in @return count for function 'toUint96'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1488,
+            "message": "Missing @notice tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1488,
+            "message": "Missing @param tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1488,
+            "message": "Mismatch in @param names for function 'toUint88'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1488,
+            "message": "Missing @return tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1488,
+            "message": "Mismatch in @return count for function 'toUint88'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1505,
+            "message": "Missing @notice tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1505,
+            "message": "Missing @param tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1505,
+            "message": "Mismatch in @param names for function 'toUint80'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1505,
+            "message": "Missing @return tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1505,
+            "message": "Mismatch in @return count for function 'toUint80'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1522,
+            "message": "Missing @notice tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1522,
+            "message": "Missing @param tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1522,
+            "message": "Mismatch in @param names for function 'toUint72'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1522,
+            "message": "Missing @return tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1522,
+            "message": "Mismatch in @return count for function 'toUint72'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1539,
+            "message": "Missing @notice tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1539,
+            "message": "Missing @param tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1539,
+            "message": "Mismatch in @param names for function 'toUint64'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1539,
+            "message": "Missing @return tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1539,
+            "message": "Mismatch in @return count for function 'toUint64'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1556,
+            "message": "Missing @notice tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1556,
+            "message": "Missing @param tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1556,
+            "message": "Mismatch in @param names for function 'toUint56'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1556,
+            "message": "Missing @return tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1556,
+            "message": "Mismatch in @return count for function 'toUint56'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1573,
+            "message": "Missing @notice tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1573,
+            "message": "Missing @param tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1573,
+            "message": "Mismatch in @param names for function 'toUint48'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1573,
+            "message": "Missing @return tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1573,
+            "message": "Mismatch in @return count for function 'toUint48'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1590,
+            "message": "Missing @notice tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1590,
+            "message": "Missing @param tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1590,
+            "message": "Mismatch in @param names for function 'toUint40'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1590,
+            "message": "Missing @return tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1590,
+            "message": "Mismatch in @return count for function 'toUint40'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Missing @notice tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Missing @param tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Mismatch in @param names for function 'toUint32'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Missing @return tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Mismatch in @return count for function 'toUint32'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1624,
+            "message": "Missing @notice tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1624,
+            "message": "Missing @param tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1624,
+            "message": "Mismatch in @param names for function 'toUint24'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1624,
+            "message": "Missing @return tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1624,
+            "message": "Mismatch in @return count for function 'toUint24'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1641,
+            "message": "Missing @notice tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1641,
+            "message": "Missing @param tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1641,
+            "message": "Mismatch in @param names for function 'toUint16'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1641,
+            "message": "Missing @return tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1641,
+            "message": "Mismatch in @return count for function 'toUint16'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1658,
+            "message": "Missing @notice tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1658,
+            "message": "Missing @param tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1658,
+            "message": "Mismatch in @param names for function 'toUint8'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1658,
+            "message": "Missing @return tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1658,
+            "message": "Mismatch in @return count for function 'toUint8'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1672,
+            "message": "Missing @notice tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1672,
+            "message": "Missing @param tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1672,
+            "message": "Mismatch in @param names for function 'toUint256'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1672,
+            "message": "Missing @return tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1672,
+            "message": "Mismatch in @return count for function 'toUint256'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1690,
+            "message": "Missing @notice tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1690,
+            "message": "Missing @param tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1690,
+            "message": "Mismatch in @param names for function 'toInt248'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1690,
+            "message": "Missing @return tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1690,
+            "message": "Mismatch in @return names for function 'toInt248'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1708,
+            "message": "Missing @notice tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1708,
+            "message": "Missing @param tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1708,
+            "message": "Mismatch in @param names for function 'toInt240'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1708,
+            "message": "Missing @return tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1708,
+            "message": "Mismatch in @return names for function 'toInt240'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1726,
+            "message": "Missing @notice tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1726,
+            "message": "Missing @param tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1726,
+            "message": "Mismatch in @param names for function 'toInt232'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1726,
+            "message": "Missing @return tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1726,
+            "message": "Mismatch in @return names for function 'toInt232'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1744,
+            "message": "Missing @notice tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1744,
+            "message": "Missing @param tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1744,
+            "message": "Mismatch in @param names for function 'toInt224'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1744,
+            "message": "Missing @return tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1744,
+            "message": "Mismatch in @return names for function 'toInt224'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1762,
+            "message": "Missing @notice tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1762,
+            "message": "Missing @param tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1762,
+            "message": "Mismatch in @param names for function 'toInt216'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1762,
+            "message": "Missing @return tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1762,
+            "message": "Mismatch in @return names for function 'toInt216'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1780,
+            "message": "Missing @notice tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1780,
+            "message": "Missing @param tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1780,
+            "message": "Mismatch in @param names for function 'toInt208'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1780,
+            "message": "Missing @return tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1780,
+            "message": "Mismatch in @return names for function 'toInt208'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1798,
+            "message": "Missing @notice tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1798,
+            "message": "Missing @param tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1798,
+            "message": "Mismatch in @param names for function 'toInt200'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1798,
+            "message": "Missing @return tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1798,
+            "message": "Mismatch in @return names for function 'toInt200'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1816,
+            "message": "Missing @notice tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1816,
+            "message": "Missing @param tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1816,
+            "message": "Mismatch in @param names for function 'toInt192'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1816,
+            "message": "Missing @return tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1816,
+            "message": "Mismatch in @return names for function 'toInt192'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1834,
+            "message": "Missing @notice tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1834,
+            "message": "Missing @param tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1834,
+            "message": "Mismatch in @param names for function 'toInt184'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1834,
+            "message": "Missing @return tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1834,
+            "message": "Mismatch in @return names for function 'toInt184'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1852,
+            "message": "Missing @notice tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1852,
+            "message": "Missing @param tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1852,
+            "message": "Mismatch in @param names for function 'toInt176'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1852,
+            "message": "Missing @return tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1852,
+            "message": "Mismatch in @return names for function 'toInt176'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1870,
+            "message": "Missing @notice tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1870,
+            "message": "Missing @param tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1870,
+            "message": "Mismatch in @param names for function 'toInt168'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1870,
+            "message": "Missing @return tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1870,
+            "message": "Mismatch in @return names for function 'toInt168'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1888,
+            "message": "Missing @notice tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1888,
+            "message": "Missing @param tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1888,
+            "message": "Mismatch in @param names for function 'toInt160'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1888,
+            "message": "Missing @return tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1888,
+            "message": "Mismatch in @return names for function 'toInt160'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1906,
+            "message": "Missing @notice tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1906,
+            "message": "Missing @param tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1906,
+            "message": "Mismatch in @param names for function 'toInt152'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1906,
+            "message": "Missing @return tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1906,
+            "message": "Mismatch in @return names for function 'toInt152'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1924,
+            "message": "Missing @notice tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1924,
+            "message": "Missing @param tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1924,
+            "message": "Mismatch in @param names for function 'toInt144'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1924,
+            "message": "Missing @return tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1924,
+            "message": "Mismatch in @return names for function 'toInt144'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Missing @notice tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Missing @param tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Mismatch in @param names for function 'toInt136'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Missing @return tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Mismatch in @return names for function 'toInt136'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1960,
+            "message": "Missing @notice tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1960,
+            "message": "Missing @param tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1960,
+            "message": "Mismatch in @param names for function 'toInt128'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1960,
+            "message": "Missing @return tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1960,
+            "message": "Mismatch in @return names for function 'toInt128'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1978,
+            "message": "Missing @notice tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1978,
+            "message": "Missing @param tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1978,
+            "message": "Mismatch in @param names for function 'toInt120'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1978,
+            "message": "Missing @return tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1978,
+            "message": "Mismatch in @return names for function 'toInt120'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1996,
+            "message": "Missing @notice tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1996,
+            "message": "Missing @param tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1996,
+            "message": "Mismatch in @param names for function 'toInt112'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1996,
+            "message": "Missing @return tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 1996,
+            "message": "Mismatch in @return names for function 'toInt112'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2014,
+            "message": "Missing @notice tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2014,
+            "message": "Missing @param tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2014,
+            "message": "Mismatch in @param names for function 'toInt104'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2014,
+            "message": "Missing @return tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2014,
+            "message": "Mismatch in @return names for function 'toInt104'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2032,
+            "message": "Missing @notice tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2032,
+            "message": "Missing @param tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2032,
+            "message": "Mismatch in @param names for function 'toInt96'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2032,
+            "message": "Missing @return tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2032,
+            "message": "Mismatch in @return names for function 'toInt96'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Missing @notice tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Missing @param tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Mismatch in @param names for function 'toInt88'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Missing @return tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Mismatch in @return names for function 'toInt88'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2068,
+            "message": "Missing @notice tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2068,
+            "message": "Missing @param tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2068,
+            "message": "Mismatch in @param names for function 'toInt80'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2068,
+            "message": "Missing @return tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2068,
+            "message": "Mismatch in @return names for function 'toInt80'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2086,
+            "message": "Missing @notice tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2086,
+            "message": "Missing @param tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2086,
+            "message": "Mismatch in @param names for function 'toInt72'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2086,
+            "message": "Missing @return tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2086,
+            "message": "Mismatch in @return names for function 'toInt72'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2104,
+            "message": "Missing @notice tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2104,
+            "message": "Missing @param tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2104,
+            "message": "Mismatch in @param names for function 'toInt64'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2104,
+            "message": "Missing @return tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2104,
+            "message": "Mismatch in @return names for function 'toInt64'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2122,
+            "message": "Missing @notice tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2122,
+            "message": "Missing @param tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2122,
+            "message": "Mismatch in @param names for function 'toInt56'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2122,
+            "message": "Missing @return tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2122,
+            "message": "Mismatch in @return names for function 'toInt56'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2140,
+            "message": "Missing @notice tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2140,
+            "message": "Missing @param tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2140,
+            "message": "Mismatch in @param names for function 'toInt48'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2140,
+            "message": "Missing @return tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2140,
+            "message": "Mismatch in @return names for function 'toInt48'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2158,
+            "message": "Missing @notice tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2158,
+            "message": "Missing @param tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2158,
+            "message": "Mismatch in @param names for function 'toInt40'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2158,
+            "message": "Missing @return tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2158,
+            "message": "Mismatch in @return names for function 'toInt40'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2176,
+            "message": "Missing @notice tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2176,
+            "message": "Missing @param tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2176,
+            "message": "Mismatch in @param names for function 'toInt32'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2176,
+            "message": "Missing @return tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2176,
+            "message": "Mismatch in @return names for function 'toInt32'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2194,
+            "message": "Missing @notice tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2194,
+            "message": "Missing @param tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2194,
+            "message": "Mismatch in @param names for function 'toInt24'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2194,
+            "message": "Missing @return tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2194,
+            "message": "Mismatch in @return names for function 'toInt24'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2212,
+            "message": "Missing @notice tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2212,
+            "message": "Missing @param tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2212,
+            "message": "Mismatch in @param names for function 'toInt16'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2212,
+            "message": "Missing @return tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2212,
+            "message": "Mismatch in @return names for function 'toInt16'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2230,
+            "message": "Missing @notice tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2230,
+            "message": "Missing @param tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2230,
+            "message": "Mismatch in @param names for function 'toInt8'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2230,
+            "message": "Missing @return tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2230,
+            "message": "Mismatch in @return names for function 'toInt8'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2244,
+            "message": "Missing @notice tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2244,
+            "message": "Missing @param tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2244,
+            "message": "Mismatch in @param names for function 'toInt256'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2244,
+            "message": "Missing @return tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2244,
+            "message": "Mismatch in @return count for function 'toInt256'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2255,
+            "message": "Missing @notice tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2255,
+            "message": "Missing @param tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2255,
+            "message": "Mismatch in @param names for function 'toUint'. Expected: [b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2255,
+            "message": "Missing @return tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2255,
+            "message": "Mismatch in @return names for function 'toUint'. Expected: [u], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2256,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 2268,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2290,
+            "message": "Missing @title tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2290,
+            "message": "Missing @author tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2290,
+            "message": "Missing @notice tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2314,
+            "message": "Missing @notice tag in function 'panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2314,
+            "message": "Missing @param tag in function 'panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2314,
+            "message": "Mismatch in @param names for function 'panic'. Expected: [code], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2315,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "error",
+            "line": 2329,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2335,
+            "message": "Missing @title tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2335,
+            "message": "Missing @author tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2335,
+            "message": "Missing @notice tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2348,
+            "message": "Missing @notice tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2348,
+            "message": "Missing @param tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2348,
+            "message": "Mismatch in @param names for function 'add512'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2348,
+            "message": "Missing @return tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2348,
+            "message": "Mismatch in @return names for function 'add512'. Expected: [high, low], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2349,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2360,
+            "message": "Missing @notice tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2360,
+            "message": "Missing @param tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2360,
+            "message": "Mismatch in @param names for function 'mul512'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2360,
+            "message": "Missing @return tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2360,
+            "message": "Mismatch in @return names for function 'mul512'. Expected: [high, low], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2364,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2374,
+            "message": "Missing @notice tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2374,
+            "message": "Missing @param tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2374,
+            "message": "Mismatch in @param names for function 'tryAdd'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2374,
+            "message": "Missing @return tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2374,
+            "message": "Mismatch in @return names for function 'tryAdd'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2377,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2385,
+            "message": "Missing @notice tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2385,
+            "message": "Missing @param tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2385,
+            "message": "Mismatch in @param names for function 'trySub'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2385,
+            "message": "Missing @return tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2385,
+            "message": "Mismatch in @return names for function 'trySub'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2388,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2396,
+            "message": "Missing @notice tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2396,
+            "message": "Missing @param tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2396,
+            "message": "Mismatch in @param names for function 'tryMul'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2396,
+            "message": "Missing @return tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2396,
+            "message": "Mismatch in @return names for function 'tryMul'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2399,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2412,
+            "message": "Missing @notice tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2412,
+            "message": "Missing @param tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2412,
+            "message": "Mismatch in @param names for function 'tryDiv'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2412,
+            "message": "Missing @return tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "level": "warning",
+            "line": 2412,
+            "message": "Mismatch in @return names for function 'tryDiv'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

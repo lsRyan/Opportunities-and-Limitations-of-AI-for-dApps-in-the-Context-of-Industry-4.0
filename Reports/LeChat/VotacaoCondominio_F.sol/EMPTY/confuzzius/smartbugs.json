@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": "'/sb/bin/do_solidity.sh' '/sb/VotacaoCondominio_F.sol' '3600' '/sb/bin' '0'",
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": null,
+        "image": "smartbugs/confuzzius:4315fb7",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmpui5nqvzy": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/LeChat/VotacaoCondominio_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 2.10463809967041,
+        "exit_code": 1,
+        "logs": "result.log",
+        "output": null,
+        "start": 1770759700.0416403
+    },
+    "runid": "20260210_2039",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": "'$BIN/do_solidity.sh' '$FILENAME' '$TIMEOUT' '$BIN' '$MAIN'",
+        "cpu_quota": null,
+        "entrypoint": null,
+        "id": "confuzzius",
+        "image": "smartbugs/confuzzius:4315fb7",
+        "info": "A data dependency-aware hybrid fuzzer for Ethereum smart contracts",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "ConFuzzius",
+        "origin": "https://github.com/christoftorres/ConFuzzius",
+        "output": "/root/results.json",
+        "parser": "parser.py",
+        "solc": true,
+        "version": "#4315fb7 v0.0.1"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "errors": [],
+    "fails": [
+        "DOCKER_TIMEOUT"
+    ],
+    "findings": [],
+    "infos": [
+        "Could not find the scope OracleInfo needed to resolve the call OracleInfo.pop",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.push",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

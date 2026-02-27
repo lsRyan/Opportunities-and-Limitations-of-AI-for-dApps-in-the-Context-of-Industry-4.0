@@ -1,0 +1,227 @@
+Extract contract Exchange from /sb/Wallet_F.sol
+Extract contract Oracle from /sb/Wallet_F.sol
+Extract contract Wallet from /sb/Wallet_F.sol
+Extracted 3 contract(s) from /sb/Wallet_F.sol
+[0;32m> Created "fuzzMe"[0m
+[0;32m> To fuzz contracts:[0m
+  chmod +x fuzzMe
+  ./fuzzMe
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Oracle.sol:499:9:
+    |
+499 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Oracle.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Oracle.sol:599:9:
+    |
+599 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Oracle.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Oracle.sol:695:9:
+    |
+695 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Oracle.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Oracle.sol:775:9:
+    |
+775 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Oracle.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Oracle.sol:784:9:
+    |
+784 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Oracle.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Oracle.sol:793:9:
+    |
+793 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Oracle.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Exchange.sol:499:9:
+    |
+499 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Exchange.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Exchange.sol:599:9:
+    |
+599 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Exchange.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Exchange.sol:695:9:
+    |
+695 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Exchange.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Exchange.sol:775:9:
+    |
+775 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Exchange.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Exchange.sol:784:9:
+    |
+784 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Exchange.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Exchange.sol:793:9:
+    |
+793 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Exchange.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Wallet.sol:499:9:
+    |
+499 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Wallet.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Wallet.sol:599:9:
+    |
+599 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Wallet.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Wallet.sol:695:9:
+    |
+695 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Wallet.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Wallet.sol:775:9:
+    |
+775 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Wallet.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Wallet.sol:784:9:
+    |
+784 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Wallet.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: This declaration has the same name as another declaration.
+   --> contracts/Wallet.sol:793:9:
+    |
+793 |         Exchange exchange = Exchange(exchangeContract);
+    |         ^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+   --> contracts/Wallet.sol:491:5:
+    |
+491 |     function exchange(
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/ReentrancyAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/NormalAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 7:    25 Aborted                 (core dumped) ./fuzzer --file contracts/Oracle.sol.json --name Oracle --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 8:    26 Aborted                 (core dumped) ./fuzzer --file contracts/Exchange.sol.json --name Exchange --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 9:    27 Aborted                 (core dumped) ./fuzzer --file contracts/Wallet.sol.json --name Wallet --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker

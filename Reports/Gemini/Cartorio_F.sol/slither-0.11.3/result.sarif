@@ -1,0 +1,2118 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) has bitwise-xor operator ^ instead of the exponentiation operator **: \n\t - inverse = (3 * denominator) ^ 2 (../sb/Cartorio_F.sol#2580)\n"
+                    },
+                    "ruleId": "slither_0_11_3_incorrect_exp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)\n\t- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2587)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function invMod"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2684,
+                                    "startLine": 2638
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.invMod(uint256,uint256) (../sb/Cartorio_F.sol#2638-2684) performs a multiplication on the result of a division:\n\t- quotient = gcd / remainder (../sb/Cartorio_F.sol#2660)\n\t- (gcd,remainder) = (remainder,gcd - remainder * quotient) (../sb/Cartorio_F.sol#2662-2669)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)\n\t- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2588)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)\n\t- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2589)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)\n\t- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2584)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)\n\t- inverse = (3 * denominator) ^ 2 (../sb/Cartorio_F.sol#2580)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- low = low / twos (../sb/Cartorio_F.sol#2568)\n\t- result = low * inverse (../sb/Cartorio_F.sol#2595)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)\n\t- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2585)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)\n\t- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2586)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract RealEstateNotary, function safeMint"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4758,
+                                    "startLine": 4745
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in RealEstateNotary.safeMint(address,string) (../sb/Cartorio_F.sol#4745-4758):\n\tExternal calls:\n\t- _safeMint(to,tokenId) (../sb/Cartorio_F.sol#4754)\n\t\t- ERC721Utils.checkOnERC721Received(_msgSender(),address(0),to,tokenId,data) (../sb/Cartorio_F.sol#3952)\n\t\t- retval = IERC721Receiver(to).onERC721Received(operator,from,tokenId,data) (../sb/Cartorio_F.sol#1077-1091)\n\tState variables written after the call(s):\n\t- _setTokenURI(tokenId,uri) (../sb/Cartorio_F.sol#4755)\n\t\t- $ = ERC721URIStorageStorageLocation (../sb/Cartorio_F.sol#4605)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_benign"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract RealEstateNotary, function safeMint"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4758,
+                                    "startLine": 4745
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in RealEstateNotary.safeMint(address,string) (../sb/Cartorio_F.sol#4745-4758):\n\tExternal calls:\n\t- _safeMint(to,tokenId) (../sb/Cartorio_F.sol#4754)\n\t\t- ERC721Utils.checkOnERC721Received(_msgSender(),address(0),to,tokenId,data) (../sb/Cartorio_F.sol#3952)\n\t\t- retval = IERC721Receiver(to).onERC721Received(operator,from,tokenId,data) (../sb/Cartorio_F.sol#1077-1091)\n\tEvent emitted after the call(s):\n\t- MetadataUpdate(tokenId) (../sb/Cartorio_F.sol#4647)\n\t\t- _setTokenURI(tokenId,uri) (../sb/Cartorio_F.sol#4755)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Panic, function panic"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2320,
+                                    "startLine": 2314
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Panic.panic(uint256) (../sb/Cartorio_F.sol#2314-2320) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2315-2319)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721URIStorageUpgradeable, function _getERC721URIStorageStorage"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4607,
+                                    "startLine": 4603
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721URIStorageUpgradeable._getERC721URIStorageStorage() (../sb/Cartorio_F.sol#4603-4607) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#4604-4606)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function add512"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2353,
+                                    "startLine": 2348
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.add512(uint256,uint256) (../sb/Cartorio_F.sol#2348-2353) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2349-2352)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function _unsafeReadBytesOffset"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3633,
+                                    "startLine": 3628
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings._unsafeReadBytesOffset(bytes,uint256) (../sb/Cartorio_F.sol#3628-3633) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#3630-3632)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract RealEstateNotary, function _getCartorioStorage"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4835,
+                                    "startLine": 4831
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "RealEstateNotary._getCartorioStorage() (../sb/Cartorio_F.sol#4831-4835) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#4832-4834)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2598,
+                                    "startLine": 2527
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2550-2557)\n\t- INLINE ASM (../sb/Cartorio_F.sol#2563-2572)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SafeCast, function toUint"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2259,
+                                    "startLine": 2255
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SafeCast.toUint(bool) (../sb/Cartorio_F.sol#2255-2259) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2256-2258)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Utils, function checkOnERC721Received"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1093,
+                                    "startLine": 1069
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Utils.checkOnERC721Received(address,address,address,uint256,bytes) (../sb/Cartorio_F.sol#1069-1093) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#1087-1089)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function _getERC721Storage"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3684,
+                                    "startLine": 3680
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Upgradeable._getERC721Storage() (../sb/Cartorio_F.sol#3680-3684) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#3681-3683)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Initializable, function _getInitializableStorage"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 243,
+                                    "startLine": 238
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Initializable._getInitializableStorage() (../sb/Cartorio_F.sol#238-243) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#240-242)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mul512"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2369,
+                                    "startLine": 2360
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mul512(uint256,uint256) (../sb/Cartorio_F.sol#2360-2369) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2364-2368)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryMod"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2433,
+                                    "startLine": 2425
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryMod(uint256,uint256) (../sb/Cartorio_F.sol#2425-2433) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2428-2431)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function _getERC721EnumerableStorage"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4197,
+                                    "startLine": 4193
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable._getERC721EnumerableStorage() (../sb/Cartorio_F.sol#4193-4197) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#4194-4196)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2420,
+                                    "startLine": 2412
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryDiv(uint256,uint256) (../sb/Cartorio_F.sol#2412-2420) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2415-2418)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function log2"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2974,
+                                    "startLine": 2935
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.log2(uint256) (../sb/Cartorio_F.sol#2935-2974) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2971-2973)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryMul"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2407,
+                                    "startLine": 2396
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryMul(uint256,uint256) (../sb/Cartorio_F.sol#2396-2407) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2399-2403)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function toChecksumHexString"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3273,
+                                    "startLine": 3255
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings.toChecksumHexString(address) (../sb/Cartorio_F.sol#3255-3273) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#3260-3262)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function escapeJSON"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3620,
+                                    "startLine": 3590
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings.escapeJSON(string) (../sb/Cartorio_F.sol#3590-3620) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#3614-3617)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryModExp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2794,
+                                    "startLine": 2772
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryModExp(bytes,bytes,bytes) (../sb/Cartorio_F.sol#2772-2794) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2784-2793)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryModExp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2756,
+                                    "startLine": 2732
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryModExp(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2732-2756) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#2734-2755)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PausableUpgradeable, function _getPausableStorage"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4384,
+                                    "startLine": 4380
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PausableUpgradeable._getPausableStorage() (../sb/Cartorio_F.sol#4380-4384) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#4381-4383)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Strings, function toString"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3207,
+                                    "startLine": 3189
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Strings.toString(uint256) (../sb/Cartorio_F.sol#3189-3207) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#3194-3196)\n\t- INLINE ASM (../sb/Cartorio_F.sol#3199-3201)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract AccessControlUpgradeable, function _getAccessControlStorage"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 519,
+                                    "startLine": 515
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "AccessControlUpgradeable._getAccessControlStorage() (../sb/Cartorio_F.sol#515-519) uses assembly\n\t- INLINE ASM (../sb/Cartorio_F.sol#516-518)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 10
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "5 different versions of Solidity are used:\n\t- Version constraint ^0.8.20 is used by:\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#10)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#252)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#318)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#453)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#1050)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#1103)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#2268)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#2329)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#3080)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#3150)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#3642)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#4103)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#4168)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#4359)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#4494)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#4577)\n\t\t-^0.8.20 (../sb/Cartorio_F.sol#4655)\n\t- Version constraint >=0.4.16 is used by:\n\t\t->=0.4.16 (../sb/Cartorio_F.sol#289)\n\t\t->=0.4.16 (../sb/Cartorio_F.sol#4539)\n\t- Version constraint >=0.8.4 is used by:\n\t\t->=0.8.4 (../sb/Cartorio_F.sol#351)\n\t\t->=0.8.4 (../sb/Cartorio_F.sol#686)\n\t- Version constraint >=0.6.2 is used by:\n\t\t->=0.6.2 (../sb/Cartorio_F.sol#852)\n\t\t->=0.6.2 (../sb/Cartorio_F.sol#989)\n\t\t->=0.6.2 (../sb/Cartorio_F.sol#4137)\n\t\t->=0.6.2 (../sb/Cartorio_F.sol#4547)\n\t\t->=0.6.2 (../sb/Cartorio_F.sol#4555)\n\t- Version constraint >=0.5.0 is used by:\n\t\t->=0.5.0 (../sb/Cartorio_F.sol#1018)\n"
+                    },
+                    "ruleId": "slither_0_11_3_pragma"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ContextUpgradeable, function _msgData"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 276,
+                                    "startLine": 274
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ContextUpgradeable._msgData() (../sb/Cartorio_F.sol#274-276) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function _burn"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3971,
+                                    "startLine": 3966
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Upgradeable._burn(uint256) (../sb/Cartorio_F.sol#3966-3971) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ContextUpgradeable, function _contextSuffixLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 280,
+                                    "startLine": 278
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ContextUpgradeable._contextSuffixLength() (../sb/Cartorio_F.sol#278-280) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function _addTokenToOwnerEnumeration"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4273,
+                                    "startLine": 4268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable._addTokenToOwnerEnumeration(address,uint256) (../sb/Cartorio_F.sol#4268-4273) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function _removeTokenFromOwnerEnumeration"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4314,
+                                    "startLine": 4293
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable._removeTokenFromOwnerEnumeration(address,uint256) (../sb/Cartorio_F.sol#4293-4314) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ContextUpgradeable, function __Context_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 269,
+                                    "startLine": 268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ContextUpgradeable.__Context_init_unchained() (../sb/Cartorio_F.sol#268-269) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function _safeTransfer"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4026,
+                                    "startLine": 4023
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Upgradeable._safeTransfer(address,address,uint256,bytes) (../sb/Cartorio_F.sol#4023-4026) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC165Upgradeable, function __ERC165_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 338,
+                                    "startLine": 337
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC165Upgradeable.__ERC165_init_unchained() (../sb/Cartorio_F.sol#337-338) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721BurnableUpgradeable, function __ERC721Burnable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4116,
+                                    "startLine": 4115
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721BurnableUpgradeable.__ERC721Burnable_init_unchained() (../sb/Cartorio_F.sol#4115-4116) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721PausableUpgradeable, function __ERC721Pausable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4516,
+                                    "startLine": 4515
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721PausableUpgradeable.__ERC721Pausable_init_unchained() (../sb/Cartorio_F.sol#4515-4516) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function __ERC721Enumerable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4215,
+                                    "startLine": 4214
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable.__ERC721Enumerable_init_unchained() (../sb/Cartorio_F.sol#4214-4215) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PausableUpgradeable, function __Pausable_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4431,
+                                    "startLine": 4430
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PausableUpgradeable.__Pausable_init() (../sb/Cartorio_F.sol#4430-4431) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function _increaseBalance"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4350,
+                                    "startLine": 4345
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#4345-4350) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function _baseURI"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3748,
+                                    "startLine": 3746
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Upgradeable._baseURI() (../sb/Cartorio_F.sol#3746-3748) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function _transfer"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3994,
+                                    "startLine": 3984
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Upgradeable._transfer(address,address,uint256) (../sb/Cartorio_F.sol#3984-3994) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract AccessControlUpgradeable, function _setRoleAdmin"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 642,
+                                    "startLine": 637
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "AccessControlUpgradeable._setRoleAdmin(bytes32,bytes32) (../sb/Cartorio_F.sol#637-642) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC165Upgradeable, function __ERC165_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 335,
+                                    "startLine": 334
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC165Upgradeable.__ERC165_init() (../sb/Cartorio_F.sol#334-335) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function _removeTokenFromAllTokensEnumeration"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4340,
+                                    "startLine": 4321
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable._removeTokenFromAllTokensEnumeration(uint256) (../sb/Cartorio_F.sol#4321-4340) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function _addTokenToAllTokensEnumeration"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4283,
+                                    "startLine": 4279
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable._addTokenToAllTokensEnumeration(uint256) (../sb/Cartorio_F.sol#4279-4283) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721URIStorageUpgradeable, function __ERC721URIStorage_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4613,
+                                    "startLine": 4612
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721URIStorageUpgradeable.__ERC721URIStorage_init_unchained() (../sb/Cartorio_F.sol#4612-4613) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function _update"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4261,
+                                    "startLine": 4246
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721EnumerableUpgradeable._update(address,uint256,address) (../sb/Cartorio_F.sol#4246-4261) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function _increaseBalance"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3865,
+                                    "startLine": 3860
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Upgradeable._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#3860-3865) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract AccessControlUpgradeable, function __AccessControl_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 534,
+                                    "startLine": 533
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "AccessControlUpgradeable.__AccessControl_init_unchained() (../sb/Cartorio_F.sol#533-534) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Initializable, function _getInitializedVersion"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 216,
+                                    "startLine": 214
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Initializable._getInitializedVersion() (../sb/Cartorio_F.sol#214-216) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function _safeTransfer"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4017,
+                                    "startLine": 4015
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC721Upgradeable._safeTransfer(address,address,uint256) (../sb/Cartorio_F.sol#4015-4017) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract RealEstateNotary, function _increaseBalance"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4860,
+                                    "startLine": 4854
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "RealEstateNotary._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#4854-4860) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PausableUpgradeable, function __Pausable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4434,
+                                    "startLine": 4433
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PausableUpgradeable.__Pausable_init_unchained() (../sb/Cartorio_F.sol#4433-4434) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ContextUpgradeable, function __Context_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 266,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ContextUpgradeable.__Context_init() (../sb/Cartorio_F.sol#265-266) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 1018
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.5.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- DirtyBytesArrayToStorage\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching\n\t- EmptyByteArrayCopy\n\t- DynamicArrayCleanup\n\t- ImplicitConstructorCallvalueCheck\n\t- TupleAssignmentMultiStackSlotComponents\n\t- MemoryArrayCreationOverflow\n\t- privateCanBeOverridden\n\t- SignedArrayStorageCopy\n\t- ABIEncoderV2StorageArrayWithMultiSlotElement\n\t- DynamicConstructorArgumentsClippedABIV2\n\t- UninitializedFunctionPointerInConstructor\n\t- IncorrectEventSignatureInLibraries\n\t- ABIEncoderV2PackedStorage.\nIt is used by:\n\t- >=0.5.0 (../sb/Cartorio_F.sol#1018)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 10
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/Cartorio_F.sol#10)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#252)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#318)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#453)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#1050)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#1103)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#2268)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#2329)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#3080)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#3150)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#3642)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#4103)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#4168)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#4359)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#4494)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#4577)\n\t- ^0.8.20 (../sb/Cartorio_F.sol#4655)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 289
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.4.16 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- DirtyBytesArrayToStorage\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching\n\t- EmptyByteArrayCopy\n\t- DynamicArrayCleanup\n\t- ImplicitConstructorCallvalueCheck\n\t- TupleAssignmentMultiStackSlotComponents\n\t- MemoryArrayCreationOverflow\n\t- privateCanBeOverridden\n\t- SignedArrayStorageCopy\n\t- ABIEncoderV2StorageArrayWithMultiSlotElement\n\t- DynamicConstructorArgumentsClippedABIV2\n\t- UninitializedFunctionPointerInConstructor_0.4.x\n\t- IncorrectEventSignatureInLibraries_0.4.x\n\t- ExpExponentCleanup\n\t- NestedArrayFunctionCallDecoder\n\t- ZeroFunctionSelector.\nIt is used by:\n\t- >=0.4.16 (../sb/Cartorio_F.sol#289)\n\t- >=0.4.16 (../sb/Cartorio_F.sol#4539)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 351
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables.\nIt is used by:\n\t- >=0.8.4 (../sb/Cartorio_F.sol#351)\n\t- >=0.8.4 (../sb/Cartorio_F.sol#686)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 852
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.6.2 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching\n\t- EmptyByteArrayCopy\n\t- DynamicArrayCleanup\n\t- MissingEscapingInFormatting\n\t- ArraySliceDynamicallyEncodedBaseType\n\t- ImplicitConstructorCallvalueCheck\n\t- TupleAssignmentMultiStackSlotComponents\n\t- MemoryArrayCreationOverflow.\nIt is used by:\n\t- >=0.6.2 (../sb/Cartorio_F.sol#852)\n\t- >=0.6.2 (../sb/Cartorio_F.sol#989)\n\t- >=0.6.2 (../sb/Cartorio_F.sol#4137)\n\t- >=0.6.2 (../sb/Cartorio_F.sol#4547)\n\t- >=0.6.2 (../sb/Cartorio_F.sol#4555)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4769
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Parameter RealEstateNotary.requestChange(uint256,string)._tokenId (../sb/Cartorio_F.sol#4769) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 513
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Constant AccessControlUpgradeable.AccessControlStorageLocation (../sb/Cartorio_F.sol#513) is not in UPPER_CASE_WITH_UNDERSCORES\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721URIStorageUpgradeable, function __ERC721URIStorage_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4613,
+                                    "startLine": 4612
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721URIStorageUpgradeable.__ERC721URIStorage_init_unchained() (../sb/Cartorio_F.sol#4612-4613) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract AccessControlUpgradeable, function __AccessControl_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 534,
+                                    "startLine": 533
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function AccessControlUpgradeable.__AccessControl_init_unchained() (../sb/Cartorio_F.sol#533-534) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4191
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Constant ERC721EnumerableUpgradeable.ERC721EnumerableStorageLocation (../sb/Cartorio_F.sol#4191) is not in UPPER_CASE_WITH_UNDERSCORES\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721BurnableUpgradeable, function __ERC721Burnable_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4113,
+                                    "startLine": 4112
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721BurnableUpgradeable.__ERC721Burnable_init() (../sb/Cartorio_F.sol#4112-4113) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721BurnableUpgradeable, function __ERC721Burnable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4116,
+                                    "startLine": 4115
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721BurnableUpgradeable.__ERC721Burnable_init_unchained() (../sb/Cartorio_F.sol#4115-4116) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function __ERC721_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3697,
+                                    "startLine": 3693
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721Upgradeable.__ERC721_init_unchained(string,string) (../sb/Cartorio_F.sol#3693-3697) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721PausableUpgradeable, function __ERC721Pausable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4516,
+                                    "startLine": 4515
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721PausableUpgradeable.__ERC721Pausable_init_unchained() (../sb/Cartorio_F.sol#4515-4516) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721PausableUpgradeable, function __ERC721Pausable_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4513,
+                                    "startLine": 4512
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721PausableUpgradeable.__ERC721Pausable_init() (../sb/Cartorio_F.sol#4512-4513) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC165Upgradeable, function __ERC165_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 338,
+                                    "startLine": 337
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC165Upgradeable.__ERC165_init_unchained() (../sb/Cartorio_F.sol#337-338) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ContextUpgradeable, function __Context_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 269,
+                                    "startLine": 268
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ContextUpgradeable.__Context_init_unchained() (../sb/Cartorio_F.sol#268-269) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract AccessControlUpgradeable, function __AccessControl_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 531,
+                                    "startLine": 530
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function AccessControlUpgradeable.__AccessControl_init() (../sb/Cartorio_F.sol#530-531) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721URIStorageUpgradeable, function __ERC721URIStorage_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4610,
+                                    "startLine": 4609
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721URIStorageUpgradeable.__ERC721URIStorage_init() (../sb/Cartorio_F.sol#4609-4610) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3678
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Constant ERC721Upgradeable.ERC721StorageLocation (../sb/Cartorio_F.sol#3678) is not in UPPER_CASE_WITH_UNDERSCORES\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4601
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Constant ERC721URIStorageUpgradeable.ERC721URIStorageStorageLocation (../sb/Cartorio_F.sol#4601) is not in UPPER_CASE_WITH_UNDERSCORES\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4769
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Parameter RealEstateNotary.requestChange(uint256,string)._newUri (../sb/Cartorio_F.sol#4769) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function __ERC721Enumerable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4215,
+                                    "startLine": 4214
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721EnumerableUpgradeable.__ERC721Enumerable_init_unchained() (../sb/Cartorio_F.sol#4214-4215) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PausableUpgradeable, function __Pausable_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4431,
+                                    "startLine": 4430
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function PausableUpgradeable.__Pausable_init() (../sb/Cartorio_F.sol#4430-4431) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ContextUpgradeable, function __Context_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 266,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ContextUpgradeable.__Context_init() (../sb/Cartorio_F.sol#265-266) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC165Upgradeable, function __ERC165_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 335,
+                                    "startLine": 334
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC165Upgradeable.__ERC165_init() (../sb/Cartorio_F.sol#334-335) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4378
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Constant PausableUpgradeable.PausableStorageLocation (../sb/Cartorio_F.sol#4378) is not in UPPER_CASE_WITH_UNDERSCORES\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PausableUpgradeable, function __Pausable_init_unchained"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4434,
+                                    "startLine": 4433
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function PausableUpgradeable.__Pausable_init_unchained() (../sb/Cartorio_F.sol#4433-4434) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721Upgradeable, function __ERC721_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3691,
+                                    "startLine": 3689
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721Upgradeable.__ERC721_init(string,string) (../sb/Cartorio_F.sol#3689-3691) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC721EnumerableUpgradeable, function __ERC721Enumerable_init"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4212,
+                                    "startLine": 4211
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function ERC721EnumerableUpgradeable.__ERC721Enumerable_init() (../sb/Cartorio_F.sol#4211-4212) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function log2"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Cartorio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2974,
+                                    "startLine": 2935
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.log2(uint256) (../sb/Cartorio_F.sol#2935-2974) uses literals with too many digits:\n\t- r = r | byte(uint256,uint256)(x >> r,0x0000010102020202030303030303030300000000000000000000000000000000) (../sb/Cartorio_F.sol#2972)\n"
+                    },
+                    "ruleId": "slither_0_11_3_too_many_digits"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-107, DASP-1."
+                            },
+                            "id": "slither_0_11_3_reentrancy_benign",
+                            "name": "reentrancy-benign",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_divide_before_multiply",
+                            "name": "divide-before-multiply",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-102."
+                            },
+                            "id": "slither_0_11_3_solc_version",
+                            "name": "solc-version"
+                        },
+                        {
+                            "id": "slither_0_11_3_too_many_digits",
+                            "name": "too-many-digits"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-103."
+                            },
+                            "id": "slither_0_11_3_pragma",
+                            "name": "pragma"
+                        },
+                        {
+                            "id": "slither_0_11_3_incorrect_exp",
+                            "name": "incorrect-exp",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_naming_convention",
+                            "name": "naming-convention"
+                        },
+                        {
+                            "id": "slither_0_11_3_assembly",
+                            "name": "assembly"
+                        },
+                        {
+                            "id": "slither_0_11_3_dead_code",
+                            "name": "dead-code"
+                        },
+                        {
+                            "id": "slither_0_11_3_reentrancy_events",
+                            "name": "reentrancy-events",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

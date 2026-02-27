@@ -1,0 +1,32 @@
+{
+    "errors": [],
+    "fails": [
+        "DOCKER_TIMEOUT"
+    ],
+    "findings": [],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._increaseBalance",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC721Received",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log10",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log256",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.tokenURI",
+        "Could not find the scope bool needed to resolve the call bool.toUint",
+        "Could not find the scope uint256 needed to resolve the call uint256.pop",
+        "Could not find the scope uint256 needed to resolve the call uint256.push",
+        "Could not find the scope uint256 needed to resolve the call uint256.toString",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

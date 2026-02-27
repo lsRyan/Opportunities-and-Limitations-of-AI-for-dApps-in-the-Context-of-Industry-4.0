@@ -1,0 +1,51 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:root:contract /sb/Consorcio_F.sol:FinancialPoolManager:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 28.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Consorcio_F.sol:54:9: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:234:19: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+/sb/Consorcio_F.sol:64:27: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+/sb/Consorcio_F.sol:47:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Consorcio_F.sol:295:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+/sb/Consorcio_F.sol:59:52: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+/sb/Consorcio_F.sol:64:7: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+/sb/Consorcio_F.sol:183:53: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+/sb/Consorcio_F.sol:183:43: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+/sb/Consorcio_F.sol:183:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+INFO:symExec:/sb/Consorcio_F.sol:264:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======

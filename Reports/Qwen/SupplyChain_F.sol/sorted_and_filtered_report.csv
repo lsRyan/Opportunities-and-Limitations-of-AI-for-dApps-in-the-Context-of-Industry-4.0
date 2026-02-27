@@ -1,0 +1,284 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3943,3943,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3943,3943,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3948,3948,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Prescriptions'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3948,3948,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Prescriptions'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3950,3950,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'managerContract'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3950,3950,slither_0_11_3_immutable_states,immutable-states,"Prescriptions.managerContract (../sb/SupplyChain_F.sol#3950) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3955,3955,solhint_6_0_0_gas_struct_packing,gas-struct-packing,"GC: For [ Prescription ] struct, packing seems inefficient. Try rearranging to achieve 32bytes slots"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3957,3957,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3972,3972,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3978,3978,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3978,3978,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3978,3978,slither_0_11_3_missing_zero_check,missing-zero-check,"Prescriptions.constructor(address).managerAddress (../sb/SupplyChain_F.sol#3978) lacks a zero-check on :
+		- managerContract = managerAddress (../sb/SupplyChain_F.sol#3979)
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3978,3978,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3978,3978,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3979,3979,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3980,3980,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3990,4012,slither_0_11_3_naming_convention,naming-convention,"Function Prescriptions._prescribe(address,address,string,uint256) (../sb/SupplyChain_F.sol#3990-4012) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3990,3990,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_prescribe'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3993,3993,slither_0_11_3_naming_convention,naming-convention,"Parameter Prescriptions._prescribe(address,address,string,uint256)._medicine (../sb/SupplyChain_F.sol#3993) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3994,3994,slither_0_11_3_naming_convention,naming-convention,"Parameter Prescriptions._prescribe(address,address,string,uint256)._dose (../sb/SupplyChain_F.sol#3994) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3996,3996,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3996,3996,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3996,3996,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3996,3996,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 44 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,3996,3996,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4008,4008,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ patients ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4008,4008,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4020,4028,slither_0_11_3_naming_convention,naming-convention,"Function Prescriptions._getPrescription(address,uint256) (../sb/SupplyChain_F.sol#4020-4028) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4020,4020,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_getPrescription'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4024,4024,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 44 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4024,4024,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4024,4024,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4024,4024,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4024,4024,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4025,4025,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4025,4025,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4025,4025,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4025,4025,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4035,4035,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'usePrescription'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4036,4036,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4036,4036,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4036,4036,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4036,4036,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 44 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4036,4036,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4037,4037,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4037,4037,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4037,4037,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4037,4037,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4047,4047,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'AuthorizationCertificates'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4047,4047,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'AuthorizationCertificates'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4048,4048,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'admin'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4057,4057,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4057,4057,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4057,4057,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4057,4057,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4058,4058,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4059,4059,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4065,4065,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'authorizeHospital'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4066,4066,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4066,4066,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4066,4066,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4066,4066,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4066,4066,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4074,4074,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'unauthorizeHospital'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4075,4075,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4075,4075,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 36 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4075,4075,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4075,4075,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4075,4075,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4083,4083,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'authorizeManufacturer'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4084,4084,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4084,4084,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4084,4084,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4084,4084,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 38 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4084,4084,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4092,4092,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'unauthorizeManufacturer'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4093,4093,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4093,4093,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 40 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4093,4093,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4093,4093,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4093,4093,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4102,4102,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isAuthorizedHospital'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4111,4111,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isAuthorizedManufacturer'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4117,4117,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4119,4119,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'changeAdmin'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4119,4119,slither_0_11_3_missing_zero_check,missing-zero-check,"AuthorizationCertificates.changeAdmin(address).newAdmin (../sb/SupplyChain_F.sol#4119) lacks a zero-check on :
+		- admin = newAdmin (../sb/SupplyChain_F.sol#4121)
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4120,4120,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4120,4120,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4129,4129,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4129,4129,semgrep_1_131_0_1_2_1_use_ownable2step,use-ownable2step,"By demanding that the receiver of the owner permissions actively accept via a contract call of its own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally being transferred  to an address that cannot handle it."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4129,4129,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'PharmaCompany'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4129,4129,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'PharmaCompany'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4129,4232,slither_0_11_3_locked_ether,locked-ether,"Contract locking ether found:
+	Contract PharmaCompany (../sb/SupplyChain_F.sol#4129-4232) has payable functions:
+	 - PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4196-4221)
+	But does not have a function to withdraw the ether
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4131,4131,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'medicines'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4132,4132,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'prices'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4133,4133,slither_0_11_3_immutable_states,immutable-states,"PharmaCompany.govAuthorizationContract (../sb/SupplyChain_F.sol#4133) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4133,4133,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'govAuthorizationContract'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4139,4139,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4139,4139,slither_0_11_3_missing_zero_check,missing-zero-check,"PharmaCompany.constructor(address)._govAuthorizationContract (../sb/SupplyChain_F.sol#4139) lacks a zero-check on :
+		- govAuthorizationContract = _govAuthorizationContract (../sb/SupplyChain_F.sol#4143)
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4139,4139,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4139,4139,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4139,4139,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4140,4140,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4141,4141,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4142,4142,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4143,4143,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4144,4144,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4153,4153,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'mint'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4159,4159,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4159,4159,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4172,4172,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'mintBatch'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4178,4178,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4178,4178,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4178,4178,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4180,4180,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4180,4180,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4180,4180,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4180,4180,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4180,4180,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4180,4180,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4181,4181,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4181,4181,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4182,4182,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4196,4196,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'buyMedicine'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4196,4221,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4196-4221):
+	External calls:
+	- saleAuthorized = PharmaHospital(hospital).authorizeSale(prescriptionId,to,medicineName,amount) (../sb/SupplyChain_F.sol#4216)
+	- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)
+		- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)
+		- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)
+		- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)
+		- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)
+	Event emitted after the call(s):
+	- TransferBatch(operator,from,to,ids,values) (../sb/SupplyChain_F.sol#3686)
+		- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)
+	- TransferSingle(operator,from,to,id_scope_0,value_scope_1) (../sb/SupplyChain_F.sol#3684)
+		- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4196,4221,slither_0_11_3_reentrancy_no_eth,reentrancy-no-eth,"Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4196-4221):
+	External calls:
+	- saleAuthorized = PharmaHospital(hospital).authorizeSale(prescriptionId,to,medicineName,amount) (../sb/SupplyChain_F.sol#4216)
+	- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)
+		- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)
+		- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)
+		- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)
+		- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)
+	State variables written after the call(s):
+	- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)
+		- _balances[id][from] = fromBalance - value (../sb/SupplyChain_F.sol#3672)
+		- _balances[id][to] += value (../sb/SupplyChain_F.sol#3677)
+	ERC1155._balances (../sb/SupplyChain_F.sol#3541) can be used in cross function reentrancies:
+	- ERC1155._update(address,address,uint256[],uint256[]) (../sb/SupplyChain_F.sol#3654-3688)
+	- ERC1155.balanceOf(address,uint256) (../sb/SupplyChain_F.sol#3578-3580)
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4196,4196,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [medicineName] argument on Function [buyMedicine] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4205,4205,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4205,4205,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4209,4209,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4209,4209,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4209,4209,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4213,4213,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4213,4213,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4217,4217,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4217,4217,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4228,4228,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updatePrice'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4229,4229,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4229,4229,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4238,4238,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'PharmaHospital'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4238,4238,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'PharmaHospital'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4240,4240,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'admins'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4242,4242,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'doctors'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4244,4244,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'prescriptionsContract'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4245,4245,slither_0_11_3_immutable_states,immutable-states,"PharmaHospital.govAuthorizationContract (../sb/SupplyChain_F.sol#4245) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4245,4245,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'govAuthorizationContract'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4248,4248,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4250,4250,solhint_6_0_0_gas_struct_packing,gas-struct-packing,"GC: For [ Prescription ] struct, packing seems inefficient. Try rearranging to achieve 32bytes slots"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4262,4262,slither_0_11_3_missing_zero_check,missing-zero-check,"PharmaHospital.constructor(address)._govAuthorizationContract (../sb/SupplyChain_F.sol#4262) lacks a zero-check on :
+		- govAuthorizationContract = _govAuthorizationContract (../sb/SupplyChain_F.sol#4265)
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4262,4262,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4262,4262,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4262,4262,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4262,4262,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4263,4263,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4264,4264,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4265,4265,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4266,4266,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4272,4272,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addAdmin'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4273,4273,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 39 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4273,4273,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4273,4273,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4273,4273,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4273,4273,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4274,4274,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4274,4274,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4277,4277,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ adminsCount ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4277,4277,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4284,4284,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeAdmin'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4285,4285,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4285,4285,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4285,4285,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 44 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4285,4285,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4285,4285,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4286,4286,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4286,4286,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4287,4287,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4287,4287,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4290,4290,semgrep_1_131_0_1_2_1_use_prefix_decrement_not_postfix,use-prefix-decrement-not-postfix,Consider using the prefix decrement expression whenever the return value is not needed. The prefix decrement expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4290,4290,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ adminsCount ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4297,4297,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addDoctor'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4298,4298,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4298,4298,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4306,4306,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeDoctor'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4307,4307,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4307,4307,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4318,4318,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [medicine] argument on Function [prescribe] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4318,4318,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'prescribe'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4323,4323,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4323,4323,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4323,4323,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4323,4323,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 35 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4323,4323,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4341,4341,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getPrescription'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4346,4346,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4346,4346,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4346,4346,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4346,4346,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 47 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4346,4346,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4347,4347,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4347,4347,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4348,4348,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4348,4348,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4349,4349,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4349,4349,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4374,4374,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'authorizeSale'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4374,4374,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [medicine] argument on Function [authorizeSale] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4383,4383,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 52 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4383,4383,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4383,4383,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4383,4383,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4383,4383,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4392,4392,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4393,4393,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4394,4394,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4395,4395,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4396,4396,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4397,4397,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4398,4398,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4399,4399,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4400,4400,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4401,4401,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4409,4409,slither_0_11_3_missing_zero_check,missing-zero-check,"PharmaHospital.setPrescriptionContract(address).newPrescriptionContract (../sb/SupplyChain_F.sol#4409) lacks a zero-check on :
+		- prescriptionsContract = newPrescriptionContract (../sb/SupplyChain_F.sol#4411)
+"
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4409,4409,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'setPrescriptionContract'
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4410,4410,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol,4410,4410,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.

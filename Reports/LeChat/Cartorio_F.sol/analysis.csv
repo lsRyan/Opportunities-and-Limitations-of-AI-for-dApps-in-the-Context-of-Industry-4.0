@@ -1,0 +1,15 @@
+name,count
+use-custom-error-not-require,5
+naming-convention,2
+reentrancy-benign,1
+reentrancy-events,1
+assembly,1
+dead-code,1
+solc-version,1
+Integer Underflow,1
+SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,1
+SOLIDITY_SHOULD_NOT_BE_PURE,1
+SOLIDITY_USING_INLINE_ASSEMBLY,1
+use-prefix-increment-not-postfix,1

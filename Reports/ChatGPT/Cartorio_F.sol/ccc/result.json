@@ -1,0 +1,79 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": "9",
+            "column_end": "11",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": "3495",
+            "line_end": "3504",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "11",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": "2800",
+            "line_end": "2804",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "11",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": "3233",
+            "line_end": "3236",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "11",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": "3595",
+            "line_end": "3612",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "11",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": "3343",
+            "line_end": "3348",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "13",
+            "column_end": "16",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": "2659",
+            "line_end": "2679",
+            "name": "Operation may lead to a denial of essential contract function."
+        }
+    ],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._increaseBalance",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC721Received",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log10",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log256",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.tokenURI",
+        "Could not find the scope bool needed to resolve the call bool.toUint",
+        "Could not find the scope uint256 needed to resolve the call uint256.pop",
+        "Could not find the scope uint256 needed to resolve the call uint256.push",
+        "Could not find the scope uint256 needed to resolve the call uint256.toString",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

@@ -1,0 +1,533 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,263,386,slither_0_11_3_locked_ether,locked-ether,"Contract locking ether found:
+	Contract Exchange (../sb/Wallet_F.sol#263-386) has payable functions:
+	 - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#312-344)
+	But does not have a function to withdraw the ether
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,715,718,slither_0_11_3_unused_return,unused-return,"Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#715-718) ignores return value by oracle.readRate(symbol) (../sb/Wallet_F.sol#717)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,726,729,slither_0_11_3_unused_return,unused-return,"Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#726-729) ignores return value by oracle.requestRate(symbol) (../sb/Wallet_F.sol#728)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,695,695,slither_0_11_3_shadowing_local,shadowing-local,"Wallet.getExchangeAvailability(string).exchange (../sb/Wallet_F.sol#695) shadows:
+	- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,784,784,slither_0_11_3_shadowing_local,shadowing-local,"Wallet.addCurrency(string).exchange (../sb/Wallet_F.sol#784) shadows:
+	- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,793,793,slither_0_11_3_shadowing_local,shadowing-local,"Wallet.removeCurrency(string).exchange (../sb/Wallet_F.sol#793) shadows:
+	- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,775,775,slither_0_11_3_shadowing_local,shadowing-local,"Wallet.updateBridge(string).exchange (../sb/Wallet_F.sol#775) shadows:
+	- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,499,499,slither_0_11_3_shadowing_local,shadowing-local,"Wallet.exchange(string,address,uint256).exchange (../sb/Wallet_F.sol#499) shadows:
+	- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,599,599,slither_0_11_3_shadowing_local,shadowing-local,"Wallet.exchangeAUTH(string,address,address,uint256).exchange (../sb/Wallet_F.sol#599) shadows:
+	- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,829,832,slither_0_11_3_events_maths,events-maths,"Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#829-832) should emit an event for: 
+	- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#831) 
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,821,823,slither_0_11_3_events_maths,events-maths,"Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#821-823) should emit an event for: 
+	- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#822) 
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,300,300,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#300) lacks a zero-check on :
+		- oracleContract = _oracleContract (../sb/Wallet_F.sol#302)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,88,88,slither_0_11_3_missing_zero_check,missing-zero-check,"Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#88) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#89)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,563,563,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.externalTransferAUTH(uint256,address,address).to (../sb/Wallet_F.sol#563) lacks a zero-check on :
+		- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#573)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,473,473,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#473) lacks a zero-check on :
+		- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#477)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,812,812,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#812) lacks a zero-check on :
+		- exchangeContract = newExchange (../sb/Wallet_F.sol#813)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,300,300,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#300) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#301)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,803,803,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#803) lacks a zero-check on :
+		- oracleContract = newOracle (../sb/Wallet_F.sol#804)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,491,518,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518):
+	External calls:
+	- exchange.exchange{value: exchangeAmount}(msg.sender,targetCurrency,targetAddress,maximumRateDelay) (../sb/Wallet_F.sol#510-515)
+	Event emitted after the call(s):
+	- Exchanged(msg.sender,targetCurrency,amount) (../sb/Wallet_F.sol#517)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,625,640,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.withdrawAUTH(address,uint256) (../sb/Wallet_F.sol#625-640):
+	External calls:
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#636)
+	Event emitted after the call(s):
+	- Withdrawn(from,amount) (../sb/Wallet_F.sol#639)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,586,618,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.exchangeAUTH(string,address,address,uint256) (../sb/Wallet_F.sol#586-618):
+	External calls:
+	- exchange.exchange{value: exchangeAmount}(from,targetCurrency,targetAddress,maximumRateDelay) (../sb/Wallet_F.sol#610-615)
+	Event emitted after the call(s):
+	- Exchanged(from,targetCurrency,amount) (../sb/Wallet_F.sol#617)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,473,481,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#473-481):
+	External calls:
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#477)
+	Event emitted after the call(s):
+	- Transferred(msg.sender,to,amount) (../sb/Wallet_F.sol#480)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,563,577,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#563-577):
+	External calls:
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#573)
+	Event emitted after the call(s):
+	- Transferred(from,to,amount) (../sb/Wallet_F.sol#576)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,524,532,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.withdraw(uint256) (../sb/Wallet_F.sol#524-532):
+	External calls:
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#528)
+	Event emitted after the call(s):
+	- Withdrawn(msg.sender,amount) (../sb/Wallet_F.sol#531)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,312,344,slither_0_11_3_timestamp,timestamp,"Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#312-344) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(block.timestamp - exchangeRateTime <= maximumRateDelay,Exchange: Rate too old, request new rate) (../sb/Wallet_F.sol#329-332)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,127,165,slither_0_11_3_timestamp,timestamp,"Oracle.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#127-165) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(requests[id].active,Oracle: Request not active) (../sb/Wallet_F.sol#129)
+	- require(bool,string)(! requests[id].answers[msg.sender],Oracle: Already answered) (../sb/Wallet_F.sol#143)
+	- requests[id].requestTime < exchangeRateTime[symbol] (../sb/Wallet_F.sol#146)
+	- (requests[id].answersCount * 100) / oracleList.length >= minimumQuorum (../sb/Wallet_F.sol#158)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,625,640,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.withdrawAUTH(address,uint256) (../sb/Wallet_F.sol#625-640):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#636)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,473,481,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#473-481):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#477)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,524,532,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.withdraw(uint256) (../sb/Wallet_F.sol#524-532):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#528)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,563,577,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#563-577):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#573)
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,359,362,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#359-362) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,368,371,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#368-371) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,350,353,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#350-353) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,210,229,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#210-229) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,235,241,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#235-241) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,190,203,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#190-203) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,279,279,slither_0_11_3_immutable_states,immutable-states,"Exchange.authorizedWallet (../sb/Wallet_F.sol#279) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,280,280,slither_0_11_3_immutable_states,immutable-states,"Exchange.oracleContract (../sb/Wallet_F.sol#280) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,63,63,slither_0_11_3_immutable_states,immutable-states,"Oracle.authorizedWallet (../sb/Wallet_F.sol#63) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,282,282,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,52,52,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,129,129,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,128,128,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,477,477,oyente_060ca34_Callstack_Depth_Attack_Vulnerability,Callstack Depth Attack Vulnerability,Callstack Depth Attack Vulnerability
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,30,30,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,847,847,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,8,8,solhint_6_0_0_one_contract_per_file,one-contract-per-file,Found more than One contract per file. 3 contracts found!
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,15,15,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,33,33,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RateRequested'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,33,33,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RateRequested'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,33,33,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RateRequested'. Expected: [requestId, url, symbol], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,39,39,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RateUpdated'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,39,39,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RateUpdated'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,39,39,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RateUpdated'. Expected: [symbol, rate, timestamp], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,39,39,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [rate] on Event [RateUpdated] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,39,39,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [timestamp] on Event [RateUpdated] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,45,45,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'OracleAdded'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,45,45,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'OracleAdded'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,45,45,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'OracleAdded'. Expected: [symbol, oracleAddress, maintainer, url], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,52,52,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'OracleRemoved'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,52,52,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'OracleRemoved'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,52,52,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'OracleRemoved'. Expected: [symbol, oracleAddress], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,57,57,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'MinimumQuorumChanged'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,57,57,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'MinimumQuorumChanged'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,57,57,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'MinimumQuorumChanged'. Expected: [oldQuorum, newQuorum], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,57,57,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [oldQuorum] on Event [MinimumQuorumChanged] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,57,57,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [newQuorum] on Event [MinimumQuorumChanged] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,63,63,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'authorizedWallet'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,64,64,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,65,65,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracles'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,66,66,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'requests'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,67,67,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRates'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,68,68,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRateTime'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,70,70,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'minimumQuorum'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,75,75,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,80,80,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 35 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,80,80,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,80,80,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,88,88,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,103,103,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,105,105,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,115,115,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,128,128,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,128,128,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,129,129,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,136,136,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,142,142,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,143,143,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,154,154,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ requests ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,158,158,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,173,173,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,179,179,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,190,190,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,190,190,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,190,190,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,210,210,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,216,216,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,236,236,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,236,236,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,248,248,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,263,263,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,265,265,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ExchangeExecuted'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,265,265,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ExchangeExecuted'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,265,265,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ExchangeExecuted'. Expected: [transactor, targetCurrency, value, exchangeRate, timestamp, bridgeCall], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,265,265,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [value] on Event [ExchangeExecuted] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,265,265,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [exchangeRate] on Event [ExchangeExecuted] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,265,265,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [timestamp] on Event [ExchangeExecuted] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,274,274,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'BridgeUpdated'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,274,274,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'BridgeUpdated'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,274,274,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'BridgeUpdated'. Expected: [newBridgeURL], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,275,275,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'CurrencyAdded'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,275,275,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'CurrencyAdded'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,275,275,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'CurrencyAdded'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,276,276,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'CurrencyRemoved'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,276,276,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'CurrencyRemoved'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,276,276,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'CurrencyRemoved'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,279,279,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'authorizedWallet'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,280,280,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracleContract'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,281,281,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,282,282,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'bridgeURL'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,286,286,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,291,291,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 37 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,291,291,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,291,291,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,300,300,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,312,312,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,318,318,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,319,319,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,320,320,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,324,324,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 42 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,324,324,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,324,324,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,329,329,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 40 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,329,329,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,329,329,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,330,330,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,350,350,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,359,359,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,368,368,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,378,378,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,393,393,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,395,395,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Deposited'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,395,395,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Deposited'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,395,395,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Deposited'. Expected: [user, amount], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,395,395,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Deposited] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,396,396,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Transferred'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,396,396,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Transferred'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,396,396,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Transferred'. Expected: [from, to, amount], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,396,396,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Transferred] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Exchanged'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Exchanged'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,397,397,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Exchanged'. Expected: [from, currency, amount], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,397,397,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Exchanged] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,398,398,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Withdrawn'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,398,398,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Withdrawn'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,398,398,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Withdrawn'. Expected: [user, amount], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,398,398,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Withdrawn] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,399,399,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Authorized'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,399,399,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Authorized'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,399,399,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Authorized'. Expected: [user, authorized, tier], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,400,400,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'AuthorizationRevoked'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,400,400,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'AuthorizationRevoked'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,400,400,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'AuthorizationRevoked'. Expected: [user, revoked], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,401,401,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'OwnershipTransferred'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,401,401,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'OwnershipTransferred'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,401,401,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'OwnershipTransferred'. Expected: [oldOwner, newOwner], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,402,402,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ContractAddressUpdated'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,402,402,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ContractAddressUpdated'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,402,402,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ContractAddressUpdated'. Expected: [contractType, newAddress], Found: []"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,402,402,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [newAddress] on Event [ContractAddressUpdated] could be Indexed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,405,405,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'owner'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,406,406,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracleContract'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,407,407,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeContract'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,412,412,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'maximumRateDelay'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,413,413,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeFee'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,423,423,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,428,428,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 35 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,428,428,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,428,428,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,437,437,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,440,440,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,440,440,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,460,460,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,460,460,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,474,474,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,474,474,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,478,478,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,491,491,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,496,496,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,496,496,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,500,500,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,525,525,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,525,525,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,529,529,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,544,544,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,544,544,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,544,544,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,549,549,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,549,549,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,565,565,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,565,565,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,565,565,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,570,570,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,570,570,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,574,574,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,586,586,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,592,592,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 36 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,592,592,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,592,592,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,596,596,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,596,596,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,600,600,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,627,627,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,627,627,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,627,627,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,633,633,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,633,633,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,637,637,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,647,647,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,648,648,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,648,648,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,648,648,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,694,694,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,704,704,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,715,715,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,726,726,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,738,738,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,738,738,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,738,738,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,753,753,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,763,763,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,763,763,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,774,774,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,783,783,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,792,792,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,830,830,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,830,830,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,839,839,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,845,845,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,845,845,solhint_6_0_0_no_complex_fallback,no-complex-fallback,Fallback function must be simple
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_Not_destructible_no_self_destruct,Not destructible (no self-destruct),Not destructible (no self-destruct)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_No_Ether_leak_no_send,No Ether leak (no send),No Ether leak (no send)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,0,0,maian_No_Ether_lock_Ether_refused,No Ether lock (Ether refused),No Ether lock (Ether refused)
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,115,115,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,136,136,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,216,216,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,115,115,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,136,136,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,216,216,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,263,263,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,393,393,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,8,8,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,71,71,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,409,409,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,410,410,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,416,416,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,417,417,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,418,418,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,419,419,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,177,177,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,715,715,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,88,88,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,300,300,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,437,437,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,845,845,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,846,846,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,846,846,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,847,847,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,847,847,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,847,847,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,75,75,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,80,80,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,80,80,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met. ┌──────────────┐
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,88,88,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,└──────────────┘ ✅ Scan completed successfully. • Findings: 79 (79 blocking) • Rules run: 57 • Targets scanned: 1 • Parsed lines: ~100.0% • No ignore information available Ran 57 rules on 1 file: 79 findings. Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,89,89,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,└──────────────┘ ✅ Scan completed successfully. • Findings: 79 (79 blocking) • Rules run: 57 • Targets scanned: 1 • Parsed lines: ~100.0% • No ignore information available Ran 57 rules on 1 file: 79 findings. Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,90,90,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,└──────────────┘ ✅ Scan completed successfully. • Findings: 79 (79 blocking) • Rules run: 57 • Targets scanned: 1 • Parsed lines: ~100.0% • No ignore information available Ran 57 rules on 1 file: 79 findings. Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,103,103,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,105,105,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,116,116,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,128,128,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,128,128,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,129,129,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,136,136,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,136,136,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,136,136,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,142,142,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,143,143,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,154,154,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,179,179,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,216,216,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,216,216,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,216,216,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,218,218,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,218,218,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,236,236,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,286,286,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,291,291,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,291,291,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,300,300,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,301,301,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,302,302,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,303,303,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,318,318,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,319,319,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,320,320,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,324,324,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,324,324,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,329,329,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,330,330,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,331,331,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,332,332,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,329,329,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,330,330,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,331,331,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,332,332,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,423,423,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,428,428,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,428,428,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,437,437,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,438,438,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,439,439,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,440,440,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,441,441,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,442,442,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,440,440,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,460,460,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,462,462,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,474,474,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,476,476,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,478,478,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,496,496,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,500,500,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,504,504,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,506,506,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,525,525,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,527,527,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,529,529,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,544,544,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,545,545,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,546,546,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,547,547,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,548,548,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,544,544,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,545,545,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,546,546,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,547,547,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,548,548,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,549,549,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,551,551,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,565,565,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,566,566,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,567,567,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,568,568,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,569,569,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,565,565,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,566,566,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,567,567,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,568,568,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,569,569,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,570,570,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,572,572,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,574,574,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,592,592,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,593,593,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,594,594,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,595,595,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,592,592,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,593,593,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,594,594,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,595,595,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,596,596,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,600,600,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,604,604,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,606,606,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,627,627,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,628,628,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,629,629,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,630,630,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,631,631,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,632,632,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,627,627,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,628,628,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,629,629,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,630,630,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,631,631,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,632,632,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,633,633,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,635,635,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,637,637,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,648,648,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,649,649,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,650,650,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,651,651,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,652,652,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,653,653,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,648,648,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,649,649,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,650,650,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,651,651,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,652,652,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,653,653,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,763,763,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,830,830,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol,839,839,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.

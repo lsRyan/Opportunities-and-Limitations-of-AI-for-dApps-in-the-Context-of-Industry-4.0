@@ -1,0 +1,378 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 59 Code Findings │
+└──────────────────┘
+                               
+    /sb/VotacaoCondominio_F.sol
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          2153┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2153┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.use-prefix-decrement-not-postfix
+          Consider using the prefix decrement expression whenever the return value is not needed. The prefix
+          decrement expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          2551┆ ptr--;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          2619┆ if (hashValue & 0xf > 7 && uint8(buffer[i]) > 96) {
+          2620┆     // case shift by xoring with 0x20
+          2621┆     buffer[i] ^= 0x20;
+          2622┆ }
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2696┆ for (uint256 i = begin; i < end; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          2776┆ if (absSuccess && absValue < ABS_MIN_INT256) {
+          2777┆     return (true, negativeSign ? -int256(absValue) : int256(absValue));
+          2778┆ } else if (absSuccess && negativeSign && absValue == ABS_MIN_INT256) {
+          2779┆     return (true, type(int256).min);
+          2780┆ } else return (false, 0);
+            ⋮┆----------------------------------------
+          2778┆ } else if (absSuccess && negativeSign && absValue == ABS_MIN_INT256) {
+          2779┆     return (true, type(int256).min);
+          2780┆ } else return (false, 0);
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2848┆ for (uint256 i = begin + offset; i < end; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          2925┆ if (value > 47 && value < 58) value -= 48;
+          2926┆ else if (value > 96 && value < 103) value -= 87;
+          2927┆ else if (value > 64 && value < 71) value -= 55;
+          2928┆ else return type(uint8).max;
+            ⋮┆----------------------------------------
+          2926┆ else if (value > 96 && value < 103) value -= 87;
+          2927┆ else if (value > 64 && value < 71) value -= 55;
+          2928┆ else return type(uint8).max;
+            ⋮┆----------------------------------------
+          2927┆ else if (value > 64 && value < 71) value -= 55;
+          2928┆ else return type(uint8).max;
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          2948┆ for (uint256 i; i < buffer.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2948┆ for (uint256 i; i < buffer.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3444┆ if (address(this) == _cachedThis && block.chainid == _cachedChainId) {
+          3445┆     return _cachedDomainSeparator;
+          3446┆ } else {
+          3447┆     return _buildDomainSeparator();
+          3448┆ }
+            ⋮┆----------------------------------------
+          4535┆ if (from != to && amount > 0) {
+          4536┆     if (from != address(0)) {
+          4537┆         (uint256 oldValue, uint256 newValue) = _push(
+          4538┆             _delegateCheckpoints[from],
+          4539┆             _subtract,
+          4540┆             SafeCast.toUint208(amount)
+          4541┆         );
+          4542┆         emit DelegateVotesChanged(from, oldValue, newValue);
+          4543┆     }
+          4544┆     if (to != address(0)) {
+             [hid 8 additional lines, adjust with --max-lines-per-finding] 
+   
+     ❱ solidity.performance.inefficient-state-variable-increment
+          <x> += <y> costs more gas than <x> = <x> + <y> for state variables.
+                                                                             
+          5049┆ _totalSupply += value;
+   
+     ❱ solidity.best-practice.use-ownable2step
+          By demanding that the receiver of the owner permissions actively accept via a contract call of its 
+          own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally
+          being transferred  to an address that cannot handle it.                                            
+                                                                                                             
+          5445┆ contract CondoVotingSystem is ERC20, ERC20Permit, ERC20Votes, Ownable {
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          5494┆ constructor(uint256 amount, address[] memory tokenOwners)
+          5495┆     ERC20("Assembleia", "ASS")
+          5496┆     ERC20Permit("Assembleia")
+          5497┆     Ownable(msg.sender)
+          5498┆ {
+          5499┆     require(amount >= tokenOwners.length, "Amount must be >= number of owners");
+          5500┆
+          5501┆     // Mint 1 token to each owner and delegate power
+          5502┆     for (uint256 i = 0; i < tokenOwners.length; i++) {
+          5503┆         _mint(tokenOwners[i], 1 ether); // Assuming 18 decimals, 1 full token
+             [hid 16 additional lines, adjust with --max-lines-per-finding] 
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5499┆ require(amount >= tokenOwners.length, "Amount must be >= number of owners");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          5499┆ require(amount >= tokenOwners.length, "Amount must be >= number of owners");
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          5502┆ for (uint256 i = 0; i < tokenOwners.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          5502┆ for (uint256 i = 0; i < tokenOwners.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          5502┆ for (uint256 i = 0; i < tokenOwners.length; i++) {
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5553┆ require(balanceOf(msg.sender) > 0, "Must hold tokens to propose");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          5555┆ currentId++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5574┆ require(balanceOf(msg.sender) > 0, "Must hold tokens");
+            ⋮┆----------------------------------------
+          5575┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          5575┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5579┆ require(msg.sender == p.proposer, "Only proposer can cancel");
+            ⋮┆----------------------------------------
+          5580┆ require(
+          5581┆     keccak256(bytes(p.status)) == keccak256(bytes("UnderDeliberation")),
+          5582┆     "Status must be UnderDeliberation"
+          5583┆ );
+            ⋮┆----------------------------------------
+          5596┆ require(balanceOf(msg.sender) > 0, "Must hold tokens");
+            ⋮┆----------------------------------------
+          5597┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          5597┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5601┆ require(msg.sender == p.proposer, "Only proposer can modify");
+            ⋮┆----------------------------------------
+          5602┆ require(
+          5603┆     keccak256(bytes(p.status)) == keccak256(bytes("UnderDeliberation")),
+          5604┆     "Status must be UnderDeliberation"
+          5605┆ );
+            ⋮┆----------------------------------------
+          5616┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          5616┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5620┆ require(
+          5621┆     keccak256(bytes(p.status)) == keccak256(bytes("UnderDeliberation")),
+          5622┆     "Status must be UnderDeliberation"
+          5623┆ );
+            ⋮┆----------------------------------------
+          5638┆ require(msg.sender != owner(), "Owner cannot vote");
+            ⋮┆----------------------------------------
+          5639┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          5639┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5643┆ require(
+          5644┆     keccak256(bytes(p.status)) == keccak256(bytes("Voting")),
+          5645┆     "Proposal not in Voting stage"
+          5646┆ );
+            ⋮┆----------------------------------------
+          5650┆ require(votePower > 0, "No voting power at start time");
+            ⋮┆----------------------------------------
+          5652┆ require((clock() - p.voteStart) <= voteTimeout, "Voting timeout reached");
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          5652┆ require((clock() - p.voteStart) <= voteTimeout, "Voting timeout reached");
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          5668┆ if (previousVote == true && approve == false) {
+          5669┆     // Was Approve, changing to Reject
+          5670┆     p.approvePower -= votePower;
+          5671┆     p.rejectPower += votePower;
+          5672┆     p.votes[msg.sender] = false;
+          5673┆ } else if (previousVote == false && approve == true) {
+          5674┆     // Was Reject, changing to Approve
+          5675┆     p.rejectPower -= votePower;
+          5676┆     p.approvePower += votePower;
+          5677┆     p.votes[msg.sender] = true;
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          5670┆ p.approvePower -= votePower;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          5673┆ } else if (previousVote == false && approve == true) {
+          5674┆     // Was Reject, changing to Approve
+          5675┆     p.rejectPower -= votePower;
+          5676┆     p.approvePower += votePower;
+          5677┆     p.votes[msg.sender] = true;
+          5678┆ }
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          5675┆ p.rejectPower -= votePower;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5692┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          5692┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5696┆ require(
+          5697┆     keccak256(bytes(p.status)) == keccak256(bytes("Voting")),
+          5698┆     "Proposal not in Voting stage"
+          5699┆ );
+   
+     ❱ solidity.security.basic-arithmetic-underflow
+          Possible arithmetic underflow
+                                       
+          5701┆ uint256 timeElapsed = clock() - p.voteStart;
+            ⋮┆----------------------------------------
+          5707┆ uint256 eligibleSupply = totalSupply() - ownerVotesAtStart;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          5717┆ require(timeoutPassed || quorumReachedAndOwner, "Cannot end vote yet");
+            ⋮┆----------------------------------------
+          5743┆ require(newQuorum <= 100, "Quorum cannot exceed 100%");
+            ⋮┆----------------------------------------
+          5764┆ require(balanceOf(msg.sender) > 0, "Must hold tokens");
+            ⋮┆----------------------------------------
+          5765┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          5765┆ require(id > 0 && id <= currentId, "Invalid proposal ID");
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 59 (59 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~97.8%
+ • No ignore information available
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 57 rules on 1 file: 59 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+📢 Too many findings? Try Semgrep Pro for more powerful queries and less noise.
+   See https://sg.run/false-positives.

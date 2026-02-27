@@ -1,0 +1,544 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "confidence": "High",
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "exchange",
+            "impact": "Medium",
+            "line": 228,
+            "line_end": 350,
+            "message": "Contract locking ether found:\n\tContract Exchange (../sb/Wallet_F.sol#228-350) has payable functions:\n\t - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310)\n\tBut does not have a function to withdraw the ether\n",
+            "name": "locked-ether"
+        },
+        {
+            "confidence": "High",
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_changeMinimumQuorum",
+            "impact": "Medium",
+            "line": 207,
+            "line_end": 211,
+            "message": "Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#207-211) contains a tautology or contradiction:\n\t- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Quorum must be between 0 and 100) (../sb/Wallet_F.sol#209)\n",
+            "name": "tautology"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "changeMinimumQuorum",
+            "impact": "Medium",
+            "line": 708,
+            "line_end": 715,
+            "message": "Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#708-715) contains a tautology or contradiction:\n\t- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Quorum must be between 0 and 100) (../sb/Wallet_F.sol#710)\n",
+            "name": "tautology"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "updateExchangeFee",
+            "impact": "Medium",
+            "line": 786,
+            "line_end": 790,
+            "message": "Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#786-790) contains a tautology or contradiction:\n\t- require(bool,string)(newExchangeFee >= 0 && newExchangeFee <= 100,Fee must be between 0 and 100) (../sb/Wallet_F.sol#788)\n",
+            "name": "tautology"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Medium",
+            "line": 281,
+            "message": "Exchange.exchange(address,string,address,uint256).data (../sb/Wallet_F.sol#281) is written in both\n\t(success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#281-283)\n\t(success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),targetCurrency)) (../sb/Wallet_F.sol#291-293)\n",
+            "name": "write-after-write"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "updateMaximumRateDelay",
+            "impact": "Low",
+            "line": 777,
+            "line_end": 780,
+            "message": "Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#777-780) should emit an event for: \n\t- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#779) \n",
+            "name": "events-maths"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "updateExchangeFee",
+            "impact": "Low",
+            "line": 786,
+            "line_end": 790,
+            "message": "Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#786-790) should emit an event for: \n\t- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#789) \n",
+            "name": "events-maths"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 515,
+            "message": "Wallet.externalTransferAUTH(uint256,address,address).to (../sb/Wallet_F.sol#515) lacks a zero-check on :\n\t\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 257,
+            "message": "Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#257) lacks a zero-check on :\n\t\t- oracleContract = _oracleContract (../sb/Wallet_F.sol#259)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 796,
+            "message": "Wallet.changeOwnership(address).newOwner (../sb/Wallet_F.sol#796) lacks a zero-check on :\n\t\t- owner = newOwner (../sb/Wallet_F.sol#798)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 69,
+            "message": "Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#69) lacks a zero-check on :\n\t\t- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#70)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 432,
+            "message": "Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#432) lacks a zero-check on :\n\t\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 683,
+            "message": "Wallet.addOracle(string,string,string,address).accessAddress (../sb/Wallet_F.sol#683) lacks a zero-check on :\n\t\t- (success,None) = oracleContract.call(abi.encodeWithSignature(_addOracle(string,string,string,address),symbol,maintainer,url,accessAddress)) (../sb/Wallet_F.sol#685-687)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 446,
+            "message": "Wallet.exchange(string,address,uint256).targetAddress (../sb/Wallet_F.sol#446) lacks a zero-check on :\n\t\t- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),msg.sender,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#465-473)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 759,
+            "message": "Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#759) lacks a zero-check on :\n\t\t- oracleContract = newOracle (../sb/Wallet_F.sol#761)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 257,
+            "message": "Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#257) lacks a zero-check on :\n\t\t- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#258)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 537,
+            "message": "Wallet.exchangeAUTH(string,address,address,uint256).targetAddress (../sb/Wallet_F.sol#537) lacks a zero-check on :\n\t\t- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),from,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#559-567)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 696,
+            "message": "Wallet.removeOracle(string,address).accessAddress (../sb/Wallet_F.sol#696) lacks a zero-check on :\n\t\t- (success,None) = oracleContract.call(abi.encodeWithSignature(_removeOracle(string,address),symbol,accessAddress)) (../sb/Wallet_F.sol#698-700)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Low",
+            "line": 768,
+            "message": "Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#768) lacks a zero-check on :\n\t\t- exchangeContract = newExchange (../sb/Wallet_F.sol#770)\n",
+            "name": "missing-zero-check"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "withdrawn",
+            "impact": "Low",
+            "line": 481,
+            "line_end": 487,
+            "message": "Reentrancy in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#481-487):\n\tExternal calls:\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#484)\n\tEvent emitted after the call(s):\n\t- Withdrawal(msg.sender,amount) (../sb/Wallet_F.sol#486)\n",
+            "name": "reentrancy-events"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "withdrawnAUTH",
+            "impact": "Low",
+            "line": 576,
+            "line_end": 595,
+            "message": "Reentrancy in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#576-595):\n\tExternal calls:\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#592)\n\tEvent emitted after the call(s):\n\t- Withdrawal(from,amount) (../sb/Wallet_F.sol#594)\n",
+            "name": "reentrancy-events"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "externalTransfer",
+            "impact": "Low",
+            "line": 432,
+            "line_end": 438,
+            "message": "Reentrancy in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#432-438):\n\tExternal calls:\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)\n\tEvent emitted after the call(s):\n\t- ExternalTransfer(msg.sender,to,amount) (../sb/Wallet_F.sol#437)\n",
+            "name": "reentrancy-events"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "externalTransferAUTH",
+            "impact": "Low",
+            "line": 515,
+            "line_end": 528,
+            "message": "Reentrancy in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#515-528):\n\tExternal calls:\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)\n\tEvent emitted after the call(s):\n\t- ExternalTransfer(from,to,amount) (../sb/Wallet_F.sol#527)\n",
+            "name": "reentrancy-events"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "exchange",
+            "impact": "Low",
+            "line": 269,
+            "line_end": 310,
+            "message": "Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- block.timestamp - exchangeRateTime > maximumRateDelay (../sb/Wallet_F.sol#298)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "answerRequest",
+            "impact": "Low",
+            "line": 102,
+            "line_end": 146,
+            "message": "Oracle.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#102-146) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- requests[id].requestTime < exchangeRateTime[requests[id].currency] (../sb/Wallet_F.sol#120)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_removeOracle",
+            "impact": "Informational",
+            "line": 182,
+            "line_end": 201,
+            "message": "Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#182-201) has costly operations inside a loop:\n\t- delete currencies[symbol] (../sb/Wallet_F.sol#196)\n",
+            "name": "costly-loop"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Informational",
+            "line": 8,
+            "message": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/Wallet_F.sol#8)\n",
+            "name": "solc-version"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "removeOracle",
+            "impact": "Informational",
+            "line": 696,
+            "line_end": 702,
+            "message": "Low level call in Wallet.removeOracle(string,address) (../sb/Wallet_F.sol#696-702):\n\t- (success,None) = oracleContract.call(abi.encodeWithSignature(_removeOracle(string,address),symbol,accessAddress)) (../sb/Wallet_F.sol#698-700)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "externalTransfer",
+            "impact": "Informational",
+            "line": 432,
+            "line_end": 438,
+            "message": "Low level call in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#432-438):\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "exchange",
+            "impact": "Informational",
+            "line": 269,
+            "line_end": 310,
+            "message": "Low level call in Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310):\n\t- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#281-283)\n\t- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),targetCurrency)) (../sb/Wallet_F.sol#291-293)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "addCurrency",
+            "impact": "Informational",
+            "line": 733,
+            "line_end": 740,
+            "message": "Low level call in Wallet.addCurrency(string) (../sb/Wallet_F.sol#733-740):\n\t- (success,None) = exchangeContract.call(abi.encodeWithSignature(_addCurrency(string),symbol)) (../sb/Wallet_F.sol#736-738)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "getExchangeAvailability",
+            "impact": "Informational",
+            "line": 626,
+            "line_end": 633,
+            "message": "Low level call in Wallet.getExchangeAvailability(string) (../sb/Wallet_F.sol#626-633):\n\t- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),symbol)) (../sb/Wallet_F.sol#627-629)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "changeMinimumQuorum",
+            "impact": "Informational",
+            "line": 708,
+            "line_end": 715,
+            "message": "Low level call in Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#708-715):\n\t- (success,None) = oracleContract.call(abi.encodeWithSignature(_changeMinimumQuorum(uint256),newQuorum)) (../sb/Wallet_F.sol#711-713)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "updateBridge",
+            "impact": "Informational",
+            "line": 721,
+            "line_end": 727,
+            "message": "Low level call in Wallet.updateBridge(string) (../sb/Wallet_F.sol#721-727):\n\t- (success,None) = exchangeContract.call(abi.encodeWithSignature(_updateBridge(string),newBridgeURL)) (../sb/Wallet_F.sol#723-725)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "exchangeAUTH",
+            "impact": "Informational",
+            "line": 537,
+            "line_end": 569,
+            "message": "Low level call in Wallet.exchangeAUTH(string,address,address,uint256) (../sb/Wallet_F.sol#537-569):\n\t- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#545-547)\n\t- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),from,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#559-567)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "getOracleAvailability",
+            "impact": "Informational",
+            "line": 640,
+            "line_end": 647,
+            "message": "Low level call in Wallet.getOracleAvailability(string) (../sb/Wallet_F.sol#640-647):\n\t- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),symbol)) (../sb/Wallet_F.sol#641-643)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "removeCurrency",
+            "impact": "Informational",
+            "line": 746,
+            "line_end": 753,
+            "message": "Low level call in Wallet.removeCurrency(string) (../sb/Wallet_F.sol#746-753):\n\t- (success,None) = exchangeContract.call(abi.encodeWithSignature(_removeCurrency(string),symbol)) (../sb/Wallet_F.sol#749-751)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "withdrawn",
+            "impact": "Informational",
+            "line": 481,
+            "line_end": 487,
+            "message": "Low level call in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#481-487):\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#484)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "externalTransferAUTH",
+            "impact": "Informational",
+            "line": 515,
+            "line_end": 528,
+            "message": "Low level call in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#515-528):\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "getExchangeRate",
+            "impact": "Informational",
+            "line": 654,
+            "line_end": 662,
+            "message": "Low level call in Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#654-662):\n\t- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),symbol)) (../sb/Wallet_F.sol#655-657)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "requestExchangeRate",
+            "impact": "Informational",
+            "line": 668,
+            "line_end": 674,
+            "message": "Low level call in Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#668-674):\n\t- (success,None) = oracleContract.call(abi.encodeWithSignature(requestRate(string),symbol)) (../sb/Wallet_F.sol#670-672)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "withdrawnAUTH",
+            "impact": "Informational",
+            "line": 576,
+            "line_end": 595,
+            "message": "Low level call in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#576-595):\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#592)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "addOracle",
+            "impact": "Informational",
+            "line": 683,
+            "line_end": 689,
+            "message": "Low level call in Wallet.addOracle(string,string,string,address) (../sb/Wallet_F.sol#683-689):\n\t- (success,None) = oracleContract.call(abi.encodeWithSignature(_addOracle(string,string,string,address),symbol,maintainer,url,accessAddress)) (../sb/Wallet_F.sol#685-687)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "exchange",
+            "impact": "Informational",
+            "line": 446,
+            "line_end": 475,
+            "message": "Low level call in Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#446-475):\n\t- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#451-453)\n\t- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),msg.sender,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#465-473)\n",
+            "name": "low-level-calls"
+        },
+        {
+            "confidence": "High",
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_addCurrency",
+            "impact": "Informational",
+            "line": 325,
+            "line_end": 329,
+            "message": "Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#325-329) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_removeCurrency",
+            "impact": "Informational",
+            "line": 335,
+            "line_end": 339,
+            "message": "Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#335-339) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_updateBridge",
+            "impact": "Informational",
+            "line": 316,
+            "line_end": 319,
+            "message": "Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#316-319) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_removeOracle",
+            "impact": "Informational",
+            "line": 182,
+            "line_end": 201,
+            "message": "Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#182-201) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_changeMinimumQuorum",
+            "impact": "Informational",
+            "line": 207,
+            "line_end": 211,
+            "message": "Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#207-211) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "function": "_addOracle",
+            "impact": "Informational",
+            "line": 166,
+            "line_end": 175,
+            "message": "Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#166-175) is not in mixedCase\n",
+            "name": "naming-convention"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Optimization",
+            "line": 230,
+            "message": "Exchange.authorizedWallet (../sb/Wallet_F.sol#230) should be immutable \n",
+            "name": "immutable-states"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Optimization",
+            "line": 233,
+            "message": "Exchange.oracleContract (../sb/Wallet_F.sol#233) should be immutable \n",
+            "name": "immutable-states"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/Qwen/Wallet_F.sol",
+            "impact": "Optimization",
+            "line": 37,
+            "message": "Oracle.authorizedWallet (../sb/Wallet_F.sol#37) should be immutable \n",
+            "name": "immutable-states"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "slither-0.11.3",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

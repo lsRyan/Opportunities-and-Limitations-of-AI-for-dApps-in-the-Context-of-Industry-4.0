@@ -1,0 +1,3943 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Found more than One contract per file. 3 contracts found!"
+                    },
+                    "ruleId": "solhint_6_0_0_one_contract_per_file"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 15
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @author tag in contract 'Oracle'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 33
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'RateRequested'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 33
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'RateRequested'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 33
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'RateRequested'. Expected: [requestId, url, symbol], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 39
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'RateUpdated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 39
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'RateUpdated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 39
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'RateUpdated'. Expected: [symbol, rate, timestamp], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 39
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [rate] on Event [RateUpdated] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 39
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [timestamp] on Event [RateUpdated] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 45
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'OracleAdded'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 45
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'OracleAdded'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 45
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'OracleAdded'. Expected: [symbol, oracleAddress, maintainer, url], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 52
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'OracleRemoved'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 52
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'OracleRemoved'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 52
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'OracleRemoved'. Expected: [symbol, oracleAddress], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 57
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'MinimumQuorumChanged'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 57
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'MinimumQuorumChanged'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 57
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'MinimumQuorumChanged'. Expected: [oldQuorum, newQuorum], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 57
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [oldQuorum] on Event [MinimumQuorumChanged] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 57
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [newQuorum] on Event [MinimumQuorumChanged] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 63
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'authorizedWallet'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 64
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'currencies'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 65
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'oracles'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 66
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'requests'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 67
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'exchangeRates'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'exchangeRateTime'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 70
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'minimumQuorum'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 75
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 80
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 35 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 80
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 80
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 88
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)"
+                    },
+                    "ruleId": "solhint_6_0_0_func_visibility"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 103
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 105
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 52,
+                                    "startLine": 115
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 128
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 128
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 129
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 52,
+                                    "startLine": 136
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 142
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 143
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 154
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ requests ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 13,
+                                    "startLine": 158
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 173
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 179
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 190
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 190
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 190
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 210
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 52,
+                                    "startLine": 216
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 236
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 236
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 248
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 263
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @author tag in contract 'Exchange'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'ExchangeExecuted'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'ExchangeExecuted'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'ExchangeExecuted'. Expected: [transactor, targetCurrency, value, exchangeRate, timestamp, bridgeCall], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [value] on Event [ExchangeExecuted] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [exchangeRate] on Event [ExchangeExecuted] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 265
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [timestamp] on Event [ExchangeExecuted] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 274
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'BridgeUpdated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 274
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'BridgeUpdated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 274
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'BridgeUpdated'. Expected: [newBridgeURL], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 275
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'CurrencyAdded'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 275
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'CurrencyAdded'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 275
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'CurrencyAdded'. Expected: [symbol], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 276
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'CurrencyRemoved'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 276
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'CurrencyRemoved'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 276
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'CurrencyRemoved'. Expected: [symbol], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 279
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'authorizedWallet'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 280
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'oracleContract'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 281
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'currencies'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 282
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'bridgeURL'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 286
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 291
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 37 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 291
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 291
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 300
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)"
+                    },
+                    "ruleId": "solhint_6_0_0_func_visibility"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 312
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 318
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 319
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 320
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 324
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 42 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 324
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 324
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 329
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 40 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 329
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 329
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 13,
+                                    "startLine": 330
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 350
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 359
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 368
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 378
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 393
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @author tag in contract 'Wallet'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 395
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'Deposited'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 395
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'Deposited'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 395
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'Deposited'. Expected: [user, amount], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 395
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [amount] on Event [Deposited] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 396
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'Transferred'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 396
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'Transferred'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 396
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'Transferred'. Expected: [from, to, amount], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 396
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [amount] on Event [Transferred] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 397
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'Exchanged'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 397
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'Exchanged'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 397
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'Exchanged'. Expected: [from, currency, amount], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 397
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [amount] on Event [Exchanged] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 398
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'Withdrawn'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 398
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'Withdrawn'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 398
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'Withdrawn'. Expected: [user, amount], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 398
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [amount] on Event [Withdrawn] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 399
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'Authorized'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 399
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'Authorized'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 399
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'Authorized'. Expected: [user, authorized, tier], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 400
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'AuthorizationRevoked'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 400
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'AuthorizationRevoked'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 400
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'AuthorizationRevoked'. Expected: [user, revoked], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 401
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'OwnershipTransferred'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 401
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'OwnershipTransferred'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 401
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'OwnershipTransferred'. Expected: [oldOwner, newOwner], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 402
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'ContractAddressUpdated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 402
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'ContractAddressUpdated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 402
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'ContractAddressUpdated'. Expected: [contractType, newAddress], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 402
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [newAddress] on Event [ContractAddressUpdated] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 405
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'owner'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 406
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'oracleContract'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 407
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'exchangeContract'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 412
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'maximumRateDelay'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 413
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'exchangeFee'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 423
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 428
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 35 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 428
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 428
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 437
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)"
+                    },
+                    "ruleId": "solhint_6_0_0_func_visibility"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 440
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 440
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 460
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 460
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 474
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 474
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 478
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 491
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 496
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 496
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 500
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 525
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 525
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 529
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 544
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 34 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 544
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 544
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 549
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 549
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 565
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 34 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 565
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 565
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 570
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 570
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 574
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 586
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 592
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 36 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 592
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 592
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 596
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 596
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 600
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 627
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 34 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 627
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 627
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 633
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 633
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 637
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 647
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 648
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Error message for require is too long: 34 counted / 32 allowed"
+                    },
+                    "ruleId": "solhint_6_0_0_reason_string"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 648
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: String exceeds 32 bytes"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_small_strings"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 648
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 694
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 704
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 715
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 726
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 738
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 738
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 738
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 753
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 763
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 763
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 774
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 783
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 792
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_calldata_parameters"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 830
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 830
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 839
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 845
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in function '<anonymous>'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 845
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Fallback function must be simple"
+                    },
+                    "ruleId": "solhint_6_0_0_no_complex_fallback"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/protofire/solhint",
+                    "name": "Solhint",
+                    "rules": [
+                        {
+                            "id": "solhint_6_0_0_func_visibility",
+                            "name": "func-visibility"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_increment_by_one",
+                            "name": "gas-increment-by-one"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_strict_inequalities",
+                            "name": "gas-strict-inequalities"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_custom_errors",
+                            "name": "gas-custom-errors"
+                        },
+                        {
+                            "id": "solhint_6_0_0_no_complex_fallback",
+                            "name": "no-complex-fallback"
+                        },
+                        {
+                            "id": "solhint_6_0_0_reason_string",
+                            "name": "reason-string"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_small_strings",
+                            "name": "gas-small-strings"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_calldata_parameters",
+                            "name": "gas-calldata-parameters"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_indexed_events",
+                            "name": "gas-indexed-events"
+                        },
+                        {
+                            "id": "solhint_6_0_0_use_natspec",
+                            "name": "use-natspec"
+                        },
+                        {
+                            "id": "solhint_6_0_0_one_contract_per_file",
+                            "name": "one-contract-per-file"
+                        }
+                    ],
+                    "version": "6.0.0"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

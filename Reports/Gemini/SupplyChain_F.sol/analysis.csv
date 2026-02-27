@@ -1,0 +1,26 @@
+name,count
+use-custom-error-not-require,28
+non-payable-constructor,20
+naming-convention,9
+use-nested-if,9
+SOLIDITY_VISIBILITY,4
+reentrancy-events,3
+missing-inheritance,3
+immutable-states,3
+Integer Underflow,3
+use-prefix-increment-not-postfix,3
+use-short-revert-string,3
+use-multiple-require,2
+locked-ether,1
+reentrancy-no-eth,1
+SOLIDITY_EXTRA_GAS_IN_LOOPS,1
+SOLIDITY_GAS_LIMIT_IN_LOOPS,1
+SOLIDITY_LOCKED_MONEY,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,1
+SOLIDITY_REVERT_REQUIRE,1
+use-prefix-decrement-not-postfix,1
+use-ownable2step,1
+array-length-outside-loop,1
+unnecessary-checked-arithmetic-in-loop,1
+state-variable-read-in-a-loop,1

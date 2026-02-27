@@ -1,0 +1,37 @@
+pragma directive defines a prior version to 0.8.31. Changing pragma version to 0.8.31....
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/runpy.py", line 193, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.8/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/sec/securify/__main__.py", line 286, in <module>
+    main()
+  File "/sec/securify/__main__.py", line 277, in main
+    matches.extend(pattern.find_matches())
+  File "/sec/securify/analyses/patterns/ast/too_many_digits_pattern.py", line 17, in find_matches
+    ast_root = self.get_ast_root()
+  File "/sec/securify/analyses/patterns/ast/abstract_ast_pattern.py", line 27, in get_ast_root
+    ast_root = DictTransformer(Grammar.from_modules(ast), implicit_terminals=True).transform(ast_root)
+  File "/sec/securify/grammar/transformer.py", line 53, in transform
+    tree = self.transform_element(element)
+  File "/sec/securify/grammar/transformer.py", line 65, in transform_element
+    return self.__transform_dict(element)
+  File "/sec/securify/grammar/transformer.py", line 123, in __transform_dict
+    setattr(node, attribute_name, self.transform_element(value))
+  File "/sec/securify/grammar/transformer.py", line 89, in transform_element
+    tmp = self.transform_element(e)
+  File "/sec/securify/grammar/transformer.py", line 65, in transform_element
+    return self.__transform_dict(element)
+  File "/sec/securify/grammar/transformer.py", line 123, in __transform_dict
+    setattr(node, attribute_name, self.transform_element(value))
+  File "/sec/securify/grammar/transformer.py", line 89, in transform_element
+    tmp = self.transform_element(e)
+  File "/sec/securify/grammar/transformer.py", line 65, in transform_element
+    return self.__transform_dict(element)
+  File "/sec/securify/grammar/transformer.py", line 123, in __transform_dict
+    setattr(node, attribute_name, self.transform_element(value))
+  File "/sec/securify/grammar/transformer.py", line 65, in transform_element
+    return self.__transform_dict(element)
+  File "/sec/securify/grammar/transformer.py", line 104, in __transform_dict
+    raise GrammarError(f"Symbol '{symbol_name}' not found in grammar.")
+securify.grammar.GrammarError: Symbol 'IdentifierPath' not found in grammar.

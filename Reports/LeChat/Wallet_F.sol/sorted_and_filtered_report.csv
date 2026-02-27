@@ -1,0 +1,645 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,8,8,slither_0_11_3_solc_version,solc-version,"Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching.
+It is used by:
+	- ^0.8.0 (../sb/Wallet_F.sol#8)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,8,8,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.0 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,8,8,solhint_6_0_0_one_contract_per_file,one-contract-per-file,Found more than One contract per file. 3 contracts found!
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,8,8,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,10,10,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,10,133,slither_0_11_3_missing_inheritance,missing-inheritance,"Oracle (../sb/Wallet_F.sol#10-133) should inherit from IOracle (../sb/Wallet_F.sol#183-190)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,10,10,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,10,10,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,26,26,slither_0_11_3_immutable_states,immutable-states,"Oracle.authorizedWallet (../sb/Wallet_F.sol#26) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,26,26,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'authorizedWallet'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,27,27,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,28,28,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracles'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,29,29,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'requests'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,30,30,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRates'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,31,31,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRateTime'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,32,367,mando_denial_of_service,denial_of_service,denial_of_service
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,32,379,mando_reentrancy,reentrancy,reentrancy
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,32,32,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'minimumQuorum'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,35,35,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RequestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,35,35,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RequestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,35,35,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RequestRate'. Expected: [id, url, symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,35,35,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [id] on Event [RequestRate] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,36,36,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'AnswerRate'. Expected: [id, oracle, exchangeRate], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,36,36,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [id] on Event [AnswerRate] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,36,36,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'AnswerRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,36,36,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'AnswerRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,36,36,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [oracle] on Event [AnswerRate] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,36,36,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [exchangeRate] on Event [AnswerRate] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,37,37,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [rate] on Event [UpdateExchangeRate] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,37,37,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'UpdateExchangeRate'. Expected: [symbol, rate, time], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,37,37,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'UpdateExchangeRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,37,37,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'UpdateExchangeRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,37,37,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [time] on Event [UpdateExchangeRate] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,slither_0_11_3_missing_zero_check,missing-zero-check,"Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#39) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#40)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,39,39,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,40,40,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,40,379,mando_access_control,access_control,access_control
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,41,41,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,43,43,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'requestRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,43,43,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,43,43,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'requestRate'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,43,43,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,43,43,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,44,44,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,44,44,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,45,45,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,45,45,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,46,46,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,46,46,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,48,48,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,48,48,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,53,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,53,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,53,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,53,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,53,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,282,mando_hgt_front_running,front_running,front_running
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,318,mando_hgt_denial_of_service,denial_of_service,denial_of_service
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,318,mando_hgt_arithmetic,arithmetic,arithmetic
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,53,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,53,53,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,54,54,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,54,54,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,60,60,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'answerRequest'. Expected: [id, exchangeRate], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,60,60,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'answerRequest'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,60,60,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'answerRequest'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,61,61,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,61,61,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,61,61,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,61,61,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,61,61,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,63,63,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,63,63,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,63,63,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,64,64,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,64,64,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,65,65,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,65,65,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,73,73,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ request ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,73,73,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,76,76,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,86,86,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,86,86,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'readRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,86,86,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,86,86,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'readRate'. Expected: 2, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,86,86,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,86,86,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,86,86,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,87,87,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,87,87,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,88,88,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,88,88,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,92,92,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,92,92,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,92,92,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,92,92,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,92,92,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,92,92,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,92,100,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#92-100) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,93,93,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,93,93,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,102,114,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#102-114) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,102,102,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,102,102,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,102,102,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,102,102,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,103,103,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,103,103,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,104,104,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,104,104,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,104,104,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,104,104,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,104,104,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,104,104,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,104,104,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,105,105,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,106,106,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,106,106,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,106,106,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,106,106,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,106,106,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,107,107,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,108,108,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,108,108,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,109,109,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,116,116,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,116,116,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,116,116,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,116,119,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#116-119) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,117,117,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,117,117,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,121,121,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,121,121,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,121,121,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,121,121,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,121,121,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,121,121,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,125,125,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_isAuthorizedOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,125,125,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_isAuthorizedOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,125,125,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_isAuthorizedOracle'. Expected: [symbol, oracleAddress], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,125,125,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_isAuthorizedOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,125,125,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_isAuthorizedOracle'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,126,126,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,126,126,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,126,126,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,126,126,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,126,126,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,126,126,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,126,126,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,127,127,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,135,181,slither_0_11_3_locked_ether,locked-ether,"Contract locking ether found:
+	Contract Exchange (../sb/Wallet_F.sol#135-181) has payable functions:
+	 - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#148-159)
+	But does not have a function to withdraw the ether
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,135,181,slither_0_11_3_missing_inheritance,missing-inheritance,"Exchange (../sb/Wallet_F.sol#135-181) should inherit from IExchange (../sb/Wallet_F.sol#192-198)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,135,135,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,135,135,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,135,135,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,135,135,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,136,136,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'authorizedWallet'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,136,136,slither_0_11_3_immutable_states,immutable-states,"Exchange.authorizedWallet (../sb/Wallet_F.sol#136) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,137,137,slither_0_11_3_immutable_states,immutable-states,"Exchange.oracleContract (../sb/Wallet_F.sol#137) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,137,137,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracleContract'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,138,138,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,139,139,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'bridgeURL'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,139,139,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,141,141,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,141,141,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Exchange'. Expected: [transactor, targetCurrency, amount, exchangeRate, timestamp, bridgeCall], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,141,141,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [transactor] on Event [Exchange] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,141,141,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Exchange] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,141,141,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [exchangeRate] on Event [Exchange] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,141,141,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,141,141,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [timestamp] on Event [Exchange] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#143) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#144)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet, _oracleContract], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,143,143,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#143) lacks a zero-check on :
+		- oracleContract = _oracleContract (../sb/Wallet_F.sol#145)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,144,144,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,145,145,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,146,146,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,148,159,slither_0_11_3_timestamp,timestamp,"Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#148-159) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(block.timestamp - exchangeRateTime <= maximumRateDelay,Exchange rate outdated) (../sb/Wallet_F.sol#156)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,148,159,slither_0_11_3_encode_packed_collision,encode-packed-collision,"Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#148-159) calls abi.encodePacked() with multiple dynamic arguments:
+	- Exchange(transactor,targetCurrency,msg.value,exchangeRate,block.timestamp,string(abi.encodePacked(bridgeURL,targetCurrency))) (../sb/Wallet_F.sol#158)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,148,148,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,148,148,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,148,148,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,148,148,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,149,149,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,149,149,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,150,150,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,150,150,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,151,151,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,151,151,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,152,152,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,152,152,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,153,153,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,153,153,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,156,156,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,156,156,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,156,156,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,161,161,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,161,161,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,161,161,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,161,164,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#161-164) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,161,161,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,162,162,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,162,162,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,166,166,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,166,166,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,166,166,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,166,170,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#166-170) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,166,166,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,167,167,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,167,167,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,168,168,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,168,168,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,172,172,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,172,172,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,172,176,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#172-176) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,172,172,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,172,172,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,173,173,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,173,173,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,174,174,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,174,174,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,178,178,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,178,178,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,178,178,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,178,178,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,178,178,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,178,178,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,183,183,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,183,183,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,183,183,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,184,184,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'readRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'readRate'. Expected: 2, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,185,185,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,185,185,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,185,185,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,185,185,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,185,185,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,186,186,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,186,186,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,186,186,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'requestRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,186,186,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,186,186,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'requestRate'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,187,187,slither_0_11_3_naming_convention,naming-convention,"Function IOracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#187) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,187,187,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,187,187,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,187,187,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,188,188,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,188,188,slither_0_11_3_naming_convention,naming-convention,"Function IOracle._removeOracle(string,address) (../sb/Wallet_F.sol#188) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,188,188,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,188,188,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,189,189,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,189,189,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,189,189,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,189,189,slither_0_11_3_naming_convention,naming-convention,"Function IOracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#189) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,192,192,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IExchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,192,192,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IExchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,192,192,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'IExchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,193,193,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,193,193,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,193,193,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,194,194,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,194,194,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,194,194,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,194,194,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,194,194,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,195,195,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,195,195,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,195,195,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,195,195,slither_0_11_3_naming_convention,naming-convention,"Function IExchange._updateBridge(string) (../sb/Wallet_F.sol#195) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,196,196,slither_0_11_3_naming_convention,naming-convention,"Function IExchange._addCurrency(string) (../sb/Wallet_F.sol#196) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,196,196,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,196,196,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,196,196,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,197,197,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,197,197,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,197,197,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,197,197,slither_0_11_3_naming_convention,naming-convention,"Function IExchange._removeCurrency(string) (../sb/Wallet_F.sol#197) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,200,200,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,200,200,solhint_6_0_0_use_natspec,use-natspec,Missing @title tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,200,200,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,201,201,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'owner'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,202,202,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracleContract'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,203,203,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeContract'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,204,204,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,205,205,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,206,206,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'maximumRateDelay'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,207,207,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeFee'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,209,209,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Deposit'. Expected: [user, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,209,209,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Deposit] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,209,209,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Deposit'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,209,209,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Deposit'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,210,210,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Transfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,210,210,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Transfer'. Expected: [from, to, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,210,210,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Transfer] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,210,210,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Transfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,211,211,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [ExternalTransfer] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,211,211,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ExternalTransfer'. Expected: [from, to, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,211,211,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ExternalTransfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,211,211,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ExternalTransfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,212,212,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,212,212,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [targetAddress] on Event [Exchange] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,212,212,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Exchange'. Expected: [user, targetCurrency, targetAddress, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,212,212,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Exchange] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,212,212,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,213,213,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Withdrawn'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,213,213,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Withdrawn'. Expected: [user, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,213,213,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Withdrawn'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,213,213,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [amount] on Event [Withdrawn] could be Indexed
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,214,214,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Authorize'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,214,214,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Authorize'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,214,214,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Authorize'. Expected: [owner, authorized, tier], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,215,215,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'Revoke'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,215,215,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'Revoke'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,215,215,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'Revoke'. Expected: [owner, unauthorize], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,217,217,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,217,217,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,217,217,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '<anonymous>'. Expected: [_maximumRateDelay, _exchangeFee], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,217,217,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,217,217,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,217,217,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,218,218,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,219,219,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,220,220,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,221,221,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,223,223,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'deposit'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,228,228,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'transfer'. Expected: [amount, to], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,228,228,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'transfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,228,228,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'transfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,229,229,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,229,229,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,229,229,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,230,230,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,235,235,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#235) lacks a zero-check on :
+		- address(to).transfer(amount) (../sb/Wallet_F.sol#238)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,235,235,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'externalTransfer'. Expected: [amount, to], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,235,235,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'externalTransfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,235,235,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'externalTransfer'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,235,240,slither_0_11_3_reentrancy_unlimited_gas,reentrancy-unlimited-gas,"Reentrancy in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#235-240):
+	External calls:
+	- address(to).transfer(amount) (../sb/Wallet_F.sol#238)
+	Event emitted after the call(s):
+	- ExternalTransfer(msg.sender,to,amount) (../sb/Wallet_F.sol#239)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,236,236,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,236,236,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,236,236,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,237,237,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,242,242,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchange'. Expected: [targetCurrency, targetAddress, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,242,242,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,242,252,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#242-252):
+	External calls:
+	- IExchange(exchangeContract).exchange{value: amount - fee}(msg.sender,targetCurrency,targetAddress,maximumRateDelay) (../sb/Wallet_F.sol#250)
+	Event emitted after the call(s):
+	- Exchange(msg.sender,targetCurrency,targetAddress,amount - fee) (../sb/Wallet_F.sol#251)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,242,242,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,242,242,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,243,243,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,243,243,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,243,243,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,244,244,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,244,244,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,247,247,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,250,250,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,254,254,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'withdrawn'. Expected: [amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,254,259,slither_0_11_3_reentrancy_unlimited_gas,reentrancy-unlimited-gas,"Reentrancy in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#254-259):
+	External calls:
+	- address(msg.sender).transfer(amount) (../sb/Wallet_F.sol#257)
+	Event emitted after the call(s):
+	- Withdrawn(msg.sender,amount) (../sb/Wallet_F.sol#258)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,254,254,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'withdrawn'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,254,254,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'withdrawn'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,255,255,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,255,255,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,255,255,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,256,256,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,261,261,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'transferAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,261,261,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'transferAUTH'. Expected: [amount, from, to], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,261,261,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'transferAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,262,262,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,262,262,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,262,262,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,263,263,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,263,263,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,263,263,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,264,264,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,269,269,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.externalTransferAUTH(uint256,address,address).to (../sb/Wallet_F.sol#269) lacks a zero-check on :
+		- address(to).transfer(amount) (../sb/Wallet_F.sol#273)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,269,269,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'externalTransferAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,269,269,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'externalTransferAUTH'. Expected: [amount, from, to], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,269,269,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'externalTransferAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,269,275,slither_0_11_3_reentrancy_unlimited_gas,reentrancy-unlimited-gas,"Reentrancy in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#269-275):
+	External calls:
+	- address(to).transfer(amount) (../sb/Wallet_F.sol#273)
+	Event emitted after the call(s):
+	- ExternalTransfer(from,to,amount) (../sb/Wallet_F.sol#274)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,270,270,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,270,270,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,271,271,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,271,271,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,271,271,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,272,272,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,277,277,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchangeAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,277,277,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchangeAUTH'. Expected: [targetCurrency, from, targetAddress, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,277,277,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchangeAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,277,288,slither_0_11_3_reentrancy_events,reentrancy-events,"Reentrancy in Wallet.exchangeAUTH(string,address,address,uint256) (../sb/Wallet_F.sol#277-288):
+	External calls:
+	- IExchange(exchangeContract).exchange{value: amount - fee}(from,targetCurrency,targetAddress,maximumRateDelay) (../sb/Wallet_F.sol#286)
+	Event emitted after the call(s):
+	- Exchange(from,targetCurrency,targetAddress,amount - fee) (../sb/Wallet_F.sol#287)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,277,277,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,278,278,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,278,278,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,279,279,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,279,279,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,279,279,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,280,280,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,280,280,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,283,283,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,286,286,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,290,290,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'withdrawnAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,290,290,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'withdrawnAUTH'. Expected: [from, amount], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,290,290,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'withdrawnAUTH'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,290,296,slither_0_11_3_reentrancy_unlimited_gas,reentrancy-unlimited-gas,"Reentrancy in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#290-296):
+	External calls:
+	- address(msg.sender).transfer(amount) (../sb/Wallet_F.sol#294)
+	Event emitted after the call(s):
+	- Withdrawn(from,amount) (../sb/Wallet_F.sol#295)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,291,291,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,291,291,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,292,292,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,292,292,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,292,292,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,293,293,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,298,298,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'authorize'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,298,298,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'authorize'. Expected: [authorized, tier], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,298,298,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,298,298,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'authorize'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,299,299,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,299,299,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,299,299,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,304,304,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'revoke'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,304,304,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'revoke'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,304,304,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'revoke'. Expected: [unauthorize], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getExchangeAvailability'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getExchangeAvailability'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getExchangeAvailability'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getExchangeAvailability'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,309,309,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getExchangeAvailability'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,313,313,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getOracleAvailability'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,313,313,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,313,313,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getOracleAvailability'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,313,313,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getOracleAvailability'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,313,313,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getOracleAvailability'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,313,313,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getOracleAvailability'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,317,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getExchangeRate'. Expected: 2, Found: 0"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,317,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getExchangeRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,317,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getExchangeRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,319,slither_0_11_3_unused_return,unused-return,"Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#317-319) ignores return value by IOracle(oracleContract).readRate(symbol) (../sb/Wallet_F.sol#318)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,317,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,317,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getExchangeRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,317,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getExchangeRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,317,317,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,321,323,slither_0_11_3_unused_return,unused-return,"Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#321-323) ignores return value by IOracle(oracleContract).requestRate(symbol) (../sb/Wallet_F.sol#322)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,321,321,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestExchangeRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,321,321,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,321,321,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'requestExchangeRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,321,321,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'requestExchangeRate'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,325,325,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,325,325,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,325,325,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,325,325,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,325,325,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,325,325,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'addOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,326,326,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,326,326,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,330,330,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,330,330,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'removeOracle'. Expected: [symbol, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,330,330,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'removeOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,330,330,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeOracle'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,331,331,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,331,331,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,335,335,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,335,335,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,335,335,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'changeMinimumQuorum'. Expected: [newQuorum], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,335,339,slither_0_11_3_tautology,tautology,"Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#335-339) contains a tautology or contradiction:
+	- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Invalid quorum) (../sb/Wallet_F.sol#337)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,336,336,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,336,336,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,337,337,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,337,337,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,337,337,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,337,337,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,337,337,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,341,341,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateBridge'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,341,341,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateBridge'. Expected: [newBridgeURL], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,341,341,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,341,341,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateBridge'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,342,342,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,342,342,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,346,346,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,346,346,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'addCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,346,346,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'addCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,346,346,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,347,347,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,347,347,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,351,351,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,351,351,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,351,351,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'removeCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,351,351,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'removeCurrency'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,352,352,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,352,352,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateOracleAddress'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,356,356,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#356) lacks a zero-check on :
+		- oracleContract = newOracle (../sb/Wallet_F.sol#358)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateOracleAddress'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,356,356,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateOracleAddress'. Expected: [newOracle], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,357,357,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,357,357,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,361,361,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#361) lacks a zero-check on :
+		- exchangeContract = newExchange (../sb/Wallet_F.sol#363)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,361,361,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateExchangeAddress'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,361,361,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateExchangeAddress'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,361,361,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateExchangeAddress'. Expected: [newExchange], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,362,362,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,362,362,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,366,369,slither_0_11_3_events_maths,events-maths,"Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#366-369) should emit an event for: 
+	- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#368) 
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,366,366,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateMaximumRateDelay'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,366,366,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateMaximumRateDelay'. Expected: [newMaximumRateDelay], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,366,366,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateMaximumRateDelay'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,367,367,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,367,367,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,371,375,slither_0_11_3_events_maths,events-maths,"Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#371-375) should emit an event for: 
+	- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#374) 
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,371,371,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateExchangeFee'. Expected: [newExchangeFee], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,371,371,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateExchangeFee'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,371,371,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateExchangeFee'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,371,375,slither_0_11_3_tautology,tautology,"Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#371-375) contains a tautology or contradiction:
+	- require(bool,string)(newExchangeFee >= 0 && newExchangeFee <= 100,Invalid fee) (../sb/Wallet_F.sol#373)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,372,372,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,372,372,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,373,373,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,373,373,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,373,373,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,373,373,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,373,373,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,377,377,slither_0_11_3_missing_zero_check,missing-zero-check,"Wallet.changeOwnership(address).newOwner (../sb/Wallet_F.sol#377) lacks a zero-check on :
+		- owner = newOwner (../sb/Wallet_F.sol#379)
+"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,377,377,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'changeOwnership'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,377,377,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'changeOwnership'. Expected: [newOwner], Found: []"
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,377,377,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'changeOwnership'
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,378,378,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol,378,378,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.

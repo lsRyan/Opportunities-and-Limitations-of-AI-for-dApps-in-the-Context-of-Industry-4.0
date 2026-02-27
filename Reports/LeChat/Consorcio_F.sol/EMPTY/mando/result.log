@@ -1,0 +1,21 @@
+Solidity version 0.8.31 detected, skipping SOLC_BIN export
+[2026-02-10 20:39:37.447457] MANDO Initializing
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+[2026-02-10 20:40:13.505375] INFO: __main__: Setting execution timeout to 3600 seconds
+[2026-02-10 20:40:13.505490] INFO: __main__: Analyzing only for bug types: ['access_control', 'arithmetic', 'denial_of_service', 'front_running', 'reentrancy', 'time_manipulation', 'unchecked_low_level_calls']
+[2026-02-10 20:40:15.083902] INFO: __main__: 'BREAK'
+[2026-02-10 20:40:15.084075] ERROR: __main__: An error occurred: 'BREAK'
+Result: {"messages": "'BREAK'"}
+[2026-02-10 20:40:15.095712] INFO: __main__: [2026-02-10 20:40:15.095657] Results written to output.json
+DGL backend not selected or invalid.  Assuming PyTorch for now.
+Using backend: pytorch
+Traceback (most recent call last):
+  File "/app/sco/inference.py", line 109, in main
+    raise e
+  File "/app/sco/inference.py", line 106, in main
+    logits = graph_model.extend_forward(extra_graph, [sm_name])
+  File "/app/sco/sco_models/model_mando.py", line 375, in extend_forward
+    features[ntype] = self._nodetype2onehot(ntype).repeat(symmetrical_global_graph.num_nodes(ntype), 1).to(self.device)
+  File "/app/sco/sco_models/model_mando.py", line 309, in _nodetype2onehot
+    feature[self.ntypes_dict[ntype]] = 1
+KeyError: 'BREAK'

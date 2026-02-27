@@ -1,0 +1,64 @@
+'solc --version' running
+'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+Compilation warnings/errors on /sb/Consorcio_F.sol:
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> /sb/Consorcio_F.sol:196:17:
+    |
+196 |                 payable(winner).transfer(pool.goodValue);
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209) uses a weak PRNG: "randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,poolId))) % eligibleCount (../sb/Consorcio_F.sol#187)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+FinancialPoolManager.leavePool(uint256).index (../sb/Consorcio_F.sol#120) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+
+FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#68-79) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(msg.sender == pool.owner,Only the owner can activate the pool) (../sb/Consorcio_F.sol#71)
+	- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not in accepting_participants status) (../sb/Consorcio_F.sol#72)
+	- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Not enough participants) (../sb/Consorcio_F.sol#73)
+FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#81-90) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(msg.sender == pool.owner,Only the owner can delete the pool) (../sb/Consorcio_F.sol#84)
+	- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not in accepting_participants status) (../sb/Consorcio_F.sol#85)
+FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#92-113) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#95)
+FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#115-142) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#118)
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(active)),Pool is not active) (../sb/Consorcio_F.sol#147)
+	- require(bool,string)(msg.value == pool.installmentValue,Incorrect payment amount) (../sb/Consorcio_F.sol#158)
+	- pool.participantsInfo[msg.sender].payments >= duePayments && ! pool.participantsInfo[msg.sender].received (../sb/Consorcio_F.sol#167)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching.
+It is used by:
+	- ^0.8.0 (../sb/Consorcio_F.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209):
+	External calls:
+	- address(winner).transfer(pool.goodValue) (../sb/Consorcio_F.sol#196)
+	State variables written after the call(s):
+	- pool.status = finished (../sb/Consorcio_F.sol#202)
+	Event emitted after the call(s):
+	- InstallmentPaid(poolId,msg.sender,msg.value) (../sb/Consorcio_F.sol#208)
+	- PoolFinished(poolId) (../sb/Consorcio_F.sol#203)
+	- WinnerSelected(poolId,winner,pool.goodValue) (../sb/Consorcio_F.sol#198)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/sb/Consorcio_F.sol analyzed (1 contracts with 100 detectors), 9 result(s) found

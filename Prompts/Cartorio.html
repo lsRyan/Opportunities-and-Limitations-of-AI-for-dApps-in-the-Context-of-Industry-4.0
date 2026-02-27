@@ -1,0 +1,290 @@
+<prompt>
+<h1 id="role">Role</h1>
+<p>You are a senior Ethereum smart contract developer responsible for implementing secure, efficient, well-documented Solidity contracts based on detailed specifications. Your work should follow industry-standard practices for structure, safety, and readability.</p>
+<h1 id="context">Context</h1>
+<p>A governmental agency has requested the development of a digital notary service smart contract for managing real estate documentation. You are the lead developer responsible for employing OpenZeppelin’s ERC721 standard for implementing this project with all of the required functionalities in a secure and extensible manner using Solidity and employing all of the best practices for decentralized applications.</p>
+<h1 id="objective">Objective</h1>
+<p>Your task is to develop a fully functional, well-commented, and secure Solidity contract that implements the RealStateNotary contract, as will be thoroughly described below. The code must:</p>
+<ul>
+<li>
+<p>Be secure, avoiding vulnerabilities such as reentrancy, integer overflows/underflows, access control issues, and all known vulnerabilities that could affect the contract’s functionalities.</p>
+</li>
+<li>
+<p>Be readable, using clear naming conventions, structured logic, and inline documentation (Solidity comments).</p>
+</li>
+<li>
+<p>Follow best practices for gas efficiency and modularity.</p>
+</li>
+<li>
+<p>Represents a digital notary system based on the OpenZeppelin ERC721 token standard.</p>
+</li>
+<li>
+<p>Use the latest Solidity compiler version you are familiar with.</p>
+</li>
+</ul>
+<h1 id="application">Application</h1>
+<h2 id="overview">Overview</h2>
+<p>The contract will represent a digital notary service, where each real estate document is represented by a unique, non-fungible token (NFT) following OpenZeppelin’s ERC721 standard. Each NFT must have a unique identifier, and when created, no other NFT may share that ID.</p>
+<p>The contract will support the following special roles:</p>
+<ul>
+<li>
+<p><code>DEFAULT_ADMIN_ROLE</code>: The default admin account.</p>
+</li>
+<li>
+<p><code>MINTER_ROLE</code>: Accounts authorized to mint new tokens.</p>
+</li>
+<li>
+<p><code>PAUSER_ROLE</code>: Accounts authorized to pause the contract.</p>
+</li>
+<li>
+<p><code>REVIEWER_ROLE</code>: Accounts authorized to review user requests, as defined in the “functions” section.</p>
+</li>
+</ul>
+<p>All actions must be logged for auditability and transparency, following best practices in blockchain development.</p>
+<h2 id="contracts">Contracts</h2>
+<h3 id="realestatenotary">RealEstateNotary</h3>
+<h4 id="variables">Variables</h4>
+<ul>
+<li>
+<p><code>struct CartorioStorage</code>: Stores the next token id. Includes:</p>
+</li>
+<li>
+<p><code>uint256 _nextTokenId</code>: Next token id.</p>
+</li>
+<li>
+<p><code>struct request</code>: The format of a request. Includes:</p>
+</li>
+<li>
+<p><code>uint256 tokenId</code>: The ID of the affected token.</p>
+</li>
+<li>
+<p><code>address requester</code>: Address of the user who made the request.</p>
+</li>
+<li>
+<p><code>string memory newUri</code>: The new URI requested for the token.</p>
+</li>
+<li>
+<p><code>string memory status</code>: Current request status. Can be set as “under_evaluation”, “accepted”, “rejected”.</p>
+</li>
+<li>
+<p><code>mapping(uint256 =&gt; request) requests</code>: Maps request IDs to a <code>request</code>.</p>
+</li>
+<li>
+<p><code>uint256 currentId</code>: Used to generate a unique ID for each modification <code>request</code>.</p>
+</li>
+<li>
+<p><code>bytes32 private constant CARTORIO_STORAGE_LOCATION</code>: A bytes32 constant private variable with a contract’s storage address. In this example, it should be initialized as <code>0xaa8b2f32297fc10d4303e434e1d6aee0c0c68830fc677fa0be548b8e938c9000</code>.</p>
+</li>
+<li>
+<p><code>bytes32 public constant MINTER_ROLE</code>: Set as keccak256(“MINTER_ROLE”).</p>
+</li>
+<li>
+<p><code>bytes32 public constant PAUSER_ROLE</code>: Set as keccak256(“PAUSER_ROLE”).</p>
+</li>
+<li>
+<p><code>bytes32 public constant REVIEWER_ROLE</code>: Set as keccak256(“REVIEWER_ROLE”).</p>
+</li>
+</ul>
+<h4 id="functions">Functions</h4>
+<h5 id="standard-functions">Standard Functions</h5>
+<p>The contract should follow OpenZeppelin’s ERC721. Hence, the following libraries should be used:</p>
+<ul>
+<li>
+<p><code>AccessControlUpgradeable</code></p>
+</li>
+<li>
+<p><code>ERC721Upgradeable</code></p>
+</li>
+<li>
+<p><code>ERC721BurnableUpgradeable</code></p>
+</li>
+<li>
+<p><code>ERC721EnumerableUpgradeable</code></p>
+</li>
+<li>
+<p><code>ERC721PausableUpgradeable</code></p>
+</li>
+<li>
+<p><code>ERC721URIStorageUpgradeable</code></p>
+</li>
+</ul>
+<p>As per OpenZeppelin’s token wizard, the following functions should be present:</p>
+<ul>
+<li>
+<p><code>initialize() public initializer</code></p>
+</li>
+<li>
+<p>Call __ERC721_init(“Cartorio”, “CBR”).</p>
+</li>
+<li>
+<p>Call __ERC721Enumerable_init().</p>
+</li>
+<li>
+<p>Call __ERC721URIStorage_init().</p>
+</li>
+<li>
+<p>Call __ERC721Pausable_init().</p>
+</li>
+<li>
+<p>Call __AccessControl_init();</p>
+</li>
+<li>
+<p>Call __ERC721Burnable_init().</p>
+</li>
+<li>
+<p>Call _grantRole(<code>DEFAULT_ADMIN_ROLE</code>, <code>msg.sender</code>);</p>
+</li>
+<li>
+<p><code>_baseURI() internal pure overrides returns (string memory)</code></p>
+</li>
+<li>
+<p>Returns the base URI.</p>
+</li>
+<li>
+<p>Use “<a href="https://cartorio.org/imoveis/registro/">https://cartorio.org/imoveis/registro/</a>” in your implementation.</p>
+</li>
+<li>
+<p><code>pause() public onlyRole(PAUSER_ROLE)</code></p>
+</li>
+<li>
+<p>Call _pause().</p>
+</li>
+<li>
+<p><code>unpause() public onlyRole(PAUSER_ROLE)</code></p>
+</li>
+<li>
+<p>Call _unpause().</p>
+</li>
+<li>
+<p><code>safeMint(address to, string memory uri) public onlyRole(MINTER_ROLE) whenNotPaused returns (uint256)</code></p>
+</li>
+<li>
+<p>Set <code>CartorioStorage storage $</code> as the return value of the call to <code>_getCartorioStorage()</code>.</p>
+</li>
+<li>
+<p>Update <code>tokenId</code> with <code>$._nextTokenId++</code>.</p>
+</li>
+<li>
+<p>Call _safeMint(<code>to</code>, <code>tokenId</code>).</p>
+</li>
+<li>
+<p>Call _setTokenURI(<code>tokenId</code>, <code>uri</code>).</p>
+</li>
+<li>
+<p>Return <code>tokenId</code>.</p>
+</li>
+<li>
+<p><code>_getCartorioStorage() private pure returns (CartorioStorage storage $)</code></p>
+</li>
+<li>
+<p>Execute the following assembly line:</p>
+</li>
+<li>
+<p>$.slot := <code>CARTORIO_STORAGE_LOCATION</code></p>
+</li>
+<li>
+<p><code>_update(address to, uint256 tokenId, address auth) internal override(ERC721Upgradeable, ERC721EnumerableUpgradeable, ERC721PausableUpgradeable) whenNotPaused returns (address)</code></p>
+</li>
+<li>
+<p>Return super._update(<code>to</code>, <code>tokenId</code>, <code>auth</code>).</p>
+</li>
+<li>
+<p><code>_increaseBalance(address account, uint128 value) internal override(ERC721Upgradeable, ERC721EnumerableUpgradeable) whenNotPaused</code></p>
+</li>
+<li>
+<p>Call super._increaseBalance(<code>account</code>, <code>value</code>).</p>
+</li>
+<li>
+<p><code>tokenURI(uint256 tokenId) public view override(ERC721Upgradeable and ERC721URIStorageUpgradeable) returns (string memory)</code></p>
+</li>
+<li>
+<p>Return super.tokenURI(<code>tokenId</code>).</p>
+</li>
+<li>
+<p><code>supportsInterface(bytes4 interfaceId) public view override(ERC721Upgradeable, ERC721EnumerableUpgradeable, ERC721URIStorageUpgradeable, AccessControlUpgradeable) returns (bool)</code></p>
+</li>
+<li>
+<p>Return super.supportsInterface(<code>interfaceId</code>).</p>
+</li>
+</ul>
+<h5 id="custom-functions">Custom Functions</h5>
+<ul>
+<li>
+<p><code>constructor()</code></p>
+</li>
+<li>
+<p>Call _disableInitializers().</p>
+</li>
+<li>
+<p><code>requestChange(uint256 _tokenId, string memory _newUri) public returns (uint256)</code></p>
+</li>
+<li>
+<p>Set <code>CartorioStorage storage $</code> as the return value of the call to <code>_getCartorioStorage()</code>.</p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The value of <code>_tokenId</code> is valid.</p>
+</li>
+<li>
+<p>Calling ownerOf(<code>_tokenId</code>) returns the same address as <code>msg.sender</code>.</p>
+</li>
+<li>
+<p>Increment <code>$.currentId</code></p>
+</li>
+<li>
+<p>Set <code>$.requests[$.currentId]</code> as request(<code>_tokenId</code>, <code>msg.sender</code>, <code>_newUri</code>, “under_evaluation”).</p>
+</li>
+<li>
+<p>Return <code>$.currentId</code>.</p>
+</li>
+<li>
+<p><code>answerRequest(uint256 requestId, bool accepted) public onlyRole(REVIEWER_ROLE) whenNotPaused</code></p>
+</li>
+<li>
+<p>Set <code>CartorioStorage storage $</code> as the return value of the call to <code>_getCartorioStorage()</code>.</p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The value of <code>requestId</code> is valid.</p>
+</li>
+<li>
+<p>The value of <code>$.requests[requestId].status</code> is “under_evaluation”.</p>
+</li>
+<li>
+<p>If <code>accepted</code> is <code>true</code>:</p>
+</li>
+<li>
+<p>Call _setTokenURI(<code>$.requests[requestId].tokenId</code>, <code>$.requests[requestId].newUri</code>).</p>
+</li>
+<li>
+<p>Change <code>$.requests[requestId].status</code> to “accepted”.</p>
+</li>
+<li>
+<p>Else:</p>
+</li>
+<li>
+<p>Change <code>$.requests[requestId].status</code> to “rejected”.</p>
+</li>
+<li>
+<p><code>getRequest(uint256 requestId) public view returns (request memory)</code></p>
+</li>
+<li>
+<p>Set <code>CartorioStorage storage $</code> as the return value of the call to <code>_getCartorioStorage()</code>.</p>
+</li>
+<li>
+<p>Check if:</p>
+</li>
+<li>
+<p>The value of <code>requestId</code> is valid.</p>
+</li>
+<li>
+<p>Return <code>$.requests[requestId]</code>.</p>
+</li>
+</ul>
+<h1 id="response-format">Response Format</h1>
+<p>Your response should be the fully implemented Solidity contract that includes all the functionalities and functions described above, including the OpenZeppelin ERC721 implementation. No additional content is required.</p>
+</prompt>

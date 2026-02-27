@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": null,
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": "'/sb/bin/do_solidity.sh' '/sb/SupplyChain_F.sol' '3600' '/sb/bin' '0'",
+        "image": "smartbugs/honeybadger:ff30c9a",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmpvlrawj9d": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 1.8585591316223145,
+        "exit_code": 0,
+        "logs": "result.log",
+        "output": null,
+        "start": 1770739906.7797937
+    },
+    "runid": "20260210_1610",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": null,
+        "cpu_quota": null,
+        "entrypoint": "'$BIN/do_solidity.sh' '$FILENAME' '$TIMEOUT' '$BIN' '$MAIN'",
+        "id": "honeybadger",
+        "image": "smartbugs/honeybadger:ff30c9a",
+        "info": "An analysis tool to detect honeypots in Ethereum smart contracts",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "HoneyBadger",
+        "origin": "https://github.com/christoftorres/HoneyBadger",
+        "output": null,
+        "parser": "parser.py",
+        "solc": true,
+        "version": "#ff30c9a"
+    }
+}

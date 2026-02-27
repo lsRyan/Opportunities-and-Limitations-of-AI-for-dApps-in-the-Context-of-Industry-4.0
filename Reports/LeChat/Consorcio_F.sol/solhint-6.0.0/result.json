@@ -1,0 +1,1036 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.0 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Missing @title tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Missing @author tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Missing @notice tag in contract 'FinancialPoolManager'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 34,
+            "message": "Missing @notice tag in variable 'currentId'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @notice tag in event 'PoolCreated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Missing @param tag in event 'PoolCreated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "Mismatch in @param names for event 'PoolCreated'. Expected: [poolId, owner, targetGood], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "GC: [poolId] on Event [PoolCreated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 36,
+            "message": "GC: [owner] on Event [PoolCreated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "Missing @notice tag in event 'PoolActivated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "Missing @param tag in event 'PoolActivated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "Mismatch in @param names for event 'PoolActivated'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 37,
+            "message": "GC: [poolId] on Event [PoolActivated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 38,
+            "message": "Missing @notice tag in event 'PoolDeleted'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 38,
+            "message": "Missing @param tag in event 'PoolDeleted'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 38,
+            "message": "Mismatch in @param names for event 'PoolDeleted'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 38,
+            "message": "GC: [poolId] on Event [PoolDeleted] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Missing @notice tag in event 'ParticipantJoined'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Missing @param tag in event 'ParticipantJoined'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Mismatch in @param names for event 'ParticipantJoined'. Expected: [poolId, participant], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "GC: [poolId] on Event [ParticipantJoined] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "GC: [participant] on Event [ParticipantJoined] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "Missing @notice tag in event 'ParticipantLeft'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "Missing @param tag in event 'ParticipantLeft'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "Mismatch in @param names for event 'ParticipantLeft'. Expected: [poolId, participant], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "GC: [poolId] on Event [ParticipantLeft] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 40,
+            "message": "GC: [participant] on Event [ParticipantLeft] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "Missing @notice tag in event 'InstallmentPaid'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "Missing @param tag in event 'InstallmentPaid'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "Mismatch in @param names for event 'InstallmentPaid'. Expected: [poolId, participant, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "GC: [poolId] on Event [InstallmentPaid] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "GC: [participant] on Event [InstallmentPaid] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 41,
+            "message": "GC: [amount] on Event [InstallmentPaid] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 42,
+            "message": "Missing @notice tag in event 'WinnerSelected'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 42,
+            "message": "Missing @param tag in event 'WinnerSelected'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 42,
+            "message": "Mismatch in @param names for event 'WinnerSelected'. Expected: [poolId, winner, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 42,
+            "message": "GC: [poolId] on Event [WinnerSelected] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 42,
+            "message": "GC: [winner] on Event [WinnerSelected] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 42,
+            "message": "GC: [amount] on Event [WinnerSelected] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Missing @notice tag in event 'PoolFinished'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Missing @param tag in event 'PoolFinished'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "Mismatch in @param names for event 'PoolFinished'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 43,
+            "message": "GC: [poolId] on Event [PoolFinished] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Missing @notice tag in function 'createPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Missing @param tag in function 'createPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Mismatch in @param names for function 'createPool'. Expected: [targetGood, goodValue, minParticipants, installments], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Missing @return tag in function 'createPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Mismatch in @return count for function 'createPool'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 51,
+            "message": "Error message for require is too long: 43 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 51,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 51,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 52,
+            "message": "Error message for require is too long: 33 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 52,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 52,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "Error message for require is too long: 35 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 53,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 55,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Missing @notice tag in function 'activatePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Missing @param tag in function 'activatePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Mismatch in @param names for function 'activatePool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 70,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 70,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 71,
+            "message": "Error message for require is too long: 36 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 71,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 71,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 72,
+            "message": "Error message for require is too long: 44 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 72,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 72,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 73,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 73,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "Missing @notice tag in function 'deletePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "Missing @param tag in function 'deletePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 81,
+            "message": "Mismatch in @param names for function 'deletePool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 83,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 84,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 84,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 84,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 85,
+            "message": "Error message for require is too long: 44 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 85,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 85,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @notice tag in function 'participateInPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @param tag in function 'participateInPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Mismatch in @param names for function 'participateInPool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 94,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 94,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 95,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 95,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 95,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 98,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 100,
+            "message": "GC: Use Custom Errors instead of revert statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 105,
+            "message": "GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "Missing @notice tag in function 'leavePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "Missing @param tag in function 'leavePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "Mismatch in @param names for function 'leavePool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 117,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 117,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 118,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 118,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 118,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 122,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 129,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 136,
+            "message": "GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 144,
+            "message": "Function body contains 64 lines but allowed no more than 50 lines",
+            "name": "function-max-lines"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 144,
+            "message": "Missing @notice tag in function 'payInstallment'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 144,
+            "message": "Missing @param tag in function 'payInstallment'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 144,
+            "message": "Mismatch in @param names for function 'payInstallment'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 146,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 146,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 147,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 59,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 151,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 157,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 158,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 163,
+            "message": "GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 174,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 63,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 177,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 21,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 181,
+            "message": "GC: For [ eligibleCount ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 191,
+            "message": "GC: For [ pool ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Missing @notice tag in function 'getPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Missing @param tag in function 'getPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Mismatch in @param names for function 'getPool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Missing @return tag in function 'getPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 211,
+            "message": "Mismatch in @return count for function 'getPool'. Expected: 9, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 223,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "level": "warning",
+            "line": 223,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

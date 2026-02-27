@@ -1,0 +1,57 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "maian",
+        "mode": "solidity",
+        "version": "2022/11/11"
+    }
+}

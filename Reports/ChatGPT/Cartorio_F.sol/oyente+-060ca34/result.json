@@ -1,0 +1,34 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 23,
+            "contract": "RealEstateNotary",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": 3733,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 18,
+            "contract": "RealEstateNotary",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Cartorio_F.sol",
+            "line": 4917,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage ERC721Utils 98.4%",
+        "coverage Math 98.4%",
+        "coverage Panic 98.4%",
+        "coverage RealEstateNotary 38.5%",
+        "coverage SafeCast 98.4%",
+        "coverage SignedMath 98.4%",
+        "coverage Strings 98.4%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

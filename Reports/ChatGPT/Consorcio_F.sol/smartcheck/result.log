@@ -1,0 +1,64 @@
+/sb/Consorcio_F.sol
+line 264:38 no viable alternative at input '.call{'
+line 264:38 missing ';' at '{'
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 217
+column: 8
+content: for(uint256i=0;i<p.participants.length;i++){ParticipantInfostorageinfo=p.participantsInfo[p.participants[i]];if(info.canReceive&&!info.received){eligibleCount++;}}
+
+ruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 242
+column: 8
+content: for(uint256i=0;i<p.participants.length;i++){ParticipantInfostorageinfo=p.participantsInfo[p.participants[i]];if(info.canReceive&&!info.received){if(counter==rand){index=i;break;}counter++;}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 159
+column: 8
+content: for(uint256i=0;i<length;i++){if(p.participants[i]==msg.sender){p.participants[i]=p.participants[length-1];p.participants.pop();break;}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 217
+column: 8
+content: for(uint256i=0;i<p.participants.length;i++){ParticipantInfostorageinfo=p.participantsInfo[p.participants[i]];if(info.canReceive&&!info.received){eligibleCount++;}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 242
+column: 8
+content: for(uint256i=0;i<p.participants.length;i++){ParticipantInfostorageinfo=p.participantsInfo[p.participants[i]];if(info.canReceive&&!info.received){if(counter==rand){index=i;break;}counter++;}}
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 14
+column: 0
+content: contractFinancialPoolManager{structParticipantInfo{boolreceived;boolcanReceive;uint256payments;}structPool{addressowner;stringtargetGood;uint256goodValue;uint256balance;uint256minParticipants;uint256totalParticipants;address[]participants;mapping(address=>ParticipantInfo)participantsInfo;mapping(address=>bool)isParticipant;uint256winnersCount;uint256installments;uint256activationDate;uint256installmentValue;stringstatus;}mapping(uint256=>Pool)internalpools;uint256publiccurrentId;modifiervalidPool(uint256poolId){require(poolId>0&&poolId<=currentId,"Invalid poolId");_;}modifieronlyOwner(uint256poolId){require(msg.sender==pools[poolId].owner,"Not pool owner");_;}functioncreatePool(stringmemorytargetGood,uint256goodValue,uint256minParticipants,uint256installments)externalreturns(uint256){require(goodValue>0,"Invalid good value");require(minParticipants>0,"Invalid min participants");require(installments>0,"Invalid installments");currentId++;Poolstoragep=pools[currentId];p.owner=msg.sender;p.targetGood=targetGood;p.goodValue=goodValue;p.minParticipants=minParticipants;p.installments=installments;p.installmentValue=goodValue/installments;p.status="accepting_participants";returncurrentId;}functionactivatePool(uint256poolId)externalvalidPool(poolId)onlyOwner(poolId){Poolstoragep=pools[poolId];require(keccak256(bytes(p.status))==keccak256(bytes("accepting_participants")),"Invalid pool status");require(p.totalParticipants>=p.minParticipants,"Not enough participants");p.activationDate=block.timestamp;p.status="active";}functiondeletePool(uint256poolId)externalvalidPool(poolId)onlyOwner(poolId){Poolstoragep=pools[poolId];require(keccak256(bytes(p.status))==keccak256(bytes("accepting_participants")),"Pool cannot be canceled");p.status="canceled";}functionparticipateInPool(uint256poolId)externalvalidPool(poolId){Poolstoragep=pools[poolId];require(keccak256(bytes(p.status))==keccak256(bytes("accepting_participants")),"Pool not accepting participants");require(!p.isParticipant[msg.sender],"Already participating");p.participants.push(msg.sender);p.isParticipant[msg.sender]=true;p.totalParticipants++;}functionleavePool(uint256poolId)externalvalidPool(poolId){Poolstoragep=pools[poolId];require(keccak256(bytes(p.status))==keccak256(bytes("accepting_participants")),"Cannot leave pool");require(p.isParticipant[msg.sender],"Not a participant");uint256length=p.participants.length;for(uint256i=0;i<length;i++){if(p.participants[i]==msg.sender){p.participants[i]=p.participants[length-1];p.participants.pop();break;}}p.isParticipant[msg.sender]=false;p.totalParticipants--;}functionpayInstallment(uint256poolId)externalpayablevalidPool(poolId){Poolstoragep=pools[poolId];require(keccak256(bytes(p.status))==keccak256(bytes("active")),"Pool not active");require(p.isParticipant[msg.sender],"Not a participant");require(msg.value==p.installmentValue,"Incorrect installment value");uint256duePayments=(block.timestamp-p.activationDate)/30days;ParticipantInfostorageinfo=p.participantsInfo[msg.sender];require(info.payments<duePayments,"No payment due");info.payments+=1;p.balance+=msg.value;if(info.payments==duePayments&&!info.received){info.canReceive=true;}else{info.canReceive=false;}if(p.balance>=p.goodValue){_selectWinner(poolId);}}function_selectWinner(uint256poolId)internal{Poolstoragep=pools[poolId];uint256eligibleCount=0;for(uint256i=0;i<p.participants.length;i++){ParticipantInfostorageinfo=p.participantsInfo[p.participants[i]];if(info.canReceive&&!info.received){eligibleCount++;}}if(eligibleCount==0){return;}uint256rand=uint256(keccak256(abi.encodePacked(block.timestamp,block.prevrandao,p.balance)))%eligibleCount;uint256index;uint256counter;for(uint256i=0;i<p.participants.length;i++){ParticipantInfostorageinfo=p.participantsInfo[p.participants[i]];if(info.canReceive&&!info.received){if(counter==rand){index=i;break;}counter++;}}addresswinner=p.participants[index];p.balance-=p.goodValue;p.winnersCount++;ParticipantInfostoragewinInfo=p.participantsInfo[winner];winInfo.received=true;winInfo.canReceive=false;(boolsuccess,)=winner.call<missing ';'>{value:p.goodValue}("");require(success,"Transfer failed");if(p.winnersCount==p.totalParticipants){p.status="finished";}}functiongetPool(uint256poolId)externalviewvalidPool(poolId)returns(address,stringmemory,uint256,uint256,uint256,uint256,uint256,uint256,uint256,stringmemory){Poolstoragep=pools[poolId];return(p.owner,p.targetGood,p.goodValue,p.minParticipants,p.totalParticipants,p.winnersCount,p.installments,p.activationDate,p.installmentValue,p.status);}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 8
+column: 16
+content: ^
+
+ruleId: SOLIDITY_SHOULD_RETURN_STRUCT
+patternId: 83hf3l
+severity: 1
+line: 281
+column: 16
+content: (address,stringmemory,uint256,uint256,uint256,uint256,uint256,uint256,uint256,stringmemory)
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1
+SOLIDITY_EXTRA_GAS_IN_LOOPS :2
+SOLIDITY_GAS_LIMIT_IN_LOOPS :3
+SOLIDITY_SHOULD_RETURN_STRUCT :1

@@ -1,0 +1,105 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "High",
+            "line": 144,
+            "line_end": 209,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209) uses a weak PRNG: \"randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,poolId))) % eligibleCount (../sb/Consorcio_F.sol#187)\" \n",
+            "name": "weak-prng"
+        },
+        {
+            "confidence": "Medium",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "impact": "Medium",
+            "line": 120,
+            "message": "FinancialPoolManager.leavePool(uint256).index (../sb/Consorcio_F.sol#120) is a local variable never initialized\n",
+            "name": "uninitialized-local"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "function": "deletePool",
+            "impact": "Low",
+            "line": 81,
+            "line_end": 90,
+            "message": "FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#81-90) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(msg.sender == pool.owner,Only the owner can delete the pool) (../sb/Consorcio_F.sol#84)\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not in accepting_participants status) (../sb/Consorcio_F.sol#85)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Low",
+            "line": 144,
+            "line_end": 209,
+            "message": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(active)),Pool is not active) (../sb/Consorcio_F.sol#147)\n\t- require(bool,string)(msg.value == pool.installmentValue,Incorrect payment amount) (../sb/Consorcio_F.sol#158)\n\t- pool.participantsInfo[msg.sender].payments >= duePayments && ! pool.participantsInfo[msg.sender].received (../sb/Consorcio_F.sol#167)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "function": "leavePool",
+            "impact": "Low",
+            "line": 115,
+            "line_end": 142,
+            "message": "FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#115-142) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#118)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "function": "participateInPool",
+            "impact": "Low",
+            "line": 92,
+            "line_end": 113,
+            "message": "FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#92-113) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#95)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "function": "activatePool",
+            "impact": "Low",
+            "line": 68,
+            "line_end": 79,
+            "message": "FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#68-79) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(msg.sender == pool.owner,Only the owner can activate the pool) (../sb/Consorcio_F.sol#71)\n\t- require(bool,string)(keccak256(bytes)(abi.encodePacked(pool.status)) == keccak256(bytes)(abi.encodePacked(accepting_participants)),Pool is not in accepting_participants status) (../sb/Consorcio_F.sol#72)\n\t- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Not enough participants) (../sb/Consorcio_F.sol#73)\n",
+            "name": "timestamp"
+        },
+        {
+            "confidence": "High",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "impact": "Informational",
+            "line": 8,
+            "message": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- ^0.8.0 (../sb/Consorcio_F.sol#8)\n",
+            "name": "solc-version"
+        },
+        {
+            "confidence": "Medium",
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "function": "payInstallment",
+            "impact": "Informational",
+            "line": 144,
+            "line_end": 209,
+            "message": "Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#144-209):\n\tExternal calls:\n\t- address(winner).transfer(pool.goodValue) (../sb/Consorcio_F.sol#196)\n\tState variables written after the call(s):\n\t- pool.status = finished (../sb/Consorcio_F.sol#202)\n\tEvent emitted after the call(s):\n\t- InstallmentPaid(poolId,msg.sender,msg.value) (../sb/Consorcio_F.sol#208)\n\t- PoolFinished(poolId) (../sb/Consorcio_F.sol#203)\n\t- WinnerSelected(poolId,winner,pool.goodValue) (../sb/Consorcio_F.sol#198)\n",
+            "name": "reentrancy-unlimited-gas"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "slither-0.11.3",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

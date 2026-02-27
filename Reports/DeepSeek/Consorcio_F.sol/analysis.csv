@@ -1,0 +1,38 @@
+name,count
+use-natspec,44
+use-custom-error-not-require,41
+gas-custom-errors,17
+use-short-revert-string,12
+gas-increment-by-one,9
+use-nested-if,9
+use-prefix-increment-not-postfix,8
+gas-indexed-events,6
+reason-string,6
+gas-small-strings,6
+Miners can manipulate program execution by selecting when to include the timestamp,4
+gas-strict-inequalities,3
+unnecessary-checked-arithmetic-in-loop,3
+incorrect-equality,2
+timestamp,2
+SOLIDITY_EXTRA_GAS_IN_LOOPS,2
+SOLIDITY_GAS_LIMIT_IN_LOOPS,2
+SOLIDITY_VISIBILITY,2
+basic-arithmetic-underflow,2
+array-length-outside-loop,2
+weak-prng,1
+reentrancy-eth,1
+reentrancy-events,1
+solc-version,1
+low-level-calls,1
+Callstack Depth Attack Vulnerability,1
+Integer Overflow,1
+Integer Underflow,1
+compiler-version,1
+function-max-lines,1
+A deterministic or predictable value may be used as bad random number.,1
+SOLIDITY_LOCKED_MONEY,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,1
+SOLIDITY_SHOULD_RETURN_STRUCT,1
+use-multiple-require,1
+use-prefix-decrement-not-postfix,1

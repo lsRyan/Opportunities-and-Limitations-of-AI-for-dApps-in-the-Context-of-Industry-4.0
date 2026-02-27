@@ -1,0 +1,23 @@
+Solidity version 0.8.31 detected, skipping SOLC_BIN export
+[2026-02-10 22:16:20.727277] MANDO Initializing
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+[2026-02-10 22:17:07.190733] INFO: __main__: Setting execution timeout to 3600 seconds
+[2026-02-10 22:17:07.194002] INFO: __main__: Analyzing only for bug types: ['access_control', 'arithmetic', 'denial_of_service', 'front_running', 'reentrancy', 'time_manipulation', 'unchecked_low_level_calls']
+[2026-02-10 22:19:50.390399] INFO: __main__: 'BREAK'
+[2026-02-10 22:19:50.390605] ERROR: __main__: An error occurred: 'BREAK'
+Result: {"messages": "'BREAK'"}
+[2026-02-10 22:19:50.481311] INFO: __main__: [2026-02-10 22:19:50.481250] Results written to output.json
+DGL backend not selected or invalid.  Assuming PyTorch for now.
+Using backend: pytorch
+Traceback (most recent call last):
+  File "/app/sco/inference.py", line 109, in main
+    raise e
+  File "/app/sco/inference.py", line 106, in main
+    logits = graph_model.extend_forward(extra_graph, [sm_name])
+  File "/app/sco/sco_models/model_hgt.py", line 427, in extend_forward
+    h = self.gcs[i](symmetrical_global_graph, h)
+  File "/usr/local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/app/sco/sco_models/model_hgt.py", line 118, in forward
+    n_id = node_dict[ntype]
+KeyError: 'BREAK'

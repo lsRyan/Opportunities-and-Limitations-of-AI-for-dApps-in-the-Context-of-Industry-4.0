@@ -1,0 +1,117 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "contract": "ERC721Utils",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "ERC721Utils",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "ERC721Utils",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Math",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Panic",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "RealEstateNotary",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "RealEstateNotary",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "RealEstateNotary",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "SafeCast",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "SignedMath",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "SignedMath",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "SignedMath",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        },
+        {
+            "contract": "Strings",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "Not destructible (no self-destruct)"
+        },
+        {
+            "contract": "Strings",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether leak (no send)"
+        },
+        {
+            "contract": "Strings",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Cartorio_F.sol",
+            "name": "No Ether lock (Ether refused)"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "maian",
+        "mode": "solidity",
+        "version": "2022/11/11"
+    }
+}

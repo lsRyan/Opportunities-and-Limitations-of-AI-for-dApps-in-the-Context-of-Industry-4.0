@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": null,
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": "'/sb/bin/do_solidity.sh' '/sb/Consorcio_F.sol' '/sb/bin'",
+        "image": "smartbugs/securify2:1913dfe",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmpxcrr0v47": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 1.8367655277252197,
+        "exit_code": 1,
+        "logs": "result.log",
+        "output": null,
+        "start": 1770756025.076726
+    },
+    "runid": "20260210_2039",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": null,
+        "cpu_quota": null,
+        "entrypoint": "'$BIN/do_solidity.sh' '$FILENAME' '$BIN'",
+        "id": "securify2",
+        "image": "smartbugs/securify2:1913dfe",
+        "info": "Securify 2.0 is a security scanner for Ethereum smart contracts. It implements context-sensitive static analysis written in Datalog and analyzes contracts written in Solidity (>= 0.5.8) for 37 weaknesses.",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "Securify2",
+        "origin": "https://github.com/eth-sri/securify2",
+        "output": null,
+        "parser": "parser.py",
+        "solc": true,
+        "version": null
+    }
+}

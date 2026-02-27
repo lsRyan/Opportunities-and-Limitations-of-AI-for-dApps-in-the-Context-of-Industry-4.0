@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": null,
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": "'/sb/bin/do_solidity.sh' '/sb/SupplyChain_F.sol' '/sb/bin'",
+        "image": "smartbugs/smartcheck",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmpdpxq0vph": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/LeChat/SupplyChain_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 6.666678190231323,
+        "exit_code": 0,
+        "logs": "result.log",
+        "output": null,
+        "start": 1770756015.9151464
+    },
+    "runid": "20260210_2039",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": null,
+        "cpu_quota": null,
+        "entrypoint": "'$BIN/do_solidity.sh' '$FILENAME' '$BIN'",
+        "id": "smartcheck",
+        "image": "smartbugs/smartcheck",
+        "info": "SmartCheck is an extensible static analysis tool for discovering vulnerabilities and other code issues in Ethereum smart contracts written in the Solidity programming language.",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "Smartcheck",
+        "origin": "https://github.com/smartdec/smartcheck",
+        "output": null,
+        "parser": "parser.py",
+        "solc": true,
+        "version": null
+    }
+}

@@ -1,0 +1,34 @@
+name,count
+use-custom-error-not-require,42
+use-natspec,35
+gas-custom-errors,24
+use-short-revert-string,24
+gas-increment-by-one,10
+reason-string,9
+gas-small-strings,9
+use-prefix-increment-not-postfix,9
+use-nested-if,9
+gas-strict-inequalities,8
+use-multiple-require,6
+timestamp,5
+gas-indexed-events,4
+SOLIDITY_EXTRA_GAS_IN_LOOPS,4
+SOLIDITY_GAS_LIMIT_IN_LOOPS,4
+array-length-outside-loop,4
+unnecessary-checked-arithmetic-in-loop,4
+basic-arithmetic-underflow,2
+weak-prng,1
+reentrancy-eth,1
+incorrect-equality,1
+uninitialized-local,1
+reentrancy-events,1
+solc-version,1
+low-level-calls,1
+Callstack Depth Attack Vulnerability,1
+Integer Overflow,1
+Integer Underflow,1
+compiler-version,1
+SOLIDITY_LOCKED_MONEY,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_SHOULD_RETURN_STRUCT,1
+use-prefix-decrement-not-postfix,1

@@ -1,0 +1,454 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 57 Code rules:
+  Scanning 1 file with 57 solidity rules.
+                    
+                    
+┌──────────────────┐
+│ 72 Code Findings │
+└──────────────────┘
+                         
+    /sb/SupplyChain_F.sol
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          2357┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          2357┆ for (uint256 i = 0; i < byteArray.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3182┆ if (low > 0 && unsafeAccess(array, low - 1).value == element) {
+          3183┆     return low - 1;
+          3184┆ } else {
+          3185┆     return low;
+          3186┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          3599┆ for (uint256 i = 0; i < accounts.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3599┆ for (uint256 i = 0; i < accounts.length; ++i) {
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3619┆ if (from != sender && !isApprovedForAll(from, sender)) {
+          3620┆     revert ERC1155MissingApprovalForAll(sender, from);
+          3621┆ }
+            ⋮┆----------------------------------------
+          3634┆ if (from != sender && !isApprovedForAll(from, sender)) {
+          3635┆     revert ERC1155MissingApprovalForAll(sender, from);
+          3636┆ }
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          3661┆ for (uint256 i = 0; i < ids.length; ++i) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          3661┆ for (uint256 i = 0; i < ids.length; ++i) {
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+          3666┆ uint256 fromBalance = _balances[id][from];
+            ⋮┆----------------------------------------
+          3672┆ _balances[id][from] = fromBalance - value;
+            ⋮┆----------------------------------------
+          3677┆ _balances[id][to] += value;
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          3923┆ if (account != _msgSender() && !isApprovedForAll(account, _msgSender())) {
+          3924┆     revert ERC1155MissingApprovalForAll(_msgSender(), account);
+          3925┆ }
+            ⋮┆----------------------------------------
+          3931┆ if (account != _msgSender() && !isApprovedForAll(account, _msgSender())) {
+          3932┆     revert ERC1155MissingApprovalForAll(_msgSender(), account);
+          3933┆ }
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          3978┆ constructor(address managerAddress) {
+          3979┆     managerContract = managerAddress;
+          3980┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          3996┆ require(msg.sender == managerContract, "Only manager contract can call this function");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          3996┆ require(msg.sender == managerContract, "Only manager contract can call this function");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4008┆ patients[patient].currentId++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4024┆ require(msg.sender == managerContract, "Only manager contract can call this function");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4024┆ require(msg.sender == managerContract, "Only manager contract can call this function");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4025┆ require(id <= patients[patient].currentId && id > 0, "Invalid prescription ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          4025┆ require(id <= patients[patient].currentId && id > 0, "Invalid prescription ID");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4036┆ require(msg.sender == managerContract, "Only manager contract can call this function");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4036┆ require(msg.sender == managerContract, "Only manager contract can call this function");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4037┆ require(id <= patients[patient].currentId && id > 0, "Invalid prescription ID");
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          4037┆ require(id <= patients[patient].currentId && id > 0, "Invalid prescription ID");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4057┆ constructor() {
+          4058┆     admin = msg.sender;
+          4059┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4066┆ require(msg.sender == admin, "Only admin can authorize hospitals");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4066┆ require(msg.sender == admin, "Only admin can authorize hospitals");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4075┆ require(msg.sender == admin, "Only admin can unauthorize hospitals");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4075┆ require(msg.sender == admin, "Only admin can unauthorize hospitals");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4084┆ require(msg.sender == admin, "Only admin can authorize manufacturers");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4084┆ require(msg.sender == admin, "Only admin can authorize manufacturers");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4093┆ require(msg.sender == admin, "Only admin can unauthorize manufacturers");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4093┆ require(msg.sender == admin, "Only admin can unauthorize manufacturers");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4120┆ require(msg.sender == admin, "Only admin can change admin");
+   
+     ❱ solidity.best-practice.use-ownable2step
+          By demanding that the receiver of the owner permissions actively accept via a contract call of its 
+          own,  `Ownable2Step` and `Ownable2StepUpgradeable` prevent the contract ownership from accidentally
+          being transferred  to an address that cannot handle it.                                            
+                                                                                                             
+          4129┆ contract PharmaCompany is ERC1155, ERC1155Burnable, Ownable {
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4139┆ constructor(address _govAuthorizationContract)
+          4140┆     ERC1155("https://pharma.com/medicine/{id}.json")
+          4141┆     Ownable(msg.sender)
+          4142┆ {
+          4143┆     govAuthorizationContract = _govAuthorizationContract;
+          4144┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4159┆ require(id != 0, "ID cannot be zero");
+            ⋮┆----------------------------------------
+          4178┆ require(ids.length == amounts.length && ids.length == medicineNames.length, "Array lengths
+               must match");                                                                              
+   
+     ❱ solidity.performance.use-multiple-require
+          Using multiple require statements is cheaper than using && multiple check combinations.  There are
+          more advantages, such as easier to read code and better coverage reports.                         
+                                                                                                            
+          4178┆ require(ids.length == amounts.length && ids.length == medicineNames.length, "Array lengths
+               must match");                                                                              
+   
+     ❱ solidity.performance.array-length-outside-loop
+          Caching the array length outside a loop saves reading it on each iteration, as long as the array's
+          length is not changed during the loop.                                                            
+                                                                                                            
+          4180┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.unnecessary-checked-arithmetic-in-loop
+          A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked
+          block saves the overflow checks.                                                               
+                                                                                                         
+          4180┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4180┆ for (uint256 i = 0; i < ids.length; i++) {
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4181┆ require(ids[i] != 0, "ID cannot be zero");
+   
+     ❱ solidity.performance.state-variable-read-in-a-loop
+          Replace state variable reads and writes within loops with local variable reads and writes.
+                                                                                                    
+          4182┆ medicines[medicineNames[i]] = ids[i];
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4205┆ require(isHospitalAuth, "Hospital is not authorized");
+            ⋮┆----------------------------------------
+          4209┆ require(balanceOf(owner(), medicineId) >= amount, "Not enough medicine in stock");
+            ⋮┆----------------------------------------
+          4213┆ require(msg.value == expectedPrice, "Incorrect payment amount");
+            ⋮┆----------------------------------------
+          4217┆ require(saleAuthorized, "Prescription validation failed");
+            ⋮┆----------------------------------------
+          4229┆ require(newPrice > 0, "Price must be greater than 0");
+   
+     ❱ solidity.performance.non-payable-constructor
+          Consider making costructor payable to save gas.
+                                                         
+          4262┆ constructor(address _govAuthorizationContract) {
+          4263┆     admins[msg.sender] = true;
+          4264┆     adminsCount = 1;
+          4265┆     govAuthorizationContract = _govAuthorizationContract;
+          4266┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4273┆ require(admins[msg.sender], "Only existing admins can add new admins");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4273┆ require(admins[msg.sender], "Only existing admins can add new admins");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4274┆ require(!admins[newAdmin], "Admin already exists");
+   
+     ❱ solidity.performance.use-prefix-increment-not-postfix
+          Consider using the prefix increment expression whenever the return value is not needed. The prefix
+          increment expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4277┆ adminsCount++;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4285┆ require(admins[msg.sender], "Only existing admins can remove other admins");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4285┆ require(admins[msg.sender], "Only existing admins can remove other admins");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4286┆ require(admins[admin], "Admin does not exist");
+            ⋮┆----------------------------------------
+          4287┆ require(adminsCount > 1, "Cannot remove the last admin");
+   
+     ❱ solidity.performance.use-prefix-decrement-not-postfix
+          Consider using the prefix decrement expression whenever the return value is not needed. The prefix
+          decrement expression is cheaper in terms of gas.                                                  
+                                                                                                            
+          4290┆ adminsCount--;
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4298┆ require(admins[msg.sender], "Only admins can add doctors");
+            ⋮┆----------------------------------------
+          4307┆ require(admins[msg.sender], "Only admins can remove doctors");
+            ⋮┆----------------------------------------
+          4323┆ require(doctors[msg.sender], "Only doctors can prescribe medicine");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4323┆ require(doctors[msg.sender], "Only doctors can prescribe medicine");
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4346┆ require(
+          4347┆     doctors[msg.sender] || msg.sender == patient,
+          4348┆     "Only doctors or patients can view prescriptions"
+          4349┆ );
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4346┆ require(
+          4347┆     doctors[msg.sender] || msg.sender == patient,
+          4348┆     "Only doctors or patients can view prescriptions"
+          4349┆ );
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4383┆ require(isManufacturerAuth, "Only authorized manufacturers can call this function");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4383┆ require(isManufacturerAuth, "Only authorized manufacturers can call this function");
+   
+     ❱ solidity.performance.use-nested-if
+          Using nested is cheaper than using && multiple check combinations.  There are more advantages, such
+          as easier to read code and better coverage reports.                                                
+                                                                                                             
+          4392┆ if (
+          4393┆     presc.valid &&
+          4394┆     keccak256(bytes(presc.medicine)) == keccak256(bytes(medicine)) &&
+          4395┆     amount == presc.dose
+          4396┆ ) {
+          4397┆     // Mark the prescription as used
+          4398┆     Prescriptions(prescriptionsContract).usePrescription(patient, prescriptionId);
+          4399┆     return true;
+          4400┆ } else {
+          4401┆     return false;
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+     ❱ solidity.performance.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+                                                                                                            
+          4410┆ require(admins[msg.sender], "Only admins can set the prescription contract");
+   
+     ❱ solidity.performance.use-short-revert-string
+          Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs
+          when the revert condition has been met.                                                           
+                                                                                                            
+          4410┆ require(admins[msg.sender], "Only admins can set the prescription contract");
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 72 (72 blocking)
+ • Rules run: 57
+ • Targets scanned: 1
+ • Parsed lines: ~95.8%
+ • No ignore information available
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 57 rules on 1 file: 72 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+📢 Too many findings? Try Semgrep Pro for more powerful queries and less noise.
+   See https://sg.run/false-positives.

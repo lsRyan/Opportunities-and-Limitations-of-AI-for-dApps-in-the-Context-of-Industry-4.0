@@ -1,0 +1,71 @@
+'solc --version' running
+'solc /sb/Wallet_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+Compilation warnings/errors on /sb/Wallet_F.sol:
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> /sb/Wallet_F.sol:307:9:
+    |
+307 |         payable(to).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^
+
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> /sb/Wallet_F.sol:337:9:
+    |
+337 |         payable(msg.sender).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Contract locking ether found:
+	Contract ExchangeContract (../sb/Wallet_F.sol#177-261) has payable functions:
+	 - ExchangeContract.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#209-241)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#370-376) ignores return value by OracleContract(oracleContract).readRate(symbol) (../sb/Wallet_F.sol#375)
+Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#378-380) ignores return value by OracleContract(oracleContract).requestRate(symbol) (../sb/Wallet_F.sol#379)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return
+
+Wallet.changeOwnership(address) (../sb/Wallet_F.sol#440-442) should emit an event for: 
+	- owner = newOwner (../sb/Wallet_F.sol#441) 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-access-control
+
+Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#428-433) should emit an event for: 
+	- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#432) 
+Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#435-438) should emit an event for: 
+	- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#437) 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-arithmetic
+
+Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#304) lacks a zero-check on :
+		- address(to).transfer(amount) (../sb/Wallet_F.sol#307)
+Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#420) lacks a zero-check on :
+		- oracleContract = newOracle (../sb/Wallet_F.sol#421)
+Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#424) lacks a zero-check on :
+		- exchangeContract = newExchange (../sb/Wallet_F.sol#425)
+Wallet.changeOwnership(address).newOwner (../sb/Wallet_F.sol#440) lacks a zero-check on :
+		- owner = newOwner (../sb/Wallet_F.sol#441)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+OracleContract.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#75-111) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(r.active,Request inactive) (../sb/Wallet_F.sol#77)
+	- require(bool,string)(bytes(r.currency).length != 0,Invalid request) (../sb/Wallet_F.sol#78)
+	- require(bool,string)(! r.answers[msg.sender],Already answered) (../sb/Wallet_F.sol#89)
+	- r.requestTime < exchangeRateTime[r.currency] (../sb/Wallet_F.sol#91)
+ExchangeContract.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#209-241) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(block.timestamp - rateTime <= maximumRateDelay,Outdated rate) (../sb/Wallet_F.sol#228-231)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Function OracleContract._addOracle(string,string,string,address) (../sb/Wallet_F.sol#123-141) is not in mixedCase
+Function OracleContract._removeOracle(string,address) (../sb/Wallet_F.sol#143-159) is not in mixedCase
+Function OracleContract._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#161-164) is not in mixedCase
+Function ExchangeContract._updateBridge(string) (../sb/Wallet_F.sol#243-245) is not in mixedCase
+Function ExchangeContract._addCurrency(string) (../sb/Wallet_F.sol#247-250) is not in mixedCase
+Function ExchangeContract._removeCurrency(string) (../sb/Wallet_F.sol#252-255) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+ExchangeContract.authorizedWallet (../sb/Wallet_F.sol#178) should be immutable 
+ExchangeContract.oracleContract (../sb/Wallet_F.sol#179) should be immutable 
+OracleContract.authorizedWallet (../sb/Wallet_F.sol#31) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/sb/Wallet_F.sol analyzed (3 contracts with 100 detectors), 21 result(s) found

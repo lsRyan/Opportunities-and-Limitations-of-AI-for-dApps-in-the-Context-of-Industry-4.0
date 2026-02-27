@@ -1,0 +1,1636 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1849,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1851,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 47,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1853,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 49,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1855,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 54,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1857,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1859,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 48,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1861,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1863,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 47,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1865,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 58,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1867,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2494,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2496,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2498,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2500,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2502,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2504,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2601,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2603,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2605,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2607,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 53,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2609,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3054,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3061,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 60,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3061,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3065,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 29,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3072,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 50,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3091,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 76,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 26,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 113,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 122,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3733,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3736,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3761,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3764,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3805,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 34,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3808,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3825,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 34,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3827,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3842,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 34,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3845,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3861,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 34,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3863,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3877,
+            "name": "SOLIDITY_ADDRESS_HARDCODED",
+            "severity": 1
+        },
+        {
+            "column": 19,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2073,
+            "name": "SOLIDITY_DIV_MUL",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2357,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3599,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3661,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4111,
+            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1812,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1905,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2697,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3886,
+            "name": "SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2357,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3599,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3661,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4111,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 2
+        },
+        {
+            "column": 15,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3169,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 15,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3205,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 15,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3239,
+            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+            "severity": 1
+        },
+        {
+            "column": 0,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4079,
+            "name": "SOLIDITY_LOCKED_MONEY",
+            "severity": 3
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 10,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 42,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 143,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 309,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 338,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 463,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 485,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 546,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 636,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 660,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1825,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1886,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2638,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3497,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3524,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3915,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 16,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3943,
+            "name": "SOLIDITY_PRAGMAS_VERSION",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 57,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 63,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3541,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 66,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3543,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 11,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3546,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3964,
+            "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1812,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1871,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1905,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1953,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2084,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2492,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2678,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2697,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2858,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3886,
+            "name": "SOLIDITY_SHOULD_NOT_BE_PURE",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2289,
+            "name": "SOLIDITY_SHOULD_NOT_BE_VIEW",
+            "severity": 1
+        },
+        {
+            "column": 64,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1905,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 64,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1953,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 78,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2289,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3889,
+            "name": "SOLIDITY_SHOULD_RETURN_STRUCT",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 27,
+            "name": "SOLIDITY_UPGRADE_TO_050",
+            "severity": 1
+        },
+        {
+            "column": 20,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 584,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 20,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 621,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1813,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1872,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1906,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1921,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1956,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1972,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 1985,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2107,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 12,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2120,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2291,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2341,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2528,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2679,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2698,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2708,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2719,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2730,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2741,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2752,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2763,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2778,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2859,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2868,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2877,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2886,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2895,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2904,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2913,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2922,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 2931,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3080,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3099,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3108,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3118,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3125,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3134,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3143,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3890,
+            "name": "SOLIDITY_USING_INLINE_ASSEMBLY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 74,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 448,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 531,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3551,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3971,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4029,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4071,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4085,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4159,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4187,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 62,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 36,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 62,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 67,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 29,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 67,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 156,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 34,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 156,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 51,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 156,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 68,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 156,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 162,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 162,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 168,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 168,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 176,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 36,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 176,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 54,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 176,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 73,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 176,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 182,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 182,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 188,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 29,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 188,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 201,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 201,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 207,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 207,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 215,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 215,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 47,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 215,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 64,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 215,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 221,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 29,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 221,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 227,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 227,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 234,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 36,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 234,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 234,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 240,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 240,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 246,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 246,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 261,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 36,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 261,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 53,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 261,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 70,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 261,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 86,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 261,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 267,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 30,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 267,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 273,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 273,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 280,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 38,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 280,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 280,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 286,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 286,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 292,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 32,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 292,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 300,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 35,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 300,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 55,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 300,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 451,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 452,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 452,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 453,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 534,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 535,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 535,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 536,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 537,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 678,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 678,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 53,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 678,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 683,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 37,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 683,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 10,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 688,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 39,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 688,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 688,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 4,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 693,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 37,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 693,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 15,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 3254,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 24,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4074,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4075,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4076,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 24,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4162,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 8,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4163,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/SupplyChain_F.sol",
+            "line": 4164,
+            "name": "SOLIDITY_VISIBILITY",
+            "severity": 1
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "smartcheck",
+        "mode": "solidity",
+        "version": "2022/11/14"
+    }
+}

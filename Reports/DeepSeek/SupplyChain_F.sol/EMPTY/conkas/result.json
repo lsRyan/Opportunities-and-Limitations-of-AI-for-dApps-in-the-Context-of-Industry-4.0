@@ -1,0 +1,15 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (AttributeError: 'NoneType' object has no attribute 'expressionList')"
+    ],
+    "findings": [],
+    "infos": [],
+    "parser": {
+        "id": "conkas",
+        "mode": "solidity",
+        "version": "2025/08/07"
+    }
+}

@@ -1,0 +1,253 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 98
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 122
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 151
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 177
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_EXTRA_GAS_IN_LOOPS\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 98
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 122
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 8,
+                                    "startLine": 151
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 177
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_GAS_LIMIT_IN_LOOPS\nSeverity: 2"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 16,
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_PRAGMAS_VERSION\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_PRAGMAS_VERSION"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 12,
+                                    "startLine": 99
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_REVERT_REQUIRE\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_REVERT_REQUIRE"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 59,
+                                    "startLine": 211
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_SHOULD_RETURN_STRUCT\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/smartdec/smartcheck",
+                    "name": "Smartcheck",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-132."
+                            },
+                            "id": "smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS",
+                            "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-103."
+                            },
+                            "id": "smartcheck_SOLIDITY_PRAGMAS_VERSION",
+                            "name": "SOLIDITY_PRAGMAS_VERSION"
+                        },
+                        {
+                            "id": "smartcheck_SOLIDITY_REVERT_REQUIRE",
+                            "name": "SOLIDITY_REVERT_REQUIRE"
+                        },
+                        {
+                            "id": "smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT",
+                            "name": "SOLIDITY_SHOULD_RETURN_STRUCT"
+                        },
+                        {
+                            "id": "smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS",
+                            "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

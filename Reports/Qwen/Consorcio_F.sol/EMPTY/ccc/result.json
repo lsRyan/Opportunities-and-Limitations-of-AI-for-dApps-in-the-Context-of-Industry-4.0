@@ -1,0 +1,21 @@
+{
+    "errors": [
+        "EXIT_CODE_1"
+    ],
+    "fails": [
+        "exception (The allocation of an extra 2.0 MiB would use more than the limit 2.1 GiB. Currently using 2.1 GiB. dbms.memory.transaction.total.max threshold reached)"
+    ],
+    "findings": [],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope address needed to resolve the call address.pop",
+        "Could not find the scope address needed to resolve the call address.push",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

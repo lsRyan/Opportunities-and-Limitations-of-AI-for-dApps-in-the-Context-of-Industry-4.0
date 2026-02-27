@@ -1,0 +1,133 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/Cartorio_F.sol
+23:18:00.983 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:10:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.986 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:252:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.986 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:289:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.986 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:318:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.986 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:351:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.986 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:453:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:686:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:852:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:989:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:1018:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:1050:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:1103:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:2268:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:2329:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:3080:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:3150:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:3642:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4103:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4137:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4168:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4359:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4494:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4539:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4547:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4555:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4577:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.989 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4657:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:00.989 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/Cartorio_F.sol:4766:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+23:18:03.387 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:537:67: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface. Falling back to the default (current) scope
+23:18:03.467 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2378:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.467 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2389:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.468 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2405:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.470 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2471:35: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.472 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2507:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+23:18:03.473 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2516:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.475 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2541:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+23:18:03.476 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2604:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.477 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2614:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+23:18:03.479 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2624:34: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.481 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2697:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp. Falling back to the default (current) scope
+23:18:03.482 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2717:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+23:18:03.483 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2764:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+23:18:03.483 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2782:18: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+23:18:03.485 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2917:25: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.485 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2927:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.486 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2937:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2939:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2941:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.487 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2943:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2945:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.488 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2947:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.489 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:2983:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.490 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3032:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.490 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3044:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.491 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3046:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.491 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3048:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.492 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3050:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.492 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3052:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.493 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3062:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.493 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3098:42: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.495 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3191:30: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log10. Falling back to the default (current) scope
+23:18:03.496 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3213:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs. Falling back to the default (current) scope
+23:18:03.497 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3213:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+23:18:03.497 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3213:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs. Falling back to the default (current) scope
+23:18:03.498 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3213:61: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.abs. Falling back to the default (current) scope
+23:18:03.498 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3221:39: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log256. Falling back to the default (current) scope
+23:18:03.499 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3221:39: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.log256. Falling back to the default (current) scope
+23:18:03.555 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3419:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+23:18:03.560 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3492:26: Could not find the scope bool needed to resolve the call bool.toUint. Falling back to the default (current) scope
+23:18:03.564 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3551:39: Could not find the scope bool needed to resolve the call bool.toUint. Falling back to the default (current) scope
+23:18:03.567 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3704:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface. Falling back to the default (current) scope
+23:18:03.579 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3738:67: Could not find the scope uint256 needed to resolve the call uint256.toString. Falling back to the default (current) scope
+23:18:03.579 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3738:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+23:18:03.580 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3738:67: Could not find the scope uint256 needed to resolve the call uint256.toString. Falling back to the default (current) scope
+23:18:03.586 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3794:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC721Received. Falling back to the default (current) scope
+23:18:03.594 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:3952:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC721Received. Falling back to the default (current) scope
+23:18:03.597 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4025:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC721Received. Falling back to the default (current) scope
+23:18:03.602 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4218:70: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface. Falling back to the default (current) scope
+23:18:03.605 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4247:33: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update. Falling back to the default (current) scope
+23:18:03.607 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4282:9: Could not find the scope uint256 needed to resolve the call uint256.push. Falling back to the default (current) scope
+23:18:03.608 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4339:9: Could not find the scope uint256 needed to resolve the call uint256.pop. Falling back to the default (current) scope
+23:18:03.609 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4349:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._increaseBalance. Falling back to the default (current) scope
+23:18:03.612 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4529:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update. Falling back to the default (current) scope
+23:18:03.613 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4616:55: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface. Falling back to the default (current) scope
+23:18:03.614 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4633:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.concat. Falling back to the default (current) scope
+23:18:03.746 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4636:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.tokenURI. Falling back to the default (current) scope
+23:18:03.753 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4879:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._update. Falling back to the default (current) scope
+23:18:03.754 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4889:9: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._increaseBalance. Falling back to the default (current) scope
+23:18:03.755 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4896:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.tokenURI. Falling back to the default (current) scope
+23:18:03.755 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/Cartorio_F.sol:4908:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface. Falling back to the default (current) scope
+Running checks
+AccessControlSelfdestructCheck took 1517 ms
+CallReturnCheck took 625 ms
+AccessControlLogicCheck took 3505 ms
+ReentrancyCheck took 2173 ms
+DefaultProxyDelegateCheck took 697 ms
+TXOriginCheck took 312 ms
+TimeManipulationCheck took 413 ms
+LocalWriteToStorageCheck took 9603 ms
+BadRandomnessCheck took 586 ms
+OverUnderflowCheck took 1273567 ms
+File: /sb/Cartorio_F.sol
+- Operation may lead to a denial of essential contract function., Cartorio_F.sol 3343:9-3348:11
+File: /sb/Cartorio_F.sol
+- Operation may lead to a denial of essential contract function., Cartorio_F.sol 3495:9-3504:11
+File: /sb/Cartorio_F.sol
+- Operation may lead to a denial of essential contract function., Cartorio_F.sol 3233:9-3236:11
+File: /sb/Cartorio_F.sol
+- Operation may lead to a denial of essential contract function., Cartorio_F.sol 3595:9-3612:11
+File: /sb/Cartorio_F.sol
+- Operation may lead to a denial of essential contract function., Cartorio_F.sol 2800:9-2804:11
+File: /sb/Cartorio_F.sol
+- Operation may lead to a denial of essential contract function., Cartorio_F.sol 2659:13-2679:16
+DOSCheck took 6360 ms
+AddressPaddingCheck took 444843 ms
+FrontRunningCheck took 2409 ms
+Nr. Files: 1
+File: /sb/Cartorio_F.sol
+Graph translation: 5465 ms, Persisting graph: 37788 ms, AccessControlSelfdestructCheck: 1517 ms, CallReturnCheck: 625 ms, AccessControlLogicCheck: 3505 ms, ReentrancyCheck: 2173 ms, DefaultProxyDelegateCheck: 697 ms, TXOriginCheck: 312 ms, TimeManipulationCheck: 413 ms, LocalWriteToStorageCheck: 9603 ms, BadRandomnessCheck: 586 ms, OverUnderflowCheck: 1273567 ms, DOSCheck: 6360 ms, AddressPaddingCheck: 444843 ms, FrontRunningCheck: 2409 ms, All checks: 1747094 ms

@@ -1,0 +1,44 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:root:contract /sb/Consorcio_F.sol:FinancialPoolManager:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 27.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/Consorcio_F.sol:518:9: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:514:9: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:105:9: Warning: Integer Underflow.
+
+/sb/Consorcio_F.sol:73:5: Warning: Integer Underflow.
+
+INFO:symExec:/sb/Consorcio_F.sol:509:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 784637716923335095479473677900958302012794430558004314112
+/sb/Consorcio_F.sol:509:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 784637716923335095479473677900958302012794430558004314112
+    return pools[poolId].participants = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+/sb/Consorcio_F.sol:480:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 200867255532373784442745261542645325315275374222849104412672
+/sb/Consorcio_F.sol:495:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 996807622875068732045336428992060611698025952435750479703286721330282496
+/sb/Consorcio_F.sol:495:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentId = 996807622875068732045336428992060611698025952435750479703286721330282496
+INFO:symExec:/sb/Consorcio_F.sol:376:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======

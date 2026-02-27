@@ -1,0 +1,586 @@
+uri,startLine,endLine,id,name,text
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,8,8,slither_0_11_3_solc_version,solc-version,"Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Wallet_F.sol#8)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,8,8,solhint_6_0_0_one_contract_per_file,one-contract-per-file,Found more than One contract per file. 3 contracts found!
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,8,8,solhint_6_0_0_compiler_version,compiler-version,Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,8,8,smartcheck_SOLIDITY_PRAGMAS_VERSION,SOLIDITY_PRAGMAS_VERSION,"SOLIDITY_PRAGMAS_VERSION
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,14,14,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,14,14,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,15,15,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,15,15,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,15,15,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,15,15,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'requestRate'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,15,15,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'requestRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,16,16,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,16,16,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,16,16,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'readRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,16,16,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,16,16,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'readRate'. Expected: 2, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,16,16,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,17,17,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,17,17,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,17,17,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,17,17,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,17,17,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,18,18,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,18,18,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,18,18,slither_0_11_3_naming_convention,naming-convention,"Function IOracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#18) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,18,18,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,19,19,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,19,19,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,19,19,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,19,19,slither_0_11_3_naming_convention,naming-convention,"Function IOracle._removeOracle(string,address) (../sb/Wallet_F.sol#19) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,20,20,slither_0_11_3_naming_convention,naming-convention,"Function IOracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#20) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,20,20,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,20,20,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,20,20,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,27,27,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'IExchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,27,27,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'IExchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,28,28,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,28,28,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,28,28,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,28,28,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,29,29,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,29,29,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,29,29,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,29,29,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,29,29,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,30,30,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,30,30,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,30,30,slither_0_11_3_naming_convention,naming-convention,"Function IExchange._updateBridge(string) (../sb/Wallet_F.sol#30) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,30,30,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,31,31,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,31,31,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,31,31,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,31,31,slither_0_11_3_naming_convention,naming-convention,"Function IExchange._addCurrency(string) (../sb/Wallet_F.sol#31) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,32,32,slither_0_11_3_naming_convention,naming-convention,"Function IExchange._removeCurrency(string) (../sb/Wallet_F.sol#32) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,32,32,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,32,32,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,32,32,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,40,233,slither_0_11_3_missing_inheritance,missing-inheritance,"Oracle (../sb/Wallet_F.sol#40-233) should inherit from IOracle (../sb/Wallet_F.sol#14-21)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,40,40,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,40,40,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Oracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,60,60,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'authorizedWallet'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,60,60,slither_0_11_3_immutable_states,immutable-states,"Oracle.authorizedWallet (../sb/Wallet_F.sol#60) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,61,61,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'minimumQuorum'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,61,61,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,65,65,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,66,66,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracles'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,67,67,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'requests'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,68,68,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRates'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,69,69,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeRateTime'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,73,73,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RateRequested'. Expected: [id, url, symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,73,73,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RateRequested'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,73,73,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RateRequested'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,74,74,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [rate] on Event [RateUpdated] could be Indexed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,74,74,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [timestamp] on Event [RateUpdated] could be Indexed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,74,74,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'RateUpdated'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,74,74,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'RateUpdated'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,74,74,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'RateUpdated'. Expected: [symbol, rate, timestamp], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,79,79,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,79,79,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 35 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,79,79,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,79,79,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,79,79,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,88,88,slither_0_11_3_missing_zero_check,missing-zero-check,"Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#88) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#89)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,88,88,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,88,88,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,88,88,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,88,88,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,89,89,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,90,90,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,91,91,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,100,100,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,101,101,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,101,101,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,102,102,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,102,102,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,104,104,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,104,104,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,115,115,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,115,115,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,115,115,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,115,115,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,116,116,semgrep_1_131_0_1_2_1_state_variable_read_in_a_loop,state-variable-read-in-a-loop,Replace state variable reads and writes within loops with local variable reads and writes.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,127,127,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'answerRequest'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,127,167,slither_0_11_3_timestamp,timestamp,"Oracle.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#127-167) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(req.active,Request not active) (../sb/Wallet_F.sol#131)
+	- require(bool,string)(! req.answers[msg.sender],Oracle already answered) (../sb/Wallet_F.sol#132)
+	- req.requestTime < exchangeRateTime[req.currency] (../sb/Wallet_F.sol#146)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,130,130,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,130,130,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,130,130,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,130,130,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,130,130,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,131,131,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,131,131,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,132,132,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,132,132,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,137,137,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,137,137,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,137,137,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,137,137,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,137,137,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,137,137,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,143,143,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,143,143,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,143,143,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,143,143,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,143,143,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,155,155,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,155,155,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ req ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,160,160,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,160,160,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,161,161,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,162,162,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,163,163,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,164,164,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,165,165,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,166,166,semgrep_1_131_0_1_2_1_use_nested_if,use-nested-if,"Using nested is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,175,175,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,175,175,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,175,175,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'readRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,176,176,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,176,176,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,177,177,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,177,177,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,184,184,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,184,184,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,193,193,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,193,193,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,193,210,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#193-210) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,193,193,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,193,193,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,193,193,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,193,193,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,212,227,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#212-227) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,212,212,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeOracle'. Expected: [symbol, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,212,212,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,212,212,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,212,212,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,215,215,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,215,215,semgrep_1_131_0_1_2_1_unnecessary_checked_arithmetic_in_loop,unnecessary-checked-arithmetic-in-loop,A lot of times there is no risk that the loop counter can overflow.  Using Solidity's unchecked block saves the overflow checks.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,215,215,semgrep_1_131_0_1_2_1_use_prefix_increment_not_postfix,use-prefix-increment-not-postfix,Consider using the prefix increment expression whenever the return value is not needed. The prefix increment expression is cheaper in terms of gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,215,215,smartcheck_SOLIDITY_GAS_LIMIT_IN_LOOPS,SOLIDITY_GAS_LIMIT_IN_LOOPS,"SOLIDITY_GAS_LIMIT_IN_LOOPS
+Severity: 2"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,215,215,solhint_6_0_0_gas_increment_by_one,gas-increment-by-one,"GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,215,215,smartcheck_SOLIDITY_EXTRA_GAS_IN_LOOPS,SOLIDITY_EXTRA_GAS_IN_LOOPS,"SOLIDITY_EXTRA_GAS_IN_LOOPS
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,218,218,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,218,218,semgrep_1_131_0_1_2_1_array_length_outside_loop,array-length-outside-loop,"Caching the array length outside a loop saves reading it on each iteration, as long as the array's length is not changed during the loop."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,229,232,slither_0_11_3_naming_convention,naming-convention,"Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#229-232) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,229,229,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,229,229,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,229,229,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_changeMinimumQuorum'. Expected: [newQuorum], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,230,230,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,230,230,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,230,230,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,240,331,slither_0_11_3_missing_inheritance,missing-inheritance,"Exchange (../sb/Wallet_F.sol#240-331) should inherit from IExchange (../sb/Wallet_F.sol#27-33)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,240,240,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,240,240,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,240,331,slither_0_11_3_locked_ether,locked-ether,"Contract locking ether found:
+	Contract Exchange (../sb/Wallet_F.sol#240-331) has payable functions:
+	 - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#278-307)
+	But does not have a function to withdraw the ether
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,240,240,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,243,243,slither_0_11_3_immutable_states,immutable-states,"Exchange.authorizedWallet (../sb/Wallet_F.sol#243) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,243,243,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'authorizedWallet'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,244,244,slither_0_11_3_immutable_states,immutable-states,"Exchange.oracleContract (../sb/Wallet_F.sol#244) should be immutable 
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,244,244,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracleContract'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,245,245,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,245,245,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'bridgeURL'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,246,246,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'currencies'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,250,250,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [exchangeValue] on Event [ExchangeTriggered] could be Indexed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,250,250,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in event 'ExchangeTriggered'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,250,250,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in event 'ExchangeTriggered'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,250,250,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for event 'ExchangeTriggered'. Expected: [transactor, targetCurrency, exchangeValue, exchangeRate, timestamp, bridgeCall], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,250,250,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [exchangeRate] on Event [ExchangeTriggered] could be Indexed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,250,250,solhint_6_0_0_gas_indexed_events,gas-indexed-events,GC: [timestamp] on Event [ExchangeTriggered] could be Indexed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,262,262,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,262,262,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,262,262,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,262,262,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 35 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,262,262,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#268) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#269)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,slither_0_11_3_missing_zero_check,missing-zero-check,"Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#268) lacks a zero-check on :
+		- oracleContract = _oracleContract (../sb/Wallet_F.sol#270)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '<anonymous>'. Expected: [_authorizedWallet, _oracleContract], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,268,268,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,269,269,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,270,270,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,271,271,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,278,307,slither_0_11_3_timestamp,timestamp,"Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#278-307) uses timestamp for comparisons
+	Dangerous comparisons:
+	- (block.timestamp - rateTime) > maximumRateDelay (../sb/Wallet_F.sol#292)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,278,278,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,278,278,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,278,278,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,278,278,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchange'. Expected: [transactor, targetCurrency, targetAddress, maximumRateDelay], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,284,284,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,284,284,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,285,285,semgrep_1_131_0_1_2_1_use_short_revert_string,use-short-revert-string,Shortening revert strings to fit in 32 bytes will decrease gas costs for deployment and  gas costs when the revert condition has been met.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,285,285,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,285,285,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,285,285,solhint_6_0_0_reason_string,reason-string,Error message for require is too long: 34 counted / 32 allowed
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,285,285,solhint_6_0_0_gas_small_strings,gas-small-strings,GC: String exceeds 32 bytes
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,286,286,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,286,286,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,287,287,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,287,287,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,288,288,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,288,288,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,292,292,smartcheck_SOLIDITY_REVERT_REQUIRE,SOLIDITY_REVERT_REQUIRE,"SOLIDITY_REVERT_REQUIRE
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,294,294,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,294,294,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of revert statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'isSupported'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'isSupported'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,309,309,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,309,309,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'isSupported'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,318,320,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#318-320) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,318,318,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,318,318,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_updateBridge'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,318,318,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_updateBridge'. Expected: [newBridgeURL], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,318,318,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,322,322,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,322,322,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,322,322,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_addCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,322,322,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_addCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,322,325,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#322-325) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,323,323,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,323,323,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,327,330,slither_0_11_3_naming_convention,naming-convention,"Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#327-330) is not in mixedCase
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,327,327,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,327,327,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,327,327,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_removeCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,327,327,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_removeCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,328,328,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,328,328,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,338,338,solhint_6_0_0_use_natspec,use-natspec,Missing @author tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,338,338,smartcheck_SOLIDITY_LOCKED_MONEY,SOLIDITY_LOCKED_MONEY,"SOLIDITY_LOCKED_MONEY
+Severity: 3"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,338,338,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in contract 'Wallet'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,341,341,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'owner'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,342,342,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'oracleContract'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,343,343,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeContract'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,346,346,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,349,349,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,351,351,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'maximumRateDelay'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,352,352,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in variable 'exchangeFee'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,355,355,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,356,356,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,357,357,smartcheck_SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,"SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,362,362,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,362,362,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,367,367,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,367,367,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,375,375,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,375,375,solhint_6_0_0_func_visibility,func-visibility,Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,375,375,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,375,375,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,375,375,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '<anonymous>'. Expected: [_maximumRateDelay, _exchangeFee], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,375,375,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,376,376,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,377,377,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,378,378,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,379,379,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,380,380,semgrep_1_131_0_1_2_1_non_payable_constructor,non-payable-constructor,Consider making costructor payable to save gas.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,387,387,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function '_compareStrings'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,387,387,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function '_compareStrings'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,387,387,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function '_compareStrings'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,387,387,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function '_compareStrings'. Expected: [a, b], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,387,387,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '_compareStrings'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,396,396,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'deposit'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,403,403,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'transfer'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,403,403,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'transfer'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,403,403,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'transfer'. Expected: [amount, to], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,404,404,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,404,404,oyente_060ca34_Integer_Underflow,Integer Underflow,Integer Underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,404,404,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,404,404,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,405,405,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,405,405,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,407,407,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,414,414,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'externalTransfer'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,414,414,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'externalTransfer'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,414,414,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'externalTransfer'. Expected: [amount, to], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,414,422,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#414-422):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#420)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,415,415,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,415,415,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,415,415,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,416,416,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,416,416,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,418,418,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,421,421,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,421,421,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,427,427,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,427,427,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,427,427,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchange'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,427,427,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchange'. Expected: [targetCurrency, targetAddress, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,428,428,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,428,428,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,428,428,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,429,429,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,429,429,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,431,431,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,434,434,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,450,457,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#450-457):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#455)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,450,450,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'withdrawn'. Expected: [amount], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,450,450,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'withdrawn'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,450,450,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'withdrawn'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,451,451,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,451,451,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,451,451,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,453,453,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,456,456,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,456,456,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,464,464,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'transferAUTH'. Expected: [amount, from, to], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,464,464,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'transferAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,464,464,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'transferAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,466,466,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,466,466,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,467,467,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,468,468,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,469,469,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,470,470,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,470,470,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,470,470,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,471,471,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,471,471,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,473,473,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,480,493,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#480-493):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#491)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,480,480,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'externalTransferAUTH'. Expected: [amount, from, to], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,480,480,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'externalTransferAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,480,480,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'externalTransferAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,482,482,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,482,482,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,483,483,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,484,484,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,485,485,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,486,486,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,486,486,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,486,486,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,487,487,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,487,487,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,489,489,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,492,492,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,492,492,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,498,498,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,498,498,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'exchangeAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,498,498,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'exchangeAUTH'. Expected: [targetCurrency, from, targetAddress, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,498,498,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'exchangeAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,500,500,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,500,500,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,501,501,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,501,501,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,501,501,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,502,502,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,502,502,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,504,504,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,507,507,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,522,522,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'withdrawnAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,522,536,slither_0_11_3_low_level_calls,low-level-calls,"Low level call in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#522-536):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#534)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,522,522,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'withdrawnAUTH'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,522,522,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'withdrawnAUTH'. Expected: [from, amount], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,523,523,oyente_060ca34_Integer_Overflow,Integer Overflow,Integer Overflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,524,524,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,524,524,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,525,525,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,526,526,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,527,527,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,528,528,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,529,529,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,530,530,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,530,530,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,530,530,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,532,532,semgrep_1_131_0_1_2_1_basic_arithmetic_underflow,basic-arithmetic-underflow,Possible arithmetic underflow
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,534,534,oyente_060ca34_Callstack_Depth_Attack_Vulnerability,Callstack Depth Attack Vulnerability,Callstack Depth Attack Vulnerability
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,535,535,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,535,535,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,541,541,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'authorize'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,541,541,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'authorize'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,541,541,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,541,541,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'authorize'. Expected: [authorized, tier], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,542,542,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,542,542,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,543,543,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,544,544,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,545,545,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,546,546,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,547,547,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,554,554,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'revoke'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,554,554,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'revoke'. Expected: [unauthorize], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,554,554,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'revoke'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getExchangeAvailability'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getExchangeAvailability'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getExchangeAvailability'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getExchangeAvailability'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,560,560,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,560,560,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getExchangeAvailability'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,564,564,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getOracleAvailability'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,564,564,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getOracleAvailability'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,564,564,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getOracleAvailability'. Expected: 1, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,564,564,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,564,564,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getOracleAvailability'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,564,564,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getOracleAvailability'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,568,smartcheck_SOLIDITY_SHOULD_RETURN_STRUCT,SOLIDITY_SHOULD_RETURN_STRUCT,"SOLIDITY_SHOULD_RETURN_STRUCT
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,568,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'getExchangeRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,568,solhint_6_0_0_use_natspec,use-natspec,Missing @return tag in function 'getExchangeRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,568,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'getExchangeRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,568,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,570,slither_0_11_3_unused_return,unused-return,"Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#568-570) ignores return value by IOracle(oracleContract).readRate(symbol) (../sb/Wallet_F.sol#569)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,568,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'getExchangeRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,568,568,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @return count for function 'getExchangeRate'. Expected: 2, Found: 0"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,574,574,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'requestExchangeRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,574,574,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'requestExchangeRate'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,574,574,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,574,576,slither_0_11_3_unused_return,unused-return,"Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#574-576) ignores return value by IOracle(oracleContract).requestRate(symbol) (../sb/Wallet_F.sol#575)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,574,574,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'requestExchangeRate'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,580,580,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'addOracle'. Expected: [symbol, maintainer, url, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,580,580,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,580,580,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'addOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,580,580,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,580,580,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,580,580,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,584,584,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,584,584,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'removeOracle'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,584,584,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'removeOracle'. Expected: [symbol, accessAddress], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,584,584,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,588,588,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'changeMinimumQuorum'. Expected: [newQuorum], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,588,591,slither_0_11_3_tautology,tautology,"Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#588-591) contains a tautology or contradiction:
+	- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Invalid quorum) (../sb/Wallet_F.sol#589)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,588,588,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,588,588,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'changeMinimumQuorum'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,589,589,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,589,589,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,589,589,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,589,589,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,589,589,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,593,593,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateBridge'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,593,593,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateBridge'. Expected: [newBridgeURL], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,593,593,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateBridge'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,593,593,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,597,597,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'addCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,597,597,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,597,597,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'addCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,597,597,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'addCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,601,601,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'removeCurrency'. Expected: [symbol], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,601,601,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'removeCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,601,601,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'removeCurrency'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,601,601,solhint_6_0_0_gas_calldata_parameters,gas-calldata-parameters,GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,605,605,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateOracleAddress'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,605,605,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateOracleAddress'. Expected: [newOracle], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,605,605,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateOracleAddress'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,606,606,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,606,606,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,610,610,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateExchangeAddress'. Expected: [newExchange], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,610,610,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateExchangeAddress'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,610,610,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateExchangeAddress'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,611,611,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,611,611,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,615,617,slither_0_11_3_events_maths,events-maths,"Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#615-617) should emit an event for: 
+	- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#616) 
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,615,615,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateMaximumRateDelay'. Expected: [newMaximumRateDelay], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,615,615,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateMaximumRateDelay'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,615,615,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateMaximumRateDelay'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,619,622,slither_0_11_3_tautology,tautology,"Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#619-622) contains a tautology or contradiction:
+	- require(bool,string)(newExchangeFee >= 0 && newExchangeFee <= 100,Invalid fee) (../sb/Wallet_F.sol#620)
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,619,619,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'updateExchangeFee'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,619,619,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'updateExchangeFee'. Expected: [newExchangeFee], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,619,619,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'updateExchangeFee'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,619,622,slither_0_11_3_events_maths,events-maths,"Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#619-622) should emit an event for: 
+	- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#621) 
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,620,620,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,620,620,solhint_6_0_0_gas_strict_inequalities,gas-strict-inequalities,GC: Non strict inequality found. Try converting to a strict one
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,620,620,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,620,620,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,620,620,semgrep_1_131_0_1_2_1_use_multiple_require,use-multiple-require,"Using multiple require statements is cheaper than using && multiple check combinations.  There are more advantages, such as easier to read code and better coverage reports."
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,624,627,slither_0_11_3_events_access,events-access,"Wallet.changeOwnership(address) (../sb/Wallet_F.sol#624-627) should emit an event for: 
+	- owner = newOwner (../sb/Wallet_F.sol#626) 
+"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,624,624,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function 'changeOwnership'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,624,624,solhint_6_0_0_use_natspec,use-natspec,Missing @param tag in function 'changeOwnership'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,624,624,solhint_6_0_0_use_natspec,use-natspec,"Mismatch in @param names for function 'changeOwnership'. Expected: [newOwner], Found: []"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,625,625,semgrep_1_131_0_1_2_1_use_custom_error_not_require,use-custom-error-not-require,Consider using custom errors as they are more gas efficient while allowing developers  to describe the error in detail using NatSpec.
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,625,625,solhint_6_0_0_gas_custom_errors,gas-custom-errors,GC: Use Custom Errors instead of require statements
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,630,630,solhint_6_0_0_use_natspec,use-natspec,Missing @notice tag in function '<anonymous>'
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,630,630,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,631,631,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"
+/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol,631,631,smartcheck_SOLIDITY_VISIBILITY,SOLIDITY_VISIBILITY,"SOLIDITY_VISIBILITY
+Severity: 1"

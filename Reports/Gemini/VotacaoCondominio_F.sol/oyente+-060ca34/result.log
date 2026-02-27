@@ -1,0 +1,218 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/VotacaoCondominio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:root:contract /sb/VotacaoCondominio_F.sol:Checkpoints:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:CondoVotingSystem:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 34.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/VotacaoCondominio_F.sol:32:5: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:4930:49: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:605:14: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:5160:30: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:4999:5: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:5157:59: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:5152:34: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:4959:6: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:4957:6: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:3457:23: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:5354:2: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:5698:32: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:4460:1: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:4426:55: Warning: Integer Underflow.
+
+/sb/VotacaoCondominio_F.sol:5531:11: Warning: Integer Underflow.
+
+INFO:symExec:/sb/VotacaoCondominio_F.sol:4935:12: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:31:29: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:8:58: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:14:17: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:15:43: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:23:49: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:139:44: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:107:20: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5059:9: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5041:40: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:205:32: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5040:61: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5157:59: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5152:34: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5178:38: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:1520:41: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:1527:11: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:3457:13: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:177:49: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:4937:57: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5771:53: Warning: Integer Overflow.
+
+/sb/VotacaoCondominio_F.sol:5768:75: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:ECDSA:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:Math:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:MessageHashUtils:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:Panic:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:SafeCast:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:ShortStrings:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:SignedMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:StorageSlot:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:Strings:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/VotacaoCondominio_F.sol:Time:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======

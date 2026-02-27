@@ -1,0 +1,265 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function _selectWinner"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 391,
+                                    "startLine": 333
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391) uses a weak PRNG: \"randomIndex = uint256(keccak256(bytes)(abi.encodePacked(block.timestamp,block.prevrandao,poolId,pool.winnersCount,eligibleCount))) % eligibleCount (../sb/Consorcio_F.sol#357-367)\" \n"
+                    },
+                    "ruleId": "slither_0_11_3_weak_prng"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function _selectWinner"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 391,
+                                    "startLine": 333
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391):\n\tExternal calls:\n\t- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#376)\n\tState variables written after the call(s):\n\t- pool.winnersCount ++ (../sb/Consorcio_F.sol#382)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#72) can be used in cross function reentrancies:\n\t- FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391)\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#188-205)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#149-182)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#211-219)\n\t- FinancialPoolManager.getAllParticipants(uint256) (../sb/Consorcio_F.sol#503-510)\n\t- FinancialPoolManager.getParticipantCount(uint256) (../sb/Consorcio_F.sol#479-481)\n\t- FinancialPoolManager.getParticipantInfo(uint256,address) (../sb/Consorcio_F.sol#489-496)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#398-429)\n\t- FinancialPoolManager.isParticipant(uint256) (../sb/Consorcio_F.sol#125-131)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#250-274)\n\t- FinancialPoolManager.notParticipant(uint256) (../sb/Consorcio_F.sol#133-139)\n\t- FinancialPoolManager.onlyPoolOwner(uint256) (../sb/Consorcio_F.sol#109-115)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#225-244)\n\t- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327)\n\t- FinancialPoolManager.poolStatus(uint256,FinancialPoolManager.PoolStatus) (../sb/Consorcio_F.sol#117-123)\n\t- pool.status = PoolStatus.Finished (../sb/Consorcio_F.sol#388)\n\tFinancialPoolManager.pools (../sb/Consorcio_F.sol#72) can be used in cross function reentrancies:\n\t- FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391)\n\t- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#188-205)\n\t- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#149-182)\n\t- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#211-219)\n\t- FinancialPoolManager.getAllParticipants(uint256) (../sb/Consorcio_F.sol#503-510)\n\t- FinancialPoolManager.getParticipantCount(uint256) (../sb/Consorcio_F.sol#479-481)\n\t- FinancialPoolManager.getParticipantInfo(uint256,address) (../sb/Consorcio_F.sol#489-496)\n\t- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#398-429)\n\t- FinancialPoolManager.isParticipant(uint256) (../sb/Consorcio_F.sol#125-131)\n\t- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#250-274)\n\t- FinancialPoolManager.notParticipant(uint256) (../sb/Consorcio_F.sol#133-139)\n\t- FinancialPoolManager.onlyPoolOwner(uint256) (../sb/Consorcio_F.sol#109-115)\n\t- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#225-244)\n\t- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327)\n\t- FinancialPoolManager.poolStatus(uint256,FinancialPoolManager.PoolStatus) (../sb/Consorcio_F.sol#117-123)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_eth"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 327,
+                                    "startLine": 280
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327) uses a dangerous strict equality:\n\t- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#315)\n"
+                    },
+                    "ruleId": "slither_0_11_3_incorrect_equality"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function poolStatus"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 123,
+                                    "startLine": 117
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.poolStatus(uint256,FinancialPoolManager.PoolStatus) (../sb/Consorcio_F.sol#117-123) uses a dangerous strict equality:\n\t- require(bool,string)(pools[poolId].status == expectedStatus,Pool status does not allow this operation) (../sb/Consorcio_F.sol#118-121)\n"
+                    },
+                    "ruleId": "slither_0_11_3_incorrect_equality"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function _selectWinner"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 391,
+                                    "startLine": 333
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391):\n\tExternal calls:\n\t- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#376)\n\tEvent emitted after the call(s):\n\t- PoolFinished(poolId) (../sb/Consorcio_F.sol#389)\n\t- WinnerSelected(poolId,winner,pool.goodValue) (../sb/Consorcio_F.sol#384)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function payInstallment"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 327,
+                                    "startLine": 280
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#280-327) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(msg.value == pool.installmentValue,Incorrect payment amount) (../sb/Consorcio_F.sol#289-292)\n\t- require(bool,string)(pool.activationDate > 0,Pool activation date not set) (../sb/Consorcio_F.sol#293-296)\n\t- require(bool,string)(participant.payments < duePayments,No payment due at this time) (../sb/Consorcio_F.sol#303-306)\n\t- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#315)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function activatePool"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 205,
+                                    "startLine": 188
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#188-205) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Not enough participants to activate) (../sb/Consorcio_F.sol#196-199)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint ^0.8.19 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.19 (../sb/Consorcio_F.sol#8)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract FinancialPoolManager, function _selectWinner"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 391,
+                                    "startLine": 333
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in FinancialPoolManager._selectWinner(uint256) (../sb/Consorcio_F.sol#333-391):\n\t- (success,None) = address(winner).call{value: pool.goodValue}() (../sb/Consorcio_F.sol#376)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "id": "slither_0_11_3_incorrect_equality",
+                            "name": "incorrect-equality",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-102."
+                            },
+                            "id": "slither_0_11_3_solc_version",
+                            "name": "solc-version"
+                        },
+                        {
+                            "id": "slither_0_11_3_timestamp",
+                            "name": "timestamp",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-107, DASP-1."
+                            },
+                            "id": "slither_0_11_3_reentrancy_eth",
+                            "name": "reentrancy-eth",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_low_level_calls",
+                            "name": "low-level-calls"
+                        },
+                        {
+                            "id": "slither_0_11_3_weak_prng",
+                            "name": "weak-prng",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_reentrancy_events",
+                            "name": "reentrancy-events",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

@@ -1,0 +1,194 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc /sb/SupplyChain_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+INFO:root:contract /sb/SupplyChain_F.sol:Arrays:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:Comparators:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:ERC1155Utils:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:Math:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:Panic:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:PharmaCompany:
+INFO:symExec:	============ Results ===========
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:root:Analyzed opcode MCOPY with values: dst=64 + mem_64, src=160, length=mem_128
+INFO:symExec:	  EVM Code Coverage: 			 39.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/SupplyChain_F.sol:3587:24: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:3559:62: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:149:16: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:3579:18: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:747:39: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:4041:102: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:92:5: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:3888:25: Warning: Integer Underflow.
+
+INFO:symExec:/sb/SupplyChain_F.sol:60:12: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:3584:6: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:147:69: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:121:21: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:128:6: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:129:32: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:142:23: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:4041:102: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:101:59: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:Prescriptions:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 38.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/SupplyChain_F.sol:3958:5: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:SafeCast:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:SlotDerivation:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:StorageSlot:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:authorizationCertificates:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 94.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/SupplyChain_F.sol:4032:37: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:4003:36: Warning: Integer Underflow.
+
+INFO:symExec:/sb/SupplyChain_F.sol:46:73: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /sb/SupplyChain_F.sol:hospitalManagement:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 33.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/sb/SupplyChain_F.sol:4097:3: Warning: Integer Underflow.
+
+/sb/SupplyChain_F.sol:4097:46: Warning: Integer Underflow.
+
+INFO:symExec:/sb/SupplyChain_F.sol:4118:3: Warning: Integer Overflow.
+
+/sb/SupplyChain_F.sol:46:73: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======

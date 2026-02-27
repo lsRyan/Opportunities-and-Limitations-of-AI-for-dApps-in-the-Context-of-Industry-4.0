@@ -1,0 +1,65 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 5,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "line": 245,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 121,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "line": 28,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 9,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "line": 130,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 5,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "line": 61,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 28,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "line": 534,
+            "name": "Callstack Depth Attack Vulnerability"
+        },
+        {
+            "column": 9,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "line": 523,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 6,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+            "line": 404,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Exchange 34.1%",
+        "coverage Oracle 24.8%",
+        "coverage Wallet 42.2%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

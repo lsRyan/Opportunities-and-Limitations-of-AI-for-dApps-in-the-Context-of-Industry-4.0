@@ -1,0 +1,112 @@
+'solc --version' running
+'solc /sb/Consorcio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+Compilation warnings/errors on /sb/Consorcio_F.sol:
+Warning: Function state mutability can be restricted to view
+   --> /sb/Consorcio_F.sol:277:5:
+    |
+277 |     function selectWinner(uint256 poolId) private returns (address) {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310) uses a weak PRNG: "randomIndex = (uint256(keccak256(bytes)(abi.encodePacked(blockhash(uint256)(block.number - 1),block.timestamp,msg.sender))) % count) (../sb/Consorcio_F.sol#299-307)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Reentrancy in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270):
+	External calls:
+	- (success,None) = winner.call{value: pool.goodValue}() (../sb/Consorcio_F.sol#253)
+	State variables written after the call(s):
+	- pool.balance -= pool.goodValue (../sb/Consorcio_F.sol#257)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)
+	- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)
+	- pool.winnersCount ++ (../sb/Consorcio_F.sol#260)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)
+	- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)
+	- pool.participantsInfo[winner].received = true (../sb/Consorcio_F.sol#261)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)
+	- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)
+	- pool.participantsInfo[winner].canReceive = false (../sb/Consorcio_F.sol#262)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)
+	- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)
+	- pool.status = finished (../sb/Consorcio_F.sol#266)
+	FinancialPoolManager.pools (../sb/Consorcio_F.sol#62) can be used in cross function reentrancies:
+	- FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118)
+	- FinancialPoolManager.createPool(string,uint256,uint256,uint256) (../sb/Consorcio_F.sol#75-97)
+	- FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134)
+	- FinancialPoolManager.getPool(uint256) (../sb/Consorcio_F.sol#318-347)
+	- FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195)
+	- FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165)
+	- FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270)
+	- FinancialPoolManager.selectWinner(uint256) (../sb/Consorcio_F.sol#277-310)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270) uses a dangerous strict equality:
+	- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#241)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+FinancialPoolManager.activatePool(uint256) (../sb/Consorcio_F.sol#103-118) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(msg.sender == pool.owner,Only pool owner can activate) (../sb/Consorcio_F.sol#106)
+	- require(bool,string)(pool.totalParticipants >= pool.minParticipants,Not enough participants to activate) (../sb/Consorcio_F.sol#107-110)
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#111-114)
+FinancialPoolManager.deletePool(uint256) (../sb/Consorcio_F.sol#124-134) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(msg.sender == pool.owner,Only pool owner can delete) (../sb/Consorcio_F.sol#127)
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not in accepting participants status) (../sb/Consorcio_F.sol#128-131)
+FinancialPoolManager.participateInPool(uint256) (../sb/Consorcio_F.sol#140-165) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#143-146)
+FinancialPoolManager.leavePool(uint256) (../sb/Consorcio_F.sol#171-195) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(accepting_participants)),Pool is not accepting participants) (../sb/Consorcio_F.sol#174-177)
+FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(keccak256(bytes)(bytes(pool.status)) == keccak256(bytes)(bytes(active)),Pool is not active) (../sb/Consorcio_F.sol#204-207)
+	- require(bool,string)(msg.value == pool.installmentValue,Incorrect installment value) (../sb/Consorcio_F.sol#219)
+	- block.timestamp > pool.activationDate (../sb/Consorcio_F.sol#223)
+	- duePayments > pool.installments (../sb/Consorcio_F.sol#226)
+	- require(bool,string)(participant.payments < duePayments + 1,Too many payments made) (../sb/Consorcio_F.sol#232)
+	- require(bool,string)(participant.payments < pool.installments,All installments already paid) (../sb/Consorcio_F.sol#233)
+	- participant.payments == duePayments && ! participant.received (../sb/Consorcio_F.sol#241)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Consorcio_F.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in FinancialPoolManager.payInstallment(uint256) (../sb/Consorcio_F.sol#201-270):
+	- (success,None) = winner.call{value: pool.goodValue}() (../sb/Consorcio_F.sol#253)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/sb/Consorcio_F.sol analyzed (1 contracts with 100 detectors), 10 result(s) found

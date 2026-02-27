@@ -1,0 +1,444 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 47,
+            "message": "Missing @notice tag in variable 'currentId'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 54,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 31,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 54,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 59,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Missing @param tag in function 'createPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Mismatch in @param names for function 'createPool'. Expected: [targetGood, goodValue, minParticipants, installments], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Missing @return tag in function 'createPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Mismatch in @return count for function 'createPool'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 75,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 76,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 78,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 93,
+            "message": "Missing @param tag in function 'activatePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 93,
+            "message": "Mismatch in @param names for function 'activatePool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 99,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 104,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 105,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 114,
+            "message": "Missing @param tag in function 'deletePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 114,
+            "message": "Mismatch in @param names for function 'deletePool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 120,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 134,
+            "message": "Missing @param tag in function 'participateInPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 134,
+            "message": "Mismatch in @param names for function 'participateInPool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 136,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 145,
+            "message": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 149,
+            "message": "Missing @param tag in function 'leavePool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 149,
+            "message": "Mismatch in @param names for function 'leavePool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 151,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 156,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 41,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 159,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 168,
+            "message": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 176,
+            "message": "Missing @param tag in function 'payInstallment'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 176,
+            "message": "Mismatch in @param names for function 'payInstallment'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 182,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 186,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 187,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 195,
+            "message": "GC: For [ info ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 204,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Function body contains 56 lines but allowed no more than 50 lines",
+            "name": "function-max-lines"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Missing @notice tag in function '_selectWinner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Missing @param tag in function '_selectWinner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Mismatch in @param names for function '_selectWinner'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 56,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 217,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 222,
+            "message": "GC: For [ eligibleCount ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 56,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 242,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 251,
+            "message": "GC: For [ counter ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 258,
+            "message": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Missing @param tag in function 'getPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Mismatch in @param names for function 'getPool'. Expected: [poolId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Missing @return tag in function 'getPool'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Consorcio_F.sol",
+            "level": "warning",
+            "line": 277,
+            "message": "Mismatch in @return count for function 'getPool'. Expected: 10, Found: 0",
+            "name": "use-natspec"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

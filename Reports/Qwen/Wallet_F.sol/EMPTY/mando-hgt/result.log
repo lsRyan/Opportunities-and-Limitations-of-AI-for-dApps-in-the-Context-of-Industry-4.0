@@ -1,0 +1,22 @@
+Solidity version 0.8.31 detected, skipping SOLC_BIN export
+[2026-02-10 23:15:40.235758] MANDO Initializing
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+[2026-02-10 23:16:45.942071] INFO: __main__: Setting execution timeout to 3600 seconds
+[2026-02-10 23:16:45.964139] INFO: __main__: Analyzing only for bug types: ['access_control', 'arithmetic', 'denial_of_service', 'front_running', 'reentrancy', 'time_manipulation', 'unchecked_low_level_calls']
+[2026-02-10 23:16:47.335508] DEBUG: sco.common.process_graphs.control_flow_graph_generator: Invalid compilation: 
+Invalid solc compilation Error: Source file requires different compiler version (current compiler is 0.8.6+commit.11564f7e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> /sb/Wallet_F.sol:8:1:
+  |
+8 | pragma solidity ^0.8.20;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+[2026-02-10 23:16:47.361757] ERROR: __main__: An error occurred: Failed to generate CFG for /sb/Wallet_F.sol
+Result: {"messages": "Failed to generate CFG for /sb/Wallet_F.sol"}
+[2026-02-10 23:16:47.383169] INFO: __main__: [2026-02-10 23:16:47.383083] Results written to output.json
+DGL backend not selected or invalid.  Assuming PyTorch for now.
+Using backend: pytorch
+Traceback (most recent call last):
+  File "/app/sco/inference.py", line 84, in main
+    raise ValueError(f"Failed to generate CFG for {sm_path}")
+ValueError: Failed to generate CFG for /sb/Wallet_F.sol

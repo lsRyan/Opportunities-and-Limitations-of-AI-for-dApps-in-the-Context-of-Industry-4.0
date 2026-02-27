@@ -1,0 +1,1955 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) has bitwise-xor operator ^ instead of the exponentiation operator **: \n\t - inverse = (3 * denominator) ^ 2 (../sb/SupplyChain_F.sol#2137)\n"
+                    },
+                    "ruleId": "slither_0_11_3_incorrect_exp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)\n\t- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2144)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- low = low / twos (../sb/SupplyChain_F.sol#2125)\n\t- result = low * inverse (../sb/SupplyChain_F.sol#2152)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)\n\t- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2141)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)\n\t- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2142)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)\n\t- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2146)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)\n\t- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2143)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)\n\t- inverse = (3 * denominator) ^ 2 (../sb/SupplyChain_F.sol#2137)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) performs a multiplication on the result of a division:\n\t- denominator = denominator / twos (../sb/SupplyChain_F.sol#2122)\n\t- inverse *= 2 - denominator * inverse (../sb/SupplyChain_F.sol#2145)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function invMod"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2241,
+                                    "startLine": 2195
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.invMod(uint256,uint256) (../sb/SupplyChain_F.sol#2195-2241) performs a multiplication on the result of a division:\n\t- quotient = gcd / remainder (../sb/SupplyChain_F.sol#2217)\n\t- (gcd,remainder) = (remainder,gcd - remainder * quotient) (../sb/SupplyChain_F.sol#2219-2226)\n"
+                    },
+                    "ruleId": "slither_0_11_3_divide_before_multiply"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PharmaCompany, function buyMedicine"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4232,
+                                    "startLine": 4129
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Contract locking ether found:\n\tContract PharmaCompany (../sb/SupplyChain_F.sol#4129-4232) has payable functions:\n\t - PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4196-4221)\n\tBut does not have a function to withdraw the ether\n"
+                    },
+                    "ruleId": "slither_0_11_3_locked_ether"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PharmaCompany, function buyMedicine"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4221,
+                                    "startLine": 4196
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4196-4221):\n\tExternal calls:\n\t- saleAuthorized = PharmaHospital(hospital).authorizeSale(prescriptionId,to,medicineName,amount) (../sb/SupplyChain_F.sol#4216)\n\t- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)\n\t\t- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)\n\t\t- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)\n\t\t- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)\n\t\t- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)\n\tState variables written after the call(s):\n\t- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)\n\t\t- _balances[id][from] = fromBalance - value (../sb/SupplyChain_F.sol#3672)\n\t\t- _balances[id][to] += value (../sb/SupplyChain_F.sol#3677)\n\tERC1155._balances (../sb/SupplyChain_F.sol#3541) can be used in cross function reentrancies:\n\t- ERC1155._update(address,address,uint256[],uint256[]) (../sb/SupplyChain_F.sol#3654-3688)\n\t- ERC1155.balanceOf(address,uint256) (../sb/SupplyChain_F.sol#3578-3580)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_no_eth"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3978
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Prescriptions.constructor(address).managerAddress (../sb/SupplyChain_F.sol#3978) lacks a zero-check on :\n\t\t- managerContract = managerAddress (../sb/SupplyChain_F.sol#3979)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4409
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PharmaHospital.setPrescriptionContract(address).newPrescriptionContract (../sb/SupplyChain_F.sol#4409) lacks a zero-check on :\n\t\t- prescriptionsContract = newPrescriptionContract (../sb/SupplyChain_F.sol#4411)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4119
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "AuthorizationCertificates.changeAdmin(address).newAdmin (../sb/SupplyChain_F.sol#4119) lacks a zero-check on :\n\t\t- admin = newAdmin (../sb/SupplyChain_F.sol#4121)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4139
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PharmaCompany.constructor(address)._govAuthorizationContract (../sb/SupplyChain_F.sol#4139) lacks a zero-check on :\n\t\t- govAuthorizationContract = _govAuthorizationContract (../sb/SupplyChain_F.sol#4143)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4262
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PharmaHospital.constructor(address)._govAuthorizationContract (../sb/SupplyChain_F.sol#4262) lacks a zero-check on :\n\t\t- govAuthorizationContract = _govAuthorizationContract (../sb/SupplyChain_F.sol#4265)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract PharmaCompany, function buyMedicine"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4221,
+                                    "startLine": 4196
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in PharmaCompany.buyMedicine(string,address,uint256,address,uint256) (../sb/SupplyChain_F.sol#4196-4221):\n\tExternal calls:\n\t- saleAuthorized = PharmaHospital(hospital).authorizeSale(prescriptionId,to,medicineName,amount) (../sb/SupplyChain_F.sol#4216)\n\t- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)\n\t\t- response = IERC1155Receiver(to).onERC1155BatchReceived(operator,from,ids,values,data) (../sb/SupplyChain_F.sol#609-625)\n\t\t- response = IERC1155Receiver(to).onERC1155Received(operator,from,id,value,data) (../sb/SupplyChain_F.sol#574-588)\n\t\t- ERC1155Utils.checkOnERC1155Received(operator,from,to,id,value,data) (../sb/SupplyChain_F.sol#3712)\n\t\t- ERC1155Utils.checkOnERC1155BatchReceived(operator,from,to,ids,values,data) (../sb/SupplyChain_F.sol#3714)\n\tEvent emitted after the call(s):\n\t- TransferBatch(operator,from,to,ids,values) (../sb/SupplyChain_F.sol#3686)\n\t\t- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)\n\t- TransferSingle(operator,from,to,id_scope_0,value_scope_1) (../sb/SupplyChain_F.sol#3684)\n\t\t- _safeTransferFrom(owner(),to,medicineId,amount,bytes(medicineName)) (../sb/SupplyChain_F.sol#4220)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function _begin"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3083,
+                                    "startLine": 3079
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays._begin(uint256[]) (../sb/SupplyChain_F.sol#3079-3083) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3080-3082)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveMapping"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2772,
+                                    "startLine": 2762
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveMapping(bytes32,string) (../sb/SupplyChain_F.sol#2762-2772) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2763-2771)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function _swap"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3114,
+                                    "startLine": 3107
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays._swap(uint256,uint256) (../sb/SupplyChain_F.sol#3107-3114) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3108-3113)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3378,
+                                    "startLine": 3372
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeAccess(string[],uint256) (../sb/SupplyChain_F.sol#3372-3378) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3374-3376)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBooleanSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2871,
+                                    "startLine": 2867
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBooleanSlot(bytes32) (../sb/SupplyChain_F.sol#2867-2871) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2868-2870)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBytesSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2925,
+                                    "startLine": 2921
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBytesSlot(bytes32) (../sb/SupplyChain_F.sol#2921-2925) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2922-2924)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function add512"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1910,
+                                    "startLine": 1905
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.add512(uint256,uint256) (../sb/SupplyChain_F.sol#1905-1910) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#1906-1909)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function _castToUint256Array"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3121,
+                                    "startLine": 3117
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays._castToUint256Array(address[]) (../sb/SupplyChain_F.sol#3117-3121) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3118-3120)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeSetLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3444,
+                                    "startLine": 3440
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeSetLength(address[],uint256) (../sb/SupplyChain_F.sol#3440-3444) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3441-3443)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function _castToUint256Comp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3137,
+                                    "startLine": 3131
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays._castToUint256Comp(function(address,address) returns(bool)) (../sb/SupplyChain_F.sol#3131-3137) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3134-3136)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeMemoryAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3422,
+                                    "startLine": 3418
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeMemoryAccess(bytes[],uint256) (../sb/SupplyChain_F.sol#3418-3422) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3419-3421)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryMod"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1990,
+                                    "startLine": 1982
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryMod(uint256,uint256) (../sb/SupplyChain_F.sol#1982-1990) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#1985-1988)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function log2"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2531,
+                                    "startLine": 2492
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.log2(uint256) (../sb/SupplyChain_F.sol#2492-2531) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2528-2530)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SafeCast, function toUint"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1816,
+                                    "startLine": 1812
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SafeCast.toUint(bool) (../sb/SupplyChain_F.sol#1812-1816) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#1813-1815)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getAddressSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2862,
+                                    "startLine": 2858
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getAddressSlot(bytes32) (../sb/SupplyChain_F.sol#2858-2862) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2859-2861)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3326,
+                                    "startLine": 3320
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeAccess(address[],uint256) (../sb/SupplyChain_F.sol#3320-3326) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3322-3324)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBytesSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2934,
+                                    "startLine": 2930
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBytesSlot(bytes) (../sb/SupplyChain_F.sol#2930-2934) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2931-2933)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC1155, function _asSingletonArrays"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3906,
+                                    "startLine": 3886
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC1155._asSingletonArrays(uint256,uint256) (../sb/SupplyChain_F.sol#3886-3906) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3890-3905)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveMapping"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2757,
+                                    "startLine": 2751
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveMapping(bytes32,int256) (../sb/SupplyChain_F.sol#2751-2757) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2752-2756)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC1155Utils, function checkOnERC1155BatchReceived"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 627,
+                                    "startLine": 600
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC1155Utils.checkOnERC1155BatchReceived(address,address,address,uint256[],uint256[],bytes) (../sb/SupplyChain_F.sol#600-627) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#621-623)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveArray"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2702,
+                                    "startLine": 2697
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveArray(bytes32) (../sb/SupplyChain_F.sol#2697-2702) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2698-2701)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getBytes32Slot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2880,
+                                    "startLine": 2876
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getBytes32Slot(bytes32) (../sb/SupplyChain_F.sol#2876-2880) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2877-2879)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveMapping"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2724,
+                                    "startLine": 2718
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveMapping(bytes32,bool) (../sb/SupplyChain_F.sol#2718-2724) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2719-2723)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1977,
+                                    "startLine": 1969
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryDiv(uint256,uint256) (../sb/SupplyChain_F.sol#1969-1977) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#1972-1975)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function _mload"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3102,
+                                    "startLine": 3098
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays._mload(uint256) (../sb/SupplyChain_F.sol#3098-3102) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3099-3101)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryModExp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2351,
+                                    "startLine": 2329
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryModExp(bytes,bytes,bytes) (../sb/SupplyChain_F.sol#2329-2351) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2341-2350)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeSetLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3488,
+                                    "startLine": 3484
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeSetLength(string[],uint256) (../sb/SupplyChain_F.sol#3484-3488) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3485-3487)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mulDiv"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2155,
+                                    "startLine": 2084
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mulDiv(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2084-2155) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2107-2114)\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2120-2129)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getInt256Slot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2898,
+                                    "startLine": 2894
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getInt256Slot(bytes32) (../sb/SupplyChain_F.sol#2894-2898) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2895-2897)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3339,
+                                    "startLine": 3333
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeAccess(bytes32[],uint256) (../sb/SupplyChain_F.sol#3333-3339) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3335-3337)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveMapping"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2735,
+                                    "startLine": 2729
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveMapping(bytes32,bytes32) (../sb/SupplyChain_F.sol#2729-2735) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2730-2734)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Panic, function panic"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1877,
+                                    "startLine": 1871
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Panic.panic(uint256) (../sb/SupplyChain_F.sol#1871-1877) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#1872-1876)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeMemoryAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3411,
+                                    "startLine": 3407
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeMemoryAccess(uint256[],uint256) (../sb/SupplyChain_F.sol#3407-3411) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3408-3410)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeMemoryAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3400,
+                                    "startLine": 3396
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeMemoryAccess(bytes32[],uint256) (../sb/SupplyChain_F.sol#3396-3400) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3397-3399)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3352,
+                                    "startLine": 3346
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeAccess(uint256[],uint256) (../sb/SupplyChain_F.sol#3346-3352) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3348-3350)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getStringSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2916,
+                                    "startLine": 2912
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getStringSlot(string) (../sb/SupplyChain_F.sol#2912-2916) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2913-2915)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveMapping"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2746,
+                                    "startLine": 2740
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveMapping(bytes32,uint256) (../sb/SupplyChain_F.sol#2740-2746) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2741-2745)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveMapping"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2787,
+                                    "startLine": 2777
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveMapping(bytes32,bytes) (../sb/SupplyChain_F.sol#2777-2787) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2778-2786)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract ERC1155Utils, function checkOnERC1155Received"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 590,
+                                    "startLine": 565
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "ERC1155Utils.checkOnERC1155Received(address,address,address,uint256,uint256,bytes) (../sb/SupplyChain_F.sol#565-590) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#584-586)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function _castToUint256Comp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3146,
+                                    "startLine": 3140
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays._castToUint256Comp(function(bytes32,bytes32) returns(bool)) (../sb/SupplyChain_F.sol#3140-3146) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3143-3145)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryMul"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1964,
+                                    "startLine": 1953
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryMul(uint256,uint256) (../sb/SupplyChain_F.sol#1953-1964) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#1956-1960)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeSetLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3477,
+                                    "startLine": 3473
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeSetLength(bytes[],uint256) (../sb/SupplyChain_F.sol#3473-3477) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3474-3476)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeSetLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3455,
+                                    "startLine": 3451
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeSetLength(bytes32[],uint256) (../sb/SupplyChain_F.sol#3451-3455) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3452-3454)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeSetLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3466,
+                                    "startLine": 3462
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeSetLength(uint256[],uint256) (../sb/SupplyChain_F.sol#3462-3466) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3463-3465)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function erc7201Slot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2683,
+                                    "startLine": 2678
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.erc7201Slot(string) (../sb/SupplyChain_F.sol#2678-2683) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2679-2682)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeMemoryAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3389,
+                                    "startLine": 3385
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeMemoryAccess(address[],uint256) (../sb/SupplyChain_F.sol#3385-3389) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3386-3388)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function mul512"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 1926,
+                                    "startLine": 1917
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.mul512(uint256,uint256) (../sb/SupplyChain_F.sol#1917-1926) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#1921-1925)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getStringSlot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2907,
+                                    "startLine": 2903
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getStringSlot(bytes32) (../sb/SupplyChain_F.sol#2903-2907) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2904-2906)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract StorageSlot, function getUint256Slot"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2889,
+                                    "startLine": 2885
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "StorageSlot.getUint256Slot(bytes32) (../sb/SupplyChain_F.sol#2885-2889) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2886-2888)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function _castToUint256Array"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3128,
+                                    "startLine": 3124
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays._castToUint256Array(bytes32[]) (../sb/SupplyChain_F.sol#3124-3128) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3125-3127)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SlotDerivation, function deriveMapping"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2713,
+                                    "startLine": 2707
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SlotDerivation.deriveMapping(bytes32,address) (../sb/SupplyChain_F.sol#2707-2713) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2708-2712)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeMemoryAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3433,
+                                    "startLine": 3429
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeMemoryAccess(string[],uint256) (../sb/SupplyChain_F.sol#3429-3433) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3430-3432)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function tryModExp"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2313,
+                                    "startLine": 2289
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.tryModExp(uint256,uint256,uint256) (../sb/SupplyChain_F.sol#2289-2313) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#2291-2312)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Arrays, function unsafeAccess"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 3365,
+                                    "startLine": 3359
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Arrays.unsafeAccess(bytes[],uint256) (../sb/SupplyChain_F.sol#3359-3365) uses assembly\n\t- INLINE ASM (../sb/SupplyChain_F.sol#3361-3363)\n"
+                    },
+                    "ruleId": "slither_0_11_3_assembly"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 10
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "4 different versions of Solidity are used:\n\t- Version constraint ^0.8.20 is used by:\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#10)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#42)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#546)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#636)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#660)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#1825)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#1886)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#2638)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#2797)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#2944)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#3497)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#3524)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#3915)\n\t\t-^0.8.20 (../sb/SupplyChain_F.sol#3943)\n\t- Version constraint >=0.8.4 is used by:\n\t\t->=0.8.4 (../sb/SupplyChain_F.sol#143)\n\t- Version constraint >=0.4.16 is used by:\n\t\t->=0.4.16 (../sb/SupplyChain_F.sol#309)\n\t- Version constraint >=0.6.2 is used by:\n\t\t->=0.6.2 (../sb/SupplyChain_F.sol#338)\n\t\t->=0.6.2 (../sb/SupplyChain_F.sol#463)\n\t\t->=0.6.2 (../sb/SupplyChain_F.sol#485)\n"
+                    },
+                    "ruleId": "slither_0_11_3_pragma"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Context, function _contextSuffixLength"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 33,
+                                    "startLine": 31
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Context._contextSuffixLength() (../sb/SupplyChain_F.sol#31-33) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Context, function _msgData"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 29,
+                                    "startLine": 27
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Context._msgData() (../sb/SupplyChain_F.sol#27-29) is never used and should be removed\n"
+                    },
+                    "ruleId": "slither_0_11_3_dead_code"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 338
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.6.2 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching\n\t- EmptyByteArrayCopy\n\t- DynamicArrayCleanup\n\t- MissingEscapingInFormatting\n\t- ArraySliceDynamicallyEncodedBaseType\n\t- ImplicitConstructorCallvalueCheck\n\t- TupleAssignmentMultiStackSlotComponents\n\t- MemoryArrayCreationOverflow.\nIt is used by:\n\t- >=0.6.2 (../sb/SupplyChain_F.sol#338)\n\t- >=0.6.2 (../sb/SupplyChain_F.sol#463)\n\t- >=0.6.2 (../sb/SupplyChain_F.sol#485)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 10
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#10)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#42)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#546)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#636)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#660)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#1825)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#1886)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#2638)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#2797)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#2944)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#3497)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#3524)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#3915)\n\t- ^0.8.20 (../sb/SupplyChain_F.sol#3943)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 309
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.4.16 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- DirtyBytesArrayToStorage\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching\n\t- EmptyByteArrayCopy\n\t- DynamicArrayCleanup\n\t- ImplicitConstructorCallvalueCheck\n\t- TupleAssignmentMultiStackSlotComponents\n\t- MemoryArrayCreationOverflow\n\t- privateCanBeOverridden\n\t- SignedArrayStorageCopy\n\t- ABIEncoderV2StorageArrayWithMultiSlotElement\n\t- DynamicConstructorArgumentsClippedABIV2\n\t- UninitializedFunctionPointerInConstructor_0.4.x\n\t- IncorrectEventSignatureInLibraries_0.4.x\n\t- ExpExponentCleanup\n\t- NestedArrayFunctionCallDecoder\n\t- ZeroFunctionSelector.\nIt is used by:\n\t- >=0.4.16 (../sb/SupplyChain_F.sol#309)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 143
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Version constraint >=0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables.\nIt is used by:\n\t- >=0.8.4 (../sb/SupplyChain_F.sol#143)\n"
+                    },
+                    "ruleId": "slither_0_11_3_solc_version"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Prescriptions, function _getPrescription"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4028,
+                                    "startLine": 4020
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Prescriptions._getPrescription(address,uint256) (../sb/SupplyChain_F.sol#4020-4028) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Prescriptions, function _prescribe"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 4012,
+                                    "startLine": 3990
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Prescriptions._prescribe(address,address,string,uint256) (../sb/SupplyChain_F.sol#3990-4012) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3994
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Parameter Prescriptions._prescribe(address,address,string,uint256)._dose (../sb/SupplyChain_F.sol#3994) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3993
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Parameter Prescriptions._prescribe(address,address,string,uint256)._medicine (../sb/SupplyChain_F.sol#3993) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Math, function log2"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 2531,
+                                    "startLine": 2492
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Math.log2(uint256) (../sb/SupplyChain_F.sol#2492-2531) uses literals with too many digits:\n\t- r = r | byte(uint256,uint256)(x >> r,0x0000010102020202030303030303030300000000000000000000000000000000) (../sb/SupplyChain_F.sol#2529)\n"
+                    },
+                    "ruleId": "slither_0_11_3_too_many_digits"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4245
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PharmaHospital.govAuthorizationContract (../sb/SupplyChain_F.sol#4245) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 3950
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Prescriptions.managerContract (../sb/SupplyChain_F.sol#3950) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Qwen/SupplyChain_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 4133
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "PharmaCompany.govAuthorizationContract (../sb/SupplyChain_F.sol#4133) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "id": "slither_0_11_3_immutable_states",
+                            "name": "immutable-states"
+                        },
+                        {
+                            "id": "slither_0_11_3_divide_before_multiply",
+                            "name": "divide-before-multiply",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_incorrect_exp",
+                            "name": "incorrect-exp",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_assembly",
+                            "name": "assembly"
+                        },
+                        {
+                            "id": "slither_0_11_3_dead_code",
+                            "name": "dead-code"
+                        },
+                        {
+                            "id": "slither_0_11_3_missing_zero_check",
+                            "name": "missing-zero-check",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-102."
+                            },
+                            "id": "slither_0_11_3_solc_version",
+                            "name": "solc-version"
+                        },
+                        {
+                            "id": "slither_0_11_3_reentrancy_events",
+                            "name": "reentrancy-events",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-5."
+                            },
+                            "id": "slither_0_11_3_locked_ether",
+                            "name": "locked-ether",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-107, DASP-1."
+                            },
+                            "id": "slither_0_11_3_reentrancy_no_eth",
+                            "name": "reentrancy-no-eth",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-103."
+                            },
+                            "id": "slither_0_11_3_pragma",
+                            "name": "pragma"
+                        },
+                        {
+                            "id": "slither_0_11_3_too_many_digits",
+                            "name": "too-many-digits"
+                        },
+                        {
+                            "id": "slither_0_11_3_naming_convention",
+                            "name": "naming-convention"
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

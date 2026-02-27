@@ -1,0 +1,1279 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Found more than One contract per file. 2 contracts found!"
+                    },
+                    "ruleId": "solhint_6_0_0_one_contract_per_file"
+                },
+                {
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 8
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement"
+                    },
+                    "ruleId": "solhint_6_0_0_compiler_version"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 18
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @title tag in contract 'ReentrancyGuard'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 18
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @author tag in contract 'ReentrancyGuard'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 18
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in contract 'ReentrancyGuard'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 24
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in function '<anonymous>'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 24
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)"
+                    },
+                    "ruleId": "solhint_6_0_0_func_visibility"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 29
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 36
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @title tag in contract 'FinancialPoolManager'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 36
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @author tag in contract 'FinancialPoolManager'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 1,
+                                    "startLine": 36
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in contract 'FinancialPoolManager'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 69
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in variable 'currentId'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 81
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'PoolCreated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 81
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'PoolCreated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 81
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'PoolCreated'. Expected: [poolId, owner, goodValue], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 81
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [goodValue] on Event [PoolCreated] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 82
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'PoolActivated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 82
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'PoolActivated'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 82
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'PoolActivated'. Expected: [poolId, activationDate], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 82
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [activationDate] on Event [PoolActivated] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 83
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'PoolCanceled'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 83
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'PoolCanceled'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 83
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'PoolCanceled'. Expected: [poolId], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 84
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'UserJoined'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 84
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'UserJoined'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 84
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'UserJoined'. Expected: [poolId, user], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 85
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'UserLeft'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 85
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'UserLeft'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 85
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'UserLeft'. Expected: [poolId, user], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 86
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'InstallmentPaid'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 86
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'InstallmentPaid'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 86
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'InstallmentPaid'. Expected: [poolId, user, paymentCount], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 86
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [paymentCount] on Event [InstallmentPaid] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 87
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'WinnerSelected'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 87
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'WinnerSelected'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 87
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'WinnerSelected'. Expected: [poolId, winner, amount], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 87
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: [amount] on Event [WinnerSelected] could be Indexed"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_indexed_events"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 88
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in event 'PoolFinished'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 88
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in event 'PoolFinished'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 88
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for event 'PoolFinished'. Expected: [poolId], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 112
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @notice tag in function '_compareStrings'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 112
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @param tag in function '_compareStrings'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 112
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @param names for function '_compareStrings'. Expected: [a, b], Found: []"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 112
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Missing @return tag in function '_compareStrings'"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 112
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Mismatch in @return count for function '_compareStrings'. Expected: 1, Found: 0"
+                    },
+                    "ruleId": "solhint_6_0_0_use_natspec"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 134
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 135
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Use Custom Errors instead of require statements"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_custom_errors"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 137
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 56,
+                                    "startLine": 199
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 203
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 56,
+                                    "startLine": 225
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 236
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
+                                    "startLine": 252
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function body contains 92 lines but allowed no more than 50 lines"
+                    },
+                    "ruleId": "solhint_6_0_0_function_max_lines"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 13,
+                                    "startLine": 260
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Rule is set with explicit type [var/s: uint]"
+                    },
+                    "ruleId": "solhint_6_0_0_explicit_types"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 48,
+                                    "startLine": 260
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 13,
+                                    "startLine": 277
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 9,
+                                    "startLine": 280
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ senderInfo ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 13,
+                                    "startLine": 294
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: Non strict inequality found. Try converting to a strict one"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_strict_inequalities"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 60,
+                                    "startLine": 301
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 21,
+                                    "startLine": 306
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ count ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                },
+                {
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/Gemini/Consorcio_F.sol"
+                                },
+                                "region": {
+                                    "startColumn": 17,
+                                    "startLine": 330
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "GC: For [ p ] variable, increment/decrement by 1 using: [ ++variable ] to save gas"
+                    },
+                    "ruleId": "solhint_6_0_0_gas_increment_by_one"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/protofire/solhint",
+                    "name": "Solhint",
+                    "rules": [
+                        {
+                            "id": "solhint_6_0_0_gas_strict_inequalities",
+                            "name": "gas-strict-inequalities"
+                        },
+                        {
+                            "id": "solhint_6_0_0_one_contract_per_file",
+                            "name": "one-contract-per-file"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_indexed_events",
+                            "name": "gas-indexed-events"
+                        },
+                        {
+                            "id": "solhint_6_0_0_function_max_lines",
+                            "name": "function-max-lines"
+                        },
+                        {
+                            "id": "solhint_6_0_0_func_visibility",
+                            "name": "func-visibility"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_custom_errors",
+                            "name": "gas-custom-errors"
+                        },
+                        {
+                            "id": "solhint_6_0_0_gas_increment_by_one",
+                            "name": "gas-increment-by-one"
+                        },
+                        {
+                            "id": "solhint_6_0_0_explicit_types",
+                            "name": "explicit-types"
+                        },
+                        {
+                            "id": "solhint_6_0_0_use_natspec",
+                            "name": "use-natspec"
+                        },
+                        {
+                            "id": "solhint_6_0_0_compiler_version",
+                            "name": "compiler-version"
+                        }
+                    ],
+                    "version": "6.0.0"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

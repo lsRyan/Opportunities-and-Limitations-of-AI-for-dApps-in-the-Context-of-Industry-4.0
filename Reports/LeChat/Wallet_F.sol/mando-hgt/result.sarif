@@ -1,0 +1,131 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 318,
+                                    "startLine": 53
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "arithmetic"
+                    },
+                    "ruleId": "mando_hgt_arithmetic"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 318,
+                                    "startLine": 53
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "denial_of_service"
+                    },
+                    "ruleId": "mando_hgt_denial_of_service"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 282,
+                                    "startLine": 53
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "front_running"
+                    },
+                    "ruleId": "mando_hgt_front_running"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol"
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "unchecked_low_level_calls"
+                    },
+                    "ruleId": "mando_hgt_unchecked_low_level_calls"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/stephan-klein/ge-sc-machine/tree/hgt, forked from https://github.com/MANDO-Project/ge-sc-machine.git",
+                    "name": "Mando HGT",
+                    "rules": [
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "mando_hgt_unchecked_low_level_calls",
+                            "name": "unchecked_low_level_calls",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-113, SWC-128, DASP-5."
+                            },
+                            "id": "mando_hgt_denial_of_service",
+                            "name": "denial_of_service",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-101, DASP-3."
+                            },
+                            "id": "mando_hgt_arithmetic",
+                            "name": "arithmetic",
+                            "properties": {
+                                "security-severity": "8.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-114, DASP-7."
+                            },
+                            "id": "mando_hgt_front_running",
+                            "name": "front_running",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        }
+                    ],
+                    "version": "0.1"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

@@ -1,0 +1,148 @@
+'solc --version' running
+'solc /sb/Wallet_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+
+Contract locking ether found:
+	Contract Exchange (../sb/Wallet_F.sol#228-350) has payable functions:
+	 - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#207-211) contains a tautology or contradiction:
+	- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Quorum must be between 0 and 100) (../sb/Wallet_F.sol#209)
+Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#708-715) contains a tautology or contradiction:
+	- require(bool,string)(newQuorum >= 0 && newQuorum <= 100,Quorum must be between 0 and 100) (../sb/Wallet_F.sol#710)
+Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#786-790) contains a tautology or contradiction:
+	- require(bool,string)(newExchangeFee >= 0 && newExchangeFee <= 100,Fee must be between 0 and 100) (../sb/Wallet_F.sol#788)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#tautology-or-contradiction
+
+Exchange.exchange(address,string,address,uint256).data (../sb/Wallet_F.sol#281) is written in both
+	(success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#281-283)
+	(success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),targetCurrency)) (../sb/Wallet_F.sol#291-293)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#write-after-write
+
+Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#777-780) should emit an event for: 
+	- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#779) 
+Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#786-790) should emit an event for: 
+	- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#789) 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-arithmetic
+
+Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#69) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#70)
+Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#257) lacks a zero-check on :
+		- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#258)
+Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#257) lacks a zero-check on :
+		- oracleContract = _oracleContract (../sb/Wallet_F.sol#259)
+Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#432) lacks a zero-check on :
+		- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)
+Wallet.exchange(string,address,uint256).targetAddress (../sb/Wallet_F.sol#446) lacks a zero-check on :
+		- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),msg.sender,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#465-473)
+Wallet.externalTransferAUTH(uint256,address,address).to (../sb/Wallet_F.sol#515) lacks a zero-check on :
+		- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)
+Wallet.exchangeAUTH(string,address,address,uint256).targetAddress (../sb/Wallet_F.sol#537) lacks a zero-check on :
+		- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),from,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#559-567)
+Wallet.addOracle(string,string,string,address).accessAddress (../sb/Wallet_F.sol#683) lacks a zero-check on :
+		- (success,None) = oracleContract.call(abi.encodeWithSignature(_addOracle(string,string,string,address),symbol,maintainer,url,accessAddress)) (../sb/Wallet_F.sol#685-687)
+Wallet.removeOracle(string,address).accessAddress (../sb/Wallet_F.sol#696) lacks a zero-check on :
+		- (success,None) = oracleContract.call(abi.encodeWithSignature(_removeOracle(string,address),symbol,accessAddress)) (../sb/Wallet_F.sol#698-700)
+Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#759) lacks a zero-check on :
+		- oracleContract = newOracle (../sb/Wallet_F.sol#761)
+Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#768) lacks a zero-check on :
+		- exchangeContract = newExchange (../sb/Wallet_F.sol#770)
+Wallet.changeOwnership(address).newOwner (../sb/Wallet_F.sol#796) lacks a zero-check on :
+		- owner = newOwner (../sb/Wallet_F.sol#798)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Reentrancy in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#432-438):
+	External calls:
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)
+	Event emitted after the call(s):
+	- ExternalTransfer(msg.sender,to,amount) (../sb/Wallet_F.sol#437)
+Reentrancy in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#515-528):
+	External calls:
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)
+	Event emitted after the call(s):
+	- ExternalTransfer(from,to,amount) (../sb/Wallet_F.sol#527)
+Reentrancy in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#481-487):
+	External calls:
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#484)
+	Event emitted after the call(s):
+	- Withdrawal(msg.sender,amount) (../sb/Wallet_F.sol#486)
+Reentrancy in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#576-595):
+	External calls:
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#592)
+	Event emitted after the call(s):
+	- Withdrawal(from,amount) (../sb/Wallet_F.sol#594)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Oracle.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#102-146) uses timestamp for comparisons
+	Dangerous comparisons:
+	- requests[id].requestTime < exchangeRateTime[requests[id].currency] (../sb/Wallet_F.sol#120)
+Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp - exchangeRateTime > maximumRateDelay (../sb/Wallet_F.sol#298)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#182-201) has costly operations inside a loop:
+	- delete currencies[symbol] (../sb/Wallet_F.sol#196)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#costly-operations-inside-a-loop
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Wallet_F.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#269-310):
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#281-283)
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),targetCurrency)) (../sb/Wallet_F.sol#291-293)
+Low level call in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#432-438):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#435)
+Low level call in Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#446-475):
+	- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#451-453)
+	- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),msg.sender,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#465-473)
+Low level call in Wallet.withdrawn(uint256) (../sb/Wallet_F.sol#481-487):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#484)
+Low level call in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#515-528):
+	- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#525)
+Low level call in Wallet.exchangeAUTH(string,address,address,uint256) (../sb/Wallet_F.sol#537-569):
+	- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),targetCurrency)) (../sb/Wallet_F.sol#545-547)
+	- (success,None) = exchangeContract.call{value: amount - fee}(abi.encodeWithSignature(exchange(address,string,address,uint256),from,targetCurrency,targetAddress,maximumRateDelay)) (../sb/Wallet_F.sol#559-567)
+Low level call in Wallet.withdrawnAUTH(address,uint256) (../sb/Wallet_F.sol#576-595):
+	- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#592)
+Low level call in Wallet.getExchangeAvailability(string) (../sb/Wallet_F.sol#626-633):
+	- (success,data) = address(exchangeContract).staticcall(abi.encodeWithSignature(isSupported(string),symbol)) (../sb/Wallet_F.sol#627-629)
+Low level call in Wallet.getOracleAvailability(string) (../sb/Wallet_F.sol#640-647):
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(isSupported(string),symbol)) (../sb/Wallet_F.sol#641-643)
+Low level call in Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#654-662):
+	- (success,data) = address(oracleContract).staticcall(abi.encodeWithSignature(readRate(string),symbol)) (../sb/Wallet_F.sol#655-657)
+Low level call in Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#668-674):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(requestRate(string),symbol)) (../sb/Wallet_F.sol#670-672)
+Low level call in Wallet.addOracle(string,string,string,address) (../sb/Wallet_F.sol#683-689):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(_addOracle(string,string,string,address),symbol,maintainer,url,accessAddress)) (../sb/Wallet_F.sol#685-687)
+Low level call in Wallet.removeOracle(string,address) (../sb/Wallet_F.sol#696-702):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(_removeOracle(string,address),symbol,accessAddress)) (../sb/Wallet_F.sol#698-700)
+Low level call in Wallet.changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#708-715):
+	- (success,None) = oracleContract.call(abi.encodeWithSignature(_changeMinimumQuorum(uint256),newQuorum)) (../sb/Wallet_F.sol#711-713)
+Low level call in Wallet.updateBridge(string) (../sb/Wallet_F.sol#721-727):
+	- (success,None) = exchangeContract.call(abi.encodeWithSignature(_updateBridge(string),newBridgeURL)) (../sb/Wallet_F.sol#723-725)
+Low level call in Wallet.addCurrency(string) (../sb/Wallet_F.sol#733-740):
+	- (success,None) = exchangeContract.call(abi.encodeWithSignature(_addCurrency(string),symbol)) (../sb/Wallet_F.sol#736-738)
+Low level call in Wallet.removeCurrency(string) (../sb/Wallet_F.sol#746-753):
+	- (success,None) = exchangeContract.call(abi.encodeWithSignature(_removeCurrency(string),symbol)) (../sb/Wallet_F.sol#749-751)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#166-175) is not in mixedCase
+Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#182-201) is not in mixedCase
+Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#207-211) is not in mixedCase
+Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#316-319) is not in mixedCase
+Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#325-329) is not in mixedCase
+Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#335-339) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Exchange.authorizedWallet (../sb/Wallet_F.sol#230) should be immutable 
+Exchange.oracleContract (../sb/Wallet_F.sol#233) should be immutable 
+Oracle.authorizedWallet (../sb/Wallet_F.sol#37) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/sb/Wallet_F.sol analyzed (3 contracts with 100 detectors), 53 result(s) found

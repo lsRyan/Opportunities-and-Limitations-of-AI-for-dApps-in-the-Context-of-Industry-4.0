@@ -1,0 +1,137 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+Started neo4j (pid:29). It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+/sb/SupplyChain_F.sol
+05:00:47.290 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:10:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.297 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:42:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.297 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:143:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:309:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:338:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:463:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.298 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:485:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.299 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:546:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.299 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:636:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.299 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:660:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.299 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:1825:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.299 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:1886:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.300 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:2638:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.300 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:2797:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.300 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:2944:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.301 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:3497:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.301 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:3524:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.301 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:3915:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:47.301 [Thread-0] ERROR de.fraunhofer.aisec.cpg.frontends.Handler - /sb/SupplyChain_F.sol:3943:1: Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)
+05:00:49.881 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:1935:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.883 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:1946:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.883 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:1962:26: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.885 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2028:35: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.887 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2064:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+05:00:49.887 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2073:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.889 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2098:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+05:00:49.890 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2161:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.891 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2171:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+05:00:49.894 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2181:34: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.896 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2254:20: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp. Falling back to the default (current) scope
+05:00:49.897 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2274:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+05:00:49.898 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2321:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic. Falling back to the default (current) scope
+05:00:49.898 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2339:18: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked. Falling back to the default (current) scope
+05:00:49.899 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2474:25: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.900 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2484:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.902 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2494:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.903 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2496:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.904 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2498:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.905 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2500:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.906 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2502:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.907 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2504:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.907 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2540:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.909 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2589:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.909 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2601:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.910 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2603:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.910 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2605:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.911 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2607:14: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.911 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2609:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.912 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:2619:29: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint. Falling back to the default (current) scope
+05:00:49.922 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3170:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+05:00:49.927 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3206:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+05:00:49.979 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3240:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+05:00:49.981 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3269:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+05:00:49.983 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3298:27: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average. Falling back to the default (current) scope
+05:00:49.986 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3325:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getAddressSlot. Falling back to the default (current) scope
+05:00:49.987 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3325:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.offset. Falling back to the default (current) scope
+05:00:49.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3325:16: Could not find the scope bytes32 needed to resolve the call bytes32.deriveArray. Falling back to the default (current) scope
+05:00:49.988 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3338:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getBytes32Slot. Falling back to the default (current) scope
+05:00:49.989 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3338:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.offset. Falling back to the default (current) scope
+05:00:49.989 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3338:16: Could not find the scope bytes32 needed to resolve the call bytes32.deriveArray. Falling back to the default (current) scope
+05:00:49.989 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3351:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getUint256Slot. Falling back to the default (current) scope
+05:00:49.990 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3351:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.offset. Falling back to the default (current) scope
+05:00:49.990 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3351:16: Could not find the scope bytes32 needed to resolve the call bytes32.deriveArray. Falling back to the default (current) scope
+05:00:49.991 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3364:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getBytesSlot. Falling back to the default (current) scope
+05:00:49.992 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3364:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.offset. Falling back to the default (current) scope
+05:00:49.993 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3364:16: Could not find the scope bytes32 needed to resolve the call bytes32.deriveArray. Falling back to the default (current) scope
+05:00:49.996 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3377:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getStringSlot. Falling back to the default (current) scope
+05:00:49.997 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3377:16: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.offset. Falling back to the default (current) scope
+05:00:49.998 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3377:16: Could not find the scope bytes32 needed to resolve the call bytes32.deriveArray. Falling back to the default (current) scope
+05:00:49.999 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3560:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface. Falling back to the default (current) scope
+05:00:49.999 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3600:74: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.000 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3600:42: Could not find the scope address needed to resolve the call address.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.001 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3600:42: Could not find the scope address needed to resolve the call address.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.001 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3600:74: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.005 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3662:26: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.006 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3663:29: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.008 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3682:26: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.009 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3683:29: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.011 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3710:30: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.012 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3711:33: Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess. Falling back to the default (current) scope
+05:00:50.012 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3712:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC1155Received. Falling back to the default (current) scope
+05:00:50.013 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:3714:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC1155BatchReceived. Falling back to the default (current) scope
+05:00:50.081 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4262:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.082 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4261:45: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.082 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4262:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.083 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4262:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.083 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4261:45: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.084 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4278:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.084 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4277:53: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.084 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4278:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.085 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4278:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.085 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4277:53: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.086 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4264:28: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.decode. Falling back to the default (current) scope
+05:00:50.087 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4287:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.decode. Falling back to the default (current) scope
+05:00:50.090 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4439:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.091 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4438:45: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.091 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4439:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.091 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4439:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.092 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4438:45: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.092 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4449:34: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.decode. Falling back to the default (current) scope
+05:00:50.093 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4470:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.093 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4469:45: Could not find the scope address needed to resolve the call address.staticcall. Falling back to the default (current) scope
+05:00:50.094 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4470:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.094 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4470:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.094 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4469:45: Could not find the scope address needed to resolve the call address.staticcall. Falling back to the default (current) scope
+05:00:50.095 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4478:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.decode. Falling back to the default (current) scope
+05:00:50.097 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4498:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.098 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4497:53: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.098 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4498:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.099 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4498:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.100 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4497:53: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.100 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4505:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.101 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4504:45: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.102 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4505:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.102 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4505:13: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.103 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4504:45: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.103 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4513:44: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.decode. Falling back to the default (current) scope
+05:00:50.104 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4500:32: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.decode. Falling back to the default (current) scope
+05:00:50.106 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4523:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+05:00:50.107 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4522:35: Could not find the scope address needed to resolve the call address.call. Falling back to the default (current) scope
+05:00:50.107 [Thread-0] ERROR de.fraunhofer.aisec.cpg.ScopeManager - /sb/SupplyChain_F.sol:4523:17: Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodeWithSignature. Falling back to the default (current) scope
+Running checks
+AccessControlSelfdestructCheck took 1497 ms

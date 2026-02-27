@@ -1,0 +1,904 @@
+{
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 386,
+                                    "startLine": 263
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Contract locking ether found:\n\tContract Exchange (../sb/Wallet_F.sol#263-386) has payable functions:\n\t - Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#312-344)\n\tBut does not have a function to withdraw the ether\n"
+                    },
+                    "ruleId": "slither_0_11_3_locked_ether"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function getExchangeRate"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 718,
+                                    "startLine": 715
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.getExchangeRate(string) (../sb/Wallet_F.sol#715-718) ignores return value by oracle.readRate(symbol) (../sb/Wallet_F.sol#717)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function requestExchangeRate"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 729,
+                                    "startLine": 726
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.requestExchangeRate(string) (../sb/Wallet_F.sol#726-729) ignores return value by oracle.requestRate(symbol) (../sb/Wallet_F.sol#728)\n"
+                    },
+                    "ruleId": "slither_0_11_3_unused_return"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 695
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.getExchangeAvailability(string).exchange (../sb/Wallet_F.sol#695) shadows:\n\t- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 784
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.addCurrency(string).exchange (../sb/Wallet_F.sol#784) shadows:\n\t- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 793
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.removeCurrency(string).exchange (../sb/Wallet_F.sol#793) shadows:\n\t- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 775
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateBridge(string).exchange (../sb/Wallet_F.sol#775) shadows:\n\t- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 499
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.exchange(string,address,uint256).exchange (../sb/Wallet_F.sol#499) shadows:\n\t- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 599
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.exchangeAUTH(string,address,address,uint256).exchange (../sb/Wallet_F.sol#599) shadows:\n\t- Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518) (function)\n"
+                    },
+                    "ruleId": "slither_0_11_3_shadowing_local"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function updateExchangeFee"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 832,
+                                    "startLine": 829
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateExchangeFee(uint256) (../sb/Wallet_F.sol#829-832) should emit an event for: \n\t- exchangeFee = newExchangeFee (../sb/Wallet_F.sol#831) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_maths"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function updateMaximumRateDelay"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 823,
+                                    "startLine": 821
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateMaximumRateDelay(uint256) (../sb/Wallet_F.sol#821-823) should emit an event for: \n\t- maximumRateDelay = newMaximumRateDelay (../sb/Wallet_F.sol#822) \n"
+                    },
+                    "ruleId": "slither_0_11_3_events_maths"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 300
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.constructor(address,address)._oracleContract (../sb/Wallet_F.sol#300) lacks a zero-check on :\n\t\t- oracleContract = _oracleContract (../sb/Wallet_F.sol#302)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 88
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Oracle.constructor(address)._authorizedWallet (../sb/Wallet_F.sol#88) lacks a zero-check on :\n\t\t- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#89)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 563
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.externalTransferAUTH(uint256,address,address).to (../sb/Wallet_F.sol#563) lacks a zero-check on :\n\t\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#573)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 473
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.externalTransfer(uint256,address).to (../sb/Wallet_F.sol#473) lacks a zero-check on :\n\t\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#477)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 812
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateExchangeAddress(address).newExchange (../sb/Wallet_F.sol#812) lacks a zero-check on :\n\t\t- exchangeContract = newExchange (../sb/Wallet_F.sol#813)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 300
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.constructor(address,address)._authorizedWallet (../sb/Wallet_F.sol#300) lacks a zero-check on :\n\t\t- authorizedWallet = _authorizedWallet (../sb/Wallet_F.sol#301)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 803
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Wallet.updateOracleAddress(address).newOracle (../sb/Wallet_F.sol#803) lacks a zero-check on :\n\t\t- oracleContract = newOracle (../sb/Wallet_F.sol#804)\n"
+                    },
+                    "ruleId": "slither_0_11_3_missing_zero_check"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 518,
+                                    "startLine": 491
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in Wallet.exchange(string,address,uint256) (../sb/Wallet_F.sol#491-518):\n\tExternal calls:\n\t- exchange.exchange{value: exchangeAmount}(msg.sender,targetCurrency,targetAddress,maximumRateDelay) (../sb/Wallet_F.sol#510-515)\n\tEvent emitted after the call(s):\n\t- Exchanged(msg.sender,targetCurrency,amount) (../sb/Wallet_F.sol#517)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function withdrawAUTH"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 640,
+                                    "startLine": 625
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in Wallet.withdrawAUTH(address,uint256) (../sb/Wallet_F.sol#625-640):\n\tExternal calls:\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#636)\n\tEvent emitted after the call(s):\n\t- Withdrawn(from,amount) (../sb/Wallet_F.sol#639)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function exchangeAUTH"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 618,
+                                    "startLine": 586
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in Wallet.exchangeAUTH(string,address,address,uint256) (../sb/Wallet_F.sol#586-618):\n\tExternal calls:\n\t- exchange.exchange{value: exchangeAmount}(from,targetCurrency,targetAddress,maximumRateDelay) (../sb/Wallet_F.sol#610-615)\n\tEvent emitted after the call(s):\n\t- Exchanged(from,targetCurrency,amount) (../sb/Wallet_F.sol#617)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function externalTransfer"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 481,
+                                    "startLine": 473
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#473-481):\n\tExternal calls:\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#477)\n\tEvent emitted after the call(s):\n\t- Transferred(msg.sender,to,amount) (../sb/Wallet_F.sol#480)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function externalTransferAUTH"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 577,
+                                    "startLine": 563
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#563-577):\n\tExternal calls:\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#573)\n\tEvent emitted after the call(s):\n\t- Transferred(from,to,amount) (../sb/Wallet_F.sol#576)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function withdraw"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 532,
+                                    "startLine": 524
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy in Wallet.withdraw(uint256) (../sb/Wallet_F.sol#524-532):\n\tExternal calls:\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#528)\n\tEvent emitted after the call(s):\n\t- Withdrawn(msg.sender,amount) (../sb/Wallet_F.sol#531)\n"
+                    },
+                    "ruleId": "slither_0_11_3_reentrancy_events"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function exchange"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 344,
+                                    "startLine": 312
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.exchange(address,string,address,uint256) (../sb/Wallet_F.sol#312-344) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(block.timestamp - exchangeRateTime <= maximumRateDelay,Exchange: Rate too old, request new rate) (../sb/Wallet_F.sol#329-332)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function answerRequest"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 165,
+                                    "startLine": 127
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Oracle.answerRequest(uint256,uint256) (../sb/Wallet_F.sol#127-165) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(requests[id].active,Oracle: Request not active) (../sb/Wallet_F.sol#129)\n\t- require(bool,string)(! requests[id].answers[msg.sender],Oracle: Already answered) (../sb/Wallet_F.sol#143)\n\t- requests[id].requestTime < exchangeRateTime[symbol] (../sb/Wallet_F.sol#146)\n\t- (requests[id].answersCount * 100) / oracleList.length >= minimumQuorum (../sb/Wallet_F.sol#158)\n"
+                    },
+                    "ruleId": "slither_0_11_3_timestamp"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function withdrawAUTH"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 640,
+                                    "startLine": 625
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.withdrawAUTH(address,uint256) (../sb/Wallet_F.sol#625-640):\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#636)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function externalTransfer"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 481,
+                                    "startLine": 473
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.externalTransfer(uint256,address) (../sb/Wallet_F.sol#473-481):\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#477)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function withdraw"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 532,
+                                    "startLine": 524
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.withdraw(uint256) (../sb/Wallet_F.sol#524-532):\n\t- (success,None) = msg.sender.call{value: amount}() (../sb/Wallet_F.sol#528)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Wallet, function externalTransferAUTH"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 577,
+                                    "startLine": 563
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Low level call in Wallet.externalTransferAUTH(uint256,address,address) (../sb/Wallet_F.sol#563-577):\n\t- (success,None) = to.call{value: amount}() (../sb/Wallet_F.sol#573)\n"
+                    },
+                    "ruleId": "slither_0_11_3_low_level_calls"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function _addCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 362,
+                                    "startLine": 359
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Exchange._addCurrency(string) (../sb/Wallet_F.sol#359-362) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function _removeCurrency"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 371,
+                                    "startLine": 368
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Exchange._removeCurrency(string) (../sb/Wallet_F.sol#368-371) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Exchange, function _updateBridge"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 353,
+                                    "startLine": 350
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Exchange._updateBridge(string) (../sb/Wallet_F.sol#350-353) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function _removeOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 229,
+                                    "startLine": 210
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Oracle._removeOracle(string,address) (../sb/Wallet_F.sol#210-229) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function _changeMinimumQuorum"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 241,
+                                    "startLine": 235
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Oracle._changeMinimumQuorum(uint256) (../sb/Wallet_F.sol#235-241) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract Oracle, function _addOracle"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "endLine": 203,
+                                    "startLine": 190
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Function Oracle._addOracle(string,string,string,address) (../sb/Wallet_F.sol#190-203) is not in mixedCase\n"
+                    },
+                    "ruleId": "slither_0_11_3_naming_convention"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 279
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.authorizedWallet (../sb/Wallet_F.sol#279) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 280
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Exchange.oracleContract (../sb/Wallet_F.sol#280) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol"
+                                },
+                                "region": {
+                                    "startLine": 63
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Oracle.authorizedWallet (../sb/Wallet_F.sol#63) should be immutable \n"
+                    },
+                    "ruleId": "slither_0_11_3_immutable_states"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "informationUri": "https://github.com/crytic/slither",
+                    "name": "Slither",
+                    "rules": [
+                        {
+                            "id": "slither_0_11_3_timestamp",
+                            "name": "timestamp",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_naming_convention",
+                            "name": "naming-convention"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: DASP-5."
+                            },
+                            "id": "slither_0_11_3_locked_ether",
+                            "name": "locked-ether",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_missing_zero_check",
+                            "name": "missing-zero-check",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_events_maths",
+                            "name": "events-maths",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_low_level_calls",
+                            "name": "low-level-calls"
+                        },
+                        {
+                            "id": "slither_0_11_3_reentrancy_events",
+                            "name": "reentrancy-events",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-104, DASP-4."
+                            },
+                            "id": "slither_0_11_3_unused_return",
+                            "name": "unused-return",
+                            "properties": {
+                                "security-severity": "5.5"
+                            }
+                        },
+                        {
+                            "id": "slither_0_11_3_immutable_states",
+                            "name": "immutable-states"
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "Classification: SWC-119."
+                            },
+                            "id": "slither_0_11_3_shadowing_local",
+                            "name": "shadowing-local",
+                            "properties": {
+                                "security-severity": "2.0"
+                            }
+                        }
+                    ],
+                    "version": "0.11.3"
+                }
+            }
+        }
+    ],
+    "version": "2.1.0"
+}

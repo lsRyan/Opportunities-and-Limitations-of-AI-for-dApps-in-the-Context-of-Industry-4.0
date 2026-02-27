@@ -1,0 +1,71 @@
+Executing python3 /app/main/main.py --contract /sb/Wallet_F.sol --solc-version 0.8.31 --filetype solidity --model-dir models --instance-len 20 --report /app/output.pdf
+Traceback (most recent call last):
+  File "/usr/local/bin/solc", line 8, in <module>
+    sys.exit(solc())
+  File "/usr/local/lib/python3.8/site-packages/solc_select/__main__.py", line 92, in solc
+    switch_global_version(version="latest", always_install=True, silent=True)
+  File "/usr/local/lib/python3.8/site-packages/solc_select/solc_select.py", line 207, in switch_global_version
+    version = get_latest_release()
+  File "/usr/local/lib/python3.8/site-packages/solc_select/solc_select.py", line 289, in get_latest_release
+    list_json = urllib.request.urlopen(list_url).read()
+  File "/usr/local/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/usr/local/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/usr/local/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/usr/local/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+solidity
+/sb/Wallet_F.sol
+0.8.31
+map
+20
+except: solc v0.8.31 has not been installed. Use solcx.install_solc('v0.8.31') to install.
+compiled faild!
+Traceback (most recent call last):
+  File "/app/main/bytecodes_construction.py", line 1856, in make_bytecodes_opcodes_mapping_for_solidity_file
+    set_solc_version('v' + solc_version)
+  File "/usr/local/lib/python3.8/site-packages/solcx/install.py", line 140, in set_solc_version
+    get_executable(version, solcx_binary_path)
+  File "/usr/local/lib/python3.8/site-packages/solcx/install.py", line 131, in get_executable
+    raise SolcNotInstalled(
+solcx.exceptions.SolcNotInstalled: solc v0.8.31 has not been installed. Use solcx.install_solc('v0.8.31') to install.
+Traceback (most recent call last):
+  File "/app/main/bytecodes_construction.py", line 1856, in make_bytecodes_opcodes_mapping_for_solidity_file
+    set_solc_version('v' + solc_version)
+  File "/usr/local/lib/python3.8/site-packages/solcx/install.py", line 140, in set_solc_version
+    get_executable(version, solcx_binary_path)
+  File "/usr/local/lib/python3.8/site-packages/solcx/install.py", line 131, in get_executable
+    raise SolcNotInstalled(
+solcx.exceptions.SolcNotInstalled: solc v0.8.31 has not been installed. Use solcx.install_solc('v0.8.31') to install.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/main/bytecodes_construction.py", line 1987, in make_bytecodes_opcodes_mapping_for_solidity_file
+    result = compile_source(file_content)
+  File "/usr/local/lib/python3.8/site-packages/solcx/main.py", line 94, in compile_source
+    stdoutdata, stderrdata, command, proc = solc_wrapper(**compiler_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/solcx/utils/string.py", line 78, in inner
+    return force_obj_to_text(fn(*args, **kwargs))
+  File "/usr/local/lib/python3.8/site-packages/solcx/wrapper.py", line 187, in solc_wrapper
+    raise SolcError(
+solcx.exceptions.SolcError: An error occurred during execution
+> command: `/root/.solcx/solc-v0.4.24 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,devdoc,opcodes,userdoc -`
+> return code: `1`
+> stderr:
+
+> stdout:
+<stdin>:477:35: Error: Expected ';' but got '{'
+(bool success, ) = to.call{value: amount}("");
+                          ^
+Traceback (most recent call last):
+  File "/app/main/main.py", line 374, in <module>
+    bytecodes_list_val, contractnames_val, opcodes_lists_val, pcs_lists_val = bytecodes_construction.make_bytecodes_opcodes_mapping_for_solidity_file(filepath, version, instance_len)
+TypeError: cannot unpack non-iterable NoneType object

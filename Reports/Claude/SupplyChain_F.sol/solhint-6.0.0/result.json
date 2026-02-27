@@ -1,0 +1,4796 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Found more than One contract per file. 17 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 10,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 22,
+            "message": "Missing @title tag in contract 'Context'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 22,
+            "message": "Missing @author tag in contract 'Context'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 22,
+            "message": "Missing @notice tag in contract 'Context'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 23,
+            "message": "Missing @notice tag in function '_msgSender'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 23,
+            "message": "Missing @return tag in function '_msgSender'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 23,
+            "message": "Mismatch in @return count for function '_msgSender'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Missing @notice tag in function '_msgData'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Missing @return tag in function '_msgData'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Mismatch in @return count for function '_msgData'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @notice tag in function '_contextSuffixLength'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @return tag in function '_contextSuffixLength'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Mismatch in @return count for function '_contextSuffixLength'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 42,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 56,
+            "message": "Missing @title tag in contract 'Ownable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 56,
+            "message": "Missing @author tag in contract 'Ownable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 56,
+            "message": "Missing @notice tag in contract 'Ownable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Missing @notice tag in event 'OwnershipTransferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Missing @param tag in event 'OwnershipTransferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Mismatch in @param names for event 'OwnershipTransferred'. Expected: [previousOwner, newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [initialOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @notice tag in function 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @return tag in function 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Mismatch in @return count for function 'owner'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 99,
+            "message": "Missing @notice tag in function '_checkOwner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 112,
+            "message": "Missing @notice tag in function 'renounceOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 120,
+            "message": "Missing @notice tag in function 'transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 120,
+            "message": "Missing @param tag in function 'transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 120,
+            "message": "Mismatch in @param names for function 'transferOwnership'. Expected: [newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 131,
+            "message": "Missing @notice tag in function '_transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 131,
+            "message": "Missing @param tag in function '_transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 131,
+            "message": "Mismatch in @param names for function '_transferOwnership'. Expected: [newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 143,
+            "message": "Compiler version >=0.8.4 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 149,
+            "message": "Missing @title tag in contract 'IERC20Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 149,
+            "message": "Missing @author tag in contract 'IERC20Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 149,
+            "message": "Missing @notice tag in contract 'IERC20Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 195,
+            "message": "Missing @title tag in contract 'IERC721Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 195,
+            "message": "Missing @author tag in contract 'IERC721Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 195,
+            "message": "Missing @notice tag in contract 'IERC721Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 253,
+            "message": "Missing @title tag in contract 'IERC1155Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 253,
+            "message": "Missing @author tag in contract 'IERC1155Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 253,
+            "message": "Missing @notice tag in contract 'IERC1155Errors'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 309,
+            "message": "Compiler version >=0.4.16 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 320,
+            "message": "Missing @title tag in contract 'IERC165'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 320,
+            "message": "Missing @author tag in contract 'IERC165'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 320,
+            "message": "Missing @notice tag in contract 'IERC165'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "Missing @notice tag in function 'supportsInterface'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "Missing @param tag in function 'supportsInterface'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "Mismatch in @param names for function 'supportsInterface'. Expected: [interfaceId], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "Missing @return tag in function 'supportsInterface'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "Mismatch in @return count for function 'supportsInterface'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 338,
+            "message": "Compiler version >=0.6.2 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 344,
+            "message": "Missing @title tag in contract 'IERC1155'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 344,
+            "message": "Missing @author tag in contract 'IERC1155'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 344,
+            "message": "Missing @notice tag in contract 'IERC1155'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 348,
+            "message": "Missing @notice tag in event 'TransferSingle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 348,
+            "message": "Missing @param tag in event 'TransferSingle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 348,
+            "message": "Mismatch in @param names for event 'TransferSingle'. Expected: [operator, from, to, id, value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Missing @notice tag in event 'TransferBatch'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Missing @param tag in event 'TransferBatch'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 354,
+            "message": "Mismatch in @param names for event 'TransferBatch'. Expected: [operator, from, to, ids, values], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 366,
+            "message": "Missing @notice tag in event 'ApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 366,
+            "message": "Missing @param tag in event 'ApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 366,
+            "message": "Mismatch in @param names for event 'ApprovalForAll'. Expected: [account, operator, approved], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 366,
+            "message": "GC: [approved] on Event [ApprovalForAll] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Missing @notice tag in event 'URI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Missing @param tag in event 'URI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 375,
+            "message": "Mismatch in @param names for event 'URI'. Expected: [value, id], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 380,
+            "message": "Missing @notice tag in function 'balanceOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 380,
+            "message": "Missing @param tag in function 'balanceOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 380,
+            "message": "Mismatch in @param names for function 'balanceOf'. Expected: [account, id], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 380,
+            "message": "Missing @return tag in function 'balanceOf'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 380,
+            "message": "Mismatch in @return count for function 'balanceOf'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Missing @notice tag in function 'balanceOfBatch'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Missing @param tag in function 'balanceOfBatch'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Mismatch in @param names for function 'balanceOfBatch'. Expected: [accounts, ids], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Missing @return tag in function 'balanceOfBatch'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 389,
+            "message": "Mismatch in @return count for function 'balanceOfBatch'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Missing @notice tag in function 'setApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Missing @param tag in function 'setApprovalForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 403,
+            "message": "Mismatch in @param names for function 'setApprovalForAll'. Expected: [operator, approved], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 410,
+            "message": "Missing @notice tag in function 'isApprovedForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 410,
+            "message": "Missing @param tag in function 'isApprovedForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 410,
+            "message": "Mismatch in @param names for function 'isApprovedForAll'. Expected: [account, operator], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 410,
+            "message": "Missing @return tag in function 'isApprovedForAll'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 410,
+            "message": "Mismatch in @return count for function 'isApprovedForAll'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 430,
+            "message": "Missing @notice tag in function 'safeTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 430,
+            "message": "Missing @param tag in function 'safeTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 430,
+            "message": "Mismatch in @param names for function 'safeTransferFrom'. Expected: [from, to, id, value, data], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 448,
+            "message": "Missing @notice tag in function 'safeBatchTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 448,
+            "message": "Missing @param tag in function 'safeBatchTransferFrom'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 448,
+            "message": "Mismatch in @param names for function 'safeBatchTransferFrom'. Expected: [from, to, ids, values, data], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 463,
+            "message": "Compiler version >=0.6.2 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 469,
+            "message": "Missing @title tag in contract 'IERC1155MetadataURI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 469,
+            "message": "Missing @author tag in contract 'IERC1155MetadataURI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 469,
+            "message": "Missing @notice tag in contract 'IERC1155MetadataURI'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 476,
+            "message": "Missing @notice tag in function 'uri'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 476,
+            "message": "Missing @param tag in function 'uri'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 476,
+            "message": "Mismatch in @param names for function 'uri'. Expected: [id], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 476,
+            "message": "Missing @return tag in function 'uri'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 476,
+            "message": "Mismatch in @return count for function 'uri'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 485,
+            "message": "Compiler version >=0.6.2 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 491,
+            "message": "Missing @title tag in contract 'IERC1155Receiver'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 491,
+            "message": "Missing @author tag in contract 'IERC1155Receiver'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 491,
+            "message": "Missing @notice tag in contract 'IERC1155Receiver'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 507,
+            "message": "Missing @notice tag in function 'onERC1155Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 507,
+            "message": "Mismatch in @return count for function 'onERC1155Received'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 531,
+            "message": "Missing @notice tag in function 'onERC1155BatchReceived'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 531,
+            "message": "Mismatch in @return count for function 'onERC1155BatchReceived'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 546,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 556,
+            "message": "Missing @title tag in contract 'ERC1155Utils'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 556,
+            "message": "Missing @author tag in contract 'ERC1155Utils'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 556,
+            "message": "Missing @notice tag in contract 'ERC1155Utils'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "Missing @notice tag in function 'checkOnERC1155Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "Missing @param tag in function 'checkOnERC1155Received'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "Mismatch in @param names for function 'checkOnERC1155Received'. Expected: [operator, from, to, id, value, data], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 21,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 584,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 600,
+            "message": "Missing @notice tag in function 'checkOnERC1155BatchReceived'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 600,
+            "message": "Missing @param tag in function 'checkOnERC1155BatchReceived'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 600,
+            "message": "Mismatch in @param names for function 'checkOnERC1155BatchReceived'. Expected: [operator, from, to, ids, values, data], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 21,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 621,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 636,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 643,
+            "message": "Missing @title tag in contract 'Comparators'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 643,
+            "message": "Missing @author tag in contract 'Comparators'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 643,
+            "message": "Missing @notice tag in contract 'Comparators'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 644,
+            "message": "Missing @notice tag in function 'lt'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 644,
+            "message": "Missing @param tag in function 'lt'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 644,
+            "message": "Mismatch in @param names for function 'lt'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 644,
+            "message": "Missing @return tag in function 'lt'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 644,
+            "message": "Mismatch in @return count for function 'lt'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "Missing @notice tag in function 'gt'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "Missing @param tag in function 'gt'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "Mismatch in @param names for function 'gt'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "Missing @return tag in function 'gt'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "Mismatch in @return count for function 'gt'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 660,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 674,
+            "message": "Missing @title tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 674,
+            "message": "Missing @author tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 674,
+            "message": "Missing @notice tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Missing @notice tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Missing @param tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Mismatch in @param names for function 'toUint248'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Missing @return tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Mismatch in @return count for function 'toUint248'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Missing @notice tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Missing @param tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Mismatch in @param names for function 'toUint240'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Missing @return tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Mismatch in @return count for function 'toUint240'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Missing @notice tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Missing @param tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Mismatch in @param names for function 'toUint232'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Missing @return tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Mismatch in @return count for function 'toUint232'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Missing @notice tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Missing @param tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Mismatch in @param names for function 'toUint224'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Missing @return tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Mismatch in @return count for function 'toUint224'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Missing @notice tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Missing @param tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Mismatch in @param names for function 'toUint216'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Missing @return tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Mismatch in @return count for function 'toUint216'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Missing @notice tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Missing @param tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Mismatch in @param names for function 'toUint208'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Missing @return tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Mismatch in @return count for function 'toUint208'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Missing @notice tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Missing @param tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Mismatch in @param names for function 'toUint200'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Missing @return tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Mismatch in @return count for function 'toUint200'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Missing @notice tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Missing @param tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Mismatch in @param names for function 'toUint192'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Missing @return tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Mismatch in @return count for function 'toUint192'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Missing @notice tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Missing @param tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Mismatch in @param names for function 'toUint184'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Missing @return tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Mismatch in @return count for function 'toUint184'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Missing @notice tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Missing @param tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Mismatch in @param names for function 'toUint176'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Missing @return tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Mismatch in @return count for function 'toUint176'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Missing @notice tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Missing @param tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Mismatch in @param names for function 'toUint168'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Missing @return tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Mismatch in @return count for function 'toUint168'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Missing @notice tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Missing @param tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Mismatch in @param names for function 'toUint160'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Missing @return tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Mismatch in @return count for function 'toUint160'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Missing @notice tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Missing @param tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Mismatch in @param names for function 'toUint152'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Missing @return tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Mismatch in @return count for function 'toUint152'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Missing @notice tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Missing @param tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Mismatch in @param names for function 'toUint144'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Missing @return tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Mismatch in @return count for function 'toUint144'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Missing @notice tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Missing @param tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Mismatch in @param names for function 'toUint136'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Missing @return tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Mismatch in @return count for function 'toUint136'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Missing @notice tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Missing @param tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Mismatch in @param names for function 'toUint128'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Missing @return tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Mismatch in @return count for function 'toUint128'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Missing @notice tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Missing @param tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Mismatch in @param names for function 'toUint120'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Missing @return tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Mismatch in @return count for function 'toUint120'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Missing @notice tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Missing @param tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Mismatch in @param names for function 'toUint112'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Missing @return tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Mismatch in @return count for function 'toUint112'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Missing @notice tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Missing @param tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Mismatch in @param names for function 'toUint104'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Missing @return tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Mismatch in @return count for function 'toUint104'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1028,
+            "message": "Missing @notice tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1028,
+            "message": "Missing @param tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1028,
+            "message": "Mismatch in @param names for function 'toUint96'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1028,
+            "message": "Missing @return tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1028,
+            "message": "Mismatch in @return count for function 'toUint96'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1045,
+            "message": "Missing @notice tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1045,
+            "message": "Missing @param tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1045,
+            "message": "Mismatch in @param names for function 'toUint88'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1045,
+            "message": "Missing @return tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1045,
+            "message": "Mismatch in @return count for function 'toUint88'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1062,
+            "message": "Missing @notice tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1062,
+            "message": "Missing @param tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1062,
+            "message": "Mismatch in @param names for function 'toUint80'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1062,
+            "message": "Missing @return tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1062,
+            "message": "Mismatch in @return count for function 'toUint80'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Missing @notice tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Missing @param tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Mismatch in @param names for function 'toUint72'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Missing @return tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Mismatch in @return count for function 'toUint72'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1096,
+            "message": "Missing @notice tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1096,
+            "message": "Missing @param tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1096,
+            "message": "Mismatch in @param names for function 'toUint64'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1096,
+            "message": "Missing @return tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1096,
+            "message": "Mismatch in @return count for function 'toUint64'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1113,
+            "message": "Missing @notice tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1113,
+            "message": "Missing @param tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1113,
+            "message": "Mismatch in @param names for function 'toUint56'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1113,
+            "message": "Missing @return tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1113,
+            "message": "Mismatch in @return count for function 'toUint56'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1130,
+            "message": "Missing @notice tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1130,
+            "message": "Missing @param tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1130,
+            "message": "Mismatch in @param names for function 'toUint48'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1130,
+            "message": "Missing @return tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1130,
+            "message": "Mismatch in @return count for function 'toUint48'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1147,
+            "message": "Missing @notice tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1147,
+            "message": "Missing @param tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1147,
+            "message": "Mismatch in @param names for function 'toUint40'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1147,
+            "message": "Missing @return tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1147,
+            "message": "Mismatch in @return count for function 'toUint40'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1164,
+            "message": "Missing @notice tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1164,
+            "message": "Missing @param tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1164,
+            "message": "Mismatch in @param names for function 'toUint32'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1164,
+            "message": "Missing @return tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1164,
+            "message": "Mismatch in @return count for function 'toUint32'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1181,
+            "message": "Missing @notice tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1181,
+            "message": "Missing @param tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1181,
+            "message": "Mismatch in @param names for function 'toUint24'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1181,
+            "message": "Missing @return tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1181,
+            "message": "Mismatch in @return count for function 'toUint24'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1198,
+            "message": "Missing @notice tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1198,
+            "message": "Missing @param tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1198,
+            "message": "Mismatch in @param names for function 'toUint16'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1198,
+            "message": "Missing @return tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1198,
+            "message": "Mismatch in @return count for function 'toUint16'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1215,
+            "message": "Missing @notice tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1215,
+            "message": "Missing @param tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1215,
+            "message": "Mismatch in @param names for function 'toUint8'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1215,
+            "message": "Missing @return tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1215,
+            "message": "Mismatch in @return count for function 'toUint8'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1229,
+            "message": "Missing @notice tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1229,
+            "message": "Missing @param tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1229,
+            "message": "Mismatch in @param names for function 'toUint256'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1229,
+            "message": "Missing @return tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1229,
+            "message": "Mismatch in @return count for function 'toUint256'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1247,
+            "message": "Missing @notice tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1247,
+            "message": "Missing @param tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1247,
+            "message": "Mismatch in @param names for function 'toInt248'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1247,
+            "message": "Missing @return tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1247,
+            "message": "Mismatch in @return names for function 'toInt248'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1265,
+            "message": "Missing @notice tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1265,
+            "message": "Missing @param tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1265,
+            "message": "Mismatch in @param names for function 'toInt240'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1265,
+            "message": "Missing @return tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1265,
+            "message": "Mismatch in @return names for function 'toInt240'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1283,
+            "message": "Missing @notice tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1283,
+            "message": "Missing @param tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1283,
+            "message": "Mismatch in @param names for function 'toInt232'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1283,
+            "message": "Missing @return tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1283,
+            "message": "Mismatch in @return names for function 'toInt232'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Missing @notice tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Missing @param tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Mismatch in @param names for function 'toInt224'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Missing @return tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1301,
+            "message": "Mismatch in @return names for function 'toInt224'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1319,
+            "message": "Missing @notice tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1319,
+            "message": "Missing @param tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1319,
+            "message": "Mismatch in @param names for function 'toInt216'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1319,
+            "message": "Missing @return tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1319,
+            "message": "Mismatch in @return names for function 'toInt216'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1337,
+            "message": "Missing @notice tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1337,
+            "message": "Missing @param tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1337,
+            "message": "Mismatch in @param names for function 'toInt208'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1337,
+            "message": "Missing @return tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1337,
+            "message": "Mismatch in @return names for function 'toInt208'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1355,
+            "message": "Missing @notice tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1355,
+            "message": "Missing @param tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1355,
+            "message": "Mismatch in @param names for function 'toInt200'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1355,
+            "message": "Missing @return tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1355,
+            "message": "Mismatch in @return names for function 'toInt200'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1373,
+            "message": "Missing @notice tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1373,
+            "message": "Missing @param tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1373,
+            "message": "Mismatch in @param names for function 'toInt192'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1373,
+            "message": "Missing @return tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1373,
+            "message": "Mismatch in @return names for function 'toInt192'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1391,
+            "message": "Missing @notice tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1391,
+            "message": "Missing @param tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1391,
+            "message": "Mismatch in @param names for function 'toInt184'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1391,
+            "message": "Missing @return tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1391,
+            "message": "Mismatch in @return names for function 'toInt184'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1409,
+            "message": "Missing @notice tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1409,
+            "message": "Missing @param tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1409,
+            "message": "Mismatch in @param names for function 'toInt176'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1409,
+            "message": "Missing @return tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1409,
+            "message": "Mismatch in @return names for function 'toInt176'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1427,
+            "message": "Missing @notice tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1427,
+            "message": "Missing @param tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1427,
+            "message": "Mismatch in @param names for function 'toInt168'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1427,
+            "message": "Missing @return tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1427,
+            "message": "Mismatch in @return names for function 'toInt168'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1445,
+            "message": "Missing @notice tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1445,
+            "message": "Missing @param tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1445,
+            "message": "Mismatch in @param names for function 'toInt160'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1445,
+            "message": "Missing @return tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1445,
+            "message": "Mismatch in @return names for function 'toInt160'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1463,
+            "message": "Missing @notice tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1463,
+            "message": "Missing @param tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1463,
+            "message": "Mismatch in @param names for function 'toInt152'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1463,
+            "message": "Missing @return tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1463,
+            "message": "Mismatch in @return names for function 'toInt152'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1481,
+            "message": "Missing @notice tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1481,
+            "message": "Missing @param tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1481,
+            "message": "Mismatch in @param names for function 'toInt144'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1481,
+            "message": "Missing @return tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1481,
+            "message": "Mismatch in @return names for function 'toInt144'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1499,
+            "message": "Missing @notice tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1499,
+            "message": "Missing @param tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1499,
+            "message": "Mismatch in @param names for function 'toInt136'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1499,
+            "message": "Missing @return tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1499,
+            "message": "Mismatch in @return names for function 'toInt136'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1517,
+            "message": "Missing @notice tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1517,
+            "message": "Missing @param tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1517,
+            "message": "Mismatch in @param names for function 'toInt128'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1517,
+            "message": "Missing @return tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1517,
+            "message": "Mismatch in @return names for function 'toInt128'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1535,
+            "message": "Missing @notice tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1535,
+            "message": "Missing @param tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1535,
+            "message": "Mismatch in @param names for function 'toInt120'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1535,
+            "message": "Missing @return tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1535,
+            "message": "Mismatch in @return names for function 'toInt120'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1553,
+            "message": "Missing @notice tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1553,
+            "message": "Missing @param tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1553,
+            "message": "Mismatch in @param names for function 'toInt112'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1553,
+            "message": "Missing @return tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1553,
+            "message": "Mismatch in @return names for function 'toInt112'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1571,
+            "message": "Missing @notice tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1571,
+            "message": "Missing @param tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1571,
+            "message": "Mismatch in @param names for function 'toInt104'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1571,
+            "message": "Missing @return tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1571,
+            "message": "Mismatch in @return names for function 'toInt104'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1589,
+            "message": "Missing @notice tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1589,
+            "message": "Missing @param tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1589,
+            "message": "Mismatch in @param names for function 'toInt96'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1589,
+            "message": "Missing @return tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1589,
+            "message": "Mismatch in @return names for function 'toInt96'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Missing @notice tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Missing @param tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Mismatch in @param names for function 'toInt88'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Missing @return tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1607,
+            "message": "Mismatch in @return names for function 'toInt88'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1625,
+            "message": "Missing @notice tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1625,
+            "message": "Missing @param tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1625,
+            "message": "Mismatch in @param names for function 'toInt80'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1625,
+            "message": "Missing @return tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1625,
+            "message": "Mismatch in @return names for function 'toInt80'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Missing @notice tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Missing @param tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Mismatch in @param names for function 'toInt72'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Missing @return tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Mismatch in @return names for function 'toInt72'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1661,
+            "message": "Missing @notice tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1661,
+            "message": "Missing @param tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1661,
+            "message": "Mismatch in @param names for function 'toInt64'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1661,
+            "message": "Missing @return tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1661,
+            "message": "Mismatch in @return names for function 'toInt64'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1679,
+            "message": "Missing @notice tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1679,
+            "message": "Missing @param tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1679,
+            "message": "Mismatch in @param names for function 'toInt56'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1679,
+            "message": "Missing @return tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1679,
+            "message": "Mismatch in @return names for function 'toInt56'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1697,
+            "message": "Missing @notice tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1697,
+            "message": "Missing @param tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1697,
+            "message": "Mismatch in @param names for function 'toInt48'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1697,
+            "message": "Missing @return tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1697,
+            "message": "Mismatch in @return names for function 'toInt48'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1715,
+            "message": "Missing @notice tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1715,
+            "message": "Missing @param tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1715,
+            "message": "Mismatch in @param names for function 'toInt40'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1715,
+            "message": "Missing @return tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1715,
+            "message": "Mismatch in @return names for function 'toInt40'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1733,
+            "message": "Missing @notice tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1733,
+            "message": "Missing @param tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1733,
+            "message": "Mismatch in @param names for function 'toInt32'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1733,
+            "message": "Missing @return tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1733,
+            "message": "Mismatch in @return names for function 'toInt32'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1751,
+            "message": "Missing @notice tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1751,
+            "message": "Missing @param tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1751,
+            "message": "Mismatch in @param names for function 'toInt24'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1751,
+            "message": "Missing @return tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1751,
+            "message": "Mismatch in @return names for function 'toInt24'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1769,
+            "message": "Missing @notice tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1769,
+            "message": "Missing @param tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1769,
+            "message": "Mismatch in @param names for function 'toInt16'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1769,
+            "message": "Missing @return tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1769,
+            "message": "Mismatch in @return names for function 'toInt16'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1787,
+            "message": "Missing @notice tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1787,
+            "message": "Missing @param tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1787,
+            "message": "Mismatch in @param names for function 'toInt8'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1787,
+            "message": "Missing @return tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1787,
+            "message": "Mismatch in @return names for function 'toInt8'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1801,
+            "message": "Missing @notice tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1801,
+            "message": "Missing @param tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1801,
+            "message": "Mismatch in @param names for function 'toInt256'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1801,
+            "message": "Missing @return tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1801,
+            "message": "Mismatch in @return count for function 'toInt256'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1812,
+            "message": "Missing @notice tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1812,
+            "message": "Missing @param tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1812,
+            "message": "Mismatch in @param names for function 'toUint'. Expected: [b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1812,
+            "message": "Missing @return tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1812,
+            "message": "Mismatch in @return names for function 'toUint'. Expected: [u], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1813,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 1825,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1847,
+            "message": "Missing @title tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1847,
+            "message": "Missing @author tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1847,
+            "message": "Missing @notice tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1871,
+            "message": "Missing @notice tag in function 'panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1871,
+            "message": "Missing @param tag in function 'panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1871,
+            "message": "Mismatch in @param names for function 'panic'. Expected: [code], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1872,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "error",
+            "line": 1886,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1892,
+            "message": "Missing @title tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1892,
+            "message": "Missing @author tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1892,
+            "message": "Missing @notice tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1905,
+            "message": "Missing @notice tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1905,
+            "message": "Missing @param tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1905,
+            "message": "Mismatch in @param names for function 'add512'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1905,
+            "message": "Missing @return tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1905,
+            "message": "Mismatch in @return names for function 'add512'. Expected: [high, low], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1906,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1917,
+            "message": "Missing @notice tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1917,
+            "message": "Missing @param tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1917,
+            "message": "Mismatch in @param names for function 'mul512'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1917,
+            "message": "Missing @return tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1917,
+            "message": "Mismatch in @return names for function 'mul512'. Expected: [high, low], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1921,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1931,
+            "message": "Missing @notice tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1931,
+            "message": "Missing @param tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1931,
+            "message": "Mismatch in @param names for function 'tryAdd'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1931,
+            "message": "Missing @return tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1931,
+            "message": "Mismatch in @return names for function 'tryAdd'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1934,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Missing @notice tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Missing @param tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Mismatch in @param names for function 'trySub'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Missing @return tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1942,
+            "message": "Mismatch in @return names for function 'trySub'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1945,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1953,
+            "message": "Missing @notice tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1953,
+            "message": "Missing @param tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1953,
+            "message": "Mismatch in @param names for function 'tryMul'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1953,
+            "message": "Missing @return tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1953,
+            "message": "Mismatch in @return names for function 'tryMul'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1956,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1969,
+            "message": "Missing @notice tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1969,
+            "message": "Missing @param tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1969,
+            "message": "Mismatch in @param names for function 'tryDiv'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1969,
+            "message": "Missing @return tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1969,
+            "message": "Mismatch in @return names for function 'tryDiv'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1972,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1982,
+            "message": "Missing @notice tag in function 'tryMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1982,
+            "message": "Missing @param tag in function 'tryMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1982,
+            "message": "Mismatch in @param names for function 'tryMod'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1982,
+            "message": "Missing @return tag in function 'tryMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1982,
+            "message": "Mismatch in @return names for function 'tryMod'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1985,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1995,
+            "message": "Missing @notice tag in function 'saturatingAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1995,
+            "message": "Missing @param tag in function 'saturatingAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1995,
+            "message": "Mismatch in @param names for function 'saturatingAdd'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1995,
+            "message": "Missing @return tag in function 'saturatingAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 1995,
+            "message": "Mismatch in @return count for function 'saturatingAdd'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2003,
+            "message": "Missing @notice tag in function 'saturatingSub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2003,
+            "message": "Missing @param tag in function 'saturatingSub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2003,
+            "message": "Mismatch in @param names for function 'saturatingSub'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2003,
+            "message": "Missing @return tag in function 'saturatingSub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2003,
+            "message": "Mismatch in @return count for function 'saturatingSub'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2011,
+            "message": "Missing @notice tag in function 'saturatingMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2011,
+            "message": "Missing @param tag in function 'saturatingMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2011,
+            "message": "Mismatch in @param names for function 'saturatingMul'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2011,
+            "message": "Missing @return tag in function 'saturatingMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2011,
+            "message": "Mismatch in @return count for function 'saturatingMul'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2023,
+            "message": "Missing @notice tag in function 'ternary'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2023,
+            "message": "Missing @param tag in function 'ternary'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2023,
+            "message": "Mismatch in @param names for function 'ternary'. Expected: [condition, a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2023,
+            "message": "Missing @return tag in function 'ternary'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2023,
+            "message": "Mismatch in @return count for function 'ternary'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2035,
+            "message": "Missing @notice tag in function 'max'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2035,
+            "message": "Missing @param tag in function 'max'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2035,
+            "message": "Mismatch in @param names for function 'max'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2035,
+            "message": "Missing @return tag in function 'max'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2035,
+            "message": "Mismatch in @return count for function 'max'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2042,
+            "message": "Missing @notice tag in function 'min'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2042,
+            "message": "Missing @param tag in function 'min'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2042,
+            "message": "Mismatch in @param names for function 'min'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2042,
+            "message": "Missing @return tag in function 'min'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2042,
+            "message": "Mismatch in @return count for function 'min'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Missing @notice tag in function 'average'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Missing @param tag in function 'average'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Mismatch in @param names for function 'average'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Missing @return tag in function 'average'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2050,
+            "message": "Mismatch in @return count for function 'average'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2061,
+            "message": "Missing @notice tag in function 'ceilDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2061,
+            "message": "Missing @param tag in function 'ceilDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2061,
+            "message": "Mismatch in @param names for function 'ceilDiv'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2061,
+            "message": "Missing @return tag in function 'ceilDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2061,
+            "message": "Mismatch in @return count for function 'ceilDiv'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2084,
+            "message": "Function body contains 70 lines but allowed no more than 50 lines",
+            "name": "function-max-lines"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2084,
+            "message": "Missing @notice tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2084,
+            "message": "Missing @param tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2084,
+            "message": "Mismatch in @param names for function 'mulDiv'. Expected: [x, y, denominator], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2084,
+            "message": "Missing @return tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2084,
+            "message": "Mismatch in @return names for function 'mulDiv'. Expected: [result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2097,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2107,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2120,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2160,
+            "message": "Missing @notice tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2160,
+            "message": "Missing @param tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2160,
+            "message": "Mismatch in @param names for function 'mulDiv'. Expected: [x, y, denominator, rounding], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2160,
+            "message": "Missing @return tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2160,
+            "message": "Mismatch in @return count for function 'mulDiv'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2167,
+            "message": "Missing @notice tag in function 'mulShr'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2167,
+            "message": "Missing @param tag in function 'mulShr'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2167,
+            "message": "Mismatch in @param names for function 'mulShr'. Expected: [x, y, n], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2167,
+            "message": "Missing @return tag in function 'mulShr'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2167,
+            "message": "Mismatch in @return names for function 'mulShr'. Expected: [result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2170,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2180,
+            "message": "Missing @notice tag in function 'mulShr'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2180,
+            "message": "Missing @param tag in function 'mulShr'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2180,
+            "message": "Mismatch in @param names for function 'mulShr'. Expected: [x, y, n, rounding], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2180,
+            "message": "Missing @return tag in function 'mulShr'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2180,
+            "message": "Mismatch in @return count for function 'mulShr'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2195,
+            "message": "Missing @notice tag in function 'invMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2195,
+            "message": "Missing @param tag in function 'invMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2195,
+            "message": "Mismatch in @param names for function 'invMod'. Expected: [a, n], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2195,
+            "message": "Missing @return tag in function 'invMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2195,
+            "message": "Mismatch in @return count for function 'invMod'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2252,
+            "message": "Missing @notice tag in function 'invModPrime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2252,
+            "message": "Missing @param tag in function 'invModPrime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2252,
+            "message": "Mismatch in @param names for function 'invModPrime'. Expected: [a, p], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2252,
+            "message": "Missing @return tag in function 'invModPrime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/SupplyChain_F.sol",
+            "level": "warning",
+            "line": 2252,
+            "message": "Mismatch in @return count for function 'invModPrime'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

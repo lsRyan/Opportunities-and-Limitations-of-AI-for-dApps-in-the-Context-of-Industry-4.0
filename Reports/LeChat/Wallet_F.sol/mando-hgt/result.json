@@ -1,0 +1,36 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 53,
+            "line_end": 318,
+            "name": "arithmetic"
+        },
+        {
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 53,
+            "line_end": 318,
+            "name": "denial_of_service"
+        },
+        {
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 53,
+            "line_end": 282,
+            "name": "front_running"
+        },
+        {
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "name": "unchecked_low_level_calls"
+        }
+    ],
+    "infos": [
+        "OK"
+    ],
+    "parser": {
+        "id": "mando-hgt",
+        "mode": "solidity",
+        "version": "2023/08/01"
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": null,
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": "'/sb/bin/do_solidity.sh' '/sb/Wallet_F.sol' '3600' '/sb/bin' '0'",
+        "image": "smartbugs/oyente_plus:060ca34",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmpa6kpxskt": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/Gemini/Wallet_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 104.17954540252686,
+        "exit_code": 1,
+        "logs": "result.log",
+        "output": null,
+        "start": 1770747885.015266
+    },
+    "runid": "20260210_1824",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": null,
+        "cpu_quota": null,
+        "entrypoint": "'$BIN/do_solidity.sh' '$FILENAME' '$TIMEOUT' '$BIN' '$MAIN'",
+        "id": "oyente+-060ca34",
+        "image": "smartbugs/oyente_plus:060ca34",
+        "info": "Oyente uses symbolic execution to determine, which inputs cause which program branches to execute, in order to find potential security vulnerabilities. Oyente+ is an update of Oyente implementing instructions that were added to the EVM after the release of the original version of Oyente.",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "Oyente+",
+        "origin": "https://github.com/smartbugs/oyente_plus",
+        "output": null,
+        "parser": "parser.py",
+        "solc": true,
+        "version": "060ca34"
+    }
+}

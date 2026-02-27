@@ -1,0 +1,38 @@
+{
+    "errors": [],
+    "fails": [
+        "DOCKER_TIMEOUT"
+    ],
+    "findings": [],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._getPrescription",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._prescribe",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.authorizeSale",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC1155BatchReceived",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC1155Received",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getAddressSlot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getBytes32Slot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getBytesSlot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getStringSlot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getUint256Slot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isAuthorizedHospital",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isAuthorizedManufacturer",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.offset",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.usePrescription",
+        "Could not find the scope address needed to resolve the call address.unsafeMemoryAccess",
+        "Could not find the scope bytes32 needed to resolve the call bytes32.deriveArray",
+        "Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

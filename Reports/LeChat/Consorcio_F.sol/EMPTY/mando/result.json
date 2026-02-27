@@ -1,0 +1,15 @@
+{
+    "errors": [],
+    "fails": [
+        "exception (KeyError: 'BREAK')"
+    ],
+    "findings": [],
+    "infos": [
+        "'BREAK'"
+    ],
+    "parser": {
+        "id": "mando",
+        "mode": "solidity",
+        "version": "2023/08/01"
+    }
+}

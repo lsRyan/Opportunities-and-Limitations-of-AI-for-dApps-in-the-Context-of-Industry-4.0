@@ -1,0 +1,1396 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 8,
+            "message": "Found more than One contract per file. 3 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "error",
+            "line": 8,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Missing @author tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 59,
+            "message": "Missing @param tag in event 'RateRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 59,
+            "message": "Mismatch in @param names for event 'RateRequested'. Expected: [requestId, url, currency], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 62,
+            "message": "Missing @param tag in event 'RateAnswered'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 62,
+            "message": "Mismatch in @param names for event 'RateAnswered'. Expected: [requestId, oracle, rate], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 62,
+            "message": "GC: [rate] on Event [RateAnswered] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "Missing @param tag in event 'RateFinalized'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "Mismatch in @param names for event 'RateFinalized'. Expected: [currency, rate, timestamp], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "GC: [rate] on Event [RateFinalized] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "GC: [timestamp] on Event [RateFinalized] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 71,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 72,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 78,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 84,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 99,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 101,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 113,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 126,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 126,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 129,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 134,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 140,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 141,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 151,
+            "message": "GC: For [ req ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 158,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 179,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 190,
+            "message": "GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 190,
+            "message": "GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 190,
+            "message": "GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 196,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 215,
+            "message": "GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 57,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 221,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 244,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 253,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 268,
+            "message": "Missing @author tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 283,
+            "message": "Missing @param tag in event 'ExchangeRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 283,
+            "message": "Mismatch in @param names for event 'ExchangeRequested'. Expected: [transactor, targetCurrency, amount, exchangeRate, timestamp, bridgeCall], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 283,
+            "message": "GC: [amount] on Event [ExchangeRequested] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 283,
+            "message": "GC: [exchangeRate] on Event [ExchangeRequested] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 283,
+            "message": "GC: [timestamp] on Event [ExchangeRequested] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 297,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 298,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 299,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 307,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 313,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 324,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 330,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 331,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 332,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 45,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 335,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 338,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 27,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 341,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 344,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 348,
+            "message": "Error message for require is too long: 39 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 348,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 348,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 349,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 368,
+            "message": "GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 379,
+            "message": "GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 391,
+            "message": "GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 419,
+            "message": "Missing @author tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 443,
+            "message": "Missing @param tag in event 'Deposit'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 443,
+            "message": "Mismatch in @param names for event 'Deposit'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 443,
+            "message": "GC: [amount] on Event [Deposit] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 446,
+            "message": "Missing @param tag in event 'Transfer'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 446,
+            "message": "Mismatch in @param names for event 'Transfer'. Expected: [from, to, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 446,
+            "message": "GC: [amount] on Event [Transfer] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 449,
+            "message": "Missing @param tag in event 'Withdrawal'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 449,
+            "message": "Mismatch in @param names for event 'Withdrawal'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 449,
+            "message": "GC: [amount] on Event [Withdrawal] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 452,
+            "message": "Missing @param tag in event 'Authorization'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 452,
+            "message": "Mismatch in @param names for event 'Authorization'. Expected: [owner, authorized, tier], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 459,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 460,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 460,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 469,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 475,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 483,
+            "message": "Error message for require is too long: 37 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 483,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 483,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 494,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 494,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 495,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 509,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 509,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 510,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 515,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 526,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 531,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 531,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 532,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 45,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 535,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 538,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 549,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 557,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 570,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 583,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 588,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 588,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 589,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 605,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 610,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 610,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 611,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 616,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 628,
+            "message": "GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 635,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 639,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 639,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 640,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 45,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 643,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 646,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 657,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 665,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 675,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 681,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 681,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 686,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 696,
+            "message": "GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 697,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 703,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 723,
+            "message": "GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 741,
+            "message": "GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 760,
+            "message": "GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 765,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 770,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 779,
+            "message": "GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 780,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 782,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 785,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 795,
+            "message": "GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 795,
+            "message": "GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 795,
+            "message": "GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 801,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 803,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 804,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 812,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 820,
+            "message": "GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 826,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 833,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 35,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 842,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 844,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 847,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 854,
+            "message": "GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 855,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 857,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 860,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 867,
+            "message": "GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 868,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 870,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 873,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 880,
+            "message": "GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 881,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 28,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 883,
+            "message": "Avoid to use low level calls.",
+            "name": "avoid-low-level-calls"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 886,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 894,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 903,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 923,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 923,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 40,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 923,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 932,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "level": "warning",
+            "line": 948,
+            "message": "Fallback function must be simple",
+            "name": "no-complex-fallback"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

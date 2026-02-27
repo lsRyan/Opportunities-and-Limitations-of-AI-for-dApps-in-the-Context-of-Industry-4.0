@@ -1,0 +1,1564 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 8,
+            "message": "Found more than One contract per file. 3 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 15,
+            "message": "Missing @author tag in contract 'Oracle'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 33,
+            "message": "Missing @notice tag in event 'RateRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 33,
+            "message": "Missing @param tag in event 'RateRequested'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 33,
+            "message": "Mismatch in @param names for event 'RateRequested'. Expected: [requestId, url, symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Missing @notice tag in event 'RateUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Missing @param tag in event 'RateUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "Mismatch in @param names for event 'RateUpdated'. Expected: [symbol, rate, timestamp], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "GC: [rate] on Event [RateUpdated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 39,
+            "message": "GC: [timestamp] on Event [RateUpdated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Missing @notice tag in event 'OracleAdded'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Missing @param tag in event 'OracleAdded'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 45,
+            "message": "Mismatch in @param names for event 'OracleAdded'. Expected: [symbol, oracleAddress, maintainer, url], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 52,
+            "message": "Missing @notice tag in event 'OracleRemoved'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 52,
+            "message": "Missing @param tag in event 'OracleRemoved'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 52,
+            "message": "Mismatch in @param names for event 'OracleRemoved'. Expected: [symbol, oracleAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Missing @notice tag in event 'MinimumQuorumChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Missing @param tag in event 'MinimumQuorumChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "Mismatch in @param names for event 'MinimumQuorumChanged'. Expected: [oldQuorum, newQuorum], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "GC: [oldQuorum] on Event [MinimumQuorumChanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 57,
+            "message": "GC: [newQuorum] on Event [MinimumQuorumChanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 63,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 64,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 65,
+            "message": "Missing @notice tag in variable 'oracles'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 66,
+            "message": "Missing @notice tag in variable 'requests'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 67,
+            "message": "Missing @notice tag in variable 'exchangeRates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 68,
+            "message": "Missing @notice tag in variable 'exchangeRateTime'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 70,
+            "message": "Missing @notice tag in variable 'minimumQuorum'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 75,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 80,
+            "message": "Error message for require is too long: 35 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 80,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 80,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 88,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 103,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 105,
+            "message": "GC: For [ currentId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 115,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 128,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 128,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 129,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 136,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 142,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 143,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 154,
+            "message": "GC: For [ requests ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 158,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "GC: [symbol] argument on Function [readRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 179,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 190,
+            "message": "GC: [symbol] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 190,
+            "message": "GC: [maintainer] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 190,
+            "message": "GC: [url] argument on Function [_addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 210,
+            "message": "GC: [symbol] argument on Function [_removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 52,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 216,
+            "message": "GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas",
+            "name": "gas-increment-by-one"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 236,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 236,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 248,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 263,
+            "message": "Missing @author tag in contract 'Exchange'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "Missing @notice tag in event 'ExchangeExecuted'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "Missing @param tag in event 'ExchangeExecuted'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "Mismatch in @param names for event 'ExchangeExecuted'. Expected: [transactor, targetCurrency, value, exchangeRate, timestamp, bridgeCall], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "GC: [value] on Event [ExchangeExecuted] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "GC: [exchangeRate] on Event [ExchangeExecuted] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 265,
+            "message": "GC: [timestamp] on Event [ExchangeExecuted] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 274,
+            "message": "Missing @notice tag in event 'BridgeUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 274,
+            "message": "Missing @param tag in event 'BridgeUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 274,
+            "message": "Mismatch in @param names for event 'BridgeUpdated'. Expected: [newBridgeURL], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 275,
+            "message": "Missing @notice tag in event 'CurrencyAdded'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 275,
+            "message": "Missing @param tag in event 'CurrencyAdded'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 275,
+            "message": "Mismatch in @param names for event 'CurrencyAdded'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 276,
+            "message": "Missing @notice tag in event 'CurrencyRemoved'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 276,
+            "message": "Missing @param tag in event 'CurrencyRemoved'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 276,
+            "message": "Mismatch in @param names for event 'CurrencyRemoved'. Expected: [symbol], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 279,
+            "message": "Missing @notice tag in variable 'authorizedWallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 280,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 281,
+            "message": "Missing @notice tag in variable 'currencies'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 282,
+            "message": "Missing @notice tag in variable 'bridgeURL'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 286,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "Error message for require is too long: 37 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 300,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 312,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 318,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 319,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 320,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 324,
+            "message": "Error message for require is too long: 42 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 324,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 324,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "Error message for require is too long: 40 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 329,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 330,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 350,
+            "message": "GC: [newBridgeURL] argument on Function [_updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 359,
+            "message": "GC: [symbol] argument on Function [_addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 368,
+            "message": "GC: [symbol] argument on Function [_removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 378,
+            "message": "GC: [symbol] argument on Function [isSupported] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 393,
+            "message": "Missing @author tag in contract 'Wallet'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Missing @notice tag in event 'Deposited'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Missing @param tag in event 'Deposited'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Mismatch in @param names for event 'Deposited'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "GC: [amount] on Event [Deposited] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "Missing @notice tag in event 'Transferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "Missing @param tag in event 'Transferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "Mismatch in @param names for event 'Transferred'. Expected: [from, to, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 396,
+            "message": "GC: [amount] on Event [Transferred] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Missing @notice tag in event 'Exchanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Missing @param tag in event 'Exchanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "Mismatch in @param names for event 'Exchanged'. Expected: [from, currency, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 397,
+            "message": "GC: [amount] on Event [Exchanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 398,
+            "message": "Missing @notice tag in event 'Withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 398,
+            "message": "Missing @param tag in event 'Withdrawn'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 398,
+            "message": "Mismatch in @param names for event 'Withdrawn'. Expected: [user, amount], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 398,
+            "message": "GC: [amount] on Event [Withdrawn] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 399,
+            "message": "Missing @notice tag in event 'Authorized'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 399,
+            "message": "Missing @param tag in event 'Authorized'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 399,
+            "message": "Mismatch in @param names for event 'Authorized'. Expected: [user, authorized, tier], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 400,
+            "message": "Missing @notice tag in event 'AuthorizationRevoked'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 400,
+            "message": "Missing @param tag in event 'AuthorizationRevoked'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 400,
+            "message": "Mismatch in @param names for event 'AuthorizationRevoked'. Expected: [user, revoked], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 401,
+            "message": "Missing @notice tag in event 'OwnershipTransferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 401,
+            "message": "Missing @param tag in event 'OwnershipTransferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 401,
+            "message": "Mismatch in @param names for event 'OwnershipTransferred'. Expected: [oldOwner, newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 402,
+            "message": "Missing @notice tag in event 'ContractAddressUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 402,
+            "message": "Missing @param tag in event 'ContractAddressUpdated'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 402,
+            "message": "Mismatch in @param names for event 'ContractAddressUpdated'. Expected: [contractType, newAddress], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 402,
+            "message": "GC: [newAddress] on Event [ContractAddressUpdated] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 405,
+            "message": "Missing @notice tag in variable 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 406,
+            "message": "Missing @notice tag in variable 'oracleContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 407,
+            "message": "Missing @notice tag in variable 'exchangeContract'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 412,
+            "message": "Missing @notice tag in variable 'maximumRateDelay'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 413,
+            "message": "Missing @notice tag in variable 'exchangeFee'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 423,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "Error message for require is too long: 35 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 428,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 437,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 440,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 440,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 460,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 460,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 474,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 474,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 478,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 491,
+            "message": "GC: [targetCurrency] argument on Function [exchange] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 496,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 496,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 500,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 525,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 525,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 529,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 544,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 544,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 544,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 549,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 549,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 565,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 570,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 570,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 574,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 586,
+            "message": "GC: [targetCurrency] argument on Function [exchangeAUTH] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 592,
+            "message": "Error message for require is too long: 36 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 592,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 592,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 596,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 596,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 600,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 627,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 627,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 627,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 633,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 633,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 647,
+            "message": "GC: [tier] argument on Function [authorize] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "Error message for require is too long: 34 counted / 32 allowed",
+            "name": "reason-string"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "GC: String exceeds 32 bytes",
+            "name": "gas-small-strings"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 648,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 694,
+            "message": "GC: [symbol] argument on Function [getExchangeAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 704,
+            "message": "GC: [symbol] argument on Function [getOracleAvailability] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 715,
+            "message": "GC: [symbol] argument on Function [getExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 726,
+            "message": "GC: [symbol] argument on Function [requestExchangeRate] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 738,
+            "message": "GC: [symbol] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 738,
+            "message": "GC: [maintainer] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 738,
+            "message": "GC: [url] argument on Function [addOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 753,
+            "message": "GC: [symbol] argument on Function [removeOracle] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 763,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 763,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 774,
+            "message": "GC: [newBridgeURL] argument on Function [updateBridge] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 783,
+            "message": "GC: [symbol] argument on Function [addCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 792,
+            "message": "GC: [symbol] argument on Function [removeCurrency] could be [calldata] if it's not being updated",
+            "name": "gas-calldata-parameters"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 830,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 830,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 839,
+            "message": "GC: Use Custom Errors instead of require statements",
+            "name": "gas-custom-errors"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 845,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Wallet_F.sol",
+            "level": "warning",
+            "line": 845,
+            "message": "Fallback function must be simple",
+            "name": "no-complex-fallback"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 28,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol",
+            "line": 293,
+            "name": "Callstack Depth Attack Vulnerability"
+        },
+        {
+            "column": 9,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol",
+            "line": 359,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 9,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Consorcio_F.sol",
+            "line": 355,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage FinancialPoolManager 25.9%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

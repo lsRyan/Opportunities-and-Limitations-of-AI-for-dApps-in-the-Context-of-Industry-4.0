@@ -1,0 +1,39 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 12,
+            "contract": "CondoVotingSystem",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/VotacaoCondominio_F.sol",
+            "line": 4935,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 5,
+            "contract": "CondoVotingSystem",
+            "filename": "/home/ryan/Documents/LLM/Code/Gemini/VotacaoCondominio_F.sol",
+            "line": 32,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Checkpoints 98.4%",
+        "coverage CondoVotingSystem 34.5%",
+        "coverage ECDSA 98.4%",
+        "coverage Math 98.4%",
+        "coverage MessageHashUtils 98.4%",
+        "coverage Panic 98.4%",
+        "coverage SafeCast 98.4%",
+        "coverage ShortStrings 98.4%",
+        "coverage SignedMath 98.4%",
+        "coverage StorageSlot 98.4%",
+        "coverage Strings 98.4%",
+        "coverage Time 98.4%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

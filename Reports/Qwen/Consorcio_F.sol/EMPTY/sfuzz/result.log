@@ -1,0 +1,27 @@
+Extract contract FinancialPoolManager from /sb/Consorcio_F.sol
+Extracted 1 contract(s) from /sb/Consorcio_F.sol
+[0;32m> Created "fuzzMe"[0m
+[0;32m> To fuzz contracts:[0m
+  chmod +x fuzzMe
+  ./fuzzMe
+Warning: Function state mutability can be restricted to view
+   --> contracts/FinancialPoolManager.sol:277:5:
+    |
+277 |     function selectWinner(uint256 poolId) private returns (address) {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/ReentrancyAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/NormalAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 5:    21 Aborted                 (core dumped) ./fuzzer --file contracts/FinancialPoolManager.sol.json --name FinancialPoolManager --assets assets/ --duration 3598 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker

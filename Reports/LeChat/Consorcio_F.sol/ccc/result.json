@@ -1,0 +1,52 @@
+{
+    "errors": [],
+    "fails": [
+        "DOCKER_TIMEOUT"
+    ],
+    "findings": [
+        {
+            "column": "31",
+            "column_end": "46",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": "75",
+            "line_end": "75",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "74",
+            "column_end": "89",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": "187",
+            "line_end": "187",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "31",
+            "column_end": "46",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": "75",
+            "line_end": "75",
+            "name": "A deterministic or predictable value may be used as bad random number."
+        },
+        {
+            "column": "74",
+            "column_end": "89",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": "187",
+            "line_end": "187",
+            "name": "A deterministic or predictable value may be used as bad random number."
+        }
+    ],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.transfer",
+        "Could not find the scope address needed to resolve the call address.pop",
+        "Could not find the scope address needed to resolve the call address.push",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 9,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 225,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 34,
+            "contract": "FinancialPoolManager",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Consorcio_F.sol",
+            "line": 190,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage FinancialPoolManager 26.3%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

@@ -1,0 +1,39 @@
+name,count
+use-natspec,159
+use-custom-error-not-require,49
+gas-custom-errors,35
+gas-calldata-parameters,24
+non-payable-constructor,15
+gas-strict-inequalities,9
+naming-convention,6
+SOLIDITY_VISIBILITY,6
+basic-arithmetic-underflow,6
+gas-increment-by-one,5
+use-prefix-increment-not-postfix,5
+missing-zero-check,4
+Miners can manipulate program execution by selecting when to include the timestamp,4
+Result of expression can be over- or under-flown by external entity,4
+array-length-outside-loop,4
+immutable-states,3
+Integer Overflow,3
+Integer Underflow,3
+func-visibility,3
+gas-indexed-events,3
+Operation may lead to a denial of essential contract function.,3
+Message padding vulnerability found at ether transfer.,3
+SOLIDITY_EXTRA_GAS_IN_LOOPS,3
+SOLIDITY_GAS_LIMIT_IN_LOOPS,3
+unnecessary-checked-arithmetic-in-loop,3
+unused-return,2
+events-maths,2
+timestamp,2
+A miner can use others input to gain a benefit himself.,2
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,2
+locked-ether,1
+events-access,1
+one-contract-per-file,1
+Reentrancy Vulnerability,1
+SOLIDITY_LOCKED_MONEY,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_SHOULD_RETURN_STRUCT,1
+state-variable-read-in-a-loop,1

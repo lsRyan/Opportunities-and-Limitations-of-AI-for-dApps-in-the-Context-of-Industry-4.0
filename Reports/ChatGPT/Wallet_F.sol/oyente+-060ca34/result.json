@@ -1,0 +1,58 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 5,
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 182,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 17,
+            "contract": "ExchangeContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 39,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 17,
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 77,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 5,
+            "contract": "OracleContract",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 38,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 9,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 305,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 19,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/Wallet_F.sol",
+            "line": 373,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage ExchangeContract 35.1%",
+        "coverage OracleContract 25.1%",
+        "coverage Wallet 55.8%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

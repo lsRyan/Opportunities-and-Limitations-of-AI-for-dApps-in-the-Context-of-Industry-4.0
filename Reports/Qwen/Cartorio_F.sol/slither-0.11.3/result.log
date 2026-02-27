@@ -1,0 +1,309 @@
+'solc --version' running
+'solc /sb/Cartorio_F.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/sb' running
+
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) has bitwise-xor operator ^ instead of the exponentiation operator **: 
+	 - inverse = (3 * denominator) ^ 2 (../sb/Cartorio_F.sol#2580)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-exponentiation
+
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse = (3 * denominator) ^ 2 (../sb/Cartorio_F.sol#2580)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2584)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2585)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2586)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2587)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2588)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- denominator = denominator / twos (../sb/Cartorio_F.sol#2565)
+	- inverse *= 2 - denominator * inverse (../sb/Cartorio_F.sol#2589)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) performs a multiplication on the result of a division:
+	- low = low / twos (../sb/Cartorio_F.sol#2568)
+	- result = low * inverse (../sb/Cartorio_F.sol#2595)
+Math.invMod(uint256,uint256) (../sb/Cartorio_F.sol#2638-2684) performs a multiplication on the result of a division:
+	- quotient = gcd / remainder (../sb/Cartorio_F.sol#2660)
+	- (gcd,remainder) = (remainder,gcd - remainder * quotient) (../sb/Cartorio_F.sol#2662-2669)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#divide-before-multiply
+
+RealEstateNotary._exists(uint256) (../sb/Cartorio_F.sol#4966-4969) contains a tautology or contradiction:
+	- 0 <= tokenId && tokenId < $._nextTokenId (../sb/Cartorio_F.sol#4968)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#tautology-or-contradiction
+
+Reentrancy in RealEstateNotary.safeMint(address,string) (../sb/Cartorio_F.sol#4852-4858):
+	External calls:
+	- _safeMint(to,tokenId) (../sb/Cartorio_F.sol#4855)
+		- retval = IERC721Receiver(to).onERC721Received(operator,from,tokenId,data) (../sb/Cartorio_F.sol#1077-1091)
+		- ERC721Utils.checkOnERC721Received(_msgSender(),address(0),to,tokenId,data) (../sb/Cartorio_F.sol#3952)
+	State variables written after the call(s):
+	- _setTokenURI(tokenId,uri) (../sb/Cartorio_F.sol#4856)
+		- $ = ERC721URIStorageStorageLocation (../sb/Cartorio_F.sol#4605)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Reentrancy in RealEstateNotary.safeMint(address,string) (../sb/Cartorio_F.sol#4852-4858):
+	External calls:
+	- _safeMint(to,tokenId) (../sb/Cartorio_F.sol#4855)
+		- retval = IERC721Receiver(to).onERC721Received(operator,from,tokenId,data) (../sb/Cartorio_F.sol#1077-1091)
+		- ERC721Utils.checkOnERC721Received(_msgSender(),address(0),to,tokenId,data) (../sb/Cartorio_F.sol#3952)
+	Event emitted after the call(s):
+	- MetadataUpdate(tokenId) (../sb/Cartorio_F.sol#4647)
+		- _setTokenURI(tokenId,uri) (../sb/Cartorio_F.sol#4856)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Initializable._getInitializableStorage() (../sb/Cartorio_F.sol#238-243) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#240-242)
+AccessControlUpgradeable._getAccessControlStorage() (../sb/Cartorio_F.sol#515-519) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#516-518)
+ERC721Utils.checkOnERC721Received(address,address,address,uint256,bytes) (../sb/Cartorio_F.sol#1069-1093) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#1087-1089)
+SafeCast.toUint(bool) (../sb/Cartorio_F.sol#2255-2259) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2256-2258)
+Panic.panic(uint256) (../sb/Cartorio_F.sol#2314-2320) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2315-2319)
+Math.add512(uint256,uint256) (../sb/Cartorio_F.sol#2348-2353) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2349-2352)
+Math.mul512(uint256,uint256) (../sb/Cartorio_F.sol#2360-2369) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2364-2368)
+Math.tryMul(uint256,uint256) (../sb/Cartorio_F.sol#2396-2407) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2399-2403)
+Math.tryDiv(uint256,uint256) (../sb/Cartorio_F.sol#2412-2420) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2415-2418)
+Math.tryMod(uint256,uint256) (../sb/Cartorio_F.sol#2425-2433) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2428-2431)
+Math.mulDiv(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2527-2598) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2550-2557)
+	- INLINE ASM (../sb/Cartorio_F.sol#2563-2572)
+Math.tryModExp(uint256,uint256,uint256) (../sb/Cartorio_F.sol#2732-2756) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2734-2755)
+Math.tryModExp(bytes,bytes,bytes) (../sb/Cartorio_F.sol#2772-2794) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2784-2793)
+Math.log2(uint256) (../sb/Cartorio_F.sol#2935-2974) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#2971-2973)
+Strings.toString(uint256) (../sb/Cartorio_F.sol#3189-3207) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3194-3196)
+	- INLINE ASM (../sb/Cartorio_F.sol#3199-3201)
+Strings.toChecksumHexString(address) (../sb/Cartorio_F.sol#3255-3273) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3260-3262)
+Strings.escapeJSON(string) (../sb/Cartorio_F.sol#3590-3620) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3614-3617)
+Strings._unsafeReadBytesOffset(bytes,uint256) (../sb/Cartorio_F.sol#3628-3633) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3630-3632)
+ERC721Upgradeable._getERC721Storage() (../sb/Cartorio_F.sol#3680-3684) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#3681-3683)
+ERC721EnumerableUpgradeable._getERC721EnumerableStorage() (../sb/Cartorio_F.sol#4193-4197) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4194-4196)
+PausableUpgradeable._getPausableStorage() (../sb/Cartorio_F.sol#4380-4384) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4381-4383)
+ERC721URIStorageUpgradeable._getERC721URIStorageStorage() (../sb/Cartorio_F.sol#4603-4607) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4604-4606)
+ReentrancyGuardUpgradeable._getReentrancyGuardStorage() (../sb/Cartorio_F.sol#4701-4705) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4702-4704)
+RealEstateNotary._getCartorioStorage() (../sb/Cartorio_F.sol#4864-4868) uses assembly
+	- INLINE ASM (../sb/Cartorio_F.sol#4865-4867)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+5 different versions of Solidity are used:
+	- Version constraint ^0.8.20 is used by:
+		-^0.8.20 (../sb/Cartorio_F.sol#10)
+		-^0.8.20 (../sb/Cartorio_F.sol#252)
+		-^0.8.20 (../sb/Cartorio_F.sol#318)
+		-^0.8.20 (../sb/Cartorio_F.sol#453)
+		-^0.8.20 (../sb/Cartorio_F.sol#1050)
+		-^0.8.20 (../sb/Cartorio_F.sol#1103)
+		-^0.8.20 (../sb/Cartorio_F.sol#2268)
+		-^0.8.20 (../sb/Cartorio_F.sol#2329)
+		-^0.8.20 (../sb/Cartorio_F.sol#3080)
+		-^0.8.20 (../sb/Cartorio_F.sol#3150)
+		-^0.8.20 (../sb/Cartorio_F.sol#3642)
+		-^0.8.20 (../sb/Cartorio_F.sol#4103)
+		-^0.8.20 (../sb/Cartorio_F.sol#4168)
+		-^0.8.20 (../sb/Cartorio_F.sol#4359)
+		-^0.8.20 (../sb/Cartorio_F.sol#4494)
+		-^0.8.20 (../sb/Cartorio_F.sol#4577)
+		-^0.8.20 (../sb/Cartorio_F.sol#4657)
+		-^0.8.20 (../sb/Cartorio_F.sol#4766)
+	- Version constraint >=0.4.16 is used by:
+		->=0.4.16 (../sb/Cartorio_F.sol#289)
+		->=0.4.16 (../sb/Cartorio_F.sol#4539)
+	- Version constraint >=0.8.4 is used by:
+		->=0.8.4 (../sb/Cartorio_F.sol#351)
+		->=0.8.4 (../sb/Cartorio_F.sol#686)
+	- Version constraint >=0.6.2 is used by:
+		->=0.6.2 (../sb/Cartorio_F.sol#852)
+		->=0.6.2 (../sb/Cartorio_F.sol#989)
+		->=0.6.2 (../sb/Cartorio_F.sol#4137)
+		->=0.6.2 (../sb/Cartorio_F.sol#4547)
+		->=0.6.2 (../sb/Cartorio_F.sol#4555)
+	- Version constraint >=0.5.0 is used by:
+		->=0.5.0 (../sb/Cartorio_F.sol#1018)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#different-pragma-directives-are-used
+
+AccessControlUpgradeable.__AccessControl_init_unchained() (../sb/Cartorio_F.sol#533-534) is never used and should be removed
+AccessControlUpgradeable._setRoleAdmin(bytes32,bytes32) (../sb/Cartorio_F.sol#637-642) is never used and should be removed
+ContextUpgradeable.__Context_init() (../sb/Cartorio_F.sol#265-266) is never used and should be removed
+ContextUpgradeable.__Context_init_unchained() (../sb/Cartorio_F.sol#268-269) is never used and should be removed
+ContextUpgradeable._contextSuffixLength() (../sb/Cartorio_F.sol#278-280) is never used and should be removed
+ContextUpgradeable._msgData() (../sb/Cartorio_F.sol#274-276) is never used and should be removed
+ERC165Upgradeable.__ERC165_init() (../sb/Cartorio_F.sol#334-335) is never used and should be removed
+ERC165Upgradeable.__ERC165_init_unchained() (../sb/Cartorio_F.sol#337-338) is never used and should be removed
+ERC721BurnableUpgradeable.__ERC721Burnable_init_unchained() (../sb/Cartorio_F.sol#4115-4116) is never used and should be removed
+ERC721EnumerableUpgradeable.__ERC721Enumerable_init_unchained() (../sb/Cartorio_F.sol#4214-4215) is never used and should be removed
+ERC721EnumerableUpgradeable._addTokenToAllTokensEnumeration(uint256) (../sb/Cartorio_F.sol#4279-4283) is never used and should be removed
+ERC721EnumerableUpgradeable._addTokenToOwnerEnumeration(address,uint256) (../sb/Cartorio_F.sol#4268-4273) is never used and should be removed
+ERC721EnumerableUpgradeable._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#4345-4350) is never used and should be removed
+ERC721EnumerableUpgradeable._removeTokenFromAllTokensEnumeration(uint256) (../sb/Cartorio_F.sol#4321-4340) is never used and should be removed
+ERC721EnumerableUpgradeable._removeTokenFromOwnerEnumeration(address,uint256) (../sb/Cartorio_F.sol#4293-4314) is never used and should be removed
+ERC721EnumerableUpgradeable._update(address,uint256,address) (../sb/Cartorio_F.sol#4246-4261) is never used and should be removed
+ERC721PausableUpgradeable.__ERC721Pausable_init_unchained() (../sb/Cartorio_F.sol#4515-4516) is never used and should be removed
+ERC721URIStorageUpgradeable.__ERC721URIStorage_init_unchained() (../sb/Cartorio_F.sol#4612-4613) is never used and should be removed
+ERC721Upgradeable._baseURI() (../sb/Cartorio_F.sol#3746-3748) is never used and should be removed
+ERC721Upgradeable._burn(uint256) (../sb/Cartorio_F.sol#3966-3971) is never used and should be removed
+ERC721Upgradeable._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#3860-3865) is never used and should be removed
+ERC721Upgradeable._safeTransfer(address,address,uint256) (../sb/Cartorio_F.sol#4015-4017) is never used and should be removed
+ERC721Upgradeable._safeTransfer(address,address,uint256,bytes) (../sb/Cartorio_F.sol#4023-4026) is never used and should be removed
+ERC721Upgradeable._transfer(address,address,uint256) (../sb/Cartorio_F.sol#3984-3994) is never used and should be removed
+Initializable._getInitializedVersion() (../sb/Cartorio_F.sol#214-216) is never used and should be removed
+PausableUpgradeable.__Pausable_init() (../sb/Cartorio_F.sol#4430-4431) is never used and should be removed
+PausableUpgradeable.__Pausable_init_unchained() (../sb/Cartorio_F.sol#4433-4434) is never used and should be removed
+RealEstateNotary._increaseBalance(address,uint128) (../sb/Cartorio_F.sol#4885-4890) is never used and should be removed
+ReentrancyGuardUpgradeable._reentrancyGuardEntered() (../sb/Cartorio_F.sol#4756-4759) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../sb/Cartorio_F.sol#10)
+	- ^0.8.20 (../sb/Cartorio_F.sol#252)
+	- ^0.8.20 (../sb/Cartorio_F.sol#318)
+	- ^0.8.20 (../sb/Cartorio_F.sol#453)
+	- ^0.8.20 (../sb/Cartorio_F.sol#1050)
+	- ^0.8.20 (../sb/Cartorio_F.sol#1103)
+	- ^0.8.20 (../sb/Cartorio_F.sol#2268)
+	- ^0.8.20 (../sb/Cartorio_F.sol#2329)
+	- ^0.8.20 (../sb/Cartorio_F.sol#3080)
+	- ^0.8.20 (../sb/Cartorio_F.sol#3150)
+	- ^0.8.20 (../sb/Cartorio_F.sol#3642)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4103)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4168)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4359)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4494)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4577)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4657)
+	- ^0.8.20 (../sb/Cartorio_F.sol#4766)
+Version constraint >=0.4.16 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector.
+It is used by:
+	- >=0.4.16 (../sb/Cartorio_F.sol#289)
+	- >=0.4.16 (../sb/Cartorio_F.sol#4539)
+Version constraint >=0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables.
+It is used by:
+	- >=0.8.4 (../sb/Cartorio_F.sol#351)
+	- >=0.8.4 (../sb/Cartorio_F.sol#686)
+Version constraint >=0.6.2 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- MissingEscapingInFormatting
+	- ArraySliceDynamicallyEncodedBaseType
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow.
+It is used by:
+	- >=0.6.2 (../sb/Cartorio_F.sol#852)
+	- >=0.6.2 (../sb/Cartorio_F.sol#989)
+	- >=0.6.2 (../sb/Cartorio_F.sol#4137)
+	- >=0.6.2 (../sb/Cartorio_F.sol#4547)
+	- >=0.6.2 (../sb/Cartorio_F.sol#4555)
+Version constraint >=0.5.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor
+	- IncorrectEventSignatureInLibraries
+	- ABIEncoderV2PackedStorage.
+It is used by:
+	- >=0.5.0 (../sb/Cartorio_F.sol#1018)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Function ContextUpgradeable.__Context_init() (../sb/Cartorio_F.sol#265-266) is not in mixedCase
+Function ContextUpgradeable.__Context_init_unchained() (../sb/Cartorio_F.sol#268-269) is not in mixedCase
+Function ERC165Upgradeable.__ERC165_init() (../sb/Cartorio_F.sol#334-335) is not in mixedCase
+Function ERC165Upgradeable.__ERC165_init_unchained() (../sb/Cartorio_F.sol#337-338) is not in mixedCase
+Function AccessControlUpgradeable.__AccessControl_init() (../sb/Cartorio_F.sol#530-531) is not in mixedCase
+Function AccessControlUpgradeable.__AccessControl_init_unchained() (../sb/Cartorio_F.sol#533-534) is not in mixedCase
+Constant AccessControlUpgradeable.AccessControlStorageLocation (../sb/Cartorio_F.sol#513) is not in UPPER_CASE_WITH_UNDERSCORES
+Function ERC721Upgradeable.__ERC721_init(string,string) (../sb/Cartorio_F.sol#3689-3691) is not in mixedCase
+Function ERC721Upgradeable.__ERC721_init_unchained(string,string) (../sb/Cartorio_F.sol#3693-3697) is not in mixedCase
+Constant ERC721Upgradeable.ERC721StorageLocation (../sb/Cartorio_F.sol#3678) is not in UPPER_CASE_WITH_UNDERSCORES
+Function ERC721BurnableUpgradeable.__ERC721Burnable_init() (../sb/Cartorio_F.sol#4112-4113) is not in mixedCase
+Function ERC721BurnableUpgradeable.__ERC721Burnable_init_unchained() (../sb/Cartorio_F.sol#4115-4116) is not in mixedCase
+Function ERC721EnumerableUpgradeable.__ERC721Enumerable_init() (../sb/Cartorio_F.sol#4211-4212) is not in mixedCase
+Function ERC721EnumerableUpgradeable.__ERC721Enumerable_init_unchained() (../sb/Cartorio_F.sol#4214-4215) is not in mixedCase
+Constant ERC721EnumerableUpgradeable.ERC721EnumerableStorageLocation (../sb/Cartorio_F.sol#4191) is not in UPPER_CASE_WITH_UNDERSCORES
+Function PausableUpgradeable.__Pausable_init() (../sb/Cartorio_F.sol#4430-4431) is not in mixedCase
+Function PausableUpgradeable.__Pausable_init_unchained() (../sb/Cartorio_F.sol#4433-4434) is not in mixedCase
+Constant PausableUpgradeable.PausableStorageLocation (../sb/Cartorio_F.sol#4378) is not in UPPER_CASE_WITH_UNDERSCORES
+Function ERC721PausableUpgradeable.__ERC721Pausable_init() (../sb/Cartorio_F.sol#4512-4513) is not in mixedCase
+Function ERC721PausableUpgradeable.__ERC721Pausable_init_unchained() (../sb/Cartorio_F.sol#4515-4516) is not in mixedCase
+Function ERC721URIStorageUpgradeable.__ERC721URIStorage_init() (../sb/Cartorio_F.sol#4609-4610) is not in mixedCase
+Function ERC721URIStorageUpgradeable.__ERC721URIStorage_init_unchained() (../sb/Cartorio_F.sol#4612-4613) is not in mixedCase
+Constant ERC721URIStorageUpgradeable.ERC721URIStorageStorageLocation (../sb/Cartorio_F.sol#4601) is not in UPPER_CASE_WITH_UNDERSCORES
+Function ReentrancyGuardUpgradeable.__ReentrancyGuard_init() (../sb/Cartorio_F.sol#4712-4714) is not in mixedCase
+Function ReentrancyGuardUpgradeable.__ReentrancyGuard_init_unchained() (../sb/Cartorio_F.sol#4716-4719) is not in mixedCase
+Constant ReentrancyGuardUpgradeable.ReentrancyGuardStorageLocation (../sb/Cartorio_F.sol#4699) is not in UPPER_CASE_WITH_UNDERSCORES
+Struct RealEstateNotary.request (../sb/Cartorio_F.sol#4793-4798) is not in CapWords
+Parameter RealEstateNotary.requestChange(uint256,string)._tokenId (../sb/Cartorio_F.sol#4917) is not in mixedCase
+Parameter RealEstateNotary.requestChange(uint256,string)._newUri (../sb/Cartorio_F.sol#4917) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Math.log2(uint256) (../sb/Cartorio_F.sol#2935-2974) uses literals with too many digits:
+	- r = r | byte(uint256,uint256)(x >> r,0x0000010102020202030303030303030300000000000000000000000000000000) (../sb/Cartorio_F.sol#2972)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+/sb/Cartorio_F.sol analyzed (28 contracts with 100 detectors), 102 result(s) found

@@ -1,0 +1,206 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": "31",
+            "column_end": "43",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3061",
+            "line_end": "3061",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "24",
+            "column_end": "34",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3072",
+            "line_end": "3072",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "30",
+            "column_end": "57",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "4454",
+            "line_end": "4454",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "36",
+            "column_end": "55",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3091",
+            "line_end": "3091",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "20",
+            "column_end": "55",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3091",
+            "line_end": "3091",
+            "name": "Result of expression can be over- or under-flown by external entity"
+        },
+        {
+            "column": "13",
+            "column_end": "16",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3061",
+            "line_end": "3068",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3661",
+            "line_end": "3679",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "11",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "4421",
+            "line_end": "4425",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3599",
+            "line_end": "3601",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "11",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "2357",
+            "line_end": "2361",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3297",
+            "line_end": "3310",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3169",
+            "line_end": "3179",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3239",
+            "line_end": "3252",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "13",
+            "column_end": "16",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "2216",
+            "line_end": "2236",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3205",
+            "line_end": "3218",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "9",
+            "column_end": "12",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3268",
+            "line_end": "3281",
+            "name": "Operation may lead to a denial of essential contract function."
+        },
+        {
+            "column": "36",
+            "column_end": "46",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3654",
+            "line_end": "3654",
+            "name": "Message padding vulnerability found at ether transfer."
+        },
+        {
+            "column": "22",
+            "column_end": "34",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3654",
+            "line_end": "3654",
+            "name": "Message padding vulnerability found at ether transfer."
+        },
+        {
+            "column": "30",
+            "column_end": "45",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "4153",
+            "line_end": "4153",
+            "name": "Message padding vulnerability found at ether transfer."
+        },
+        {
+            "column": "48",
+            "column_end": "64",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3875",
+            "line_end": "3875",
+            "name": "Message padding vulnerability found at ether transfer."
+        },
+        {
+            "column": "33",
+            "column_end": "46",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/SupplyChain_F.sol",
+            "line": "3875",
+            "line_end": "3875",
+            "name": "Message padding vulnerability found at ether transfer."
+        }
+    ],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._getPrescription",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN._prescribe",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.authorizeSale",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.average",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC1155BatchReceived",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.checkOnERC1155Received",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getAddressSlot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getBytes32Slot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getBytesSlot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getStringSlot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.getUint256Slot",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isAuthorizedHospital",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.isAuthorizedManufacturer",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.modExp",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.offset",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.panic",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.supportsInterface",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.toUint",
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.usePrescription",
+        "Could not find the scope address needed to resolve the call address.unsafeMemoryAccess",
+        "Could not find the scope bytes32 needed to resolve the call bytes32.deriveArray",
+        "Could not find the scope uint256 needed to resolve the call uint256.unsafeMemoryAccess",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

@@ -1,0 +1,4556 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 10,
+            "message": "Found more than One contract per file. 20 contracts found!",
+            "name": "one-contract-per-file"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 10,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 22,
+            "message": "Missing @title tag in contract 'Context'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 22,
+            "message": "Missing @author tag in contract 'Context'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 22,
+            "message": "Missing @notice tag in contract 'Context'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 23,
+            "message": "Missing @notice tag in function '_msgSender'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 23,
+            "message": "Missing @return tag in function '_msgSender'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 23,
+            "message": "Mismatch in @return count for function '_msgSender'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Missing @notice tag in function '_msgData'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Missing @return tag in function '_msgData'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 27,
+            "message": "Mismatch in @return count for function '_msgData'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @notice tag in function '_contextSuffixLength'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Missing @return tag in function '_contextSuffixLength'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 31,
+            "message": "Mismatch in @return count for function '_contextSuffixLength'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 42,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 56,
+            "message": "Missing @title tag in contract 'Ownable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 56,
+            "message": "Missing @author tag in contract 'Ownable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 56,
+            "message": "Missing @notice tag in contract 'Ownable'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Missing @notice tag in event 'OwnershipTransferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Missing @param tag in event 'OwnershipTransferred'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 69,
+            "message": "Mismatch in @param names for event 'OwnershipTransferred'. Expected: [previousOwner, newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Missing @notice tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Missing @param tag in function '<anonymous>'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Mismatch in @param names for function '<anonymous>'. Expected: [initialOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 74,
+            "message": "Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)",
+            "name": "func-visibility"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @notice tag in function 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Missing @return tag in function 'owner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 92,
+            "message": "Mismatch in @return count for function 'owner'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 99,
+            "message": "Missing @notice tag in function '_checkOwner'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 112,
+            "message": "Missing @notice tag in function 'renounceOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 120,
+            "message": "Missing @notice tag in function 'transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 120,
+            "message": "Missing @param tag in function 'transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 120,
+            "message": "Mismatch in @param names for function 'transferOwnership'. Expected: [newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 131,
+            "message": "Missing @notice tag in function '_transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 131,
+            "message": "Missing @param tag in function '_transferOwnership'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 131,
+            "message": "Mismatch in @param names for function '_transferOwnership'. Expected: [newOwner], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 143,
+            "message": "Compiler version >=0.8.4 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "Missing @title tag in contract 'IVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "Missing @author tag in contract 'IVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 148,
+            "message": "Missing @notice tag in contract 'IVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 157,
+            "message": "Missing @notice tag in event 'DelegateChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 157,
+            "message": "Missing @param tag in event 'DelegateChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 157,
+            "message": "Mismatch in @param names for event 'DelegateChanged'. Expected: [delegator, fromDelegate, toDelegate], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "Missing @notice tag in event 'DelegateVotesChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "Missing @param tag in event 'DelegateVotesChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "Mismatch in @param names for event 'DelegateVotesChanged'. Expected: [delegate, previousVotes, newVotes], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "GC: [previousVotes] on Event [DelegateVotesChanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 162,
+            "message": "GC: [newVotes] on Event [DelegateVotesChanged] could be Indexed",
+            "name": "gas-indexed-events"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "Missing @notice tag in function 'getVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "Missing @param tag in function 'getVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "Mismatch in @param names for function 'getVotes'. Expected: [account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "Missing @return tag in function 'getVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 167,
+            "message": "Mismatch in @return count for function 'getVotes'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "Missing @notice tag in function 'getPastVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "Missing @param tag in function 'getPastVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "Mismatch in @param names for function 'getPastVotes'. Expected: [account, timepoint], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "Missing @return tag in function 'getPastVotes'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 173,
+            "message": "Mismatch in @return count for function 'getPastVotes'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Missing @notice tag in function 'getPastTotalSupply'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Missing @param tag in function 'getPastTotalSupply'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Mismatch in @param names for function 'getPastTotalSupply'. Expected: [timepoint], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Missing @return tag in function 'getPastTotalSupply'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 183,
+            "message": "Mismatch in @return count for function 'getPastTotalSupply'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Missing @notice tag in function 'delegates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Missing @param tag in function 'delegates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Mismatch in @param names for function 'delegates'. Expected: [account], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Missing @return tag in function 'delegates'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 188,
+            "message": "Mismatch in @return count for function 'delegates'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Missing @notice tag in function 'delegate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Missing @param tag in function 'delegate'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 193,
+            "message": "Mismatch in @param names for function 'delegate'. Expected: [delegatee], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Missing @notice tag in function 'delegateBySig'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Missing @param tag in function 'delegateBySig'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 198,
+            "message": "Mismatch in @param names for function 'delegateBySig'. Expected: [delegatee, nonce, expiry, v, r, s], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 207,
+            "message": "Compiler version >=0.4.16 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Missing @title tag in contract 'IERC6372'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Missing @author tag in contract 'IERC6372'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 209,
+            "message": "Missing @notice tag in contract 'IERC6372'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Missing @notice tag in function 'clock'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Missing @return tag in function 'clock'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 213,
+            "message": "Mismatch in @return count for function 'clock'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 219,
+            "message": "Missing @notice tag in function 'CLOCK_MODE'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 219,
+            "message": "Missing @return tag in function 'CLOCK_MODE'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 219,
+            "message": "Mismatch in @return count for function 'CLOCK_MODE'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 228,
+            "message": "Compiler version >=0.8.4 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 231,
+            "message": "Code contains empty blocks",
+            "name": "no-empty-blocks"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 231,
+            "message": "Missing @title tag in contract 'IERC5805'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 231,
+            "message": "Missing @author tag in contract 'IERC5805'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 231,
+            "message": "Missing @notice tag in contract 'IERC5805'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 239,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 247,
+            "message": "Missing @title tag in contract 'ECDSA'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 247,
+            "message": "Missing @author tag in contract 'ECDSA'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 247,
+            "message": "Missing @notice tag in contract 'ECDSA'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "Missing @notice tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "Missing @param tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "Mismatch in @param names for function 'tryRecover'. Expected: [hash, signature], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "Missing @return tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 291,
+            "message": "Mismatch in @return names for function 'tryRecover'. Expected: [recovered, err, errArg], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 301,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "Missing @notice tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "Missing @param tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "Mismatch in @param names for function 'recover'. Expected: [hash, signature], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "Missing @return tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 326,
+            "message": "Mismatch in @return count for function 'recover'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Missing @notice tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Missing @param tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Mismatch in @param names for function 'tryRecover'. Expected: [hash, r, vs], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Missing @return tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 337,
+            "message": "Mismatch in @return names for function 'tryRecover'. Expected: [recovered, err, errArg], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 353,
+            "message": "Missing @notice tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 353,
+            "message": "Missing @param tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 353,
+            "message": "Mismatch in @param names for function 'recover'. Expected: [hash, r, vs], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 353,
+            "message": "Missing @return tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 353,
+            "message": "Mismatch in @return count for function 'recover'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 363,
+            "message": "Missing @notice tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 363,
+            "message": "Missing @param tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 363,
+            "message": "Mismatch in @param names for function 'tryRecover'. Expected: [hash, v, r, s], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 363,
+            "message": "Missing @return tag in function 'tryRecover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 363,
+            "message": "Mismatch in @return names for function 'tryRecover'. Expected: [recovered, err, errArg], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Missing @notice tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Missing @param tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Mismatch in @param names for function 'recover'. Expected: [hash, v, r, s], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Missing @return tag in function 'recover'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 395,
+            "message": "Mismatch in @return count for function 'recover'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "Missing @notice tag in function '_throwError'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "Missing @param tag in function '_throwError'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 404,
+            "message": "Mismatch in @param names for function '_throwError'. Expected: [error, errorArg], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 423,
+            "message": "Compiler version >=0.4.16 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 425,
+            "message": "Missing @title tag in contract 'IERC5267'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 425,
+            "message": "Missing @author tag in contract 'IERC5267'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 425,
+            "message": "Missing @notice tag in contract 'IERC5267'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 429,
+            "message": "Missing @notice tag in event 'EIP712DomainChanged'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 435,
+            "message": "Missing @notice tag in function 'eip712Domain'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 435,
+            "message": "Missing @return tag in function 'eip712Domain'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 435,
+            "message": "Mismatch in @return names for function 'eip712Domain'. Expected: [fields, name, version, chainId, verifyingContract, salt, extensions], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 456,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 470,
+            "message": "Missing @title tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 470,
+            "message": "Missing @author tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 470,
+            "message": "Missing @notice tag in contract 'SafeCast'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 501,
+            "message": "Missing @notice tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 501,
+            "message": "Missing @param tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 501,
+            "message": "Mismatch in @param names for function 'toUint248'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 501,
+            "message": "Missing @return tag in function 'toUint248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 501,
+            "message": "Mismatch in @return count for function 'toUint248'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 518,
+            "message": "Missing @notice tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 518,
+            "message": "Missing @param tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 518,
+            "message": "Mismatch in @param names for function 'toUint240'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 518,
+            "message": "Missing @return tag in function 'toUint240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 518,
+            "message": "Mismatch in @return count for function 'toUint240'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 535,
+            "message": "Missing @notice tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 535,
+            "message": "Missing @param tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 535,
+            "message": "Mismatch in @param names for function 'toUint232'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 535,
+            "message": "Missing @return tag in function 'toUint232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 535,
+            "message": "Mismatch in @return count for function 'toUint232'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Missing @notice tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Missing @param tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Mismatch in @param names for function 'toUint224'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Missing @return tag in function 'toUint224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 552,
+            "message": "Mismatch in @return count for function 'toUint224'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 569,
+            "message": "Missing @notice tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 569,
+            "message": "Missing @param tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 569,
+            "message": "Mismatch in @param names for function 'toUint216'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 569,
+            "message": "Missing @return tag in function 'toUint216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 569,
+            "message": "Mismatch in @return count for function 'toUint216'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 586,
+            "message": "Missing @notice tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 586,
+            "message": "Missing @param tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 586,
+            "message": "Mismatch in @param names for function 'toUint208'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 586,
+            "message": "Missing @return tag in function 'toUint208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 586,
+            "message": "Mismatch in @return count for function 'toUint208'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 603,
+            "message": "Missing @notice tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 603,
+            "message": "Missing @param tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 603,
+            "message": "Mismatch in @param names for function 'toUint200'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 603,
+            "message": "Missing @return tag in function 'toUint200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 603,
+            "message": "Mismatch in @return count for function 'toUint200'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "Missing @notice tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "Missing @param tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "Mismatch in @param names for function 'toUint192'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "Missing @return tag in function 'toUint192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 620,
+            "message": "Mismatch in @return count for function 'toUint192'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Missing @notice tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Missing @param tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Mismatch in @param names for function 'toUint184'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Missing @return tag in function 'toUint184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 637,
+            "message": "Mismatch in @return count for function 'toUint184'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "Missing @notice tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "Missing @param tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "Mismatch in @param names for function 'toUint176'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "Missing @return tag in function 'toUint176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 654,
+            "message": "Mismatch in @return count for function 'toUint176'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 671,
+            "message": "Missing @notice tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 671,
+            "message": "Missing @param tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 671,
+            "message": "Mismatch in @param names for function 'toUint168'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 671,
+            "message": "Missing @return tag in function 'toUint168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 671,
+            "message": "Mismatch in @return count for function 'toUint168'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 688,
+            "message": "Missing @notice tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 688,
+            "message": "Missing @param tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 688,
+            "message": "Mismatch in @param names for function 'toUint160'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 688,
+            "message": "Missing @return tag in function 'toUint160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 688,
+            "message": "Mismatch in @return count for function 'toUint160'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Missing @notice tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Missing @param tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Mismatch in @param names for function 'toUint152'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Missing @return tag in function 'toUint152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 705,
+            "message": "Mismatch in @return count for function 'toUint152'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Missing @notice tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Missing @param tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Mismatch in @param names for function 'toUint144'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Missing @return tag in function 'toUint144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 722,
+            "message": "Mismatch in @return count for function 'toUint144'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Missing @notice tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Missing @param tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Mismatch in @param names for function 'toUint136'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Missing @return tag in function 'toUint136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 739,
+            "message": "Mismatch in @return count for function 'toUint136'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Missing @notice tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Missing @param tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Mismatch in @param names for function 'toUint128'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Missing @return tag in function 'toUint128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 756,
+            "message": "Mismatch in @return count for function 'toUint128'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Missing @notice tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Missing @param tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Mismatch in @param names for function 'toUint120'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Missing @return tag in function 'toUint120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 773,
+            "message": "Mismatch in @return count for function 'toUint120'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Missing @notice tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Missing @param tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Mismatch in @param names for function 'toUint112'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Missing @return tag in function 'toUint112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 790,
+            "message": "Mismatch in @return count for function 'toUint112'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Missing @notice tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Missing @param tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Mismatch in @param names for function 'toUint104'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Missing @return tag in function 'toUint104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 807,
+            "message": "Mismatch in @return count for function 'toUint104'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Missing @notice tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Missing @param tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Mismatch in @param names for function 'toUint96'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Missing @return tag in function 'toUint96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 824,
+            "message": "Mismatch in @return count for function 'toUint96'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Missing @notice tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Missing @param tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Mismatch in @param names for function 'toUint88'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Missing @return tag in function 'toUint88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 841,
+            "message": "Mismatch in @return count for function 'toUint88'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Missing @notice tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Missing @param tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Mismatch in @param names for function 'toUint80'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Missing @return tag in function 'toUint80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 858,
+            "message": "Mismatch in @return count for function 'toUint80'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Missing @notice tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Missing @param tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Mismatch in @param names for function 'toUint72'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Missing @return tag in function 'toUint72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 875,
+            "message": "Mismatch in @return count for function 'toUint72'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Missing @notice tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Missing @param tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Mismatch in @param names for function 'toUint64'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Missing @return tag in function 'toUint64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 892,
+            "message": "Mismatch in @return count for function 'toUint64'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Missing @notice tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Missing @param tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Mismatch in @param names for function 'toUint56'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Missing @return tag in function 'toUint56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 909,
+            "message": "Mismatch in @return count for function 'toUint56'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Missing @notice tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Missing @param tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Mismatch in @param names for function 'toUint48'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Missing @return tag in function 'toUint48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 926,
+            "message": "Mismatch in @return count for function 'toUint48'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Missing @notice tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Missing @param tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Mismatch in @param names for function 'toUint40'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Missing @return tag in function 'toUint40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 943,
+            "message": "Mismatch in @return count for function 'toUint40'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Missing @notice tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Missing @param tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Mismatch in @param names for function 'toUint32'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Missing @return tag in function 'toUint32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 960,
+            "message": "Mismatch in @return count for function 'toUint32'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Missing @notice tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Missing @param tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Mismatch in @param names for function 'toUint24'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Missing @return tag in function 'toUint24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 977,
+            "message": "Mismatch in @return count for function 'toUint24'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Missing @notice tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Missing @param tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Mismatch in @param names for function 'toUint16'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Missing @return tag in function 'toUint16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 994,
+            "message": "Mismatch in @return count for function 'toUint16'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Missing @notice tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Missing @param tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Mismatch in @param names for function 'toUint8'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Missing @return tag in function 'toUint8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1011,
+            "message": "Mismatch in @return count for function 'toUint8'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1025,
+            "message": "Missing @notice tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1025,
+            "message": "Missing @param tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1025,
+            "message": "Mismatch in @param names for function 'toUint256'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1025,
+            "message": "Missing @return tag in function 'toUint256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1025,
+            "message": "Mismatch in @return count for function 'toUint256'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1043,
+            "message": "Missing @notice tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1043,
+            "message": "Missing @param tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1043,
+            "message": "Mismatch in @param names for function 'toInt248'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1043,
+            "message": "Missing @return tag in function 'toInt248'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1043,
+            "message": "Mismatch in @return names for function 'toInt248'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1061,
+            "message": "Missing @notice tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1061,
+            "message": "Missing @param tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1061,
+            "message": "Mismatch in @param names for function 'toInt240'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1061,
+            "message": "Missing @return tag in function 'toInt240'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1061,
+            "message": "Mismatch in @return names for function 'toInt240'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Missing @notice tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Missing @param tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Mismatch in @param names for function 'toInt232'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Missing @return tag in function 'toInt232'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1079,
+            "message": "Mismatch in @return names for function 'toInt232'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1097,
+            "message": "Missing @notice tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1097,
+            "message": "Missing @param tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1097,
+            "message": "Mismatch in @param names for function 'toInt224'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1097,
+            "message": "Missing @return tag in function 'toInt224'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1097,
+            "message": "Mismatch in @return names for function 'toInt224'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1115,
+            "message": "Missing @notice tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1115,
+            "message": "Missing @param tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1115,
+            "message": "Mismatch in @param names for function 'toInt216'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1115,
+            "message": "Missing @return tag in function 'toInt216'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1115,
+            "message": "Mismatch in @return names for function 'toInt216'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1133,
+            "message": "Missing @notice tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1133,
+            "message": "Missing @param tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1133,
+            "message": "Mismatch in @param names for function 'toInt208'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1133,
+            "message": "Missing @return tag in function 'toInt208'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1133,
+            "message": "Mismatch in @return names for function 'toInt208'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1151,
+            "message": "Missing @notice tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1151,
+            "message": "Missing @param tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1151,
+            "message": "Mismatch in @param names for function 'toInt200'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1151,
+            "message": "Missing @return tag in function 'toInt200'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1151,
+            "message": "Mismatch in @return names for function 'toInt200'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1169,
+            "message": "Missing @notice tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1169,
+            "message": "Missing @param tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1169,
+            "message": "Mismatch in @param names for function 'toInt192'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1169,
+            "message": "Missing @return tag in function 'toInt192'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1169,
+            "message": "Mismatch in @return names for function 'toInt192'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1187,
+            "message": "Missing @notice tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1187,
+            "message": "Missing @param tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1187,
+            "message": "Mismatch in @param names for function 'toInt184'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1187,
+            "message": "Missing @return tag in function 'toInt184'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1187,
+            "message": "Mismatch in @return names for function 'toInt184'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1205,
+            "message": "Missing @notice tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1205,
+            "message": "Missing @param tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1205,
+            "message": "Mismatch in @param names for function 'toInt176'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1205,
+            "message": "Missing @return tag in function 'toInt176'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1205,
+            "message": "Mismatch in @return names for function 'toInt176'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1223,
+            "message": "Missing @notice tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1223,
+            "message": "Missing @param tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1223,
+            "message": "Mismatch in @param names for function 'toInt168'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1223,
+            "message": "Missing @return tag in function 'toInt168'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1223,
+            "message": "Mismatch in @return names for function 'toInt168'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1241,
+            "message": "Missing @notice tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1241,
+            "message": "Missing @param tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1241,
+            "message": "Mismatch in @param names for function 'toInt160'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1241,
+            "message": "Missing @return tag in function 'toInt160'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1241,
+            "message": "Mismatch in @return names for function 'toInt160'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1259,
+            "message": "Missing @notice tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1259,
+            "message": "Missing @param tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1259,
+            "message": "Mismatch in @param names for function 'toInt152'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1259,
+            "message": "Missing @return tag in function 'toInt152'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1259,
+            "message": "Mismatch in @return names for function 'toInt152'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1277,
+            "message": "Missing @notice tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1277,
+            "message": "Missing @param tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1277,
+            "message": "Mismatch in @param names for function 'toInt144'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1277,
+            "message": "Missing @return tag in function 'toInt144'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1277,
+            "message": "Mismatch in @return names for function 'toInt144'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1295,
+            "message": "Missing @notice tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1295,
+            "message": "Missing @param tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1295,
+            "message": "Mismatch in @param names for function 'toInt136'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1295,
+            "message": "Missing @return tag in function 'toInt136'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1295,
+            "message": "Mismatch in @return names for function 'toInt136'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1313,
+            "message": "Missing @notice tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1313,
+            "message": "Missing @param tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1313,
+            "message": "Mismatch in @param names for function 'toInt128'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1313,
+            "message": "Missing @return tag in function 'toInt128'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1313,
+            "message": "Mismatch in @return names for function 'toInt128'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1331,
+            "message": "Missing @notice tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1331,
+            "message": "Missing @param tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1331,
+            "message": "Mismatch in @param names for function 'toInt120'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1331,
+            "message": "Missing @return tag in function 'toInt120'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1331,
+            "message": "Mismatch in @return names for function 'toInt120'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1349,
+            "message": "Missing @notice tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1349,
+            "message": "Missing @param tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1349,
+            "message": "Mismatch in @param names for function 'toInt112'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1349,
+            "message": "Missing @return tag in function 'toInt112'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1349,
+            "message": "Mismatch in @return names for function 'toInt112'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1367,
+            "message": "Missing @notice tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1367,
+            "message": "Missing @param tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1367,
+            "message": "Mismatch in @param names for function 'toInt104'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1367,
+            "message": "Missing @return tag in function 'toInt104'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1367,
+            "message": "Mismatch in @return names for function 'toInt104'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1385,
+            "message": "Missing @notice tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1385,
+            "message": "Missing @param tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1385,
+            "message": "Mismatch in @param names for function 'toInt96'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1385,
+            "message": "Missing @return tag in function 'toInt96'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1385,
+            "message": "Mismatch in @return names for function 'toInt96'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Missing @notice tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Missing @param tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Mismatch in @param names for function 'toInt88'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Missing @return tag in function 'toInt88'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1403,
+            "message": "Mismatch in @return names for function 'toInt88'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1421,
+            "message": "Missing @notice tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1421,
+            "message": "Missing @param tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1421,
+            "message": "Mismatch in @param names for function 'toInt80'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1421,
+            "message": "Missing @return tag in function 'toInt80'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1421,
+            "message": "Mismatch in @return names for function 'toInt80'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1439,
+            "message": "Missing @notice tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1439,
+            "message": "Missing @param tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1439,
+            "message": "Mismatch in @param names for function 'toInt72'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1439,
+            "message": "Missing @return tag in function 'toInt72'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1439,
+            "message": "Mismatch in @return names for function 'toInt72'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1457,
+            "message": "Missing @notice tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1457,
+            "message": "Missing @param tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1457,
+            "message": "Mismatch in @param names for function 'toInt64'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1457,
+            "message": "Missing @return tag in function 'toInt64'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1457,
+            "message": "Mismatch in @return names for function 'toInt64'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1475,
+            "message": "Missing @notice tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1475,
+            "message": "Missing @param tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1475,
+            "message": "Mismatch in @param names for function 'toInt56'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1475,
+            "message": "Missing @return tag in function 'toInt56'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1475,
+            "message": "Mismatch in @return names for function 'toInt56'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1493,
+            "message": "Missing @notice tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1493,
+            "message": "Missing @param tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1493,
+            "message": "Mismatch in @param names for function 'toInt48'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1493,
+            "message": "Missing @return tag in function 'toInt48'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1493,
+            "message": "Mismatch in @return names for function 'toInt48'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1511,
+            "message": "Missing @notice tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1511,
+            "message": "Missing @param tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1511,
+            "message": "Mismatch in @param names for function 'toInt40'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1511,
+            "message": "Missing @return tag in function 'toInt40'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1511,
+            "message": "Mismatch in @return names for function 'toInt40'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1529,
+            "message": "Missing @notice tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1529,
+            "message": "Missing @param tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1529,
+            "message": "Mismatch in @param names for function 'toInt32'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1529,
+            "message": "Missing @return tag in function 'toInt32'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1529,
+            "message": "Mismatch in @return names for function 'toInt32'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1547,
+            "message": "Missing @notice tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1547,
+            "message": "Missing @param tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1547,
+            "message": "Mismatch in @param names for function 'toInt24'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1547,
+            "message": "Missing @return tag in function 'toInt24'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1547,
+            "message": "Mismatch in @return names for function 'toInt24'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1565,
+            "message": "Missing @notice tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1565,
+            "message": "Missing @param tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1565,
+            "message": "Mismatch in @param names for function 'toInt16'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1565,
+            "message": "Missing @return tag in function 'toInt16'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1565,
+            "message": "Mismatch in @return names for function 'toInt16'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1583,
+            "message": "Missing @notice tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1583,
+            "message": "Missing @param tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1583,
+            "message": "Mismatch in @param names for function 'toInt8'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1583,
+            "message": "Missing @return tag in function 'toInt8'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1583,
+            "message": "Mismatch in @return names for function 'toInt8'. Expected: [downcasted], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1597,
+            "message": "Missing @notice tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1597,
+            "message": "Missing @param tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1597,
+            "message": "Mismatch in @param names for function 'toInt256'. Expected: [value], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1597,
+            "message": "Missing @return tag in function 'toInt256'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1597,
+            "message": "Mismatch in @return count for function 'toInt256'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1608,
+            "message": "Missing @notice tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1608,
+            "message": "Missing @param tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1608,
+            "message": "Mismatch in @param names for function 'toUint'. Expected: [b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1608,
+            "message": "Missing @return tag in function 'toUint'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1608,
+            "message": "Mismatch in @return names for function 'toUint'. Expected: [u], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1609,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 1621,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Missing @title tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Missing @author tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1643,
+            "message": "Missing @notice tag in contract 'Panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1667,
+            "message": "Missing @notice tag in function 'panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1667,
+            "message": "Missing @param tag in function 'panic'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1667,
+            "message": "Mismatch in @param names for function 'panic'. Expected: [code], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1668,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "error",
+            "line": 1682,
+            "message": "Compiler version ^0.8.20 does not satisfy the ^0.8.24 semver requirement",
+            "name": "compiler-version"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1688,
+            "message": "Missing @title tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1688,
+            "message": "Missing @author tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 1,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1688,
+            "message": "Missing @notice tag in contract 'Math'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1701,
+            "message": "Missing @notice tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1701,
+            "message": "Missing @param tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1701,
+            "message": "Mismatch in @param names for function 'add512'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1701,
+            "message": "Missing @return tag in function 'add512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1701,
+            "message": "Mismatch in @return names for function 'add512'. Expected: [high, low], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1702,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1713,
+            "message": "Missing @notice tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1713,
+            "message": "Missing @param tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1713,
+            "message": "Mismatch in @param names for function 'mul512'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1713,
+            "message": "Missing @return tag in function 'mul512'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1713,
+            "message": "Mismatch in @return names for function 'mul512'. Expected: [high, low], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 9,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1717,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1727,
+            "message": "Missing @notice tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1727,
+            "message": "Missing @param tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1727,
+            "message": "Mismatch in @param names for function 'tryAdd'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1727,
+            "message": "Missing @return tag in function 'tryAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1727,
+            "message": "Mismatch in @return names for function 'tryAdd'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1730,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1738,
+            "message": "Missing @notice tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1738,
+            "message": "Missing @param tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1738,
+            "message": "Mismatch in @param names for function 'trySub'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1738,
+            "message": "Missing @return tag in function 'trySub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1738,
+            "message": "Mismatch in @return names for function 'trySub'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 23,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1741,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1749,
+            "message": "Missing @notice tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1749,
+            "message": "Missing @param tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1749,
+            "message": "Mismatch in @param names for function 'tryMul'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1749,
+            "message": "Missing @return tag in function 'tryMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1749,
+            "message": "Mismatch in @return names for function 'tryMul'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1752,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1765,
+            "message": "Missing @notice tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1765,
+            "message": "Missing @param tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1765,
+            "message": "Mismatch in @param names for function 'tryDiv'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1765,
+            "message": "Missing @return tag in function 'tryDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1765,
+            "message": "Mismatch in @return names for function 'tryDiv'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1768,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1778,
+            "message": "Missing @notice tag in function 'tryMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1778,
+            "message": "Missing @param tag in function 'tryMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1778,
+            "message": "Mismatch in @param names for function 'tryMod'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1778,
+            "message": "Missing @return tag in function 'tryMod'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1778,
+            "message": "Mismatch in @return names for function 'tryMod'. Expected: [success, result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1781,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1791,
+            "message": "Missing @notice tag in function 'saturatingAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1791,
+            "message": "Missing @param tag in function 'saturatingAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1791,
+            "message": "Mismatch in @param names for function 'saturatingAdd'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1791,
+            "message": "Missing @return tag in function 'saturatingAdd'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1791,
+            "message": "Mismatch in @return count for function 'saturatingAdd'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1799,
+            "message": "Missing @notice tag in function 'saturatingSub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1799,
+            "message": "Missing @param tag in function 'saturatingSub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1799,
+            "message": "Mismatch in @param names for function 'saturatingSub'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1799,
+            "message": "Missing @return tag in function 'saturatingSub'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1799,
+            "message": "Mismatch in @return count for function 'saturatingSub'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1807,
+            "message": "Missing @notice tag in function 'saturatingMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1807,
+            "message": "Missing @param tag in function 'saturatingMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1807,
+            "message": "Mismatch in @param names for function 'saturatingMul'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1807,
+            "message": "Missing @return tag in function 'saturatingMul'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1807,
+            "message": "Mismatch in @return count for function 'saturatingMul'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1819,
+            "message": "Missing @notice tag in function 'ternary'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1819,
+            "message": "Missing @param tag in function 'ternary'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1819,
+            "message": "Mismatch in @param names for function 'ternary'. Expected: [condition, a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1819,
+            "message": "Missing @return tag in function 'ternary'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1819,
+            "message": "Mismatch in @return count for function 'ternary'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1831,
+            "message": "Missing @notice tag in function 'max'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1831,
+            "message": "Missing @param tag in function 'max'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1831,
+            "message": "Mismatch in @param names for function 'max'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1831,
+            "message": "Missing @return tag in function 'max'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1831,
+            "message": "Mismatch in @return count for function 'max'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1838,
+            "message": "Missing @notice tag in function 'min'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1838,
+            "message": "Missing @param tag in function 'min'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1838,
+            "message": "Mismatch in @param names for function 'min'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1838,
+            "message": "Missing @return tag in function 'min'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1838,
+            "message": "Mismatch in @return count for function 'min'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1846,
+            "message": "Missing @notice tag in function 'average'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1846,
+            "message": "Missing @param tag in function 'average'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1846,
+            "message": "Mismatch in @param names for function 'average'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1846,
+            "message": "Missing @return tag in function 'average'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1846,
+            "message": "Mismatch in @return count for function 'average'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1857,
+            "message": "Missing @notice tag in function 'ceilDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1857,
+            "message": "Missing @param tag in function 'ceilDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1857,
+            "message": "Mismatch in @param names for function 'ceilDiv'. Expected: [a, b], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1857,
+            "message": "Missing @return tag in function 'ceilDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1857,
+            "message": "Mismatch in @return count for function 'ceilDiv'. Expected: 1, Found: 0",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1880,
+            "message": "Function body contains 70 lines but allowed no more than 50 lines",
+            "name": "function-max-lines"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1880,
+            "message": "Missing @notice tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1880,
+            "message": "Missing @param tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1880,
+            "message": "Mismatch in @param names for function 'mulDiv'. Expected: [x, y, denominator], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1880,
+            "message": "Missing @return tag in function 'mulDiv'",
+            "name": "use-natspec"
+        },
+        {
+            "column": 5,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1880,
+            "message": "Mismatch in @return names for function 'mulDiv'. Expected: [result], Found: []",
+            "name": "use-natspec"
+        },
+        {
+            "column": 17,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1893,
+            "message": "GC: Non strict inequality found. Try converting to a strict one",
+            "name": "gas-strict-inequalities"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1903,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        },
+        {
+            "column": 13,
+            "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+            "level": "warning",
+            "line": 1916,
+            "message": "Avoid to use inline assembly. It is acceptable only in rare cases",
+            "name": "no-inline-assembly"
+        }
+    ],
+    "infos": [],
+    "parser": {
+        "id": "solhint-6.0.0",
+        "mode": "solidity",
+        "version": "2025/09/14"
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 45,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 335,
+            "name": "Callstack Depth Attack Vulnerability"
+        },
+        {
+            "column": 5,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 280,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 50,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 30,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 17,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 129,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 9,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 126,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 28,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 857,
+            "name": "Callstack Depth Attack Vulnerability"
+        },
+        {
+            "column": 29,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 24,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 14,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/Claude/Wallet_F.sol",
+            "line": 950,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Exchange 30.9%",
+        "coverage Oracle 26.5%",
+        "coverage Wallet 32.5%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

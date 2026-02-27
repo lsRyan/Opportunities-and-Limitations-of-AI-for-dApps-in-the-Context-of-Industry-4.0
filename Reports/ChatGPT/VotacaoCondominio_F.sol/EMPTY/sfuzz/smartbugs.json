@@ -1,0 +1,51 @@
+{
+    "docker": {
+        "command": "'/sb/bin/do_solidity.sh' '/sb/VotacaoCondominio_F.sol' '3600' '/sb/bin' '0'",
+        "cpu_quota": 100000,
+        "detach": true,
+        "entrypoint": null,
+        "image": "smartbugs/sfuzz:48934c0",
+        "user": 0,
+        "volumes": {
+            "/tmp/tmp8lt0nrd5": {
+                "bind": "/sb",
+                "mode": "rw"
+            }
+        }
+    },
+    "filename": "/home/ryan/Documents/LLM/Code/ChatGPT/VotacaoCondominio_F.sol",
+    "platform": {
+        "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "python": "3.13.5.final.0 (64 bit)",
+        "release": "6.8.0-94-generic",
+        "smartbugs": "2.0.16",
+        "system": "Linux",
+        "version": "#96~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 16 13:19:05 UTC 2"
+    },
+    "result": {
+        "duration": 1.9153838157653809,
+        "exit_code": 134,
+        "logs": "result.log",
+        "output": "result.tar",
+        "start": 1770734745.7043903
+    },
+    "runid": "20260210_1359",
+    "solc": "0.8.31",
+    "tool": {
+        "bin": "scripts",
+        "command": "'$BIN/do_solidity.sh' '$FILENAME' '$TIMEOUT' '$BIN' '$MAIN'",
+        "cpu_quota": null,
+        "entrypoint": null,
+        "id": "sfuzz",
+        "image": "smartbugs/sfuzz:48934c0",
+        "info": "An Efficient Adaptive Fuzzer for Solidity Smart Contracts",
+        "mem_limit": null,
+        "mode": "solidity",
+        "name": "sFuzz",
+        "origin": "https://github.com/duytai/sFuzz",
+        "output": "/home/contracts",
+        "parser": "parser.py",
+        "solc": true,
+        "version": null
+    }
+}

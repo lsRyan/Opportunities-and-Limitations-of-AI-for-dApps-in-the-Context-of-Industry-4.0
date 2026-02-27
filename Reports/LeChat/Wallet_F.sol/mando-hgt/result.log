@@ -1,0 +1,23 @@
+Solidity version 0.8.31 detected, skipping SOLC_BIN export
+[2026-02-10 20:40:22.894162] MANDO Initializing
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+[2026-02-10 20:40:37.577221] INFO: __main__: Setting execution timeout to 3600 seconds
+[2026-02-10 20:40:37.577425] INFO: __main__: Analyzing only for bug types: ['access_control', 'arithmetic', 'denial_of_service', 'front_running', 'reentrancy', 'time_manipulation', 'unchecked_low_level_calls']
+[2026-02-10 20:47:36.702077] INFO: __main__: Number of buggy nodes: 0
+[2026-02-10 20:47:36.716659] INFO: __main__: Number of clean nodes: 264
+[2026-02-10 20:54:10.186952] INFO: __main__: Number of buggy nodes: 7
+[2026-02-10 20:54:10.187402] INFO: __main__: Number of clean nodes: 257
+[2026-02-10 21:00:52.382725] INFO: __main__: Number of buggy nodes: 49
+[2026-02-10 21:00:52.383109] INFO: __main__: Number of clean nodes: 215
+[2026-02-10 21:07:11.703352] INFO: __main__: Number of buggy nodes: 14
+[2026-02-10 21:07:11.711263] INFO: __main__: Number of clean nodes: 250
+[2026-02-10 21:14:36.304333] INFO: __main__: Number of buggy nodes: 0
+[2026-02-10 21:14:36.324932] INFO: __main__: Number of clean nodes: 264
+[2026-02-10 21:22:13.025748] INFO: __main__: Number of buggy nodes: 0
+[2026-02-10 21:22:13.116005] INFO: __main__: Number of clean nodes: 264
+[2026-02-10 21:30:55.773860] INFO: __main__: Number of buggy nodes: 0
+[2026-02-10 21:30:55.792023] INFO: __main__: Number of clean nodes: 264
+Result: {"summaries": [{"type": "access_control", "vulnerability": 0}, {"type": "arithmetic", "graph_runtime": 217679, "node_runtime": 162395, "number_of_bug_node": 7, "vulnerability": 1, "number_of_normal_node": 257, "results": [{"id": 14, "code_lines": [53], "vulnerability": 1}, {"id": 55, "code_lines": [104], "vulnerability": 1}, {"id": 77, "code_lines": [126], "vulnerability": 1}, {"id": 79, "code_lines": [128], "vulnerability": 1}, {"id": 117, "code_lines": [179], "vulnerability": 1}, {"id": 210, "code_lines": [314], "vulnerability": 1}, {"id": 213, "code_lines": [318], "vulnerability": 1}]}, {"type": "denial_of_service", "graph_runtime": 222761, "node_runtime": 178858, "number_of_bug_node": 49, "vulnerability": 1, "number_of_normal_node": 215, "results": [{"id": 11, "code_lines": [53, 54, 55], "vulnerability": 1}, {"id": 17, "code_lines": [57], "vulnerability": 1}, {"id": 27, "code_lines": [69], "vulnerability": 1}, {"id": 43, "code_lines": [89], "vulnerability": 1}, {"id": 52, "code_lines": [104, 105, 106, 107, 108, 109, 110, 111, 112, 113], "vulnerability": 1}, {"id": 62, "code_lines": [111], "vulnerability": 1}, {"id": 71, "code_lines": [122], "vulnerability": 1}, {"id": 74, "code_lines": [126, 127, 128, 129, 130], "vulnerability": 1}, {"id": 79, "code_lines": [128], "vulnerability": 1}, {"id": 82, "code_lines": [131], "vulnerability": 1}, {"id": 117, "code_lines": [179], "vulnerability": 1}, {"id": 207, "code_lines": [310], "vulnerability": 1}, {"id": 210, "code_lines": [314], "vulnerability": 1}, {"id": 213, "code_lines": [318], "vulnerability": 1}]}, {"type": "front_running", "graph_runtime": 186523, "node_runtime": 190899, "number_of_bug_node": 14, "vulnerability": 1, "number_of_normal_node": 250, "results": [{"id": 11, "code_lines": [53, 54, 55], "vulnerability": 1}, {"id": 13, "code_lines": [53], "vulnerability": 1}, {"id": 14, "code_lines": [53], "vulnerability": 1}, {"id": 21, "code_lines": [62], "vulnerability": 1}, {"id": 52, "code_lines": [104, 105, 106, 107, 108, 109, 110, 111, 112, 113], "vulnerability": 1}, {"id": 54, "code_lines": [104], "vulnerability": 1}, {"id": 55, "code_lines": [104], "vulnerability": 1}, {"id": 74, "code_lines": [126, 127, 128, 129, 130], "vulnerability": 1}, {"id": 76, "code_lines": [126], "vulnerability": 1}, {"id": 77, "code_lines": [126], "vulnerability": 1}, {"id": 96, "code_lines": [155], "vulnerability": 1}, {"id": 97, "code_lines": [155], "vulnerability": 1}, {"id": 154, "code_lines": [246], "vulnerability": 1}, {"id": 184, "code_lines": [282], "vulnerability": 1}]}, {"type": "reentrancy", "vulnerability": 0}, {"type": "time_manipulation", "vulnerability": 0}, {"type": "unchecked_low_level_calls", "graph_runtime": 253195, "node_runtime": 263686, "number_of_bug_node": 0, "vulnerability": 1, "number_of_normal_node": 264, "results": []}], "messages": "OK"}
+[2026-02-10 21:30:55.838110] INFO: __main__: [2026-02-10 21:30:55.836512] Results written to output.json
+DGL backend not selected or invalid.  Assuming PyTorch for now.
+Using backend: pytorch

@@ -1,0 +1,58 @@
+{
+    "errors": [],
+    "fails": [],
+    "findings": [
+        {
+            "column": 5,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 139,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 15,
+            "contract": "Exchange",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 39,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 17,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 63,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 9,
+            "contract": "Oracle",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 61,
+            "name": "Integer Underflow"
+        },
+        {
+            "column": 86,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 262,
+            "name": "Integer Overflow"
+        },
+        {
+            "column": 10,
+            "contract": "Wallet",
+            "filename": "/home/ryan/Documents/LLM/Code/LeChat/Wallet_F.sol",
+            "line": 299,
+            "name": "Integer Underflow"
+        }
+    ],
+    "infos": [
+        "coverage Exchange 38.4%",
+        "coverage Oracle 24.1%",
+        "coverage Wallet 42.5%"
+    ],
+    "parser": {
+        "id": "oyente+-060ca34",
+        "mode": "solidity",
+        "version": "2025/06/04"
+    }
+}

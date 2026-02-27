@@ -1,0 +1,60 @@
+{
+    "errors": [],
+    "fails": [
+        "DOCKER_TIMEOUT"
+    ],
+    "findings": [
+        {
+            "column": "21",
+            "column_end": "36",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": "360",
+            "line_end": "360",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "32",
+            "column_end": "47",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": "301",
+            "line_end": "301",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "31",
+            "column_end": "46",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": "201",
+            "line_end": "201",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "36",
+            "column_end": "51",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": "204",
+            "line_end": "204",
+            "name": "Miners can manipulate program execution by selecting when to include the timestamp"
+        },
+        {
+            "column": "31",
+            "column_end": "46",
+            "filename": "/home/ryan/Documents/LLM/Code/DeepSeek/Consorcio_F.sol",
+            "line": "201",
+            "line_end": "201",
+            "name": "A deterministic or predictable value may be used as bad random number."
+        }
+    ],
+    "infos": [
+        "Could not find the scope UNKNOWN needed to resolve the call UNKNOWN.encodePacked",
+        "Could not find the scope address needed to resolve the call address.pop",
+        "Could not find the scope address needed to resolve the call address.push",
+        "Could not resolve callee of unsupported type class de.fraunhofer.aisec.cpg.frontends.solidity.nodes.SpecifiedExpression",
+        "Parsing of type class SolidityParser$PragmaDirectiveContext is not supported (yet)"
+    ],
+    "parser": {
+        "id": "ccc",
+        "mode": "solidity",
+        "version": "2025/09/19"
+    }
+}

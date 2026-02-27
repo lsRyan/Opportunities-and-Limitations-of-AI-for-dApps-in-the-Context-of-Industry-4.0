@@ -1,0 +1,65 @@
+Extract contract ExchangeContract from /sb/Wallet_F.sol
+Extract contract OracleContract from /sb/Wallet_F.sol
+Extract contract Wallet from /sb/Wallet_F.sol
+Extracted 3 contract(s) from /sb/Wallet_F.sol
+[0;32m> Created "fuzzMe"[0m
+[0;32m> To fuzz contracts:[0m
+  chmod +x fuzzMe
+  ./fuzzMe
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> contracts/OracleContract.sol:307:9:
+    |
+307 |         payable(to).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^
+
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> contracts/OracleContract.sol:337:9:
+    |
+337 |         payable(msg.sender).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> contracts/Wallet.sol:307:9:
+    |
+307 |         payable(to).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^
+
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> contracts/Wallet.sol:337:9:
+    |
+337 |         payable(msg.sender).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> contracts/ExchangeContract.sol:307:9:
+    |
+307 |         payable(to).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^
+
+Warning: 'transfer' is deprecated and scheduled for removal. Use 'call{value: <amount>}("")' instead.
+   --> contracts/ExchangeContract.sol:337:9:
+    |
+337 |         payable(msg.sender).transfer(amount);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/ReentrancyAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source file requires different compiler version (current compiler is 0.8.31+commit.fd3a2265.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> assets/NormalAttacker.sol:1:1:
+  |
+1 | pragma solidity ^0.4.24;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 7:    25 Aborted                 (core dumped) ./fuzzer --file contracts/OracleContract.sol.json --name OracleContract --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 8:    26 Aborted                 (core dumped) ./fuzzer --file contracts/Wallet.sol.json --name Wallet --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  assets/ReentrancyAttacker.sol.json(1): expected value
+./fuzzMe: line 9:    27 Aborted                 (core dumped) ./fuzzer --file contracts/ExchangeContract.sol.json --name ExchangeContract --assets assets/ --duration 1198 --mode 1 --reporter 1 --log 0 --attacker ReentrancyAttacker

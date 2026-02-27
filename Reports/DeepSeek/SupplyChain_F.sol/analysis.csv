@@ -1,0 +1,24 @@
+name,count
+SOLIDITY_VISIBILITY,45
+non-payable-constructor,19
+use-nested-if,9
+reentrancy-events,4
+naming-convention,4
+missing-zero-check,3
+immutable-states,3
+Integer Underflow,3
+use-prefix-increment-not-postfix,3
+reentrancy-no-eth,1
+low-level-calls,1
+Callstack Depth Attack Vulnerability,1
+Result of expression can be over- or under-flown by external entity,1
+Operation may lead to a denial of essential contract function.,1
+Message padding vulnerability found at ether transfer.,1
+SOLIDITY_PRAGMAS_VERSION,1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,1
+use-prefix-decrement-not-postfix,1
+use-ownable2step,1
+array-length-outside-loop,1
+unnecessary-checked-arithmetic-in-loop,1
+state-variable-read-in-a-loop,1
+use-custom-error-not-require,1
